@@ -60,7 +60,7 @@ public enum V1beta1KeyPairSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyPairSpecForProvider
 {
-    /// <summary>The public key material.</summary>
+    /// <summary>Public key material.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -92,7 +92,7 @@ public partial class V1beta1KeyPairSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyPairSpecInitProvider
 {
-    /// <summary>The public key material.</summary>
+    /// <summary>Public key material.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -288,27 +288,27 @@ public partial class V1beta1KeyPairSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyPairStatusAtProvider
 {
-    /// <summary>The key pair ARN.</summary>
+    /// <summary>Key pair ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The MD5 public key fingerprint as specified in section 4 of RFC 4716.</summary>
+    /// <summary>MD5 public key fingerprint as specified in section 4 of RFC 4716.</summary>
     [JsonPropertyName("fingerprint")]
     public string? Fingerprint { get; set; }
 
-    /// <summary>The key pair name.</summary>
+    /// <summary>Key pair name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The key pair ID.</summary>
+    /// <summary>Key pair ID.</summary>
     [JsonPropertyName("keyPairId")]
     public string? KeyPairId { get; set; }
 
-    /// <summary>The type of key pair.</summary>
+    /// <summary>Type of key pair.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 
-    /// <summary>The public key material.</summary>
+    /// <summary>Public key material.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -323,7 +323,7 @@ public partial class V1beta1KeyPairStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

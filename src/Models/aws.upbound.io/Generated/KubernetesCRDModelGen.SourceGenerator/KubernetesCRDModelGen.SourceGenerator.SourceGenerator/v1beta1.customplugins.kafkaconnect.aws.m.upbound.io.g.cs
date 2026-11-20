@@ -364,7 +364,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3
     [JsonPropertyName("bucketArnSelector")]
     public V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for an object in an S3 bucket.</summary>
+    /// <summary>File key for an object in an S3 bucket.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3
     [JsonPropertyName("fileKeySelector")]
     public V1beta1CustomPluginSpecForProviderLocationS3FileKeySelector? FileKeySelector { get; set; }
 
-    /// <summary>The version of an object in an S3 bucket.</summary>
+    /// <summary>Version of an object in an S3 bucket.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
@@ -395,11 +395,11 @@ public partial class V1beta1CustomPluginSpecForProviderLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProvider
 {
-    /// <summary>The type of the plugin file. Allowed values are ZIP and JAR.</summary>
+    /// <summary>Type of the plugin file. Allowed values are ZIP and JAR.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A summary description of the custom plugin.</summary>
+    /// <summary>Summary description of the custom plugin.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -407,7 +407,7 @@ public partial class V1beta1CustomPluginSpecForProvider
     [JsonPropertyName("location")]
     public V1beta1CustomPluginSpecForProviderLocation? Location { get; set; }
 
-    /// <summary>The name of the custom plugin..</summary>
+    /// <summary>Name of the custom plugin.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -750,7 +750,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3
     [JsonPropertyName("bucketArnSelector")]
     public V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for an object in an S3 bucket.</summary>
+    /// <summary>File key for an object in an S3 bucket.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
@@ -762,7 +762,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3
     [JsonPropertyName("fileKeySelector")]
     public V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelector? FileKeySelector { get; set; }
 
-    /// <summary>The version of an object in an S3 bucket.</summary>
+    /// <summary>Version of an object in an S3 bucket.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
@@ -793,11 +793,11 @@ public partial class V1beta1CustomPluginSpecInitProviderLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProvider
 {
-    /// <summary>The type of the plugin file. Allowed values are ZIP and JAR.</summary>
+    /// <summary>Type of the plugin file. Allowed values are ZIP and JAR.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A summary description of the custom plugin.</summary>
+    /// <summary>Summary description of the custom plugin.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -926,11 +926,11 @@ public partial class V1beta1CustomPluginStatusAtProviderLocationS3
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The file key for an object in an S3 bucket.</summary>
+    /// <summary>File key for an object in an S3 bucket.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
-    /// <summary>The version of an object in an S3 bucket.</summary>
+    /// <summary>Version of an object in an S3 bucket.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
@@ -953,11 +953,11 @@ public partial class V1beta1CustomPluginStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The type of the plugin file. Allowed values are ZIP and JAR.</summary>
+    /// <summary>Type of the plugin file. Allowed values are ZIP and JAR.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A summary description of the custom plugin.</summary>
+    /// <summary>Summary description of the custom plugin.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -972,7 +972,7 @@ public partial class V1beta1CustomPluginStatusAtProvider
     [JsonPropertyName("location")]
     public V1beta1CustomPluginStatusAtProviderLocation? Location { get; set; }
 
-    /// <summary>The name of the custom plugin..</summary>
+    /// <summary>Name of the custom plugin.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -991,7 +991,7 @@ public partial class V1beta1CustomPluginStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

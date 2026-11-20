@@ -60,11 +60,7 @@ public enum V1beta1PlacementGroupSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlacementGroupSpecForProvider
 {
-    /// <summary>
-    /// The number of partitions to create in the
-    /// placement group.  Can only be specified when the strategy is set to
-    /// partition.  Must be at least 1. (default is 2).
-    /// </summary>
+    /// <summary>Number of partitions to create in the placement group. Can only be specified when the strategy is set to partition. Must be at least 1. (default is 2).</summary>
     [JsonPropertyName("partitionCount")]
     public double? PartitionCount { get; set; }
 
@@ -75,14 +71,11 @@ public partial class V1beta1PlacementGroupSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// Determines how placement groups spread instances. Can only be used
-    /// when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.
-    /// </summary>
+    /// <summary>How placement groups spread instances. Can only be used when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.</summary>
     [JsonPropertyName("spreadLevel")]
     public string? SpreadLevel { get; set; }
 
-    /// <summary>The placement strategy. Can be cluster, partition or spread.</summary>
+    /// <summary>Placement strategy. Can be cluster, partition or spread.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 
@@ -107,22 +100,15 @@ public partial class V1beta1PlacementGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlacementGroupSpecInitProvider
 {
-    /// <summary>
-    /// The number of partitions to create in the
-    /// placement group.  Can only be specified when the strategy is set to
-    /// partition.  Must be at least 1. (default is 2).
-    /// </summary>
+    /// <summary>Number of partitions to create in the placement group. Can only be specified when the strategy is set to partition. Must be at least 1. (default is 2).</summary>
     [JsonPropertyName("partitionCount")]
     public double? PartitionCount { get; set; }
 
-    /// <summary>
-    /// Determines how placement groups spread instances. Can only be used
-    /// when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.
-    /// </summary>
+    /// <summary>How placement groups spread instances. Can only be used when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.</summary>
     [JsonPropertyName("spreadLevel")]
     public string? SpreadLevel { get; set; }
 
-    /// <summary>The placement strategy. Can be cluster, partition or spread.</summary>
+    /// <summary>Placement strategy. Can be cluster, partition or spread.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 
@@ -322,19 +308,15 @@ public partial class V1beta1PlacementGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The name of the placement group.</summary>
+    /// <summary>Name of the placement group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// The number of partitions to create in the
-    /// placement group.  Can only be specified when the strategy is set to
-    /// partition.  Must be at least 1. (default is 2).
-    /// </summary>
+    /// <summary>Number of partitions to create in the placement group. Can only be specified when the strategy is set to partition. Must be at least 1. (default is 2).</summary>
     [JsonPropertyName("partitionCount")]
     public double? PartitionCount { get; set; }
 
-    /// <summary>The ID of the placement group.</summary>
+    /// <summary>ID of the placement group.</summary>
     [JsonPropertyName("placementGroupId")]
     public string? PlacementGroupId { get; set; }
 
@@ -345,14 +327,11 @@ public partial class V1beta1PlacementGroupStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Determines how placement groups spread instances. Can only be used
-    /// when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.
-    /// </summary>
+    /// <summary>How placement groups spread instances. Can only be used when the strategy is set to spread. Can be host or rack. host can only be used for Outpost placement groups. Defaults to rack.</summary>
     [JsonPropertyName("spreadLevel")]
     public string? SpreadLevel { get; set; }
 
-    /// <summary>The placement strategy. Can be cluster, partition or spread.</summary>
+    /// <summary>Placement strategy. Can be cluster, partition or spread.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 
@@ -360,7 +339,7 @@ public partial class V1beta1PlacementGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

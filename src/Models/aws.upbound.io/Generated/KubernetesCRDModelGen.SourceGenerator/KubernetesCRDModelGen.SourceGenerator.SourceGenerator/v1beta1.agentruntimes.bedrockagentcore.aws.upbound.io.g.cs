@@ -97,7 +97,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
     [JsonPropertyName("entryPoint")]
     public IList<string>? EntryPoint { get; set; }
 
-    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13.</summary>
+    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13, PYTHON_3_14, NODE_22.</summary>
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 }
@@ -112,7 +112,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactConta
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+/// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
@@ -785,7 +785,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRequestHeaderConfiguration
 {
-    /// <summary>A list of HTTP request headers that are allowed to be passed through to the runtime.</summary>
+    /// <summary>List of HTTP request headers that are allowed to be passed through to the runtime.</summary>
     [JsonPropertyName("requestHeaderAllowlist")]
     public IList<string>? RequestHeaderAllowlist { get; set; }
 }
@@ -941,7 +941,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProvider
 {
-    /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+    /// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
     [JsonPropertyName("agentRuntimeArtifact")]
     public V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact? AgentRuntimeArtifact { get; set; }
 
@@ -972,6 +972,10 @@ public partial class V1beta1AgentRuntimeSpecForProvider
     /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1AgentRuntimeSpecForProviderNetworkConfiguration? NetworkConfiguration { get; set; }
+
+    /// <summary>Platform version that controls how the agent runtime starts your agent. Valid values: V1, V2. When omitted, a new agent runtime uses V1 and an existing agent runtime keeps its current platform version. V2 restores each instance from a prepared snapshot, which keeps cold starts consistent regardless of image size. On V2, creates and updates take minutes rather than seconds, environment_variables has a smaller total size limit, and availability is limited to a subset of Regions. See Platform versions for details.</summary>
+    [JsonPropertyName("platformVersion")]
+    public string? PlatformVersion { get; set; }
 
     /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
@@ -1046,7 +1050,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
     [JsonPropertyName("entryPoint")]
     public IList<string>? EntryPoint { get; set; }
 
-    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13.</summary>
+    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13, PYTHON_3_14, NODE_22.</summary>
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 }
@@ -1061,7 +1065,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCont
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+/// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
@@ -1734,7 +1738,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRequestHeaderConfiguration
 {
-    /// <summary>A list of HTTP request headers that are allowed to be passed through to the runtime.</summary>
+    /// <summary>List of HTTP request headers that are allowed to be passed through to the runtime.</summary>
     [JsonPropertyName("requestHeaderAllowlist")]
     public IList<string>? RequestHeaderAllowlist { get; set; }
 }
@@ -1902,7 +1906,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProvider
 {
-    /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+    /// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
     [JsonPropertyName("agentRuntimeArtifact")]
     public V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact? AgentRuntimeArtifact { get; set; }
 
@@ -1933,6 +1937,10 @@ public partial class V1beta1AgentRuntimeSpecInitProvider
     /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration? NetworkConfiguration { get; set; }
+
+    /// <summary>Platform version that controls how the agent runtime starts your agent. Valid values: V1, V2. When omitted, a new agent runtime uses V1 and an existing agent runtime keeps its current platform version. V2 restores each instance from a prepared snapshot, which keeps cold starts consistent regardless of image size. On V2, creates and updates take minutes rather than seconds, environment_variables has a smaller total size limit, and availability is limited to a subset of Regions. See Platform versions for details.</summary>
+    [JsonPropertyName("platformVersion")]
+    public string? PlatformVersion { get; set; }
 
     /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
@@ -2183,7 +2191,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
     [JsonPropertyName("entryPoint")]
     public IList<string>? EntryPoint { get; set; }
 
-    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13.</summary>
+    /// <summary>Runtime environment used to execute the code. Valid values: PYTHON_3_10, PYTHON_3_11, PYTHON_3_12, PYTHON_3_13, PYTHON_3_14, NODE_22.</summary>
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 }
@@ -2198,7 +2206,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCont
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+/// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
@@ -2523,7 +2531,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetworkModeConfig
 {
-    /// <summary>(Read-only) Whether a service-managed Amazon S3 gateway endpoint is provisioned in the VPC for the agent runtime. This value is managed by the service and cannot be set: it is rejected on both create and update. Agent runtimes created on or after the May 5, 2026 rollout do not include a service-managed Amazon S3 gateway.</summary>
+    /// <summary>Whether a service-managed Amazon S3 gateway endpoint is provisioned in the VPC for the agent runtime. This value is managed by the service. Agent runtimes created on or after the May 5, 2026 rollout do not include a service-managed Amazon S3 gateway.</summary>
     [JsonPropertyName("requireServiceS3Endpoint")]
     public bool? RequireServiceS3Endpoint { get; set; }
 
@@ -2565,7 +2573,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderRequestHeaderConfiguration
 {
-    /// <summary>A list of HTTP request headers that are allowed to be passed through to the runtime.</summary>
+    /// <summary>List of HTTP request headers that are allowed to be passed through to the runtime.</summary>
     [JsonPropertyName("requestHeaderAllowlist")]
     public IList<string>? RequestHeaderAllowlist { get; set; }
 }
@@ -2587,7 +2595,7 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
     [JsonPropertyName("agentRuntimeArn")]
     public string? AgentRuntimeArn { get; set; }
 
-    /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
+    /// <summary>Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3. See agent_runtime_artifact below.</summary>
     [JsonPropertyName("agentRuntimeArtifact")]
     public V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact? AgentRuntimeArtifact { get; set; }
 
@@ -2630,6 +2638,10 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
     [JsonPropertyName("networkConfiguration")]
     public V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
+    /// <summary>Platform version that controls how the agent runtime starts your agent. Valid values: V1, V2. When omitted, a new agent runtime uses V1 and an existing agent runtime keeps its current platform version. V2 restores each instance from a prepared snapshot, which keeps cold starts consistent regardless of image size. On V2, creates and updates take minutes rather than seconds, environment_variables has a smaller total size limit, and availability is limited to a subset of Regions. See Platform versions for details.</summary>
+    [JsonPropertyName("platformVersion")]
+    public string? PlatformVersion { get; set; }
+
     /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
     public V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration? ProtocolConfiguration { get; set; }
@@ -2653,7 +2665,7 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

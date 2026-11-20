@@ -56,6 +56,24 @@ public enum V1beta1NetworkInterfaceSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecForProviderConnectionTrackingSpecification
+{
+    /// <summary>Timeout (in seconds) for idle TCP connections in an established state. Min: 60 seconds. Max: 432000 seconds (5 days). Recommended: Less than 432000 seconds.</summary>
+    [JsonPropertyName("tcpEstablishedTimeout")]
+    public double? TcpEstablishedTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows classified as streams which have seen more than one request-response transaction. Min: 60 seconds. Max: 180 seconds (3 minutes). Default: 180 seconds.</summary>
+    [JsonPropertyName("udpStreamTimeout")]
+    public double? UdpStreamTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows that have seen traffic only in a single direction or a single request-response transaction. Min: 30 seconds. Max: 60 seconds. Default: 30 seconds.</summary>
+    [JsonPropertyName("udpTimeout")]
+    public double? UdpTimeout { get; set; }
+}
+
 /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -378,6 +396,10 @@ public partial class V1beta1NetworkInterfaceSpecForProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceSpecForProvider
 {
+    /// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+    [JsonPropertyName("connectionTrackingSpecification")]
+    public V1beta1NetworkInterfaceSpecForProviderConnectionTrackingSpecification? ConnectionTrackingSpecification { get; set; }
+
     /// <summary>Description for the network interface.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -441,7 +463,7 @@ public partial class V1beta1NetworkInterfaceSpecForProvider
     [JsonPropertyName("privateIps")]
     public IList<string>? PrivateIps { get; set; }
 
-    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.</summary>
+    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assigned to an ENI by default.</summary>
     [JsonPropertyName("privateIpsCount")]
     public double? PrivateIpsCount { get; set; }
 
@@ -483,6 +505,24 @@ public partial class V1beta1NetworkInterfaceSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecInitProviderConnectionTrackingSpecification
+{
+    /// <summary>Timeout (in seconds) for idle TCP connections in an established state. Min: 60 seconds. Max: 432000 seconds (5 days). Recommended: Less than 432000 seconds.</summary>
+    [JsonPropertyName("tcpEstablishedTimeout")]
+    public double? TcpEstablishedTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows classified as streams which have seen more than one request-response transaction. Min: 60 seconds. Max: 180 seconds (3 minutes). Default: 180 seconds.</summary>
+    [JsonPropertyName("udpStreamTimeout")]
+    public double? UdpStreamTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows that have seen traffic only in a single direction or a single request-response transaction. Min: 30 seconds. Max: 60 seconds. Default: 30 seconds.</summary>
+    [JsonPropertyName("udpTimeout")]
+    public double? UdpTimeout { get; set; }
 }
 
 /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
@@ -819,6 +859,10 @@ public partial class V1beta1NetworkInterfaceSpecInitProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceSpecInitProvider
 {
+    /// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+    [JsonPropertyName("connectionTrackingSpecification")]
+    public V1beta1NetworkInterfaceSpecInitProviderConnectionTrackingSpecification? ConnectionTrackingSpecification { get; set; }
+
     /// <summary>Description for the network interface.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -882,7 +926,7 @@ public partial class V1beta1NetworkInterfaceSpecInitProvider
     [JsonPropertyName("privateIps")]
     public IList<string>? PrivateIps { get; set; }
 
-    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.</summary>
+    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assigned to an ENI by default.</summary>
     [JsonPropertyName("privateIpsCount")]
     public double? PrivateIpsCount { get; set; }
 
@@ -1123,6 +1167,24 @@ public partial class V1beta1NetworkInterfaceStatusAtProviderAttachment
     public double? NetworkCardIndex { get; set; }
 }
 
+/// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceStatusAtProviderConnectionTrackingSpecification
+{
+    /// <summary>Timeout (in seconds) for idle TCP connections in an established state. Min: 60 seconds. Max: 432000 seconds (5 days). Recommended: Less than 432000 seconds.</summary>
+    [JsonPropertyName("tcpEstablishedTimeout")]
+    public double? TcpEstablishedTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows classified as streams which have seen more than one request-response transaction. Min: 60 seconds. Max: 180 seconds (3 minutes). Default: 180 seconds.</summary>
+    [JsonPropertyName("udpStreamTimeout")]
+    public double? UdpStreamTimeout { get; set; }
+
+    /// <summary>Timeout (in seconds) for idle UDP flows that have seen traffic only in a single direction or a single request-response transaction. Min: 30 seconds. Max: 60 seconds. Default: 30 seconds.</summary>
+    [JsonPropertyName("udpTimeout")]
+    public double? UdpTimeout { get; set; }
+}
+
 /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1158,6 +1220,10 @@ public partial class V1beta1NetworkInterfaceStatusAtProvider
     /// <summary>Configuration block to define the attachment of the ENI. See Attachment below for more details!</summary>
     [JsonPropertyName("attachment")]
     public IList<V1beta1NetworkInterfaceStatusAtProviderAttachment>? Attachment { get; set; }
+
+    /// <summary>Configures the connection tracking timeouts for the network interface. See Connection Tracking Specification below for more details.</summary>
+    [JsonPropertyName("connectionTrackingSpecification")]
+    public V1beta1NetworkInterfaceStatusAtProviderConnectionTrackingSpecification? ConnectionTrackingSpecification { get; set; }
 
     /// <summary>Description for the network interface.</summary>
     [JsonPropertyName("description")]
@@ -1242,7 +1308,7 @@ public partial class V1beta1NetworkInterfaceStatusAtProvider
     [JsonPropertyName("privateIps")]
     public IList<string>? PrivateIps { get; set; }
 
-    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.</summary>
+    /// <summary>Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assigned to an ENI by default.</summary>
     [JsonPropertyName("privateIpsCount")]
     public double? PrivateIpsCount { get; set; }
 

@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
-/// <summary>Agent is the Schema for the Agents API.</summary>
+/// <summary>Agent is the Schema for the Agents API. Manages an AWS Agents for Amazon Bedrock Agent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -373,7 +373,7 @@ public partial class V1beta1AgentSpecForProviderMemoryConfigurationSessionSummar
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecForProviderMemoryConfiguration
 {
-    /// <summary>The type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
+    /// <summary>Type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
     [JsonPropertyName("enabledMemoryTypes")]
     public IList<string>? EnabledMemoryTypes { get; set; }
 
@@ -381,7 +381,7 @@ public partial class V1beta1AgentSpecForProviderMemoryConfiguration
     [JsonPropertyName("sessionSummaryConfiguration")]
     public IList<V1beta1AgentSpecForProviderMemoryConfigurationSessionSummaryConfiguration>? SessionSummaryConfiguration { get; set; }
 
-    /// <summary>The number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
+    /// <summary>Number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
     [JsonPropertyName("storageDays")]
     public double? StorageDays { get; set; }
 }
@@ -415,7 +415,7 @@ public partial class V1beta1AgentSpecForProviderPromptOverrideConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecForProviderPromptOverrideConfigurationPromptConfigurations
 {
-    /// <summary>prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
+    /// <summary>Prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
     [JsonPropertyName("basePromptTemplate")]
     public string? BasePromptTemplate { get; set; }
 
@@ -435,7 +435,7 @@ public partial class V1beta1AgentSpecForProviderPromptOverrideConfigurationPromp
     [JsonPropertyName("promptState")]
     public string? PromptState { get; set; }
 
-    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION.</summary>
+    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION, MEMORY_SUMMARIZATION.</summary>
     [JsonPropertyName("promptType")]
     public string? PromptType { get; set; }
 }
@@ -444,7 +444,7 @@ public partial class V1beta1AgentSpecForProviderPromptOverrideConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecForProviderPromptOverrideConfiguration
 {
-    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations block must contain a parser_mode value that is set to OVERRIDDEN.</summary>
+    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations blocks must contain a parser_mode value that is set to OVERRIDDEN.</summary>
     [JsonPropertyName("overrideLambda")]
     public string? OverrideLambda { get; set; }
 
@@ -509,7 +509,7 @@ public partial class V1beta1AgentSpecForProvider
     [JsonPropertyName("instruction")]
     public string? Instruction { get; set; }
 
-    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context.</summary>
+    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context. See memory_configuration Block for details.</summary>
     [JsonPropertyName("memoryConfiguration")]
     public IList<V1beta1AgentSpecForProviderMemoryConfiguration>? MemoryConfiguration { get; set; }
 
@@ -528,7 +528,7 @@ public partial class V1beta1AgentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Whether the in-use check is skipped when deleting the agent.</summary>
+    /// <summary>Whether to skip the in-use check when deleting the agent. Defaults to false.</summary>
     [JsonPropertyName("skipResourceInUseCheck")]
     public bool? SkipResourceInUseCheck { get; set; }
 
@@ -873,7 +873,7 @@ public partial class V1beta1AgentSpecInitProviderMemoryConfigurationSessionSumma
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecInitProviderMemoryConfiguration
 {
-    /// <summary>The type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
+    /// <summary>Type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
     [JsonPropertyName("enabledMemoryTypes")]
     public IList<string>? EnabledMemoryTypes { get; set; }
 
@@ -881,7 +881,7 @@ public partial class V1beta1AgentSpecInitProviderMemoryConfiguration
     [JsonPropertyName("sessionSummaryConfiguration")]
     public IList<V1beta1AgentSpecInitProviderMemoryConfigurationSessionSummaryConfiguration>? SessionSummaryConfiguration { get; set; }
 
-    /// <summary>The number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
+    /// <summary>Number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
     [JsonPropertyName("storageDays")]
     public double? StorageDays { get; set; }
 }
@@ -915,7 +915,7 @@ public partial class V1beta1AgentSpecInitProviderPromptOverrideConfigurationProm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecInitProviderPromptOverrideConfigurationPromptConfigurations
 {
-    /// <summary>prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
+    /// <summary>Prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
     [JsonPropertyName("basePromptTemplate")]
     public string? BasePromptTemplate { get; set; }
 
@@ -935,7 +935,7 @@ public partial class V1beta1AgentSpecInitProviderPromptOverrideConfigurationProm
     [JsonPropertyName("promptState")]
     public string? PromptState { get; set; }
 
-    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION.</summary>
+    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION, MEMORY_SUMMARIZATION.</summary>
     [JsonPropertyName("promptType")]
     public string? PromptType { get; set; }
 }
@@ -944,7 +944,7 @@ public partial class V1beta1AgentSpecInitProviderPromptOverrideConfigurationProm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentSpecInitProviderPromptOverrideConfiguration
 {
-    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations block must contain a parser_mode value that is set to OVERRIDDEN.</summary>
+    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations blocks must contain a parser_mode value that is set to OVERRIDDEN.</summary>
     [JsonPropertyName("overrideLambda")]
     public string? OverrideLambda { get; set; }
 
@@ -1021,7 +1021,7 @@ public partial class V1beta1AgentSpecInitProvider
     [JsonPropertyName("instruction")]
     public string? Instruction { get; set; }
 
-    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context.</summary>
+    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context. See memory_configuration Block for details.</summary>
     [JsonPropertyName("memoryConfiguration")]
     public IList<V1beta1AgentSpecInitProviderMemoryConfiguration>? MemoryConfiguration { get; set; }
 
@@ -1033,7 +1033,7 @@ public partial class V1beta1AgentSpecInitProvider
     [JsonPropertyName("promptOverrideConfiguration")]
     public IList<V1beta1AgentSpecInitProviderPromptOverrideConfiguration>? PromptOverrideConfiguration { get; set; }
 
-    /// <summary>Whether the in-use check is skipped when deleting the agent.</summary>
+    /// <summary>Whether to skip the in-use check when deleting the agent. Defaults to false.</summary>
     [JsonPropertyName("skipResourceInUseCheck")]
     public bool? SkipResourceInUseCheck { get; set; }
 
@@ -1175,7 +1175,7 @@ public partial class V1beta1AgentStatusAtProviderMemoryConfigurationSessionSumma
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentStatusAtProviderMemoryConfiguration
 {
-    /// <summary>The type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
+    /// <summary>Type of memory being stored by the agent. See AWS API documentation for possible values.</summary>
     [JsonPropertyName("enabledMemoryTypes")]
     public IList<string>? EnabledMemoryTypes { get; set; }
 
@@ -1183,7 +1183,7 @@ public partial class V1beta1AgentStatusAtProviderMemoryConfiguration
     [JsonPropertyName("sessionSummaryConfiguration")]
     public IList<V1beta1AgentStatusAtProviderMemoryConfigurationSessionSummaryConfiguration>? SessionSummaryConfiguration { get; set; }
 
-    /// <summary>The number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
+    /// <summary>Number of days the agent is configured to retain the conversational context. Minimum value of 0, maximum value of 30.</summary>
     [JsonPropertyName("storageDays")]
     public double? StorageDays { get; set; }
 }
@@ -1217,7 +1217,7 @@ public partial class V1beta1AgentStatusAtProviderPromptOverrideConfigurationProm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentStatusAtProviderPromptOverrideConfigurationPromptConfigurations
 {
-    /// <summary>prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
+    /// <summary>Prompt template with which to replace the default prompt template. You can use placeholder variables in the base prompt template to customize the prompt. For more information, see Prompt template placeholder variables.</summary>
     [JsonPropertyName("basePromptTemplate")]
     public string? BasePromptTemplate { get; set; }
 
@@ -1237,7 +1237,7 @@ public partial class V1beta1AgentStatusAtProviderPromptOverrideConfigurationProm
     [JsonPropertyName("promptState")]
     public string? PromptState { get; set; }
 
-    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION.</summary>
+    /// <summary>Step in the agent sequence that this prompt configuration applies to. Valid values: PRE_PROCESSING, ORCHESTRATION, POST_PROCESSING, KNOWLEDGE_BASE_RESPONSE_GENERATION, MEMORY_SUMMARIZATION.</summary>
     [JsonPropertyName("promptType")]
     public string? PromptType { get; set; }
 }
@@ -1246,7 +1246,7 @@ public partial class V1beta1AgentStatusAtProviderPromptOverrideConfigurationProm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentStatusAtProviderPromptOverrideConfiguration
 {
-    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations block must contain a parser_mode value that is set to OVERRIDDEN.</summary>
+    /// <summary>ARN of the Lambda function to use when parsing the raw foundation model output in parts of the agent sequence. If you specify this field, at least one of the prompt_configurations blocks must contain a parser_mode value that is set to OVERRIDDEN.</summary>
     [JsonPropertyName("overrideLambda")]
     public string? OverrideLambda { get; set; }
 
@@ -1311,7 +1311,7 @@ public partial class V1beta1AgentStatusAtProvider
     [JsonPropertyName("instruction")]
     public string? Instruction { get; set; }
 
-    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context.</summary>
+    /// <summary>Configurations for the agent&apos;s ability to retain the conversational context. See memory_configuration Block for details.</summary>
     [JsonPropertyName("memoryConfiguration")]
     public IList<V1beta1AgentStatusAtProviderMemoryConfiguration>? MemoryConfiguration { get; set; }
 
@@ -1334,7 +1334,7 @@ public partial class V1beta1AgentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Whether the in-use check is skipped when deleting the agent.</summary>
+    /// <summary>Whether to skip the in-use check when deleting the agent. Defaults to false.</summary>
     [JsonPropertyName("skipResourceInUseCheck")]
     public bool? SkipResourceInUseCheck { get; set; }
 
@@ -1420,7 +1420,7 @@ public partial class V1beta1AgentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Agent is the Schema for the Agents API.</summary>
+/// <summary>Agent is the Schema for the Agents API. Manages an AWS Agents for Amazon Bedrock Agent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

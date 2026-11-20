@@ -625,7 +625,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>unique user id that is never reassignable to another user.</summary>
+    /// <summary>unique user ID that is never reassignable to another user.</summary>
     [JsonPropertyName("sub")]
     public string? Sub { get; set; }
 

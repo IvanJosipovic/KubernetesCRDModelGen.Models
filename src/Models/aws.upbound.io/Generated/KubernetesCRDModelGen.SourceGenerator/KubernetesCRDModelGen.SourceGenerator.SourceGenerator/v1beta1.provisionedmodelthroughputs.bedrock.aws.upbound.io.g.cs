@@ -327,7 +327,7 @@ public partial class V1beta1ProvisionedModelThroughputStatusAtProvider
     [JsonPropertyName("modelUnits")]
     public double? ModelUnits { get; set; }
 
-    /// <summary>The ARN of the Provisioned Throughput.</summary>
+    /// <summary>ARN of the Provisioned Throughput.</summary>
     [JsonPropertyName("provisionedModelArn")]
     public string? ProvisionedModelArn { get; set; }
 

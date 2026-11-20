@@ -41,25 +41,25 @@ public partial class V1beta1FrameworkList : IKubernetesObject<V1ListMeta>, IItem
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkSpecForProviderControlInputParameter
 {
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of parameter, for example, hourly.</summary>
+    /// <summary>Value of parameter, for example, hourly.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+/// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkSpecForProviderControlScope
 {
-    /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
+    /// <summary>ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
     [JsonPropertyName("complianceResourceIds")]
     public IList<string>? ComplianceResourceIds { get; set; }
 
-    /// <summary>Describes whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
+    /// <summary>Whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
     [JsonPropertyName("complianceResourceTypes")]
     public IList<string>? ComplianceResourceTypes { get; set; }
 
@@ -76,11 +76,11 @@ public partial class V1beta1FrameworkSpecForProviderControl
     [JsonPropertyName("inputParameter")]
     public IList<V1beta1FrameworkSpecForProviderControlInputParameter>? InputParameter { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Name of a control. This name is between 1 and 256 characters.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+    /// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
     [JsonPropertyName("scope")]
     public V1beta1FrameworkSpecForProviderControlScope? Scope { get; set; }
 }
@@ -93,11 +93,11 @@ public partial class V1beta1FrameworkSpecForProvider
     [JsonPropertyName("control")]
     public IList<V1beta1FrameworkSpecForProviderControl>? Control { get; set; }
 
-    /// <summary>The description of the framework with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the framework with a maximum of 1,024 characters</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -117,25 +117,25 @@ public partial class V1beta1FrameworkSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkSpecInitProviderControlInputParameter
 {
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of parameter, for example, hourly.</summary>
+    /// <summary>Value of parameter, for example, hourly.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+/// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkSpecInitProviderControlScope
 {
-    /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
+    /// <summary>ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
     [JsonPropertyName("complianceResourceIds")]
     public IList<string>? ComplianceResourceIds { get; set; }
 
-    /// <summary>Describes whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
+    /// <summary>Whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
     [JsonPropertyName("complianceResourceTypes")]
     public IList<string>? ComplianceResourceTypes { get; set; }
 
@@ -152,11 +152,11 @@ public partial class V1beta1FrameworkSpecInitProviderControl
     [JsonPropertyName("inputParameter")]
     public IList<V1beta1FrameworkSpecInitProviderControlInputParameter>? InputParameter { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Name of a control. This name is between 1 and 256 characters.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+    /// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
     [JsonPropertyName("scope")]
     public V1beta1FrameworkSpecInitProviderControlScope? Scope { get; set; }
 }
@@ -181,11 +181,11 @@ public partial class V1beta1FrameworkSpecInitProvider
     [JsonPropertyName("control")]
     public IList<V1beta1FrameworkSpecInitProviderControl>? Control { get; set; }
 
-    /// <summary>The description of the framework with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the framework with a maximum of 1,024 characters</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -305,25 +305,25 @@ public partial class V1beta1FrameworkSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkStatusAtProviderControlInputParameter
 {
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of parameter, for example, hourly.</summary>
+    /// <summary>Value of parameter, for example, hourly.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+/// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkStatusAtProviderControlScope
 {
-    /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
+    /// <summary>ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
     [JsonPropertyName("complianceResourceIds")]
     public IList<string>? ComplianceResourceIds { get; set; }
 
-    /// <summary>Describes whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
+    /// <summary>Whether the control scope includes one or more types of resources, such as EFS or RDS.</summary>
     [JsonPropertyName("complianceResourceTypes")]
     public IList<string>? ComplianceResourceTypes { get; set; }
 
@@ -340,11 +340,11 @@ public partial class V1beta1FrameworkStatusAtProviderControl
     [JsonPropertyName("inputParameter")]
     public IList<V1beta1FrameworkStatusAtProviderControlInputParameter>? InputParameter { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Name of a control. This name is between 1 and 256 characters.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
+    /// <summary>Scope of a control. The control scope defines what the control will evaluate. Three examples of control scopes are: a specific backup plan, all backup plans with a specific tag, or all backup plans. Detailed below.</summary>
     [JsonPropertyName("scope")]
     public V1beta1FrameworkStatusAtProviderControlScope? Scope { get; set; }
 }
@@ -353,7 +353,7 @@ public partial class V1beta1FrameworkStatusAtProviderControl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrameworkStatusAtProvider
 {
-    /// <summary>The ARN of the backup framework.</summary>
+    /// <summary>ARN of the backup framework.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -361,23 +361,23 @@ public partial class V1beta1FrameworkStatusAtProvider
     [JsonPropertyName("control")]
     public IList<V1beta1FrameworkStatusAtProviderControl>? Control { get; set; }
 
-    /// <summary>The date and time that a framework is created, in Unix format and Coordinated Universal Time (UTC).</summary>
+    /// <summary>Date and time that a framework is created, in Unix format and Coordinated Universal Time (UTC).</summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
 
-    /// <summary>The deployment status of a framework. The statuses are: CREATE_IN_PROGRESS | UPDATE_IN_PROGRESS | DELETE_IN_PROGRESS | COMPLETED | FAILED.</summary>
+    /// <summary>Deployment status of a framework. The statuses are: CREATE_IN_PROGRESS | UPDATE_IN_PROGRESS | DELETE_IN_PROGRESS | COMPLETED | FAILED.</summary>
     [JsonPropertyName("deploymentStatus")]
     public string? DeploymentStatus { get; set; }
 
-    /// <summary>The description of the framework with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the framework with a maximum of 1,024 characters</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The id of the backup framework.</summary>
+    /// <summary>ID of the backup framework.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -388,7 +388,7 @@ public partial class V1beta1FrameworkStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A framework consists of one or more controls. Each control governs a resource, such as backup plans, backup selections, backup vaults, or recovery points. You can also turn AWS Config recording on or off for each resource. For more information refer to the AWS documentation for Framework Status</summary>
+    /// <summary>Framework consists of one or more controls. Each control governs a resource, such as backup plans, backup selections, backup vaults, or recovery points. You can also turn AWS Config recording on or off for each resource. For more information refer to the AWS documentation for Framework Status</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -396,7 +396,7 @@ public partial class V1beta1FrameworkStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

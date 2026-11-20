@@ -501,7 +501,7 @@ public partial class V1beta1TopicSubscriptionSpecForProviderTopicArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicSubscriptionSpecForProvider
 {
-    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols. Default is 1.</summary>
+    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription ARN before marking it as failure. Only applicable for HTTP and HTTPS protocols. Default is 1.</summary>
     [JsonPropertyName("confirmationTimeoutInMinutes")]
     public double? ConfirmationTimeoutInMinutes { get; set; }
 
@@ -1038,7 +1038,7 @@ public partial class V1beta1TopicSubscriptionSpecInitProviderTopicArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicSubscriptionSpecInitProvider
 {
-    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols. Default is 1.</summary>
+    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription ARN before marking it as failure. Only applicable for HTTP and HTTPS protocols. Default is 1.</summary>
     [JsonPropertyName("confirmationTimeoutInMinutes")]
     public double? ConfirmationTimeoutInMinutes { get; set; }
 
@@ -1302,7 +1302,7 @@ public partial class V1beta1TopicSubscriptionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols. Default is 1.</summary>
+    /// <summary>Integer indicating number of minutes to wait in retrying mode for fetching subscription ARN before marking it as failure. Only applicable for HTTP and HTTPS protocols. Default is 1.</summary>
     [JsonPropertyName("confirmationTimeoutInMinutes")]
     public double? ConfirmationTimeoutInMinutes { get; set; }
 

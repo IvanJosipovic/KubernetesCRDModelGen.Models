@@ -351,7 +351,7 @@ public partial class V1beta1NotificationSpecForProviderTopicArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationSpecForProvider
 {
-    /// <summary>List of AutoScaling Group Names</summary>
+    /// <summary>List of Auto Scaling group Names</summary>
     [JsonPropertyName("groupNames")]
     public IList<string>? GroupNames { get; set; }
 
@@ -716,7 +716,7 @@ public partial class V1beta1NotificationSpecInitProviderTopicArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationSpecInitProvider
 {
-    /// <summary>List of AutoScaling Group Names</summary>
+    /// <summary>List of Auto Scaling group Names</summary>
     [JsonPropertyName("groupNames")]
     public IList<string>? GroupNames { get; set; }
 
@@ -859,7 +859,7 @@ public partial class V1beta1NotificationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationStatusAtProvider
 {
-    /// <summary>List of AutoScaling Group Names</summary>
+    /// <summary>List of Auto Scaling group Names</summary>
     [JsonPropertyName("groupNames")]
     public IList<string>? GroupNames { get; set; }
 

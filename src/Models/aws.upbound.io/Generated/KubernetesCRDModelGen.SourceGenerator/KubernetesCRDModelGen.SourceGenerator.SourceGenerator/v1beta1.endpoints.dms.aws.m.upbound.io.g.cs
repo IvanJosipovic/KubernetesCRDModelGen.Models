@@ -786,7 +786,7 @@ public partial class V1beta1EndpointSpecForProviderRedshiftSettings
     [JsonPropertyName("encryptionMode")]
     public string? EncryptionMode { get; set; }
 
-    /// <summary>ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.</summary>
+    /// <summary>ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.</summary>
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
@@ -1215,7 +1215,7 @@ public partial class V1beta1EndpointSpecForProvider
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>ARN used by the service access IAM role for dynamodb endpoints.</summary>
+    /// <summary>ARN used by the service access IAM role for DynamoDB endpoints.</summary>
     [JsonPropertyName("serviceAccessRole")]
     public string? ServiceAccessRole { get; set; }
 
@@ -1989,7 +1989,7 @@ public partial class V1beta1EndpointSpecInitProviderRedshiftSettings
     [JsonPropertyName("encryptionMode")]
     public string? EncryptionMode { get; set; }
 
-    /// <summary>ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.</summary>
+    /// <summary>ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.</summary>
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
@@ -2423,7 +2423,7 @@ public partial class V1beta1EndpointSpecInitProvider
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>ARN used by the service access IAM role for dynamodb endpoints.</summary>
+    /// <summary>ARN used by the service access IAM role for DynamoDB endpoints.</summary>
     [JsonPropertyName("serviceAccessRole")]
     public string? ServiceAccessRole { get; set; }
 
@@ -3051,7 +3051,7 @@ public partial class V1beta1EndpointStatusAtProviderRedshiftSettings
     [JsonPropertyName("encryptionMode")]
     public string? EncryptionMode { get; set; }
 
-    /// <summary>ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.</summary>
+    /// <summary>ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.</summary>
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
@@ -3157,7 +3157,7 @@ public partial class V1beta1EndpointStatusAtProvider
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>ARN used by the service access IAM role for dynamodb endpoints.</summary>
+    /// <summary>ARN used by the service access IAM role for DynamoDB endpoints.</summary>
     [JsonPropertyName("serviceAccessRole")]
     public string? ServiceAccessRole { get; set; }
 

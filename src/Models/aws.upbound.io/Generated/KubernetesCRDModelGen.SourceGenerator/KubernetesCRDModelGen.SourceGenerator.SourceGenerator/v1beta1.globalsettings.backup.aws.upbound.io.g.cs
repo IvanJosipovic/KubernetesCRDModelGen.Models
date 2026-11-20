@@ -60,7 +60,7 @@ public enum V1beta1GlobalSettingsSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalSettingsSpecForProvider
 {
-    /// <summary>A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
+    /// <summary>Resources and their opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
     [JsonPropertyName("globalSettings")]
     public IDictionary<string, string>? GlobalSettings { get; set; }
 }
@@ -81,7 +81,7 @@ public partial class V1beta1GlobalSettingsSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalSettingsSpecInitProvider
 {
-    /// <summary>A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
+    /// <summary>Resources and their opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
     [JsonPropertyName("globalSettings")]
     public IDictionary<string, string>? GlobalSettings { get; set; }
 }
@@ -273,11 +273,11 @@ public partial class V1beta1GlobalSettingsSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalSettingsStatusAtProvider
 {
-    /// <summary>A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
+    /// <summary>Resources and their opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.</summary>
     [JsonPropertyName("globalSettings")]
     public IDictionary<string, string>? GlobalSettings { get; set; }
 
-    /// <summary>The AWS Account ID.</summary>
+    /// <summary>AWS Account ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 }

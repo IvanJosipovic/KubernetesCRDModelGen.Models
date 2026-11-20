@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.upbound.io;
-/// <summary>KnowledgeBase is the Schema for the KnowledgeBases API.</summary>
+/// <summary>KnowledgeBase is the Schema for the KnowledgeBases API. Manages an AWS Agents for Amazon Bedrock Knowledge Base.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -203,7 +203,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
@@ -221,7 +221,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelector? KendraIndexArnSelector { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -231,17 +231,17 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -251,22 +251,22 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -274,21 +274,21 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
@@ -440,7 +440,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
@@ -458,7 +458,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 }
 
-/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
@@ -467,7 +467,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
@@ -475,12 +475,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("embeddingModelType")]
     public string? EmbeddingModelType { get; set; }
 
-    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
@@ -645,12 +645,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -667,7 +667,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
@@ -681,12 +681,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? UsernamePasswordSecretArn { get; set; }
 }
 
-/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -695,16 +695,16 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? WorkgroupArn { get; set; }
 }
 
-/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
-    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
     [JsonPropertyName("provisionedConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration? ProvisionedConfiguration { get; set; }
 
-    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
     [JsonPropertyName("serverlessConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration? ServerlessConfiguration { get; set; }
 
@@ -747,7 +747,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
-    /// <summary>Information about a column in the table. See column block for details.</summary>
+    /// <summary>Information about a column in the table. See column Block for details.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn>? Column { get; set; }
 
@@ -764,21 +764,21 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Name { get; set; }
 }
 
-/// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+/// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
-    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query block for details.</summary>
+    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query Block for details.</summary>
     [JsonPropertyName("curatedQuery")]
     public IList<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery>? CuratedQuery { get; set; }
 
-    /// <summary>Information about a table in the database. See table block for details.</summary>
+    /// <summary>Information about a table in the database. See table Block for details.</summary>
     [JsonPropertyName("table")]
     public IList<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable>? Table { get; set; }
 }
 
-/// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+/// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
@@ -787,12 +787,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("executionTimeoutSeconds")]
     public double? ExecutionTimeoutSeconds { get; set; }
 
-    /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+    /// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
     [JsonPropertyName("generationContext")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext? GenerationContext { get; set; }
 }
 
-/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
@@ -802,26 +802,26 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public IList<string>? TableNames { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
-    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
     [JsonPropertyName("awsDataCatalogConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration? AwsDataCatalogConfiguration { get; set; }
 
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -830,30 +830,30 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Type { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
-    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
     [JsonPropertyName("queryEngineConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration? QueryEngineConfiguration { get; set; }
 
-    /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+    /// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
     [JsonPropertyName("queryGenerationConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration? QueryGenerationConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration? StorageConfiguration { get; set; }
 }
 
-/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -862,7 +862,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -872,17 +872,17 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -892,22 +892,22 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -915,26 +915,26 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
 
-/// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+/// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
@@ -944,12 +944,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Uri { get; set; }
 }
 
-/// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+/// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
-    /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+    /// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location? S3Location { get; set; }
 
@@ -958,17 +958,17 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Type { get; set; }
 }
 
-/// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+/// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
-    /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+    /// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
     [JsonPropertyName("storageLocation")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation? StorageLocation { get; set; }
 }
 
-/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
@@ -977,29 +977,29 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
-    /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+    /// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
     [JsonPropertyName("supplementalDataStorageConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration? SupplementalDataStorageConfiguration { get; set; }
 }
 
-/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfiguration
 {
-    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("kendraKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration? KendraKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration? ManagedKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("sqlKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration? SqlKnowledgeBaseConfiguration { get; set; }
 
@@ -1007,7 +1007,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("vectorKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration? VectorKnowledgeBaseConfiguration { get; set; }
 }
@@ -1159,82 +1159,82 @@ public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnSelector
     public V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfiguration
 {
-    /// <summary>–  The name of the collection in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the collection in the MongoDB Atlas database.</summary>
     [JsonPropertyName("collectionName")]
     public string? CollectionName { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  The name of the service that hosts the MongoDB Atlas database.</summary>
+    /// <summary>Name of the VPC endpoint service in your account that is connected to your MongoDB Atlas cluster.</summary>
     [JsonPropertyName("endpointServiceName")]
     public string? EndpointServiceName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the text search index in the MongoDB collection. Required for hybrid search.</summary>
     [JsonPropertyName("textIndexName")]
     public string? TextIndexName { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -1390,25 +1390,25 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfiguration
@@ -1429,11 +1429,11 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
     [JsonPropertyName("domainEndpoint")]
     public string? DomainEndpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
@@ -1585,25 +1585,25 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfiguration
@@ -1620,30 +1620,30 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
     [JsonPropertyName("collectionArnSelector")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelector? CollectionArnSelector { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfiguration
@@ -1652,11 +1652,11 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPine
     [JsonPropertyName("connectionString")]
     public string? ConnectionString { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -1812,7 +1812,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationFieldMapping
@@ -1821,7 +1821,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     [JsonPropertyName("customMetadataField")]
     public string? CustomMetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
@@ -1829,11 +1829,11 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     [JsonPropertyName("primaryKeyField")]
     public string? PrimaryKeyField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
@@ -1985,12 +1985,12 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -2002,11 +2002,11 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -2027,42 +2027,42 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
     public string? TableName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
@@ -2361,7 +2361,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfiguration
@@ -2395,40 +2395,40 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelector? VectorBucketArnSelector { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfiguration
 {
-    /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
     [JsonPropertyName("mongoDbAtlasConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfiguration? MongoDbAtlasConfiguration { get; set; }
 
-    /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
     [JsonPropertyName("neptuneAnalyticsConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfiguration? NeptuneAnalyticsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
     [JsonPropertyName("opensearchManagedClusterConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfiguration? OpensearchManagedClusterConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
     [JsonPropertyName("opensearchServerlessConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfiguration? OpensearchServerlessConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
     [JsonPropertyName("pineconeConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfiguration? PineconeConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
     [JsonPropertyName("rdsConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfiguration? RdsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
     [JsonPropertyName("redisEnterpriseCloudConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfiguration? RedisEnterpriseCloudConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
     [JsonPropertyName("s3VectorsConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfiguration? S3VectorsConfiguration { get; set; }
 
@@ -2445,7 +2445,7 @@ public partial class V1beta1KnowledgeBaseSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("knowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfiguration? KnowledgeBaseConfiguration { get; set; }
 
@@ -2472,7 +2472,7 @@ public partial class V1beta1KnowledgeBaseSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1KnowledgeBaseSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseSpecForProviderStorageConfiguration? StorageConfiguration { get; set; }
 
@@ -2628,7 +2628,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
@@ -2646,7 +2646,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelector? KendraIndexArnSelector { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -2656,17 +2656,17 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -2676,22 +2676,22 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -2699,21 +2699,21 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
@@ -2865,7 +2865,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
@@ -2883,7 +2883,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 }
 
-/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
@@ -2892,7 +2892,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
@@ -2900,12 +2900,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelType")]
     public string? EmbeddingModelType { get; set; }
 
-    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
@@ -3070,12 +3070,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -3092,7 +3092,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
@@ -3106,12 +3106,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? UsernamePasswordSecretArn { get; set; }
 }
 
-/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -3120,16 +3120,16 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? WorkgroupArn { get; set; }
 }
 
-/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
-    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
     [JsonPropertyName("provisionedConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration? ProvisionedConfiguration { get; set; }
 
-    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
     [JsonPropertyName("serverlessConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration? ServerlessConfiguration { get; set; }
 
@@ -3172,7 +3172,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
-    /// <summary>Information about a column in the table. See column block for details.</summary>
+    /// <summary>Information about a column in the table. See column Block for details.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn>? Column { get; set; }
 
@@ -3189,21 +3189,21 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Name { get; set; }
 }
 
-/// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+/// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
-    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query block for details.</summary>
+    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query Block for details.</summary>
     [JsonPropertyName("curatedQuery")]
     public IList<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery>? CuratedQuery { get; set; }
 
-    /// <summary>Information about a table in the database. See table block for details.</summary>
+    /// <summary>Information about a table in the database. See table Block for details.</summary>
     [JsonPropertyName("table")]
     public IList<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable>? Table { get; set; }
 }
 
-/// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+/// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
@@ -3212,12 +3212,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("executionTimeoutSeconds")]
     public double? ExecutionTimeoutSeconds { get; set; }
 
-    /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+    /// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
     [JsonPropertyName("generationContext")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext? GenerationContext { get; set; }
 }
 
-/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
@@ -3227,26 +3227,26 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public IList<string>? TableNames { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
-    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
     [JsonPropertyName("awsDataCatalogConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration? AwsDataCatalogConfiguration { get; set; }
 
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -3255,30 +3255,30 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
-    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
     [JsonPropertyName("queryEngineConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration? QueryEngineConfiguration { get; set; }
 
-    /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+    /// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
     [JsonPropertyName("queryGenerationConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration? QueryGenerationConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration? StorageConfiguration { get; set; }
 }
 
-/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -3287,7 +3287,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -3297,17 +3297,17 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -3317,22 +3317,22 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -3340,26 +3340,26 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
 
-/// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+/// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
@@ -3369,12 +3369,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Uri { get; set; }
 }
 
-/// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+/// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
-    /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+    /// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location? S3Location { get; set; }
 
@@ -3383,17 +3383,17 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+/// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
-    /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+    /// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
     [JsonPropertyName("storageLocation")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation? StorageLocation { get; set; }
 }
 
-/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
@@ -3402,29 +3402,29 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
-    /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+    /// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
     [JsonPropertyName("supplementalDataStorageConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration? SupplementalDataStorageConfiguration { get; set; }
 }
 
-/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfiguration
 {
-    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("kendraKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration? KendraKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration? ManagedKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("sqlKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration? SqlKnowledgeBaseConfiguration { get; set; }
 
@@ -3432,7 +3432,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("vectorKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration? VectorKnowledgeBaseConfiguration { get; set; }
 }
@@ -3584,82 +3584,82 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnSelector
     public V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfiguration
 {
-    /// <summary>–  The name of the collection in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the collection in the MongoDB Atlas database.</summary>
     [JsonPropertyName("collectionName")]
     public string? CollectionName { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  The name of the service that hosts the MongoDB Atlas database.</summary>
+    /// <summary>Name of the VPC endpoint service in your account that is connected to your MongoDB Atlas cluster.</summary>
     [JsonPropertyName("endpointServiceName")]
     public string? EndpointServiceName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the text search index in the MongoDB collection. Required for hybrid search.</summary>
     [JsonPropertyName("textIndexName")]
     public string? TextIndexName { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -3815,25 +3815,25 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfiguration
@@ -3854,11 +3854,11 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
     [JsonPropertyName("domainEndpoint")]
     public string? DomainEndpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
@@ -4010,25 +4010,25 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfiguration
@@ -4045,30 +4045,30 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
     [JsonPropertyName("collectionArnSelector")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelector? CollectionArnSelector { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfiguration
@@ -4077,11 +4077,11 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPin
     [JsonPropertyName("connectionString")]
     public string? ConnectionString { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -4237,7 +4237,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationFieldMapping
@@ -4246,7 +4246,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     [JsonPropertyName("customMetadataField")]
     public string? CustomMetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
@@ -4254,11 +4254,11 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     [JsonPropertyName("primaryKeyField")]
     public string? PrimaryKeyField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
@@ -4410,12 +4410,12 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -4427,11 +4427,11 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -4452,42 +4452,42 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
     public string? TableName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
@@ -4786,7 +4786,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfiguration
@@ -4820,40 +4820,40 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelector? VectorBucketArnSelector { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfiguration
 {
-    /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
     [JsonPropertyName("mongoDbAtlasConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfiguration? MongoDbAtlasConfiguration { get; set; }
 
-    /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
     [JsonPropertyName("neptuneAnalyticsConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfiguration? NeptuneAnalyticsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
     [JsonPropertyName("opensearchManagedClusterConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfiguration? OpensearchManagedClusterConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
     [JsonPropertyName("opensearchServerlessConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfiguration? OpensearchServerlessConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
     [JsonPropertyName("pineconeConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfiguration? PineconeConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
     [JsonPropertyName("rdsConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfiguration? RdsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
     [JsonPropertyName("redisEnterpriseCloudConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfiguration? RedisEnterpriseCloudConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
     [JsonPropertyName("s3VectorsConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfiguration? S3VectorsConfiguration { get; set; }
 
@@ -4882,7 +4882,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("knowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfiguration? KnowledgeBaseConfiguration { get; set; }
 
@@ -4902,7 +4902,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1KnowledgeBaseSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseSpecInitProviderStorageConfiguration? StorageConfiguration { get; set; }
 
@@ -5094,7 +5094,7 @@ public partial class V1beta1KnowledgeBaseSpec
     public V1beta1KnowledgeBaseSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
@@ -5104,7 +5104,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? KendraIndexArn { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -5114,17 +5114,17 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -5134,22 +5134,22 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -5157,26 +5157,26 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
 
-/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
@@ -5186,7 +5186,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? KmsKeyArn { get; set; }
 }
 
-/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+/// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
@@ -5195,7 +5195,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
@@ -5203,12 +5203,12 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelType")]
     public string? EmbeddingModelType { get; set; }
 
-    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
@@ -5226,12 +5226,12 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? UsernamePasswordSecretArn { get; set; }
 }
 
-/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+/// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -5240,7 +5240,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? ClusterIdentifier { get; set; }
 }
 
-/// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+/// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
@@ -5254,12 +5254,12 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? UsernamePasswordSecretArn { get; set; }
 }
 
-/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+/// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
-    /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
+    /// <summary>Configurations for authentication to Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.query_engine_configuration.provisioned_configuration.auth_configuration Block for details.</summary>
     [JsonPropertyName("authConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration? AuthConfiguration { get; set; }
 
@@ -5268,16 +5268,16 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? WorkgroupArn { get; set; }
 }
 
-/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+/// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
-    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
+    /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration Block for details.</summary>
     [JsonPropertyName("provisionedConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration? ProvisionedConfiguration { get; set; }
 
-    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
+    /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration Block for details.</summary>
     [JsonPropertyName("serverlessConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration? ServerlessConfiguration { get; set; }
 
@@ -5320,7 +5320,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
-    /// <summary>Information about a column in the table. See column block for details.</summary>
+    /// <summary>Information about a column in the table. See column Block for details.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn>? Column { get; set; }
 
@@ -5337,21 +5337,21 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Name { get; set; }
 }
 
-/// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+/// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
-    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query block for details.</summary>
+    /// <summary>Information about example queries to help the query engine generate appropriate SQL queries. See curated_query Block for details.</summary>
     [JsonPropertyName("curatedQuery")]
     public IList<V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery>? CuratedQuery { get; set; }
 
-    /// <summary>Information about a table in the database. See table block for details.</summary>
+    /// <summary>Information about a table in the database. See table Block for details.</summary>
     [JsonPropertyName("table")]
     public IList<V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable>? Table { get; set; }
 }
 
-/// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+/// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
@@ -5360,12 +5360,12 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("executionTimeoutSeconds")]
     public double? ExecutionTimeoutSeconds { get; set; }
 
-    /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
+    /// <summary>Configurations for context to use during query generation. See generation_context Block for details.</summary>
     [JsonPropertyName("generationContext")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext? GenerationContext { get; set; }
 }
 
-/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+/// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
@@ -5375,26 +5375,26 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public IList<string>? TableNames { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
-    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
+    /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration Block for details.</summary>
     [JsonPropertyName("awsDataCatalogConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration? AwsDataCatalogConfiguration { get; set; }
 
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -5403,30 +5403,30 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+/// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
-    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
+    /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration Block for details.</summary>
     [JsonPropertyName("queryEngineConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration? QueryEngineConfiguration { get; set; }
 
-    /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
+    /// <summary>Configurations for generating queries. See query_generation_configuration Block for details.</summary>
     [JsonPropertyName("queryGenerationConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration? QueryGenerationConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration? StorageConfiguration { get; set; }
 }
 
-/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+/// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
-    /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
+    /// <summary>Configurations for storage in Amazon Redshift. See knowledge_base_configuration.sql_knowledge_base_configuration.redshift_configuration.storage_configuration.redshift_configuration Block for details.</summary>
     [JsonPropertyName("redshiftConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration? RedshiftConfiguration { get; set; }
 
@@ -5435,7 +5435,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
@@ -5445,17 +5445,17 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+/// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+/// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
@@ -5465,22 +5465,22 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public double? FixedLengthDuration { get; set; }
 }
 
-/// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+/// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
-    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
+    /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration Block for details.</summary>
     [JsonPropertyName("segmentationConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration? SegmentationConfiguration { get; set; }
 }
 
-/// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+/// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
-    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
+    /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio Block for details.</summary>
     [JsonPropertyName("audio")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio? Audio { get; set; }
 
@@ -5488,26 +5488,26 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("dimensions")]
     public double? Dimensions { get; set; }
 
-    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings.  Valid values are FLOAT32 and BINARY.</summary>
+    /// <summary>Data type for the vectors when using a model to convert text into vector embeddings. The model must support the specified data type for vector embeddings. Valid values are FLOAT32 and BINARY.</summary>
     [JsonPropertyName("embeddingDataType")]
     public string? EmbeddingDataType { get; set; }
 
-    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
+    /// <summary>Configuration for processing video content in multimodal knowledge bases. See video Block for details.</summary>
     [JsonPropertyName("video")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo? Video { get; set; }
 }
 
-/// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+/// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
-    /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
+    /// <summary>Vector configuration details for the Bedrock embeddings model. See bedrock_embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockEmbeddingModelConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration? BedrockEmbeddingModelConfiguration { get; set; }
 }
 
-/// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+/// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
@@ -5517,12 +5517,12 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Uri { get; set; }
 }
 
-/// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+/// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
-    /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
+    /// <summary>Information about the Amazon S3 location for the extracted images. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location? S3Location { get; set; }
 
@@ -5531,17 +5531,17 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-/// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+/// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
-    /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
+    /// <summary>Storage location specification for images extracted from multimodal documents in your data source. See storage_location Block for details.</summary>
     [JsonPropertyName("storageLocation")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation? StorageLocation { get; set; }
 }
 
-/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
@@ -5550,29 +5550,29 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("embeddingModelArn")]
     public string? EmbeddingModelArn { get; set; }
 
-    /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
+    /// <summary>Embeddings model configuration details for the vector model used in the knowledge base. See embedding_model_configuration Block for details.</summary>
     [JsonPropertyName("embeddingModelConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration? EmbeddingModelConfiguration { get; set; }
 
-    /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
+    /// <summary>Supplemental data storage configuration for images extracted from multimodal documents. See supplemental_data_storage_configuration Block for details.</summary>
     [JsonPropertyName("supplementalDataStorageConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration? SupplementalDataStorageConfiguration { get; set; }
 }
 
-/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+/// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfiguration
 {
-    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("kendraKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration? KendraKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
+    /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration? ManagedKnowledgeBaseConfiguration { get; set; }
 
-    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
+    /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("sqlKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration? SqlKnowledgeBaseConfiguration { get; set; }
 
@@ -5580,87 +5580,87 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("vectorKnowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration? VectorKnowledgeBaseConfiguration { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfiguration
 {
-    /// <summary>–  The name of the collection in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the collection in the MongoDB Atlas database.</summary>
     [JsonPropertyName("collectionName")]
     public string? CollectionName { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  The name of the service that hosts the MongoDB Atlas database.</summary>
+    /// <summary>Name of the VPC endpoint service in your account that is connected to your MongoDB Atlas cluster.</summary>
     [JsonPropertyName("endpointServiceName")]
     public string? EndpointServiceName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the text search index in the MongoDB collection. Required for hybrid search.</summary>
     [JsonPropertyName("textIndexName")]
     public string? TextIndexName { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -5669,25 +5669,25 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNep
     public string? GraphArn { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfiguration
@@ -5700,34 +5700,34 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
     [JsonPropertyName("domainEndpoint")]
     public string? DomainEndpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfiguration
@@ -5736,30 +5736,30 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
     [JsonPropertyName("collectionArn")]
     public string? CollectionArn { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfiguration
@@ -5768,11 +5768,11 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPin
     [JsonPropertyName("connectionString")]
     public string? ConnectionString { get; set; }
 
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -5781,7 +5781,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPin
     public string? Namespace { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfigurationFieldMapping
@@ -5790,7 +5790,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRds
     [JsonPropertyName("customMetadataField")]
     public string? CustomMetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
@@ -5798,29 +5798,29 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRds
     [JsonPropertyName("primaryKeyField")]
     public string? PrimaryKeyField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The name of the database in the MongoDB Atlas database.</summary>
+    /// <summary>Name of the database in the MongoDB Atlas database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfigurationFieldMapping? FieldMapping { get; set; }
 
@@ -5833,47 +5833,47 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRds
     public string? TableName { get; set; }
 }
 
-/// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+/// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
-    /// <summary>–  The name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores metadata about the vector store.</summary>
     [JsonPropertyName("metadataField")]
     public string? MetadataField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.</summary>
     [JsonPropertyName("textField")]
     public string? TextField { get; set; }
 
-    /// <summary>–  The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
+    /// <summary>Name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</summary>
     [JsonPropertyName("vectorField")]
     public string? VectorField { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
-    /// <summary>–  The ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
+    /// <summary>ARN of the secret that you created in AWS Secrets Manager that is linked to your MongoDB Atlas database.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>–  The endpoint URL of the MongoDB Atlas database.</summary>
+    /// <summary>Endpoint URL of the MongoDB Atlas database.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
+    /// <summary>Names of the fields to which to map information about the vector store. See storage_configuration.mongo_db_atlas_configuration.field_mapping Block for details.</summary>
     [JsonPropertyName("fieldMapping")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping? FieldMapping { get; set; }
 
-    /// <summary>–  The name of the vector index.</summary>
+    /// <summary>Name of the vector index.</summary>
     [JsonPropertyName("vectorIndexName")]
     public string? VectorIndexName { get; set; }
 }
 
-/// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+/// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationS3VectorsConfiguration
@@ -5891,40 +5891,40 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationS3V
     public string? VectorBucketArn { get; set; }
 }
 
-/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+/// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfiguration
 {
-    /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration Block for details.</summary>
     [JsonPropertyName("mongoDbAtlasConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfiguration? MongoDbAtlasConfiguration { get; set; }
 
-    /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration Block for details.</summary>
     [JsonPropertyName("neptuneAnalyticsConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfiguration? NeptuneAnalyticsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration Block for details.</summary>
     [JsonPropertyName("opensearchManagedClusterConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfiguration? OpensearchManagedClusterConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration Block for details.</summary>
     [JsonPropertyName("opensearchServerlessConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfiguration? OpensearchServerlessConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Pinecone. See pinecone_configuration Block for details.</summary>
     [JsonPropertyName("pineconeConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfiguration? PineconeConfiguration { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration Block for details.</summary>
     [JsonPropertyName("rdsConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfiguration? RdsConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration Block for details.</summary>
     [JsonPropertyName("redisEnterpriseCloudConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfiguration? RedisEnterpriseCloudConfiguration { get; set; }
 
-    /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
+    /// <summary>Storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration Block for details.</summary>
     [JsonPropertyName("s3VectorsConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationS3VectorsConfiguration? S3VectorsConfiguration { get; set; }
 
@@ -5949,6 +5949,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>List of failure reasons reported when the knowledge base is in a failed state.</summary>
     [JsonPropertyName("failureReasons")]
     public IList<string>? FailureReasons { get; set; }
 
@@ -5956,7 +5957,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
+    /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration Block for details.</summary>
     [JsonPropertyName("knowledgeBaseConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfiguration? KnowledgeBaseConfiguration { get; set; }
 
@@ -5975,7 +5976,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProvider
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
+    /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration Block for details.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1KnowledgeBaseStatusAtProviderStorageConfiguration? StorageConfiguration { get; set; }
 
@@ -6065,7 +6066,7 @@ public partial class V1beta1KnowledgeBaseStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>KnowledgeBase is the Schema for the KnowledgeBases API.</summary>
+/// <summary>KnowledgeBase is the Schema for the KnowledgeBases API. Manages an AWS Agents for Amazon Bedrock Knowledge Base.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

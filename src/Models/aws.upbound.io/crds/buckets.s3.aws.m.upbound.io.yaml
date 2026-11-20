@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: buckets.s3.aws.m.upbound.io
 spec:
   group: s3.aws.m.upbound.io
@@ -230,7 +230,7 @@ spec:
                     items:
                       properties:
                         id:
-                          description: Canonical user id to grant for. Used only when type is CanonicalUser.
+                          description: Canonical user ID to grant for. Used only when type is CanonicalUser.
                           type: string
                         permissions:
                           description: List of permissions to apply for grantee. Valid values are READ, WRITE, READ_ACP, WRITE_ACP, FULL_CONTROL.
@@ -242,7 +242,7 @@ spec:
                           description: Type of grantee to apply for. Valid values are CanonicalUser and Group. AmazonCustomerByEmail is not supported.
                           type: string
                         uri:
-                          description: Uri address to grant for. Used only when type is Group.
+                          description: URI address to grant for. Used only when type is Group.
                           type: string
                       type: object
                     type: array
@@ -516,7 +516,7 @@ spec:
                         description: Absolute path to the document to return in case of a 4XX error.
                         type: string
                       indexDocument:
-                        description: Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
+                        description: Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders. Required unless using redirect_all_requests_to.
                         type: string
                       redirectAllRequestsTo:
                         description: Hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (http:// or https://) to use when redirecting requests. The default is the protocol that is used in the original request.

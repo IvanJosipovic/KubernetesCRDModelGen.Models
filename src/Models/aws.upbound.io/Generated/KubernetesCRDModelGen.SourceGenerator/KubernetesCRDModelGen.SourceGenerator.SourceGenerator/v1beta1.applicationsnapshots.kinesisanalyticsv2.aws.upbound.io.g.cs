@@ -207,7 +207,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProvider
 {
-    /// <summary>The name of an existing  Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
+    /// <summary>Name of an existing Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
     [JsonPropertyName("applicationName")]
     public string? ApplicationName { get; set; }
 
@@ -390,7 +390,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProvider
 {
-    /// <summary>The name of an existing  Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
+    /// <summary>Name of an existing Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
     [JsonPropertyName("applicationName")]
     public string? ApplicationName { get; set; }
 
@@ -590,15 +590,15 @@ public partial class V1beta1ApplicationSnapshotSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotStatusAtProvider
 {
-    /// <summary>The name of an existing  Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
+    /// <summary>Name of an existing Kinesis Analytics v2 Application. Note that the application must be running for a snapshot to be created.</summary>
     [JsonPropertyName("applicationName")]
     public string? ApplicationName { get; set; }
 
-    /// <summary>The current application version ID when the snapshot was created.</summary>
+    /// <summary>Current application version ID when the snapshot was created.</summary>
     [JsonPropertyName("applicationVersionId")]
     public double? ApplicationVersionId { get; set; }
 
-    /// <summary>The application snapshot identifier.</summary>
+    /// <summary>Application snapshot identifier.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -609,7 +609,7 @@ public partial class V1beta1ApplicationSnapshotStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The timestamp of the application snapshot.</summary>
+    /// <summary>Timestamp of the application snapshot.</summary>
     [JsonPropertyName("snapshotCreationTimestamp")]
     public string? SnapshotCreationTimestamp { get; set; }
 }

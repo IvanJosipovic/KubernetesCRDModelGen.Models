@@ -37,22 +37,22 @@ public partial class V1beta1ConnectorList : IKubernetesObject<V1ListMeta>, IItem
     public required IList<V1beta1Connector> Items { get; set; }
 }
 
-/// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+/// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderCapacityAutoscalingScaleInPolicy
 {
-    /// <summary>Specifies the CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
 
-/// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+/// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderCapacityAutoscalingScaleOutPolicy
 {
-    /// <summary>The CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
@@ -62,23 +62,23 @@ public partial class V1beta1ConnectorSpecForProviderCapacityAutoscalingScaleOutP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderCapacityAutoscaling
 {
-    /// <summary>The maximum number of workers allocated to the connector.</summary>
+    /// <summary>Maximum number of workers allocated to the connector.</summary>
     [JsonPropertyName("maxWorkerCount")]
     public double? MaxWorkerCount { get; set; }
 
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The minimum number of workers allocated to the connector.</summary>
+    /// <summary>Minimum number of workers allocated to the connector.</summary>
     [JsonPropertyName("minWorkerCount")]
     public double? MinWorkerCount { get; set; }
 
-    /// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+    /// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
     [JsonPropertyName("scaleInPolicy")]
     public V1beta1ConnectorSpecForProviderCapacityAutoscalingScaleInPolicy? ScaleInPolicy { get; set; }
 
-    /// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+    /// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
     [JsonPropertyName("scaleOutPolicy")]
     public V1beta1ConnectorSpecForProviderCapacityAutoscalingScaleOutPolicy? ScaleOutPolicy { get; set; }
 }
@@ -88,11 +88,11 @@ public partial class V1beta1ConnectorSpecForProviderCapacityAutoscaling
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderCapacityProvisionedCapacity
 {
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The number of workers that are allocated to the connector.</summary>
+    /// <summary>Number of workers that are allocated to the connector.</summary>
     [JsonPropertyName("workerCount")]
     public double? WorkerCount { get; set; }
 }
@@ -434,7 +434,7 @@ public partial class V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClust
     [JsonPropertyName("securityGroupSelector")]
     public V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClusterVpcSecurityGroupSelector? SecurityGroupSelector { get; set; }
 
-    /// <summary>The security groups for the connector.</summary>
+    /// <summary>Security groups for the connector.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -446,17 +446,17 @@ public partial class V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClust
     [JsonPropertyName("subnetSelector")]
     public V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClusterVpcSubnetSelector? SubnetSelector { get; set; }
 
-    /// <summary>The subnets for the connector.</summary>
+    /// <summary>Subnets for the connector.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The bootstrap servers of the cluster.</summary>
+    /// <summary>Bootstrap servers of the cluster.</summary>
     [JsonPropertyName("bootstrapServers")]
     public string? BootstrapServers { get; set; }
 
@@ -465,12 +465,12 @@ public partial class V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClust
     public V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaClusterVpc? Vpc { get; set; }
 }
 
-/// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderKafkaCluster
 {
-    /// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ConnectorSpecForProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 }
@@ -480,7 +480,7 @@ public partial class V1beta1ConnectorSpecForProviderKafkaCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderKafkaClusterClientAuthentication
 {
-    /// <summary>The type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
+    /// <summary>Type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
     [JsonPropertyName("authenticationType")]
     public string? AuthenticationType { get; set; }
 }
@@ -490,7 +490,7 @@ public partial class V1beta1ConnectorSpecForProviderKafkaClusterClientAuthentica
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
+    /// <summary>Type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 }
@@ -659,7 +659,7 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group that is the destination for log delivery.</summary>
+    /// <summary>Name of the CloudWatch log group that is the destination for log delivery.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -832,7 +832,7 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDeliveryFirehose
 {
-    /// <summary>The name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
+    /// <summary>Name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
@@ -844,7 +844,7 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1009,7 +1009,7 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDeliveryS3
 {
-    /// <summary>The name of the S3 bucket that is the destination for log delivery.</summary>
+    /// <summary>Name of the S3 bucket that is the destination for log delivery.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1021,16 +1021,16 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
     [JsonPropertyName("bucketSelector")]
     public V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDeliveryS3BucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The S3 prefix that is the destination for log delivery.</summary>
+    /// <summary>S3 prefix that is the destination for log delivery.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+/// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
@@ -1053,7 +1053,7 @@ public partial class V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderLogDelivery
 {
-    /// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+    /// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
     [JsonPropertyName("workerLogDelivery")]
     public V1beta1ConnectorSpecForProviderLogDeliveryWorkerLogDelivery? WorkerLogDelivery { get; set; }
 }
@@ -1230,7 +1230,7 @@ public partial class V1beta1ConnectorSpecForProviderPluginCustomPlugin
     [JsonPropertyName("arnSelector")]
     public V1beta1ConnectorSpecForProviderPluginCustomPluginArnSelector? ArnSelector { get; set; }
 
-    /// <summary>The revision of the custom plugin.</summary>
+    /// <summary>Revision of the custom plugin.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -1554,7 +1554,7 @@ public partial class V1beta1ConnectorSpecForProviderWorkerConfigurationArnSelect
     public V1beta1ConnectorSpecForProviderWorkerConfigurationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+/// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderWorkerConfiguration
@@ -1571,7 +1571,7 @@ public partial class V1beta1ConnectorSpecForProviderWorkerConfiguration
     [JsonPropertyName("arnSelector")]
     public V1beta1ConnectorSpecForProviderWorkerConfigurationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>The revision of the worker configuration.</summary>
+    /// <summary>Revision of the worker configuration.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -1584,15 +1584,15 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("capacity")]
     public V1beta1ConnectorSpecForProviderCapacity? Capacity { get; set; }
 
-    /// <summary>A map of keys to values that represent the configuration for the connector.</summary>
+    /// <summary>Map of keys to values that represent the configuration for the connector.</summary>
     [JsonPropertyName("connectorConfiguration")]
     public IDictionary<string, string>? ConnectorConfiguration { get; set; }
 
-    /// <summary>A summary description of the connector.</summary>
+    /// <summary>Summary description of the connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
     [JsonPropertyName("kafkaCluster")]
     public V1beta1ConnectorSpecForProviderKafkaCluster? KafkaCluster { get; set; }
 
@@ -1604,7 +1604,7 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("kafkaClusterEncryptionInTransit")]
     public V1beta1ConnectorSpecForProviderKafkaClusterEncryptionInTransit? KafkaClusterEncryptionInTransit { get; set; }
 
-    /// <summary>The version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
+    /// <summary>Version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
     [JsonPropertyName("kafkaconnectVersion")]
     public string? KafkaconnectVersion { get; set; }
 
@@ -1612,11 +1612,11 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("logDelivery")]
     public V1beta1ConnectorSpecForProviderLogDelivery? LogDelivery { get; set; }
 
-    /// <summary>The name of the connector.</summary>
+    /// <summary>Name of the connector.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
-    /// <summary>Specifies which plugins to use for the connector. See plugin Block for details.</summary>
+    /// <summary>Plugins to use for the connector. See plugin Block for details.</summary>
     [JsonPropertyName("plugin")]
     public IList<V1beta1ConnectorSpecForProviderPlugin>? Plugin { get; set; }
 
@@ -1643,27 +1643,27 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+    /// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
     [JsonPropertyName("workerConfiguration")]
     public V1beta1ConnectorSpecForProviderWorkerConfiguration? WorkerConfiguration { get; set; }
 }
 
-/// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+/// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderCapacityAutoscalingScaleInPolicy
 {
-    /// <summary>Specifies the CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
 
-/// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+/// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderCapacityAutoscalingScaleOutPolicy
 {
-    /// <summary>The CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
@@ -1673,23 +1673,23 @@ public partial class V1beta1ConnectorSpecInitProviderCapacityAutoscalingScaleOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderCapacityAutoscaling
 {
-    /// <summary>The maximum number of workers allocated to the connector.</summary>
+    /// <summary>Maximum number of workers allocated to the connector.</summary>
     [JsonPropertyName("maxWorkerCount")]
     public double? MaxWorkerCount { get; set; }
 
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The minimum number of workers allocated to the connector.</summary>
+    /// <summary>Minimum number of workers allocated to the connector.</summary>
     [JsonPropertyName("minWorkerCount")]
     public double? MinWorkerCount { get; set; }
 
-    /// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+    /// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
     [JsonPropertyName("scaleInPolicy")]
     public V1beta1ConnectorSpecInitProviderCapacityAutoscalingScaleInPolicy? ScaleInPolicy { get; set; }
 
-    /// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+    /// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
     [JsonPropertyName("scaleOutPolicy")]
     public V1beta1ConnectorSpecInitProviderCapacityAutoscalingScaleOutPolicy? ScaleOutPolicy { get; set; }
 }
@@ -1699,11 +1699,11 @@ public partial class V1beta1ConnectorSpecInitProviderCapacityAutoscaling
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderCapacityProvisionedCapacity
 {
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The number of workers that are allocated to the connector.</summary>
+    /// <summary>Number of workers that are allocated to the connector.</summary>
     [JsonPropertyName("workerCount")]
     public double? WorkerCount { get; set; }
 }
@@ -2045,7 +2045,7 @@ public partial class V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClus
     [JsonPropertyName("securityGroupSelector")]
     public V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClusterVpcSecurityGroupSelector? SecurityGroupSelector { get; set; }
 
-    /// <summary>The security groups for the connector.</summary>
+    /// <summary>Security groups for the connector.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -2057,17 +2057,17 @@ public partial class V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClus
     [JsonPropertyName("subnetSelector")]
     public V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClusterVpcSubnetSelector? SubnetSelector { get; set; }
 
-    /// <summary>The subnets for the connector.</summary>
+    /// <summary>Subnets for the connector.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The bootstrap servers of the cluster.</summary>
+    /// <summary>Bootstrap servers of the cluster.</summary>
     [JsonPropertyName("bootstrapServers")]
     public string? BootstrapServers { get; set; }
 
@@ -2076,12 +2076,12 @@ public partial class V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClus
     public V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaClusterVpc? Vpc { get; set; }
 }
 
-/// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderKafkaCluster
 {
-    /// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ConnectorSpecInitProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 }
@@ -2091,7 +2091,7 @@ public partial class V1beta1ConnectorSpecInitProviderKafkaCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderKafkaClusterClientAuthentication
 {
-    /// <summary>The type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
+    /// <summary>Type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
     [JsonPropertyName("authenticationType")]
     public string? AuthenticationType { get; set; }
 }
@@ -2101,7 +2101,7 @@ public partial class V1beta1ConnectorSpecInitProviderKafkaClusterClientAuthentic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
+    /// <summary>Type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 }
@@ -2270,7 +2270,7 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group that is the destination for log delivery.</summary>
+    /// <summary>Name of the CloudWatch log group that is the destination for log delivery.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -2443,7 +2443,7 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliveryFirehose
 {
-    /// <summary>The name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
+    /// <summary>Name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
@@ -2455,7 +2455,7 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -2620,7 +2620,7 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliveryS3
 {
-    /// <summary>The name of the S3 bucket that is the destination for log delivery.</summary>
+    /// <summary>Name of the S3 bucket that is the destination for log delivery.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -2632,16 +2632,16 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
     [JsonPropertyName("bucketSelector")]
     public V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliveryS3BucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The S3 prefix that is the destination for log delivery.</summary>
+    /// <summary>S3 prefix that is the destination for log delivery.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+/// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDelivery
@@ -2664,7 +2664,7 @@ public partial class V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderLogDelivery
 {
-    /// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+    /// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
     [JsonPropertyName("workerLogDelivery")]
     public V1beta1ConnectorSpecInitProviderLogDeliveryWorkerLogDelivery? WorkerLogDelivery { get; set; }
 }
@@ -2841,7 +2841,7 @@ public partial class V1beta1ConnectorSpecInitProviderPluginCustomPlugin
     [JsonPropertyName("arnSelector")]
     public V1beta1ConnectorSpecInitProviderPluginCustomPluginArnSelector? ArnSelector { get; set; }
 
-    /// <summary>The revision of the custom plugin.</summary>
+    /// <summary>Revision of the custom plugin.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -3165,7 +3165,7 @@ public partial class V1beta1ConnectorSpecInitProviderWorkerConfigurationArnSelec
     public V1beta1ConnectorSpecInitProviderWorkerConfigurationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+/// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderWorkerConfiguration
@@ -3182,7 +3182,7 @@ public partial class V1beta1ConnectorSpecInitProviderWorkerConfiguration
     [JsonPropertyName("arnSelector")]
     public V1beta1ConnectorSpecInitProviderWorkerConfigurationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>The revision of the worker configuration.</summary>
+    /// <summary>Revision of the worker configuration.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -3207,15 +3207,15 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("capacity")]
     public V1beta1ConnectorSpecInitProviderCapacity? Capacity { get; set; }
 
-    /// <summary>A map of keys to values that represent the configuration for the connector.</summary>
+    /// <summary>Map of keys to values that represent the configuration for the connector.</summary>
     [JsonPropertyName("connectorConfiguration")]
     public IDictionary<string, string>? ConnectorConfiguration { get; set; }
 
-    /// <summary>A summary description of the connector.</summary>
+    /// <summary>Summary description of the connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
     [JsonPropertyName("kafkaCluster")]
     public V1beta1ConnectorSpecInitProviderKafkaCluster? KafkaCluster { get; set; }
 
@@ -3227,7 +3227,7 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("kafkaClusterEncryptionInTransit")]
     public V1beta1ConnectorSpecInitProviderKafkaClusterEncryptionInTransit? KafkaClusterEncryptionInTransit { get; set; }
 
-    /// <summary>The version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
+    /// <summary>Version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
     [JsonPropertyName("kafkaconnectVersion")]
     public string? KafkaconnectVersion { get; set; }
 
@@ -3235,7 +3235,7 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("logDelivery")]
     public V1beta1ConnectorSpecInitProviderLogDelivery? LogDelivery { get; set; }
 
-    /// <summary>Specifies which plugins to use for the connector. See plugin Block for details.</summary>
+    /// <summary>Plugins to use for the connector. See plugin Block for details.</summary>
     [JsonPropertyName("plugin")]
     public IList<V1beta1ConnectorSpecInitProviderPlugin>? Plugin { get; set; }
 
@@ -3255,7 +3255,7 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+    /// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
     [JsonPropertyName("workerConfiguration")]
     public V1beta1ConnectorSpecInitProviderWorkerConfiguration? WorkerConfiguration { get; set; }
 }
@@ -3367,22 +3367,22 @@ public partial class V1beta1ConnectorSpec
     public V1beta1ConnectorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+/// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderCapacityAutoscalingScaleInPolicy
 {
-    /// <summary>Specifies the CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale in to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
 
-/// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+/// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderCapacityAutoscalingScaleOutPolicy
 {
-    /// <summary>The CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
+    /// <summary>CPU utilization percentage threshold at which you want connector scale out to be triggered.</summary>
     [JsonPropertyName("cpuUtilizationPercentage")]
     public double? CpuUtilizationPercentage { get; set; }
 }
@@ -3392,23 +3392,23 @@ public partial class V1beta1ConnectorStatusAtProviderCapacityAutoscalingScaleOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderCapacityAutoscaling
 {
-    /// <summary>The maximum number of workers allocated to the connector.</summary>
+    /// <summary>Maximum number of workers allocated to the connector.</summary>
     [JsonPropertyName("maxWorkerCount")]
     public double? MaxWorkerCount { get; set; }
 
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The minimum number of workers allocated to the connector.</summary>
+    /// <summary>Minimum number of workers allocated to the connector.</summary>
     [JsonPropertyName("minWorkerCount")]
     public double? MinWorkerCount { get; set; }
 
-    /// <summary>The scale-in policy for the connector. See scale_in_policy Block for details.</summary>
+    /// <summary>Scale-in policy for the connector. See scale_in_policy Block for details.</summary>
     [JsonPropertyName("scaleInPolicy")]
     public V1beta1ConnectorStatusAtProviderCapacityAutoscalingScaleInPolicy? ScaleInPolicy { get; set; }
 
-    /// <summary>The scale-out policy for the connector. See scale_out_policy Block for details.</summary>
+    /// <summary>Scale-out policy for the connector. See scale_out_policy Block for details.</summary>
     [JsonPropertyName("scaleOutPolicy")]
     public V1beta1ConnectorStatusAtProviderCapacityAutoscalingScaleOutPolicy? ScaleOutPolicy { get; set; }
 }
@@ -3418,11 +3418,11 @@ public partial class V1beta1ConnectorStatusAtProviderCapacityAutoscaling
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderCapacityProvisionedCapacity
 {
-    /// <summary>The number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
+    /// <summary>Number of microcontroller units (MCUs) allocated to each connector worker. Valid values: 1, 2, 4, 8. The default value is 1.</summary>
     [JsonPropertyName("mcuCount")]
     public double? McuCount { get; set; }
 
-    /// <summary>The number of workers that are allocated to the connector.</summary>
+    /// <summary>Number of workers that are allocated to the connector.</summary>
     [JsonPropertyName("workerCount")]
     public double? WorkerCount { get; set; }
 }
@@ -3446,21 +3446,21 @@ public partial class V1beta1ConnectorStatusAtProviderCapacity
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderKafkaClusterApacheKafkaClusterVpc
 {
-    /// <summary>The security groups for the connector.</summary>
+    /// <summary>Security groups for the connector.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>The subnets for the connector.</summary>
+    /// <summary>Subnets for the connector.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The bootstrap servers of the cluster.</summary>
+    /// <summary>Bootstrap servers of the cluster.</summary>
     [JsonPropertyName("bootstrapServers")]
     public string? BootstrapServers { get; set; }
 
@@ -3469,12 +3469,12 @@ public partial class V1beta1ConnectorStatusAtProviderKafkaClusterApacheKafkaClus
     public V1beta1ConnectorStatusAtProviderKafkaClusterApacheKafkaClusterVpc? Vpc { get; set; }
 }
 
-/// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+/// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderKafkaCluster
 {
-    /// <summary>The Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to which the connector is connected. See apache_kafka_cluster Block for details.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ConnectorStatusAtProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 }
@@ -3484,7 +3484,7 @@ public partial class V1beta1ConnectorStatusAtProviderKafkaCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderKafkaClusterClientAuthentication
 {
-    /// <summary>The type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
+    /// <summary>Type of client authentication used to connect to the Apache Kafka cluster. Valid values: IAM, NONE. A value of NONE means that no client authentication is used. The default value is NONE.</summary>
     [JsonPropertyName("authenticationType")]
     public string? AuthenticationType { get; set; }
 }
@@ -3494,7 +3494,7 @@ public partial class V1beta1ConnectorStatusAtProviderKafkaClusterClientAuthentic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
+    /// <summary>Type of encryption in transit to the Apache Kafka cluster. Valid values: PLAINTEXT, TLS. The default values is PLAINTEXT.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 }
@@ -3508,7 +3508,7 @@ public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliver
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group that is the destination for log delivery.</summary>
+    /// <summary>Name of the CloudWatch log group that is the destination for log delivery.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 }
@@ -3518,11 +3518,11 @@ public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliveryFirehose
 {
-    /// <summary>The name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
+    /// <summary>Name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -3532,20 +3532,20 @@ public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliveryS3
 {
-    /// <summary>The name of the S3 bucket that is the destination for log delivery.</summary>
+    /// <summary>Name of the S3 bucket that is the destination for log delivery.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Specifies whether connector logs get sent to the specified Amazon S3 destination.</summary>
+    /// <summary>Whether connector logs get sent to the specified Amazon S3 destination.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The S3 prefix that is the destination for log delivery.</summary>
+    /// <summary>S3 prefix that is the destination for log delivery.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+/// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDelivery
@@ -3568,7 +3568,7 @@ public partial class V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDeliver
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderLogDelivery
 {
-    /// <summary>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
+    /// <summary>Workers can send worker logs to different destination types. This configuration specifies the details of these destinations. See worker_log_delivery Block for details.</summary>
     [JsonPropertyName("workerLogDelivery")]
     public V1beta1ConnectorStatusAtProviderLogDeliveryWorkerLogDelivery? WorkerLogDelivery { get; set; }
 }
@@ -3582,7 +3582,7 @@ public partial class V1beta1ConnectorStatusAtProviderPluginCustomPlugin
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The revision of the custom plugin.</summary>
+    /// <summary>Revision of the custom plugin.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -3596,7 +3596,7 @@ public partial class V1beta1ConnectorStatusAtProviderPlugin
     public V1beta1ConnectorStatusAtProviderPluginCustomPlugin? CustomPlugin { get; set; }
 }
 
-/// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+/// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderWorkerConfiguration
@@ -3605,7 +3605,7 @@ public partial class V1beta1ConnectorStatusAtProviderWorkerConfiguration
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The revision of the worker configuration.</summary>
+    /// <summary>Revision of the worker configuration.</summary>
     [JsonPropertyName("revision")]
     public double? Revision { get; set; }
 }
@@ -3622,18 +3622,18 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("capacity")]
     public V1beta1ConnectorStatusAtProviderCapacity? Capacity { get; set; }
 
-    /// <summary>A map of keys to values that represent the configuration for the connector.</summary>
+    /// <summary>Map of keys to values that represent the configuration for the connector.</summary>
     [JsonPropertyName("connectorConfiguration")]
     public IDictionary<string, string>? ConnectorConfiguration { get; set; }
 
-    /// <summary>A summary description of the connector.</summary>
+    /// <summary>Summary description of the connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies which Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
+    /// <summary>Apache Kafka cluster to connect to. See kafka_cluster Block for details.</summary>
     [JsonPropertyName("kafkaCluster")]
     public V1beta1ConnectorStatusAtProviderKafkaCluster? KafkaCluster { get; set; }
 
@@ -3645,7 +3645,7 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("kafkaClusterEncryptionInTransit")]
     public V1beta1ConnectorStatusAtProviderKafkaClusterEncryptionInTransit? KafkaClusterEncryptionInTransit { get; set; }
 
-    /// <summary>The version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
+    /// <summary>Version of Kafka Connect. It has to be compatible with both the Apache Kafka cluster&apos;s version and the plugins.</summary>
     [JsonPropertyName("kafkaconnectVersion")]
     public string? KafkaconnectVersion { get; set; }
 
@@ -3653,11 +3653,11 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("logDelivery")]
     public V1beta1ConnectorStatusAtProviderLogDelivery? LogDelivery { get; set; }
 
-    /// <summary>The name of the connector.</summary>
+    /// <summary>Name of the connector.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which plugins to use for the connector. See plugin Block for details.</summary>
+    /// <summary>Plugins to use for the connector. See plugin Block for details.</summary>
     [JsonPropertyName("plugin")]
     public IList<V1beta1ConnectorStatusAtProviderPlugin>? Plugin { get; set; }
 
@@ -3676,15 +3676,15 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The current version of the connector.</summary>
+    /// <summary>Current version of the connector.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
-    /// <summary>Specifies which worker configuration to use with the connector. See worker_configuration Block for details.</summary>
+    /// <summary>Worker configuration to use with the connector. See worker_configuration Block for details.</summary>
     [JsonPropertyName("workerConfiguration")]
     public V1beta1ConnectorStatusAtProviderWorkerConfiguration? WorkerConfiguration { get; set; }
 }

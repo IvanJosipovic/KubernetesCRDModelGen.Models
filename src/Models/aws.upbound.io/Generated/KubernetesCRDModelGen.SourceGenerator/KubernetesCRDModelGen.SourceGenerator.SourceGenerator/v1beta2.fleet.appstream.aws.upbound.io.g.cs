@@ -1174,7 +1174,7 @@ public partial class V1beta2FleetStatusAtProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FleetStatusAtProvider
 {
-    /// <summary>ARN of the appstream fleet.</summary>
+    /// <summary>ARN of the AppStream fleet.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1214,7 +1214,7 @@ public partial class V1beta2FleetStatusAtProvider
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
-    /// <summary>Unique identifier (ID) of the appstream fleet.</summary>
+    /// <summary>Unique identifier (ID) of the AppStream fleet.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

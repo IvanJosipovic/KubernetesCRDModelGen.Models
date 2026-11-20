@@ -396,7 +396,7 @@ public partial class V1beta2CompositeAlarmSpecForProvider
     [JsonPropertyName("alarmDescription")]
     public string? AlarmDescription { get; set; }
 
-    /// <summary>An expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters.</summary>
+    /// <summary>Expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters. Leading and trailing whitespace are not allowed.</summary>
     [JsonPropertyName("alarmRule")]
     public string? AlarmRule { get; set; }
 
@@ -780,7 +780,7 @@ public partial class V1beta2CompositeAlarmSpecInitProvider
     [JsonPropertyName("alarmDescription")]
     public string? AlarmDescription { get; set; }
 
-    /// <summary>An expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters.</summary>
+    /// <summary>Expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters. Leading and trailing whitespace are not allowed.</summary>
     [JsonPropertyName("alarmRule")]
     public string? AlarmRule { get; set; }
 
@@ -1026,7 +1026,7 @@ public partial class V1beta2CompositeAlarmStatusAtProvider
     [JsonPropertyName("alarmDescription")]
     public string? AlarmDescription { get; set; }
 
-    /// <summary>An expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters.</summary>
+    /// <summary>Expression that specifies which other alarms are to be evaluated to determine this composite alarm&apos;s state. For syntax, see Creating a Composite Alarm. The maximum length is 10240 characters. Leading and trailing whitespace are not allowed.</summary>
     [JsonPropertyName("alarmRule")]
     public string? AlarmRule { get; set; }
 

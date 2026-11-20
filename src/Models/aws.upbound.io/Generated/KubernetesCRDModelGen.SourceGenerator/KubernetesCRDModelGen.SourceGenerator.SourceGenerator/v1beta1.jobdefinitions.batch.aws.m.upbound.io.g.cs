@@ -387,7 +387,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }
 
-/// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+/// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksProperties
@@ -458,7 +458,7 @@ public partial class V1beta1JobDefinitionSpecForProvider
     [JsonPropertyName("ecsProperties")]
     public string? EcsProperties { get; set; }
 
-    /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+    /// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
     [JsonPropertyName("eksProperties")]
     public V1beta1JobDefinitionSpecForProviderEksProperties? EksProperties { get; set; }
 
@@ -860,7 +860,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }
 
-/// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+/// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksProperties
@@ -943,7 +943,7 @@ public partial class V1beta1JobDefinitionSpecInitProvider
     [JsonPropertyName("ecsProperties")]
     public string? EcsProperties { get; set; }
 
-    /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+    /// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
     [JsonPropertyName("eksProperties")]
     public V1beta1JobDefinitionSpecInitProviderEksProperties? EksProperties { get; set; }
 
@@ -1445,7 +1445,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }
 
-/// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+/// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksProperties
@@ -1524,7 +1524,7 @@ public partial class V1beta1JobDefinitionStatusAtProvider
     [JsonPropertyName("ecsProperties")]
     public string? EcsProperties { get; set; }
 
-    /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
+    /// <summary>Valid EKS properties. This parameter is only valid if the type parameter is container.</summary>
     [JsonPropertyName("eksProperties")]
     public V1beta1JobDefinitionStatusAtProviderEksProperties? EksProperties { get; set; }
 

@@ -41,31 +41,31 @@ public partial class V1beta1MultiRegionClusterList : IKubernetesObject<V1ListMet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiRegionClusterSpecForProvider
 {
-    /// <summary>description for the multi-region cluster.</summary>
+    /// <summary>Description for the multi-region cluster.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
+    /// <summary>Name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
+    /// <summary>Version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>A suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
+    /// <summary>Suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
     [JsonPropertyName("multiRegionClusterNameSuffix")]
     public string? MultiRegionClusterNameSuffix { get; set; }
 
-    /// <summary>The name of the multi-region parameter group to be associated with the cluster.</summary>
+    /// <summary>Name of the multi-region parameter group to be associated with the cluster.</summary>
     [JsonPropertyName("multiRegionParameterGroupName")]
     public string? MultiRegionParameterGroupName { get; set; }
 
-    /// <summary>The node type to be used for the multi-region cluster.</summary>
+    /// <summary>Node type to be used for the multi-region cluster.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of shards for the multi-region cluster.</summary>
+    /// <summary>Number of shards for the multi-region cluster.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
@@ -80,10 +80,11 @@ public partial class V1beta1MultiRegionClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 
+    /// <summary>Strategy to use for the multi-region cluster update. Valid values are coordinated and uncoordinated.</summary>
     [JsonPropertyName("updateStrategy")]
     public string? UpdateStrategy { get; set; }
 }
@@ -104,31 +105,31 @@ public partial class V1beta1MultiRegionClusterSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiRegionClusterSpecInitProvider
 {
-    /// <summary>description for the multi-region cluster.</summary>
+    /// <summary>Description for the multi-region cluster.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
+    /// <summary>Name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
+    /// <summary>Version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>A suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
+    /// <summary>Suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
     [JsonPropertyName("multiRegionClusterNameSuffix")]
     public string? MultiRegionClusterNameSuffix { get; set; }
 
-    /// <summary>The name of the multi-region parameter group to be associated with the cluster.</summary>
+    /// <summary>Name of the multi-region parameter group to be associated with the cluster.</summary>
     [JsonPropertyName("multiRegionParameterGroupName")]
     public string? MultiRegionParameterGroupName { get; set; }
 
-    /// <summary>The node type to be used for the multi-region cluster.</summary>
+    /// <summary>Node type to be used for the multi-region cluster.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of shards for the multi-region cluster.</summary>
+    /// <summary>Number of shards for the multi-region cluster.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
@@ -136,10 +137,11 @@ public partial class V1beta1MultiRegionClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 
+    /// <summary>Strategy to use for the multi-region cluster update. Valid values are coordinated and uncoordinated.</summary>
     [JsonPropertyName("updateStrategy")]
     public string? UpdateStrategy { get; set; }
 }
@@ -255,42 +257,42 @@ public partial class V1beta1MultiRegionClusterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiRegionClusterStatusAtProvider
 {
-    /// <summary>The ARN of the multi-region cluster.</summary>
+    /// <summary>ARN of the multi-region cluster.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>description for the multi-region cluster.</summary>
+    /// <summary>Description for the multi-region cluster.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
+    /// <summary>Name of the engine to be used for the multi-region cluster. Valid values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
+    /// <summary>Version of the engine to be used for the multi-region cluster. Downgrades are not supported.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the multi-region cluster.</summary>
+    /// <summary>Name of the multi-region cluster.</summary>
     [JsonPropertyName("multiRegionClusterName")]
     public string? MultiRegionClusterName { get; set; }
 
-    /// <summary>A suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
+    /// <summary>Suffix to be added to the multi-region cluster name. An AWS generated prefix is automatically applied to the multi-region cluster name when it is created.</summary>
     [JsonPropertyName("multiRegionClusterNameSuffix")]
     public string? MultiRegionClusterNameSuffix { get; set; }
 
-    /// <summary>The name of the multi-region parameter group to be associated with the cluster.</summary>
+    /// <summary>Name of the multi-region parameter group to be associated with the cluster.</summary>
     [JsonPropertyName("multiRegionParameterGroupName")]
     public string? MultiRegionParameterGroupName { get; set; }
 
-    /// <summary>The node type to be used for the multi-region cluster.</summary>
+    /// <summary>Node type to be used for the multi-region cluster.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of shards for the multi-region cluster.</summary>
+    /// <summary>Number of shards for the multi-region cluster.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
@@ -301,6 +303,7 @@ public partial class V1beta1MultiRegionClusterStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Status of the multi-region cluster.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -308,14 +311,15 @@ public partial class V1beta1MultiRegionClusterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 
+    /// <summary>Strategy to use for the multi-region cluster update. Valid values are coordinated and uncoordinated.</summary>
     [JsonPropertyName("updateStrategy")]
     public string? UpdateStrategy { get; set; }
 }

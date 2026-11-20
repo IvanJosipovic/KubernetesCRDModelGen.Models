@@ -902,7 +902,7 @@ public partial class V1beta1LaunchTemplateSpecForProviderInstanceRequirements
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta1LaunchTemplateSpecForProviderInstanceRequirements
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -1561,7 +1561,7 @@ public partial class V1beta1LaunchTemplateSpecForProviderNetworkInterfaces
     [JsonPropertyName("associateCarrierIpAddress")]
     public string? AssociateCarrierIpAddress { get; set; }
 
-    /// <summary>Associate a public ip address with the network interface. Boolean value, can be left unset.</summary>
+    /// <summary>Associate a public IP address with the network interface. Boolean value, can be left unset.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public string? AssociatePublicIpAddress { get; set; }
 
@@ -3162,7 +3162,7 @@ public partial class V1beta1LaunchTemplateSpecInitProviderInstanceRequirements
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -3178,7 +3178,7 @@ public partial class V1beta1LaunchTemplateSpecInitProviderInstanceRequirements
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -3821,7 +3821,7 @@ public partial class V1beta1LaunchTemplateSpecInitProviderNetworkInterfaces
     [JsonPropertyName("associateCarrierIpAddress")]
     public string? AssociateCarrierIpAddress { get; set; }
 
-    /// <summary>Associate a public ip address with the network interface. Boolean value, can be left unset.</summary>
+    /// <summary>Associate a public IP address with the network interface. Boolean value, can be left unset.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public string? AssociatePublicIpAddress { get; set; }
 
@@ -5045,7 +5045,7 @@ public partial class V1beta1LaunchTemplateStatusAtProviderInstanceRequirements
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -5061,7 +5061,7 @@ public partial class V1beta1LaunchTemplateStatusAtProviderInstanceRequirements
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -5239,7 +5239,7 @@ public partial class V1beta1LaunchTemplateStatusAtProviderNetworkInterfaces
     [JsonPropertyName("associateCarrierIpAddress")]
     public string? AssociateCarrierIpAddress { get; set; }
 
-    /// <summary>Associate a public ip address with the network interface. Boolean value, can be left unset.</summary>
+    /// <summary>Associate a public IP address with the network interface. Boolean value, can be left unset.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public string? AssociatePublicIpAddress { get; set; }
 

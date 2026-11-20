@@ -358,7 +358,7 @@ public partial class V1beta1VPNGatewayRoutePropagationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The id of the aws_route_table to propagate routes into.</summary>
+    /// <summary>ID of the aws_route_table to propagate routes into.</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta1VPNGatewayRoutePropagationSpecForProvider
     [JsonPropertyName("routeTableIdSelector")]
     public V1beta1VPNGatewayRoutePropagationSpecForProviderRouteTableIdSelector? RouteTableIdSelector { get; set; }
 
-    /// <summary>The id of the aws_vpn_gateway to propagate routes from.</summary>
+    /// <summary>ID of the aws_vpn_gateway to propagate routes from.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -709,7 +709,7 @@ public partial class V1beta1VPNGatewayRoutePropagationSpecInitProviderVpnGateway
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNGatewayRoutePropagationSpecInitProvider
 {
-    /// <summary>The id of the aws_route_table to propagate routes into.</summary>
+    /// <summary>ID of the aws_route_table to propagate routes into.</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
@@ -721,7 +721,7 @@ public partial class V1beta1VPNGatewayRoutePropagationSpecInitProvider
     [JsonPropertyName("routeTableIdSelector")]
     public V1beta1VPNGatewayRoutePropagationSpecInitProviderRouteTableIdSelector? RouteTableIdSelector { get; set; }
 
-    /// <summary>The id of the aws_vpn_gateway to propagate routes from.</summary>
+    /// <summary>ID of the aws_vpn_gateway to propagate routes from.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -855,11 +855,11 @@ public partial class V1beta1VPNGatewayRoutePropagationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The id of the aws_route_table to propagate routes into.</summary>
+    /// <summary>ID of the aws_route_table to propagate routes into.</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
-    /// <summary>The id of the aws_vpn_gateway to propagate routes from.</summary>
+    /// <summary>ID of the aws_vpn_gateway to propagate routes from.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 }

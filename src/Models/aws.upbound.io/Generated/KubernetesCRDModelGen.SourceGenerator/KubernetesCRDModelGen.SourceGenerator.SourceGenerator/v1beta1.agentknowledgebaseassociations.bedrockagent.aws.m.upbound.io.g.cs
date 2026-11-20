@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
-/// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API.</summary>
+/// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API. Manages an AWS Agents for Amazon Bedrock Agent Knowledge Base Association.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -363,7 +363,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProvider
     [JsonPropertyName("agentIdSelector")]
     public V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelector? AgentIdSelector { get; set; }
 
-    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.</summary>
+    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.</summary>
     [JsonPropertyName("agentVersion")]
     public string? AgentVersion { get; set; }
 
@@ -411,7 +411,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecInitProvider
 {
-    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.</summary>
+    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.</summary>
     [JsonPropertyName("agentVersion")]
     public string? AgentVersion { get; set; }
 
@@ -539,7 +539,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationStatusAtProvider
     [JsonPropertyName("agentId")]
     public string? AgentId { get; set; }
 
-    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.</summary>
+    /// <summary>Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.</summary>
     [JsonPropertyName("agentVersion")]
     public string? AgentVersion { get; set; }
 
@@ -640,7 +640,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API.</summary>
+/// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API. Manages an AWS Agents for Amazon Bedrock Agent Knowledge Base Association.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

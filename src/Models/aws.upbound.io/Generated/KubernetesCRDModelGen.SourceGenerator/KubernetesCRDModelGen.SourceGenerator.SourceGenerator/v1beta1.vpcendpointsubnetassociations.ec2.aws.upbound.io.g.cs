@@ -361,7 +361,7 @@ public partial class V1beta1VPCEndpointSubnetAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the subnet to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the subnet to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -373,7 +373,7 @@ public partial class V1beta1VPCEndpointSubnetAssociationSpecForProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1VPCEndpointSubnetAssociationSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the subnet will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the subnet will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
@@ -696,7 +696,7 @@ public partial class V1beta1VPCEndpointSubnetAssociationSpecInitProviderVpcEndpo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointSubnetAssociationSpecInitProvider
 {
-    /// <summary>The ID of the subnet to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the subnet to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -708,7 +708,7 @@ public partial class V1beta1VPCEndpointSubnetAssociationSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1VPCEndpointSubnetAssociationSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the subnet will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the subnet will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
@@ -908,7 +908,7 @@ public partial class V1beta1VPCEndpointSubnetAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointSubnetAssociationStatusAtProvider
 {
-    /// <summary>The ID of the association.</summary>
+    /// <summary>ID of the association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -919,11 +919,11 @@ public partial class V1beta1VPCEndpointSubnetAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the subnet to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the subnet to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the subnet will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the subnet will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 }

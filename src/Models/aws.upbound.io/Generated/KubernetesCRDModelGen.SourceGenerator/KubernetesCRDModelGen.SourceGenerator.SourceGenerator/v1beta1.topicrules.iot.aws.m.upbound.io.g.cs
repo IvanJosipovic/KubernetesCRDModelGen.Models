@@ -416,7 +416,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 
@@ -1103,7 +1103,7 @@ public partial class V1beta1TopicRuleSpecForProviderIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 
@@ -2140,7 +2140,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 
@@ -2827,7 +2827,7 @@ public partial class V1beta1TopicRuleSpecInitProviderIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 
@@ -3976,7 +3976,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 
@@ -4337,7 +4337,7 @@ public partial class V1beta1TopicRuleStatusAtProviderIotAnalytics
     [JsonPropertyName("batchMode")]
     public bool? BatchMode { get; set; }
 
-    /// <summary>Name of AWS IOT Analytics channel.</summary>
+    /// <summary>Name of AWS IoT Analytics channel.</summary>
     [JsonPropertyName("channelName")]
     public string? ChannelName { get; set; }
 

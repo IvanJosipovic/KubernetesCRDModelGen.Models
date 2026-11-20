@@ -1051,6 +1051,10 @@ public partial class V1beta1PlanStatusAtProviderRule
     [JsonPropertyName("recoveryPointTags")]
     public IDictionary<string, string>? RecoveryPointTags { get; set; }
 
+    /// <summary>Uniquely identifies a rule that is used to schedule the backup of a selection of resources.</summary>
+    [JsonPropertyName("ruleId")]
+    public string? RuleId { get; set; }
+
     /// <summary>An display name for a backup rule.</summary>
     [JsonPropertyName("ruleName")]
     public string? RuleName { get; set; }

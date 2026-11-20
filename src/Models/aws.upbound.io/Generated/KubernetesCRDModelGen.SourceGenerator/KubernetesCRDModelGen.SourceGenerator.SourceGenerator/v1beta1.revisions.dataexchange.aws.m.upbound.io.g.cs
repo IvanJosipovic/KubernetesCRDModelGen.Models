@@ -200,7 +200,7 @@ public partial class V1beta1RevisionSpecForProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>The dataset id.</summary>
+    /// <summary>The dataset ID.</summary>
     [JsonPropertyName("dataSetId")]
     public string? DataSetId { get; set; }
 
@@ -399,7 +399,7 @@ public partial class V1beta1RevisionSpecInitProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>The dataset id.</summary>
+    /// <summary>The dataset ID.</summary>
     [JsonPropertyName("dataSetId")]
     public string? DataSetId { get; set; }
 
@@ -535,11 +535,11 @@ public partial class V1beta1RevisionStatusAtProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>The dataset id.</summary>
+    /// <summary>The dataset ID.</summary>
     [JsonPropertyName("dataSetId")]
     public string? DataSetId { get; set; }
 
-    /// <summary>The Id of the data set.</summary>
+    /// <summary>The ID of the data set.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -550,7 +550,7 @@ public partial class V1beta1RevisionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Id of the revision.</summary>
+    /// <summary>The ID of the revision.</summary>
     [JsonPropertyName("revisionId")]
     public string? RevisionId { get; set; }
 

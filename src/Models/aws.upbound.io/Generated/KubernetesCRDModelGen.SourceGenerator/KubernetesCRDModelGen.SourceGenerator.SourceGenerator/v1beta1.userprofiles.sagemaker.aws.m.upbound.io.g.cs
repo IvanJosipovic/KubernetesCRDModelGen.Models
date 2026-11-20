@@ -454,7 +454,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSyst
     public IList<V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig>? EfsFileSystemConfig { get; set; }
 }
 
-/// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+/// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUserConfig
@@ -902,7 +902,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettings
     [JsonPropertyName("customFileSystemConfig")]
     public IList<V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfig>? CustomFileSystemConfig { get; set; }
 
-    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
     [JsonPropertyName("customPosixUserConfig")]
     public V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUserConfig? CustomPosixUserConfig { get; set; }
 
@@ -1420,7 +1420,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSys
     public IList<V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig>? EfsFileSystemConfig { get; set; }
 }
 
-/// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+/// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUserConfig
@@ -1868,7 +1868,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettings
     [JsonPropertyName("customFileSystemConfig")]
     public IList<V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfig>? CustomFileSystemConfig { get; set; }
 
-    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
     [JsonPropertyName("customPosixUserConfig")]
     public V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUserConfig? CustomPosixUserConfig { get; set; }
 
@@ -2343,7 +2343,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSys
     public IList<V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig>? EfsFileSystemConfig { get; set; }
 }
 
-/// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+/// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUserConfig
@@ -2791,7 +2791,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettings
     [JsonPropertyName("customFileSystemConfig")]
     public IList<V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfig>? CustomFileSystemConfig { get; set; }
 
-    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
+    /// <summary>Details about the POSIX identity that is used for file system operations. See Custom POSIX User Config below.</summary>
     [JsonPropertyName("customPosixUserConfig")]
     public V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUserConfig? CustomPosixUserConfig { get; set; }
 

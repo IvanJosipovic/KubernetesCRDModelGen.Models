@@ -679,7 +679,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
+    /// <summary>Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -831,7 +831,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -847,7 +847,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -1775,7 +1775,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
+    /// <summary>Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -1927,7 +1927,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -1943,7 +1943,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -2502,7 +2502,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
+    /// <summary>Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource&apos;s attribute, e.g., &quot;${aws_launch_template.foo.latest_version}&quot;. It will use the default version if omitted.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -2646,7 +2646,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -2662,7 +2662,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 

@@ -46,7 +46,7 @@ public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptionsIdp
     [JsonPropertyName("entityId")]
     public string? EntityId { get; set; }
 
-    /// <summary>The Metadata of the SAML application in xml format.</summary>
+    /// <summary>The Metadata of the SAML application in XML format.</summary>
     [JsonPropertyName("metadataContent")]
     public string? MetadataContent { get; set; }
 }
@@ -123,7 +123,7 @@ public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptionsIdp
     [JsonPropertyName("entityId")]
     public string? EntityId { get; set; }
 
-    /// <summary>The Metadata of the SAML application in xml format.</summary>
+    /// <summary>The Metadata of the SAML application in XML format.</summary>
     [JsonPropertyName("metadataContent")]
     public string? MetadataContent { get; set; }
 }
@@ -312,7 +312,7 @@ public partial class V1beta1DomainSAMLOptionsStatusAtProviderSamlOptionsIdp
     [JsonPropertyName("entityId")]
     public string? EntityId { get; set; }
 
-    /// <summary>The Metadata of the SAML application in xml format.</summary>
+    /// <summary>The Metadata of the SAML application in XML format.</summary>
     [JsonPropertyName("metadataContent")]
     public string? MetadataContent { get; set; }
 }

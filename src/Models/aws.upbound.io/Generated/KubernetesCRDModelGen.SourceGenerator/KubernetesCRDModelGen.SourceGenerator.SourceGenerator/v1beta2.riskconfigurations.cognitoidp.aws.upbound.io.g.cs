@@ -1246,7 +1246,7 @@ public partial class V1beta2RiskConfigurationStatusAtProvider
     [JsonPropertyName("compromisedCredentialsRiskConfiguration")]
     public V1beta2RiskConfigurationStatusAtProviderCompromisedCredentialsRiskConfiguration? CompromisedCredentialsRiskConfiguration { get; set; }
 
-    /// <summary>The user pool ID or the user pool ID and Client Id separated by a : if the configuration is client specific.</summary>
+    /// <summary>The user pool ID or the user pool ID and Client ID separated by a : if the configuration is client specific.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

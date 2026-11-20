@@ -203,12 +203,12 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluster
 {
-    /// <summary>The ARN of an Amazon MSK cluster.</summary>
+    /// <summary>ARN of an Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 
@@ -221,16 +221,16 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelector? MskClusterArnSelector { get; set; }
 }
 
-/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    /// <summary>Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
     [JsonPropertyName("apacheKafkaClusterId")]
     public string? ApacheKafkaClusterId { get; set; }
 
-    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    /// <summary>Bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
     [JsonPropertyName("bootstrapBrokerString")]
     public string? BootstrapBrokerString { get; set; }
 }
@@ -382,12 +382,12 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -547,16 +547,16 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScram
 {
-    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    /// <summary>SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
     [JsonPropertyName("mechanism")]
     public string? Mechanism { get; set; }
 
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -569,16 +569,16 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentication
 {
-    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
     [JsonPropertyName("mtls")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
 
-    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
     [JsonPropertyName("saslScram")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
 }
@@ -730,12 +730,12 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
     public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("rootCaCertificate")]
     public string? RootCaCertificate { get; set; }
 
@@ -1042,12 +1042,12 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
 {
-    /// <summary>The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
+    /// <summary>AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
     [JsonPropertyName("securityGroupsIds")]
     public IList<string>? SecurityGroupsIds { get; set; }
 
@@ -1076,23 +1076,23 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 
-    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
@@ -1244,12 +1244,12 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
-    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1413,7 +1413,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehose
@@ -1430,7 +1430,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1582,7 +1582,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3
@@ -1608,30 +1608,30 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+/// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
     [JsonPropertyName("replicatorLogDelivery")]
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
@@ -1955,22 +1955,22 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKa
     public V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+/// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationStartingPosition
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1991,11 +1991,11 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicRep
     [JsonPropertyName("detectAndCopyNewTopics")]
     public bool? DetectAndCopyNewTopics { get; set; }
 
-    /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+    /// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
     [JsonPropertyName("startingPosition")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationStartingPosition? StartingPosition { get; set; }
 
-    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
     [JsonPropertyName("topicNameConfiguration")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationTopicNameConfiguration? TopicNameConfiguration { get; set; }
 
@@ -2008,16 +2008,16 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicRep
     public IList<string>? TopicsToReplicate { get; set; }
 }
 
-/// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+/// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
 {
-    /// <summary>Configuration relating to consumer group replication.</summary>
+    /// <summary>Configuration relating to consumer group replication. See consumer_group_replication Block below.</summary>
     [JsonPropertyName("consumerGroupReplication")]
     public IList<V1beta1ReplicatorSpecForProviderReplicationInfoListConsumerGroupReplication>? ConsumerGroupReplication { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
 
@@ -2029,15 +2029,15 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
     [JsonPropertyName("sourceKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelector? SourceKafkaClusterArnSelector { get; set; }
 
-    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterId")]
     public string? SourceKafkaClusterId { get; set; }
 
-    /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
+    /// <summary>Type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
     public string? TargetCompressionType { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
 
@@ -2049,11 +2049,11 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
     [JsonPropertyName("targetKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelector? TargetKafkaClusterArnSelector { get; set; }
 
-    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterId")]
     public string? TargetKafkaClusterId { get; set; }
 
-    /// <summary>Configuration relating to topic replication.</summary>
+    /// <summary>Configuration relating to topic replication. See topic_replication Block below.</summary>
     [JsonPropertyName("topicReplication")]
     public IList<V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplication>? TopicReplication { get; set; }
 }
@@ -2209,15 +2209,15 @@ public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProvider
 {
-    /// <summary>A summary description of the replicator.</summary>
+    /// <summary>Summary description of the replicator.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
+    /// <summary>Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecForProviderKafkaCluster>? KafkaCluster { get; set; }
 
-    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
     [JsonPropertyName("logDelivery")]
     public V1beta1ReplicatorSpecForProviderLogDelivery? LogDelivery { get; set; }
 
@@ -2228,15 +2228,15 @@ public partial class V1beta1ReplicatorSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+    /// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
     [JsonPropertyName("replicationInfoList")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoList? ReplicationInfoList { get; set; }
 
-    /// <summary>The name of the replicator.</summary>
+    /// <summary>Name of the replicator.</summary>
     [JsonPropertyName("replicatorName")]
     public string? ReplicatorName { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
+    /// <summary>ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 
@@ -2400,12 +2400,12 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskCluster
 {
-    /// <summary>The ARN of an Amazon MSK cluster.</summary>
+    /// <summary>ARN of an Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 
@@ -2418,16 +2418,16 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelector? MskClusterArnSelector { get; set; }
 }
 
-/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    /// <summary>Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
     [JsonPropertyName("apacheKafkaClusterId")]
     public string? ApacheKafkaClusterId { get; set; }
 
-    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    /// <summary>Bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
     [JsonPropertyName("bootstrapBrokerString")]
     public string? BootstrapBrokerString { get; set; }
 }
@@ -2579,12 +2579,12 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtls
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -2744,16 +2744,16 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScram
 {
-    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    /// <summary>SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
     [JsonPropertyName("mechanism")]
     public string? Mechanism { get; set; }
 
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -2766,16 +2766,16 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthentication
 {
-    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
     [JsonPropertyName("mtls")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
 
-    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
     [JsonPropertyName("saslScram")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
 }
@@ -2927,12 +2927,12 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
     public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("rootCaCertificate")]
     public string? RootCaCertificate { get; set; }
 
@@ -3239,12 +3239,12 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
 {
-    /// <summary>The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
+    /// <summary>AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
     [JsonPropertyName("securityGroupsIds")]
     public IList<string>? SecurityGroupsIds { get; set; }
 
@@ -3273,23 +3273,23 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 
-    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
@@ -3441,12 +3441,12 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
-    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -3610,7 +3610,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehose
@@ -3627,7 +3627,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -3779,7 +3779,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3
@@ -3805,30 +3805,30 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+/// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
     [JsonPropertyName("replicatorLogDelivery")]
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
@@ -4152,22 +4152,22 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetK
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+/// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationStartingPosition
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4188,11 +4188,11 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicRe
     [JsonPropertyName("detectAndCopyNewTopics")]
     public bool? DetectAndCopyNewTopics { get; set; }
 
-    /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+    /// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
     [JsonPropertyName("startingPosition")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationStartingPosition? StartingPosition { get; set; }
 
-    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
     [JsonPropertyName("topicNameConfiguration")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationTopicNameConfiguration? TopicNameConfiguration { get; set; }
 
@@ -4205,16 +4205,16 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicRe
     public IList<string>? TopicsToReplicate { get; set; }
 }
 
-/// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+/// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
 {
-    /// <summary>Configuration relating to consumer group replication.</summary>
+    /// <summary>Configuration relating to consumer group replication. See consumer_group_replication Block below.</summary>
     [JsonPropertyName("consumerGroupReplication")]
     public IList<V1beta1ReplicatorSpecInitProviderReplicationInfoListConsumerGroupReplication>? ConsumerGroupReplication { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
 
@@ -4226,15 +4226,15 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
     [JsonPropertyName("sourceKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelector? SourceKafkaClusterArnSelector { get; set; }
 
-    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterId")]
     public string? SourceKafkaClusterId { get; set; }
 
-    /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
+    /// <summary>Type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
     public string? TargetCompressionType { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
 
@@ -4246,11 +4246,11 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
     [JsonPropertyName("targetKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelector? TargetKafkaClusterArnSelector { get; set; }
 
-    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterId")]
     public string? TargetKafkaClusterId { get; set; }
 
-    /// <summary>Configuration relating to topic replication.</summary>
+    /// <summary>Configuration relating to topic replication. See topic_replication Block below.</summary>
     [JsonPropertyName("topicReplication")]
     public IList<V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplication>? TopicReplication { get; set; }
 }
@@ -4418,27 +4418,27 @@ public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProvider
 {
-    /// <summary>A summary description of the replicator.</summary>
+    /// <summary>Summary description of the replicator.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
+    /// <summary>Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecInitProviderKafkaCluster>? KafkaCluster { get; set; }
 
-    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
     [JsonPropertyName("logDelivery")]
     public V1beta1ReplicatorSpecInitProviderLogDelivery? LogDelivery { get; set; }
 
-    /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+    /// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
     [JsonPropertyName("replicationInfoList")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoList? ReplicationInfoList { get; set; }
 
-    /// <summary>The name of the replicator.</summary>
+    /// <summary>Name of the replicator.</summary>
     [JsonPropertyName("replicatorName")]
     public string? ReplicatorName { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
+    /// <summary>ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 
@@ -4638,84 +4638,84 @@ public partial class V1beta1ReplicatorSpec
     public V1beta1ReplicatorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskCluster
 {
-    /// <summary>The ARN of an Amazon MSK cluster.</summary>
+    /// <summary>ARN of an Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 }
 
-/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaCluster
 {
-    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    /// <summary>Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
     [JsonPropertyName("apacheKafkaClusterId")]
     public string? ApacheKafkaClusterId { get; set; }
 
-    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    /// <summary>Bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
     [JsonPropertyName("bootstrapBrokerString")]
     public string? BootstrapBrokerString { get; set; }
 }
 
-/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationMtls
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
 
-/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationSaslScram
 {
-    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    /// <summary>SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
     [JsonPropertyName("mechanism")]
     public string? Mechanism { get; set; }
 
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
 
-/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthentication
 {
-    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.</summary>
     [JsonPropertyName("mtls")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
 
-    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.</summary>
     [JsonPropertyName("saslScram")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
 }
 
-/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTransit
 {
-    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
     [JsonPropertyName("rootCaCertificate")]
     public string? RootCaCertificate { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
 {
-    /// <summary>The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
+    /// <summary>AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.</summary>
     [JsonPropertyName("securityGroupsIds")]
     public IList<string>? SecurityGroupsIds { get; set; }
 
@@ -4728,33 +4728,33 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.</summary>
     [JsonPropertyName("apacheKafkaCluster")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
 
-    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
-    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -4763,7 +4763,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
     public string? LogGroup { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryFirehose
@@ -4772,12 +4772,12 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
-    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryS3
@@ -4795,30 +4795,30 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+/// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+/// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDelivery
 {
-    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    /// <summary>Configuration block for replicator log delivery. See replicator_log_delivery Block below.</summary>
     [JsonPropertyName("replicatorLogDelivery")]
     public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
@@ -4848,22 +4848,22 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListConsume
     public bool? SynchroniseConsumerGroupOffsets { get; set; }
 }
 
-/// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+/// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationStartingPosition
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+/// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
-    /// <summary>The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
+    /// <summary>Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4884,11 +4884,11 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicRe
     [JsonPropertyName("detectAndCopyNewTopics")]
     public bool? DetectAndCopyNewTopics { get; set; }
 
-    /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
+    /// <summary>Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.</summary>
     [JsonPropertyName("startingPosition")]
     public V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationStartingPosition? StartingPosition { get; set; }
 
-    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
+    /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.</summary>
     [JsonPropertyName("topicNameConfiguration")]
     public V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationTopicNameConfiguration? TopicNameConfiguration { get; set; }
 
@@ -4901,42 +4901,44 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicRe
     public IList<string>? TopicsToReplicate { get; set; }
 }
 
-/// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+/// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoList
 {
-    /// <summary>Configuration relating to consumer group replication.</summary>
+    /// <summary>Configuration relating to consumer group replication. See consumer_group_replication Block below.</summary>
     [JsonPropertyName("consumerGroupReplication")]
     public IList<V1beta1ReplicatorStatusAtProviderReplicationInfoListConsumerGroupReplication>? ConsumerGroupReplication { get; set; }
 
+    /// <summary>(Read-Only) Alias of the source Kafka cluster.</summary>
     [JsonPropertyName("sourceKafkaClusterAlias")]
     public string? SourceKafkaClusterAlias { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
 
-    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterId")]
     public string? SourceKafkaClusterId { get; set; }
 
-    /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
+    /// <summary>Type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
     public string? TargetCompressionType { get; set; }
 
+    /// <summary>(Read-Only) Alias of the target Kafka cluster.</summary>
     [JsonPropertyName("targetKafkaClusterAlias")]
     public string? TargetKafkaClusterAlias { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
 
-    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    /// <summary>Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterId")]
     public string? TargetKafkaClusterId { get; set; }
 
-    /// <summary>Configuration relating to topic replication.</summary>
+    /// <summary>Configuration relating to topic replication. See topic_replication Block below.</summary>
     [JsonPropertyName("topicReplication")]
     public IList<V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplication>? TopicReplication { get; set; }
 }
@@ -4949,21 +4951,22 @@ public partial class V1beta1ReplicatorStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
+    /// <summary>Current version of the MSK Replicator.</summary>
     [JsonPropertyName("currentVersion")]
     public string? CurrentVersion { get; set; }
 
-    /// <summary>A summary description of the replicator.</summary>
+    /// <summary>Summary description of the replicator.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
+    /// <summary>Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorStatusAtProviderKafkaCluster>? KafkaCluster { get; set; }
 
-    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.</summary>
     [JsonPropertyName("logDelivery")]
     public V1beta1ReplicatorStatusAtProviderLogDelivery? LogDelivery { get; set; }
 
@@ -4974,15 +4977,15 @@ public partial class V1beta1ReplicatorStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
+    /// <summary>List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.</summary>
     [JsonPropertyName("replicationInfoList")]
     public V1beta1ReplicatorStatusAtProviderReplicationInfoList? ReplicationInfoList { get; set; }
 
-    /// <summary>The name of the replicator.</summary>
+    /// <summary>Name of the replicator.</summary>
     [JsonPropertyName("replicatorName")]
     public string? ReplicatorName { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
+    /// <summary>ARN of the IAM role used by the replicator to access resources in the customer&apos;s account (e.g source and target clusters).</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 
@@ -4990,7 +4993,7 @@ public partial class V1beta1ReplicatorStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

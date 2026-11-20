@@ -356,6 +356,7 @@ public partial class V1beta1ClusterPolicyStatusAtProvider
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
+    /// <summary>Current version of the policy.</summary>
     [JsonPropertyName("currentVersion")]
     public string? CurrentVersion { get; set; }
 

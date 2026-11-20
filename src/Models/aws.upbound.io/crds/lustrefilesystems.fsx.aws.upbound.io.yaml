@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: lustrefilesystems.fsx.aws.upbound.io
 spec:
   group: fsx.aws.upbound.io
@@ -1216,7 +1216,7 @@ spec:
                         description: Size of the file system's SSD read cache, in gibibytes (GiB). Required when the sizing_mode is USER_PROVISIONED.
                         type: number
                       sizingMode:
-                        description: Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
+                        description: Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
                         type: string
                     type: object
                   deploymentType:
@@ -1449,7 +1449,7 @@ spec:
                     description: When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to true.
                     type: boolean
                   storageCapacity:
-                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.
+                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.
                     type: number
                   storageType:
                     description: Filesystem storage type. One of SSD, HDD or INTELLIGENT_TIERING, defaults to SSD. HDD is only supported on PERSISTENT_1 deployment types. INTELLIGENT_TIERING requires data_read_cache_configuration and metadata_configuration to be set and is only supported for PERSISTENT_2 deployment types.
@@ -1587,7 +1587,7 @@ spec:
                         description: Size of the file system's SSD read cache, in gibibytes (GiB). Required when the sizing_mode is USER_PROVISIONED.
                         type: number
                       sizingMode:
-                        description: Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
+                        description: Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
                         type: string
                     type: object
                   deploymentType:
@@ -1815,7 +1815,7 @@ spec:
                     description: When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to true.
                     type: boolean
                   storageCapacity:
-                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.
+                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.
                     type: number
                   storageType:
                     description: Filesystem storage type. One of SSD, HDD or INTELLIGENT_TIERING, defaults to SSD. HDD is only supported on PERSISTENT_1 deployment types. INTELLIGENT_TIERING requires data_read_cache_configuration and metadata_configuration to be set and is only supported for PERSISTENT_2 deployment types.
@@ -2032,7 +2032,7 @@ spec:
                         description: Size of the file system's SSD read cache, in gibibytes (GiB). Required when the sizing_mode is USER_PROVISIONED.
                         type: number
                       sizingMode:
-                        description: Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
+                        description: Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.
                         type: string
                     type: object
                   deploymentType:
@@ -2133,7 +2133,7 @@ spec:
                     description: When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to true.
                     type: boolean
                   storageCapacity:
-                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.
+                    description: Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.
                     type: number
                   storageType:
                     description: Filesystem storage type. One of SSD, HDD or INTELLIGENT_TIERING, defaults to SSD. HDD is only supported on PERSISTENT_1 deployment types. INTELLIGENT_TIERING requires data_read_cache_configuration and metadata_configuration to be set and is only supported for PERSISTENT_2 deployment types.

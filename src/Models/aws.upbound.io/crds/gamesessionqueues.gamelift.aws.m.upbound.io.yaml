@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: gamesessionqueues.gamelift.aws.m.upbound.io
 spec:
   group: gamelift.aws.m.upbound.io
@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   notificationTarget:
-                    description: An SNS topic ARN that is set up to receive game session placement notifications.
+                    description: SNS topic ARN that is set up to receive game session placement notifications.
                     type: string
                   notificationTargetRef:
                     description: Reference to a Topic in sns to populate notificationTarget.
@@ -362,7 +362,7 @@ spec:
                         type: object
                     type: object
                   notificationTarget:
-                    description: An SNS topic ARN that is set up to receive game session placement notifications.
+                    description: SNS topic ARN that is set up to receive game session placement notifications.
                     type: string
                   notificationTargetRef:
                     description: Reference to a Topic in sns to populate notificationTarget.
@@ -542,7 +542,7 @@ spec:
                   id:
                     type: string
                   notificationTarget:
-                    description: An SNS topic ARN that is set up to receive game session placement notifications.
+                    description: SNS topic ARN that is set up to receive game session placement notifications.
                     type: string
                   playerLatencyPolicy:
                     description: One or more policies used to choose fleet based on player latency. See below.
@@ -570,7 +570,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                   timeoutInSeconds:

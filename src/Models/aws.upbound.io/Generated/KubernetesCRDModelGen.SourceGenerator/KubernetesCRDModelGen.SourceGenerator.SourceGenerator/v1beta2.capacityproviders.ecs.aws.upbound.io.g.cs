@@ -229,12 +229,12 @@ public partial class V1beta2CapacityProviderSpecForProviderAutoScalingGroupProvi
     public double? TargetCapacity { get; set; }
 }
 
-/// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+/// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CapacityProviderSpecForProviderAutoScalingGroupProvider
 {
-    /// <summary>- ARN of the associated auto scaling group.</summary>
+    /// <summary>- ARN of the associated Auto Scaling group.</summary>
     [JsonPropertyName("autoScalingGroupArn")]
     public string? AutoScalingGroupArn { get; set; }
 
@@ -254,7 +254,7 @@ public partial class V1beta2CapacityProviderSpecForProviderAutoScalingGroupProvi
     [JsonPropertyName("managedScaling")]
     public V1beta2CapacityProviderSpecForProviderAutoScalingGroupProviderManagedScaling? ManagedScaling { get; set; }
 
-    /// <summary>- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
+    /// <summary>- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
     [JsonPropertyName("managedTerminationProtection")]
     public string? ManagedTerminationProtection { get; set; }
 }
@@ -623,7 +623,7 @@ public partial class V1beta2CapacityProviderSpecForProviderManagedInstancesProvi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CapacityProviderSpecForProvider
 {
-    /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+    /// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
     [JsonPropertyName("autoScalingGroupProvider")]
     public V1beta2CapacityProviderSpecForProviderAutoScalingGroupProvider? AutoScalingGroupProvider { get; set; }
 
@@ -820,12 +820,12 @@ public partial class V1beta2CapacityProviderSpecInitProviderAutoScalingGroupProv
     public double? TargetCapacity { get; set; }
 }
 
-/// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+/// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CapacityProviderSpecInitProviderAutoScalingGroupProvider
 {
-    /// <summary>- ARN of the associated auto scaling group.</summary>
+    /// <summary>- ARN of the associated Auto Scaling group.</summary>
     [JsonPropertyName("autoScalingGroupArn")]
     public string? AutoScalingGroupArn { get; set; }
 
@@ -845,7 +845,7 @@ public partial class V1beta2CapacityProviderSpecInitProviderAutoScalingGroupProv
     [JsonPropertyName("managedScaling")]
     public V1beta2CapacityProviderSpecInitProviderAutoScalingGroupProviderManagedScaling? ManagedScaling { get; set; }
 
-    /// <summary>- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
+    /// <summary>- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
     [JsonPropertyName("managedTerminationProtection")]
     public string? ManagedTerminationProtection { get; set; }
 }
@@ -1226,7 +1226,7 @@ public partial class V1beta2CapacityProviderSpecInitProviderManagedInstancesProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CapacityProviderSpecInitProvider
 {
-    /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+    /// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
     [JsonPropertyName("autoScalingGroupProvider")]
     public V1beta2CapacityProviderSpecInitProviderAutoScalingGroupProvider? AutoScalingGroupProvider { get; set; }
 
@@ -1452,12 +1452,12 @@ public partial class V1beta2CapacityProviderStatusAtProviderAutoScalingGroupProv
     public double? TargetCapacity { get; set; }
 }
 
-/// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+/// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CapacityProviderStatusAtProviderAutoScalingGroupProvider
 {
-    /// <summary>- ARN of the associated auto scaling group.</summary>
+    /// <summary>- ARN of the associated Auto Scaling group.</summary>
     [JsonPropertyName("autoScalingGroupArn")]
     public string? AutoScalingGroupArn { get; set; }
 
@@ -1469,7 +1469,7 @@ public partial class V1beta2CapacityProviderStatusAtProviderAutoScalingGroupProv
     [JsonPropertyName("managedScaling")]
     public V1beta2CapacityProviderStatusAtProviderAutoScalingGroupProviderManagedScaling? ManagedScaling { get; set; }
 
-    /// <summary>- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
+    /// <summary>- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.</summary>
     [JsonPropertyName("managedTerminationProtection")]
     public string? ManagedTerminationProtection { get; set; }
 }
@@ -1842,7 +1842,7 @@ public partial class V1beta2CapacityProviderStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
+    /// <summary>Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
     [JsonPropertyName("autoScalingGroupProvider")]
     public V1beta2CapacityProviderStatusAtProviderAutoScalingGroupProvider? AutoScalingGroupProvider { get; set; }
 

@@ -37,64 +37,64 @@ public partial class V1beta1IndexList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Index> Items { get; set; }
 }
 
-/// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+/// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderCapacityUnits
 {
-    /// <summary>The amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
+    /// <summary>Amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
     [JsonPropertyName("queryCapacityUnits")]
     public double? QueryCapacityUnits { get; set; }
 
-    /// <summary>The amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
+    /// <summary>Amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
     [JsonPropertyName("storageCapacityUnits")]
     public double? StorageCapacityUnits { get; set; }
 }
 
-/// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+/// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdatesRelevance
 {
-    /// <summary>Specifies the time period that the boost applies to. For more information, refer to Duration.</summary>
+    /// <summary>Time period that the boost applies to. Required if type is DATE_VALUE. For more information, refer to Duration.</summary>
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>Indicates that this field determines how &quot;fresh&quot; a document is. For more information, refer to Freshness.</summary>
+    /// <summary>Whether this field determines how &quot;fresh&quot; a document is. Required if type is DATE_VALUE. For more information, refer to Freshness.</summary>
     [JsonPropertyName("freshness")]
     public bool? Freshness { get; set; }
 
-    /// <summary>The relative importance of the field in the search. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
+    /// <summary>Relative importance of the field in the search. Required for all types. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
     [JsonPropertyName("importance")]
     public double? Importance { get; set; }
 
-    /// <summary>Determines how values should be interpreted. For more information, refer to RankOrder.</summary>
+    /// <summary>How values should be interpreted. Required if type is DATE_VALUE or LONG_VALUE. For more information, refer to RankOrder.</summary>
     [JsonPropertyName("rankOrder")]
     public string? RankOrder { get; set; }
 
-    /// <summary>A list of values that should be given a different boost when they appear in the result list. For more information, refer to ValueImportanceMap.</summary>
+    /// <summary>List of values that should be given a different boost when they appear in the result list. Required if type is STRING_VALUE. For more information, refer to ValueImportanceMap.</summary>
     [JsonPropertyName("valuesImportanceMap")]
     public IDictionary<string, double>? ValuesImportanceMap { get; set; }
 }
 
-/// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+/// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdatesSearch
 {
-    /// <summary>Determines whether the field is returned in the query response. The default is true.</summary>
+    /// <summary>Whether the field is returned in the query response. The default is true.</summary>
     [JsonPropertyName("displayable")]
     public bool? Displayable { get; set; }
 
-    /// <summary>Indicates that the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
+    /// <summary>Whether the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
     [JsonPropertyName("facetable")]
     public bool? Facetable { get; set; }
 
-    /// <summary>Determines whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
+    /// <summary>Whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
     [JsonPropertyName("searchable")]
     public bool? Searchable { get; set; }
 
-    /// <summary>Determines whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
+    /// <summary>Whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
     [JsonPropertyName("sortable")]
     public bool? Sortable { get; set; }
 }
@@ -103,19 +103,19 @@ public partial class V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpd
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdates
 {
-    /// <summary>The name of the index field. Minimum length of 1. Maximum length of 30.</summary>
+    /// <summary>Name of the index field. Minimum length of 1. Maximum length of 30.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+    /// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
     [JsonPropertyName("relevance")]
     public V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdatesRelevance? Relevance { get; set; }
 
-    /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+    /// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
     [JsonPropertyName("search")]
     public V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdatesSearch? Search { get; set; }
 
-    /// <summary>The data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
+    /// <summary>Data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -275,58 +275,58 @@ public partial class V1beta1IndexSpecForProviderRoleArnSelector
     public V1beta1IndexSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+/// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderServerSideEncryptionConfiguration
 {
-    /// <summary>The identifier of the AWS KMScustomer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
+    /// <summary>Identifier of the AWS KMS customer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+/// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderUserGroupResolutionConfiguration
 {
-    /// <summary>The identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
+    /// <summary>Identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
     [JsonPropertyName("userGroupResolutionMode")]
     public string? UserGroupResolutionMode { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
-    /// <summary>The regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
+    /// <summary>Regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
     [JsonPropertyName("claimRegex")]
     public string? ClaimRegex { get; set; }
 
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
+    /// <summary>Issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>The location of the key. Valid values are URL or SECRET_MANAGER</summary>
+    /// <summary>Location of the key. Valid values are URL or SECRET_MANAGER.</summary>
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
@@ -334,25 +334,25 @@ public partial class V1beta1IndexSpecForProviderUserTokenConfigurationsJwtTokenT
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
-    /// <summary>The signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*)</summary>
+    /// <summary>Signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+/// <summary>Block that specifies the user token configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderUserTokenConfigurations
 {
-    /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
     [JsonPropertyName("jsonTokenTypeConfiguration")]
     public V1beta1IndexSpecForProviderUserTokenConfigurationsJsonTokenTypeConfiguration? JsonTokenTypeConfiguration { get; set; }
 
-    /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
     [JsonPropertyName("jwtTokenTypeConfiguration")]
     public V1beta1IndexSpecForProviderUserTokenConfigurationsJwtTokenTypeConfiguration? JwtTokenTypeConfiguration { get; set; }
 }
@@ -361,11 +361,11 @@ public partial class V1beta1IndexSpecForProviderUserTokenConfigurations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProvider
 {
-    /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+    /// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
     [JsonPropertyName("capacityUnits")]
     public V1beta1IndexSpecForProviderCapacityUnits? CapacityUnits { get; set; }
 
-    /// <summary>The description of the Index.</summary>
+    /// <summary>Description of the Index.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -373,11 +373,11 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("documentMetadataConfigurationUpdates")]
     public IList<V1beta1IndexSpecForProviderDocumentMetadataConfigurationUpdates>? DocumentMetadataConfigurationUpdates { get; set; }
 
-    /// <summary>The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
+    /// <summary>Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
-    /// <summary>Specifies the name of the Index.</summary>
+    /// <summary>Name of the Index.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -388,7 +388,7 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>An AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -400,7 +400,7 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1IndexSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+    /// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1IndexSpecForProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
@@ -408,77 +408,77 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The user context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
+    /// <summary>User context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
     [JsonPropertyName("userContextPolicy")]
     public string? UserContextPolicy { get; set; }
 
-    /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+    /// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
     [JsonPropertyName("userGroupResolutionConfiguration")]
     public V1beta1IndexSpecForProviderUserGroupResolutionConfiguration? UserGroupResolutionConfiguration { get; set; }
 
-    /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the user token configuration. Detailed below.</summary>
     [JsonPropertyName("userTokenConfigurations")]
     public V1beta1IndexSpecForProviderUserTokenConfigurations? UserTokenConfigurations { get; set; }
 }
 
-/// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+/// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderCapacityUnits
 {
-    /// <summary>The amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
+    /// <summary>Amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
     [JsonPropertyName("queryCapacityUnits")]
     public double? QueryCapacityUnits { get; set; }
 
-    /// <summary>The amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
+    /// <summary>Amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
     [JsonPropertyName("storageCapacityUnits")]
     public double? StorageCapacityUnits { get; set; }
 }
 
-/// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+/// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdatesRelevance
 {
-    /// <summary>Specifies the time period that the boost applies to. For more information, refer to Duration.</summary>
+    /// <summary>Time period that the boost applies to. Required if type is DATE_VALUE. For more information, refer to Duration.</summary>
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>Indicates that this field determines how &quot;fresh&quot; a document is. For more information, refer to Freshness.</summary>
+    /// <summary>Whether this field determines how &quot;fresh&quot; a document is. Required if type is DATE_VALUE. For more information, refer to Freshness.</summary>
     [JsonPropertyName("freshness")]
     public bool? Freshness { get; set; }
 
-    /// <summary>The relative importance of the field in the search. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
+    /// <summary>Relative importance of the field in the search. Required for all types. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
     [JsonPropertyName("importance")]
     public double? Importance { get; set; }
 
-    /// <summary>Determines how values should be interpreted. For more information, refer to RankOrder.</summary>
+    /// <summary>How values should be interpreted. Required if type is DATE_VALUE or LONG_VALUE. For more information, refer to RankOrder.</summary>
     [JsonPropertyName("rankOrder")]
     public string? RankOrder { get; set; }
 
-    /// <summary>A list of values that should be given a different boost when they appear in the result list. For more information, refer to ValueImportanceMap.</summary>
+    /// <summary>List of values that should be given a different boost when they appear in the result list. Required if type is STRING_VALUE. For more information, refer to ValueImportanceMap.</summary>
     [JsonPropertyName("valuesImportanceMap")]
     public IDictionary<string, double>? ValuesImportanceMap { get; set; }
 }
 
-/// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+/// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdatesSearch
 {
-    /// <summary>Determines whether the field is returned in the query response. The default is true.</summary>
+    /// <summary>Whether the field is returned in the query response. The default is true.</summary>
     [JsonPropertyName("displayable")]
     public bool? Displayable { get; set; }
 
-    /// <summary>Indicates that the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
+    /// <summary>Whether the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
     [JsonPropertyName("facetable")]
     public bool? Facetable { get; set; }
 
-    /// <summary>Determines whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
+    /// <summary>Whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
     [JsonPropertyName("searchable")]
     public bool? Searchable { get; set; }
 
-    /// <summary>Determines whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
+    /// <summary>Whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
     [JsonPropertyName("sortable")]
     public bool? Sortable { get; set; }
 }
@@ -487,19 +487,19 @@ public partial class V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdates
 {
-    /// <summary>The name of the index field. Minimum length of 1. Maximum length of 30.</summary>
+    /// <summary>Name of the index field. Minimum length of 1. Maximum length of 30.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+    /// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
     [JsonPropertyName("relevance")]
     public V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdatesRelevance? Relevance { get; set; }
 
-    /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+    /// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
     [JsonPropertyName("search")]
     public V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdatesSearch? Search { get; set; }
 
-    /// <summary>The data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
+    /// <summary>Data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -659,58 +659,58 @@ public partial class V1beta1IndexSpecInitProviderRoleArnSelector
     public V1beta1IndexSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+/// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderServerSideEncryptionConfiguration
 {
-    /// <summary>The identifier of the AWS KMScustomer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
+    /// <summary>Identifier of the AWS KMS customer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+/// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderUserGroupResolutionConfiguration
 {
-    /// <summary>The identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
+    /// <summary>Identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
     [JsonPropertyName("userGroupResolutionMode")]
     public string? UserGroupResolutionMode { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
-    /// <summary>The regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
+    /// <summary>Regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
     [JsonPropertyName("claimRegex")]
     public string? ClaimRegex { get; set; }
 
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
+    /// <summary>Issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>The location of the key. Valid values are URL or SECRET_MANAGER</summary>
+    /// <summary>Location of the key. Valid values are URL or SECRET_MANAGER.</summary>
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
@@ -718,25 +718,25 @@ public partial class V1beta1IndexSpecInitProviderUserTokenConfigurationsJwtToken
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
-    /// <summary>The signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*)</summary>
+    /// <summary>Signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+/// <summary>Block that specifies the user token configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderUserTokenConfigurations
 {
-    /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
     [JsonPropertyName("jsonTokenTypeConfiguration")]
     public V1beta1IndexSpecInitProviderUserTokenConfigurationsJsonTokenTypeConfiguration? JsonTokenTypeConfiguration { get; set; }
 
-    /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
     [JsonPropertyName("jwtTokenTypeConfiguration")]
     public V1beta1IndexSpecInitProviderUserTokenConfigurationsJwtTokenTypeConfiguration? JwtTokenTypeConfiguration { get; set; }
 }
@@ -757,11 +757,11 @@ public partial class V1beta1IndexSpecInitProviderUserTokenConfigurations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProvider
 {
-    /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+    /// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
     [JsonPropertyName("capacityUnits")]
     public V1beta1IndexSpecInitProviderCapacityUnits? CapacityUnits { get; set; }
 
-    /// <summary>The description of the Index.</summary>
+    /// <summary>Description of the Index.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -769,15 +769,15 @@ public partial class V1beta1IndexSpecInitProvider
     [JsonPropertyName("documentMetadataConfigurationUpdates")]
     public IList<V1beta1IndexSpecInitProviderDocumentMetadataConfigurationUpdates>? DocumentMetadataConfigurationUpdates { get; set; }
 
-    /// <summary>The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
+    /// <summary>Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
-    /// <summary>Specifies the name of the Index.</summary>
+    /// <summary>Name of the Index.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -789,7 +789,7 @@ public partial class V1beta1IndexSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1IndexSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+    /// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1IndexSpecInitProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
@@ -797,15 +797,15 @@ public partial class V1beta1IndexSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The user context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
+    /// <summary>User context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
     [JsonPropertyName("userContextPolicy")]
     public string? UserContextPolicy { get; set; }
 
-    /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+    /// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
     [JsonPropertyName("userGroupResolutionConfiguration")]
     public V1beta1IndexSpecInitProviderUserGroupResolutionConfiguration? UserGroupResolutionConfiguration { get; set; }
 
-    /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the user token configuration. Detailed below.</summary>
     [JsonPropertyName("userTokenConfigurations")]
     public V1beta1IndexSpecInitProviderUserTokenConfigurations? UserTokenConfigurations { get; set; }
 }
@@ -917,64 +917,64 @@ public partial class V1beta1IndexSpec
     public V1beta1IndexSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+/// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderCapacityUnits
 {
-    /// <summary>The amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
+    /// <summary>Amount of extra query capacity for an index and GetQuerySuggestions capacity. For more information, refer to QueryCapacityUnits.</summary>
     [JsonPropertyName("queryCapacityUnits")]
     public double? QueryCapacityUnits { get; set; }
 
-    /// <summary>The amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
+    /// <summary>Amount of extra storage capacity for an index. A single capacity unit provides 30 GB of storage space or 100,000 documents, whichever is reached first. Minimum value of 0.</summary>
     [JsonPropertyName("storageCapacityUnits")]
     public double? StorageCapacityUnits { get; set; }
 }
 
-/// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+/// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdatesRelevance
 {
-    /// <summary>Specifies the time period that the boost applies to. For more information, refer to Duration.</summary>
+    /// <summary>Time period that the boost applies to. Required if type is DATE_VALUE. For more information, refer to Duration.</summary>
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>Indicates that this field determines how &quot;fresh&quot; a document is. For more information, refer to Freshness.</summary>
+    /// <summary>Whether this field determines how &quot;fresh&quot; a document is. Required if type is DATE_VALUE. For more information, refer to Freshness.</summary>
     [JsonPropertyName("freshness")]
     public bool? Freshness { get; set; }
 
-    /// <summary>The relative importance of the field in the search. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
+    /// <summary>Relative importance of the field in the search. Required for all types. Larger numbers provide more of a boost than smaller numbers. Minimum value of 1. Maximum value of 10.</summary>
     [JsonPropertyName("importance")]
     public double? Importance { get; set; }
 
-    /// <summary>Determines how values should be interpreted. For more information, refer to RankOrder.</summary>
+    /// <summary>How values should be interpreted. Required if type is DATE_VALUE or LONG_VALUE. For more information, refer to RankOrder.</summary>
     [JsonPropertyName("rankOrder")]
     public string? RankOrder { get; set; }
 
-    /// <summary>A list of values that should be given a different boost when they appear in the result list. For more information, refer to ValueImportanceMap.</summary>
+    /// <summary>List of values that should be given a different boost when they appear in the result list. Required if type is STRING_VALUE. For more information, refer to ValueImportanceMap.</summary>
     [JsonPropertyName("valuesImportanceMap")]
     public IDictionary<string, double>? ValuesImportanceMap { get; set; }
 }
 
-/// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+/// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdatesSearch
 {
-    /// <summary>Determines whether the field is returned in the query response. The default is true.</summary>
+    /// <summary>Whether the field is returned in the query response. The default is true.</summary>
     [JsonPropertyName("displayable")]
     public bool? Displayable { get; set; }
 
-    /// <summary>Indicates that the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
+    /// <summary>Whether the field can be used to create search facets, a count of results for each value in the field. The default is false.</summary>
     [JsonPropertyName("facetable")]
     public bool? Facetable { get; set; }
 
-    /// <summary>Determines whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
+    /// <summary>Whether the field is used in the search. If the Searchable field is true, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is true for string fields and false for number and date fields.</summary>
     [JsonPropertyName("searchable")]
     public bool? Searchable { get; set; }
 
-    /// <summary>Determines whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
+    /// <summary>Whether the field can be used to sort the results of a query. If you specify sorting on a field that does not have Sortable set to true, Amazon Kendra returns an exception. The default is false.</summary>
     [JsonPropertyName("sortable")]
     public bool? Sortable { get; set; }
 }
@@ -983,19 +983,19 @@ public partial class V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdates
 {
-    /// <summary>The name of the index field. Minimum length of 1. Maximum length of 30.</summary>
+    /// <summary>Name of the index field. Minimum length of 1. Maximum length of 30.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
+    /// <summary>Block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
     [JsonPropertyName("relevance")]
     public V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdatesRelevance? Relevance { get; set; }
 
-    /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
+    /// <summary>Block that provides information about how the field is used during a search. Detailed below</summary>
     [JsonPropertyName("search")]
     public V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdatesSearch? Search { get; set; }
 
-    /// <summary>The data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
+    /// <summary>Data type of the index field. Valid values are STRING_VALUE, STRING_LIST_VALUE, LONG_VALUE, DATE_VALUE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1004,7 +1004,7 @@ public partial class V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderIndexStatisticsFaqStatistics
 {
-    /// <summary>The total number of FAQ questions and answers contained in the index.</summary>
+    /// <summary>Total number of FAQ questions and answers contained in the index.</summary>
     [JsonPropertyName("indexedQuestionAnswersCount")]
     public double? IndexedQuestionAnswersCount { get; set; }
 }
@@ -1013,11 +1013,11 @@ public partial class V1beta1IndexStatusAtProviderIndexStatisticsFaqStatistics
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderIndexStatisticsTextDocumentStatistics
 {
-    /// <summary>The total size, in bytes, of the indexed documents.</summary>
+    /// <summary>Total size, in bytes, of the indexed documents.</summary>
     [JsonPropertyName("indexedTextBytes")]
     public double? IndexedTextBytes { get; set; }
 
-    /// <summary>The number of text documents indexed.</summary>
+    /// <summary>Number of text documents indexed.</summary>
     [JsonPropertyName("indexedTextDocumentsCount")]
     public double? IndexedTextDocumentsCount { get; set; }
 }
@@ -1026,67 +1026,67 @@ public partial class V1beta1IndexStatusAtProviderIndexStatisticsTextDocumentStat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderIndexStatistics
 {
-    /// <summary>A block that specifies the number of question and answer topics in the index. Detailed below.</summary>
+    /// <summary>Block that specifies the number of question and answer topics in the index. Detailed below.</summary>
     [JsonPropertyName("faqStatistics")]
     public IList<V1beta1IndexStatusAtProviderIndexStatisticsFaqStatistics>? FaqStatistics { get; set; }
 
-    /// <summary>A block that specifies the number of text documents indexed. Detailed below.</summary>
+    /// <summary>Block that specifies the number of text documents indexed. Detailed below.</summary>
     [JsonPropertyName("textDocumentStatistics")]
     public IList<V1beta1IndexStatusAtProviderIndexStatisticsTextDocumentStatistics>? TextDocumentStatistics { get; set; }
 }
 
-/// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+/// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderServerSideEncryptionConfiguration
 {
-    /// <summary>The identifier of the AWS KMScustomer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
+    /// <summary>Identifier of the AWS KMS customer master key (CMK). Amazon Kendra doesn&apos;t support asymmetric CMKs.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+/// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderUserGroupResolutionConfiguration
 {
-    /// <summary>The identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
+    /// <summary>Identity store provider (mode) you want to use to fetch access levels of groups and users. AWS Single Sign-On is currently the only available mode. Your users and groups must exist in an AWS SSO identity source in order to use this mode. Valid Values are AWS_SSO or NONE.</summary>
     [JsonPropertyName("userGroupResolutionMode")]
     public string? UserGroupResolutionMode { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+/// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
-    /// <summary>The regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
+    /// <summary>Regular expression that identifies the claim. Minimum length of 1. Maximum length of 100.</summary>
     [JsonPropertyName("claimRegex")]
     public string? ClaimRegex { get; set; }
 
-    /// <summary>The group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>Group attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("groupAttributeField")]
     public string? GroupAttributeField { get; set; }
 
-    /// <summary>The issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
+    /// <summary>Issuer of the token. Minimum length of 1. Maximum length of 65.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>The location of the key. Valid values are URL or SECRET_MANAGER</summary>
+    /// <summary>Location of the key. Valid values are URL or SECRET_MANAGER.</summary>
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
@@ -1094,25 +1094,25 @@ public partial class V1beta1IndexStatusAtProviderUserTokenConfigurationsJwtToken
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
-    /// <summary>The signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*)</summary>
+    /// <summary>Signing key URL. Valid pattern is ^(https?|ftp|file):\/\/([^\s]*).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The user name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>User name attribute field. Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("userNameAttributeField")]
     public string? UserNameAttributeField { get; set; }
 }
 
-/// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+/// <summary>Block that specifies the user token configuration. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderUserTokenConfigurations
 {
-    /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JSON token type configuration. Detailed below.</summary>
     [JsonPropertyName("jsonTokenTypeConfiguration")]
     public V1beta1IndexStatusAtProviderUserTokenConfigurationsJsonTokenTypeConfiguration? JsonTokenTypeConfiguration { get; set; }
 
-    /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the information about the JWT token type configuration. Detailed below.</summary>
     [JsonPropertyName("jwtTokenTypeConfiguration")]
     public V1beta1IndexStatusAtProviderUserTokenConfigurationsJwtTokenTypeConfiguration? JwtTokenTypeConfiguration { get; set; }
 }
@@ -1125,15 +1125,15 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
+    /// <summary>Block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
     [JsonPropertyName("capacityUnits")]
     public V1beta1IndexStatusAtProviderCapacityUnits? CapacityUnits { get; set; }
 
-    /// <summary>The Unix datetime that the index was created.</summary>
+    /// <summary>Unix datetime that the index was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>The description of the Index.</summary>
+    /// <summary>Description of the Index.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1141,7 +1141,7 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("documentMetadataConfigurationUpdates")]
     public IList<V1beta1IndexStatusAtProviderDocumentMetadataConfigurationUpdates>? DocumentMetadataConfigurationUpdates { get; set; }
 
-    /// <summary>The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
+    /// <summary>Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Use GEN_AI_ENTERPRISE_EDITION for creating generative AI applications. Once you set the edition for an index, it can&apos;t be changed. Defaults to ENTERPRISE_EDITION.</summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
@@ -1149,15 +1149,15 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("errorMessage")]
     public string? ErrorMessage { get; set; }
 
-    /// <summary>The identifier of the Index.</summary>
+    /// <summary>Identifier of the Index.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A block that provides information about the number of FAQ questions and answers and the number of text documents indexed. Detailed below.</summary>
+    /// <summary>Block that provides information about the number of FAQ questions and answers and the number of text documents indexed. Detailed below.</summary>
     [JsonPropertyName("indexStatistics")]
     public IList<V1beta1IndexStatusAtProviderIndexStatistics>? IndexStatistics { get; set; }
 
-    /// <summary>Specifies the name of the Index.</summary>
+    /// <summary>Name of the Index.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1168,15 +1168,15 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
+    /// <summary>Block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1IndexStatusAtProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
-    /// <summary>The current status of the index. When the value is ACTIVE, the index is ready for use. If the Status field value is FAILED, the error_message field contains a message that explains why.</summary>
+    /// <summary>Current status of the index. When the value is ACTIVE, the index is ready for use. If the Status field value is FAILED, the error_message field contains a message that explains why.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -1184,23 +1184,23 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Unix datetime that the index was last updated.</summary>
+    /// <summary>Unix datetime that the index was last updated.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
-    /// <summary>The user context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
+    /// <summary>User context policy. Valid values are ATTRIBUTE_FILTER or USER_TOKEN. For more information, refer to UserContextPolicy. Defaults to ATTRIBUTE_FILTER.</summary>
     [JsonPropertyName("userContextPolicy")]
     public string? UserContextPolicy { get; set; }
 
-    /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
+    /// <summary>Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
     [JsonPropertyName("userGroupResolutionConfiguration")]
     public V1beta1IndexStatusAtProviderUserGroupResolutionConfiguration? UserGroupResolutionConfiguration { get; set; }
 
-    /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
+    /// <summary>Block that specifies the user token configuration. Detailed below.</summary>
     [JsonPropertyName("userTokenConfigurations")]
     public V1beta1IndexStatusAtProviderUserTokenConfigurations? UserTokenConfigurations { get; set; }
 }

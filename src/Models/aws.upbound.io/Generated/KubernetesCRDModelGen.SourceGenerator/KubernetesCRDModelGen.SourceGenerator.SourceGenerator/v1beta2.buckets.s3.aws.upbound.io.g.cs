@@ -329,7 +329,7 @@ public partial class V1beta2BucketStatusAtProviderCorsRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderGrant
 {
-    /// <summary>Canonical user id to grant for. Used only when type is CanonicalUser.</summary>
+    /// <summary>Canonical user ID to grant for. Used only when type is CanonicalUser.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -341,7 +341,7 @@ public partial class V1beta2BucketStatusAtProviderGrant
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Uri address to grant for. Used only when type is Group.</summary>
+    /// <summary>URI address to grant for. Used only when type is Group.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -719,7 +719,7 @@ public partial class V1beta2BucketStatusAtProviderWebsite
     [JsonPropertyName("errorDocument")]
     public string? ErrorDocument { get; set; }
 
-    /// <summary>Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.</summary>
+    /// <summary>Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders. Required unless using redirect_all_requests_to.</summary>
     [JsonPropertyName("indexDocument")]
     public string? IndexDocument { get; set; }
 

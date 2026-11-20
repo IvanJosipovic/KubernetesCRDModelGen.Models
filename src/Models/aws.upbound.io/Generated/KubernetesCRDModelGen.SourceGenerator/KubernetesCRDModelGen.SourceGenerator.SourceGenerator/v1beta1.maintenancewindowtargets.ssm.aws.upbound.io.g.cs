@@ -248,7 +248,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1MaintenanceWindowTargetSpecForProviderTargets>? Targets { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the target with.</summary>
+    /// <summary>The ID of the maintenance window to register the target with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 
@@ -458,7 +458,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1MaintenanceWindowTargetSpecInitProviderTargets>? Targets { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the target with.</summary>
+    /// <summary>The ID of the maintenance window to register the target with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 
@@ -703,7 +703,7 @@ public partial class V1beta1MaintenanceWindowTargetStatusAtProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1MaintenanceWindowTargetStatusAtProviderTargets>? Targets { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the target with.</summary>
+    /// <summary>The ID of the maintenance window to register the target with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 }

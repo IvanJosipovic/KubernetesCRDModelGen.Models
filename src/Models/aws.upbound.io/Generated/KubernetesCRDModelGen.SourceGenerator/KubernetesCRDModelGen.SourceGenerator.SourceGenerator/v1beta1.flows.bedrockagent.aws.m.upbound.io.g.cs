@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
-/// <summary>Flow is the Schema for the Flows API.</summary>
+/// <summary>Flow is the Schema for the Flows API. Manages an AWS Bedrock Agents Flow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -192,40 +192,40 @@ public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelector
     public V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfigurationConditional
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Condition that triggers this connection. For more information about how to write conditions, see the Condition node type in the Node types topic in the Amazon Bedrock User Guide.</summary>
     [JsonPropertyName("condition")]
     public string? Condition { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfigurationData
 {
-    /// <summary>The name of the output in the source node that the connection begins from.</summary>
+    /// <summary>Name of the output in the source node that the connection begins from.</summary>
     [JsonPropertyName("sourceOutput")]
     public string? SourceOutput { get; set; }
 
-    /// <summary>The name of the input in the target node that the connection ends at.</summary>
+    /// <summary>Name of the input in the target node that the connection ends at.</summary>
     [JsonPropertyName("targetInput")]
     public string? TargetInput { get; set; }
 }
 
-/// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+/// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
 {
-    /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
     [JsonPropertyName("conditional")]
     public V1beta1FlowSpecForProviderDefinitionConnectionConfigurationConditional? Conditional { get; set; }
 
-    /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
     [JsonPropertyName("data")]
     public V1beta1FlowSpecForProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
@@ -234,28 +234,28 @@ public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnection
 {
-    /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+    /// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowSpecForProviderDefinitionConnectionConfiguration? Configuration { get; set; }
 
-    /// <summary>A name for the connection that you can reference.</summary>
+    /// <summary>Name for the connection that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The node that the connection starts at.</summary>
+    /// <summary>Node that the connection starts at.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The node that the connection ends at.</summary>
+    /// <summary>Node that the connection ends at.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Whether the source node that the connection begins from is a condition node Conditional or not Data.</summary>
+    /// <summary>Whether the source node that the connection begins from is a condition node (Conditional) or not (Data).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+/// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationAgent
@@ -265,7 +265,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationAgent
     public string? AgentAliasArn { get; set; }
 }
 
-/// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+/// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCollector
@@ -276,68 +276,68 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCollec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationConditionCondition
 {
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that sets the condition. You must refer to at least one of the inputs in the condition. For more information, expand the Condition node section in Node types in prompt flows.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the condition that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+/// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCondition
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>List of conditions. See definition.node.configuration.condition.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationConditionCondition>? Condition { get; set; }
 }
 
-/// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+/// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationInlineCode
 {
-    /// <summary>The code that&apos;s executed in your inline code node.</summary>
+    /// <summary>Code that&apos;s executed in your inline code node.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
-    /// <summary>The programming language used by your inline code node.</summary>
+    /// <summary>Programming language used by your inline code node.</summary>
     [JsonPropertyName("language")]
     public string? Language { get; set; }
 }
 
-/// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+/// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationInput
 {
 }
 
-/// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+/// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationIterator
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
@@ -346,7 +346,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -359,12 +359,12 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText? Text { get; set; }
 }
@@ -524,20 +524,20 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+/// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBase
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the knowledge base to query.</summary>
+    /// <summary>Unique identifier of the knowledge base to query.</summary>
     [JsonPropertyName("knowledgeBaseId")]
     public string? KnowledgeBaseId { get; set; }
 
@@ -549,10 +549,11 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
     [JsonPropertyName("knowledgeBaseIdSelector")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelector? KnowledgeBaseIdSelector { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to use to generate a response from the query results.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
+    /// <summary>Maximum number of results to retrieve from the knowledge base. Valid values are between 1 and 100.</summary>
     [JsonPropertyName("numberOfResults")]
     public double? NumberOfResults { get; set; }
 }
@@ -712,7 +713,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunction
@@ -730,7 +731,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLex
@@ -739,33 +740,33 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLex
     [JsonPropertyName("botAliasArn")]
     public string? BotAliasArn { get; set; }
 
-    /// <summary>The Region to invoke the Amazon Lex bot in</summary>
+    /// <summary>Locale to use when invoking the Amazon Lex bot, such as en_US.</summary>
     [JsonPropertyName("localeId")]
     public string? LocaleId { get; set; }
 }
 
-/// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+/// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationOutput
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
@@ -774,7 +775,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -787,12 +788,12 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
@@ -801,17 +802,17 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -820,11 +821,11 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the message.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -833,21 +834,21 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See Message Content for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content Block for details.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -856,49 +857,49 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the system prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>The description of the tool.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -907,99 +908,99 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+/// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
     [JsonPropertyName("any")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+    /// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
     [JsonPropertyName("auto")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Tools to pass to a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>Messages in the chat for the prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message Block for details.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>System prompts that provide context to the model or describe how it should behave. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system Block for details.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1008,44 +1009,44 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Message for the prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+/// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
     [JsonPropertyName("chat")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText? Text { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+/// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
@@ -1054,19 +1055,19 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to run inference with.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+    /// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>The type of prompt template. Valid values: TEXT, CHAT.</summary>
+    /// <summary>Type of prompt template. Valid values: TEXT, CHAT.</summary>
     [JsonPropertyName("templateType")]
     public string? TemplateType { get; set; }
 }
@@ -1226,7 +1227,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+/// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
@@ -1244,30 +1245,30 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelector? PromptArnSelector { get; set; }
 }
 
-/// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+/// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
-    /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
     [JsonPropertyName("inline")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInline? Inline { get; set; }
 
-    /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
     [JsonPropertyName("resource")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResource? Resource { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+/// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+    /// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfiguration? SourceConfiguration { get; set; }
 }
@@ -1427,12 +1428,12 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket from which to retrieve data.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1445,22 +1446,22 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelector? BucketNameSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+/// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrieval
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfiguration? ServiceConfiguration { get; set; }
 }
@@ -1620,12 +1621,12 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket in which to store the input into the node.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1638,80 +1639,80 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelector? BucketNameSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+/// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorage
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfiguration? ServiceConfiguration { get; set; }
 }
 
-/// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+/// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfiguration
 {
-    /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+    /// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
     [JsonPropertyName("agent")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationAgent? Agent { get; set; }
 
-    /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+    /// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
     [JsonPropertyName("collector")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationCollector? Collector { get; set; }
 
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationCondition? Condition { get; set; }
 
-    /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+    /// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
     [JsonPropertyName("inlineCode")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationInlineCode? InlineCode { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("input")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationInput? Input { get; set; }
 
-    /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+    /// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
     [JsonPropertyName("iterator")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationIterator? Iterator { get; set; }
 
-    /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+    /// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
     [JsonPropertyName("knowledgeBase")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBase? KnowledgeBase { get; set; }
 
-    /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
     [JsonPropertyName("lambdaFunction")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunction? LambdaFunction { get; set; }
 
-    /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
     [JsonPropertyName("lex")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationLex? Lex { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("output")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationOutput? Output { get; set; }
 
-    /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
     [JsonPropertyName("prompt")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt? Prompt { get; set; }
 
-    /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
     [JsonPropertyName("retrieval")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrieval? Retrieval { get; set; }
 
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
     [JsonPropertyName("storage")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
@@ -1724,15 +1725,15 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeInput
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the input that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the input. If the input doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1741,11 +1742,11 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeInput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeOutput
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the output that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the output. If the output doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1754,37 +1755,37 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeOutput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNode
 {
-    /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+    /// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowSpecForProviderDefinitionNodeConfiguration? Configuration { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Information about an input into the node. See definition.node.input Block for details.</summary>
     [JsonPropertyName("input")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeInput>? Input { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the node.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Information about an output from the node. See definition.node.output Block for details.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta1FlowSpecForProviderDefinitionNodeOutput>? Output { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of node. This value must match the name of the key you provide in configuration. Valid values: Agent, Collector, Condition, InlineCode, Input, Iterator, KnowledgeBase, LambdaFunction, Lex, Output, Prompt, Retrieval, Storage.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+/// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinition
 {
-    /// <summary>A list of connection definitions in the flow. See Connection for more information.</summary>
+    /// <summary>List of connection definitions in the flow. See definition.connection Block for details.</summary>
     [JsonPropertyName("connection")]
     public IList<V1beta1FlowSpecForProviderDefinitionConnection>? Connection { get; set; }
 
-    /// <summary>A list of node definitions in the flow. See Node for more information.</summary>
+    /// <summary>List of node definitions in the flow. See definition.node Block for details.</summary>
     [JsonPropertyName("node")]
     public IList<V1beta1FlowSpecForProviderDefinitionNode>? Node { get; set; }
 }
@@ -1960,11 +1961,11 @@ public partial class V1beta1FlowSpecForProvider
     [JsonPropertyName("customerEncryptionKeyArnSelector")]
     public V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelector? CustomerEncryptionKeyArnSelector { get; set; }
 
-    /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+    /// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
     [JsonPropertyName("definition")]
     public V1beta1FlowSpecForProviderDefinition? Definition { get; set; }
 
-    /// <summary>A description for the flow.</summary>
+    /// <summary>Description for the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1980,7 +1981,7 @@ public partial class V1beta1FlowSpecForProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1FlowSpecForProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>A name for the flow.</summary>
+    /// <summary>Name for the flow.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2151,40 +2152,40 @@ public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelector
     public V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationConditional
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Condition that triggers this connection. For more information about how to write conditions, see the Condition node type in the Node types topic in the Amazon Bedrock User Guide.</summary>
     [JsonPropertyName("condition")]
     public string? Condition { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationData
 {
-    /// <summary>The name of the output in the source node that the connection begins from.</summary>
+    /// <summary>Name of the output in the source node that the connection begins from.</summary>
     [JsonPropertyName("sourceOutput")]
     public string? SourceOutput { get; set; }
 
-    /// <summary>The name of the input in the target node that the connection ends at.</summary>
+    /// <summary>Name of the input in the target node that the connection ends at.</summary>
     [JsonPropertyName("targetInput")]
     public string? TargetInput { get; set; }
 }
 
-/// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+/// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguration
 {
-    /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
     [JsonPropertyName("conditional")]
     public V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationConditional? Conditional { get; set; }
 
-    /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
     [JsonPropertyName("data")]
     public V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
@@ -2193,28 +2194,28 @@ public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnection
 {
-    /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+    /// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowSpecInitProviderDefinitionConnectionConfiguration? Configuration { get; set; }
 
-    /// <summary>A name for the connection that you can reference.</summary>
+    /// <summary>Name for the connection that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The node that the connection starts at.</summary>
+    /// <summary>Node that the connection starts at.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The node that the connection ends at.</summary>
+    /// <summary>Node that the connection ends at.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Whether the source node that the connection begins from is a condition node Conditional or not Data.</summary>
+    /// <summary>Whether the source node that the connection begins from is a condition node (Conditional) or not (Data).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+/// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationAgent
@@ -2224,7 +2225,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationAgent
     public string? AgentAliasArn { get; set; }
 }
 
-/// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+/// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCollector
@@ -2235,68 +2236,68 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationColle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationConditionCondition
 {
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that sets the condition. You must refer to at least one of the inputs in the condition. For more information, expand the Condition node section in Node types in prompt flows.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the condition that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+/// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCondition
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>List of conditions. See definition.node.configuration.condition.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationConditionCondition>? Condition { get; set; }
 }
 
-/// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+/// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInlineCode
 {
-    /// <summary>The code that&apos;s executed in your inline code node.</summary>
+    /// <summary>Code that&apos;s executed in your inline code node.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
-    /// <summary>The programming language used by your inline code node.</summary>
+    /// <summary>Programming language used by your inline code node.</summary>
     [JsonPropertyName("language")]
     public string? Language { get; set; }
 }
 
-/// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+/// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInput
 {
 }
 
-/// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+/// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationIterator
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
@@ -2305,7 +2306,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -2318,12 +2319,12 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText? Text { get; set; }
 }
@@ -2483,20 +2484,20 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+/// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBase
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the knowledge base to query.</summary>
+    /// <summary>Unique identifier of the knowledge base to query.</summary>
     [JsonPropertyName("knowledgeBaseId")]
     public string? KnowledgeBaseId { get; set; }
 
@@ -2508,10 +2509,11 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
     [JsonPropertyName("knowledgeBaseIdSelector")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelector? KnowledgeBaseIdSelector { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to use to generate a response from the query results.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
+    /// <summary>Maximum number of results to retrieve from the knowledge base. Valid values are between 1 and 100.</summary>
     [JsonPropertyName("numberOfResults")]
     public double? NumberOfResults { get; set; }
 }
@@ -2671,7 +2673,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
@@ -2689,7 +2691,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLex
@@ -2698,33 +2700,33 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLex
     [JsonPropertyName("botAliasArn")]
     public string? BotAliasArn { get; set; }
 
-    /// <summary>The Region to invoke the Amazon Lex bot in</summary>
+    /// <summary>Locale to use when invoking the Amazon Lex bot, such as en_US.</summary>
     [JsonPropertyName("localeId")]
     public string? LocaleId { get; set; }
 }
 
-/// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+/// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationOutput
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
@@ -2733,7 +2735,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -2746,12 +2748,12 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
@@ -2760,17 +2762,17 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2779,11 +2781,11 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the message.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -2792,21 +2794,21 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See Message Content for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content Block for details.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2815,49 +2817,49 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the system prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>The description of the tool.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -2866,99 +2868,99 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+/// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
     [JsonPropertyName("any")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+    /// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
     [JsonPropertyName("auto")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Tools to pass to a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>Messages in the chat for the prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message Block for details.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>System prompts that provide context to the model or describe how it should behave. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system Block for details.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2967,44 +2969,44 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Message for the prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+/// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
     [JsonPropertyName("chat")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText? Text { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+/// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
@@ -3013,19 +3015,19 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to run inference with.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+    /// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>The type of prompt template. Valid values: TEXT, CHAT.</summary>
+    /// <summary>Type of prompt template. Valid values: TEXT, CHAT.</summary>
     [JsonPropertyName("templateType")]
     public string? TemplateType { get; set; }
 }
@@ -3185,7 +3187,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+/// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
@@ -3203,30 +3205,30 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelector? PromptArnSelector { get; set; }
 }
 
-/// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+/// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
-    /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
     [JsonPropertyName("inline")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInline? Inline { get; set; }
 
-    /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
     [JsonPropertyName("resource")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResource? Resource { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+/// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPrompt
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+    /// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfiguration? SourceConfiguration { get; set; }
 }
@@ -3386,12 +3388,12 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket from which to retrieve data.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -3404,22 +3406,22 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelector? BucketNameSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+/// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrieval
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfiguration? ServiceConfiguration { get; set; }
 }
@@ -3579,12 +3581,12 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket in which to store the input into the node.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -3597,80 +3599,80 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelector? BucketNameSelector { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+/// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorage
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfiguration? ServiceConfiguration { get; set; }
 }
 
-/// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+/// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfiguration
 {
-    /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+    /// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
     [JsonPropertyName("agent")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationAgent? Agent { get; set; }
 
-    /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+    /// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
     [JsonPropertyName("collector")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCollector? Collector { get; set; }
 
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCondition? Condition { get; set; }
 
-    /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+    /// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
     [JsonPropertyName("inlineCode")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInlineCode? InlineCode { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("input")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInput? Input { get; set; }
 
-    /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+    /// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
     [JsonPropertyName("iterator")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationIterator? Iterator { get; set; }
 
-    /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+    /// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
     [JsonPropertyName("knowledgeBase")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBase? KnowledgeBase { get; set; }
 
-    /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
     [JsonPropertyName("lambdaFunction")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction? LambdaFunction { get; set; }
 
-    /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
     [JsonPropertyName("lex")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLex? Lex { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("output")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationOutput? Output { get; set; }
 
-    /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
     [JsonPropertyName("prompt")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPrompt? Prompt { get; set; }
 
-    /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
     [JsonPropertyName("retrieval")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrieval? Retrieval { get; set; }
 
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
     [JsonPropertyName("storage")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
@@ -3683,15 +3685,15 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeInput
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the input that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the input. If the input doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -3700,11 +3702,11 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeInput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeOutput
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the output that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the output. If the output doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -3713,37 +3715,37 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeOutput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNode
 {
-    /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+    /// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowSpecInitProviderDefinitionNodeConfiguration? Configuration { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Information about an input into the node. See definition.node.input Block for details.</summary>
     [JsonPropertyName("input")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeInput>? Input { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the node.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Information about an output from the node. See definition.node.output Block for details.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNodeOutput>? Output { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of node. This value must match the name of the key you provide in configuration. Valid values: Agent, Collector, Condition, InlineCode, Input, Iterator, KnowledgeBase, LambdaFunction, Lex, Output, Prompt, Retrieval, Storage.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+/// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinition
 {
-    /// <summary>A list of connection definitions in the flow. See Connection for more information.</summary>
+    /// <summary>List of connection definitions in the flow. See definition.connection Block for details.</summary>
     [JsonPropertyName("connection")]
     public IList<V1beta1FlowSpecInitProviderDefinitionConnection>? Connection { get; set; }
 
-    /// <summary>A list of node definitions in the flow. See Node for more information.</summary>
+    /// <summary>List of node definitions in the flow. See definition.node Block for details.</summary>
     [JsonPropertyName("node")]
     public IList<V1beta1FlowSpecInitProviderDefinitionNode>? Node { get; set; }
 }
@@ -3931,11 +3933,11 @@ public partial class V1beta1FlowSpecInitProvider
     [JsonPropertyName("customerEncryptionKeyArnSelector")]
     public V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelector? CustomerEncryptionKeyArnSelector { get; set; }
 
-    /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+    /// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
     [JsonPropertyName("definition")]
     public V1beta1FlowSpecInitProviderDefinition? Definition { get; set; }
 
-    /// <summary>A description for the flow.</summary>
+    /// <summary>Description for the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -3951,7 +3953,7 @@ public partial class V1beta1FlowSpecInitProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1FlowSpecInitProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>A name for the flow.</summary>
+    /// <summary>Name for the flow.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -4067,40 +4069,40 @@ public partial class V1beta1FlowSpec
     public V1beta1FlowSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationConditional
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Condition that triggers this connection. For more information about how to write conditions, see the Condition node type in the Node types topic in the Amazon Bedrock User Guide.</summary>
     [JsonPropertyName("condition")]
     public string? Condition { get; set; }
 }
 
-/// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+/// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationData
 {
-    /// <summary>The name of the output in the source node that the connection begins from.</summary>
+    /// <summary>Name of the output in the source node that the connection begins from.</summary>
     [JsonPropertyName("sourceOutput")]
     public string? SourceOutput { get; set; }
 
-    /// <summary>The name of the input in the target node that the connection ends at.</summary>
+    /// <summary>Name of the input in the target node that the connection ends at.</summary>
     [JsonPropertyName("targetInput")]
     public string? TargetInput { get; set; }
 }
 
-/// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+/// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguration
 {
-    /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a Condition node. See definition.connection.configuration.conditional Block for details.</summary>
     [JsonPropertyName("conditional")]
     public V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationConditional? Conditional { get; set; }
 
-    /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
+    /// <summary>Configuration of a connection originating from a node that isn&apos;t a Condition node. See definition.connection.configuration.data Block for details.</summary>
     [JsonPropertyName("data")]
     public V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
@@ -4109,28 +4111,28 @@ public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnection
 {
-    /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
+    /// <summary>Configuration of the connection. See definition.connection.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowStatusAtProviderDefinitionConnectionConfiguration? Configuration { get; set; }
 
-    /// <summary>A name for the connection that you can reference.</summary>
+    /// <summary>Name for the connection that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The node that the connection starts at.</summary>
+    /// <summary>Node that the connection starts at.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The node that the connection ends at.</summary>
+    /// <summary>Node that the connection ends at.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Whether the source node that the connection begins from is a condition node Conditional or not Data.</summary>
+    /// <summary>Whether the source node that the connection begins from is a condition node (Conditional) or not (Data).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+/// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationAgent
@@ -4140,7 +4142,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationAgent
     public string? AgentAliasArn { get; set; }
 }
 
-/// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+/// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCollector
@@ -4151,68 +4153,68 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationColle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationConditionCondition
 {
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that sets the condition. You must refer to at least one of the inputs in the condition. For more information, expand the Condition node section in Node types in prompt flows.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the condition that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+/// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCondition
 {
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>List of conditions. See definition.node.configuration.condition.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationConditionCondition>? Condition { get; set; }
 }
 
-/// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+/// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInlineCode
 {
-    /// <summary>The code that&apos;s executed in your inline code node.</summary>
+    /// <summary>Code that&apos;s executed in your inline code node.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
-    /// <summary>The programming language used by your inline code node.</summary>
+    /// <summary>Programming language used by your inline code node.</summary>
     [JsonPropertyName("language")]
     public string? Language { get; set; }
 }
 
-/// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+/// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInput
 {
 }
 
-/// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+/// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationIterator
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
@@ -4221,7 +4223,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -4234,42 +4236,43 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.knowledge_base.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText? Text { get; set; }
 }
 
-/// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+/// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBase
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for knowledge base query and response generation. See definition.node.configuration.knowledge_base.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Configuration of model inference for knowledge base query and response generation. See definition.node.configuration.knowledge_base.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the knowledge base to query.</summary>
+    /// <summary>Unique identifier of the knowledge base to query.</summary>
     [JsonPropertyName("knowledgeBaseId")]
     public string? KnowledgeBaseId { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to use to generate a response from the query results.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
+    /// <summary>Maximum number of results to retrieve from the knowledge base. Valid values are between 1 and 100.</summary>
     [JsonPropertyName("numberOfResults")]
     public double? NumberOfResults { get; set; }
 }
 
-/// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLambdaFunction
@@ -4279,7 +4282,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLambd
     public string? LambdaArn { get; set; }
 }
 
-/// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+/// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLex
@@ -4288,33 +4291,33 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLex
     [JsonPropertyName("botAliasArn")]
     public string? BotAliasArn { get; set; }
 
-    /// <summary>The Region to invoke the Amazon Lex bot in</summary>
+    /// <summary>Locale to use when invoking the Amazon Lex bot, such as en_US.</summary>
     [JsonPropertyName("localeId")]
     public string? LocaleId { get; set; }
 }
 
-/// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+/// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationOutput
 {
 }
 
-/// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+/// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
-    /// <summary>The unique identifier of the guardrail.</summary>
+    /// <summary>Unique identifier of the guardrail.</summary>
     [JsonPropertyName("guardrailIdentifier")]
     public string? GuardrailIdentifier { get; set; }
 
-    /// <summary>The version of the guardrail.</summary>
+    /// <summary>Version of the guardrail.</summary>
     [JsonPropertyName("guardrailVersion")]
     public string? GuardrailVersion { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
@@ -4323,7 +4326,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>List of strings that define sequences after which the model will stop generating.</summary>
+    /// <summary>List of strings that define sequences after which the model stops generating.</summary>
     [JsonPropertyName("stopSequences")]
     public IList<string>? StopSequences { get; set; }
 
@@ -4336,12 +4339,12 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public double? TopP { get; set; }
 }
 
-/// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Inference configurations for a text prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
@@ -4350,17 +4353,17 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4369,11 +4372,11 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the message.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -4382,21 +4385,21 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See Message Content for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message.content Block for details.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4405,49 +4408,49 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within the system prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Text in the system prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>The description of the tool.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec.input_schema Block for details.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -4456,99 +4459,99 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a tool designation. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool.tool_spec Block for details.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+/// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the tool.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no arguments.</summary>
     [JsonPropertyName("any")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
+    /// <summary>Tools. The model automatically decides whether to call a tool or to generate text instead. This block has no arguments.</summary>
     [JsonPropertyName("auto")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
+    /// <summary>Tools to pass to a model. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool Block for details.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Which tools the model should request when invoked. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration.tool_choice Block for details.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>Messages in the chat for the prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.message Block for details.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>System prompts that provide context to the model or describe how it should behave. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.system Block for details.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat.tool_configuration Block for details.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of the cache point block. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4557,44 +4560,44 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name of the variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>The message for the prompt.</summary>
+/// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
-    /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a template configuration. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.cache_point Block for details.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>Variables in the prompt template. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text.input_variable Block for details.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Message for the prompt.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+/// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.chat Block for details.</summary>
     [JsonPropertyName("chat")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>The message for the prompt.</summary>
+    /// <summary>Configurations for the text in a message for a prompt. See definition.node.configuration.prompt.source_configuration.inline.template_configuration.text Block for details.</summary>
     [JsonPropertyName("text")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText? Text { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+/// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
@@ -4603,24 +4606,24 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt. See definition.node.configuration.prompt.source_configuration.inline.inference_configuration Block for details.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>The unique identifier of the model or inference profile to use to generate a response from the query results. Omit this field if you want to return the retrieved results as an array.</summary>
+    /// <summary>Unique identifier of the model or inference profile to run inference with.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
+    /// <summary>Prompt and variables in the prompt that can be replaced with values at runtime. See definition.node.configuration.prompt.source_configuration.inline.template_configuration Block for details.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>The type of prompt template. Valid values: TEXT, CHAT.</summary>
+    /// <summary>Type of prompt template. Valid values: TEXT, CHAT.</summary>
     [JsonPropertyName("templateType")]
     public string? TemplateType { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+/// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
@@ -4630,148 +4633,148 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? PromptArn { get; set; }
 }
 
-/// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+/// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
-    /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt that is defined inline. See definition.node.configuration.prompt.source_configuration.inline Block for details.</summary>
     [JsonPropertyName("inline")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInline? Inline { get; set; }
 
-    /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt from Prompt management. See definition.node.configuration.prompt.source_configuration.resource Block for details.</summary>
     [JsonPropertyName("resource")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationResource? Resource { get; set; }
 }
 
-/// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+/// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPrompt
 {
-    /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
+    /// <summary>Configuration of a guardrail for prompt generation. See definition.node.configuration.prompt.guardrail_configuration Block for details.</summary>
     [JsonPropertyName("guardrailConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptGuardrailConfiguration? GuardrailConfiguration { get; set; }
 
-    /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
+    /// <summary>Configuration of the prompt source, either inline or from Prompt management. See definition.node.configuration.prompt.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket from which to retrieve data.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location from which to retrieve data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+/// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrieval
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for retrieving data to return as the output from the node. See definition.node.configuration.retrieval.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfiguration? ServiceConfiguration { get; set; }
 }
 
-/// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+/// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
-    /// <summary>The name of the Amazon S3 bucket in which to store the input into the node.</summary>
+    /// <summary>Name of the Amazon S3 bucket in which to store the input into the node.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+/// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
-    /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
+    /// <summary>Configurations for the Amazon S3 location in which to store the input into the node. See definition.node.configuration.storage.service_configuration.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfigurationS3? S3 { get; set; }
 }
 
-/// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+/// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorage
 {
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
+    /// <summary>Configurations for the service to use for storing the input into the node. See definition.node.configuration.storage.service_configuration Block for details.</summary>
     [JsonPropertyName("serviceConfiguration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfiguration? ServiceConfiguration { get; set; }
 }
 
-/// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+/// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfiguration
 {
-    /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
+    /// <summary>Configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See definition.node.configuration.agent Block for details.</summary>
     [JsonPropertyName("agent")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationAgent? Agent { get; set; }
 
-    /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
+    /// <summary>Configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This block has no arguments.</summary>
     [JsonPropertyName("collector")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCollector? Collector { get; set; }
 
-    /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Condition node in your flow. Sets conditions that lead to different branches of the flow. See definition.node.configuration.condition Block for details.</summary>
     [JsonPropertyName("condition")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCondition? Condition { get; set; }
 
-    /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
+    /// <summary>Configurations for an inline code node in your flow. See definition.node.configuration.inline_code Block for details.</summary>
     [JsonPropertyName("inlineCode")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInlineCode? InlineCode { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Configurations for an input flow node in your flow. The definition.node.input block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("input")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInput? Input { get; set; }
 
-    /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
+    /// <summary>Configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration returns a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no arguments.</summary>
     [JsonPropertyName("iterator")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationIterator? Iterator { get; set; }
 
-    /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
+    /// <summary>Configurations for a knowledge base node in your flow. Queries a knowledge base and returns a response generated from the retrieved results. See definition.node.configuration.knowledge_base Block for details.</summary>
     [JsonPropertyName("knowledgeBase")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBase? KnowledgeBase { get; set; }
 
-    /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lambda function node in your flow. Invokes a Lambda function. See definition.node.configuration.lambda_function Block for details.</summary>
     [JsonPropertyName("lambdaFunction")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLambdaFunction? LambdaFunction { get; set; }
 
-    /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See definition.node.configuration.lex Block for details.</summary>
     [JsonPropertyName("lex")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLex? Lex { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Configurations for an output flow node in your flow. The definition.node.output block can&apos;t be specified for this node. This block has no arguments.</summary>
     [JsonPropertyName("output")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationOutput? Output { get; set; }
 
-    /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
+    /// <summary>Configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See definition.node.configuration.prompt Block for details.</summary>
     [JsonPropertyName("prompt")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPrompt? Prompt { get; set; }
 
-    /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See definition.node.configuration.retrieval Block for details.</summary>
     [JsonPropertyName("retrieval")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrieval? Retrieval { get; set; }
 
-    /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
+    /// <summary>Configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See definition.node.configuration.storage Block for details.</summary>
     [JsonPropertyName("storage")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
@@ -4784,15 +4787,15 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeInput
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
-    /// <summary>An expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
+    /// <summary>Expression that formats the input for the node. For an explanation of how to create expressions, see Expressions in Prompt flows in Amazon Bedrock.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the input that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the input. If the input doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4801,11 +4804,11 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeInput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeOutput
 {
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the output that you can reference.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Data type of the output. If the output doesn&apos;t match this type at runtime, a validation error is thrown.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -4814,37 +4817,37 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeOutput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNode
 {
-    /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
+    /// <summary>Configurations for the node. See definition.node.configuration Block for details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1FlowStatusAtProviderDefinitionNodeConfiguration? Configuration { get; set; }
 
-    /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
+    /// <summary>Information about an input into the node. See definition.node.input Block for details.</summary>
     [JsonPropertyName("input")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeInput>? Input { get; set; }
 
-    /// <summary>The name of the tool.</summary>
+    /// <summary>Name for the node.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
+    /// <summary>Information about an output from the node. See definition.node.output Block for details.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNodeOutput>? Output { get; set; }
 
-    /// <summary>The data type of the output. If the output doesn’t match this type at runtime, a validation error will be thrown.</summary>
+    /// <summary>Type of node. This value must match the name of the key you provide in configuration. Valid values: Agent, Collector, Condition, InlineCode, Input, Iterator, KnowledgeBase, LambdaFunction, Lex, Output, Prompt, Retrieval, Storage.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+/// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinition
 {
-    /// <summary>A list of connection definitions in the flow. See Connection for more information.</summary>
+    /// <summary>List of connection definitions in the flow. See definition.connection Block for details.</summary>
     [JsonPropertyName("connection")]
     public IList<V1beta1FlowStatusAtProviderDefinitionConnection>? Connection { get; set; }
 
-    /// <summary>A list of node definitions in the flow. See Node for more information.</summary>
+    /// <summary>List of node definitions in the flow. See definition.node Block for details.</summary>
     [JsonPropertyName("node")]
     public IList<V1beta1FlowStatusAtProviderDefinitionNode>? Node { get; set; }
 }
@@ -4857,7 +4860,7 @@ public partial class V1beta1FlowStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The time at which the flow was created.</summary>
+    /// <summary>Time at which the flow was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
@@ -4865,11 +4868,11 @@ public partial class V1beta1FlowStatusAtProvider
     [JsonPropertyName("customerEncryptionKeyArn")]
     public string? CustomerEncryptionKeyArn { get; set; }
 
-    /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
+    /// <summary>Nodes and connections between nodes in the flow. See definition Block for details.</summary>
     [JsonPropertyName("definition")]
     public V1beta1FlowStatusAtProviderDefinition? Definition { get; set; }
 
-    /// <summary>A description for the flow.</summary>
+    /// <summary>Description for the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -4877,11 +4880,11 @@ public partial class V1beta1FlowStatusAtProvider
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
-    /// <summary>The unique identifier of the flow.</summary>
+    /// <summary>Unique identifier of the flow.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A name for the flow.</summary>
+    /// <summary>Name for the flow.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -4892,7 +4895,7 @@ public partial class V1beta1FlowStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The status of the flow.</summary>
+    /// <summary>Status of the flow.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -4900,15 +4903,15 @@ public partial class V1beta1FlowStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The time at which the flow was last updated.</summary>
+    /// <summary>Time at which the flow was last updated.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
-    /// <summary>The version of the flow.</summary>
+    /// <summary>Version of the flow.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -4986,7 +4989,7 @@ public partial class V1beta1FlowStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Flow is the Schema for the Flows API.</summary>
+/// <summary>Flow is the Schema for the Flows API. Manages an AWS Bedrock Agents Flow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

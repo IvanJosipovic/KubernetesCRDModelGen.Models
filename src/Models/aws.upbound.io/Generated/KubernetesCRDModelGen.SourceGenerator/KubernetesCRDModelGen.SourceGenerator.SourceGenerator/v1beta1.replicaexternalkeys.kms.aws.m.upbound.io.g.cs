@@ -209,27 +209,19 @@ public partial class V1beta1ReplicaExternalKeySpecForProviderPrimaryKeyArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicaExternalKeySpecForProvider
 {
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>A description of the KMS key.</summary>
+    /// <summary>Description of the KMS key.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -237,11 +229,11 @@ public partial class V1beta1ReplicaExternalKeySpecForProvider
     [JsonPropertyName("keyMaterialBase64SecretRef")]
     public V1beta1ReplicaExternalKeySpecForProviderKeyMaterialBase64SecretRef? KeyMaterialBase64SecretRef { get; set; }
 
-    /// <summary>The key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
+    /// <summary>Key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
+    /// <summary>ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
     [JsonPropertyName("primaryKeyArn")]
     public string? PrimaryKeyArn { get; set; }
 
@@ -453,27 +445,19 @@ public partial class V1beta1ReplicaExternalKeySpecInitProviderPrimaryKeyArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicaExternalKeySpecInitProvider
 {
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>A description of the KMS key.</summary>
+    /// <summary>Description of the KMS key.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -481,11 +465,11 @@ public partial class V1beta1ReplicaExternalKeySpecInitProvider
     [JsonPropertyName("keyMaterialBase64SecretRef")]
     public V1beta1ReplicaExternalKeySpecInitProviderKeyMaterialBase64SecretRef? KeyMaterialBase64SecretRef { get; set; }
 
-    /// <summary>The key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
+    /// <summary>Key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
+    /// <summary>ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
     [JsonPropertyName("primaryKeyArn")]
     public string? PrimaryKeyArn { get; set; }
 
@@ -621,27 +605,19 @@ public partial class V1beta1ReplicaExternalKeyStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>A description of the KMS key.</summary>
+    /// <summary>Description of the KMS key.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the replica key is enabled. Disabled KMS keys cannot be used in cryptographic operations. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -652,23 +628,23 @@ public partial class V1beta1ReplicaExternalKeyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The key ID of the replica key. Related multi-Region keys have the same key ID.</summary>
+    /// <summary>Key ID of the replica key. Related multi-Region keys have the same key ID.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>The state of the replica key.</summary>
+    /// <summary>State of the replica key.</summary>
     [JsonPropertyName("keyState")]
     public string? KeyState { get; set; }
 
-    /// <summary>The cryptographic operations for which you can use the KMS key. This is a shared property of multi-Region keys.</summary>
+    /// <summary>Cryptographic operations for which you can use the KMS key. This is a shared property of multi-Region keys.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>The key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
+    /// <summary>Key policy to attach to the KMS key. If you do not specify a key policy, AWS KMS attaches the default key policy to the KMS key.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
+    /// <summary>ARN of the multi-Region primary key to replicate. The primary key must be in a different AWS Region of the same AWS Partition. You can create only one replica of a given primary key in each AWS Region.</summary>
     [JsonPropertyName("primaryKeyArn")]
     public string? PrimaryKeyArn { get; set; }
 
@@ -683,7 +659,7 @@ public partial class V1beta1ReplicaExternalKeyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

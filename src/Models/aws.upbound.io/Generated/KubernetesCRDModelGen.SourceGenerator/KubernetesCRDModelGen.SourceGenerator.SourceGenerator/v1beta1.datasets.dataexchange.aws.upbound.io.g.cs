@@ -316,7 +316,7 @@ public partial class V1beta1DataSetStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Id of the data set.</summary>
+    /// <summary>The ID of the data set.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

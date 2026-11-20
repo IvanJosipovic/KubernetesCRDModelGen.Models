@@ -211,7 +211,7 @@ public partial class V1beta1LoggingOptionsSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the role that allows IoT to write to Cloudwatch logs.</summary>
+    /// <summary>The ARN of the role that allows IoT to write to CloudWatch logs.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1LoggingOptionsSpecInitProvider
     [JsonPropertyName("disableAllLogs")]
     public bool? DisableAllLogs { get; set; }
 
-    /// <summary>The ARN of the role that allows IoT to write to Cloudwatch logs.</summary>
+    /// <summary>The ARN of the role that allows IoT to write to CloudWatch logs.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -545,7 +545,7 @@ public partial class V1beta1LoggingOptionsStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the role that allows IoT to write to Cloudwatch logs.</summary>
+    /// <summary>The ARN of the role that allows IoT to write to CloudWatch logs.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }

@@ -351,11 +351,11 @@ public partial class V1beta1CrawlerSpecForProviderCatalogTargetTablesSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderCatalogTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection for an Amazon S3-backed Data Catalog table to be a target of the crawl when using a Catalog connection type paired with a NETWORK Connection type.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Glue database where results are written.</summary>
+    /// <summary>Name of the Glue database to be synchronized.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -367,15 +367,15 @@ public partial class V1beta1CrawlerSpecForProviderCatalogTarget
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1CrawlerSpecForProviderCatalogTargetDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of catalog tables to be synchronized.</summary>
+    /// <summary>List of catalog tables to be synchronized.</summary>
     [JsonPropertyName("tables")]
     public IList<string>? Tables { get; set; }
 
@@ -547,19 +547,19 @@ public partial class V1beta1CrawlerSpecForProviderDatabaseNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderDeltaTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Delta table target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
+    /// <summary>Whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
     [JsonPropertyName("createNativeDeltaTable")]
     public bool? CreateNativeDeltaTable { get; set; }
 
-    /// <summary>A list of the Amazon S3 paths to the Delta tables.</summary>
+    /// <summary>List of the Amazon S3 paths to the Delta tables.</summary>
     [JsonPropertyName("deltaTables")]
     public IList<string>? DeltaTables { get; set; }
 
-    /// <summary>Specifies whether to write the manifest files to the Delta table path.</summary>
+    /// <summary>Whether to write the manifest files to the Delta table path.</summary>
     [JsonPropertyName("writeManifest")]
     public bool? WriteManifest { get; set; }
 }
@@ -568,15 +568,15 @@ public partial class V1beta1CrawlerSpecForProviderDeltaTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderDynamodbTarget
 {
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Name of the DynamoDB table to crawl.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 
-    /// <summary>The percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
+    /// <summary>Percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
     [JsonPropertyName("scanRate")]
     public double? ScanRate { get; set; }
 }
@@ -585,15 +585,15 @@ public partial class V1beta1CrawlerSpecForProviderDynamodbTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderHudiTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Hudi target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
@@ -606,19 +606,19 @@ public partial class V1beta1CrawlerSpecForProviderHudiTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderIcebergTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Iceberg target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Iceberg metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
-    /// <summary>One or more Amazon S3 paths that contains Hudi metadata folders as s3://bucket/prefix.</summary>
+    /// <summary>One or more Amazon S3 paths that contains Iceberg metadata folders as s3://bucket/prefix.</summary>
     [JsonPropertyName("paths")]
     public IList<string>? Paths { get; set; }
 }
@@ -782,7 +782,7 @@ public partial class V1beta1CrawlerSpecForProviderJdbcTargetConnectionNameSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderJdbcTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the JDBC target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
@@ -798,16 +798,16 @@ public partial class V1beta1CrawlerSpecForProviderJdbcTarget
     [JsonPropertyName("enableAdditionalMetadata")]
     public IList<string>? EnableAdditionalMetadata { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the JDBC target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+/// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderLakeFormationConfiguration
@@ -816,17 +816,17 @@ public partial class V1beta1CrawlerSpecForProviderLakeFormationConfiguration
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Specifies whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
+    /// <summary>Whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
     [JsonPropertyName("useLakeFormationCredentials")]
     public bool? UseLakeFormationCredentials { get; set; }
 }
 
-/// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+/// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderLineageConfiguration
 {
-    /// <summary>Specifies whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
+    /// <summary>Whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
     [JsonPropertyName("crawlerLineageSettings")]
     public string? CrawlerLineageSettings { get; set; }
 }
@@ -990,7 +990,7 @@ public partial class V1beta1CrawlerSpecForProviderMongodbTargetConnectionNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderMongodbTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
@@ -1002,21 +1002,21 @@ public partial class V1beta1CrawlerSpecForProviderMongodbTarget
     [JsonPropertyName("connectionNameSelector")]
     public V1beta1CrawlerSpecForProviderMongodbTargetConnectionNameSelector? ConnectionNameSelector { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the Amazon DocumentDB or MongoDB target (database/collection).</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table. Default value is true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 }
 
-/// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+/// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderRecrawlPolicy
 {
-    /// <summary>Specifies whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
+    /// <summary>Whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
     [JsonPropertyName("recrawlBehavior")]
     public string? RecrawlBehavior { get; set; }
 }
@@ -1180,23 +1180,23 @@ public partial class V1beta1CrawlerSpecForProviderRoleSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderS3Target
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of a connection which allows crawler to access data in S3 within a VPC.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>ARN of the dead-letter SQS queue.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>ARN of the SQS queue to receive S3 notifications from.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path to the Amazon S3 target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -1205,16 +1205,16 @@ public partial class V1beta1CrawlerSpecForProviderS3Target
     public double? SampleSize { get; set; }
 }
 
-/// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+/// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProviderSchemaChangePolicy
 {
-    /// <summary>The deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
+    /// <summary>Deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
     [JsonPropertyName("deleteBehavior")]
     public string? DeleteBehavior { get; set; }
 
-    /// <summary>The update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
+    /// <summary>Update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
     [JsonPropertyName("updateBehavior")]
     public string? UpdateBehavior { get; set; }
 }
@@ -1223,7 +1223,7 @@ public partial class V1beta1CrawlerSpecForProviderSchemaChangePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecForProvider
 {
-    /// <summary>List of nested AWS Glue Data Catalog target arguments. See Catalog Target below.</summary>
+    /// <summary>List of nested AWS Glue Data Catalog target arguments. See catalog_target below.</summary>
     [JsonPropertyName("catalogTarget")]
     public IList<V1beta1CrawlerSpecForProviderCatalogTarget>? CatalogTarget { get; set; }
 
@@ -1247,7 +1247,7 @@ public partial class V1beta1CrawlerSpecForProvider
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1CrawlerSpecForProviderDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>List of nested Delta Lake target arguments. See Delta Target below.</summary>
+    /// <summary>List of nested Delta Lake target arguments. See delta_target below.</summary>
     [JsonPropertyName("deltaTarget")]
     public IList<V1beta1CrawlerSpecForProviderDeltaTarget>? DeltaTarget { get; set; }
 
@@ -1255,35 +1255,35 @@ public partial class V1beta1CrawlerSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>List of nested DynamoDB target arguments. See Dynamodb Target below.</summary>
+    /// <summary>List of nested DynamoDB target arguments. See dynamodb_target below.</summary>
     [JsonPropertyName("dynamodbTarget")]
     public IList<V1beta1CrawlerSpecForProviderDynamodbTarget>? DynamodbTarget { get; set; }
 
-    /// <summary>List of nested Hudi target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Hudi target arguments. See hudi_target below.</summary>
     [JsonPropertyName("hudiTarget")]
     public IList<V1beta1CrawlerSpecForProviderHudiTarget>? HudiTarget { get; set; }
 
-    /// <summary>List of nested Iceberg target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Iceberg target arguments. See iceberg_target below.</summary>
     [JsonPropertyName("icebergTarget")]
     public IList<V1beta1CrawlerSpecForProviderIcebergTarget>? IcebergTarget { get; set; }
 
-    /// <summary>List of nested JDBC target arguments. See JDBC Target below.</summary>
+    /// <summary>List of nested JDBC target arguments. See jdbc_target below.</summary>
     [JsonPropertyName("jdbcTarget")]
     public IList<V1beta1CrawlerSpecForProviderJdbcTarget>? JdbcTarget { get; set; }
 
-    /// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+    /// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
     [JsonPropertyName("lakeFormationConfiguration")]
     public V1beta1CrawlerSpecForProviderLakeFormationConfiguration? LakeFormationConfiguration { get; set; }
 
-    /// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+    /// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
     [JsonPropertyName("lineageConfiguration")]
     public V1beta1CrawlerSpecForProviderLineageConfiguration? LineageConfiguration { get; set; }
 
-    /// <summary>List of nested MongoDB target arguments. See MongoDB Target below.</summary>
+    /// <summary>List of nested MongoDB target arguments. See mongodb_target below.</summary>
     [JsonPropertyName("mongodbTarget")]
     public IList<V1beta1CrawlerSpecForProviderMongodbTarget>? MongodbTarget { get; set; }
 
-    /// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+    /// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
     [JsonPropertyName("recrawlPolicy")]
     public V1beta1CrawlerSpecForProviderRecrawlPolicy? RecrawlPolicy { get; set; }
 
@@ -1294,7 +1294,7 @@ public partial class V1beta1CrawlerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
+    /// <summary>IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -1306,23 +1306,23 @@ public partial class V1beta1CrawlerSpecForProvider
     [JsonPropertyName("roleSelector")]
     public V1beta1CrawlerSpecForProviderRoleSelector? RoleSelector { get; set; }
 
-    /// <summary>List of nested Amazon S3 target arguments. See S3 Target below.</summary>
+    /// <summary>List of nested Amazon S3 target arguments. See s3_target below.</summary>
     [JsonPropertyName("s3Target")]
     public IList<V1beta1CrawlerSpecForProviderS3Target>? S3Target { get; set; }
 
-    /// <summary>Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
+    /// <summary>Cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
     [JsonPropertyName("schemaChangePolicy")]
     public V1beta1CrawlerSpecForProviderSchemaChangePolicy? SchemaChangePolicy { get; set; }
 
-    /// <summary>The name of Security Configuration to be used by the crawler</summary>
+    /// <summary>Name of Security Configuration to be used by the crawler.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The table prefix used for catalog tables that are created.</summary>
+    /// <summary>Table prefix used for catalog tables that are created.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 
@@ -1645,11 +1645,11 @@ public partial class V1beta1CrawlerSpecInitProviderCatalogTargetTablesSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderCatalogTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection for an Amazon S3-backed Data Catalog table to be a target of the crawl when using a Catalog connection type paired with a NETWORK Connection type.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Glue database where results are written.</summary>
+    /// <summary>Name of the Glue database to be synchronized.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -1661,15 +1661,15 @@ public partial class V1beta1CrawlerSpecInitProviderCatalogTarget
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1CrawlerSpecInitProviderCatalogTargetDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of catalog tables to be synchronized.</summary>
+    /// <summary>List of catalog tables to be synchronized.</summary>
     [JsonPropertyName("tables")]
     public IList<string>? Tables { get; set; }
 
@@ -1841,19 +1841,19 @@ public partial class V1beta1CrawlerSpecInitProviderDatabaseNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderDeltaTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Delta table target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
+    /// <summary>Whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
     [JsonPropertyName("createNativeDeltaTable")]
     public bool? CreateNativeDeltaTable { get; set; }
 
-    /// <summary>A list of the Amazon S3 paths to the Delta tables.</summary>
+    /// <summary>List of the Amazon S3 paths to the Delta tables.</summary>
     [JsonPropertyName("deltaTables")]
     public IList<string>? DeltaTables { get; set; }
 
-    /// <summary>Specifies whether to write the manifest files to the Delta table path.</summary>
+    /// <summary>Whether to write the manifest files to the Delta table path.</summary>
     [JsonPropertyName("writeManifest")]
     public bool? WriteManifest { get; set; }
 }
@@ -1862,15 +1862,15 @@ public partial class V1beta1CrawlerSpecInitProviderDeltaTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderDynamodbTarget
 {
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Name of the DynamoDB table to crawl.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 
-    /// <summary>The percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
+    /// <summary>Percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
     [JsonPropertyName("scanRate")]
     public double? ScanRate { get; set; }
 }
@@ -1879,15 +1879,15 @@ public partial class V1beta1CrawlerSpecInitProviderDynamodbTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderHudiTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Hudi target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
@@ -1900,19 +1900,19 @@ public partial class V1beta1CrawlerSpecInitProviderHudiTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderIcebergTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Iceberg target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Iceberg metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
-    /// <summary>One or more Amazon S3 paths that contains Hudi metadata folders as s3://bucket/prefix.</summary>
+    /// <summary>One or more Amazon S3 paths that contains Iceberg metadata folders as s3://bucket/prefix.</summary>
     [JsonPropertyName("paths")]
     public IList<string>? Paths { get; set; }
 }
@@ -2076,7 +2076,7 @@ public partial class V1beta1CrawlerSpecInitProviderJdbcTargetConnectionNameSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderJdbcTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the JDBC target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
@@ -2092,16 +2092,16 @@ public partial class V1beta1CrawlerSpecInitProviderJdbcTarget
     [JsonPropertyName("enableAdditionalMetadata")]
     public IList<string>? EnableAdditionalMetadata { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the JDBC target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+/// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderLakeFormationConfiguration
@@ -2110,17 +2110,17 @@ public partial class V1beta1CrawlerSpecInitProviderLakeFormationConfiguration
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Specifies whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
+    /// <summary>Whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
     [JsonPropertyName("useLakeFormationCredentials")]
     public bool? UseLakeFormationCredentials { get; set; }
 }
 
-/// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+/// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderLineageConfiguration
 {
-    /// <summary>Specifies whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
+    /// <summary>Whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
     [JsonPropertyName("crawlerLineageSettings")]
     public string? CrawlerLineageSettings { get; set; }
 }
@@ -2284,7 +2284,7 @@ public partial class V1beta1CrawlerSpecInitProviderMongodbTargetConnectionNameSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderMongodbTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
@@ -2296,21 +2296,21 @@ public partial class V1beta1CrawlerSpecInitProviderMongodbTarget
     [JsonPropertyName("connectionNameSelector")]
     public V1beta1CrawlerSpecInitProviderMongodbTargetConnectionNameSelector? ConnectionNameSelector { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the Amazon DocumentDB or MongoDB target (database/collection).</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table. Default value is true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 }
 
-/// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+/// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderRecrawlPolicy
 {
-    /// <summary>Specifies whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
+    /// <summary>Whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
     [JsonPropertyName("recrawlBehavior")]
     public string? RecrawlBehavior { get; set; }
 }
@@ -2474,23 +2474,23 @@ public partial class V1beta1CrawlerSpecInitProviderRoleSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderS3Target
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of a connection which allows crawler to access data in S3 within a VPC.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>ARN of the dead-letter SQS queue.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>ARN of the SQS queue to receive S3 notifications from.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path to the Amazon S3 target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -2499,16 +2499,16 @@ public partial class V1beta1CrawlerSpecInitProviderS3Target
     public double? SampleSize { get; set; }
 }
 
-/// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+/// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProviderSchemaChangePolicy
 {
-    /// <summary>The deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
+    /// <summary>Deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
     [JsonPropertyName("deleteBehavior")]
     public string? DeleteBehavior { get; set; }
 
-    /// <summary>The update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
+    /// <summary>Update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
     [JsonPropertyName("updateBehavior")]
     public string? UpdateBehavior { get; set; }
 }
@@ -2529,7 +2529,7 @@ public partial class V1beta1CrawlerSpecInitProviderSchemaChangePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerSpecInitProvider
 {
-    /// <summary>List of nested AWS Glue Data Catalog target arguments. See Catalog Target below.</summary>
+    /// <summary>List of nested AWS Glue Data Catalog target arguments. See catalog_target below.</summary>
     [JsonPropertyName("catalogTarget")]
     public IList<V1beta1CrawlerSpecInitProviderCatalogTarget>? CatalogTarget { get; set; }
 
@@ -2553,7 +2553,7 @@ public partial class V1beta1CrawlerSpecInitProvider
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1CrawlerSpecInitProviderDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>List of nested Delta Lake target arguments. See Delta Target below.</summary>
+    /// <summary>List of nested Delta Lake target arguments. See delta_target below.</summary>
     [JsonPropertyName("deltaTarget")]
     public IList<V1beta1CrawlerSpecInitProviderDeltaTarget>? DeltaTarget { get; set; }
 
@@ -2561,39 +2561,39 @@ public partial class V1beta1CrawlerSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>List of nested DynamoDB target arguments. See Dynamodb Target below.</summary>
+    /// <summary>List of nested DynamoDB target arguments. See dynamodb_target below.</summary>
     [JsonPropertyName("dynamodbTarget")]
     public IList<V1beta1CrawlerSpecInitProviderDynamodbTarget>? DynamodbTarget { get; set; }
 
-    /// <summary>List of nested Hudi target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Hudi target arguments. See hudi_target below.</summary>
     [JsonPropertyName("hudiTarget")]
     public IList<V1beta1CrawlerSpecInitProviderHudiTarget>? HudiTarget { get; set; }
 
-    /// <summary>List of nested Iceberg target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Iceberg target arguments. See iceberg_target below.</summary>
     [JsonPropertyName("icebergTarget")]
     public IList<V1beta1CrawlerSpecInitProviderIcebergTarget>? IcebergTarget { get; set; }
 
-    /// <summary>List of nested JDBC target arguments. See JDBC Target below.</summary>
+    /// <summary>List of nested JDBC target arguments. See jdbc_target below.</summary>
     [JsonPropertyName("jdbcTarget")]
     public IList<V1beta1CrawlerSpecInitProviderJdbcTarget>? JdbcTarget { get; set; }
 
-    /// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+    /// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
     [JsonPropertyName("lakeFormationConfiguration")]
     public V1beta1CrawlerSpecInitProviderLakeFormationConfiguration? LakeFormationConfiguration { get; set; }
 
-    /// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+    /// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
     [JsonPropertyName("lineageConfiguration")]
     public V1beta1CrawlerSpecInitProviderLineageConfiguration? LineageConfiguration { get; set; }
 
-    /// <summary>List of nested MongoDB target arguments. See MongoDB Target below.</summary>
+    /// <summary>List of nested MongoDB target arguments. See mongodb_target below.</summary>
     [JsonPropertyName("mongodbTarget")]
     public IList<V1beta1CrawlerSpecInitProviderMongodbTarget>? MongodbTarget { get; set; }
 
-    /// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+    /// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
     [JsonPropertyName("recrawlPolicy")]
     public V1beta1CrawlerSpecInitProviderRecrawlPolicy? RecrawlPolicy { get; set; }
 
-    /// <summary>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
+    /// <summary>IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -2605,23 +2605,23 @@ public partial class V1beta1CrawlerSpecInitProvider
     [JsonPropertyName("roleSelector")]
     public V1beta1CrawlerSpecInitProviderRoleSelector? RoleSelector { get; set; }
 
-    /// <summary>List of nested Amazon S3 target arguments. See S3 Target below.</summary>
+    /// <summary>List of nested Amazon S3 target arguments. See s3_target below.</summary>
     [JsonPropertyName("s3Target")]
     public IList<V1beta1CrawlerSpecInitProviderS3Target>? S3Target { get; set; }
 
-    /// <summary>Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
+    /// <summary>Cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
     [JsonPropertyName("schemaChangePolicy")]
     public V1beta1CrawlerSpecInitProviderSchemaChangePolicy? SchemaChangePolicy { get; set; }
 
-    /// <summary>The name of Security Configuration to be used by the crawler</summary>
+    /// <summary>Name of Security Configuration to be used by the crawler.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The table prefix used for catalog tables that are created.</summary>
+    /// <summary>Table prefix used for catalog tables that are created.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 
@@ -2741,23 +2741,23 @@ public partial class V1beta1CrawlerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderCatalogTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection for an Amazon S3-backed Data Catalog table to be a target of the crawl when using a Catalog connection type paired with a NETWORK Connection type.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Glue database where results are written.</summary>
+    /// <summary>Name of the Glue database to be synchronized.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>Valid Amazon SQS ARN.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of catalog tables to be synchronized.</summary>
+    /// <summary>List of catalog tables to be synchronized.</summary>
     [JsonPropertyName("tables")]
     public IList<string>? Tables { get; set; }
 }
@@ -2766,19 +2766,19 @@ public partial class V1beta1CrawlerStatusAtProviderCatalogTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderDeltaTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Delta table target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
+    /// <summary>Whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.</summary>
     [JsonPropertyName("createNativeDeltaTable")]
     public bool? CreateNativeDeltaTable { get; set; }
 
-    /// <summary>A list of the Amazon S3 paths to the Delta tables.</summary>
+    /// <summary>List of the Amazon S3 paths to the Delta tables.</summary>
     [JsonPropertyName("deltaTables")]
     public IList<string>? DeltaTables { get; set; }
 
-    /// <summary>Specifies whether to write the manifest files to the Delta table path.</summary>
+    /// <summary>Whether to write the manifest files to the Delta table path.</summary>
     [JsonPropertyName("writeManifest")]
     public bool? WriteManifest { get; set; }
 }
@@ -2787,15 +2787,15 @@ public partial class V1beta1CrawlerStatusAtProviderDeltaTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderDynamodbTarget
 {
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Name of the DynamoDB table to crawl.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 
-    /// <summary>The percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
+    /// <summary>Percentage of the configured read capacity units to use by the AWS Glue crawler. The valid values are null or a value between 0.1 to 1.5.</summary>
     [JsonPropertyName("scanRate")]
     public double? ScanRate { get; set; }
 }
@@ -2804,15 +2804,15 @@ public partial class V1beta1CrawlerStatusAtProviderDynamodbTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderHudiTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Hudi target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
@@ -2825,19 +2825,19 @@ public partial class V1beta1CrawlerStatusAtProviderHudiTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderIcebergTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Iceberg target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
+    /// <summary>Maximum depth of Amazon S3 paths that the crawler can traverse to discover the Iceberg metadata folder in your Amazon S3 path. Used to limit the crawler run time. Valid values are between 1 and 20.</summary>
     [JsonPropertyName("maximumTraversalDepth")]
     public double? MaximumTraversalDepth { get; set; }
 
-    /// <summary>One or more Amazon S3 paths that contains Hudi metadata folders as s3://bucket/prefix.</summary>
+    /// <summary>One or more Amazon S3 paths that contains Iceberg metadata folders as s3://bucket/prefix.</summary>
     [JsonPropertyName("paths")]
     public IList<string>? Paths { get; set; }
 }
@@ -2846,7 +2846,7 @@ public partial class V1beta1CrawlerStatusAtProviderIcebergTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderJdbcTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the JDBC target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
@@ -2854,16 +2854,16 @@ public partial class V1beta1CrawlerStatusAtProviderJdbcTarget
     [JsonPropertyName("enableAdditionalMetadata")]
     public IList<string>? EnableAdditionalMetadata { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the JDBC target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+/// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderLakeFormationConfiguration
@@ -2872,17 +2872,17 @@ public partial class V1beta1CrawlerStatusAtProviderLakeFormationConfiguration
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Specifies whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
+    /// <summary>Whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</summary>
     [JsonPropertyName("useLakeFormationCredentials")]
     public bool? UseLakeFormationCredentials { get; set; }
 }
 
-/// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+/// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderLineageConfiguration
 {
-    /// <summary>Specifies whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
+    /// <summary>Whether data lineage is enabled for the crawler. Valid values are: ENABLE and DISABLE. Default value is DISABLE.</summary>
     [JsonPropertyName("crawlerLineageSettings")]
     public string? CrawlerLineageSettings { get; set; }
 }
@@ -2891,25 +2891,25 @@ public partial class V1beta1CrawlerStatusAtProviderLineageConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderMongodbTarget
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path of the Amazon DocumentDB or MongoDB target (database/collection).</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table.  defaults to true.</summary>
+    /// <summary>Whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table. Default value is true.</summary>
     [JsonPropertyName("scanAll")]
     public bool? ScanAll { get; set; }
 }
 
-/// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+/// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderRecrawlPolicy
 {
-    /// <summary>Specifies whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
+    /// <summary>Whether to crawl the entire dataset again, crawl only folders that were added since the last crawler run, or crawl what S3 notifies the crawler of via SQS. Valid Values are: CRAWL_EVENT_MODE, CRAWL_EVERYTHING and CRAWL_NEW_FOLDERS_ONLY. Default value is CRAWL_EVERYTHING.</summary>
     [JsonPropertyName("recrawlBehavior")]
     public string? RecrawlBehavior { get; set; }
 }
@@ -2918,23 +2918,23 @@ public partial class V1beta1CrawlerStatusAtProviderRecrawlPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderS3Target
 {
-    /// <summary>The name of the connection to use to connect to the JDBC target.</summary>
+    /// <summary>Name of a connection which allows crawler to access data in S3 within a VPC.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
-    /// <summary>The ARN of the dead-letter SQS queue.</summary>
+    /// <summary>ARN of the dead-letter SQS queue.</summary>
     [JsonPropertyName("dlqEventQueueArn")]
     public string? DlqEventQueueArn { get; set; }
 
-    /// <summary>The ARN of the SQS queue to receive S3 notifications from.</summary>
+    /// <summary>ARN of the SQS queue to receive S3 notifications from.</summary>
     [JsonPropertyName("eventQueueArn")]
     public string? EventQueueArn { get; set; }
 
-    /// <summary>A list of glob patterns used to exclude from the crawl.</summary>
+    /// <summary>List of glob patterns used to exclude from the crawl.</summary>
     [JsonPropertyName("exclusions")]
     public IList<string>? Exclusions { get; set; }
 
-    /// <summary>The name of the DynamoDB table to crawl.</summary>
+    /// <summary>Path to the Amazon S3 target.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -2943,16 +2943,16 @@ public partial class V1beta1CrawlerStatusAtProviderS3Target
     public double? SampleSize { get; set; }
 }
 
-/// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+/// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProviderSchemaChangePolicy
 {
-    /// <summary>The deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
+    /// <summary>Deletion behavior when the crawler finds a deleted object. Valid values: LOG, DELETE_FROM_DATABASE, or DEPRECATE_IN_DATABASE. Defaults to DEPRECATE_IN_DATABASE.</summary>
     [JsonPropertyName("deleteBehavior")]
     public string? DeleteBehavior { get; set; }
 
-    /// <summary>The update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
+    /// <summary>Update behavior when the crawler finds a changed schema. Valid values: LOG or UPDATE_IN_DATABASE. Defaults to UPDATE_IN_DATABASE.</summary>
     [JsonPropertyName("updateBehavior")]
     public string? UpdateBehavior { get; set; }
 }
@@ -2961,11 +2961,11 @@ public partial class V1beta1CrawlerStatusAtProviderSchemaChangePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CrawlerStatusAtProvider
 {
-    /// <summary>The ARN of the crawler</summary>
+    /// <summary>ARN of the crawler</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>List of nested AWS Glue Data Catalog target arguments. See Catalog Target below.</summary>
+    /// <summary>List of nested AWS Glue Data Catalog target arguments. See catalog_target below.</summary>
     [JsonPropertyName("catalogTarget")]
     public IList<V1beta1CrawlerStatusAtProviderCatalogTarget>? CatalogTarget { get; set; }
 
@@ -2981,7 +2981,7 @@ public partial class V1beta1CrawlerStatusAtProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>List of nested Delta Lake target arguments. See Delta Target below.</summary>
+    /// <summary>List of nested Delta Lake target arguments. See delta_target below.</summary>
     [JsonPropertyName("deltaTarget")]
     public IList<V1beta1CrawlerStatusAtProviderDeltaTarget>? DeltaTarget { get; set; }
 
@@ -2989,15 +2989,15 @@ public partial class V1beta1CrawlerStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>List of nested DynamoDB target arguments. See Dynamodb Target below.</summary>
+    /// <summary>List of nested DynamoDB target arguments. See dynamodb_target below.</summary>
     [JsonPropertyName("dynamodbTarget")]
     public IList<V1beta1CrawlerStatusAtProviderDynamodbTarget>? DynamodbTarget { get; set; }
 
-    /// <summary>List of nested Hudi target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Hudi target arguments. See hudi_target below.</summary>
     [JsonPropertyName("hudiTarget")]
     public IList<V1beta1CrawlerStatusAtProviderHudiTarget>? HudiTarget { get; set; }
 
-    /// <summary>List of nested Iceberg target arguments. See Iceberg Target below.</summary>
+    /// <summary>List of nested Iceberg target arguments. See iceberg_target below.</summary>
     [JsonPropertyName("icebergTarget")]
     public IList<V1beta1CrawlerStatusAtProviderIcebergTarget>? IcebergTarget { get; set; }
 
@@ -3005,23 +3005,23 @@ public partial class V1beta1CrawlerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>List of nested JDBC target arguments. See JDBC Target below.</summary>
+    /// <summary>List of nested JDBC target arguments. See jdbc_target below.</summary>
     [JsonPropertyName("jdbcTarget")]
     public IList<V1beta1CrawlerStatusAtProviderJdbcTarget>? JdbcTarget { get; set; }
 
-    /// <summary>Specifies Lake Formation configuration settings for the crawler. See Lake Formation Configuration below.</summary>
+    /// <summary>Lake Formation configuration settings for the crawler. See lake_formation_configuration below.</summary>
     [JsonPropertyName("lakeFormationConfiguration")]
     public V1beta1CrawlerStatusAtProviderLakeFormationConfiguration? LakeFormationConfiguration { get; set; }
 
-    /// <summary>Specifies data lineage configuration settings for the crawler. See Lineage Configuration below.</summary>
+    /// <summary>Data lineage configuration settings for the crawler. See lineage_configuration below.</summary>
     [JsonPropertyName("lineageConfiguration")]
     public V1beta1CrawlerStatusAtProviderLineageConfiguration? LineageConfiguration { get; set; }
 
-    /// <summary>List of nested MongoDB target arguments. See MongoDB Target below.</summary>
+    /// <summary>List of nested MongoDB target arguments. See mongodb_target below.</summary>
     [JsonPropertyName("mongodbTarget")]
     public IList<V1beta1CrawlerStatusAtProviderMongodbTarget>? MongodbTarget { get; set; }
 
-    /// <summary>A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.. See Recrawl Policy below.</summary>
+    /// <summary>Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run. See recrawl_policy below.</summary>
     [JsonPropertyName("recrawlPolicy")]
     public V1beta1CrawlerStatusAtProviderRecrawlPolicy? RecrawlPolicy { get; set; }
 
@@ -3032,27 +3032,27 @@ public partial class V1beta1CrawlerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
+    /// <summary>IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>List of nested Amazon S3 target arguments. See S3 Target below.</summary>
+    /// <summary>List of nested Amazon S3 target arguments. See s3_target below.</summary>
     [JsonPropertyName("s3Target")]
     public IList<V1beta1CrawlerStatusAtProviderS3Target>? S3Target { get; set; }
 
-    /// <summary>Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
+    /// <summary>Cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See Schema Change Policy below.</summary>
+    /// <summary>Policy for the crawler&apos;s update and deletion behavior. See schema_change_policy below.</summary>
     [JsonPropertyName("schemaChangePolicy")]
     public V1beta1CrawlerStatusAtProviderSchemaChangePolicy? SchemaChangePolicy { get; set; }
 
-    /// <summary>The name of Security Configuration to be used by the crawler</summary>
+    /// <summary>Name of Security Configuration to be used by the crawler.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The table prefix used for catalog tables that are created.</summary>
+    /// <summary>Table prefix used for catalog tables that are created.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 
@@ -3060,7 +3060,7 @@ public partial class V1beta1CrawlerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

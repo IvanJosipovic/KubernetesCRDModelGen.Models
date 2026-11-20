@@ -37,7 +37,7 @@ public partial class V1beta1DataSourceList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1DataSource> Items { get; set; }
 }
 
-/// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+/// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationAccessControlListConfiguration
@@ -202,26 +202,26 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationS3Configuratio
     public V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationBucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+/// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration
 {
-    /// <summary>A prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
+    /// <summary>Prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
     [JsonPropertyName("s3Prefix")]
     public string? S3Prefix { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+/// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationS3Configuration
 {
-    /// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+    /// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
     [JsonPropertyName("accessControlListConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationAccessControlListConfiguration? AccessControlListConfiguration { get; set; }
 
-    /// <summary>The name of the bucket that contains the documents.</summary>
+    /// <summary>Name of the bucket that contains the documents.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -233,24 +233,24 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationS3Configuratio
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+    /// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
     [JsonPropertyName("documentsMetadataConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration? DocumentsMetadataConfiguration { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
     [JsonPropertyName("exclusionPatterns")]
     public IList<string>? ExclusionPatterns { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
     [JsonPropertyName("inclusionPatterns")]
     public IList<string>? InclusionPatterns { get; set; }
 
-    /// <summary>A list of S3 prefixes for the documents that should be included in the index.</summary>
+    /// <summary>List of S3 prefixes for the documents that should be included in the index.</summary>
     [JsonPropertyName("inclusionPrefixes")]
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-/// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationTemplateConfiguration
@@ -431,21 +431,21 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     [JsonPropertyName("credentialsSelector")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationCredentialsSelector? CredentialsSelector { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+/// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration
 {
-    /// <summary>The list of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
+    /// <summary>List of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
     [JsonPropertyName("basicAuthentication")]
     public IList<V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication>? BasicAuthentication { get; set; }
 }
@@ -622,35 +622,35 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     [JsonPropertyName("credentialsSelector")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationProxyConfigurationCredentialsSelector? CredentialsSelector { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration
 {
-    /// <summary>The list of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>List of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<string>? SeedUrls { get; set; }
 
-    /// <summary>The default mode is set to HOST_ONLY. You can choose one of the following modes:</summary>
+    /// <summary>Default mode is set to HOST_ONLY. Valid values are EVERYTHING, HOST_ONLY, and SUBDOMAINS. HOST_ONLY crawls only the website host names. For example, if the seed URL is &quot;abc.example.com&quot;, then only URLs with host name &quot;abc.example.com&quot; are crawled. SUBDOMAINS crawls the website host names with subdomains. For example, if the seed URL is &quot;abc.example.com&quot;, then &quot;a.abc.example.com&quot; and &quot;b.abc.example.com&quot; are also crawled. EVERYTHING crawls the website host names with subdomains and other domains that the webpages link to.</summary>
     [JsonPropertyName("webCrawlerMode")]
     public string? WebCrawlerMode { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration
 {
-    /// <summary>The list of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
+    /// <summary>List of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
     [JsonPropertyName("siteMaps")]
     public IList<string>? SiteMaps { get; set; }
 }
@@ -660,37 +660,37 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrls
 {
-    /// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
     [JsonPropertyName("seedUrlConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration? SeedUrlConfiguration { get; set; }
 
-    /// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
     [JsonPropertyName("siteMapsConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration? SiteMapsConfiguration { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfiguration
 {
-    /// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+    /// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>Specifies the number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
+    /// <summary>Number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
     [JsonPropertyName("crawlDepth")]
     public double? CrawlDepth { get; set; }
 
-    /// <summary>The maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
+    /// <summary>Maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
     [JsonPropertyName("maxContentSizePerPageInMegaBytes")]
     public double? MaxContentSizePerPageInMegaBytes { get; set; }
 
-    /// <summary>The maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
+    /// <summary>Maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
     [JsonPropertyName("maxLinksPerPage")]
     public double? MaxLinksPerPage { get; set; }
 
-    /// <summary>The maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
+    /// <summary>Maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
     [JsonPropertyName("maxUrlsPerMinuteCrawlRate")]
     public double? MaxUrlsPerMinuteCrawlRate { get; set; }
 
@@ -698,11 +698,11 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     [JsonPropertyName("proxyConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationProxyConfiguration? ProxyConfiguration { get; set; }
 
-    /// <summary>A list of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlExclusionPatterns")]
     public IList<string>? UrlExclusionPatterns { get; set; }
 
-    /// <summary>A list of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
@@ -711,41 +711,42 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
 
-/// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+/// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfiguration
 {
-    /// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+    /// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceSpecForProviderConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
     [JsonPropertyName("webCrawlerConfiguration")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfiguration? WebCrawlerConfiguration { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -755,36 +756,37 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+/// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -794,11 +796,11 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget
 {
-    /// <summary>The identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
+    /// <summary>Identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
     [JsonPropertyName("targetDocumentAttributeKey")]
     public string? TargetDocumentAttributeKey { get; set; }
 
-    /// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+    /// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
     [JsonPropertyName("targetDocumentAttributeValue")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue? TargetDocumentAttributeValue { get; set; }
 
@@ -824,51 +826,52 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget? Target { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+/// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -881,41 +884,42 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
@@ -925,7 +929,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -938,7 +942,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+/// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfiguration
@@ -947,7 +951,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     [JsonPropertyName("inlineConfigurations")]
     public IList<V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationInlineConfigurations>? InlineConfigurations { get; set; }
 
-    /// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+    /// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
     [JsonPropertyName("postExtractionHookConfiguration")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration? PostExtractionHookConfiguration { get; set; }
 
@@ -1274,19 +1278,19 @@ public partial class V1beta1DataSourceSpecForProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProvider
 {
-    /// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+    /// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1DataSourceSpecForProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+    /// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
     [JsonPropertyName("customDocumentEnrichmentConfiguration")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfiguration? CustomDocumentEnrichmentConfiguration { get; set; }
 
-    /// <summary>A description for the Data Source connector.</summary>
+    /// <summary>Description for the Data Source connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra data source.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra data source.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -1298,11 +1302,11 @@ public partial class V1beta1DataSourceSpecForProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1DataSourceSpecForProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>The code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
+    /// <summary>Code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>A name for your data source connector.</summary>
+    /// <summary>Name for your data source connector.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1333,12 +1337,12 @@ public partial class V1beta1DataSourceSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
+    /// <summary>Type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+/// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationAccessControlListConfiguration
@@ -1503,26 +1507,26 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationS3Configurati
     public V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationBucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+/// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration
 {
-    /// <summary>A prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
+    /// <summary>Prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
     [JsonPropertyName("s3Prefix")]
     public string? S3Prefix { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+/// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationS3Configuration
 {
-    /// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+    /// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
     [JsonPropertyName("accessControlListConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationAccessControlListConfiguration? AccessControlListConfiguration { get; set; }
 
-    /// <summary>The name of the bucket that contains the documents.</summary>
+    /// <summary>Name of the bucket that contains the documents.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1534,24 +1538,24 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationS3Configurati
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+    /// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
     [JsonPropertyName("documentsMetadataConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration? DocumentsMetadataConfiguration { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
     [JsonPropertyName("exclusionPatterns")]
     public IList<string>? ExclusionPatterns { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
     [JsonPropertyName("inclusionPatterns")]
     public IList<string>? InclusionPatterns { get; set; }
 
-    /// <summary>A list of S3 prefixes for the documents that should be included in the index.</summary>
+    /// <summary>List of S3 prefixes for the documents that should be included in the index.</summary>
     [JsonPropertyName("inclusionPrefixes")]
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-/// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationTemplateConfiguration
@@ -1732,21 +1736,21 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     [JsonPropertyName("credentialsSelector")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationCredentialsSelector? CredentialsSelector { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+/// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration
 {
-    /// <summary>The list of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
+    /// <summary>List of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
     [JsonPropertyName("basicAuthentication")]
     public IList<V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication>? BasicAuthentication { get; set; }
 }
@@ -1923,35 +1927,35 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     [JsonPropertyName("credentialsSelector")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationProxyConfigurationCredentialsSelector? CredentialsSelector { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration
 {
-    /// <summary>The list of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>List of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<string>? SeedUrls { get; set; }
 
-    /// <summary>The default mode is set to HOST_ONLY. You can choose one of the following modes:</summary>
+    /// <summary>Default mode is set to HOST_ONLY. Valid values are EVERYTHING, HOST_ONLY, and SUBDOMAINS. HOST_ONLY crawls only the website host names. For example, if the seed URL is &quot;abc.example.com&quot;, then only URLs with host name &quot;abc.example.com&quot; are crawled. SUBDOMAINS crawls the website host names with subdomains. For example, if the seed URL is &quot;abc.example.com&quot;, then &quot;a.abc.example.com&quot; and &quot;b.abc.example.com&quot; are also crawled. EVERYTHING crawls the website host names with subdomains and other domains that the webpages link to.</summary>
     [JsonPropertyName("webCrawlerMode")]
     public string? WebCrawlerMode { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration
 {
-    /// <summary>The list of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
+    /// <summary>List of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
     [JsonPropertyName("siteMaps")]
     public IList<string>? SiteMaps { get; set; }
 }
@@ -1961,37 +1965,37 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrls
 {
-    /// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
     [JsonPropertyName("seedUrlConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration? SeedUrlConfiguration { get; set; }
 
-    /// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
     [JsonPropertyName("siteMapsConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration? SiteMapsConfiguration { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfiguration
 {
-    /// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+    /// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>Specifies the number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
+    /// <summary>Number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
     [JsonPropertyName("crawlDepth")]
     public double? CrawlDepth { get; set; }
 
-    /// <summary>The maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
+    /// <summary>Maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
     [JsonPropertyName("maxContentSizePerPageInMegaBytes")]
     public double? MaxContentSizePerPageInMegaBytes { get; set; }
 
-    /// <summary>The maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
+    /// <summary>Maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
     [JsonPropertyName("maxLinksPerPage")]
     public double? MaxLinksPerPage { get; set; }
 
-    /// <summary>The maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
+    /// <summary>Maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
     [JsonPropertyName("maxUrlsPerMinuteCrawlRate")]
     public double? MaxUrlsPerMinuteCrawlRate { get; set; }
 
@@ -1999,11 +2003,11 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     [JsonPropertyName("proxyConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationProxyConfiguration? ProxyConfiguration { get; set; }
 
-    /// <summary>A list of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlExclusionPatterns")]
     public IList<string>? UrlExclusionPatterns { get; set; }
 
-    /// <summary>A list of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
@@ -2012,41 +2016,42 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
 
-/// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+/// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfiguration
 {
-    /// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+    /// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceSpecInitProviderConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
     [JsonPropertyName("webCrawlerConfiguration")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfiguration? WebCrawlerConfiguration { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -2056,36 +2061,37 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+/// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -2095,11 +2101,11 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget
 {
-    /// <summary>The identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
+    /// <summary>Identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
     [JsonPropertyName("targetDocumentAttributeKey")]
     public string? TargetDocumentAttributeKey { get; set; }
 
-    /// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+    /// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
     [JsonPropertyName("targetDocumentAttributeValue")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue? TargetDocumentAttributeValue { get; set; }
 
@@ -2125,51 +2131,52 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget? Target { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+/// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -2182,41 +2189,42 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
@@ -2226,7 +2234,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -2239,7 +2247,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+/// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfiguration
@@ -2248,7 +2256,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("inlineConfigurations")]
     public IList<V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationInlineConfigurations>? InlineConfigurations { get; set; }
 
-    /// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+    /// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
     [JsonPropertyName("postExtractionHookConfiguration")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration? PostExtractionHookConfiguration { get; set; }
 
@@ -2587,19 +2595,19 @@ public partial class V1beta1DataSourceSpecInitProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProvider
 {
-    /// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+    /// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1DataSourceSpecInitProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+    /// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
     [JsonPropertyName("customDocumentEnrichmentConfiguration")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfiguration? CustomDocumentEnrichmentConfiguration { get; set; }
 
-    /// <summary>A description for the Data Source connector.</summary>
+    /// <summary>Description for the Data Source connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra data source.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra data source.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -2611,11 +2619,11 @@ public partial class V1beta1DataSourceSpecInitProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1DataSourceSpecInitProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>The code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
+    /// <summary>Code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>A name for your data source connector.</summary>
+    /// <summary>Name for your data source connector.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2639,7 +2647,7 @@ public partial class V1beta1DataSourceSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
+    /// <summary>Type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2751,7 +2759,7 @@ public partial class V1beta1DataSourceSpec
     public V1beta1DataSourceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+/// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationS3ConfigurationAccessControlListConfiguration
@@ -2761,47 +2769,47 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationS3Configurati
     public string? KeyPath { get; set; }
 }
 
-/// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+/// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration
 {
-    /// <summary>A prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
+    /// <summary>Prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use s3_prefix to include only the desired metadata files.</summary>
     [JsonPropertyName("s3Prefix")]
     public string? S3Prefix { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+/// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationS3Configuration
 {
-    /// <summary>A block that provides the path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
+    /// <summary>Path to the S3 bucket that contains the user context filtering files for the data source. For the format of the file, see Access control for S3 data sources. Detailed below.</summary>
     [JsonPropertyName("accessControlListConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationS3ConfigurationAccessControlListConfiguration? AccessControlListConfiguration { get; set; }
 
-    /// <summary>The name of the bucket that contains the documents.</summary>
+    /// <summary>Name of the bucket that contains the documents.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>A block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
+    /// <summary>Block that defines the Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document. Detailed below.</summary>
     [JsonPropertyName("documentsMetadataConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationS3ConfigurationDocumentsMetadataConfiguration? DocumentsMetadataConfiguration { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Exclusion Patterns for more examples.</summary>
     [JsonPropertyName("exclusionPatterns")]
     public IList<string>? ExclusionPatterns { get; set; }
 
-    /// <summary>A list of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
+    /// <summary>List of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. Refer to Inclusion Patterns for more examples.</summary>
     [JsonPropertyName("inclusionPatterns")]
     public IList<string>? InclusionPatterns { get; set; }
 
-    /// <summary>A list of S3 prefixes for the documents that should be included in the index.</summary>
+    /// <summary>List of S3 prefixes for the documents that should be included in the index.</summary>
     [JsonPropertyName("inclusionPrefixes")]
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-/// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationTemplateConfiguration
@@ -2819,21 +2827,21 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     [JsonPropertyName("credentials")]
     public string? Credentials { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+/// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration
 {
-    /// <summary>The list of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
+    /// <summary>List of configuration information that&apos;s required to connect to and crawl a website host using basic authentication credentials. The list includes the name and port number of the website host. Detailed below.</summary>
     [JsonPropertyName("basicAuthentication")]
     public IList<V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication>? BasicAuthentication { get; set; }
 }
@@ -2847,35 +2855,35 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     [JsonPropertyName("credentials")]
     public string? Credentials { get; set; }
 
-    /// <summary>The name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
+    /// <summary>Name of the website host you want to connect to via a web proxy server. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot;.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
+    /// <summary>Port number of the website host you want to connect to via a web proxy server. For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration
 {
-    /// <summary>The list of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
+    /// <summary>List of seed or starting point URLs of the websites you want to crawl. The list can include a maximum of 100 seed URLs. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 2048.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<string>? SeedUrls { get; set; }
 
-    /// <summary>The default mode is set to HOST_ONLY. You can choose one of the following modes:</summary>
+    /// <summary>Default mode is set to HOST_ONLY. Valid values are EVERYTHING, HOST_ONLY, and SUBDOMAINS. HOST_ONLY crawls only the website host names. For example, if the seed URL is &quot;abc.example.com&quot;, then only URLs with host name &quot;abc.example.com&quot; are crawled. SUBDOMAINS crawls the website host names with subdomains. For example, if the seed URL is &quot;abc.example.com&quot;, then &quot;a.abc.example.com&quot; and &quot;b.abc.example.com&quot; are also crawled. EVERYTHING crawls the website host names with subdomains and other domains that the webpages link to.</summary>
     [JsonPropertyName("webCrawlerMode")]
     public string? WebCrawlerMode { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+/// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration
 {
-    /// <summary>The list of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
+    /// <summary>List of sitemap URLs of the websites you want to crawl. The list can include a maximum of 3 sitemap URLs.</summary>
     [JsonPropertyName("siteMaps")]
     public IList<string>? SiteMaps { get; set; }
 }
@@ -2885,37 +2893,37 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrls
 {
-    /// <summary>A block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the seed or starting point URLs of the websites you want to crawl. You can choose to crawl only the website host names, or the website host names with subdomains, or the website host names with subdomains and other domains that the webpages link to. You can list up to 100 seed URLs. Detailed below.</summary>
     [JsonPropertyName("seedUrlConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration? SeedUrlConfiguration { get; set; }
 
-    /// <summary>A block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration of the sitemap URLs of the websites you want to crawl. Only URLs belonging to the same website host names are crawled. You can list up to 3 sitemap URLs. Detailed below.</summary>
     [JsonPropertyName("siteMapsConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration? SiteMapsConfiguration { get; set; }
 }
 
-/// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+/// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfiguration
 {
-    /// <summary>A block with the configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
+    /// <summary>Configuration information required to connect to websites using authentication. You can connect to websites using basic authentication of user name and password. You use a secret in AWS Secrets Manager to store your authentication credentials. You must provide the website host name and port number. For example, the host name of https://a.example.com/page1.html is &quot;a.example.com&quot; and the port is 443, the standard port for HTTPS. Detailed below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>Specifies the number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
+    /// <summary>Number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels - index level (i.e. seed in this example), sections level, and subsections level - and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2. Minimum value of 0. Maximum value of 10.</summary>
     [JsonPropertyName("crawlDepth")]
     public double? CrawlDepth { get; set; }
 
-    /// <summary>The maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
+    /// <summary>Maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB. Minimum value of 1.0e-06. Maximum value of 50.</summary>
     [JsonPropertyName("maxContentSizePerPageInMegaBytes")]
     public double? MaxContentSizePerPageInMegaBytes { get; set; }
 
-    /// <summary>The maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
+    /// <summary>Maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100. Minimum value of 1. Maximum value of 1000.</summary>
     [JsonPropertyName("maxLinksPerPage")]
     public double? MaxLinksPerPage { get; set; }
 
-    /// <summary>The maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
+    /// <summary>Maximum number of URLs crawled per website host per minute. The default maximum number of URLs crawled per website host per minute is 300. Minimum value of 1. Maximum value of 300.</summary>
     [JsonPropertyName("maxUrlsPerMinuteCrawlRate")]
     public double? MaxUrlsPerMinuteCrawlRate { get; set; }
 
@@ -2923,11 +2931,11 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     [JsonPropertyName("proxyConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationProxyConfiguration? ProxyConfiguration { get; set; }
 
-    /// <summary>A list of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to exclude certain URLs to crawl. URLs that match the patterns are excluded from the index. URLs that don&apos;t match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlExclusionPatterns")]
     public IList<string>? UrlExclusionPatterns { get; set; }
 
-    /// <summary>A list of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
+    /// <summary>List of regular expression patterns to include certain URLs to crawl. URLs that match the patterns are included in the index. URLs that don&apos;t match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the URL file isn&apos;t included in the index. Array Members: Minimum number of 0 items. Maximum number of 100 items. Length Constraints: Minimum length of 1. Maximum length of 150.</summary>
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
@@ -2936,41 +2944,42 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
 
-/// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+/// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfiguration
 {
-    /// <summary>(Deprecated, Required if type is set to S3) A block that provides the configuration information to connect to an Amazon S3 bucket as your data source. Detailed below.</summary>
+    /// <summary>Configuration information to connect to an Amazon S3 bucket as your data source. Required when type is set to S3. Detailed below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceStatusAtProviderConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to TEMPLATE. Detailed below.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationTemplateConfiguration? TemplateConfiguration { get; set; }
 
-    /// <summary>(Deprecated, Required if type is set to WEBCRAWLER) A block that provides the configuration information required for Amazon Kendra Web Crawler. Detailed below.</summary>
+    /// <summary>Configuration information required for Amazon Kendra Web Crawler. Required when type is set to WEBCRAWLER. Detailed below.</summary>
     [JsonPropertyName("webCrawlerConfiguration")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfiguration? WebCrawlerConfiguration { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -2980,36 +2989,37 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+/// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
@@ -3019,11 +3029,11 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget
 {
-    /// <summary>The identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
+    /// <summary>Identifier of the target document attribute or metadata field. For example, &apos;Department&apos; could be an identifier for the target attribute or metadata field that includes the department names associated with the documents.</summary>
     [JsonPropertyName("targetDocumentAttributeKey")]
     public string? TargetDocumentAttributeKey { get; set; }
 
-    /// <summary>The target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
+    /// <summary>Target value you want to create for the target attribute. For example, &apos;Finance&apos; could be the target value for the target attribute key &apos;Department&apos;. See target_document_attribute_value.</summary>
     [JsonPropertyName("targetDocumentAttributeValue")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue? TargetDocumentAttributeValue { get; set; }
 
@@ -3049,51 +3059,52 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget? Target { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
 
-/// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+/// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -3106,41 +3117,42 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+/// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue
 {
-    /// <summary>A date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
+    /// <summary>Date expressed as an ISO 8601 string. It is important for the time zone to be included in the ISO 8601 date-time format. As of this writing only UTC is supported. For example, 2012-03-25T12:30:10+00:00.</summary>
     [JsonPropertyName("dateValue")]
     public string? DateValue { get; set; }
 
-    /// <summary>A long integer value.</summary>
+    /// <summary>Long integer value.</summary>
     [JsonPropertyName("longValue")]
     public double? LongValue { get; set; }
 
-    /// <summary>A list of strings.</summary>
+    /// <summary>List of strings.</summary>
     [JsonPropertyName("stringListValue")]
     public IList<string>? StringListValue { get; set; }
 
+    /// <summary>String, such as &quot;department&quot;.</summary>
     [JsonPropertyName("stringValue")]
     public string? StringValue { get; set; }
 }
 
-/// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+/// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition
 {
-    /// <summary>The identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
+    /// <summary>Identifier of the document attribute used for the condition. For example, _source_uri could be an identifier for the attribute or metadata field that contains source URIs associated with the documents. Amazon Kendra currently does not support _document_body as an attribute key used for the condition.</summary>
     [JsonPropertyName("conditionDocumentAttributeKey")]
     public string? ConditionDocumentAttributeKey { get; set; }
 
-    /// <summary>The value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
+    /// <summary>Value used by the operator. For example, you can specify the value &apos;financial&apos; for strings in the _source_uri field that partially match or contain this value. See condition_on_value.</summary>
     [JsonPropertyName("conditionOnValue")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue? ConditionOnValue { get; set; }
 
-    /// <summary>The condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
+    /// <summary>Condition operator. For example, you can use Contains to partially match a string. Valid Values: GreaterThan | GreaterThanOrEquals | LessThan | LessThanOrEquals | Equals | NotEquals | Contains | NotContains | Exists | NotExists | BeginsWith.</summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
 }
@@ -3150,7 +3162,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration
 {
-    /// <summary>A block that specifies the condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
+    /// <summary>Condition used for when a Lambda function should be invoked. For example, you can specify a condition that if there are empty date-time values, then Amazon Kendra should invoke a function that inserts the current date-time. See invocation_condition.</summary>
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
@@ -3163,7 +3175,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     public string? S3Bucket { get; set; }
 }
 
-/// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+/// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfiguration
@@ -3172,7 +3184,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("inlineConfigurations")]
     public IList<V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationInlineConfigurations>? InlineConfigurations { get; set; }
 
-    /// <summary>A block that specifies the configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
+    /// <summary>Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see Advanced data manipulation. Detailed below.</summary>
     [JsonPropertyName("postExtractionHookConfiguration")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration? PostExtractionHookConfiguration { get; set; }
 
@@ -3193,23 +3205,23 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A block with the configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
+    /// <summary>Configuration information to connect to your Data Source repository. You can&apos;t specify the configuration block when the type parameter is set to CUSTOM. Detailed below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1DataSourceStatusAtProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>The Unix time stamp of when the Data Source was created.</summary>
+    /// <summary>Unix time stamp of when the Data Source was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>A block with the configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
+    /// <summary>Configuration information for altering document metadata and content during the document ingestion process. For more information on how to create, modify and delete document metadata, or make other content alterations when you ingest documents into Amazon Kendra, see Customizing document metadata during the ingestion process. Detailed below.</summary>
     [JsonPropertyName("customDocumentEnrichmentConfiguration")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfiguration? CustomDocumentEnrichmentConfiguration { get; set; }
 
-    /// <summary>The unique identifiers of the Data Source.</summary>
+    /// <summary>Unique identifiers of the Data Source.</summary>
     [JsonPropertyName("dataSourceId")]
     public string? DataSourceId { get; set; }
 
-    /// <summary>A description for the Data Source connector.</summary>
+    /// <summary>Description for the Data Source connector.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -3217,19 +3229,19 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("errorMessage")]
     public string? ErrorMessage { get; set; }
 
-    /// <summary>The unique identifiers of the Data Source and index separated by a slash (/).</summary>
+    /// <summary>Unique identifiers of the Data Source and index separated by a slash (/).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra data source.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra data source.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
-    /// <summary>The code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
+    /// <summary>Code for a language. This allows you to support a language for all documents when creating the Data Source connector. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>A name for your data source connector.</summary>
+    /// <summary>Name for your data source connector.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -3248,7 +3260,7 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>The current status of the Data Source. When the status is ACTIVE the Data Source is ready to use. When the status is FAILED, the error_message field contains the reason that the Data Source failed.</summary>
+    /// <summary>Current status of the Data Source. When the status is ACTIVE the Data Source is ready to use. When the status is FAILED, the error_message field contains the reason that the Data Source failed.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -3256,15 +3268,15 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
+    /// <summary>Type of data source repository. For an updated list of values, refer to Valid Values for Type.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The Unix time stamp of when the Data Source was last updated.</summary>
+    /// <summary>Unix time stamp of when the Data Source was last updated.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 }

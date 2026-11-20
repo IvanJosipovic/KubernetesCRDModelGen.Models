@@ -1258,7 +1258,7 @@ public partial class V1beta1VPCEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointStatusAtProvider
 {
-    /// <summary>Unique identified of the Vpc Endpoint.</summary>
+    /// <summary>Unique identified of the VPC Endpoint.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

@@ -537,7 +537,7 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The neptune engine version. Currently configuring this argumnet has no effect.</summary>
+    /// <summary>The neptune engine version. Currently configuring this argument has no effect.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -1120,7 +1120,7 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The neptune engine version. Currently configuring this argumnet has no effect.</summary>
+    /// <summary>The neptune engine version. Currently configuring this argument has no effect.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -1334,7 +1334,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The neptune engine version. Currently configuring this argumnet has no effect.</summary>
+    /// <summary>The neptune engine version. Currently configuring this argument has no effect.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 

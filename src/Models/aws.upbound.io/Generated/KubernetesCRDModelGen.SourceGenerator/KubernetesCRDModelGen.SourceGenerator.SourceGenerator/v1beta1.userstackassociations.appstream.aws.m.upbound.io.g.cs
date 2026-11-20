@@ -690,7 +690,7 @@ public partial class V1beta1UserStackAssociationStatusAtProvider
     [JsonPropertyName("authenticationType")]
     public string? AuthenticationType { get; set; }
 
-    /// <summary>Unique ID of the appstream User Stack association.</summary>
+    /// <summary>Unique ID of the AppStream User Stack association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

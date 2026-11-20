@@ -127,7 +127,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorFunct
     public string? FunctionArn { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorGrpcConfig
@@ -187,11 +187,11 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionSpecForProviderDefaultCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionSpecForProviderDefaultCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionSpecForProviderDefaultCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 
@@ -470,7 +470,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
     public V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector? FunctionArnSelector { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorGrpcConfig
@@ -692,11 +692,11 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionSpecForProviderOrderedCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionSpecForProviderOrderedCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 
@@ -1544,7 +1544,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorFunc
     public string? FunctionArn { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorGrpcConfig
@@ -1604,11 +1604,11 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionSpecInitProviderDefaultCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionSpecInitProviderDefaultCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionSpecInitProviderDefaultCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 
@@ -1887,7 +1887,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
     public V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector? FunctionArnSelector { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorGrpcConfig
@@ -2109,11 +2109,11 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionSpecInitProviderOrderedCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionSpecInitProviderOrderedCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 
@@ -3080,7 +3080,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorFunc
     public string? FunctionArn { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorGrpcConfig
@@ -3140,11 +3140,11 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionStatusAtProviderDefaultCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionStatusAtProviderDefaultCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionStatusAtProviderDefaultCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 
@@ -3260,7 +3260,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorFunc
     public string? FunctionArn { get; set; }
 }
 
-/// <summary>A config block that sets the grpc config.</summary>
+/// <summary>A config block that sets the gRPC config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorGrpcConfig
@@ -3319,11 +3319,11 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehavior
     [JsonPropertyName("forwardedValues")]
     public V1beta1DistributionStatusAtProviderOrderedCacheBehaviorForwardedValues? ForwardedValues { get; set; }
 
-    /// <summary>A config block that triggers a cloudfront function with specific actions (maximum 2).</summary>
+    /// <summary>A config block that triggers a CloudFront function with specific actions (maximum 2).</summary>
     [JsonPropertyName("functionAssociation")]
     public IList<V1beta1DistributionStatusAtProviderOrderedCacheBehaviorFunctionAssociation>? FunctionAssociation { get; set; }
 
-    /// <summary>A config block that sets the grpc config.</summary>
+    /// <summary>A config block that sets the gRPC config.</summary>
     [JsonPropertyName("grpcConfig")]
     public V1beta1DistributionStatusAtProviderOrderedCacheBehaviorGrpcConfig? GrpcConfig { get; set; }
 

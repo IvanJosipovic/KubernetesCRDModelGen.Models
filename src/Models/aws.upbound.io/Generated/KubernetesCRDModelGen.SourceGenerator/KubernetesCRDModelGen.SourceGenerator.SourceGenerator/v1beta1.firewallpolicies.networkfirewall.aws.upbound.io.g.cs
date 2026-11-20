@@ -111,6 +111,32 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVar
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyRoute53ResolvedIpValidation
+{
+    /// <summary>Action to take on connections that fail validation. Allowed values are: ALERT, DROP, and REJECT. ALERT requires firewall logging. REJECT sends a TCP reset; Network Firewall drops non-TCP traffic.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Set of destination IPv4 or IPv6 CIDR blocks that are exempt from the policy-level check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. Doesn&apos;t affect rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type.</summary>
+    [JsonPropertyName("bypassDestinationValidationIpRanges")]
+    public IList<string>? BypassDestinationValidationIpRanges { get; set; }
+
+    /// <summary>Action to take when the recorded DNS resolution has expired from the resolved IP cache but traffic continues. Allowed values are: CONTINUE, DROP, and REJECT. CONTINUE treats the expired resolution as valid.</summary>
+    [JsonPropertyName("dnsExpiryExceptionPolicy")]
+    public string? DnsExpiryExceptionPolicy { get; set; }
+
+    /// <summary>ID of the Route 53 Resolver DNS Firewall rule group, such as aws_route53_resolver_firewall_rule_group.example.id. DNS responses from the Route 53 Resolver in VPCs associated with this rule group are used for validation. Changing this value swaps the managed association asynchronously; the provider waits for the policy to return to ACTIVE.</summary>
+    [JsonPropertyName("dnsFirewallRuleGroupId")]
+    public string? DnsFirewallRuleGroupId { get; set; }
+
+    /// <summary>Set of client source IPv4 or IPv6 CIDR blocks whose connections are subject to the policy-level validation check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. If omitted, validation applies to the CIDR ranges of the firewall&apos;s VPC and of any additional VPCs attached to the firewall. Doesn&apos;t affect stateful rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type or aws_route_53_resolved_domain rule keyword; those rules still evaluate traffic regardless of these source ranges.</summary>
+    [JsonPropertyName("sourceIpRanges")]
+    public IList<string>? SourceIpRanges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulEngineOptionsFlowTimeouts
 {
     /// <summary>Number of seconds that can pass without any TCP traffic sent through the firewall before the firewall determines that the connection is idle. After the idle timeout passes, data packets are dropped, however, the next TCP SYN packet is considered a new flow and is processed by the firewall. Clients or targets can use TCP keepalive packets to reset the idle timeout. Default value: 350.</summary>
@@ -565,6 +591,10 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicy
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
 
+    /// <summary>Resolved IP validation settings, which check that a connection&apos;s destination IP address was returned by the Route 53 Resolver in a VPC associated with a DNS Firewall rule group. See Route 53 Resolved IP Validation below for details.</summary>
+    [JsonPropertyName("route53ResolvedIpValidation")]
+    public IList<V1beta1FirewallPolicySpecForProviderFirewallPolicyRoute53ResolvedIpValidation>? Route53ResolvedIpValidation { get; set; }
+
     /// <summary>Set of actions to take on a packet if it does not match any stateful rules in the policy. This can only be specified if the policy has a stateful_engine_options block with a rule_order value of STRICT_ORDER. Value values: aws:drop_strict, aws:drop_established, aws:drop_established_app_layer, aws:alert_strict, aws:alert_established, aws:alert_established_app_layer`. For more information, see Strict evaluation order in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("statefulDefaultActions")]
     public IList<string>? StatefulDefaultActions { get; set; }
@@ -678,6 +708,32 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVa
 {
     [JsonPropertyName("ruleVariables")]
     public IList<V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariablesRuleVariables>? RuleVariables { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyRoute53ResolvedIpValidation
+{
+    /// <summary>Action to take on connections that fail validation. Allowed values are: ALERT, DROP, and REJECT. ALERT requires firewall logging. REJECT sends a TCP reset; Network Firewall drops non-TCP traffic.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Set of destination IPv4 or IPv6 CIDR blocks that are exempt from the policy-level check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. Doesn&apos;t affect rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type.</summary>
+    [JsonPropertyName("bypassDestinationValidationIpRanges")]
+    public IList<string>? BypassDestinationValidationIpRanges { get; set; }
+
+    /// <summary>Action to take when the recorded DNS resolution has expired from the resolved IP cache but traffic continues. Allowed values are: CONTINUE, DROP, and REJECT. CONTINUE treats the expired resolution as valid.</summary>
+    [JsonPropertyName("dnsExpiryExceptionPolicy")]
+    public string? DnsExpiryExceptionPolicy { get; set; }
+
+    /// <summary>ID of the Route 53 Resolver DNS Firewall rule group, such as aws_route53_resolver_firewall_rule_group.example.id. DNS responses from the Route 53 Resolver in VPCs associated with this rule group are used for validation. Changing this value swaps the managed association asynchronously; the provider waits for the policy to return to ACTIVE.</summary>
+    [JsonPropertyName("dnsFirewallRuleGroupId")]
+    public string? DnsFirewallRuleGroupId { get; set; }
+
+    /// <summary>Set of client source IPv4 or IPv6 CIDR blocks whose connections are subject to the policy-level validation check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. If omitted, validation applies to the CIDR ranges of the firewall&apos;s VPC and of any additional VPCs attached to the firewall. Doesn&apos;t affect stateful rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type or aws_route_53_resolved_domain rule keyword; those rules still evaluate traffic regardless of these source ranges.</summary>
+    [JsonPropertyName("sourceIpRanges")]
+    public IList<string>? SourceIpRanges { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
@@ -1137,6 +1193,10 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicy
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
 
+    /// <summary>Resolved IP validation settings, which check that a connection&apos;s destination IP address was returned by the Route 53 Resolver in a VPC associated with a DNS Firewall rule group. See Route 53 Resolved IP Validation below for details.</summary>
+    [JsonPropertyName("route53ResolvedIpValidation")]
+    public IList<V1beta1FirewallPolicySpecInitProviderFirewallPolicyRoute53ResolvedIpValidation>? Route53ResolvedIpValidation { get; set; }
+
     /// <summary>Set of actions to take on a packet if it does not match any stateful rules in the policy. This can only be specified if the policy has a stateful_engine_options block with a rule_order value of STRICT_ORDER. Value values: aws:drop_strict, aws:drop_established, aws:drop_established_app_layer, aws:alert_strict, aws:alert_established, aws:alert_established_app_layer`. For more information, see Strict evaluation order in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("statefulDefaultActions")]
     public IList<string>? StatefulDefaultActions { get; set; }
@@ -1450,6 +1510,32 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVa
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyRoute53ResolvedIpValidation
+{
+    /// <summary>Action to take on connections that fail validation. Allowed values are: ALERT, DROP, and REJECT. ALERT requires firewall logging. REJECT sends a TCP reset; Network Firewall drops non-TCP traffic.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Set of destination IPv4 or IPv6 CIDR blocks that are exempt from the policy-level check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. Doesn&apos;t affect rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type.</summary>
+    [JsonPropertyName("bypassDestinationValidationIpRanges")]
+    public IList<string>? BypassDestinationValidationIpRanges { get; set; }
+
+    /// <summary>Action to take when the recorded DNS resolution has expired from the resolved IP cache but traffic continues. Allowed values are: CONTINUE, DROP, and REJECT. CONTINUE treats the expired resolution as valid.</summary>
+    [JsonPropertyName("dnsExpiryExceptionPolicy")]
+    public string? DnsExpiryExceptionPolicy { get; set; }
+
+    /// <summary>ID of the Route 53 Resolver DNS Firewall rule group, such as aws_route53_resolver_firewall_rule_group.example.id. DNS responses from the Route 53 Resolver in VPCs associated with this rule group are used for validation. Changing this value swaps the managed association asynchronously; the provider waits for the policy to return to ACTIVE.</summary>
+    [JsonPropertyName("dnsFirewallRuleGroupId")]
+    public string? DnsFirewallRuleGroupId { get; set; }
+
+    /// <summary>Set of client source IPv4 or IPv6 CIDR blocks whose connections are subject to the policy-level validation check. Use /32 or /128 for a single address. Valid number of entries is between 1 and 100. If omitted, validation applies to the CIDR ranges of the firewall&apos;s VPC and of any additional VPCs attached to the firewall. Doesn&apos;t affect stateful rules that use the AWS_ROUTE_53_RESOLVED_DOMAIN target type or aws_route_53_resolved_domain rule keyword; those rules still evaluate traffic regardless of these source ranges.</summary>
+    [JsonPropertyName("sourceIpRanges")]
+    public IList<string>? SourceIpRanges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatefulEngineOptionsFlowTimeouts
 {
     /// <summary>Number of seconds that can pass without any TCP traffic sent through the firewall before the firewall determines that the connection is idle. After the idle timeout passes, data packets are dropped, however, the next TCP SYN packet is considered a new flow and is processed by the firewall. Clients or targets can use TCP keepalive packets to reset the idle timeout. Default value: 350.</summary>
@@ -1577,6 +1663,10 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicy
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
+
+    /// <summary>Resolved IP validation settings, which check that a connection&apos;s destination IP address was returned by the Route 53 Resolver in a VPC associated with a DNS Firewall rule group. See Route 53 Resolved IP Validation below for details.</summary>
+    [JsonPropertyName("route53ResolvedIpValidation")]
+    public IList<V1beta1FirewallPolicyStatusAtProviderFirewallPolicyRoute53ResolvedIpValidation>? Route53ResolvedIpValidation { get; set; }
 
     /// <summary>Set of actions to take on a packet if it does not match any stateful rules in the policy. This can only be specified if the policy has a stateful_engine_options block with a rule_order value of STRICT_ORDER. Value values: aws:drop_strict, aws:drop_established, aws:drop_established_app_layer, aws:alert_strict, aws:alert_established, aws:alert_established_app_layer`. For more information, see Strict evaluation order in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("statefulDefaultActions")]

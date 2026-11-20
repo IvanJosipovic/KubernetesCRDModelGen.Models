@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: endpoints.dms.aws.upbound.io
 spec:
   group: dms.aws.upbound.io
@@ -2867,7 +2867,7 @@ spec:
                         description: The server-side encryption mode that you want to encrypt your intermediate .csv object files copied to S3. Defaults to SSE_S3. Valid values are SSE_S3 and SSE_KMS.
                         type: string
                       serverSideEncryptionKmsKeyId:
-                        description: ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.
+                        description: ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.
                         type: string
                       serviceAccessRoleArn:
                         description: ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.
@@ -2961,7 +2961,7 @@ spec:
                     description: Host name of the server.
                     type: string
                   serviceAccessRole:
-                    description: ARN used by the service access IAM role for dynamodb endpoints.
+                    description: ARN used by the service access IAM role for DynamoDB endpoints.
                     type: string
                   serviceAccessRoleRef:
                     description: Reference to a Role in iam to populate serviceAccessRole.
@@ -3633,7 +3633,7 @@ spec:
                         description: The server-side encryption mode that you want to encrypt your intermediate .csv object files copied to S3. Defaults to SSE_S3. Valid values are SSE_S3 and SSE_KMS.
                         type: string
                       serverSideEncryptionKmsKeyId:
-                        description: ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.
+                        description: ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.
                         type: string
                       serviceAccessRoleArn:
                         description: ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.
@@ -3722,7 +3722,7 @@ spec:
                     description: Host name of the server.
                     type: string
                   serviceAccessRole:
-                    description: ARN used by the service access IAM role for dynamodb endpoints.
+                    description: ARN used by the service access IAM role for DynamoDB endpoints.
                     type: string
                   serviceAccessRoleRef:
                     description: Reference to a Role in iam to populate serviceAccessRole.
@@ -4305,7 +4305,7 @@ spec:
                         description: The server-side encryption mode that you want to encrypt your intermediate .csv object files copied to S3. Defaults to SSE_S3. Valid values are SSE_S3 and SSE_KMS.
                         type: string
                       serverSideEncryptionKmsKeyId:
-                        description: ARN or Id of KMS Key to use when encryption_mode is SSE_KMS.
+                        description: ARN or ID of KMS Key to use when encryption_mode is SSE_KMS.
                         type: string
                       serviceAccessRoleArn:
                         description: ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.
@@ -4326,7 +4326,7 @@ spec:
                     description: Host name of the server.
                     type: string
                   serviceAccessRole:
-                    description: ARN used by the service access IAM role for dynamodb endpoints.
+                    description: ARN used by the service access IAM role for DynamoDB endpoints.
                     type: string
                   sslMode:
                     description: SSL mode to use for the connection. Valid values are none, require, verify-ca, verify-full

@@ -76,7 +76,7 @@ public partial class V1beta1UserSpecForProvider
     [JsonPropertyName("identityType")]
     public string? IdentityType { get; set; }
 
-    /// <summary>The Amazon Quicksight namespace to create the user in. Defaults to default.</summary>
+    /// <summary>Amazon QuickSight namespace to create the user in. Defaults to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
@@ -132,7 +132,7 @@ public partial class V1beta1UserSpecInitProvider
     [JsonPropertyName("identityType")]
     public string? IdentityType { get; set; }
 
-    /// <summary>The Amazon Quicksight namespace to create the user in. Defaults to default.</summary>
+    /// <summary>Amazon QuickSight namespace to create the user in. Defaults to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
@@ -360,7 +360,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("identityType")]
     public string? IdentityType { get; set; }
 
-    /// <summary>The Amazon Quicksight namespace to create the user in. Defaults to default.</summary>
+    /// <summary>Amazon QuickSight namespace to create the user in. Defaults to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 

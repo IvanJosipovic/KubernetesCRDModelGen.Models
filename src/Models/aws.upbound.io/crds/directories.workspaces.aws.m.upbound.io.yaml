@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: directories.workspaces.aws.m.upbound.io
 spec:
   group: workspaces.aws.m.upbound.io
@@ -595,7 +595,7 @@ spec:
                     description: Default properties that are used for creating WorkSpaces. Defined below.
                     properties:
                       customSecurityGroupId:
-                        description: The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.
+                        description: The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.
                         type: string
                       customSecurityGroupIdRef:
                         description: Reference to a SecurityGroup in ec2 to populate customSecurityGroupId.
@@ -1247,7 +1247,7 @@ spec:
                     description: Default properties that are used for creating WorkSpaces. Defined below.
                     properties:
                       customSecurityGroupId:
-                        description: The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.
+                        description: The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.
                         type: string
                       customSecurityGroupIdRef:
                         description: Reference to a SecurityGroup in ec2 to populate customSecurityGroupId.
@@ -1584,7 +1584,7 @@ spec:
                     description: Default properties that are used for creating WorkSpaces. Defined below.
                     properties:
                       customSecurityGroupId:
-                        description: The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.
+                        description: The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.
                         type: string
                       defaultOu:
                         description: The default organizational unit (OU) for your WorkSpace directories. Should conform "OU=<value>,DC=<value>,...,DC=<value>" pattern.

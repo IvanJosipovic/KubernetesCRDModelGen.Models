@@ -1670,6 +1670,10 @@ public partial class V1beta1TopicSpecForProvider
     [JsonPropertyName("lambdaSuccessFeedbackSampleRate")]
     public double? LambdaSuccessFeedbackSampleRate { get; set; }
 
+    /// <summary>The maximum size, in bytes, of a message that can be published to the topic. Valid values are 1024 to 1048576 (1 MiB). The default is 262144 (256 KiB). A topic with a maximum_message_size above 256 KiB must have 100 or fewer subscriptions, and each subscription must be an Amazon SQS, Amazon Data Firehose, or AWS Lambda subscription.</summary>
+    [JsonPropertyName("maximumMessageSize")]
+    public double? MaximumMessageSize { get; set; }
+
     /// <summary>The fully-formed AWS policy as JSON.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
@@ -3348,6 +3352,10 @@ public partial class V1beta1TopicSpecInitProvider
     [JsonPropertyName("lambdaSuccessFeedbackSampleRate")]
     public double? LambdaSuccessFeedbackSampleRate { get; set; }
 
+    /// <summary>The maximum size, in bytes, of a message that can be published to the topic. Valid values are 1024 to 1048576 (1 MiB). The default is 262144 (256 KiB). A topic with a maximum_message_size above 256 KiB must have 100 or fewer subscriptions, and each subscription must be an Amazon SQS, Amazon Data Firehose, or AWS Lambda subscription.</summary>
+    [JsonPropertyName("maximumMessageSize")]
+    public double? MaximumMessageSize { get; set; }
+
     /// <summary>The fully-formed AWS policy as JSON.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
@@ -3667,6 +3675,10 @@ public partial class V1beta1TopicStatusAtProvider
     /// <summary>Percentage of success to sample</summary>
     [JsonPropertyName("lambdaSuccessFeedbackSampleRate")]
     public double? LambdaSuccessFeedbackSampleRate { get; set; }
+
+    /// <summary>The maximum size, in bytes, of a message that can be published to the topic. Valid values are 1024 to 1048576 (1 MiB). The default is 262144 (256 KiB). A topic with a maximum_message_size above 256 KiB must have 100 or fewer subscriptions, and each subscription must be an Amazon SQS, Amazon Data Firehose, or AWS Lambda subscription.</summary>
+    [JsonPropertyName("maximumMessageSize")]
+    public double? MaximumMessageSize { get; set; }
 
     /// <summary>The AWS Account ID of the SNS topic owner</summary>
     [JsonPropertyName("owner")]

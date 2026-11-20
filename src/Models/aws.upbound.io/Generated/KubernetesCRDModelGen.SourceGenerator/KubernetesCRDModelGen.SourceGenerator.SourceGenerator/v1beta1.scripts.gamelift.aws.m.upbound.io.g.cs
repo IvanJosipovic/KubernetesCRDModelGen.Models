@@ -531,7 +531,7 @@ public partial class V1beta1ScriptSpecForProviderStorageLocation
     [JsonPropertyName("keySelector")]
     public V1beta1ScriptSpecForProviderStorageLocationKeySelector? KeySelector { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -575,7 +575,7 @@ public partial class V1beta1ScriptSpecForProvider
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
-    /// <summary>A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
+    /// <summary>Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
     [JsonPropertyName("zipFile")]
     public string? ZipFile { get; set; }
 }
@@ -1074,7 +1074,7 @@ public partial class V1beta1ScriptSpecInitProviderStorageLocation
     [JsonPropertyName("keySelector")]
     public V1beta1ScriptSpecInitProviderStorageLocationKeySelector? KeySelector { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -1123,7 +1123,7 @@ public partial class V1beta1ScriptSpecInitProvider
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
-    /// <summary>A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
+    /// <summary>Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
     [JsonPropertyName("zipFile")]
     public string? ZipFile { get; set; }
 }
@@ -1248,7 +1248,7 @@ public partial class V1beta1ScriptStatusAtProviderStorageLocation
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -1288,7 +1288,7 @@ public partial class V1beta1ScriptStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -1296,7 +1296,7 @@ public partial class V1beta1ScriptStatusAtProvider
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
-    /// <summary>A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
+    /// <summary>Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.</summary>
     [JsonPropertyName("zipFile")]
     public string? ZipFile { get; set; }
 }

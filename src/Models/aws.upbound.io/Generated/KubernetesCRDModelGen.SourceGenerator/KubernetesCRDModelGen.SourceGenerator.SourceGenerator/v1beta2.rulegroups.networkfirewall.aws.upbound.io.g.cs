@@ -325,7 +325,7 @@ public partial class V1beta2RuleGroupSpecForProviderRuleGroupRulesSourceRulesSou
     [JsonPropertyName("generatedRulesType")]
     public string? GeneratedRulesType { get; set; }
 
-    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: HTTP_HOST, TLS_SNI.</summary>
+    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: AWS_ROUTE_53_RESOLVED_DOMAIN, HTTP_HOST, TLS_SNI. AWS_ROUTE_53_RESOLVED_DOMAIN takes effect only when the firewall policy that uses the rule group configures route53_resolved_ip_validation. For more information, see Route 53 resolved IP validation rules in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("targetTypes")]
     public IList<string>? TargetTypes { get; set; }
 
@@ -940,7 +940,7 @@ public partial class V1beta2RuleGroupSpecInitProviderRuleGroupRulesSourceRulesSo
     [JsonPropertyName("generatedRulesType")]
     public string? GeneratedRulesType { get; set; }
 
-    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: HTTP_HOST, TLS_SNI.</summary>
+    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: AWS_ROUTE_53_RESOLVED_DOMAIN, HTTP_HOST, TLS_SNI. AWS_ROUTE_53_RESOLVED_DOMAIN takes effect only when the firewall policy that uses the rule group configures route53_resolved_ip_validation. For more information, see Route 53 resolved IP validation rules in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("targetTypes")]
     public IList<string>? TargetTypes { get; set; }
 
@@ -1588,7 +1588,7 @@ public partial class V1beta2RuleGroupStatusAtProviderRuleGroupRulesSourceRulesSo
     [JsonPropertyName("generatedRulesType")]
     public string? GeneratedRulesType { get; set; }
 
-    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: HTTP_HOST, TLS_SNI.</summary>
+    /// <summary>Set of types of domain specifications that are provided in the targets argument. Valid values: AWS_ROUTE_53_RESOLVED_DOMAIN, HTTP_HOST, TLS_SNI. AWS_ROUTE_53_RESOLVED_DOMAIN takes effect only when the firewall policy that uses the rule group configures route53_resolved_ip_validation. For more information, see Route 53 resolved IP validation rules in the AWS Network Firewall Developer Guide.</summary>
     [JsonPropertyName("targetTypes")]
     public IList<string>? TargetTypes { get; set; }
 

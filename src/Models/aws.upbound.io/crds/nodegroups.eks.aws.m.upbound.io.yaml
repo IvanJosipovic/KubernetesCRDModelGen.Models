@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: nodegroups.eks.aws.m.upbound.io
 spec:
   group: eks.aws.m.upbound.io
@@ -618,7 +618,7 @@ spec:
                     description: Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.
                     properties:
                       maxGroupPreparedCapacity:
-                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.
+                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.
                         type: number
                       minSize:
                         description: Minimum number of instances to maintain in the warm pool. Defaults to 0.
@@ -627,7 +627,7 @@ spec:
                         description: 'Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.'
                         type: string
                       reuseOnScaleIn:
-                        description: Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
+                        description: Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
                         type: boolean
                     type: object
                 required:
@@ -1120,7 +1120,7 @@ spec:
                     description: Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.
                     properties:
                       maxGroupPreparedCapacity:
-                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.
+                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.
                         type: number
                       minSize:
                         description: Minimum number of instances to maintain in the warm pool. Defaults to 0.
@@ -1129,7 +1129,7 @@ spec:
                         description: 'Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.'
                         type: string
                       reuseOnScaleIn:
-                        description: Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
+                        description: Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
                         type: boolean
                     type: object
                 type: object
@@ -1310,11 +1310,11 @@ spec:
                     items:
                       properties:
                         autoscalingGroups:
-                          description: List of objects containing information about AutoScaling Groups.
+                          description: List of objects containing information about Auto Scaling groups.
                           items:
                             properties:
                               name:
-                                description: Name of the AutoScaling Group.
+                                description: Name of the Auto Scaling group.
                                 type: string
                             type: object
                           type: array
@@ -1392,7 +1392,7 @@ spec:
                     description: Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.
                     properties:
                       maxGroupPreparedCapacity:
-                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.
+                        description: Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.
                         type: number
                       minSize:
                         description: Minimum number of instances to maintain in the warm pool. Defaults to 0.
@@ -1401,7 +1401,7 @@ spec:
                         description: 'Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.'
                         type: string
                       reuseOnScaleIn:
-                        description: Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
+                        description: Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.
                         type: boolean
                     type: object
                 type: object

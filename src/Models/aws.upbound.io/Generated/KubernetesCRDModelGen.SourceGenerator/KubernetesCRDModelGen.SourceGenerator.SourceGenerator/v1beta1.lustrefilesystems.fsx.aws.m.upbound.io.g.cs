@@ -45,7 +45,7 @@ public partial class V1beta1LustreFileSystemSpecForProviderDataReadCacheConfigur
     [JsonPropertyName("size")]
     public double? Size { get; set; }
 
-    /// <summary>Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
+    /// <summary>Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
     [JsonPropertyName("sizingMode")]
     public string? SizingMode { get; set; }
 }
@@ -671,7 +671,7 @@ public partial class V1beta1LustreFileSystemSpecForProvider
     [JsonPropertyName("skipFinalBackup")]
     public bool? SkipFinalBackup { get; set; }
 
-    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
@@ -712,7 +712,7 @@ public partial class V1beta1LustreFileSystemSpecInitProviderDataReadCacheConfigu
     [JsonPropertyName("size")]
     public double? Size { get; set; }
 
-    /// <summary>Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
+    /// <summary>Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
     [JsonPropertyName("sizingMode")]
     public string? SizingMode { get; set; }
 }
@@ -1343,7 +1343,7 @@ public partial class V1beta1LustreFileSystemSpecInitProvider
     [JsonPropertyName("skipFinalBackup")]
     public bool? SkipFinalBackup { get; set; }
 
-    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
@@ -1491,7 +1491,7 @@ public partial class V1beta1LustreFileSystemStatusAtProviderDataReadCacheConfigu
     [JsonPropertyName("size")]
     public double? Size { get; set; }
 
-    /// <summary>Sizing mode for the cache. Valud values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
+    /// <summary>Sizing mode for the cache. Valid values are NO_CACHE, USER_PROVISIONED, and PROPORTIONAL_TO_THROUGHPUT_CAPACITY.</summary>
     [JsonPropertyName("sizingMode")]
     public string? SizingMode { get; set; }
 }
@@ -1660,7 +1660,7 @@ public partial class V1beta1LustreFileSystemStatusAtProvider
     [JsonPropertyName("skipFinalBackup")]
     public bool? SkipFinalBackup { get; set; }
 
-    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for Fsx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at Fsx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Minimum of 1200. See more details at Allowed values for FSx storage capacity. Update is allowed only for SCRATCH_2, PERSISTENT_1 and PERSISTENT_2 deployment types, See more details at FSx Storage Capacity Update. Required when not creating filesystem for a backup.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: replicators.kafka.aws.m.upbound.io
 spec:
   group: kafka.aws.m.upbound.io
@@ -58,17 +58,17 @@ spec:
               forProvider:
                 properties:
                   description:
-                    description: A summary description of the replicator.
+                    description: Summary description of the replicator.
                     type: string
                   kafkaCluster:
-                    description: The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.
+                    description: Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.
                     items:
                       properties:
                         amazonMskCluster:
-                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.
                           properties:
                             mskClusterArn:
-                              description: The ARN of an Amazon MSK cluster.
+                              description: ARN of an Amazon MSK cluster.
                               type: string
                             mskClusterArnRef:
                               description: Reference to a Cluster in kafka to populate mskClusterArn.
@@ -151,23 +151,23 @@ spec:
                               type: object
                           type: object
                         apacheKafkaCluster:
-                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.
                           properties:
                             apacheKafkaClusterId:
-                              description: The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
+                              description: Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
                               type: string
                             bootstrapBrokerString:
-                              description: The bootstrap broker connection string used to connect to the Apache Kafka cluster.
+                              description: Bootstrap broker connection string used to connect to the Apache Kafka cluster.
                               type: string
                           type: object
                         clientAuthentication:
-                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.
+                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.
                           properties:
                             mtls:
-                              description: Details of the mTLS client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.
                               properties:
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                                 secretArnRef:
                                   description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -250,13 +250,13 @@ spec:
                                   type: object
                               type: object
                             saslScram:
-                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.
                               properties:
                                 mechanism:
-                                  description: The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
+                                  description: SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
                                   type: string
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                                 secretArnRef:
                                   description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -340,10 +340,10 @@ spec:
                               type: object
                           type: object
                         encryptionInTransit:
-                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.
+                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.
                           properties:
                             rootCaCertificate:
-                              description: The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                              description: ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                               type: string
                             rootCaCertificateRef:
                               description: Reference to a Secret in secretsmanager to populate rootCaCertificate.
@@ -426,10 +426,10 @@ spec:
                               type: object
                           type: object
                         vpcConfig:
-                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.
+                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.
                           properties:
                             securityGroupsIds:
-                              description: The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
+                              description: AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
                               items:
                                 type: string
                               type: array
@@ -608,16 +608,16 @@ spec:
                       type: object
                     type: array
                   logDelivery:
-                    description: Configuration block for delivering replicator logs to customer destinations. Detailed below.
+                    description: Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.
                     properties:
                       replicatorLogDelivery:
-                        description: Configuration block for replicator log delivery. Detailed below.
+                        description: Configuration block for replicator log delivery. See replicator_log_delivery Block below.
                         properties:
                           cloudwatchLogs:
-                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.
                             properties:
                               enabled:
-                                description: Boolean whether to enable log delivery to CloudWatch Logs.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                               logGroup:
                                 description: Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.
@@ -703,7 +703,7 @@ spec:
                                 type: object
                             type: object
                           firehose:
-                            description: Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.
                             properties:
                               deliveryStream:
                                 description: Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.
@@ -788,11 +788,11 @@ spec:
                                     type: object
                                 type: object
                               enabled:
-                                description: Boolean whether to enable log delivery to Firehose.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                             type: object
                           s3:
-                            description: Configuration block for replicator log delivery to Amazon S3. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon S3. See s3 Block below.
                             properties:
                               bucket:
                                 description: Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.
@@ -891,10 +891,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   replicationInfoList:
-                    description: A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.
+                    description: List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.
                     properties:
                       consumerGroupReplication:
-                        description: Configuration relating to consumer group replication.
+                        description: Configuration relating to consumer group replication. See consumer_group_replication Block below.
                         items:
                           properties:
                             consumerGroupOffsetSyncMode:
@@ -921,7 +921,7 @@ spec:
                           type: object
                         type: array
                       sourceKafkaClusterArn:
-                        description: The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       sourceKafkaClusterArnRef:
                         description: Reference to a Cluster in kafka to populate sourceKafkaClusterArn.
@@ -1003,13 +1003,13 @@ spec:
                             type: object
                         type: object
                       sourceKafkaClusterId:
-                        description: The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       targetCompressionType:
-                        description: The type of compression to use writing records to target Kafka cluster.
+                        description: Type of compression to use writing records to target Kafka cluster.
                         type: string
                       targetKafkaClusterArn:
-                        description: The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       targetKafkaClusterArnRef:
                         description: Reference to a Cluster in kafka to populate targetKafkaClusterArn.
@@ -1091,10 +1091,10 @@ spec:
                             type: object
                         type: object
                       targetKafkaClusterId:
-                        description: The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       topicReplication:
-                        description: Configuration relating to topic replication.
+                        description: Configuration relating to topic replication. See topic_replication Block below.
                         items:
                           properties:
                             copyAccessControlListsForTopics:
@@ -1107,17 +1107,17 @@ spec:
                               description: Whether to periodically check for new topics and partitions.
                               type: boolean
                             startingPosition:
-                              description: Configuration for specifying the position in the topics to start replicating from.
+                              description: Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicNameConfiguration:
-                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.
+                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicsToExclude:
@@ -1136,10 +1136,10 @@ spec:
                         type: array
                     type: object
                   replicatorName:
-                    description: The name of the replicator.
+                    description: Name of the replicator.
                     type: string
                   serviceExecutionRoleArn:
-                    description: The ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
+                    description: ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
                     type: string
                   serviceExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate serviceExecutionRoleArn.
@@ -1243,17 +1243,17 @@ spec:
                   autoscaler.
                 properties:
                   description:
-                    description: A summary description of the replicator.
+                    description: Summary description of the replicator.
                     type: string
                   kafkaCluster:
-                    description: The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.
+                    description: Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.
                     items:
                       properties:
                         amazonMskCluster:
-                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.
                           properties:
                             mskClusterArn:
-                              description: The ARN of an Amazon MSK cluster.
+                              description: ARN of an Amazon MSK cluster.
                               type: string
                             mskClusterArnRef:
                               description: Reference to a Cluster in kafka to populate mskClusterArn.
@@ -1336,23 +1336,23 @@ spec:
                               type: object
                           type: object
                         apacheKafkaCluster:
-                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.
                           properties:
                             apacheKafkaClusterId:
-                              description: The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
+                              description: Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
                               type: string
                             bootstrapBrokerString:
-                              description: The bootstrap broker connection string used to connect to the Apache Kafka cluster.
+                              description: Bootstrap broker connection string used to connect to the Apache Kafka cluster.
                               type: string
                           type: object
                         clientAuthentication:
-                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.
+                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.
                           properties:
                             mtls:
-                              description: Details of the mTLS client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.
                               properties:
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                                 secretArnRef:
                                   description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -1435,13 +1435,13 @@ spec:
                                   type: object
                               type: object
                             saslScram:
-                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.
                               properties:
                                 mechanism:
-                                  description: The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
+                                  description: SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
                                   type: string
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                                 secretArnRef:
                                   description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -1525,10 +1525,10 @@ spec:
                               type: object
                           type: object
                         encryptionInTransit:
-                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.
+                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.
                           properties:
                             rootCaCertificate:
-                              description: The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                              description: ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                               type: string
                             rootCaCertificateRef:
                               description: Reference to a Secret in secretsmanager to populate rootCaCertificate.
@@ -1611,10 +1611,10 @@ spec:
                               type: object
                           type: object
                         vpcConfig:
-                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.
+                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.
                           properties:
                             securityGroupsIds:
-                              description: The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
+                              description: AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
                               items:
                                 type: string
                               type: array
@@ -1793,16 +1793,16 @@ spec:
                       type: object
                     type: array
                   logDelivery:
-                    description: Configuration block for delivering replicator logs to customer destinations. Detailed below.
+                    description: Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.
                     properties:
                       replicatorLogDelivery:
-                        description: Configuration block for replicator log delivery. Detailed below.
+                        description: Configuration block for replicator log delivery. See replicator_log_delivery Block below.
                         properties:
                           cloudwatchLogs:
-                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.
                             properties:
                               enabled:
-                                description: Boolean whether to enable log delivery to CloudWatch Logs.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                               logGroup:
                                 description: Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.
@@ -1888,7 +1888,7 @@ spec:
                                 type: object
                             type: object
                           firehose:
-                            description: Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.
                             properties:
                               deliveryStream:
                                 description: Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.
@@ -1973,11 +1973,11 @@ spec:
                                     type: object
                                 type: object
                               enabled:
-                                description: Boolean whether to enable log delivery to Firehose.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                             type: object
                           s3:
-                            description: Configuration block for replicator log delivery to Amazon S3. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon S3. See s3 Block below.
                             properties:
                               bucket:
                                 description: Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.
@@ -2071,10 +2071,10 @@ spec:
                         type: object
                     type: object
                   replicationInfoList:
-                    description: A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.
+                    description: List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.
                     properties:
                       consumerGroupReplication:
-                        description: Configuration relating to consumer group replication.
+                        description: Configuration relating to consumer group replication. See consumer_group_replication Block below.
                         items:
                           properties:
                             consumerGroupOffsetSyncMode:
@@ -2101,7 +2101,7 @@ spec:
                           type: object
                         type: array
                       sourceKafkaClusterArn:
-                        description: The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       sourceKafkaClusterArnRef:
                         description: Reference to a Cluster in kafka to populate sourceKafkaClusterArn.
@@ -2183,13 +2183,13 @@ spec:
                             type: object
                         type: object
                       sourceKafkaClusterId:
-                        description: The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       targetCompressionType:
-                        description: The type of compression to use writing records to target Kafka cluster.
+                        description: Type of compression to use writing records to target Kafka cluster.
                         type: string
                       targetKafkaClusterArn:
-                        description: The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       targetKafkaClusterArnRef:
                         description: Reference to a Cluster in kafka to populate targetKafkaClusterArn.
@@ -2271,10 +2271,10 @@ spec:
                             type: object
                         type: object
                       targetKafkaClusterId:
-                        description: The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       topicReplication:
-                        description: Configuration relating to topic replication.
+                        description: Configuration relating to topic replication. See topic_replication Block below.
                         items:
                           properties:
                             copyAccessControlListsForTopics:
@@ -2287,17 +2287,17 @@ spec:
                               description: Whether to periodically check for new topics and partitions.
                               type: boolean
                             startingPosition:
-                              description: Configuration for specifying the position in the topics to start replicating from.
+                              description: Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicNameConfiguration:
-                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.
+                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicsToExclude:
@@ -2316,10 +2316,10 @@ spec:
                         type: array
                     type: object
                   replicatorName:
-                    description: The name of the replicator.
+                    description: Name of the replicator.
                     type: string
                   serviceExecutionRoleArn:
-                    description: The ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
+                    description: ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
                     type: string
                   serviceExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate serviceExecutionRoleArn.
@@ -2481,66 +2481,67 @@ spec:
                     description: ARN of the Replicator.
                     type: string
                   currentVersion:
+                    description: Current version of the MSK Replicator.
                     type: string
                   description:
-                    description: A summary description of the replicator.
+                    description: Summary description of the replicator.
                     type: string
                   id:
                     type: string
                   kafkaCluster:
-                    description: The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.
+                    description: Source and target Kafka clusters for the replicator. Exactly two blocks are required. See kafka_cluster Block below.
                     items:
                       properties:
                         amazonMskCluster:
-                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See amazon_msk_cluster Block below.
                           properties:
                             mskClusterArn:
-                              description: The ARN of an Amazon MSK cluster.
+                              description: ARN of an Amazon MSK cluster.
                               type: string
                           type: object
                         apacheKafkaCluster:
-                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.
+                          description: Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. See apache_kafka_cluster Block below.
                           properties:
                             apacheKafkaClusterId:
-                              description: The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
+                              description: Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.
                               type: string
                             bootstrapBrokerString:
-                              description: The bootstrap broker connection string used to connect to the Apache Kafka cluster.
+                              description: Bootstrap broker connection string used to connect to the Apache Kafka cluster.
                               type: string
                           type: object
                         clientAuthentication:
-                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.
+                          description: Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. See client_authentication Block below.
                           properties:
                             mtls:
-                              description: Details of the mTLS client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the mTLS client authentication used by the Kafka cluster. See mtls Block below.
                               properties:
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                               type: object
                             saslScram:
-                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.
+                              description: Details of the SASL/SCRAM client authentication used by the Kafka cluster. See sasl_scram Block below.
                               properties:
                                 mechanism:
-                                  description: The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
+                                  description: SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.
                                   type: string
                                 secretArn:
-                                  description: The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                                  description: ARN of the AWS Secrets Manager secret that stores the credentials used for SASL/SCRAM authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                                   type: string
                               type: object
                           type: object
                         encryptionInTransit:
-                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.
+                          description: Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). See encryption_in_transit Block below.
                           properties:
                             rootCaCertificate:
-                              description: The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
+                              description: ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.
                               type: string
                           type: object
                         vpcConfig:
-                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.
+                          description: Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC. See vpc_config Block below.
                           properties:
                             securityGroupsIds:
-                              description: The AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
+                              description: AWS security groups to associate with the ENIs used by the replicator. If a security group is not specified, the default security group associated with the VPC is used.
                               items:
                                 type: string
                               type: array
@@ -2555,33 +2556,33 @@ spec:
                       type: object
                     type: array
                   logDelivery:
-                    description: Configuration block for delivering replicator logs to customer destinations. Detailed below.
+                    description: Configuration block for delivering replicator logs to customer destinations. See log_delivery Block below.
                     properties:
                       replicatorLogDelivery:
-                        description: Configuration block for replicator log delivery. Detailed below.
+                        description: Configuration block for replicator log delivery. See replicator_log_delivery Block below.
                         properties:
                           cloudwatchLogs:
-                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon CloudWatch Logs. See cloudwatch_logs Block below.
                             properties:
                               enabled:
-                                description: Boolean whether to enable log delivery to CloudWatch Logs.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                               logGroup:
                                 description: Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.
                                 type: string
                             type: object
                           firehose:
-                            description: Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon Data Firehose. See firehose Block below.
                             properties:
                               deliveryStream:
                                 description: Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.
                                 type: string
                               enabled:
-                                description: Boolean whether to enable log delivery to Firehose.
+                                description: Boolean whether to enable log delivery to S3.
                                 type: boolean
                             type: object
                           s3:
-                            description: Configuration block for replicator log delivery to Amazon S3. Detailed below.
+                            description: Configuration block for replicator log delivery to Amazon S3. See s3 Block below.
                             properties:
                               bucket:
                                 description: Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.
@@ -2601,10 +2602,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   replicationInfoList:
-                    description: A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.
+                    description: List of replication configurations, where each configuration targets a given source cluster to target cluster replication flow. See replication_info_list Block below.
                     properties:
                       consumerGroupReplication:
-                        description: Configuration relating to consumer group replication.
+                        description: Configuration relating to consumer group replication. See consumer_group_replication Block below.
                         items:
                           properties:
                             consumerGroupOffsetSyncMode:
@@ -2631,26 +2632,28 @@ spec:
                           type: object
                         type: array
                       sourceKafkaClusterAlias:
+                        description: (Read-Only) Alias of the source Kafka cluster.
                         type: string
                       sourceKafkaClusterArn:
-                        description: The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       sourceKafkaClusterId:
-                        description: The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
+                        description: Identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.
                         type: string
                       targetCompressionType:
-                        description: The type of compression to use writing records to target Kafka cluster.
+                        description: Type of compression to use writing records to target Kafka cluster.
                         type: string
                       targetKafkaClusterAlias:
+                        description: (Read-Only) Alias of the target Kafka cluster.
                         type: string
                       targetKafkaClusterArn:
-                        description: The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       targetKafkaClusterId:
-                        description: The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
+                        description: Identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.
                         type: string
                       topicReplication:
-                        description: Configuration relating to topic replication.
+                        description: Configuration relating to topic replication. See topic_replication Block below.
                         items:
                           properties:
                             copyAccessControlListsForTopics:
@@ -2663,17 +2666,17 @@ spec:
                               description: Whether to periodically check for new topics and partitions.
                               type: boolean
                             startingPosition:
-                              description: Configuration for specifying the position in the topics to start replicating from.
+                              description: Configuration for specifying the position in the topics to start replicating from. See starting_position Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicNameConfiguration:
-                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.
+                              description: Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias. See topic_name_configuration Block below.
                               properties:
                                 type:
-                                  description: The type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
+                                  description: Type of topic configuration name. Supports PREFIXED_WITH_SOURCE_CLUSTER_ALIAS and IDENTICAL.
                                   type: string
                               type: object
                             topicsToExclude:
@@ -2692,10 +2695,10 @@ spec:
                         type: array
                     type: object
                   replicatorName:
-                    description: The name of the replicator.
+                    description: Name of the replicator.
                     type: string
                   serviceExecutionRoleArn:
-                    description: The ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
+                    description: ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters).
                     type: string
                   tags:
                     additionalProperties:
@@ -2706,7 +2709,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

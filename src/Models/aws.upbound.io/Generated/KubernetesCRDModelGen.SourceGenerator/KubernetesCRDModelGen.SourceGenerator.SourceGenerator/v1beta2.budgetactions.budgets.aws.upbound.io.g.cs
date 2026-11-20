@@ -56,16 +56,16 @@ public enum V1beta2BudgetActionSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+/// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderActionThreshold
 {
-    /// <summary>The type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
+    /// <summary>Type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
     [JsonPropertyName("actionThresholdType")]
     public string? ActionThresholdType { get; set; }
 
-    /// <summary>The threshold of a notification.</summary>
+    /// <summary>Threshold of a notification.</summary>
     [JsonPropertyName("actionThresholdValue")]
     public double? ActionThresholdValue { get; set; }
 }
@@ -511,12 +511,12 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
     public V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+/// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinition
 {
-    /// <summary>A list of groups to be attached. There must be at least one group.</summary>
+    /// <summary>List of groups to be attached. There must be at least one group.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
@@ -532,7 +532,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
     [JsonPropertyName("policyArnSelector")]
     public V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelector? PolicyArnSelector { get; set; }
 
-    /// <summary>A list of roles to be attached. There must be at least one role.</summary>
+    /// <summary>List of roles to be attached. There must be at least one role.</summary>
     [JsonPropertyName("roles")]
     public IList<string>? Roles { get; set; }
 
@@ -544,57 +544,57 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
     [JsonPropertyName("rolesSelector")]
     public V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelector? RolesSelector { get; set; }
 
-    /// <summary>A list of users to be attached. There must be at least one user.</summary>
+    /// <summary>List of users to be attached. There must be at least one user.</summary>
     [JsonPropertyName("users")]
     public IList<string>? Users { get; set; }
 }
 
-/// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+/// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionScpActionDefinition
 {
-    /// <summary>The policy ID attached.</summary>
+    /// <summary>Policy ID attached.</summary>
     [JsonPropertyName("policyId")]
     public string? PolicyId { get; set; }
 
-    /// <summary>A list of target IDs.</summary>
+    /// <summary>List of target IDs.</summary>
     [JsonPropertyName("targetIds")]
     public IList<string>? TargetIds { get; set; }
 }
 
-/// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+/// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionSsmActionDefinition
 {
-    /// <summary>The action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
+    /// <summary>Action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
     [JsonPropertyName("actionSubType")]
     public string? ActionSubType { get; set; }
 
-    /// <summary>The EC2 and RDS instance IDs.</summary>
+    /// <summary>EC2 and RDS instance IDs.</summary>
     [JsonPropertyName("instanceIds")]
     public IList<string>? InstanceIds { get; set; }
 
-    /// <summary>The Region to run the SSM document.</summary>
+    /// <summary>Region to run the SSM document.</summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 }
 
-/// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+/// <summary>Type-specific parameters. See definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinition
 {
-    /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
     [JsonPropertyName("iamActionDefinition")]
     public V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinition? IamActionDefinition { get; set; }
 
-    /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+    /// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
     [JsonPropertyName("scpActionDefinition")]
     public V1beta2BudgetActionSpecForProviderDefinitionScpActionDefinition? ScpActionDefinition { get; set; }
 
-    /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+    /// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
     [JsonPropertyName("ssmActionDefinition")]
     public V1beta2BudgetActionSpecForProviderDefinitionSsmActionDefinition? SsmActionDefinition { get; set; }
 }
@@ -750,11 +750,11 @@ public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderSubscriber
 {
-    /// <summary>The address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
+    /// <summary>Address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>The type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
+    /// <summary>Type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
     [JsonPropertyName("subscriptionType")]
     public string? SubscriptionType { get; set; }
 }
@@ -763,23 +763,23 @@ public partial class V1beta2BudgetActionSpecForProviderSubscriber
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for the budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+    /// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
     [JsonPropertyName("actionThreshold")]
     public V1beta2BudgetActionSpecForProviderActionThreshold? ActionThreshold { get; set; }
 
-    /// <summary>The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
+    /// <summary>Type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>This specifies if the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
+    /// <summary>Whether the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
     [JsonPropertyName("approvalModel")]
     public string? ApprovalModel { get; set; }
 
-    /// <summary>The name of a budget.</summary>
+    /// <summary>Name of a budget.</summary>
     [JsonPropertyName("budgetName")]
     public string? BudgetName { get; set; }
 
@@ -791,11 +791,11 @@ public partial class V1beta2BudgetActionSpecForProvider
     [JsonPropertyName("budgetNameSelector")]
     public V1beta2BudgetActionSpecForProviderBudgetNameSelector? BudgetNameSelector { get; set; }
 
-    /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+    /// <summary>Type-specific parameters. See definition Block.</summary>
     [JsonPropertyName("definition")]
     public V1beta2BudgetActionSpecForProviderDefinition? Definition { get; set; }
 
-    /// <summary>The role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
+    /// <summary>Role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -807,11 +807,11 @@ public partial class V1beta2BudgetActionSpecForProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta2BudgetActionSpecForProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>The type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
+    /// <summary>Type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
-    /// <summary>A list of subscribers. See Subscriber.</summary>
+    /// <summary>Set of subscribers. See subscriber Block.</summary>
     [JsonPropertyName("subscriber")]
     public IList<V1beta2BudgetActionSpecForProviderSubscriber>? Subscriber { get; set; }
 
@@ -820,16 +820,16 @@ public partial class V1beta2BudgetActionSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+/// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderActionThreshold
 {
-    /// <summary>The type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
+    /// <summary>Type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
     [JsonPropertyName("actionThresholdType")]
     public string? ActionThresholdType { get; set; }
 
-    /// <summary>The threshold of a notification.</summary>
+    /// <summary>Threshold of a notification.</summary>
     [JsonPropertyName("actionThresholdValue")]
     public double? ActionThresholdValue { get; set; }
 }
@@ -1275,12 +1275,12 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
     public V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+/// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinition
 {
-    /// <summary>A list of groups to be attached. There must be at least one group.</summary>
+    /// <summary>List of groups to be attached. There must be at least one group.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
@@ -1296,7 +1296,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
     [JsonPropertyName("policyArnSelector")]
     public V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelector? PolicyArnSelector { get; set; }
 
-    /// <summary>A list of roles to be attached. There must be at least one role.</summary>
+    /// <summary>List of roles to be attached. There must be at least one role.</summary>
     [JsonPropertyName("roles")]
     public IList<string>? Roles { get; set; }
 
@@ -1308,53 +1308,53 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
     [JsonPropertyName("rolesSelector")]
     public V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelector? RolesSelector { get; set; }
 
-    /// <summary>A list of users to be attached. There must be at least one user.</summary>
+    /// <summary>List of users to be attached. There must be at least one user.</summary>
     [JsonPropertyName("users")]
     public IList<string>? Users { get; set; }
 }
 
-/// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+/// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionScpActionDefinition
 {
-    /// <summary>The policy ID attached.</summary>
+    /// <summary>Policy ID attached.</summary>
     [JsonPropertyName("policyId")]
     public string? PolicyId { get; set; }
 
-    /// <summary>A list of target IDs.</summary>
+    /// <summary>List of target IDs.</summary>
     [JsonPropertyName("targetIds")]
     public IList<string>? TargetIds { get; set; }
 }
 
-/// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+/// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionSsmActionDefinition
 {
-    /// <summary>The action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
+    /// <summary>Action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
     [JsonPropertyName("actionSubType")]
     public string? ActionSubType { get; set; }
 
-    /// <summary>The EC2 and RDS instance IDs.</summary>
+    /// <summary>EC2 and RDS instance IDs.</summary>
     [JsonPropertyName("instanceIds")]
     public IList<string>? InstanceIds { get; set; }
 }
 
-/// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+/// <summary>Type-specific parameters. See definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinition
 {
-    /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
     [JsonPropertyName("iamActionDefinition")]
     public V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinition? IamActionDefinition { get; set; }
 
-    /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+    /// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
     [JsonPropertyName("scpActionDefinition")]
     public V1beta2BudgetActionSpecInitProviderDefinitionScpActionDefinition? ScpActionDefinition { get; set; }
 
-    /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+    /// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
     [JsonPropertyName("ssmActionDefinition")]
     public V1beta2BudgetActionSpecInitProviderDefinitionSsmActionDefinition? SsmActionDefinition { get; set; }
 }
@@ -1510,11 +1510,11 @@ public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderSubscriber
 {
-    /// <summary>The address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
+    /// <summary>Address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>The type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
+    /// <summary>Type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
     [JsonPropertyName("subscriptionType")]
     public string? SubscriptionType { get; set; }
 }
@@ -1535,23 +1535,23 @@ public partial class V1beta2BudgetActionSpecInitProviderSubscriber
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for the budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+    /// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
     [JsonPropertyName("actionThreshold")]
     public V1beta2BudgetActionSpecInitProviderActionThreshold? ActionThreshold { get; set; }
 
-    /// <summary>The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
+    /// <summary>Type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>This specifies if the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
+    /// <summary>Whether the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
     [JsonPropertyName("approvalModel")]
     public string? ApprovalModel { get; set; }
 
-    /// <summary>The name of a budget.</summary>
+    /// <summary>Name of a budget.</summary>
     [JsonPropertyName("budgetName")]
     public string? BudgetName { get; set; }
 
@@ -1563,11 +1563,11 @@ public partial class V1beta2BudgetActionSpecInitProvider
     [JsonPropertyName("budgetNameSelector")]
     public V1beta2BudgetActionSpecInitProviderBudgetNameSelector? BudgetNameSelector { get; set; }
 
-    /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+    /// <summary>Type-specific parameters. See definition Block.</summary>
     [JsonPropertyName("definition")]
     public V1beta2BudgetActionSpecInitProviderDefinition? Definition { get; set; }
 
-    /// <summary>The role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
+    /// <summary>Role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -1579,11 +1579,11 @@ public partial class V1beta2BudgetActionSpecInitProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>The type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
+    /// <summary>Type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
-    /// <summary>A list of subscribers. See Subscriber.</summary>
+    /// <summary>Set of subscribers. See subscriber Block.</summary>
     [JsonPropertyName("subscriber")]
     public IList<V1beta2BudgetActionSpecInitProviderSubscriber>? Subscriber { get; set; }
 
@@ -1775,26 +1775,26 @@ public partial class V1beta2BudgetActionSpec
     public V1beta2BudgetActionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+/// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderActionThreshold
 {
-    /// <summary>The type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
+    /// <summary>Type of threshold for a notification. Valid values are PERCENTAGE or ABSOLUTE_VALUE.</summary>
     [JsonPropertyName("actionThresholdType")]
     public string? ActionThresholdType { get; set; }
 
-    /// <summary>The threshold of a notification.</summary>
+    /// <summary>Threshold of a notification.</summary>
     [JsonPropertyName("actionThresholdValue")]
     public double? ActionThresholdValue { get; set; }
 }
 
-/// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+/// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefinition
 {
-    /// <summary>A list of groups to be attached. There must be at least one group.</summary>
+    /// <summary>List of groups to be attached. There must be at least one group.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
@@ -1802,61 +1802,61 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefin
     [JsonPropertyName("policyArn")]
     public string? PolicyArn { get; set; }
 
-    /// <summary>A list of roles to be attached. There must be at least one role.</summary>
+    /// <summary>List of roles to be attached. There must be at least one role.</summary>
     [JsonPropertyName("roles")]
     public IList<string>? Roles { get; set; }
 
-    /// <summary>A list of users to be attached. There must be at least one user.</summary>
+    /// <summary>List of users to be attached. There must be at least one user.</summary>
     [JsonPropertyName("users")]
     public IList<string>? Users { get; set; }
 }
 
-/// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+/// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionScpActionDefinition
 {
-    /// <summary>The policy ID attached.</summary>
+    /// <summary>Policy ID attached.</summary>
     [JsonPropertyName("policyId")]
     public string? PolicyId { get; set; }
 
-    /// <summary>A list of target IDs.</summary>
+    /// <summary>List of target IDs.</summary>
     [JsonPropertyName("targetIds")]
     public IList<string>? TargetIds { get; set; }
 }
 
-/// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+/// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionSsmActionDefinition
 {
-    /// <summary>The action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
+    /// <summary>Action subType. Valid values are STOP_EC2_INSTANCES or STOP_RDS_INSTANCES.</summary>
     [JsonPropertyName("actionSubType")]
     public string? ActionSubType { get; set; }
 
-    /// <summary>The EC2 and RDS instance IDs.</summary>
+    /// <summary>EC2 and RDS instance IDs.</summary>
     [JsonPropertyName("instanceIds")]
     public IList<string>? InstanceIds { get; set; }
 
-    /// <summary>The Region to run the SSM document.</summary>
+    /// <summary>Region to run the SSM document.</summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 }
 
-/// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+/// <summary>Type-specific parameters. See definition Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinition
 {
-    /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
+    /// <summary>AWS Identity and Access Management (IAM) action definition details. See iam_action_definition Block.</summary>
     [JsonPropertyName("iamActionDefinition")]
     public V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefinition? IamActionDefinition { get; set; }
 
-    /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
+    /// <summary>Service control policies (SCPs) action definition details. See scp_action_definition Block.</summary>
     [JsonPropertyName("scpActionDefinition")]
     public V1beta2BudgetActionStatusAtProviderDefinitionScpActionDefinition? ScpActionDefinition { get; set; }
 
-    /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
+    /// <summary>AWS Systems Manager (SSM) action definition details. See ssm_action_definition Block.</summary>
     [JsonPropertyName("ssmActionDefinition")]
     public V1beta2BudgetActionStatusAtProviderDefinitionSsmActionDefinition? SsmActionDefinition { get; set; }
 }
@@ -1865,11 +1865,11 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinition
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderSubscriber
 {
-    /// <summary>The address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
+    /// <summary>Address that AWS sends budget notifications to, either an SNS topic or an email.</summary>
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>The type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
+    /// <summary>Type of notification that AWS sends to a subscriber. Valid values are SNS or EMAIL.</summary>
     [JsonPropertyName("subscriptionType")]
     public string? SubscriptionType { get; set; }
 }
@@ -1878,39 +1878,39 @@ public partial class V1beta2BudgetActionStatusAtProviderSubscriber
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for the budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The id of the budget action.</summary>
+    /// <summary>ID of the budget action.</summary>
     [JsonPropertyName("actionId")]
     public string? ActionId { get; set; }
 
-    /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
+    /// <summary>Trigger threshold of the action. See action_threshold Block.</summary>
     [JsonPropertyName("actionThreshold")]
     public V1beta2BudgetActionStatusAtProviderActionThreshold? ActionThreshold { get; set; }
 
-    /// <summary>The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
+    /// <summary>Type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. Valid values are APPLY_IAM_POLICY, APPLY_SCP_POLICY, and RUN_SSM_DOCUMENTS.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>This specifies if the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
+    /// <summary>Whether the action needs manual or automatic approval. Valid values are AUTOMATIC and MANUAL.</summary>
     [JsonPropertyName("approvalModel")]
     public string? ApprovalModel { get; set; }
 
-    /// <summary>The ARN of the budget action.</summary>
+    /// <summary>ARN of the budget action.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The name of a budget.</summary>
+    /// <summary>Name of a budget.</summary>
     [JsonPropertyName("budgetName")]
     public string? BudgetName { get; set; }
 
-    /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
+    /// <summary>Type-specific parameters. See definition Block.</summary>
     [JsonPropertyName("definition")]
     public V1beta2BudgetActionStatusAtProviderDefinition? Definition { get; set; }
 
-    /// <summary>The role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
+    /// <summary>Role passed for action execution and reversion. Roles and actions must be in the same account.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -1918,15 +1918,15 @@ public partial class V1beta2BudgetActionStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
+    /// <summary>Type of a notification. Valid values are ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
-    /// <summary>The status of the budget action.</summary>
+    /// <summary>Status of the budget action.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>A list of subscribers. See Subscriber.</summary>
+    /// <summary>Set of subscribers. See subscriber Block.</summary>
     [JsonPropertyName("subscriber")]
     public IList<V1beta2BudgetActionStatusAtProviderSubscriber>? Subscriber { get; set; }
 

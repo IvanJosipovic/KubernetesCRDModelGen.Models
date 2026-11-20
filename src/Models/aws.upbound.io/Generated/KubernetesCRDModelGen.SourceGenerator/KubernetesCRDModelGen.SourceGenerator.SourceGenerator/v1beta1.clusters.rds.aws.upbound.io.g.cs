@@ -2050,6 +2050,10 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
 
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -4115,6 +4119,10 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
 
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
+
     /// <summary>ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica. Note: Removing this attribute after creation will promote the read replica to a standalone cluster.</summary>
     [JsonPropertyName("replicationSourceIdentifier")]
     public string? ReplicationSourceIdentifier { get; set; }
@@ -4730,6 +4738,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30</summary>
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
 
     /// <summary>
     /// Read-only endpoint for the Aurora cluster, automatically

@@ -377,7 +377,7 @@ public partial class V1beta1UsagePlanKeySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Id of the usage plan resource representing to associate the key to.</summary>
+    /// <summary>ID of the usage plan resource representing to associate the key to.</summary>
     [JsonPropertyName("usagePlanId")]
     public string? UsagePlanId { get; set; }
 
@@ -716,7 +716,7 @@ public partial class V1beta1UsagePlanKeySpecInitProvider
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 
-    /// <summary>Id of the usage plan resource representing to associate the key to.</summary>
+    /// <summary>ID of the usage plan resource representing to associate the key to.</summary>
     [JsonPropertyName("usagePlanId")]
     public string? UsagePlanId { get; set; }
 
@@ -939,7 +939,7 @@ public partial class V1beta1UsagePlanKeyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Id of the usage plan resource representing to associate the key to.</summary>
+    /// <summary>ID of the usage plan resource representing to associate the key to.</summary>
     [JsonPropertyName("usagePlanId")]
     public string? UsagePlanId { get; set; }
 

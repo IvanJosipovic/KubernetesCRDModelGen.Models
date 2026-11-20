@@ -2578,6 +2578,16 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ChannelSpecForProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -3138,6 +3148,10 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettings
     /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
+
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public IList<V1beta1ChannelSpecForProviderEncoderSettingsThumbnailConfiguration>? ThumbnailConfiguration { get; set; }
 
     /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
     [JsonPropertyName("timecodeConfig")]
@@ -6589,6 +6603,16 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ChannelSpecInitProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -7149,6 +7173,10 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettings
     /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
+
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public IList<V1beta1ChannelSpecInitProviderEncoderSettingsThumbnailConfiguration>? ThumbnailConfiguration { get; set; }
 
     /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
     [JsonPropertyName("timecodeConfig")]
@@ -10795,6 +10823,16 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ChannelStatusAtProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -11355,6 +11393,10 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettings
     /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
+
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public IList<V1beta1ChannelStatusAtProviderEncoderSettingsThumbnailConfiguration>? ThumbnailConfiguration { get; set; }
 
     /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
     [JsonPropertyName("timecodeConfig")]

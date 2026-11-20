@@ -412,7 +412,7 @@ public partial class V1beta3QueueSpecForProvider
     [JsonPropertyName("outboundCallerConfig")]
     public V1beta3QueueSpecForProviderOutboundCallerConfig? OutboundCallerConfig { get; set; }
 
-    /// <summary>Specifies a list of quick connects ids that determine the quick connects available to agents who are working the queue.</summary>
+    /// <summary>Specifies a list of quick connects IDs that determine the quick connects available to agents who are working the queue.</summary>
     [JsonPropertyName("quickConnectIds")]
     public IList<string>? QuickConnectIds { get; set; }
 
@@ -800,7 +800,7 @@ public partial class V1beta3QueueSpecInitProvider
     [JsonPropertyName("outboundCallerConfig")]
     public V1beta3QueueSpecInitProviderOutboundCallerConfig? OutboundCallerConfig { get; set; }
 
-    /// <summary>Specifies a list of quick connects ids that determine the quick connects available to agents who are working the queue.</summary>
+    /// <summary>Specifies a list of quick connects IDs that determine the quick connects available to agents who are working the queue.</summary>
     [JsonPropertyName("quickConnectIds")]
     public IList<string>? QuickConnectIds { get; set; }
 
@@ -1054,7 +1054,7 @@ public partial class V1beta3QueueStatusAtProvider
     [JsonPropertyName("queueId")]
     public string? QueueId { get; set; }
 
-    /// <summary>Specifies a list of quick connects ids that determine the quick connects available to agents who are working the queue.</summary>
+    /// <summary>Specifies a list of quick connects IDs that determine the quick connects available to agents who are working the queue.</summary>
     [JsonPropertyName("quickConnectIds")]
     public IList<string>? QuickConnectIds { get; set; }
 

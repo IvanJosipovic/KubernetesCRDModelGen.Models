@@ -1580,7 +1580,7 @@ public partial class V1beta2DeploymentGroupSpecForProvider
     [JsonPropertyName("autoRollbackConfiguration")]
     public V1beta2DeploymentGroupSpecForProviderAutoRollbackConfiguration? AutoRollbackConfiguration { get; set; }
 
-    /// <summary>Autoscaling groups associated with the deployment group.</summary>
+    /// <summary>Auto Scaling groups associated with the deployment group.</summary>
     [JsonPropertyName("autoscalingGroups")]
     public IList<string>? AutoscalingGroups { get; set; }
 
@@ -3029,7 +3029,7 @@ public partial class V1beta2DeploymentGroupSpecInitProvider
     [JsonPropertyName("autoRollbackConfiguration")]
     public V1beta2DeploymentGroupSpecInitProviderAutoRollbackConfiguration? AutoRollbackConfiguration { get; set; }
 
-    /// <summary>Autoscaling groups associated with the deployment group.</summary>
+    /// <summary>Auto Scaling groups associated with the deployment group.</summary>
     [JsonPropertyName("autoscalingGroups")]
     public IList<string>? AutoscalingGroups { get; set; }
 
@@ -3573,7 +3573,7 @@ public partial class V1beta2DeploymentGroupStatusAtProvider
     [JsonPropertyName("autoRollbackConfiguration")]
     public V1beta2DeploymentGroupStatusAtProviderAutoRollbackConfiguration? AutoRollbackConfiguration { get; set; }
 
-    /// <summary>Autoscaling groups associated with the deployment group.</summary>
+    /// <summary>Auto Scaling groups associated with the deployment group.</summary>
     [JsonPropertyName("autoscalingGroups")]
     public IList<string>? AutoscalingGroups { get; set; }
 

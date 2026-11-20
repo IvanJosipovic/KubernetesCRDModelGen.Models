@@ -361,7 +361,7 @@ public partial class V1beta1VPNGatewayAttachmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -373,7 +373,7 @@ public partial class V1beta1VPNGatewayAttachmentSpecForProvider
     [JsonPropertyName("vpcIdSelector")]
     public V1beta1VPNGatewayAttachmentSpecForProviderVpcIdSelector? VpcIdSelector { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -696,7 +696,7 @@ public partial class V1beta1VPNGatewayAttachmentSpecInitProviderVpnGatewayIdSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNGatewayAttachmentSpecInitProvider
 {
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -708,7 +708,7 @@ public partial class V1beta1VPNGatewayAttachmentSpecInitProvider
     [JsonPropertyName("vpcIdSelector")]
     public V1beta1VPNGatewayAttachmentSpecInitProviderVpcIdSelector? VpcIdSelector { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -918,11 +918,11 @@ public partial class V1beta1VPNGatewayAttachmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 }

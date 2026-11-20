@@ -56,16 +56,16 @@ public enum V1beta2VPCEndpointSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+/// <summary>DNS options for the endpoint. See dns_options below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecForProviderDnsOptions
 {
-    /// <summary>The DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
+    /// <summary>DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
     [JsonPropertyName("dnsRecordIpType")]
     public string? DnsRecordIpType { get; set; }
 
-    /// <summary>Boolean indicating whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
+    /// <summary>Whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
     [JsonPropertyName("privateDnsOnlyForInboundResolverEndpoint")]
     public bool? PrivateDnsOnlyForInboundResolverEndpoint { get; set; }
 
@@ -670,15 +670,15 @@ public partial class V1beta2VPCEndpointSpecForProviderSubnetConfigurationSubnetI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecForProviderSubnetConfiguration
 {
-    /// <summary>The IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
+    /// <summary>IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
     [JsonPropertyName("ipv4")]
     public string? Ipv4 { get; set; }
 
-    /// <summary>The IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
+    /// <summary>IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
     [JsonPropertyName("ipv6")]
     public string? Ipv6 { get; set; }
 
-    /// <summary>The ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
+    /// <summary>ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -842,26 +842,23 @@ public partial class V1beta2VPCEndpointSpecForProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecForProvider
 {
-    /// <summary>Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
+    /// <summary>Whether to accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+    /// <summary>DNS options for the endpoint. See dns_options below.</summary>
     [JsonPropertyName("dnsOptions")]
     public V1beta2VPCEndpointSpecForProviderDnsOptions? DnsOptions { get; set; }
 
-    /// <summary>The IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
+    /// <summary>IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>A policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
+    /// <summary>Policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>
-    /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
-    /// </summary>
+    /// <summary>Whether to associate a private hosted zone with the specified VPC. Available for AWS services and AWS Marketplace partner services only. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint. Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.</summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
 
@@ -872,7 +869,7 @@ public partial class V1beta2VPCEndpointSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required. Applicable for endpoints of type Resource and Tunnel. For Tunnel endpoints, the resource configuration must be of type CIDR.</summary>
     [JsonPropertyName("resourceConfigurationArn")]
     public string? ResourceConfigurationArn { get; set; }
 
@@ -884,7 +881,7 @@ public partial class V1beta2VPCEndpointSpecForProvider
     [JsonPropertyName("resourceConfigurationArnSelector")]
     public V1beta2VPCEndpointSpecForProviderResourceConfigurationArnSelector? ResourceConfigurationArnSelector { get; set; }
 
-    /// <summary>The service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>Service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
@@ -896,7 +893,7 @@ public partial class V1beta2VPCEndpointSpecForProvider
     [JsonPropertyName("serviceNameSelector")]
     public V1beta2VPCEndpointSpecForProviderServiceNameSelector? ServiceNameSelector { get; set; }
 
-    /// <summary>The ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceNetworkArn")]
     public string? ServiceNetworkArn { get; set; }
 
@@ -908,7 +905,7 @@ public partial class V1beta2VPCEndpointSpecForProvider
     [JsonPropertyName("serviceNetworkArnSelector")]
     public V1beta2VPCEndpointSpecForProviderServiceNetworkArnSelector? ServiceNetworkArnSelector { get; set; }
 
-    /// <summary>- The AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
+    /// <summary>AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
     [JsonPropertyName("serviceRegion")]
     public string? ServiceRegion { get; set; }
 
@@ -920,11 +917,11 @@ public partial class V1beta2VPCEndpointSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC endpoint type, Gateway, GatewayLoadBalancer,Interface, Resource or ServiceNetwork. Defaults to Gateway.</summary>
+    /// <summary>VPC endpoint type, Gateway, GatewayLoadBalancer, Interface, Resource, ServiceNetwork or Tunnel. Defaults to Gateway.</summary>
     [JsonPropertyName("vpcEndpointType")]
     public string? VpcEndpointType { get; set; }
 
-    /// <summary>The ID of the VPC in which the endpoint will be used.</summary>
+    /// <summary>ID of the VPC in which the endpoint will be used.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -937,16 +934,16 @@ public partial class V1beta2VPCEndpointSpecForProvider
     public V1beta2VPCEndpointSpecForProviderVpcIdSelector? VpcIdSelector { get; set; }
 }
 
-/// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+/// <summary>DNS options for the endpoint. See dns_options below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecInitProviderDnsOptions
 {
-    /// <summary>The DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
+    /// <summary>DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
     [JsonPropertyName("dnsRecordIpType")]
     public string? DnsRecordIpType { get; set; }
 
-    /// <summary>Boolean indicating whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
+    /// <summary>Whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
     [JsonPropertyName("privateDnsOnlyForInboundResolverEndpoint")]
     public bool? PrivateDnsOnlyForInboundResolverEndpoint { get; set; }
 
@@ -1551,15 +1548,15 @@ public partial class V1beta2VPCEndpointSpecInitProviderSubnetConfigurationSubnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecInitProviderSubnetConfiguration
 {
-    /// <summary>The IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
+    /// <summary>IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
     [JsonPropertyName("ipv4")]
     public string? Ipv4 { get; set; }
 
-    /// <summary>The IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
+    /// <summary>IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
     [JsonPropertyName("ipv6")]
     public string? Ipv6 { get; set; }
 
-    /// <summary>The ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
+    /// <summary>ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -1735,30 +1732,27 @@ public partial class V1beta2VPCEndpointSpecInitProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointSpecInitProvider
 {
-    /// <summary>Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
+    /// <summary>Whether to accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+    /// <summary>DNS options for the endpoint. See dns_options below.</summary>
     [JsonPropertyName("dnsOptions")]
     public V1beta2VPCEndpointSpecInitProviderDnsOptions? DnsOptions { get; set; }
 
-    /// <summary>The IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
+    /// <summary>IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>A policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
+    /// <summary>Policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>
-    /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
-    /// </summary>
+    /// <summary>Whether to associate a private hosted zone with the specified VPC. Available for AWS services and AWS Marketplace partner services only. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint. Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.</summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
 
-    /// <summary>The ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required. Applicable for endpoints of type Resource and Tunnel. For Tunnel endpoints, the resource configuration must be of type CIDR.</summary>
     [JsonPropertyName("resourceConfigurationArn")]
     public string? ResourceConfigurationArn { get; set; }
 
@@ -1770,7 +1764,7 @@ public partial class V1beta2VPCEndpointSpecInitProvider
     [JsonPropertyName("resourceConfigurationArnSelector")]
     public V1beta2VPCEndpointSpecInitProviderResourceConfigurationArnSelector? ResourceConfigurationArnSelector { get; set; }
 
-    /// <summary>The service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>Service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
@@ -1782,7 +1776,7 @@ public partial class V1beta2VPCEndpointSpecInitProvider
     [JsonPropertyName("serviceNameSelector")]
     public V1beta2VPCEndpointSpecInitProviderServiceNameSelector? ServiceNameSelector { get; set; }
 
-    /// <summary>The ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceNetworkArn")]
     public string? ServiceNetworkArn { get; set; }
 
@@ -1794,7 +1788,7 @@ public partial class V1beta2VPCEndpointSpecInitProvider
     [JsonPropertyName("serviceNetworkArnSelector")]
     public V1beta2VPCEndpointSpecInitProviderServiceNetworkArnSelector? ServiceNetworkArnSelector { get; set; }
 
-    /// <summary>- The AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
+    /// <summary>AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
     [JsonPropertyName("serviceRegion")]
     public string? ServiceRegion { get; set; }
 
@@ -1806,11 +1800,11 @@ public partial class V1beta2VPCEndpointSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC endpoint type, Gateway, GatewayLoadBalancer,Interface, Resource or ServiceNetwork. Defaults to Gateway.</summary>
+    /// <summary>VPC endpoint type, Gateway, GatewayLoadBalancer, Interface, Resource, ServiceNetwork or Tunnel. Defaults to Gateway.</summary>
     [JsonPropertyName("vpcEndpointType")]
     public string? VpcEndpointType { get; set; }
 
-    /// <summary>The ID of the VPC in which the endpoint will be used.</summary>
+    /// <summary>ID of the VPC in which the endpoint will be used.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -2010,25 +2004,25 @@ public partial class V1beta2VPCEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointStatusAtProviderDnsEntry
 {
-    /// <summary>The DNS name.</summary>
+    /// <summary>DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>The ID of the private hosted zone.</summary>
+    /// <summary>ID of the private hosted zone.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 }
 
-/// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+/// <summary>DNS options for the endpoint. See dns_options below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointStatusAtProviderDnsOptions
 {
-    /// <summary>The DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
+    /// <summary>DNS records created for the endpoint. Valid values are ipv4, dualstack, service-defined, and ipv6.</summary>
     [JsonPropertyName("dnsRecordIpType")]
     public string? DnsRecordIpType { get; set; }
 
-    /// <summary>Boolean indicating whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
+    /// <summary>Whether to enable private DNS only for inbound endpoints. This option is available only for interface endpoints of services that support both gateway and interface endpoints. A gateway endpoint for the same service must be created before an interface endpoint is created. Traffic originating from the VPC is routed to the gateway endpoint, while traffic originating from on-premises is routed to the interface endpoint. Defaults to false. This argument can be specified only if private_dns_enabled is true.</summary>
     [JsonPropertyName("privateDnsOnlyForInboundResolverEndpoint")]
     public bool? PrivateDnsOnlyForInboundResolverEndpoint { get; set; }
 
@@ -2045,15 +2039,15 @@ public partial class V1beta2VPCEndpointStatusAtProviderDnsOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointStatusAtProviderSubnetConfiguration
 {
-    /// <summary>The IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
+    /// <summary>IPv4 address to assign to the endpoint network interface in the subnet. You must provide an IPv4 address if the VPC endpoint supports IPv4.</summary>
     [JsonPropertyName("ipv4")]
     public string? Ipv4 { get; set; }
 
-    /// <summary>The IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
+    /// <summary>IPv6 address to assign to the endpoint network interface in the subnet. You must provide an IPv6 address if the VPC endpoint supports IPv6.</summary>
     [JsonPropertyName("ipv6")]
     public string? Ipv6 { get; set; }
 
-    /// <summary>The ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
+    /// <summary>ID of the subnet. Must have a corresponding subnet in the subnet_ids argument.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 }
@@ -2066,27 +2060,27 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
+    /// <summary>Whether to accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type Gateway.</summary>
+    /// <summary>List of CIDR blocks for the exposed AWS service. Applicable for endpoints of type Gateway.</summary>
     [JsonPropertyName("cidrBlocks")]
     public IList<string>? CidrBlocks { get; set; }
 
-    /// <summary>The DNS entries for the VPC Endpoint. Applicable for endpoints of type Interface. DNS blocks are documented below.</summary>
+    /// <summary>DNS entries for the VPC Endpoint. Applicable for endpoints of type Interface. See dns_entry below.</summary>
     [JsonPropertyName("dnsEntry")]
     public IList<V1beta2VPCEndpointStatusAtProviderDnsEntry>? DnsEntry { get; set; }
 
-    /// <summary>The DNS options for the endpoint. See dns_options below.</summary>
+    /// <summary>DNS options for the endpoint. See dns_options below.</summary>
     [JsonPropertyName("dnsOptions")]
     public V1beta2VPCEndpointStatusAtProviderDnsOptions? DnsOptions { get; set; }
 
-    /// <summary>The ID of the VPC endpoint.</summary>
+    /// <summary>ID of the VPC endpoint.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
+    /// <summary>IP address type for the endpoint. Valid values are ipv4, dualstack, and ipv6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -2094,22 +2088,19 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the VPC endpoint.</summary>
+    /// <summary>ID of the AWS account that owns the VPC endpoint.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
-    /// <summary>A policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
+    /// <summary>Policy to attach to the endpoint that controls access to the service. This is a JSON formatted string. Defaults to full access. All Gateway and some Interface endpoints support policies - see the relevant AWS documentation for more details.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The prefix list ID of the exposed AWS service. Applicable for endpoints of type Gateway.</summary>
+    /// <summary>Prefix list ID of the exposed AWS service. Applicable for endpoints of type Gateway.</summary>
     [JsonPropertyName("prefixListId")]
     public string? PrefixListId { get; set; }
 
-    /// <summary>
-    /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
-    /// </summary>
+    /// <summary>Whether to associate a private hosted zone with the specified VPC. Available for AWS services and AWS Marketplace partner services only. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint. Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.</summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
 
@@ -2124,7 +2115,7 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("requesterManaged")]
     public bool? RequesterManaged { get; set; }
 
-    /// <summary>The ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Resource Configuration to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required. Applicable for endpoints of type Resource and Tunnel. For Tunnel endpoints, the resource configuration must be of type CIDR.</summary>
     [JsonPropertyName("resourceConfigurationArn")]
     public string? ResourceConfigurationArn { get; set; }
 
@@ -2132,26 +2123,23 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("routeTableIds")]
     public IList<string>? RouteTableIds { get; set; }
 
-    /// <summary>
-    /// The ID of one or more security groups to associate with the network interface. Applicable for endpoints of type Interface.
-    /// If no security groups are specified, the VPC&apos;s default security group is associated with the endpoint.
-    /// </summary>
+    /// <summary>ID of one or more security groups to associate with the network interface. Applicable for endpoints of type Interface, Resource, ServiceNetwork, and Tunnel. If no security groups are specified, the VPC&apos;s default security group is associated with the endpoint.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>Service name. For AWS services the service name is usually in the form com.amazonaws.&lt;region&gt;.&lt;service&gt; (the SageMaker AI Notebook service is an exception to this rule, the service name is in the form aws.sagemaker.&lt;region&gt;.notebook). Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>The ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
+    /// <summary>ARN of a Service Network to connect this VPC Endpoint to. Exactly one of resource_configuration_arn, service_name or service_network_arn is required.</summary>
     [JsonPropertyName("serviceNetworkArn")]
     public string? ServiceNetworkArn { get; set; }
 
-    /// <summary>- The AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
+    /// <summary>AWS region of the VPC Endpoint Service. If specified, the VPC endpoint will connect to the service in the provided region. Applicable for endpoints of type Interface.</summary>
     [JsonPropertyName("serviceRegion")]
     public string? ServiceRegion { get; set; }
 
-    /// <summary>The state of the VPC endpoint.</summary>
+    /// <summary>State of the VPC endpoint.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -2159,7 +2147,7 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("subnetConfiguration")]
     public IList<V1beta2VPCEndpointStatusAtProviderSubnetConfiguration>? SubnetConfiguration { get; set; }
 
-    /// <summary>The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type GatewayLoadBalancer and Interface. Interface type endpoints cannot function without being assigned to a subnet.</summary>
+    /// <summary>ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type GatewayLoadBalancer, Interface, Resource, ServiceNetwork, and Tunnel. Interface type endpoints cannot function without being assigned to a subnet. For Tunnel endpoints, the subnets must be in the Availability Zones of the resource gateway associated with the resource configuration.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2167,15 +2155,15 @@ public partial class V1beta2VPCEndpointStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The VPC endpoint type, Gateway, GatewayLoadBalancer,Interface, Resource or ServiceNetwork. Defaults to Gateway.</summary>
+    /// <summary>VPC endpoint type, Gateway, GatewayLoadBalancer, Interface, Resource, ServiceNetwork or Tunnel. Defaults to Gateway.</summary>
     [JsonPropertyName("vpcEndpointType")]
     public string? VpcEndpointType { get; set; }
 
-    /// <summary>The ID of the VPC in which the endpoint will be used.</summary>
+    /// <summary>ID of the VPC in which the endpoint will be used.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

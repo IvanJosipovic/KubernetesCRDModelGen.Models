@@ -452,7 +452,7 @@ public partial class V1beta1DomainSpecForProviderLogPublishingOptionsCloudwatchL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainSpecForProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -1157,7 +1157,7 @@ public partial class V1beta1DomainSpecInitProviderLogPublishingOptionsCloudwatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainSpecInitProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -1802,7 +1802,7 @@ public partial class V1beta1DomainStatusAtProviderEncryptAtRest
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainStatusAtProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -1916,7 +1916,7 @@ public partial class V1beta1DomainStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Domain-specific endpoint for kibana without https scheme.</summary>
+    /// <summary>Domain-specific endpoint for kibana without HTTPS scheme.</summary>
     [JsonPropertyName("kibanaEndpoint")]
     public string? KibanaEndpoint { get; set; }
 

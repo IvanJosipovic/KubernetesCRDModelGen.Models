@@ -351,25 +351,19 @@ public partial class V1beta1VPCPeeringConnectionSpecForProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionSpecForProvider
 {
-    /// <summary>Accept the peering (both VPCs need to be in the same AWS account and region).</summary>
+    /// <summary>Whether to accept the peering (both VPCs need to be in the same AWS account and region).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>
-    /// The AWS account ID of the target peer VPC.
-    /// Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.
-    /// </summary>
+    /// <summary>AWS account ID of the target peer VPC. Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.</summary>
     [JsonPropertyName("peerOwnerId")]
     public string? PeerOwnerId { get; set; }
 
-    /// <summary>
-    /// The region of the accepter VPC of the VPC Peering Connection. auto_accept must be false,
-    /// and use the aws_vpc_peering_connection_accepter to manage the accepter side.
-    /// </summary>
+    /// <summary>Region of the accepter VPC of the VPC Peering Connection. auto_accept must be false, and use the aws_vpc_peering_connection_accepter to manage the accepter side.</summary>
     [JsonPropertyName("peerRegion")]
     public string? PeerRegion { get; set; }
 
-    /// <summary>The ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
+    /// <summary>ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
     [JsonPropertyName("peerVpcId")]
     public string? PeerVpcId { get; set; }
 
@@ -392,7 +386,7 @@ public partial class V1beta1VPCPeeringConnectionSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the requester VPC.</summary>
+    /// <summary>ID of the requester VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -731,25 +725,19 @@ public partial class V1beta1VPCPeeringConnectionSpecInitProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionSpecInitProvider
 {
-    /// <summary>Accept the peering (both VPCs need to be in the same AWS account and region).</summary>
+    /// <summary>Whether to accept the peering (both VPCs need to be in the same AWS account and region).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>
-    /// The AWS account ID of the target peer VPC.
-    /// Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.
-    /// </summary>
+    /// <summary>AWS account ID of the target peer VPC. Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.</summary>
     [JsonPropertyName("peerOwnerId")]
     public string? PeerOwnerId { get; set; }
 
-    /// <summary>
-    /// The region of the accepter VPC of the VPC Peering Connection. auto_accept must be false,
-    /// and use the aws_vpc_peering_connection_accepter to manage the accepter side.
-    /// </summary>
+    /// <summary>Region of the accepter VPC of the VPC Peering Connection. auto_accept must be false, and use the aws_vpc_peering_connection_accepter to manage the accepter side.</summary>
     [JsonPropertyName("peerRegion")]
     public string? PeerRegion { get; set; }
 
-    /// <summary>The ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
+    /// <summary>ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
     [JsonPropertyName("peerVpcId")]
     public string? PeerVpcId { get; set; }
 
@@ -765,7 +753,7 @@ public partial class V1beta1VPCPeeringConnectionSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the requester VPC.</summary>
+    /// <summary>ID of the requester VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -885,34 +873,22 @@ public partial class V1beta1VPCPeeringConnectionSpec
     public V1beta1VPCPeeringConnectionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts
-/// the peering connection (a maximum of one).
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionStatusAtProviderAccepter
 {
-    /// <summary>
-    /// Allow a local VPC to resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in the peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>
-/// A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests
-/// the peering connection (a maximum of one).
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionStatusAtProviderRequester
 {
-    /// <summary>
-    /// Allow a local VPC to resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in the peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -921,40 +897,31 @@ public partial class V1beta1VPCPeeringConnectionStatusAtProviderRequester
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionStatusAtProvider
 {
-    /// <summary>The status of the VPC Peering Connection request.</summary>
+    /// <summary>Status of the VPC Peering Connection request.</summary>
     [JsonPropertyName("acceptStatus")]
     public string? AcceptStatus { get; set; }
 
-    /// <summary>
-    /// An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts
-    /// the peering connection (a maximum of one).
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionStatusAtProviderAccepter? Accepter { get; set; }
 
-    /// <summary>Accept the peering (both VPCs need to be in the same AWS account and region).</summary>
+    /// <summary>Whether to accept the peering (both VPCs need to be in the same AWS account and region).</summary>
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>The ID of the VPC Peering Connection.</summary>
+    /// <summary>ID of the VPC Peering Connection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// The AWS account ID of the target peer VPC.
-    /// Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.
-    /// </summary>
+    /// <summary>AWS account ID of the target peer VPC. Defaults to the account ID the AWS provider is currently connected to, so must be managed if connecting cross-account.</summary>
     [JsonPropertyName("peerOwnerId")]
     public string? PeerOwnerId { get; set; }
 
-    /// <summary>
-    /// The region of the accepter VPC of the VPC Peering Connection. auto_accept must be false,
-    /// and use the aws_vpc_peering_connection_accepter to manage the accepter side.
-    /// </summary>
+    /// <summary>Region of the accepter VPC of the VPC Peering Connection. auto_accept must be false, and use the aws_vpc_peering_connection_accepter to manage the accepter side.</summary>
     [JsonPropertyName("peerRegion")]
     public string? PeerRegion { get; set; }
 
-    /// <summary>The ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
+    /// <summary>ID of the target VPC with which you are creating the VPC Peering Connection.</summary>
     [JsonPropertyName("peerVpcId")]
     public string? PeerVpcId { get; set; }
 
@@ -965,10 +932,7 @@ public partial class V1beta1VPCPeeringConnectionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests
-    /// the peering connection (a maximum of one).
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionStatusAtProviderRequester? Requester { get; set; }
 
@@ -976,11 +940,11 @@ public partial class V1beta1VPCPeeringConnectionStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The ID of the requester VPC.</summary>
+    /// <summary>ID of the requester VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

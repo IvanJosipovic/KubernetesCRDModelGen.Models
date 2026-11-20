@@ -41,7 +41,7 @@ public partial class V1beta1InputList : IKubernetesObject<V1ListMeta>, IItems<V1
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProviderDestinations
 {
-    /// <summary>A unique name for the location the RTMP stream is being pushed to.</summary>
+    /// <summary>Unique name for the location the RTMP stream is being pushed to.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
@@ -50,7 +50,7 @@ public partial class V1beta1InputSpecForProviderDestinations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProviderInputDevices
 {
-    /// <summary>The unique ID for the device.</summary>
+    /// <summary>Unique ID for the device.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 }
@@ -214,7 +214,7 @@ public partial class V1beta1InputSpecForProviderInputSecurityGroupsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProviderMediaConnectFlows
 {
-    /// <summary>The ARN of the MediaConnect Flow</summary>
+    /// <summary>ARN of the MediaConnect Flow.</summary>
     [JsonPropertyName("flowArn")]
     public string? FlowArn { get; set; }
 }
@@ -378,29 +378,29 @@ public partial class V1beta1InputSpecForProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProviderSources
 {
-    /// <summary>The key used to extract the password from EC2 Parameter store.</summary>
+    /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>The URL where the stream is pulled from.</summary>
+    /// <summary>URL where the stream is pulled from.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The username for the input source.</summary>
+    /// <summary>Username for the input source.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+/// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProviderVpc
 {
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of 2 VPC subnet IDs from the same VPC.</summary>
+    /// <summary>List of 2 VPC subnet IDs from the same VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -409,11 +409,11 @@ public partial class V1beta1InputSpecForProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecForProvider
 {
-    /// <summary>Destination settings for PUSH type inputs. See Destinations for more details.</summary>
+    /// <summary>Destination settings for PUSH type inputs. See destinations Block for more details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1InputSpecForProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>Settings for the devices. See Input Devices for more details.</summary>
+    /// <summary>Settings for the devices. See input_devices Block for more details.</summary>
     [JsonPropertyName("inputDevices")]
     public IList<V1beta1InputSpecForProviderInputDevices>? InputDevices { get; set; }
 
@@ -429,7 +429,7 @@ public partial class V1beta1InputSpecForProvider
     [JsonPropertyName("inputSecurityGroupsSelector")]
     public V1beta1InputSpecForProviderInputSecurityGroupsSelector? InputSecurityGroupsSelector { get; set; }
 
-    /// <summary>A list of the MediaConnect Flows. See Media Connect Flows for more details.</summary>
+    /// <summary>MediaConnect Flows. See media_connect_flows Block for more details.</summary>
     [JsonPropertyName("mediaConnectFlows")]
     public IList<V1beta1InputSpecForProviderMediaConnectFlows>? MediaConnectFlows { get; set; }
 
@@ -444,7 +444,7 @@ public partial class V1beta1InputSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the role this input assumes during and after creation.</summary>
+    /// <summary>ARN of the role this input assumes during and after creation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -456,7 +456,7 @@ public partial class V1beta1InputSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1InputSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The source URLs for a PULL-type input. See Sources for more details.</summary>
+    /// <summary>Source URLs for a PULL-type input. See sources Block for more details.</summary>
     [JsonPropertyName("sources")]
     public IList<V1beta1InputSpecForProviderSources>? Sources { get; set; }
 
@@ -464,11 +464,11 @@ public partial class V1beta1InputSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The different types of inputs that AWS Elemental MediaLive supports.</summary>
+    /// <summary>Type of input that AWS Elemental MediaLive supports.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+    /// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1InputSpecForProviderVpc? Vpc { get; set; }
 }
@@ -477,7 +477,7 @@ public partial class V1beta1InputSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProviderDestinations
 {
-    /// <summary>A unique name for the location the RTMP stream is being pushed to.</summary>
+    /// <summary>Unique name for the location the RTMP stream is being pushed to.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
@@ -486,7 +486,7 @@ public partial class V1beta1InputSpecInitProviderDestinations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProviderInputDevices
 {
-    /// <summary>The unique ID for the device.</summary>
+    /// <summary>Unique ID for the device.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 }
@@ -650,7 +650,7 @@ public partial class V1beta1InputSpecInitProviderInputSecurityGroupsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProviderMediaConnectFlows
 {
-    /// <summary>The ARN of the MediaConnect Flow</summary>
+    /// <summary>ARN of the MediaConnect Flow.</summary>
     [JsonPropertyName("flowArn")]
     public string? FlowArn { get; set; }
 }
@@ -814,29 +814,29 @@ public partial class V1beta1InputSpecInitProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProviderSources
 {
-    /// <summary>The key used to extract the password from EC2 Parameter store.</summary>
+    /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>The URL where the stream is pulled from.</summary>
+    /// <summary>URL where the stream is pulled from.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The username for the input source.</summary>
+    /// <summary>Username for the input source.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+/// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProviderVpc
 {
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of 2 VPC subnet IDs from the same VPC.</summary>
+    /// <summary>List of 2 VPC subnet IDs from the same VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -857,11 +857,11 @@ public partial class V1beta1InputSpecInitProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSpecInitProvider
 {
-    /// <summary>Destination settings for PUSH type inputs. See Destinations for more details.</summary>
+    /// <summary>Destination settings for PUSH type inputs. See destinations Block for more details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1InputSpecInitProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>Settings for the devices. See Input Devices for more details.</summary>
+    /// <summary>Settings for the devices. See input_devices Block for more details.</summary>
     [JsonPropertyName("inputDevices")]
     public IList<V1beta1InputSpecInitProviderInputDevices>? InputDevices { get; set; }
 
@@ -877,7 +877,7 @@ public partial class V1beta1InputSpecInitProvider
     [JsonPropertyName("inputSecurityGroupsSelector")]
     public V1beta1InputSpecInitProviderInputSecurityGroupsSelector? InputSecurityGroupsSelector { get; set; }
 
-    /// <summary>A list of the MediaConnect Flows. See Media Connect Flows for more details.</summary>
+    /// <summary>MediaConnect Flows. See media_connect_flows Block for more details.</summary>
     [JsonPropertyName("mediaConnectFlows")]
     public IList<V1beta1InputSpecInitProviderMediaConnectFlows>? MediaConnectFlows { get; set; }
 
@@ -885,7 +885,7 @@ public partial class V1beta1InputSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The ARN of the role this input assumes during and after creation.</summary>
+    /// <summary>ARN of the role this input assumes during and after creation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -897,7 +897,7 @@ public partial class V1beta1InputSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1InputSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The source URLs for a PULL-type input. See Sources for more details.</summary>
+    /// <summary>Source URLs for a PULL-type input. See sources Block for more details.</summary>
     [JsonPropertyName("sources")]
     public IList<V1beta1InputSpecInitProviderSources>? Sources { get; set; }
 
@@ -905,11 +905,11 @@ public partial class V1beta1InputSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The different types of inputs that AWS Elemental MediaLive supports.</summary>
+    /// <summary>Type of input that AWS Elemental MediaLive supports.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+    /// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1InputSpecInitProviderVpc? Vpc { get; set; }
 }
@@ -1025,7 +1025,7 @@ public partial class V1beta1InputSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputStatusAtProviderDestinations
 {
-    /// <summary>A unique name for the location the RTMP stream is being pushed to.</summary>
+    /// <summary>Unique name for the location the RTMP stream is being pushed to.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
@@ -1034,7 +1034,7 @@ public partial class V1beta1InputStatusAtProviderDestinations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputStatusAtProviderInputDevices
 {
-    /// <summary>The unique ID for the device.</summary>
+    /// <summary>Unique ID for the device.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 }
@@ -1043,7 +1043,7 @@ public partial class V1beta1InputStatusAtProviderInputDevices
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputStatusAtProviderMediaConnectFlows
 {
-    /// <summary>The ARN of the MediaConnect Flow</summary>
+    /// <summary>ARN of the MediaConnect Flow.</summary>
     [JsonPropertyName("flowArn")]
     public string? FlowArn { get; set; }
 }
@@ -1052,29 +1052,29 @@ public partial class V1beta1InputStatusAtProviderMediaConnectFlows
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputStatusAtProviderSources
 {
-    /// <summary>The key used to extract the password from EC2 Parameter store.</summary>
+    /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>The URL where the stream is pulled from.</summary>
+    /// <summary>URL where the stream is pulled from.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The username for the input source.</summary>
+    /// <summary>Username for the input source.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+/// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputStatusAtProviderVpc
 {
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the Input.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of 2 VPC subnet IDs from the same VPC.</summary>
+    /// <summary>List of 2 VPC subnet IDs from the same VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -1091,23 +1091,23 @@ public partial class V1beta1InputStatusAtProvider
     [JsonPropertyName("attachedChannels")]
     public IList<string>? AttachedChannels { get; set; }
 
-    /// <summary>Destination settings for PUSH type inputs. See Destinations for more details.</summary>
+    /// <summary>Destination settings for PUSH type inputs. See destinations Block for more details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1InputStatusAtProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>The unique ID for the device.</summary>
+    /// <summary>(String) ID of the MediaLive Input.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The input class.</summary>
+    /// <summary>Input class.</summary>
     [JsonPropertyName("inputClass")]
     public string? InputClass { get; set; }
 
-    /// <summary>Settings for the devices. See Input Devices for more details.</summary>
+    /// <summary>Settings for the devices. See input_devices Block for more details.</summary>
     [JsonPropertyName("inputDevices")]
     public IList<V1beta1InputStatusAtProviderInputDevices>? InputDevices { get; set; }
 
-    /// <summary>A list of IDs for all Inputs which are partners of this one.</summary>
+    /// <summary>IDs for all Inputs which are partners of this one.</summary>
     [JsonPropertyName("inputPartnerIds")]
     public IList<string>? InputPartnerIds { get; set; }
 
@@ -1119,7 +1119,7 @@ public partial class V1beta1InputStatusAtProvider
     [JsonPropertyName("inputSourceType")]
     public string? InputSourceType { get; set; }
 
-    /// <summary>A list of the MediaConnect Flows. See Media Connect Flows for more details.</summary>
+    /// <summary>MediaConnect Flows. See media_connect_flows Block for more details.</summary>
     [JsonPropertyName("mediaConnectFlows")]
     public IList<V1beta1InputStatusAtProviderMediaConnectFlows>? MediaConnectFlows { get; set; }
 
@@ -1134,11 +1134,11 @@ public partial class V1beta1InputStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the role this input assumes during and after creation.</summary>
+    /// <summary>ARN of the role this input assumes during and after creation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The source URLs for a PULL-type input. See Sources for more details.</summary>
+    /// <summary>Source URLs for a PULL-type input. See sources Block for more details.</summary>
     [JsonPropertyName("sources")]
     public IList<V1beta1InputStatusAtProviderSources>? Sources { get; set; }
 
@@ -1149,11 +1149,11 @@ public partial class V1beta1InputStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The different types of inputs that AWS Elemental MediaLive supports.</summary>
+    /// <summary>Type of input that AWS Elemental MediaLive supports.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Settings for a private VPC Input. See VPC for more details.</summary>
+    /// <summary>Settings for a private VPC Input. See vpc Block for more details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1InputStatusAtProviderVpc? Vpc { get; set; }
 }

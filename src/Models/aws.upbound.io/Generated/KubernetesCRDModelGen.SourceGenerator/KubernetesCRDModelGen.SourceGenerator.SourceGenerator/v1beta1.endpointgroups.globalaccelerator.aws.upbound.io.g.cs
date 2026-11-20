@@ -60,11 +60,11 @@ public enum V1beta1EndpointGroupSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecForProviderEndpointConfiguration
 {
-    /// <summary>An ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
+    /// <summary>ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
     [JsonPropertyName("attachmentArn")]
     public string? AttachmentArn { get; set; }
 
-    /// <summary>Indicates whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
+    /// <summary>Whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
@@ -72,7 +72,7 @@ public partial class V1beta1EndpointGroupSpecForProviderEndpointConfiguration
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>The weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
+    /// <summary>Weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -228,11 +228,11 @@ public partial class V1beta1EndpointGroupSpecForProviderListenerArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecForProviderPortOverride
 {
-    /// <summary>The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
+    /// <summary>Endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
     [JsonPropertyName("endpointPort")]
     public double? EndpointPort { get; set; }
 
-    /// <summary>The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
+    /// <summary>Listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
     [JsonPropertyName("listenerPort")]
     public double? ListenerPort { get; set; }
 }
@@ -241,15 +241,15 @@ public partial class V1beta1EndpointGroupSpecForProviderPortOverride
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecForProvider
 {
-    /// <summary>The list of endpoint objects. Fields documented below.</summary>
+    /// <summary>Endpoint objects. See endpoint_configuration below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1EndpointGroupSpecForProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
 
-    /// <summary>The name of the AWS Region where the endpoint group is located.</summary>
+    /// <summary>AWS Region where the endpoint group is located.</summary>
     [JsonPropertyName("endpointGroupRegion")]
     public string? EndpointGroupRegion { get; set; }
 
-    /// <summary>The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
+    /// <summary>Time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
@@ -257,11 +257,11 @@ public partial class V1beta1EndpointGroupSpecForProvider
     [JsonPropertyName("healthCheckPath")]
     public string? HealthCheckPath { get; set; }
 
-    /// <summary>The port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
+    /// <summary>Port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
     [JsonPropertyName("healthCheckPort")]
     public double? HealthCheckPort { get; set; }
 
-    /// <summary>The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
+    /// <summary>Protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
@@ -277,15 +277,15 @@ public partial class V1beta1EndpointGroupSpecForProvider
     [JsonPropertyName("listenerArnSelector")]
     public V1beta1EndpointGroupSpecForProviderListenerArnSelector? ListenerArnSelector { get; set; }
 
-    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. Fields documented below.</summary>
+    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. See port_override below.</summary>
     [JsonPropertyName("portOverride")]
     public IList<V1beta1EndpointGroupSpecForProviderPortOverride>? PortOverride { get; set; }
 
-    /// <summary>The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
+    /// <summary>Number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
     [JsonPropertyName("thresholdCount")]
     public double? ThresholdCount { get; set; }
 
-    /// <summary>The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
+    /// <summary>Percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
     [JsonPropertyName("trafficDialPercentage")]
     public double? TrafficDialPercentage { get; set; }
 }
@@ -294,11 +294,11 @@ public partial class V1beta1EndpointGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecInitProviderEndpointConfiguration
 {
-    /// <summary>An ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
+    /// <summary>ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
     [JsonPropertyName("attachmentArn")]
     public string? AttachmentArn { get; set; }
 
-    /// <summary>Indicates whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
+    /// <summary>Whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
@@ -306,7 +306,7 @@ public partial class V1beta1EndpointGroupSpecInitProviderEndpointConfiguration
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>The weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
+    /// <summary>Weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -462,11 +462,11 @@ public partial class V1beta1EndpointGroupSpecInitProviderListenerArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecInitProviderPortOverride
 {
-    /// <summary>The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
+    /// <summary>Endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
     [JsonPropertyName("endpointPort")]
     public double? EndpointPort { get; set; }
 
-    /// <summary>The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
+    /// <summary>Listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
     [JsonPropertyName("listenerPort")]
     public double? ListenerPort { get; set; }
 }
@@ -487,15 +487,15 @@ public partial class V1beta1EndpointGroupSpecInitProviderPortOverride
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupSpecInitProvider
 {
-    /// <summary>The list of endpoint objects. Fields documented below.</summary>
+    /// <summary>Endpoint objects. See endpoint_configuration below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1EndpointGroupSpecInitProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
 
-    /// <summary>The name of the AWS Region where the endpoint group is located.</summary>
+    /// <summary>AWS Region where the endpoint group is located.</summary>
     [JsonPropertyName("endpointGroupRegion")]
     public string? EndpointGroupRegion { get; set; }
 
-    /// <summary>The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
+    /// <summary>Time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
@@ -503,11 +503,11 @@ public partial class V1beta1EndpointGroupSpecInitProvider
     [JsonPropertyName("healthCheckPath")]
     public string? HealthCheckPath { get; set; }
 
-    /// <summary>The port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
+    /// <summary>Port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
     [JsonPropertyName("healthCheckPort")]
     public double? HealthCheckPort { get; set; }
 
-    /// <summary>The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
+    /// <summary>Protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
@@ -523,15 +523,15 @@ public partial class V1beta1EndpointGroupSpecInitProvider
     [JsonPropertyName("listenerArnSelector")]
     public V1beta1EndpointGroupSpecInitProviderListenerArnSelector? ListenerArnSelector { get; set; }
 
-    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. Fields documented below.</summary>
+    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. See port_override below.</summary>
     [JsonPropertyName("portOverride")]
     public IList<V1beta1EndpointGroupSpecInitProviderPortOverride>? PortOverride { get; set; }
 
-    /// <summary>The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
+    /// <summary>Number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
     [JsonPropertyName("thresholdCount")]
     public double? ThresholdCount { get; set; }
 
-    /// <summary>The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
+    /// <summary>Percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
     [JsonPropertyName("trafficDialPercentage")]
     public double? TrafficDialPercentage { get; set; }
 }
@@ -723,11 +723,11 @@ public partial class V1beta1EndpointGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupStatusAtProviderEndpointConfiguration
 {
-    /// <summary>An ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
+    /// <summary>ARN of an exposed cross-account attachment. See the AWS documentation for more details.</summary>
     [JsonPropertyName("attachmentArn")]
     public string? AttachmentArn { get; set; }
 
-    /// <summary>Indicates whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
+    /// <summary>Whether client IP address preservation is enabled for an Application Load Balancer endpoint. See the AWS documentation for more details. The default value is false.</summary>
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
@@ -735,7 +735,7 @@ public partial class V1beta1EndpointGroupStatusAtProviderEndpointConfiguration
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>The weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
+    /// <summary>Weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -744,11 +744,11 @@ public partial class V1beta1EndpointGroupStatusAtProviderEndpointConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupStatusAtProviderPortOverride
 {
-    /// <summary>The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
+    /// <summary>Endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.</summary>
     [JsonPropertyName("endpointPort")]
     public double? EndpointPort { get; set; }
 
-    /// <summary>The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
+    /// <summary>Listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.</summary>
     [JsonPropertyName("listenerPort")]
     public double? ListenerPort { get; set; }
 }
@@ -761,15 +761,15 @@ public partial class V1beta1EndpointGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The list of endpoint objects. Fields documented below.</summary>
+    /// <summary>Endpoint objects. See endpoint_configuration below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1EndpointGroupStatusAtProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
 
-    /// <summary>The name of the AWS Region where the endpoint group is located.</summary>
+    /// <summary>AWS Region where the endpoint group is located.</summary>
     [JsonPropertyName("endpointGroupRegion")]
     public string? EndpointGroupRegion { get; set; }
 
-    /// <summary>The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
+    /// <summary>Time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
@@ -777,11 +777,11 @@ public partial class V1beta1EndpointGroupStatusAtProvider
     [JsonPropertyName("healthCheckPath")]
     public string? HealthCheckPath { get; set; }
 
-    /// <summary>The port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
+    /// <summary>Port that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default port is the listener port that this endpoint group is associated with. If listener port is a list of ports, Global Accelerator uses the first port in the list.</summary>
     [JsonPropertyName("healthCheckPort")]
     public double? HealthCheckPort { get; set; }
 
-    /// <summary>The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
+    /// <summary>Protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.</summary>
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
@@ -793,15 +793,15 @@ public partial class V1beta1EndpointGroupStatusAtProvider
     [JsonPropertyName("listenerArn")]
     public string? ListenerArn { get; set; }
 
-    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. Fields documented below.</summary>
+    /// <summary>Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. See port_override below.</summary>
     [JsonPropertyName("portOverride")]
     public IList<V1beta1EndpointGroupStatusAtProviderPortOverride>? PortOverride { get; set; }
 
-    /// <summary>The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
+    /// <summary>Number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.</summary>
     [JsonPropertyName("thresholdCount")]
     public double? ThresholdCount { get; set; }
 
-    /// <summary>The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
+    /// <summary>Percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.</summary>
     [JsonPropertyName("trafficDialPercentage")]
     public double? TrafficDialPercentage { get; set; }
 }

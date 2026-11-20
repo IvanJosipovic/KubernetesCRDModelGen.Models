@@ -355,7 +355,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTransitGatewayIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -363,11 +363,11 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwa
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -375,12 +375,12 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwa
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptions
@@ -390,7 +390,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptions
     public V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwatchLogOptions? CloudwatchLogOptions { get; set; }
 }
 
-/// <summary>The preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+/// <summary>Preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel1PresharedKeySecretRef
@@ -413,7 +413,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1PresharedKeySecre
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -421,11 +421,11 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwa
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -433,12 +433,12 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwa
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptions
@@ -448,7 +448,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptions
     public V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwatchLogOptions? CloudwatchLogOptions { get; set; }
 }
 
-/// <summary>The preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+/// <summary>Preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProviderTunnel2PresharedKeySecretRef
@@ -764,7 +764,7 @@ public partial class V1beta2VPNConnectionSpecForProviderVpnGatewayIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecForProvider
 {
-    /// <summary>The ID of the customer gateway.</summary>
+    /// <summary>ID of the customer gateway.</summary>
     [JsonPropertyName("customerGatewayId")]
     public string? CustomerGatewayId { get; set; }
 
@@ -776,19 +776,19 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("customerGatewayIdSelector")]
     public V1beta2VPNConnectionSpecForProviderCustomerGatewayIdSelector? CustomerGatewayIdSelector { get; set; }
 
-    /// <summary>Indicate whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
+    /// <summary>Whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
     [JsonPropertyName("enableAcceleration")]
     public bool? EnableAcceleration { get; set; }
 
-    /// <summary>The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv4NetworkCidr")]
     public string? LocalIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv6NetworkCidr")]
     public string? LocalIpv6NetworkCidr { get; set; }
 
-    /// <summary>Indicates if a Public S2S VPN or Private S2S VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4</summary>
+    /// <summary>Type of VPN endpoint, either a public Site-to-Site VPN or a private Site-to-Site VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4.</summary>
     [JsonPropertyName("outsideIpAddressType")]
     public string? OutsideIpAddressType { get; set; }
 
@@ -803,11 +803,11 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The IPv4 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv4NetworkCidr")]
     public string? RemoteIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv6NetworkCidr")]
     public string? RemoteIpv6NetworkCidr { get; set; }
 
@@ -819,7 +819,7 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the EC2 Transit Gateway.</summary>
+    /// <summary>ID of the EC2 Transit Gateway.</summary>
     [JsonPropertyName("transitGatewayId")]
     public string? TransitGatewayId { get; set; }
 
@@ -831,35 +831,35 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("transitGatewayIdSelector")]
     public V1beta2VPNConnectionSpecForProviderTransitGatewayIdSelector? TransitGatewayIdSelector { get; set; }
 
-    /// <summary>. The attachment ID of the Transit Gateway attachment to Direct Connect Gateway. The ID is obtained through a data source only.</summary>
+    /// <summary>Attachment ID of the Transit Gateway attachment to Direct Connect Gateway. Required when outside_ip_address_type is set to PrivateIpv4. The ID is obtained through a data source only.</summary>
     [JsonPropertyName("transportTransitGatewayAttachmentId")]
     public string? TransportTransitGatewayAttachmentId { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutAction")]
     public string? Tunnel1DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutSeconds")]
     public double? Tunnel1DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel1EnableTunnelLifecycleControl")]
     public bool? Tunnel1EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel1IkeVersions")]
     public IList<string>? Tunnel1IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel1InsideCidr")]
     public string? Tunnel1InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel1InsideIpv6Cidr")]
     public string? Tunnel1InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
     [JsonPropertyName("tunnel1LogOptions")]
     public V1beta2VPNConnectionSpecForProviderTunnel1LogOptions? Tunnel1LogOptions { get; set; }
 
@@ -875,7 +875,7 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tunnel1Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel1Phase1LifetimeSeconds")]
     public double? Tunnel1Phase1LifetimeSeconds { get; set; }
 
@@ -891,55 +891,55 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tunnel1Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel1Phase2LifetimeSeconds")]
     public double? Tunnel1Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+    /// <summary>Preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
     [JsonPropertyName("tunnel1PresharedKeySecretRef")]
     public V1beta2VPNConnectionSpecForProviderTunnel1PresharedKeySecretRef? Tunnel1PresharedKeySecretRef { get; set; }
 
-    /// <summary>The percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel1RekeyFuzzPercentage")]
     public double? Tunnel1RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel1RekeyMarginTimeSeconds")]
     public double? Tunnel1RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel1ReplayWindowSize")]
     public double? Tunnel1ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel1StartupAction")]
     public string? Tunnel1StartupAction { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutAction")]
     public string? Tunnel2DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutSeconds")]
     public double? Tunnel2DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel2EnableTunnelLifecycleControl")]
     public bool? Tunnel2EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel2IkeVersions")]
     public IList<string>? Tunnel2IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel2InsideCidr")]
     public string? Tunnel2InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel2InsideIpv6Cidr")]
     public string? Tunnel2InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
     [JsonPropertyName("tunnel2LogOptions")]
     public V1beta2VPNConnectionSpecForProviderTunnel2LogOptions? Tunnel2LogOptions { get; set; }
 
@@ -955,7 +955,7 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tunnel2Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel2Phase1LifetimeSeconds")]
     public double? Tunnel2Phase1LifetimeSeconds { get; set; }
 
@@ -971,27 +971,27 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tunnel2Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel2Phase2LifetimeSeconds")]
     public double? Tunnel2Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+    /// <summary>Preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
     [JsonPropertyName("tunnel2PresharedKeySecretRef")]
     public V1beta2VPNConnectionSpecForProviderTunnel2PresharedKeySecretRef? Tunnel2PresharedKeySecretRef { get; set; }
 
-    /// <summary>The percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel2RekeyFuzzPercentage")]
     public double? Tunnel2RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel2RekeyMarginTimeSeconds")]
     public double? Tunnel2RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel2ReplayWindowSize")]
     public double? Tunnel2ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel2StartupAction")]
     public string? Tunnel2StartupAction { get; set; }
 
@@ -1003,7 +1003,7 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("tunnelInsideIpVersion")]
     public string? TunnelInsideIpVersion { get; set; }
 
-    /// <summary>The type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
+    /// <summary>Type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -1019,7 +1019,7 @@ public partial class V1beta2VPNConnectionSpecForProvider
     [JsonPropertyName("vpnConcentratorId")]
     public string? VpnConcentratorId { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -1331,7 +1331,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTransitGatewayIdSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -1339,11 +1339,11 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -1351,12 +1351,12 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptions
@@ -1366,7 +1366,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptions
     public V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudwatchLogOptions? CloudwatchLogOptions { get; set; }
 }
 
-/// <summary>The preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+/// <summary>Preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel1PresharedKeySecretRef
@@ -1389,7 +1389,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1PresharedKeySecr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -1397,11 +1397,11 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -1409,12 +1409,12 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptions
@@ -1424,7 +1424,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptions
     public V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudwatchLogOptions? CloudwatchLogOptions { get; set; }
 }
 
-/// <summary>The preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+/// <summary>Preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProviderTunnel2PresharedKeySecretRef
@@ -1752,7 +1752,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderVpnGatewayIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionSpecInitProvider
 {
-    /// <summary>The ID of the customer gateway.</summary>
+    /// <summary>ID of the customer gateway.</summary>
     [JsonPropertyName("customerGatewayId")]
     public string? CustomerGatewayId { get; set; }
 
@@ -1764,19 +1764,19 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("customerGatewayIdSelector")]
     public V1beta2VPNConnectionSpecInitProviderCustomerGatewayIdSelector? CustomerGatewayIdSelector { get; set; }
 
-    /// <summary>Indicate whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
+    /// <summary>Whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
     [JsonPropertyName("enableAcceleration")]
     public bool? EnableAcceleration { get; set; }
 
-    /// <summary>The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv4NetworkCidr")]
     public string? LocalIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv6NetworkCidr")]
     public string? LocalIpv6NetworkCidr { get; set; }
 
-    /// <summary>Indicates if a Public S2S VPN or Private S2S VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4</summary>
+    /// <summary>Type of VPN endpoint, either a public Site-to-Site VPN or a private Site-to-Site VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4.</summary>
     [JsonPropertyName("outsideIpAddressType")]
     public string? OutsideIpAddressType { get; set; }
 
@@ -1784,11 +1784,11 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("presharedKeyStorage")]
     public string? PresharedKeyStorage { get; set; }
 
-    /// <summary>The IPv4 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv4NetworkCidr")]
     public string? RemoteIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv6NetworkCidr")]
     public string? RemoteIpv6NetworkCidr { get; set; }
 
@@ -1800,7 +1800,7 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the EC2 Transit Gateway.</summary>
+    /// <summary>ID of the EC2 Transit Gateway.</summary>
     [JsonPropertyName("transitGatewayId")]
     public string? TransitGatewayId { get; set; }
 
@@ -1812,35 +1812,35 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("transitGatewayIdSelector")]
     public V1beta2VPNConnectionSpecInitProviderTransitGatewayIdSelector? TransitGatewayIdSelector { get; set; }
 
-    /// <summary>. The attachment ID of the Transit Gateway attachment to Direct Connect Gateway. The ID is obtained through a data source only.</summary>
+    /// <summary>Attachment ID of the Transit Gateway attachment to Direct Connect Gateway. Required when outside_ip_address_type is set to PrivateIpv4. The ID is obtained through a data source only.</summary>
     [JsonPropertyName("transportTransitGatewayAttachmentId")]
     public string? TransportTransitGatewayAttachmentId { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutAction")]
     public string? Tunnel1DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutSeconds")]
     public double? Tunnel1DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel1EnableTunnelLifecycleControl")]
     public bool? Tunnel1EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel1IkeVersions")]
     public IList<string>? Tunnel1IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel1InsideCidr")]
     public string? Tunnel1InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel1InsideIpv6Cidr")]
     public string? Tunnel1InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
     [JsonPropertyName("tunnel1LogOptions")]
     public V1beta2VPNConnectionSpecInitProviderTunnel1LogOptions? Tunnel1LogOptions { get; set; }
 
@@ -1856,7 +1856,7 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tunnel1Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel1Phase1LifetimeSeconds")]
     public double? Tunnel1Phase1LifetimeSeconds { get; set; }
 
@@ -1872,55 +1872,55 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tunnel1Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel1Phase2LifetimeSeconds")]
     public double? Tunnel1Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+    /// <summary>Preshared key of the first VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
     [JsonPropertyName("tunnel1PresharedKeySecretRef")]
     public V1beta2VPNConnectionSpecInitProviderTunnel1PresharedKeySecretRef? Tunnel1PresharedKeySecretRef { get; set; }
 
-    /// <summary>The percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel1RekeyFuzzPercentage")]
     public double? Tunnel1RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel1RekeyMarginTimeSeconds")]
     public double? Tunnel1RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel1ReplayWindowSize")]
     public double? Tunnel1ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel1StartupAction")]
     public string? Tunnel1StartupAction { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutAction")]
     public string? Tunnel2DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutSeconds")]
     public double? Tunnel2DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel2EnableTunnelLifecycleControl")]
     public bool? Tunnel2EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel2IkeVersions")]
     public IList<string>? Tunnel2IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel2InsideCidr")]
     public string? Tunnel2InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel2InsideIpv6Cidr")]
     public string? Tunnel2InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
     [JsonPropertyName("tunnel2LogOptions")]
     public V1beta2VPNConnectionSpecInitProviderTunnel2LogOptions? Tunnel2LogOptions { get; set; }
 
@@ -1936,7 +1936,7 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tunnel2Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel2Phase1LifetimeSeconds")]
     public double? Tunnel2Phase1LifetimeSeconds { get; set; }
 
@@ -1952,27 +1952,27 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tunnel2Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel2Phase2LifetimeSeconds")]
     public double? Tunnel2Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
+    /// <summary>Preshared key of the second VPN tunnel. The preshared key must be between 8 and 64 characters in length and cannot start with zero(0). Allowed characters are alphanumeric characters, periods(.) and underscores(_).</summary>
     [JsonPropertyName("tunnel2PresharedKeySecretRef")]
     public V1beta2VPNConnectionSpecInitProviderTunnel2PresharedKeySecretRef? Tunnel2PresharedKeySecretRef { get; set; }
 
-    /// <summary>The percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel2RekeyFuzzPercentage")]
     public double? Tunnel2RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel2RekeyMarginTimeSeconds")]
     public double? Tunnel2RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel2ReplayWindowSize")]
     public double? Tunnel2ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel2StartupAction")]
     public string? Tunnel2StartupAction { get; set; }
 
@@ -1984,7 +1984,7 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("tunnelInsideIpVersion")]
     public string? TunnelInsideIpVersion { get; set; }
 
-    /// <summary>The type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
+    /// <summary>Type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -2000,7 +2000,7 @@ public partial class V1beta2VPNConnectionSpecInitProvider
     [JsonPropertyName("vpnConcentratorId")]
     public string? VpnConcentratorId { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 
@@ -2200,15 +2200,15 @@ public partial class V1beta2VPNConnectionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderRoutes
 {
-    /// <summary>The CIDR block associated with the local subnet of the customer data center.</summary>
+    /// <summary>CIDR block associated with the local subnet of the customer data center.</summary>
     [JsonPropertyName("destinationCidrBlock")]
     public string? DestinationCidrBlock { get; set; }
 
-    /// <summary>Indicates how the routes were provided.</summary>
+    /// <summary>How the routes were provided.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The current state of the static route.</summary>
+    /// <summary>Current state of the static route.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -2218,7 +2218,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderRoutes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -2226,11 +2226,11 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -2238,12 +2238,12 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptions
@@ -2258,7 +2258,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptionsCloudwatchLogOptions
 {
-    /// <summary>Enable or disable BGP logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the BGP logging feature. The default is false.</summary>
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
@@ -2266,11 +2266,11 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
-    /// <summary>Set BGP log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set BGP log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("bgpLogOutputFormat")]
     public string? BgpLogOutputFormat { get; set; }
 
-    /// <summary>Enable or disable VPN tunnel logging feature. The default is false.</summary>
+    /// <summary>Whether to enable the VPN tunnel logging feature. The default is false.</summary>
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
@@ -2278,12 +2278,12 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
-    /// <summary>Set log format. Default format is json. Possible values are: json and text. The default is json.</summary>
+    /// <summary>Set log format. Default format is JSON. Possible values are: json and text. The default is json.</summary>
     [JsonPropertyName("logOutputFormat")]
     public string? LogOutputFormat { get; set; }
 }
 
-/// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+/// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptions
@@ -2297,7 +2297,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProviderVgwTelemetry
 {
-    /// <summary>The number of accepted routes.</summary>
+    /// <summary>Number of accepted routes.</summary>
     [JsonPropertyName("acceptedRouteCount")]
     public double? AcceptedRouteCount { get; set; }
 
@@ -2305,15 +2305,15 @@ public partial class V1beta2VPNConnectionStatusAtProviderVgwTelemetry
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
-    /// <summary>The date and time of the last change in status.</summary>
+    /// <summary>Date and time of the last change in status.</summary>
     [JsonPropertyName("lastStatusChange")]
     public string? LastStatusChange { get; set; }
 
-    /// <summary>The Internet-routable IP address of the virtual private gateway&apos;s outside interface.</summary>
+    /// <summary>Internet-routable IP address of the virtual private gateway&apos;s outside interface.</summary>
     [JsonPropertyName("outsideIpAddress")]
     public string? OutsideIpAddress { get; set; }
 
-    /// <summary>The status of the VPN tunnel.</summary>
+    /// <summary>Status of the VPN tunnel.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -2330,35 +2330,35 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The ARN of the core network.</summary>
+    /// <summary>ARN of the core network.</summary>
     [JsonPropertyName("coreNetworkArn")]
     public string? CoreNetworkArn { get; set; }
 
-    /// <summary>The ARN of the core network attachment.</summary>
+    /// <summary>ARN of the core network attachment.</summary>
     [JsonPropertyName("coreNetworkAttachmentArn")]
     public string? CoreNetworkAttachmentArn { get; set; }
 
-    /// <summary>The ID of the customer gateway.</summary>
+    /// <summary>ID of the customer gateway.</summary>
     [JsonPropertyName("customerGatewayId")]
     public string? CustomerGatewayId { get; set; }
 
-    /// <summary>Indicate whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
+    /// <summary>Whether to enable acceleration for the VPN connection. Supports only EC2 Transit Gateway.</summary>
     [JsonPropertyName("enableAcceleration")]
     public bool? EnableAcceleration { get; set; }
 
-    /// <summary>The amazon-assigned ID of the VPN connection.</summary>
+    /// <summary>Amazon-assigned ID of the VPN connection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv4NetworkCidr")]
     public string? LocalIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.</summary>
     [JsonPropertyName("localIpv6NetworkCidr")]
     public string? LocalIpv6NetworkCidr { get; set; }
 
-    /// <summary>Indicates if a Public S2S VPN or Private S2S VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4</summary>
+    /// <summary>Type of VPN endpoint, either a public Site-to-Site VPN or a private Site-to-Site VPN over AWS Direct Connect. Valid values are PublicIpv4 | PrivateIpv4.</summary>
     [JsonPropertyName("outsideIpAddressType")]
     public string? OutsideIpAddressType { get; set; }
 
@@ -2377,15 +2377,15 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IPv4 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv4 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv4NetworkCidr")]
     public string? RemoteIpv4NetworkCidr { get; set; }
 
-    /// <summary>The IPv6 CIDR on the AWS side of the VPN connection.</summary>
+    /// <summary>IPv6 CIDR on the AWS side of the VPN connection.</summary>
     [JsonPropertyName("remoteIpv6NetworkCidr")]
     public string? RemoteIpv6NetworkCidr { get; set; }
 
-    /// <summary>The static routes associated with the VPN connection. Detailed below.</summary>
+    /// <summary>Static routes associated with the VPN connection. Detailed below.</summary>
     [JsonPropertyName("routes")]
     public IList<V1beta2VPNConnectionStatusAtProviderRoutes>? Routes { get; set; }
 
@@ -2397,7 +2397,7 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -2405,55 +2405,55 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("transitGatewayAttachmentId")]
     public string? TransitGatewayAttachmentId { get; set; }
 
-    /// <summary>The ID of the EC2 Transit Gateway.</summary>
+    /// <summary>ID of the EC2 Transit Gateway.</summary>
     [JsonPropertyName("transitGatewayId")]
     public string? TransitGatewayId { get; set; }
 
-    /// <summary>. The attachment ID of the Transit Gateway attachment to Direct Connect Gateway. The ID is obtained through a data source only.</summary>
+    /// <summary>Attachment ID of the Transit Gateway attachment to Direct Connect Gateway. Required when outside_ip_address_type is set to PrivateIpv4. The ID is obtained through a data source only.</summary>
     [JsonPropertyName("transportTransitGatewayAttachmentId")]
     public string? TransportTransitGatewayAttachmentId { get; set; }
 
-    /// <summary>The public IP address of the first VPN tunnel.</summary>
+    /// <summary>Public IP address of the first VPN tunnel.</summary>
     [JsonPropertyName("tunnel1Address")]
     public string? Tunnel1Address { get; set; }
 
-    /// <summary>The bgp asn number of the first VPN tunnel.</summary>
+    /// <summary>BGP ASN number of the first VPN tunnel.</summary>
     [JsonPropertyName("tunnel1BgpAsn")]
     public string? Tunnel1BgpAsn { get; set; }
 
-    /// <summary>The bgp holdtime of the first VPN tunnel.</summary>
+    /// <summary>BGP holdtime of the first VPN tunnel.</summary>
     [JsonPropertyName("tunnel1BgpHoldtime")]
     public double? Tunnel1BgpHoldtime { get; set; }
 
-    /// <summary>The RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).</summary>
+    /// <summary>RFC 6890 link-local address of the first VPN tunnel (Customer Gateway Side).</summary>
     [JsonPropertyName("tunnel1CgwInsideAddress")]
     public string? Tunnel1CgwInsideAddress { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the first VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutAction")]
     public string? Tunnel1DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the first VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel1DpdTimeoutSeconds")]
     public double? Tunnel1DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the first VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel1EnableTunnelLifecycleControl")]
     public bool? Tunnel1EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the first VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel1IkeVersions")]
     public IList<string>? Tunnel1IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the first VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel1InsideCidr")]
     public string? Tunnel1InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the first VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel1InsideIpv6Cidr")]
     public string? Tunnel1InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel1_log_options below for more details.</summary>
     [JsonPropertyName("tunnel1LogOptions")]
     public V1beta2VPNConnectionStatusAtProviderTunnel1LogOptions? Tunnel1LogOptions { get; set; }
 
@@ -2469,7 +2469,7 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tunnel1Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel1Phase1LifetimeSeconds")]
     public double? Tunnel1Phase1LifetimeSeconds { get; set; }
 
@@ -2485,71 +2485,71 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tunnel1Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel1Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel1Phase2LifetimeSeconds")]
     public double? Tunnel1Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel1RekeyFuzzPercentage")]
     public double? Tunnel1RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the first VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel1_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel1_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel1RekeyMarginTimeSeconds")]
     public double? Tunnel1RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the first VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel1ReplayWindowSize")]
     public double? Tunnel1ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the first VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel1StartupAction")]
     public string? Tunnel1StartupAction { get; set; }
 
-    /// <summary>The RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).</summary>
+    /// <summary>RFC 6890 link-local address of the first VPN tunnel (VPN Gateway Side).</summary>
     [JsonPropertyName("tunnel1VgwInsideAddress")]
     public string? Tunnel1VgwInsideAddress { get; set; }
 
-    /// <summary>The public IP address of the second VPN tunnel.</summary>
+    /// <summary>Public IP address of the second VPN tunnel.</summary>
     [JsonPropertyName("tunnel2Address")]
     public string? Tunnel2Address { get; set; }
 
-    /// <summary>The bgp asn number of the second VPN tunnel.</summary>
+    /// <summary>BGP ASN number of the second VPN tunnel.</summary>
     [JsonPropertyName("tunnel2BgpAsn")]
     public string? Tunnel2BgpAsn { get; set; }
 
-    /// <summary>The bgp holdtime of the second VPN tunnel.</summary>
+    /// <summary>BGP holdtime of the second VPN tunnel.</summary>
     [JsonPropertyName("tunnel2BgpHoldtime")]
     public double? Tunnel2BgpHoldtime { get; set; }
 
-    /// <summary>The RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).</summary>
+    /// <summary>RFC 6890 link-local address of the second VPN tunnel (Customer Gateway Side).</summary>
     [JsonPropertyName("tunnel2CgwInsideAddress")]
     public string? Tunnel2CgwInsideAddress { get; set; }
 
-    /// <summary>The action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
+    /// <summary>Action to take after DPD timeout occurs for the second VPN tunnel. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid values are clear | none | restart.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutAction")]
     public string? Tunnel2DpdTimeoutAction { get; set; }
 
-    /// <summary>The number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
+    /// <summary>Number of seconds after which a DPD timeout occurs for the second VPN tunnel. Valid value is equal or higher than 30.</summary>
     [JsonPropertyName("tunnel2DpdTimeoutSeconds")]
     public double? Tunnel2DpdTimeoutSeconds { get; set; }
 
-    /// <summary>Turn on or off tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
+    /// <summary>Whether to enable the tunnel endpoint lifecycle control feature for the second VPN tunnel. Valid values are true | false.</summary>
     [JsonPropertyName("tunnel2EnableTunnelLifecycleControl")]
     public bool? Tunnel2EnableTunnelLifecycleControl { get; set; }
 
-    /// <summary>The IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
+    /// <summary>IKE versions that are permitted for the second VPN tunnel. Valid values are ikev1 | ikev2.</summary>
     [JsonPropertyName("tunnel2IkeVersions")]
     public IList<string>? Tunnel2IkeVersions { get; set; }
 
-    /// <summary>The CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
+    /// <summary>CIDR block of the inside IP addresses for the second VPN tunnel. Valid value is a size /30 CIDR block from the 169.254.0.0/16 range.</summary>
     [JsonPropertyName("tunnel2InsideCidr")]
     public string? Tunnel2InsideCidr { get; set; }
 
-    /// <summary>The range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
+    /// <summary>Range of inside IPv6 addresses for the second VPN tunnel. Supports only EC2 Transit Gateway. Valid value is a size /126 CIDR block from the local fd00::/8 range.</summary>
     [JsonPropertyName("tunnel2InsideIpv6Cidr")]
     public string? Tunnel2InsideIpv6Cidr { get; set; }
 
-    /// <summary>Options for logging VPN tunnel activity. See Log Options below for more details.</summary>
+    /// <summary>Options for logging VPN tunnel activity. See tunnel2_log_options below for more details.</summary>
     [JsonPropertyName("tunnel2LogOptions")]
     public V1beta2VPNConnectionStatusAtProviderTunnel2LogOptions? Tunnel2LogOptions { get; set; }
 
@@ -2565,7 +2565,7 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tunnel2Phase1IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase1IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
+    /// <summary>Lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 28800.</summary>
     [JsonPropertyName("tunnel2Phase1LifetimeSeconds")]
     public double? Tunnel2Phase1LifetimeSeconds { get; set; }
 
@@ -2581,27 +2581,27 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tunnel2Phase2IntegrityAlgorithms")]
     public IList<string>? Tunnel2Phase2IntegrityAlgorithms { get; set; }
 
-    /// <summary>The lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
+    /// <summary>Lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds. Valid value is between 900 and 3600.</summary>
     [JsonPropertyName("tunnel2Phase2LifetimeSeconds")]
     public double? Tunnel2Phase2LifetimeSeconds { get; set; }
 
-    /// <summary>The percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
+    /// <summary>Percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time_seconds) during which the rekey time is randomly selected. Valid value is between 0 and 100.</summary>
     [JsonPropertyName("tunnel2RekeyFuzzPercentage")]
     public double? Tunnel2RekeyFuzzPercentage { get; set; }
 
-    /// <summary>The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
+    /// <summary>Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the second VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for tunnel2_rekey_fuzz_percentage. Valid value is between 60 and half of tunnel2_phase2_lifetime_seconds.</summary>
     [JsonPropertyName("tunnel2RekeyMarginTimeSeconds")]
     public double? Tunnel2RekeyMarginTimeSeconds { get; set; }
 
-    /// <summary>The number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
+    /// <summary>Number of packets in an IKE replay window for the second VPN tunnel. Valid value is between 64 and 2048.</summary>
     [JsonPropertyName("tunnel2ReplayWindowSize")]
     public double? Tunnel2ReplayWindowSize { get; set; }
 
-    /// <summary>The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
+    /// <summary>Action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.</summary>
     [JsonPropertyName("tunnel2StartupAction")]
     public string? Tunnel2StartupAction { get; set; }
 
-    /// <summary>The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).</summary>
+    /// <summary>RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).</summary>
     [JsonPropertyName("tunnel2VgwInsideAddress")]
     public string? Tunnel2VgwInsideAddress { get; set; }
 
@@ -2613,7 +2613,7 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("tunnelInsideIpVersion")]
     public string? TunnelInsideIpVersion { get; set; }
 
-    /// <summary>The type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
+    /// <summary>Type of VPN connection. The only type AWS supports at this time is &quot;ipsec.1&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -2625,7 +2625,7 @@ public partial class V1beta2VPNConnectionStatusAtProvider
     [JsonPropertyName("vpnConcentratorId")]
     public string? VpnConcentratorId { get; set; }
 
-    /// <summary>The ID of the Virtual Private Gateway.</summary>
+    /// <summary>ID of the Virtual Private Gateway.</summary>
     [JsonPropertyName("vpnGatewayId")]
     public string? VpnGatewayId { get; set; }
 }

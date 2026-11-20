@@ -207,7 +207,7 @@ public partial class V1beta1RoleAssociationSpecForProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssociationSpecForProvider
 {
-    /// <summary>The AWS SSO group ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO group IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("groupIds")]
     public IList<string>? GroupIds { get; set; }
 
@@ -218,15 +218,15 @@ public partial class V1beta1RoleAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The grafana role. Valid values can be found here.</summary>
+    /// <summary>Grafana role. Valid values can be found here.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>The AWS SSO user ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO user IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("userIds")]
     public IList<string>? UserIds { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -402,19 +402,19 @@ public partial class V1beta1RoleAssociationSpecInitProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssociationSpecInitProvider
 {
-    /// <summary>The AWS SSO group ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO group IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("groupIds")]
     public IList<string>? GroupIds { get; set; }
 
-    /// <summary>The grafana role. Valid values can be found here.</summary>
+    /// <summary>Grafana role. Valid values can be found here.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>The AWS SSO user ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO user IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("userIds")]
     public IList<string>? UserIds { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -614,7 +614,7 @@ public partial class V1beta1RoleAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssociationStatusAtProvider
 {
-    /// <summary>The AWS SSO group ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO group IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("groupIds")]
     public IList<string>? GroupIds { get; set; }
 
@@ -628,15 +628,15 @@ public partial class V1beta1RoleAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The grafana role. Valid values can be found here.</summary>
+    /// <summary>Grafana role. Valid values can be found here.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>The AWS SSO user ids to be assigned the role given in role.</summary>
+    /// <summary>AWS SSO user IDs to be assigned the role given in role.</summary>
     [JsonPropertyName("userIds")]
     public IList<string>? UserIds { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

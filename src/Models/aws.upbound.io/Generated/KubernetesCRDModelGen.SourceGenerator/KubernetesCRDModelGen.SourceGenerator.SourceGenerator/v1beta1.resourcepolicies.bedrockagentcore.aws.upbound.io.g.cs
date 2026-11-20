@@ -60,7 +60,7 @@ public enum V1beta1ResourcePolicySpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProvider
 {
-    /// <summary>Resource policy definition</summary>
+    /// <summary>Resource policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -92,7 +92,7 @@ public partial class V1beta1ResourcePolicySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProvider
 {
-    /// <summary>Resource policy definition</summary>
+    /// <summary>Resource policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -287,7 +287,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Resource policy definition</summary>
+    /// <summary>Resource policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

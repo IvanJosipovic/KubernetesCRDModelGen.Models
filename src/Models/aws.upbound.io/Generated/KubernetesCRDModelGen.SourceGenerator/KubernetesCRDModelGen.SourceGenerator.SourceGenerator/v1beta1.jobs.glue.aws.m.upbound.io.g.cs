@@ -37,16 +37,16 @@ public partial class V1beta1JobList : IKubernetesObject<V1ListMeta>, IItems<V1be
     public required IList<V1beta1Job> Items { get; set; }
 }
 
-/// <summary>The command of the job. Defined below.</summary>
+/// <summary>Command of the job. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderCommand
 {
-    /// <summary>The name you assign to this job. It must be unique in your account.</summary>
+    /// <summary>Name of the job command. Defaults to glueetl. Use pythonshell for Python Shell Job Type, glueray for Ray Job Type, or gluestreaming for Streaming Job Type. max_capacity needs to be set if pythonshell is chosen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
+    /// <summary>Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -54,7 +54,7 @@ public partial class V1beta1JobSpecForProviderCommand
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 
-    /// <summary>Specifies the S3 path to a script that executes a job.</summary>
+    /// <summary>S3 path to a script that executes a job.</summary>
     [JsonPropertyName("scriptLocation")]
     public string? ScriptLocation { get; set; }
 }
@@ -219,7 +219,7 @@ public partial class V1beta1JobSpecForProviderConnectionsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderExecutionProperty
 {
-    /// <summary>The maximum number of concurrent runs allowed for a job. The default is 1.</summary>
+    /// <summary>Maximum number of concurrent runs allowed for a job. The default is 1.</summary>
     [JsonPropertyName("maxConcurrentRuns")]
     public double? MaxConcurrentRuns { get; set; }
 }
@@ -389,7 +389,7 @@ public partial class V1beta1JobSpecForProviderRoleArnSelector
     public V1beta1JobSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The value of an authorization token.</summary>
+/// <summary>Value of an authorization token.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderSourceControlDetailsAuthTokenSecretRef
@@ -402,40 +402,40 @@ public partial class V1beta1JobSpecForProviderSourceControlDetailsAuthTokenSecre
     public required string Name { get; set; }
 }
 
-/// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+/// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderSourceControlDetails
 {
-    /// <summary>The type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
+    /// <summary>Type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
     [JsonPropertyName("authStrategy")]
     public string? AuthStrategy { get; set; }
 
-    /// <summary>The value of an authorization token.</summary>
+    /// <summary>Value of an authorization token.</summary>
     [JsonPropertyName("authTokenSecretRef")]
     public V1beta1JobSpecForProviderSourceControlDetailsAuthTokenSecretRef? AuthTokenSecretRef { get; set; }
 
-    /// <summary>A branch in the remote repository.</summary>
+    /// <summary>Branch in the remote repository.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
-    /// <summary>A folder in the remote repository.</summary>
+    /// <summary>Folder in the remote repository.</summary>
     [JsonPropertyName("folder")]
     public string? Folder { get; set; }
 
-    /// <summary>The last commit ID for a commit in the remote repository.</summary>
+    /// <summary>Last commit ID for a commit in the remote repository.</summary>
     [JsonPropertyName("lastCommitId")]
     public string? LastCommitId { get; set; }
 
-    /// <summary>The owner of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Owner of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>The provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
+    /// <summary>Provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The name of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Name of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 }
@@ -444,11 +444,11 @@ public partial class V1beta1JobSpecForProviderSourceControlDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProvider
 {
-    /// <summary>The command of the job. Defined below.</summary>
+    /// <summary>Command of the job. Defined below.</summary>
     [JsonPropertyName("command")]
     public V1beta1JobSpecForProviderCommand? Command { get; set; }
 
-    /// <summary>The list of connections used for this job.</summary>
+    /// <summary>List of connections used for this job.</summary>
     [JsonPropertyName("connections")]
     public IList<string>? Connections { get; set; }
 
@@ -460,7 +460,7 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("connectionsSelector")]
     public V1beta1JobSpecForProviderConnectionsSelector? ConnectionsSelector { get; set; }
 
-    /// <summary>The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
+    /// <summary>Map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
     [JsonPropertyName("defaultArguments")]
     public IDictionary<string, string>? DefaultArguments { get; set; }
 
@@ -468,7 +468,7 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Indicates whether the job is run with a standard or flexible execution class. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
+    /// <summary>Execution class for the job. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
     [JsonPropertyName("executionClass")]
     public string? ExecutionClass { get; set; }
 
@@ -476,27 +476,27 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("executionProperty")]
     public V1beta1JobSpecForProviderExecutionProperty? ExecutionProperty { get; set; }
 
-    /// <summary>The version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
+    /// <summary>Version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
     [JsonPropertyName("glueVersion")]
     public string? GlueVersion { get; set; }
 
-    /// <summary>Describes how a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
+    /// <summary>How a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
     [JsonPropertyName("jobMode")]
     public string? JobMode { get; set; }
 
-    /// <summary>Specifies whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
+    /// <summary>Whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
     [JsonPropertyName("jobRunQueuingEnabled")]
     public bool? JobRunQueuingEnabled { get; set; }
 
-    /// <summary>Specifies the day of the week and hour for the maintenance window for streaming jobs.</summary>
+    /// <summary>Day of the week and hour for the maintenance window for streaming jobs.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
+    /// <summary>Maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>The maximum number of times to retry this job if it fails.</summary>
+    /// <summary>Maximum number of times to retry this job if it fails.</summary>
     [JsonPropertyName("maxRetries")]
     public double? MaxRetries { get; set; }
 
@@ -508,7 +508,7 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("notificationProperty")]
     public V1beta1JobSpecForProviderNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The number of workers of a defined workerType that are allocated when a job runs.</summary>
+    /// <summary>Number of workers of a defined workerType that are allocated when a job runs.</summary>
     [JsonPropertyName("numberOfWorkers")]
     public double? NumberOfWorkers { get; set; }
 
@@ -519,7 +519,7 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the IAM role associated with this job.</summary>
+    /// <summary>ARN of the IAM role associated with this job.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -531,11 +531,11 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1JobSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The name of the Security Configuration to be associated with the job.</summary>
+    /// <summary>Name of the Security Configuration to be associated with the job.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+    /// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
     [JsonPropertyName("sourceControlDetails")]
     public V1beta1JobSpecForProviderSourceControlDetails? SourceControlDetails { get; set; }
 
@@ -543,25 +543,25 @@ public partial class V1beta1JobSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argumnet unconfigured for glueray jobs.</summary>
+    /// <summary>Job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argument unconfigured for glueray jobs.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
+    /// <summary>Type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
     [JsonPropertyName("workerType")]
     public string? WorkerType { get; set; }
 }
 
-/// <summary>The command of the job. Defined below.</summary>
+/// <summary>Command of the job. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderCommand
 {
-    /// <summary>The name you assign to this job. It must be unique in your account.</summary>
+    /// <summary>Name of the job command. Defaults to glueetl. Use pythonshell for Python Shell Job Type, glueray for Ray Job Type, or gluestreaming for Streaming Job Type. max_capacity needs to be set if pythonshell is chosen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
+    /// <summary>Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -569,7 +569,7 @@ public partial class V1beta1JobSpecInitProviderCommand
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 
-    /// <summary>Specifies the S3 path to a script that executes a job.</summary>
+    /// <summary>S3 path to a script that executes a job.</summary>
     [JsonPropertyName("scriptLocation")]
     public string? ScriptLocation { get; set; }
 }
@@ -734,7 +734,7 @@ public partial class V1beta1JobSpecInitProviderConnectionsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderExecutionProperty
 {
-    /// <summary>The maximum number of concurrent runs allowed for a job. The default is 1.</summary>
+    /// <summary>Maximum number of concurrent runs allowed for a job. The default is 1.</summary>
     [JsonPropertyName("maxConcurrentRuns")]
     public double? MaxConcurrentRuns { get; set; }
 }
@@ -904,7 +904,7 @@ public partial class V1beta1JobSpecInitProviderRoleArnSelector
     public V1beta1JobSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The value of an authorization token.</summary>
+/// <summary>Value of an authorization token.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderSourceControlDetailsAuthTokenSecretRef
@@ -917,40 +917,40 @@ public partial class V1beta1JobSpecInitProviderSourceControlDetailsAuthTokenSecr
     public required string Name { get; set; }
 }
 
-/// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+/// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderSourceControlDetails
 {
-    /// <summary>The type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
+    /// <summary>Type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
     [JsonPropertyName("authStrategy")]
     public string? AuthStrategy { get; set; }
 
-    /// <summary>The value of an authorization token.</summary>
+    /// <summary>Value of an authorization token.</summary>
     [JsonPropertyName("authTokenSecretRef")]
     public V1beta1JobSpecInitProviderSourceControlDetailsAuthTokenSecretRef? AuthTokenSecretRef { get; set; }
 
-    /// <summary>A branch in the remote repository.</summary>
+    /// <summary>Branch in the remote repository.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
-    /// <summary>A folder in the remote repository.</summary>
+    /// <summary>Folder in the remote repository.</summary>
     [JsonPropertyName("folder")]
     public string? Folder { get; set; }
 
-    /// <summary>The last commit ID for a commit in the remote repository.</summary>
+    /// <summary>Last commit ID for a commit in the remote repository.</summary>
     [JsonPropertyName("lastCommitId")]
     public string? LastCommitId { get; set; }
 
-    /// <summary>The owner of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Owner of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>The provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
+    /// <summary>Provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The name of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Name of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 }
@@ -971,11 +971,11 @@ public partial class V1beta1JobSpecInitProviderSourceControlDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProvider
 {
-    /// <summary>The command of the job. Defined below.</summary>
+    /// <summary>Command of the job. Defined below.</summary>
     [JsonPropertyName("command")]
     public V1beta1JobSpecInitProviderCommand? Command { get; set; }
 
-    /// <summary>The list of connections used for this job.</summary>
+    /// <summary>List of connections used for this job.</summary>
     [JsonPropertyName("connections")]
     public IList<string>? Connections { get; set; }
 
@@ -987,7 +987,7 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("connectionsSelector")]
     public V1beta1JobSpecInitProviderConnectionsSelector? ConnectionsSelector { get; set; }
 
-    /// <summary>The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
+    /// <summary>Map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
     [JsonPropertyName("defaultArguments")]
     public IDictionary<string, string>? DefaultArguments { get; set; }
 
@@ -995,7 +995,7 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Indicates whether the job is run with a standard or flexible execution class. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
+    /// <summary>Execution class for the job. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
     [JsonPropertyName("executionClass")]
     public string? ExecutionClass { get; set; }
 
@@ -1003,27 +1003,27 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("executionProperty")]
     public V1beta1JobSpecInitProviderExecutionProperty? ExecutionProperty { get; set; }
 
-    /// <summary>The version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
+    /// <summary>Version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
     [JsonPropertyName("glueVersion")]
     public string? GlueVersion { get; set; }
 
-    /// <summary>Describes how a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
+    /// <summary>How a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
     [JsonPropertyName("jobMode")]
     public string? JobMode { get; set; }
 
-    /// <summary>Specifies whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
+    /// <summary>Whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
     [JsonPropertyName("jobRunQueuingEnabled")]
     public bool? JobRunQueuingEnabled { get; set; }
 
-    /// <summary>Specifies the day of the week and hour for the maintenance window for streaming jobs.</summary>
+    /// <summary>Day of the week and hour for the maintenance window for streaming jobs.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
+    /// <summary>Maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>The maximum number of times to retry this job if it fails.</summary>
+    /// <summary>Maximum number of times to retry this job if it fails.</summary>
     [JsonPropertyName("maxRetries")]
     public double? MaxRetries { get; set; }
 
@@ -1035,11 +1035,11 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("notificationProperty")]
     public V1beta1JobSpecInitProviderNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The number of workers of a defined workerType that are allocated when a job runs.</summary>
+    /// <summary>Number of workers of a defined workerType that are allocated when a job runs.</summary>
     [JsonPropertyName("numberOfWorkers")]
     public double? NumberOfWorkers { get; set; }
 
-    /// <summary>The ARN of the IAM role associated with this job.</summary>
+    /// <summary>ARN of the IAM role associated with this job.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1051,11 +1051,11 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1JobSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The name of the Security Configuration to be associated with the job.</summary>
+    /// <summary>Name of the Security Configuration to be associated with the job.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+    /// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
     [JsonPropertyName("sourceControlDetails")]
     public V1beta1JobSpecInitProviderSourceControlDetails? SourceControlDetails { get; set; }
 
@@ -1063,11 +1063,11 @@ public partial class V1beta1JobSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argumnet unconfigured for glueray jobs.</summary>
+    /// <summary>Job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argument unconfigured for glueray jobs.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
+    /// <summary>Type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
     [JsonPropertyName("workerType")]
     public string? WorkerType { get; set; }
 }
@@ -1179,16 +1179,16 @@ public partial class V1beta1JobSpec
     public V1beta1JobSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The command of the job. Defined below.</summary>
+/// <summary>Command of the job. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderCommand
 {
-    /// <summary>The name you assign to this job. It must be unique in your account.</summary>
+    /// <summary>Name of the job command. Defaults to glueetl. Use pythonshell for Python Shell Job Type, glueray for Ray Job Type, or gluestreaming for Streaming Job Type. max_capacity needs to be set if pythonshell is chosen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
+    /// <summary>Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.11 when glue_version is set to 5.0.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -1196,7 +1196,7 @@ public partial class V1beta1JobStatusAtProviderCommand
     [JsonPropertyName("runtime")]
     public string? Runtime { get; set; }
 
-    /// <summary>Specifies the S3 path to a script that executes a job.</summary>
+    /// <summary>S3 path to a script that executes a job.</summary>
     [JsonPropertyName("scriptLocation")]
     public string? ScriptLocation { get; set; }
 }
@@ -1206,7 +1206,7 @@ public partial class V1beta1JobStatusAtProviderCommand
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderExecutionProperty
 {
-    /// <summary>The maximum number of concurrent runs allowed for a job. The default is 1.</summary>
+    /// <summary>Maximum number of concurrent runs allowed for a job. The default is 1.</summary>
     [JsonPropertyName("maxConcurrentRuns")]
     public double? MaxConcurrentRuns { get; set; }
 }
@@ -1221,36 +1221,36 @@ public partial class V1beta1JobStatusAtProviderNotificationProperty
     public double? NotifyDelayAfter { get; set; }
 }
 
-/// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+/// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderSourceControlDetails
 {
-    /// <summary>The type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
+    /// <summary>Type of authentication, which can be an authentication token stored in Amazon Web Services Secrets Manager, or a personal access token. Valid values are: PERSONAL_ACCESS_TOKEN and AWS_SECRETS_MANAGER.</summary>
     [JsonPropertyName("authStrategy")]
     public string? AuthStrategy { get; set; }
 
-    /// <summary>A branch in the remote repository.</summary>
+    /// <summary>Branch in the remote repository.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
-    /// <summary>A folder in the remote repository.</summary>
+    /// <summary>Folder in the remote repository.</summary>
     [JsonPropertyName("folder")]
     public string? Folder { get; set; }
 
-    /// <summary>The last commit ID for a commit in the remote repository.</summary>
+    /// <summary>Last commit ID for a commit in the remote repository.</summary>
     [JsonPropertyName("lastCommitId")]
     public string? LastCommitId { get; set; }
 
-    /// <summary>The owner of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Owner of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>The provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
+    /// <summary>Provider for the remote repository. Valid values are: GITHUB, GITLAB, BITBUCKET, and AWS_CODE_COMMIT.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The name of the remote repository that contains the job artifacts.</summary>
+    /// <summary>Name of the remote repository that contains the job artifacts.</summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 }
@@ -1263,15 +1263,15 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The command of the job. Defined below.</summary>
+    /// <summary>Command of the job. Defined below.</summary>
     [JsonPropertyName("command")]
     public V1beta1JobStatusAtProviderCommand? Command { get; set; }
 
-    /// <summary>The list of connections used for this job.</summary>
+    /// <summary>List of connections used for this job.</summary>
     [JsonPropertyName("connections")]
     public IList<string>? Connections { get; set; }
 
-    /// <summary>The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
+    /// <summary>Map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.</summary>
     [JsonPropertyName("defaultArguments")]
     public IDictionary<string, string>? DefaultArguments { get; set; }
 
@@ -1279,7 +1279,7 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Indicates whether the job is run with a standard or flexible execution class. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
+    /// <summary>Execution class for the job. The standard execution class is ideal for time-sensitive workloads that require fast job startup and dedicated resources. Valid value: FLEX, STANDARD.</summary>
     [JsonPropertyName("executionClass")]
     public string? ExecutionClass { get; set; }
 
@@ -1287,7 +1287,7 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("executionProperty")]
     public V1beta1JobStatusAtProviderExecutionProperty? ExecutionProperty { get; set; }
 
-    /// <summary>The version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
+    /// <summary>Version of glue to use, for example &quot;1.0&quot;. Ray jobs should set this to 4.0 or greater. For information about available versions, see the AWS Glue Release Notes.</summary>
     [JsonPropertyName("glueVersion")]
     public string? GlueVersion { get; set; }
 
@@ -1295,23 +1295,23 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Describes how a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
+    /// <summary>How a job was created. Valid values are SCRIPT, NOTEBOOK and VISUAL.</summary>
     [JsonPropertyName("jobMode")]
     public string? JobMode { get; set; }
 
-    /// <summary>Specifies whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
+    /// <summary>Whether job run queuing is enabled for the job runs for this job. A value of true means job run queuing is enabled for the job runs. If false or not populated, the job runs will not be considered for queueing.</summary>
     [JsonPropertyName("jobRunQueuingEnabled")]
     public bool? JobRunQueuingEnabled { get; set; }
 
-    /// <summary>Specifies the day of the week and hour for the maintenance window for streaming jobs.</summary>
+    /// <summary>Day of the week and hour for the maintenance window for streaming jobs.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
+    /// <summary>Maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. Required when pythonshell is set, accept either 0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>The maximum number of times to retry this job if it fails.</summary>
+    /// <summary>Maximum number of times to retry this job if it fails.</summary>
     [JsonPropertyName("maxRetries")]
     public double? MaxRetries { get; set; }
 
@@ -1323,7 +1323,7 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("notificationProperty")]
     public V1beta1JobStatusAtProviderNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The number of workers of a defined workerType that are allocated when a job runs.</summary>
+    /// <summary>Number of workers of a defined workerType that are allocated when a job runs.</summary>
     [JsonPropertyName("numberOfWorkers")]
     public double? NumberOfWorkers { get; set; }
 
@@ -1334,15 +1334,15 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the IAM role associated with this job.</summary>
+    /// <summary>ARN of the IAM role associated with this job.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The name of the Security Configuration to be associated with the job.</summary>
+    /// <summary>Name of the Security Configuration to be associated with the job.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
+    /// <summary>Details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository. Defined below.</summary>
     [JsonPropertyName("sourceControlDetails")]
     public V1beta1JobStatusAtProviderSourceControlDetails? SourceControlDetails { get; set; }
 
@@ -1350,15 +1350,15 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argumnet unconfigured for glueray jobs.</summary>
+    /// <summary>Job timeout in minutes. The default is 2880 minutes (48 hours) for glueetl and pythonshell jobs, and 0 (unlimited) for gluestreaming jobs. Leave this attribute argument unconfigured for glueray jobs.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
+    /// <summary>Type of predefined worker that is allocated when a job runs. Valid values: Standard, G.1X, G.2X, G.025X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, R.8X, Z.2X (Ray jobs). See the AWS documentation for details.</summary>
     [JsonPropertyName("workerType")]
     public string? WorkerType { get; set; }
 }

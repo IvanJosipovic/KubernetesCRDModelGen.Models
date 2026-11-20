@@ -56,17 +56,17 @@ public enum V1beta1TrustProviderSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>A block of options for device identity based trust providers.</summary>
+/// <summary>Block of options for device identity based trust providers. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderDeviceOptions
 {
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>ID of the tenant application with the device-identity provider.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+/// <summary>OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptionsClientSecretSecretRef
@@ -84,39 +84,45 @@ public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOpt
     public required string Namespace { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
-    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    /// <summary>OAuth 2.0 client secret.</summary>
     [JsonPropertyName("clientSecretSecretRef")]
     public V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptionsClientSecretSecretRef? ClientSecretSecretRef { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OIDC public signing key endpoint.</summary>
     [JsonPropertyName("publicSigningKeyEndpoint")]
     public string? PublicSigningKeyEndpoint { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+/// <summary>OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderOidcOptionsClientSecretSecretRef
@@ -134,42 +140,50 @@ public partial class V1beta1TrustProviderSpecForProviderOidcOptionsClientSecretS
     public required string Namespace { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
-    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    /// <summary>OAuth 2.0 client secret.</summary>
     [JsonPropertyName("clientSecretSecretRef")]
     public V1beta1TrustProviderSpecForProviderOidcOptionsClientSecretSecretRef? ClientSecretSecretRef { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
+/// <summary>Block of options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderSseSpecification
 {
+    /// <summary>Whether a customer managed key is in use.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -178,27 +192,27 @@ public partial class V1beta1TrustProviderSpecForProviderSseSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProvider
 {
-    /// <summary>A description for the AWS Verified Access trust provider.</summary>
+    /// <summary>Description for the AWS Verified Access trust provider.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A block of options for device identity based trust providers.</summary>
+    /// <summary>Block of options for device identity based trust providers. See below.</summary>
     [JsonPropertyName("deviceOptions")]
     public V1beta1TrustProviderSpecForProviderDeviceOptions? DeviceOptions { get; set; }
 
-    /// <summary>based trust provider.</summary>
+    /// <summary>Type of device-based trust provider.</summary>
     [JsonPropertyName("deviceTrustProviderType")]
     public string? DeviceTrustProviderType { get; set; }
 
-    /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("nativeApplicationOidcOptions")]
     public V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptions? NativeApplicationOidcOptions { get; set; }
 
-    /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("oidcOptions")]
     public V1beta1TrustProviderSpecForProviderOidcOptions? OidcOptions { get; set; }
 
-    /// <summary>The identifier to be used when working with policy rules.</summary>
+    /// <summary>Identifier to be used when working with policy rules.</summary>
     [JsonPropertyName("policyReferenceName")]
     public string? PolicyReferenceName { get; set; }
 
@@ -209,6 +223,7 @@ public partial class V1beta1TrustProviderSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>Block of options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1TrustProviderSpecForProviderSseSpecification? SseSpecification { get; set; }
 
@@ -216,26 +231,26 @@ public partial class V1beta1TrustProviderSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of trust provider can be either user or device-based.</summary>
+    /// <summary>Type of trust provider can be either user or device-based.</summary>
     [JsonPropertyName("trustProviderType")]
     public string? TrustProviderType { get; set; }
 
-    /// <summary>The type of user-based trust provider.</summary>
+    /// <summary>Type of user-based trust provider.</summary>
     [JsonPropertyName("userTrustProviderType")]
     public string? UserTrustProviderType { get; set; }
 }
 
-/// <summary>A block of options for device identity based trust providers.</summary>
+/// <summary>Block of options for device identity based trust providers. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderDeviceOptions
 {
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>ID of the tenant application with the device-identity provider.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+/// <summary>OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptionsClientSecretSecretRef
@@ -253,39 +268,45 @@ public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOp
     public required string Namespace { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
-    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    /// <summary>OAuth 2.0 client secret.</summary>
     [JsonPropertyName("clientSecretSecretRef")]
     public required V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptionsClientSecretSecretRef ClientSecretSecretRef { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OIDC public signing key endpoint.</summary>
     [JsonPropertyName("publicSigningKeyEndpoint")]
     public string? PublicSigningKeyEndpoint { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+/// <summary>OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderOidcOptionsClientSecretSecretRef
@@ -303,42 +324,50 @@ public partial class V1beta1TrustProviderSpecInitProviderOidcOptionsClientSecret
     public required string Namespace { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
-    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    /// <summary>OAuth 2.0 client secret.</summary>
     [JsonPropertyName("clientSecretSecretRef")]
     public required V1beta1TrustProviderSpecInitProviderOidcOptionsClientSecretSecretRef ClientSecretSecretRef { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
+/// <summary>Block of options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderSseSpecification
 {
+    /// <summary>Whether a customer managed key is in use.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -359,30 +388,31 @@ public partial class V1beta1TrustProviderSpecInitProviderSseSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProvider
 {
-    /// <summary>A description for the AWS Verified Access trust provider.</summary>
+    /// <summary>Description for the AWS Verified Access trust provider.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A block of options for device identity based trust providers.</summary>
+    /// <summary>Block of options for device identity based trust providers. See below.</summary>
     [JsonPropertyName("deviceOptions")]
     public V1beta1TrustProviderSpecInitProviderDeviceOptions? DeviceOptions { get; set; }
 
-    /// <summary>based trust provider.</summary>
+    /// <summary>Type of device-based trust provider.</summary>
     [JsonPropertyName("deviceTrustProviderType")]
     public string? DeviceTrustProviderType { get; set; }
 
-    /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("nativeApplicationOidcOptions")]
     public V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptions? NativeApplicationOidcOptions { get; set; }
 
-    /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("oidcOptions")]
     public V1beta1TrustProviderSpecInitProviderOidcOptions? OidcOptions { get; set; }
 
-    /// <summary>The identifier to be used when working with policy rules.</summary>
+    /// <summary>Identifier to be used when working with policy rules.</summary>
     [JsonPropertyName("policyReferenceName")]
     public string? PolicyReferenceName { get; set; }
 
+    /// <summary>Block of options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1TrustProviderSpecInitProviderSseSpecification? SseSpecification { get; set; }
 
@@ -390,11 +420,11 @@ public partial class V1beta1TrustProviderSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of trust provider can be either user or device-based.</summary>
+    /// <summary>Type of trust provider can be either user or device-based.</summary>
     [JsonPropertyName("trustProviderType")]
     public string? TrustProviderType { get; set; }
 
-    /// <summary>The type of user-based trust provider.</summary>
+    /// <summary>Type of user-based trust provider.</summary>
     [JsonPropertyName("userTrustProviderType")]
     public string? UserTrustProviderType { get; set; }
 }
@@ -582,76 +612,90 @@ public partial class V1beta1TrustProviderSpec
     public V1beta1TrustProviderSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A block of options for device identity based trust providers.</summary>
+/// <summary>Block of options for device identity based trust providers. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderDeviceOptions
 {
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>ID of the tenant application with the device-identity provider.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderNativeApplicationOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OIDC public signing key endpoint.</summary>
     [JsonPropertyName("publicSigningKeyEndpoint")]
     public string? PublicSigningKeyEndpoint { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+/// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderOidcOptions
 {
+    /// <summary>OIDC authorization endpoint.</summary>
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>OAuth 2.0 client identifier.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
+    /// <summary>OIDC issuer identifier of the IdP.</summary>
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
+    /// <summary>OpenID Connect (OIDC) scope specified.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
+    /// <summary>OIDC token endpoint.</summary>
     [JsonPropertyName("tokenEndpoint")]
     public string? TokenEndpoint { get; set; }
 
+    /// <summary>OIDC user info endpoint.</summary>
     [JsonPropertyName("userInfoEndpoint")]
     public string? UserInfoEndpoint { get; set; }
 }
 
+/// <summary>Block of options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderSseSpecification
 {
+    /// <summary>Whether a customer managed key is in use.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -660,31 +704,31 @@ public partial class V1beta1TrustProviderStatusAtProviderSseSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProvider
 {
-    /// <summary>A description for the AWS Verified Access trust provider.</summary>
+    /// <summary>Description for the AWS Verified Access trust provider.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A block of options for device identity based trust providers.</summary>
+    /// <summary>Block of options for device identity based trust providers. See below.</summary>
     [JsonPropertyName("deviceOptions")]
     public V1beta1TrustProviderStatusAtProviderDeviceOptions? DeviceOptions { get; set; }
 
-    /// <summary>based trust provider.</summary>
+    /// <summary>Type of device-based trust provider.</summary>
     [JsonPropertyName("deviceTrustProviderType")]
     public string? DeviceTrustProviderType { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access trust provider.</summary>
+    /// <summary>ID of the AWS Verified Access trust provider.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for a Native Application OIDC, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("nativeApplicationOidcOptions")]
     public V1beta1TrustProviderStatusAtProviderNativeApplicationOidcOptions? NativeApplicationOidcOptions { get; set; }
 
-    /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
+    /// <summary>OpenID Connect details for an oidc-type, user-identity based trust provider. See below.</summary>
     [JsonPropertyName("oidcOptions")]
     public V1beta1TrustProviderStatusAtProviderOidcOptions? OidcOptions { get; set; }
 
-    /// <summary>The identifier to be used when working with policy rules.</summary>
+    /// <summary>Identifier to be used when working with policy rules.</summary>
     [JsonPropertyName("policyReferenceName")]
     public string? PolicyReferenceName { get; set; }
 
@@ -695,6 +739,7 @@ public partial class V1beta1TrustProviderStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Block of options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1TrustProviderStatusAtProviderSseSpecification? SseSpecification { get; set; }
 
@@ -705,11 +750,11 @@ public partial class V1beta1TrustProviderStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of trust provider can be either user or device-based.</summary>
+    /// <summary>Type of trust provider can be either user or device-based.</summary>
     [JsonPropertyName("trustProviderType")]
     public string? TrustProviderType { get; set; }
 
-    /// <summary>The type of user-based trust provider.</summary>
+    /// <summary>Type of user-based trust provider.</summary>
     [JsonPropertyName("userTrustProviderType")]
     public string? UserTrustProviderType { get; set; }
 }

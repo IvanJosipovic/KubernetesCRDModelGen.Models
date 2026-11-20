@@ -192,7 +192,7 @@ public partial class V1beta1ActivitySpecForProviderEncryptionConfigurationKmsKey
     public V1beta1ActivitySpecForProviderEncryptionConfigurationKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivitySpecForProviderEncryptionConfiguration
@@ -222,7 +222,7 @@ public partial class V1beta1ActivitySpecForProviderEncryptionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivitySpecForProvider
 {
-    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1ActivitySpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -393,7 +393,7 @@ public partial class V1beta1ActivitySpecInitProviderEncryptionConfigurationKmsKe
     public V1beta1ActivitySpecInitProviderEncryptionConfigurationKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivitySpecInitProviderEncryptionConfiguration
@@ -435,7 +435,7 @@ public partial class V1beta1ActivitySpecInitProviderEncryptionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivitySpecInitProvider
 {
-    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1ActivitySpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -551,7 +551,7 @@ public partial class V1beta1ActivitySpec
     public V1beta1ActivitySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+/// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivityStatusAtProviderEncryptionConfiguration
@@ -581,7 +581,7 @@ public partial class V1beta1ActivityStatusAtProvider
     [JsonPropertyName("creationDate")]
     public string? CreationDate { get; set; }
 
-    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.</summary>
+    /// <summary>Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1ActivityStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 

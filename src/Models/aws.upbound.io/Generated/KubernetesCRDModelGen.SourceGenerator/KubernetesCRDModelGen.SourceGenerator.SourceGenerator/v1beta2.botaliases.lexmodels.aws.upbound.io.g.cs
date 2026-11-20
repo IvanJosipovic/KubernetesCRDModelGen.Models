@@ -390,7 +390,7 @@ public partial class V1beta2BotAliasStatusAtProviderConversationLogsLogSettings
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>(Computed) The prefix of the S3 object key for AUDIO logs or the log stream name for TEXT logs.</summary>
+    /// <summary>(Read-Only) The prefix of the S3 object key for AUDIO logs or the log stream name for TEXT logs.</summary>
     [JsonPropertyName("resourcePrefix")]
     public string? ResourcePrefix { get; set; }
 }

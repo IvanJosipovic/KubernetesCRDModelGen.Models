@@ -68,7 +68,7 @@ public partial class V1beta1RegionSettingsSpecForProvider
     public required string Region { get; set; }
 
     /// <summary>
-    /// A map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
+    /// Map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB
     /// </summary>
@@ -76,7 +76,7 @@ public partial class V1beta1RegionSettingsSpecForProvider
     public IDictionary<string, bool>? ResourceTypeManagementPreference { get; set; }
 
     /// <summary>
-    /// A map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
+    /// Map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB, EBS, EC2, FSx, S3, Aurora, RDS, Storage Gateway, VirtualMachine
     /// </summary>
@@ -101,7 +101,7 @@ public partial class V1beta1RegionSettingsSpecForProvider
 public partial class V1beta1RegionSettingsSpecInitProvider
 {
     /// <summary>
-    /// A map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
+    /// Map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB
     /// </summary>
@@ -109,7 +109,7 @@ public partial class V1beta1RegionSettingsSpecInitProvider
     public IDictionary<string, bool>? ResourceTypeManagementPreference { get; set; }
 
     /// <summary>
-    /// A map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
+    /// Map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB, EBS, EC2, FSx, S3, Aurora, RDS, Storage Gateway, VirtualMachine
     /// </summary>
@@ -304,7 +304,7 @@ public partial class V1beta1RegionSettingsSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionSettingsStatusAtProvider
 {
-    /// <summary>The AWS region.</summary>
+    /// <summary>AWS region.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -316,7 +316,7 @@ public partial class V1beta1RegionSettingsStatusAtProvider
     public string? Region { get; set; }
 
     /// <summary>
-    /// A map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
+    /// Map of service names to their full management preferences for the Region. For more information, see the AWS Documentation on what full management is and which services support full management.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB
     /// </summary>
@@ -324,7 +324,7 @@ public partial class V1beta1RegionSettingsStatusAtProvider
     public IDictionary<string, bool>? ResourceTypeManagementPreference { get; set; }
 
     /// <summary>
-    /// A map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
+    /// Map of service names to their opt-in preferences for the Region. See AWS Documentation on which services support backup.
     /// 
     /// WARNING: All parameters are required to be given: EFS, DynamoDB, EBS, EC2, FSx, S3, Aurora, RDS, Storage Gateway, VirtualMachine
     /// </summary>

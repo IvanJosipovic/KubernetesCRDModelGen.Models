@@ -1705,6 +1705,10 @@ public partial class V1beta2InstanceSpecForProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>
     /// The national character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets
     /// Supported in Amazon RDS.
@@ -3553,6 +3557,10 @@ public partial class V1beta2InstanceSpecInitProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>
     /// The national character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets
     /// Supported in Amazon RDS.
@@ -4335,6 +4343,10 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>Specifies if the RDS instance is multi-AZ</summary>
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
+
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
 
     /// <summary>
     /// The national character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets

@@ -41,7 +41,7 @@ public partial class V1beta1InvitationAccepterList : IKubernetesObject<V1ListMet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InvitationAccepterSpecForProvider
 {
-    /// <summary>The AWS account ID for the account that sent the invitation.</summary>
+    /// <summary>AWS account ID for the account that sent the invitation.</summary>
     [JsonPropertyName("administratorAccountId")]
     public string? AdministratorAccountId { get; set; }
 
@@ -69,7 +69,7 @@ public partial class V1beta1InvitationAccepterSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InvitationAccepterSpecInitProvider
 {
-    /// <summary>The AWS account ID for the account that sent the invitation.</summary>
+    /// <summary>AWS account ID for the account that sent the invitation.</summary>
     [JsonPropertyName("administratorAccountId")]
     public string? AdministratorAccountId { get; set; }
 }
@@ -185,15 +185,15 @@ public partial class V1beta1InvitationAccepterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InvitationAccepterStatusAtProvider
 {
-    /// <summary>The AWS account ID for the account that sent the invitation.</summary>
+    /// <summary>AWS account ID for the account that sent the invitation.</summary>
     [JsonPropertyName("administratorAccountId")]
     public string? AdministratorAccountId { get; set; }
 
-    /// <summary>The unique identifier (ID) of the macie invitation accepter.</summary>
+    /// <summary>Unique identifier (ID) of the Macie invitation accepter.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique identifier for the invitation.</summary>
+    /// <summary>Unique identifier for the invitation.</summary>
     [JsonPropertyName("invitationId")]
     public string? InvitationId { get; set; }
 

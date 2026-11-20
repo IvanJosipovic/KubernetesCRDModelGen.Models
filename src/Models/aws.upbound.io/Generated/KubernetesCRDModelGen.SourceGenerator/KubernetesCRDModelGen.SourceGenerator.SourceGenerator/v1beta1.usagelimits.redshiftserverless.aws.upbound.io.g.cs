@@ -634,7 +634,7 @@ public partial class V1beta1UsageLimitStatusAtProvider
     [JsonPropertyName("breachAction")]
     public string? BreachAction { get; set; }
 
-    /// <summary>The Redshift Usage Limit id.</summary>
+    /// <summary>The Redshift Usage Limit ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

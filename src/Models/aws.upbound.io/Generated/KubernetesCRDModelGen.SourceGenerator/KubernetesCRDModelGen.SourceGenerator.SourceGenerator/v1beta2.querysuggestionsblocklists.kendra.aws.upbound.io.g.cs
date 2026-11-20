@@ -497,7 +497,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
     public V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>S3 path where your block list text file is located. See details below.</summary>
+/// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
@@ -562,11 +562,11 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>S3 path where your block list text file is located. See details below.</summary>
+    /// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path? SourceS3Path { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1012,7 +1012,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
     public V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>S3 path where your block list text file is located. See details below.</summary>
+/// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Path
@@ -1082,11 +1082,11 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>S3 path where your block list text file is located. See details below.</summary>
+    /// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Path? SourceS3Path { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1274,7 +1274,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpec
     public V1beta2QuerySuggestionsBlockListSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>S3 path where your block list text file is located. See details below.</summary>
+/// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListStatusAtProviderSourceS3Path
@@ -1326,14 +1326,15 @@ public partial class V1beta2QuerySuggestionsBlockListStatusAtProvider
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>S3 path where your block list text file is located. See details below.</summary>
+    /// <summary>S3 path where your block list text file is located. See source_s3_path Block for details.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta2QuerySuggestionsBlockListStatusAtProviderSourceS3Path? SourceS3Path { get; set; }
 
+    /// <summary>Current status of the block list.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 

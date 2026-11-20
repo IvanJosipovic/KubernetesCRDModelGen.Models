@@ -366,7 +366,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>SNS topic arn to send events on.</summary>
+    /// <summary>SNS topic ARN to send events on.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -378,7 +378,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("snsTopicArnSelector")]
     public V1beta1EventSubscriptionSpecForProviderSnsTopicArnSelector? SnsTopicArnSelector { get; set; }
 
-    /// <summary>Ids of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
+    /// <summary>IDs of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 
@@ -733,7 +733,7 @@ public partial class V1beta1EventSubscriptionSpecInitProvider
     [JsonPropertyName("eventCategories")]
     public IList<string>? EventCategories { get; set; }
 
-    /// <summary>SNS topic arn to send events on.</summary>
+    /// <summary>SNS topic ARN to send events on.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -745,7 +745,7 @@ public partial class V1beta1EventSubscriptionSpecInitProvider
     [JsonPropertyName("snsTopicArnSelector")]
     public V1beta1EventSubscriptionSpecInitProviderSnsTopicArnSelector? SnsTopicArnSelector { get; set; }
 
-    /// <summary>Ids of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
+    /// <summary>IDs of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 
@@ -899,11 +899,11 @@ public partial class V1beta1EventSubscriptionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>SNS topic arn to send events on.</summary>
+    /// <summary>SNS topic ARN to send events on.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
-    /// <summary>Ids of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
+    /// <summary>IDs of sources to listen to. If you don&apos;t specify a value, notifications are provided for all sources.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 

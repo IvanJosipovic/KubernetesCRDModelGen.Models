@@ -2286,7 +2286,7 @@ public partial class V1beta1ClusterStatusAtProviderKubernetesNetworkConfig
     [JsonPropertyName("serviceIpv4Cidr")]
     public string? ServiceIpv4Cidr { get; set; }
 
-    /// <summary>(Computed) The CIDR block that Kubernetes pod and service IP addresses are assigned from if you specify ipv6 for ip_family when you create the cluster. Kubernetes assigns service addresses from the unique local address range (fc00::/7) because you can&apos;t specify a custom IPv6 CIDR block when you create the cluster.</summary>
+    /// <summary>(Read-Only) The CIDR block that Kubernetes pod and service IP addresses are assigned from if you specify ipv6 for ip_family when you create the cluster. Kubernetes assigns service addresses from the unique local address range (fc00::/7) because you can&apos;t specify a custom IPv6 CIDR block when you create the cluster.</summary>
     [JsonPropertyName("serviceIpv6Cidr")]
     public string? ServiceIpv6Cidr { get; set; }
 }
@@ -2422,7 +2422,7 @@ public partial class V1beta1ClusterStatusAtProviderUpgradePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVpcConfig
 {
-    /// <summary>(Computed) Cluster security group that is created by Amazon EKS for the cluster. Managed node groups use this security group for control-plane-to-data-plane communication.</summary>
+    /// <summary>(Read-Only) Cluster security group that is created by Amazon EKS for the cluster. Managed node groups use this security group for control-plane-to-data-plane communication.</summary>
     [JsonPropertyName("clusterSecurityGroupId")]
     public string? ClusterSecurityGroupId { get; set; }
 
@@ -2450,7 +2450,7 @@ public partial class V1beta1ClusterStatusAtProviderVpcConfig
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>(Computed) ID of the VPC associated with your cluster.</summary>
+    /// <summary>(Read-Only) ID of the VPC associated with your cluster.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

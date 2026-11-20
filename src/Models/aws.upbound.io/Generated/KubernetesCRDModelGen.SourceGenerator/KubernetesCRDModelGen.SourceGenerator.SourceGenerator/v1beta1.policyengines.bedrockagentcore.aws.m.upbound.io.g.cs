@@ -200,7 +200,7 @@ public partial class V1beta1PolicyEngineSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, AWS uses an AWS managed key.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, the policy engine is encrypted with an AWS owned key.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1PolicyEngineSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, AWS uses an AWS managed key.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, the policy engine is encrypted with an AWS owned key.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -539,7 +539,7 @@ public partial class V1beta1PolicyEngineStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, AWS uses an AWS managed key.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the policy engine. If not set, the policy engine is encrypted with an AWS owned key.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 

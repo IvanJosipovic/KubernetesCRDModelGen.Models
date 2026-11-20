@@ -227,7 +227,7 @@ public partial class V1beta1DBInstanceSpecForProviderLogDeliveryConfigurationS3C
     public V1beta1DBInstanceSpecForProviderLogDeliveryConfigurationS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
     /// <summary>
-    /// Indicates whether log delivery to the S3 bucket is enabled.
+    /// Whether log delivery to the S3 bucket is enabled.
     /// Indicates whether log delivery to the S3 bucket is enabled.
     /// </summary>
     [JsonPropertyName("enabled")]
@@ -620,7 +620,7 @@ public partial class V1beta1DBInstanceSpecForProvider
     public string? DbParameterGroupIdentifier { get; set; }
 
     /// <summary>
-    /// (Default &quot;InfluxIOIncludedT1&quot;) Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
+    /// Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
     /// The Timestream for InfluxDB DB storage type to read and write InfluxDB data.
     /// You can choose between 3 different types of provisioned Influx IOPS included storage according
     /// to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS,
@@ -630,7 +630,7 @@ public partial class V1beta1DBInstanceSpecForProvider
     public string? DbStorageType { get; set; }
 
     /// <summary>
-    /// (Default &quot;SINGLE_AZ&quot;) Specifies whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
+    /// Whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
     /// Specifies whether the DB instance will be deployed as a standalone instance or
     /// with a Multi-AZ standby for high availability.
     /// </summary>
@@ -662,7 +662,7 @@ public partial class V1beta1DBInstanceSpecForProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// Specifies whether the networkType of the Timestream for InfluxDB instance is IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate over both IPv4 and IPv6 protocols.
+    /// Network type of the Timestream for InfluxDB instance. IPV4 can communicate over IPv4 protocol only, and DUAL can communicate over both IPv4 and IPv6 protocols.
     /// Specifies whether the networkType of the Timestream for InfluxDB instance is
     /// IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate
     /// over both IPv4 and IPv6 protocols.
@@ -689,14 +689,14 @@ public partial class V1beta1DBInstanceSpecForProvider
     public V1beta1DBInstanceSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 
     /// <summary>
-    /// (Default 8086) The port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
+    /// Port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
     /// The port number on which InfluxDB accepts connections.
     /// </summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
     /// <summary>
-    /// (Default false) Configures the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enabled public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
+    /// Whether to configure the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enable public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
     /// Configures the DB instance with a public IP to facilitate access.
     /// </summary>
     [JsonPropertyName("publiclyAccessible")]
@@ -929,7 +929,7 @@ public partial class V1beta1DBInstanceSpecInitProviderLogDeliveryConfigurationS3
     public V1beta1DBInstanceSpecInitProviderLogDeliveryConfigurationS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
     /// <summary>
-    /// Indicates whether log delivery to the S3 bucket is enabled.
+    /// Whether log delivery to the S3 bucket is enabled.
     /// Indicates whether log delivery to the S3 bucket is enabled.
     /// </summary>
     [JsonPropertyName("enabled")]
@@ -1334,7 +1334,7 @@ public partial class V1beta1DBInstanceSpecInitProvider
     public string? DbParameterGroupIdentifier { get; set; }
 
     /// <summary>
-    /// (Default &quot;InfluxIOIncludedT1&quot;) Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
+    /// Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
     /// The Timestream for InfluxDB DB storage type to read and write InfluxDB data.
     /// You can choose between 3 different types of provisioned Influx IOPS included storage according
     /// to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS,
@@ -1344,7 +1344,7 @@ public partial class V1beta1DBInstanceSpecInitProvider
     public string? DbStorageType { get; set; }
 
     /// <summary>
-    /// (Default &quot;SINGLE_AZ&quot;) Specifies whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
+    /// Whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
     /// Specifies whether the DB instance will be deployed as a standalone instance or
     /// with a Multi-AZ standby for high availability.
     /// </summary>
@@ -1376,7 +1376,7 @@ public partial class V1beta1DBInstanceSpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// Specifies whether the networkType of the Timestream for InfluxDB instance is IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate over both IPv4 and IPv6 protocols.
+    /// Network type of the Timestream for InfluxDB instance. IPV4 can communicate over IPv4 protocol only, and DUAL can communicate over both IPv4 and IPv6 protocols.
     /// Specifies whether the networkType of the Timestream for InfluxDB instance is
     /// IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate
     /// over both IPv4 and IPv6 protocols.
@@ -1403,14 +1403,14 @@ public partial class V1beta1DBInstanceSpecInitProvider
     public required V1beta1DBInstanceSpecInitProviderPasswordSecretRef PasswordSecretRef { get; set; }
 
     /// <summary>
-    /// (Default 8086) The port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
+    /// Port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
     /// The port number on which InfluxDB accepts connections.
     /// </summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
     /// <summary>
-    /// (Default false) Configures the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enabled public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
+    /// Whether to configure the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enable public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
     /// Configures the DB instance with a public IP to facilitate access.
     /// </summary>
     [JsonPropertyName("publiclyAccessible")]
@@ -1664,7 +1664,7 @@ public partial class V1beta1DBInstanceStatusAtProviderLogDeliveryConfigurationS3
     public string? BucketName { get; set; }
 
     /// <summary>
-    /// Indicates whether log delivery to the S3 bucket is enabled.
+    /// Whether log delivery to the S3 bucket is enabled.
     /// Indicates whether log delivery to the S3 bucket is enabled.
     /// </summary>
     [JsonPropertyName("enabled")]
@@ -1750,7 +1750,7 @@ public partial class V1beta1DBInstanceStatusAtProvider
     public string? DbParameterGroupIdentifier { get; set; }
 
     /// <summary>
-    /// (Default &quot;InfluxIOIncludedT1&quot;) Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
+    /// Timestream for InfluxDB DB storage type to read and write InfluxDB data. You can choose between 3 different types of provisioned Influx IOPS included storage according to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS, Influx IO Included 16000 IOPS. Valid options are: &quot;InfluxIOIncludedT1&quot;, &quot;InfluxIOIncludedT2&quot;, and &quot;InfluxIOIncludedT3&quot;. If you use &quot;InfluxIOIncludedT2&quot; or &quot;InfluxIOIncludedT3&quot;, the minimum value for allocated_storage` is 400. This argument is updatable. For a single instance, after this argument has been updated once, it can only be updated again after 6 hours have passed.
     /// The Timestream for InfluxDB DB storage type to read and write InfluxDB data.
     /// You can choose between 3 different types of provisioned Influx IOPS included storage according
     /// to your workloads requirements: Influx IO Included 3000 IOPS, Influx IO Included 12000 IOPS,
@@ -1760,7 +1760,7 @@ public partial class V1beta1DBInstanceStatusAtProvider
     public string? DbStorageType { get; set; }
 
     /// <summary>
-    /// (Default &quot;SINGLE_AZ&quot;) Specifies whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
+    /// Whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for high availability. Valid options are: &quot;SINGLE_AZ&quot;, &quot;WITH_MULTIAZ_STANDBY&quot;. This argument is updatable.
     /// Specifies whether the DB instance will be deployed as a standalone instance or
     /// with a Multi-AZ standby for high availability.
     /// </summary>
@@ -1813,7 +1813,7 @@ public partial class V1beta1DBInstanceStatusAtProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// Specifies whether the networkType of the Timestream for InfluxDB instance is IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate over both IPv4 and IPv6 protocols.
+    /// Network type of the Timestream for InfluxDB instance. IPV4 can communicate over IPv4 protocol only, and DUAL can communicate over both IPv4 and IPv6 protocols.
     /// Specifies whether the networkType of the Timestream for InfluxDB instance is
     /// IPV4, which can communicate over IPv4 protocol only, or DUAL, which can communicate
     /// over both IPv4 and IPv6 protocols.
@@ -1830,14 +1830,14 @@ public partial class V1beta1DBInstanceStatusAtProvider
     public string? Organization { get; set; }
 
     /// <summary>
-    /// (Default 8086) The port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
+    /// Port on which the instance accepts connections. Valid values: 1024-65535. Cannot be 2375-2376, 7788-7799, 8090, or 51678-51680. This argument is updatable.
     /// The port number on which InfluxDB accepts connections.
     /// </summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
     /// <summary>
-    /// (Default false) Configures the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enabled public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
+    /// Whether to configure the DB instance with a public IP to facilitate access. Other resources, such as a VPC, a subnet, an internet gateway, and a route table with routes, are also required to enable public access, in addition to this argument. See &quot;Usage with Public Internet Access Enabled&quot; for an example configuration with all required resources for public internet access.
     /// Configures the DB instance with a public IP to facilitate access.
     /// </summary>
     [JsonPropertyName("publiclyAccessible")]

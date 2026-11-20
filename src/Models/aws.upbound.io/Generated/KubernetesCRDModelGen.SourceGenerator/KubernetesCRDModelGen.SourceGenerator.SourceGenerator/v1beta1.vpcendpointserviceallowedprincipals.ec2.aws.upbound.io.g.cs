@@ -207,7 +207,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProvider
 {
-    /// <summary>The ARN of the principal to allow permissions.</summary>
+    /// <summary>ARN of the principal to allow permissions.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
@@ -218,7 +218,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the VPC endpoint service to allow permission.</summary>
+    /// <summary>ID of the VPC endpoint service to allow permission.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 
@@ -394,11 +394,11 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProvider
 {
-    /// <summary>The ARN of the principal to allow permissions.</summary>
+    /// <summary>ARN of the principal to allow permissions.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
-    /// <summary>The ID of the VPC endpoint service to allow permission.</summary>
+    /// <summary>ID of the VPC endpoint service to allow permission.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 
@@ -598,11 +598,11 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusAtProvider
 {
-    /// <summary>The ID of the association.</summary>
+    /// <summary>ID of the association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the principal to allow permissions.</summary>
+    /// <summary>ARN of the principal to allow permissions.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
@@ -613,7 +613,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the VPC endpoint service to allow permission.</summary>
+    /// <summary>ID of the VPC endpoint service to allow permission.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 }

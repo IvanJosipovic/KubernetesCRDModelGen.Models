@@ -545,7 +545,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
     [JsonPropertyName("logGroupNameSelector")]
     public V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelector? LogGroupNameSelector { get; set; }
 
-    /// <summary>The role ARN.</summary>
+    /// <summary>Role ARN.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -735,7 +735,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
     public string? KeyPrefix { get; set; }
 }
 
-/// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+/// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfig
@@ -744,11 +744,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
     [JsonPropertyName("cloudwatchConfig")]
     public V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfig? CloudwatchConfig { get; set; }
 
-    /// <summary>Set to include embeddings data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include embeddings data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("embeddingDataDeliveryEnabled")]
     public bool? EmbeddingDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include image data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include image data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("imageDataDeliveryEnabled")]
     public bool? ImageDataDeliveryEnabled { get; set; }
 
@@ -756,11 +756,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
     [JsonPropertyName("s3Config")]
     public V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3Config? S3Config { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include text data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("textDataDeliveryEnabled")]
     public bool? TextDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include video data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("videoDataDeliveryEnabled")]
     public bool? VideoDataDeliveryEnabled { get; set; }
 }
@@ -769,7 +769,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProvider
 {
-    /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+    /// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
     [JsonPropertyName("loggingConfig")]
     public V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfig? LoggingConfig { get; set; }
 
@@ -1289,7 +1289,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
     [JsonPropertyName("logGroupNameSelector")]
     public V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelector? LogGroupNameSelector { get; set; }
 
-    /// <summary>The role ARN.</summary>
+    /// <summary>Role ARN.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1479,7 +1479,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
     public string? KeyPrefix { get; set; }
 }
 
-/// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+/// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfig
@@ -1488,11 +1488,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
     [JsonPropertyName("cloudwatchConfig")]
     public V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfig? CloudwatchConfig { get; set; }
 
-    /// <summary>Set to include embeddings data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include embeddings data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("embeddingDataDeliveryEnabled")]
     public bool? EmbeddingDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include image data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include image data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("imageDataDeliveryEnabled")]
     public bool? ImageDataDeliveryEnabled { get; set; }
 
@@ -1500,11 +1500,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
     [JsonPropertyName("s3Config")]
     public V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3Config? S3Config { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include text data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("textDataDeliveryEnabled")]
     public bool? TextDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include video data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("videoDataDeliveryEnabled")]
     public bool? VideoDataDeliveryEnabled { get; set; }
 }
@@ -1525,7 +1525,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProvider
 {
-    /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+    /// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
     [JsonPropertyName("loggingConfig")]
     public V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfig? LoggingConfig { get; set; }
 }
@@ -1664,7 +1664,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The role ARN.</summary>
+    /// <summary>Role ARN.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -1683,7 +1683,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
     public string? KeyPrefix { get; set; }
 }
 
-/// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+/// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfig
@@ -1692,11 +1692,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
     [JsonPropertyName("cloudwatchConfig")]
     public V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfigCloudwatchConfig? CloudwatchConfig { get; set; }
 
-    /// <summary>Set to include embeddings data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include embeddings data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("embeddingDataDeliveryEnabled")]
     public bool? EmbeddingDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include image data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include image data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("imageDataDeliveryEnabled")]
     public bool? ImageDataDeliveryEnabled { get; set; }
 
@@ -1704,11 +1704,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
     [JsonPropertyName("s3Config")]
     public V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfigS3Config? S3Config { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include text data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("textDataDeliveryEnabled")]
     public bool? TextDataDeliveryEnabled { get; set; }
 
-    /// <summary>Set to include text data in the log delivery. Defaults to true.</summary>
+    /// <summary>Whether to include video data in the log delivery. Defaults to true.</summary>
     [JsonPropertyName("videoDataDeliveryEnabled")]
     public bool? VideoDataDeliveryEnabled { get; set; }
 }
@@ -1717,11 +1717,11 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProvider
 {
-    /// <summary>AWS Region in which logging is configured.</summary>
+    /// <summary>(Deprecated) AWS Region in which logging is configured.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
+    /// <summary>Logging configuration values to set. See logging_config Block for details.</summary>
     [JsonPropertyName("loggingConfig")]
     public V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfig? LoggingConfig { get; set; }
 

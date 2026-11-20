@@ -519,7 +519,7 @@ public partial class V1beta1ResourceAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceAssociationStatusAtProvider
 {
-    /// <summary>ARN of the resource share.</summary>
+    /// <summary>Composite identifier containing the Resource Share ARN and resource ARN, separated by a comma.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

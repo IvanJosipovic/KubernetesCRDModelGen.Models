@@ -1127,7 +1127,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.</summary>
+    /// <summary>List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.</summary>
     [JsonPropertyName("enableCloudwatchLogsExports")]
     public IList<string>? EnableCloudwatchLogsExports { get; set; }
 
@@ -1202,6 +1202,10 @@ public partial class V1beta2ClusterSpecForProvider
     /// <summary>Selector for a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
     [JsonPropertyName("neptuneSubnetGroupNameSelector")]
     public V1beta2ClusterSpecForProviderNeptuneSubnetGroupNameSelector? NeptuneSubnetGroupNameSelector { get; set; }
+
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]
@@ -2362,7 +2366,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.</summary>
+    /// <summary>List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.</summary>
     [JsonPropertyName("enableCloudwatchLogsExports")]
     public IList<string>? EnableCloudwatchLogsExports { get; set; }
 
@@ -2437,6 +2441,10 @@ public partial class V1beta2ClusterSpecInitProvider
     /// <summary>Selector for a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
     [JsonPropertyName("neptuneSubnetGroupNameSelector")]
     public V1beta2ClusterSpecInitProviderNeptuneSubnetGroupNameSelector? NeptuneSubnetGroupNameSelector { get; set; }
+
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]
@@ -2744,7 +2752,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.</summary>
+    /// <summary>List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.</summary>
     [JsonPropertyName("enableCloudwatchLogsExports")]
     public IList<string>? EnableCloudwatchLogsExports { get; set; }
 
@@ -2799,6 +2807,10 @@ public partial class V1beta2ClusterStatusAtProvider
     /// <summary>Neptune subnet group to associate with this Neptune instance.</summary>
     [JsonPropertyName("neptuneSubnetGroupName")]
     public string? NeptuneSubnetGroupName { get; set; }
+
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]

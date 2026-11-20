@@ -37,20 +37,20 @@ public partial class V1beta1DeliveryStreamList : IKubernetesObject<V1ListMeta>, 
     public required IList<V1beta1DeliveryStream> Items { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -227,25 +227,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -560,20 +560,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -733,12 +733,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -758,11 +758,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -770,18 +770,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1259,12 +1256,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1276,7 +1273,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -1288,7 +1285,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1314,15 +1311,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
@@ -1334,15 +1331,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("domainArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelector? DomainArnSelector { get; set; }
 
-    /// <summary>The Elasticsearch index name.</summary>
+    /// <summary>Elasticsearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -1350,7 +1347,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1362,19 +1359,19 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
@@ -1534,35 +1531,35 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+/// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
-    /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
+    /// <summary>List of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
     [JsonPropertyName("timestampFormats")]
     public IList<string>? TimestampFormats { get; set; }
 }
 
-/// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+/// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
@@ -1571,7 +1568,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("caseInsensitive")]
     public bool? CaseInsensitive { get; set; }
 
-    /// <summary>A map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
+    /// <summary>Map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
     [JsonPropertyName("columnToJsonKeyMappings")]
     public IDictionary<string, string>? ColumnToJsonKeyMappings { get; set; }
 
@@ -1580,52 +1577,52 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     public bool? ConvertDotsInJsonKeysToUnderscores { get; set; }
 }
 
-/// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+/// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
-    /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+    /// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
     [JsonPropertyName("hiveJsonSerDe")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe? HiveJsonSerDe { get; set; }
 
-    /// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+    /// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
     [JsonPropertyName("openXJsonSerDe")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe? OpenXJsonSerDe { get; set; }
 }
 
-/// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+/// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
-    /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+    /// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
     [JsonPropertyName("deserializer")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer? Deserializer { get; set; }
 }
 
-/// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+/// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>A list of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
+    /// <summary>List of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
     [JsonPropertyName("bloomFilterColumns")]
     public IList<string>? BloomFilterColumns { get; set; }
 
-    /// <summary>The Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
+    /// <summary>Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
     [JsonPropertyName("bloomFilterFalsePositiveProbability")]
     public double? BloomFilterFalsePositiveProbability { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>A float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
+    /// <summary>Float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
     [JsonPropertyName("dictionaryKeyThreshold")]
     public double? DictionaryKeyThreshold { get; set; }
 
@@ -1633,73 +1630,73 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("enablePadding")]
     public bool? EnablePadding { get; set; }
 
-    /// <summary>The version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
+    /// <summary>Version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
     [JsonPropertyName("formatVersion")]
     public string? FormatVersion { get; set; }
 
-    /// <summary>A float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
+    /// <summary>Float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
     [JsonPropertyName("paddingTolerance")]
     public double? PaddingTolerance { get; set; }
 
-    /// <summary>The number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
+    /// <summary>Number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
     [JsonPropertyName("rowIndexStride")]
     public double? RowIndexStride { get; set; }
 
-    /// <summary>The number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
+    /// <summary>Number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
     [JsonPropertyName("stripeSizeBytes")]
     public double? StripeSizeBytes { get; set; }
 }
 
-/// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+/// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>Indicates whether to enable dictionary compression.</summary>
+    /// <summary>Whether to enable dictionary compression.</summary>
     [JsonPropertyName("enableDictionaryCompression")]
     public bool? EnableDictionaryCompression { get; set; }
 
-    /// <summary>The maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
+    /// <summary>Maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
     [JsonPropertyName("maxPaddingBytes")]
     public double? MaxPaddingBytes { get; set; }
 
-    /// <summary>The Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
+    /// <summary>Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
     [JsonPropertyName("pageSizeBytes")]
     public double? PageSizeBytes { get; set; }
 
-    /// <summary>Indicates the version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
+    /// <summary>Version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
     [JsonPropertyName("writerVersion")]
     public string? WriterVersion { get; set; }
 }
 
-/// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+/// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
-    /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+    /// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
     [JsonPropertyName("orcSerDe")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe? OrcSerDe { get; set; }
 
-    /// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+    /// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
     [JsonPropertyName("parquetSerDe")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe? ParquetSerDe { get; set; }
 }
 
-/// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+/// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
-    /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+    /// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
     [JsonPropertyName("serializer")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer? Serializer { get; set; }
 }
@@ -2014,16 +2011,16 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+/// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
-    /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -2031,7 +2028,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2043,7 +2040,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -2055,7 +2052,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("tableNameSelector")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelector? TableNameSelector { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }
@@ -2065,29 +2062,29 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+    /// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
     [JsonPropertyName("inputFormatConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration? InputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+    /// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
     [JsonPropertyName("outputFormatConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration? OutputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+    /// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
     [JsonPropertyName("schemaConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration? SchemaConfiguration { get; set; }
 }
 
-/// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+/// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2113,25 +2110,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -2291,65 +2288,62 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>Prefix added to failed records before writing them to S3. Not currently supported for redshift destination. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
+    /// <summary>Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2359,7 +2353,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -2371,23 +2365,23 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("bucketArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5. We recommend setting this value greater than the amount of data you typically ingest into the delivery stream in 10 seconds. For example, if you typically ingest data at 1 MB/sec, set this value to 10 MB or higher.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>The time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
+    /// <summary>Time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
     [JsonPropertyName("customTimeZone")]
     public string? CustomTimeZone { get; set; }
 
@@ -2395,7 +2389,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("dataFormatConversionConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfiguration? DataFormatConversionConfiguration { get; set; }
 
-    /// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+    /// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
     [JsonPropertyName("dynamicPartitioningConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDynamicPartitioningConfiguration? DynamicPartitioningConfiguration { get; set; }
 
@@ -2403,26 +2397,23 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>The file extension to override the default file extension (for example, .json).</summary>
+    /// <summary>File extension to override the default file extension (for example, .json).</summary>
     [JsonPropertyName("fileExtension")]
     public string? FileExtension { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2434,16 +2425,16 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 }
 
-/// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
+/// <summary>Access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationAccessKeySecretRef
@@ -2456,20 +2447,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     public required string Name { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -2491,25 +2482,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -2518,21 +2509,21 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
-    /// <summary>The name of the HTTP endpoint common attribute.</summary>
+    /// <summary>Name of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the HTTP endpoint common attribute.</summary>
+    /// <summary>Value of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The request configuration.  See request_configuration block below for details.</summary>
+/// <summary>Request configuration.  See request_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfiguration
 {
-    /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
+    /// <summary>Metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
     [JsonPropertyName("commonAttributes")]
     public IList<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes>? CommonAttributes { get; set; }
 
@@ -2851,20 +2842,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -3024,12 +3015,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -3049,11 +3040,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -3061,18 +3052,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -3085,20 +3073,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+/// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -3108,7 +3096,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfiguration
 {
-    /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
+    /// <summary>Access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
     [JsonPropertyName("accessKeySecretRef")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationAccessKeySecretRef? AccessKeySecretRef { get; set; }
 
@@ -3120,19 +3108,19 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The HTTP endpoint name.</summary>
+    /// <summary>HTTP endpoint name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The request configuration.  See request_configuration block below for details.</summary>
+    /// <summary>Request configuration.  See request_configuration block below for details.</summary>
     [JsonPropertyName("requestConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfiguration? RequestConfiguration { get; set; }
 
@@ -3152,37 +3140,37 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+    /// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
+    /// <summary>HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -3501,7 +3489,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfiguration
 {
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -3513,11 +3501,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>The table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
+    /// <summary>Table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
     [JsonPropertyName("s3ErrorOutputPrefix")]
     public string? S3ErrorOutputPrefix { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -3529,7 +3517,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
     [JsonPropertyName("tableNameSelector")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelector? TableNameSelector { get; set; }
 
-    /// <summary>A list of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
+    /// <summary>List of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
     [JsonPropertyName("uniqueKeys")]
     public IList<string>? UniqueKeys { get; set; }
 }
@@ -3551,25 +3539,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -3884,20 +3872,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -4057,12 +4045,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -4082,11 +4070,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -4094,18 +4082,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -4123,6 +4108,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
 {
+    /// <summary>Whether to enable append only operations. When set, Firehose only performs insert operations on the destination Apache Iceberg Tables.</summary>
     [JsonPropertyName("appendOnly")]
     public bool? AppendOnly { get; set; }
 
@@ -4134,11 +4120,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog</summary>
+    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog.</summary>
     [JsonPropertyName("catalogArn")]
     public string? CatalogArn { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -4146,15 +4132,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
     [JsonPropertyName("destinationTableConfiguration")]
     public IList<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfiguration>? DestinationTableConfiguration { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
+    /// <summary>Period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -4166,14 +4152,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>Amazon S3 backup mode. Valid values are FailedDataOnly and AllData. Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -4183,75 +4166,75 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderKinesisSourceConfiguration
 {
-    /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
+    /// <summary>Kinesis stream used as the source of the firehose delivery stream.</summary>
     [JsonPropertyName("kinesisStreamArn")]
     public string? KinesisStreamArn { get; set; }
 
-    /// <summary>The ARN of the role that provides access to the source Kinesis stream.</summary>
+    /// <summary>ARN of the role that provides access to the source Kinesis stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+/// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfigurationAuthenticationConfiguration
 {
-    /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
+    /// <summary>Type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
     [JsonPropertyName("connectivity")]
     public string? Connectivity { get; set; }
 
-    /// <summary>The ARN of the role used to access the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the role used to access the Amazon MSK cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+/// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfiguration
 {
-    /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+    /// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderMskSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>The ARN of the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 
-    /// <summary>The start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
+    /// <summary>Start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
     [JsonPropertyName("readFromTimestamp")]
     public string? ReadFromTimestamp { get; set; }
 
-    /// <summary>The topic name within the Amazon MSK cluster.</summary>
+    /// <summary>Topic name within the Amazon MSK cluster.</summary>
     [JsonPropertyName("topicName")]
     public string? TopicName { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+/// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDocumentIdOptions
 {
-    /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
+    /// <summary>Method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
     [JsonPropertyName("defaultDocumentIdFormat")]
     public string? DefaultDocumentIdFormat { get; set; }
 }
@@ -4428,25 +4411,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -4761,20 +4744,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -4934,12 +4917,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -4959,11 +4942,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -4971,18 +4954,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -5460,12 +5440,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -5477,7 +5457,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -5489,7 +5469,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -5515,19 +5495,19 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+    /// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
     [JsonPropertyName("documentIdOptions")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDocumentIdOptions? DocumentIdOptions { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
@@ -5539,15 +5519,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("domainArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelector? DomainArnSelector { get; set; }
 
-    /// <summary>The OpenSearch index name.</summary>
+    /// <summary>OpenSearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -5555,7 +5535,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -5567,37 +5547,37 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -5774,25 +5754,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -6107,20 +6087,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -6280,12 +6260,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -6305,11 +6285,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -6317,18 +6297,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -6341,20 +6318,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -6372,11 +6349,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
+    /// <summary>Endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
     [JsonPropertyName("collectionEndpoint")]
     public string? CollectionEndpoint { get; set; }
 
@@ -6388,11 +6365,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("collectionEndpointSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelector? CollectionEndpointSelector { get; set; }
 
-    /// <summary>The Serverless offering for Amazon OpenSearch Service index name.</summary>
+    /// <summary>Serverless offering for Amazon OpenSearch Service index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -6412,38 +6389,38 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>Password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPasswordSecretRef
@@ -6473,25 +6450,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -6806,20 +6783,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -6979,15 +6956,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-/// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-/// </summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -7007,11 +6981,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -7019,18 +6993,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -7198,20 +7169,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -7371,12 +7342,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -7396,11 +7367,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -7408,18 +7379,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -7432,20 +7400,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -7455,39 +7423,39 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfiguration
 {
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The jdbcurl of the redshift cluster.</summary>
+    /// <summary>JDBC URL of the redshift cluster.</summary>
     [JsonPropertyName("clusterJdbcurl")]
     public string? ClusterJdbcurl { get; set; }
 
-    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation</summary>
+    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation.</summary>
     [JsonPropertyName("copyOptions")]
     public string? CopyOptions { get; set; }
 
-    /// <summary>The data table columns that will be targeted by the copy command.</summary>
+    /// <summary>Data table columns that will be targeted by the copy command.</summary>
     [JsonPropertyName("dataTableColumns")]
     public string? DataTableColumns { get; set; }
 
-    /// <summary>The name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
+    /// <summary>Name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
     [JsonPropertyName("dataTableName")]
     public string? DataTableName { get; set; }
 
-    /// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
+    /// <summary>Length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The arn of the role the stream assumes.</summary>
+    /// <summary>ARN of the role the stream assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -7499,26 +7467,23 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>
-    /// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-    /// </summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -7536,30 +7501,30 @@ public partial class V1beta1DeliveryStreamSpecForProviderServerSideEncryption
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
-    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK</summary>
+    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The passphrase for the private key.</summary>
+/// <summary>Passphrase for the private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationKeyPassphraseSecretRef
@@ -7572,7 +7537,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationK
     public required string Name { get; set; }
 }
 
-/// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>Private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationPrivateKeySecretRef
@@ -7602,25 +7567,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -7935,20 +7900,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -8108,12 +8073,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -8133,11 +8098,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -8145,18 +8110,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -8169,44 +8131,44 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
 
-/// <summary>The configuration for Snowflake role.</summary>
+/// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The Snowflake role.</summary>
+    /// <summary>Snowflake role.</summary>
     [JsonPropertyName("snowflakeRole")]
     public string? SnowflakeRole { get; set; }
 }
 
-/// <summary>The VPC configuration for Snowflake.</summary>
+/// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
-    /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
+    /// <summary>VPCE ID for Firehose to privately connect with Snowflake.</summary>
     [JsonPropertyName("privateLinkVpceId")]
     public string? PrivateLinkVpceId { get; set; }
 }
@@ -8216,7 +8178,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
 {
-    /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
+    /// <summary>URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
     [JsonPropertyName("accountUrl")]
     public string? AccountUrl { get; set; }
 
@@ -8228,35 +8190,35 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The name of the content column.</summary>
+    /// <summary>Name of the content column.</summary>
     [JsonPropertyName("contentColumnName")]
     public string? ContentColumnName { get; set; }
 
-    /// <summary>The data loading option.</summary>
+    /// <summary>Data loading option.</summary>
     [JsonPropertyName("dataLoadingOption")]
     public string? DataLoadingOption { get; set; }
 
-    /// <summary>The Snowflake database name.</summary>
+    /// <summary>Snowflake database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
-    /// <summary>The passphrase for the private key.</summary>
+    /// <summary>Passphrase for the private key.</summary>
     [JsonPropertyName("keyPassphraseSecretRef")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationKeyPassphraseSecretRef? KeyPassphraseSecretRef { get; set; }
 
-    /// <summary>The name of the metadata column.</summary>
+    /// <summary>Name of the metadata column.</summary>
     [JsonPropertyName("metadataColumnName")]
     public string? MetadataColumnName { get; set; }
 
-    /// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
-    /// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -8264,7 +8226,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role.</summary>
+    /// <summary>ARN of the IAM role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -8276,58 +8238,58 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The S3 backup mode.</summary>
+    /// <summary>S3 backup mode.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Snowflake schema name.</summary>
+    /// <summary>Snowflake schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The configuration for Snowflake role.</summary>
+    /// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeRoleConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeRoleConfiguration? SnowflakeRoleConfiguration { get; set; }
 
-    /// <summary>The VPC configuration for Snowflake.</summary>
+    /// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeVpcConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeVpcConfiguration? SnowflakeVpcConfiguration { get; set; }
 
-    /// <summary>The Snowflake table name.</summary>
+    /// <summary>Snowflake table name.</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
 
-    /// <summary>The user for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>User for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("user")]
     public string? User { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationHecTokenSecretRef
@@ -8357,25 +8319,25 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -8535,20 +8497,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -8708,12 +8670,12 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -8733,11 +8695,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -8745,18 +8707,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -8769,20 +8728,20 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -8800,27 +8759,27 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
+    /// <summary>Amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
     [JsonPropertyName("hecAcknowledgmentTimeout")]
     public double? HecAcknowledgmentTimeout { get; set; }
 
-    /// <summary>The HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
+    /// <summary>HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
     [JsonPropertyName("hecEndpoint")]
     public string? HecEndpoint { get; set; }
 
-    /// <summary>The HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
+    /// <summary>HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
     [JsonPropertyName("hecEndpointType")]
     public string? HecEndpointType { get; set; }
 
-    /// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("hecTokenSecretRef")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationHecTokenSecretRef? HecTokenSecretRef { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -8828,18 +8787,15 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderSplunkConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 }
@@ -8848,10 +8804,11 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProvider
 {
-    /// <summary>This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
+    /// <summary>Destination where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
+    /// <summary>Identifier of the destination for the delivery stream.</summary>
     [JsonPropertyName("destinationId")]
     public string? DestinationId { get; set; }
 
@@ -8875,11 +8832,11 @@ public partial class V1beta1DeliveryStreamSpecForProvider
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 
-    /// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+    /// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
     [JsonPropertyName("mskSourceConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderMskSourceConfiguration? MskSourceConfiguration { get; set; }
 
-    /// <summary>A name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
+    /// <summary>Name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -8918,25 +8875,25 @@ public partial class V1beta1DeliveryStreamSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -9113,25 +9070,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -9446,20 +9403,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -9619,12 +9576,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -9644,11 +9601,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -9656,18 +9613,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -10145,12 +10099,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -10162,7 +10116,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -10174,7 +10128,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -10200,15 +10154,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
@@ -10220,15 +10174,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("domainArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelector? DomainArnSelector { get; set; }
 
-    /// <summary>The Elasticsearch index name.</summary>
+    /// <summary>Elasticsearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -10236,7 +10190,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -10248,19 +10202,19 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
@@ -10420,35 +10374,35 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+/// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
-    /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
+    /// <summary>List of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
     [JsonPropertyName("timestampFormats")]
     public IList<string>? TimestampFormats { get; set; }
 }
 
-/// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+/// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
@@ -10457,7 +10411,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("caseInsensitive")]
     public bool? CaseInsensitive { get; set; }
 
-    /// <summary>A map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
+    /// <summary>Map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
     [JsonPropertyName("columnToJsonKeyMappings")]
     public IDictionary<string, string>? ColumnToJsonKeyMappings { get; set; }
 
@@ -10466,52 +10420,52 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     public bool? ConvertDotsInJsonKeysToUnderscores { get; set; }
 }
 
-/// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+/// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
-    /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+    /// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
     [JsonPropertyName("hiveJsonSerDe")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe? HiveJsonSerDe { get; set; }
 
-    /// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+    /// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
     [JsonPropertyName("openXJsonSerDe")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe? OpenXJsonSerDe { get; set; }
 }
 
-/// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+/// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
-    /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+    /// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
     [JsonPropertyName("deserializer")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer? Deserializer { get; set; }
 }
 
-/// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+/// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>A list of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
+    /// <summary>List of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
     [JsonPropertyName("bloomFilterColumns")]
     public IList<string>? BloomFilterColumns { get; set; }
 
-    /// <summary>The Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
+    /// <summary>Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
     [JsonPropertyName("bloomFilterFalsePositiveProbability")]
     public double? BloomFilterFalsePositiveProbability { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>A float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
+    /// <summary>Float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
     [JsonPropertyName("dictionaryKeyThreshold")]
     public double? DictionaryKeyThreshold { get; set; }
 
@@ -10519,73 +10473,73 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("enablePadding")]
     public bool? EnablePadding { get; set; }
 
-    /// <summary>The version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
+    /// <summary>Version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
     [JsonPropertyName("formatVersion")]
     public string? FormatVersion { get; set; }
 
-    /// <summary>A float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
+    /// <summary>Float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
     [JsonPropertyName("paddingTolerance")]
     public double? PaddingTolerance { get; set; }
 
-    /// <summary>The number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
+    /// <summary>Number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
     [JsonPropertyName("rowIndexStride")]
     public double? RowIndexStride { get; set; }
 
-    /// <summary>The number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
+    /// <summary>Number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
     [JsonPropertyName("stripeSizeBytes")]
     public double? StripeSizeBytes { get; set; }
 }
 
-/// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+/// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>Indicates whether to enable dictionary compression.</summary>
+    /// <summary>Whether to enable dictionary compression.</summary>
     [JsonPropertyName("enableDictionaryCompression")]
     public bool? EnableDictionaryCompression { get; set; }
 
-    /// <summary>The maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
+    /// <summary>Maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
     [JsonPropertyName("maxPaddingBytes")]
     public double? MaxPaddingBytes { get; set; }
 
-    /// <summary>The Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
+    /// <summary>Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
     [JsonPropertyName("pageSizeBytes")]
     public double? PageSizeBytes { get; set; }
 
-    /// <summary>Indicates the version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
+    /// <summary>Version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
     [JsonPropertyName("writerVersion")]
     public string? WriterVersion { get; set; }
 }
 
-/// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+/// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
-    /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+    /// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
     [JsonPropertyName("orcSerDe")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe? OrcSerDe { get; set; }
 
-    /// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+    /// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
     [JsonPropertyName("parquetSerDe")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe? ParquetSerDe { get; set; }
 }
 
-/// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+/// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
-    /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+    /// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
     [JsonPropertyName("serializer")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer? Serializer { get; set; }
 }
@@ -10900,20 +10854,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+/// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
-    /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -10925,7 +10879,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -10937,7 +10891,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("tableNameSelector")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelector? TableNameSelector { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }
@@ -10947,29 +10901,29 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+    /// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
     [JsonPropertyName("inputFormatConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration? InputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+    /// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
     [JsonPropertyName("outputFormatConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration? OutputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+    /// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
     [JsonPropertyName("schemaConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration? SchemaConfiguration { get; set; }
 }
 
-/// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+/// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -10995,25 +10949,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -11173,65 +11127,62 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>Prefix added to failed records before writing them to S3. Not currently supported for redshift destination. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
+    /// <summary>Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -11241,7 +11192,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -11253,23 +11204,23 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("bucketArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5. We recommend setting this value greater than the amount of data you typically ingest into the delivery stream in 10 seconds. For example, if you typically ingest data at 1 MB/sec, set this value to 10 MB or higher.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>The time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
+    /// <summary>Time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
     [JsonPropertyName("customTimeZone")]
     public string? CustomTimeZone { get; set; }
 
@@ -11277,7 +11228,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("dataFormatConversionConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfiguration? DataFormatConversionConfiguration { get; set; }
 
-    /// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+    /// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
     [JsonPropertyName("dynamicPartitioningConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDynamicPartitioningConfiguration? DynamicPartitioningConfiguration { get; set; }
 
@@ -11285,26 +11236,23 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>The file extension to override the default file extension (for example, .json).</summary>
+    /// <summary>File extension to override the default file extension (for example, .json).</summary>
     [JsonPropertyName("fileExtension")]
     public string? FileExtension { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -11316,16 +11264,16 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 }
 
-/// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
+/// <summary>Access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationAccessKeySecretRef
@@ -11338,20 +11286,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     public required string Name { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -11373,25 +11321,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -11400,21 +11348,21 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
-    /// <summary>The name of the HTTP endpoint common attribute.</summary>
+    /// <summary>Name of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the HTTP endpoint common attribute.</summary>
+    /// <summary>Value of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The request configuration.  See request_configuration block below for details.</summary>
+/// <summary>Request configuration.  See request_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfiguration
 {
-    /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
+    /// <summary>Metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
     [JsonPropertyName("commonAttributes")]
     public IList<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes>? CommonAttributes { get; set; }
 
@@ -11733,20 +11681,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -11906,12 +11854,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -11931,11 +11879,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -11943,18 +11891,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -11967,20 +11912,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+/// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -11990,7 +11935,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfiguration
 {
-    /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
+    /// <summary>Access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
     [JsonPropertyName("accessKeySecretRef")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationAccessKeySecretRef? AccessKeySecretRef { get; set; }
 
@@ -12002,19 +11947,19 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The HTTP endpoint name.</summary>
+    /// <summary>HTTP endpoint name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The request configuration.  See request_configuration block below for details.</summary>
+    /// <summary>Request configuration.  See request_configuration block below for details.</summary>
     [JsonPropertyName("requestConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfiguration? RequestConfiguration { get; set; }
 
@@ -12034,37 +11979,37 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+    /// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
+    /// <summary>HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -12383,7 +12328,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfiguration
 {
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -12395,11 +12340,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>The table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
+    /// <summary>Table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
     [JsonPropertyName("s3ErrorOutputPrefix")]
     public string? S3ErrorOutputPrefix { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -12411,7 +12356,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
     [JsonPropertyName("tableNameSelector")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelector? TableNameSelector { get; set; }
 
-    /// <summary>A list of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
+    /// <summary>List of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
     [JsonPropertyName("uniqueKeys")]
     public IList<string>? UniqueKeys { get; set; }
 }
@@ -12433,25 +12378,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationPr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -12766,20 +12711,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -12939,12 +12884,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -12964,11 +12909,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -12976,18 +12921,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -13005,6 +12947,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
 {
+    /// <summary>Whether to enable append only operations. When set, Firehose only performs insert operations on the destination Apache Iceberg Tables.</summary>
     [JsonPropertyName("appendOnly")]
     public bool? AppendOnly { get; set; }
 
@@ -13016,11 +12959,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog</summary>
+    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog.</summary>
     [JsonPropertyName("catalogArn")]
     public string? CatalogArn { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -13028,15 +12971,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
     [JsonPropertyName("destinationTableConfiguration")]
     public IList<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfiguration>? DestinationTableConfiguration { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
+    /// <summary>Period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -13048,14 +12991,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>Amazon S3 backup mode. Valid values are FailedDataOnly and AllData. Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -13065,75 +13005,75 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfiguration
 {
-    /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
+    /// <summary>Kinesis stream used as the source of the firehose delivery stream.</summary>
     [JsonPropertyName("kinesisStreamArn")]
     public string? KinesisStreamArn { get; set; }
 
-    /// <summary>The ARN of the role that provides access to the source Kinesis stream.</summary>
+    /// <summary>ARN of the role that provides access to the source Kinesis stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+/// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfigurationAuthenticationConfiguration
 {
-    /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
+    /// <summary>Type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
     [JsonPropertyName("connectivity")]
     public string? Connectivity { get; set; }
 
-    /// <summary>The ARN of the role used to access the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the role used to access the Amazon MSK cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+/// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfiguration
 {
-    /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+    /// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderMskSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>The ARN of the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 
-    /// <summary>The start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
+    /// <summary>Start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
     [JsonPropertyName("readFromTimestamp")]
     public string? ReadFromTimestamp { get; set; }
 
-    /// <summary>The topic name within the Amazon MSK cluster.</summary>
+    /// <summary>Topic name within the Amazon MSK cluster.</summary>
     [JsonPropertyName("topicName")]
     public string? TopicName { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+/// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDocumentIdOptions
 {
-    /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
+    /// <summary>Method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
     [JsonPropertyName("defaultDocumentIdFormat")]
     public string? DefaultDocumentIdFormat { get; set; }
 }
@@ -13310,25 +13250,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -13643,20 +13583,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -13816,12 +13756,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -13841,11 +13781,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -13853,18 +13793,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -14342,12 +14279,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -14359,7 +14296,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -14371,7 +14308,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -14397,19 +14334,19 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+    /// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
     [JsonPropertyName("documentIdOptions")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDocumentIdOptions? DocumentIdOptions { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
@@ -14421,15 +14358,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("domainArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelector? DomainArnSelector { get; set; }
 
-    /// <summary>The OpenSearch index name.</summary>
+    /// <summary>OpenSearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -14437,7 +14374,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -14449,37 +14386,37 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -14656,25 +14593,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -14989,20 +14926,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -15162,12 +15099,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -15187,11 +15124,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -15199,18 +15136,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -15223,20 +15157,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -15254,11 +15188,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
+    /// <summary>Endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
     [JsonPropertyName("collectionEndpoint")]
     public string? CollectionEndpoint { get; set; }
 
@@ -15270,11 +15204,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("collectionEndpointSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelector? CollectionEndpointSelector { get; set; }
 
-    /// <summary>The Serverless offering for Amazon OpenSearch Service index name.</summary>
+    /// <summary>Serverless offering for Amazon OpenSearch Service index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -15294,38 +15228,38 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>Password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationPasswordSecretRef
@@ -15355,25 +15289,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -15688,20 +15622,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -15861,15 +15795,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-/// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-/// </summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -15889,11 +15820,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -15901,18 +15832,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -16080,20 +16008,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -16253,12 +16181,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -16278,11 +16206,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -16290,18 +16218,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -16314,20 +16239,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -16337,39 +16262,39 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfiguration
 {
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The jdbcurl of the redshift cluster.</summary>
+    /// <summary>JDBC URL of the redshift cluster.</summary>
     [JsonPropertyName("clusterJdbcurl")]
     public string? ClusterJdbcurl { get; set; }
 
-    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation</summary>
+    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation.</summary>
     [JsonPropertyName("copyOptions")]
     public string? CopyOptions { get; set; }
 
-    /// <summary>The data table columns that will be targeted by the copy command.</summary>
+    /// <summary>Data table columns that will be targeted by the copy command.</summary>
     [JsonPropertyName("dataTableColumns")]
     public string? DataTableColumns { get; set; }
 
-    /// <summary>The name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
+    /// <summary>Name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
     [JsonPropertyName("dataTableName")]
     public string? DataTableName { get; set; }
 
-    /// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
+    /// <summary>Length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The arn of the role the stream assumes.</summary>
+    /// <summary>ARN of the role the stream assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -16381,26 +16306,23 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>
-    /// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-    /// </summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -16418,30 +16340,30 @@ public partial class V1beta1DeliveryStreamSpecInitProviderServerSideEncryption
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
-    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK</summary>
+    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The passphrase for the private key.</summary>
+/// <summary>Passphrase for the private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationKeyPassphraseSecretRef
@@ -16454,7 +16376,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     public required string Name { get; set; }
 }
 
-/// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>Private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationPrivateKeySecretRef
@@ -16484,25 +16406,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -16817,20 +16739,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -16990,12 +16912,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -17015,11 +16937,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -17027,18 +16949,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -17051,44 +16970,44 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
 
-/// <summary>The configuration for Snowflake role.</summary>
+/// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The Snowflake role.</summary>
+    /// <summary>Snowflake role.</summary>
     [JsonPropertyName("snowflakeRole")]
     public string? SnowflakeRole { get; set; }
 }
 
-/// <summary>The VPC configuration for Snowflake.</summary>
+/// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
-    /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
+    /// <summary>VPCE ID for Firehose to privately connect with Snowflake.</summary>
     [JsonPropertyName("privateLinkVpceId")]
     public string? PrivateLinkVpceId { get; set; }
 }
@@ -17098,7 +17017,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 {
-    /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
+    /// <summary>URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
     [JsonPropertyName("accountUrl")]
     public string? AccountUrl { get; set; }
 
@@ -17110,35 +17029,35 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The name of the content column.</summary>
+    /// <summary>Name of the content column.</summary>
     [JsonPropertyName("contentColumnName")]
     public string? ContentColumnName { get; set; }
 
-    /// <summary>The data loading option.</summary>
+    /// <summary>Data loading option.</summary>
     [JsonPropertyName("dataLoadingOption")]
     public string? DataLoadingOption { get; set; }
 
-    /// <summary>The Snowflake database name.</summary>
+    /// <summary>Snowflake database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
-    /// <summary>The passphrase for the private key.</summary>
+    /// <summary>Passphrase for the private key.</summary>
     [JsonPropertyName("keyPassphraseSecretRef")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationKeyPassphraseSecretRef? KeyPassphraseSecretRef { get; set; }
 
-    /// <summary>The name of the metadata column.</summary>
+    /// <summary>Name of the metadata column.</summary>
     [JsonPropertyName("metadataColumnName")]
     public string? MetadataColumnName { get; set; }
 
-    /// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
-    /// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -17146,7 +17065,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role.</summary>
+    /// <summary>ARN of the IAM role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -17158,58 +17077,58 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The S3 backup mode.</summary>
+    /// <summary>S3 backup mode.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Snowflake schema name.</summary>
+    /// <summary>Snowflake schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The configuration for Snowflake role.</summary>
+    /// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeRoleConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeRoleConfiguration? SnowflakeRoleConfiguration { get; set; }
 
-    /// <summary>The VPC configuration for Snowflake.</summary>
+    /// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeVpcConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeVpcConfiguration? SnowflakeVpcConfiguration { get; set; }
 
-    /// <summary>The Snowflake table name.</summary>
+    /// <summary>Snowflake table name.</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
 
-    /// <summary>The user for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>User for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("user")]
     public string? User { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
+/// <summary>GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationHecTokenSecretRef
@@ -17239,25 +17158,25 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -17417,20 +17336,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -17590,12 +17509,12 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -17615,11 +17534,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -17627,18 +17546,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -17651,20 +17567,20 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -17682,27 +17598,27 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
+    /// <summary>Amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
     [JsonPropertyName("hecAcknowledgmentTimeout")]
     public double? HecAcknowledgmentTimeout { get; set; }
 
-    /// <summary>The HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
+    /// <summary>HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
     [JsonPropertyName("hecEndpoint")]
     public string? HecEndpoint { get; set; }
 
-    /// <summary>The HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
+    /// <summary>HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
     [JsonPropertyName("hecEndpointType")]
     public string? HecEndpointType { get; set; }
 
-    /// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("hecTokenSecretRef")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationHecTokenSecretRef? HecTokenSecretRef { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -17710,18 +17626,15 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 }
@@ -17742,10 +17655,11 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProvider
 {
-    /// <summary>This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
+    /// <summary>Destination where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
+    /// <summary>Identifier of the destination for the delivery stream.</summary>
     [JsonPropertyName("destinationId")]
     public string? DestinationId { get; set; }
 
@@ -17769,11 +17683,11 @@ public partial class V1beta1DeliveryStreamSpecInitProvider
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 
-    /// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+    /// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
     [JsonPropertyName("mskSourceConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderMskSourceConfiguration? MskSourceConfiguration { get; set; }
 
-    /// <summary>A name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
+    /// <summary>Name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -17805,7 +17719,7 @@ public partial class V1beta1DeliveryStreamSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }
@@ -17917,20 +17831,20 @@ public partial class V1beta1DeliveryStreamSpec
     public V1beta1DeliveryStreamSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -17952,53 +17866,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -18010,11 +17924,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -18022,39 +17936,37 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
+    /// <summary>ID of the VPC associated with the delivery stream.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
@@ -18072,27 +17984,27 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
-    /// <summary>The Elasticsearch index name.</summary>
+    /// <summary>Elasticsearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -18100,56 +18012,56 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to Elastic Search associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+/// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
-    /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
+    /// <summary>List of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
     [JsonPropertyName("timestampFormats")]
     public IList<string>? TimestampFormats { get; set; }
 }
 
-/// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+/// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
@@ -18158,7 +18070,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     [JsonPropertyName("caseInsensitive")]
     public bool? CaseInsensitive { get; set; }
 
-    /// <summary>A map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
+    /// <summary>Map of column names to JSON keys that aren&apos;t identical to the column names. This is useful when the JSON contains keys that are Hive keywords. For example, timestamp is a Hive keyword. If you have a JSON key named timestamp, set this parameter to { ts = &quot;timestamp&quot; } to map this key to a column named ts.</summary>
     [JsonPropertyName("columnToJsonKeyMappings")]
     public IDictionary<string, string>? ColumnToJsonKeyMappings { get; set; }
 
@@ -18167,52 +18079,52 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     public bool? ConvertDotsInJsonKeysToUnderscores { get; set; }
 }
 
-/// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+/// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
-    /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
+    /// <summary>Native Hive / HCatalog JsonSerDe. See hive_json_ser_de block below for details.</summary>
     [JsonPropertyName("hiveJsonSerDe")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe? HiveJsonSerDe { get; set; }
 
-    /// <summary>Specifies the OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
+    /// <summary>OpenX SerDe. See open_x_json_ser_de block below for details.</summary>
     [JsonPropertyName("openXJsonSerDe")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe? OpenXJsonSerDe { get; set; }
 }
 
-/// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+/// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
-    /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
+    /// <summary>Which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
     [JsonPropertyName("deserializer")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer? Deserializer { get; set; }
 }
 
-/// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+/// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>A list of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
+    /// <summary>List of column names for which you want Kinesis Data Firehose to create bloom filters.</summary>
     [JsonPropertyName("bloomFilterColumns")]
     public IList<string>? BloomFilterColumns { get; set; }
 
-    /// <summary>The Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
+    /// <summary>Bloom filter false positive probability (FPP). The lower the FPP, the bigger the Bloom filter. The default value is 0.05, the minimum is 0, and the maximum is 1.</summary>
     [JsonPropertyName("bloomFilterFalsePositiveProbability")]
     public double? BloomFilterFalsePositiveProbability { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>A float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
+    /// <summary>Float that represents the fraction of the total number of non-null rows. To turn off dictionary encoding, set this fraction to a number that is less than the number of distinct keys in a dictionary. To always use dictionary encoding, set this threshold to 1.</summary>
     [JsonPropertyName("dictionaryKeyThreshold")]
     public double? DictionaryKeyThreshold { get; set; }
 
@@ -18220,87 +18132,87 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     [JsonPropertyName("enablePadding")]
     public bool? EnablePadding { get; set; }
 
-    /// <summary>The version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
+    /// <summary>Version of the file to write. The possible values are V0_11 and V0_12. The default is V0_12.</summary>
     [JsonPropertyName("formatVersion")]
     public string? FormatVersion { get; set; }
 
-    /// <summary>A float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
+    /// <summary>Float between 0 and 1 that defines the tolerance for block padding as a decimal fraction of stripe size. The default value is 0.05, which means 5 percent of stripe size. For the default values of 64 MiB ORC stripes and 256 MiB HDFS blocks, the default block padding tolerance of 5 percent reserves a maximum of 3.2 MiB for padding within the 256 MiB block. In such a case, if the available size within the block is more than 3.2 MiB, a new, smaller stripe is inserted to fit within that space. This ensures that no stripe crosses block boundaries and causes remote reads within a node-local task. Kinesis Data Firehose ignores this parameter when enable_padding is false.</summary>
     [JsonPropertyName("paddingTolerance")]
     public double? PaddingTolerance { get; set; }
 
-    /// <summary>The number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
+    /// <summary>Number of rows between index entries. The default is 10000 and the minimum is 1000.</summary>
     [JsonPropertyName("rowIndexStride")]
     public double? RowIndexStride { get; set; }
 
-    /// <summary>The number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
+    /// <summary>Number of bytes in each stripe. The default is 64 MiB and the minimum is 8 MiB.</summary>
     [JsonPropertyName("stripeSizeBytes")]
     public double? StripeSizeBytes { get; set; }
 }
 
-/// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+/// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
-    /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
+    /// <summary>Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
     [JsonPropertyName("blockSizeBytes")]
     public double? BlockSizeBytes { get; set; }
 
-    /// <summary>The compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
+    /// <summary>Compression code to use over data blocks. The possible values are UNCOMPRESSED, SNAPPY, and GZIP, with the default being SNAPPY. Use SNAPPY for higher decompression speed. Use GZIP if the compression ratio is more important than speed.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>Indicates whether to enable dictionary compression.</summary>
+    /// <summary>Whether to enable dictionary compression.</summary>
     [JsonPropertyName("enableDictionaryCompression")]
     public bool? EnableDictionaryCompression { get; set; }
 
-    /// <summary>The maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
+    /// <summary>Maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.</summary>
     [JsonPropertyName("maxPaddingBytes")]
     public double? MaxPaddingBytes { get; set; }
 
-    /// <summary>The Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
+    /// <summary>Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.</summary>
     [JsonPropertyName("pageSizeBytes")]
     public double? PageSizeBytes { get; set; }
 
-    /// <summary>Indicates the version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
+    /// <summary>Version of row format to output. The possible values are V1 and V2. The default is V1.</summary>
     [JsonPropertyName("writerVersion")]
     public string? WriterVersion { get; set; }
 }
 
-/// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+/// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
-    /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
+    /// <summary>Converts data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
     [JsonPropertyName("orcSerDe")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe? OrcSerDe { get; set; }
 
-    /// <summary>Specifies converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. More details below.</summary>
+    /// <summary>Converts data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet. See parquet_ser_de block below for details.</summary>
     [JsonPropertyName("parquetSerDe")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe? ParquetSerDe { get; set; }
 }
 
-/// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+/// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
-    /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
+    /// <summary>Which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
     [JsonPropertyName("serializer")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer? Serializer { get; set; }
 }
 
-/// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+/// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
-    /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -18308,15 +18220,15 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }
@@ -18326,29 +18238,29 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
+    /// <summary>Deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. See input_format_configuration block below for details.</summary>
     [JsonPropertyName("inputFormatConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration? InputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
+    /// <summary>Serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. See output_format_configuration block below for details.</summary>
     [JsonPropertyName("outputFormatConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration? OutputFormatConfiguration { get; set; }
 
-    /// <summary>Specifies the AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
+    /// <summary>AWS Glue Data Catalog table that contains the column information. See schema_configuration block below for details.</summary>
     [JsonPropertyName("schemaConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration? SchemaConfiguration { get; set; }
 }
 
-/// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+/// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -18374,88 +18286,85 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>Prefix added to failed records before writing them to S3. Not currently supported for redshift destination. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
+    /// <summary>Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.</summary>
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -18465,27 +18374,27 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
+    /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.</summary>
     [JsonPropertyName("bufferingInterval")]
     public double? BufferingInterval { get; set; }
 
-    /// <summary>Buffer incoming data to the specified size, in MBs between 1 to 5, before delivering it to the destination.  The default value is 5MB.</summary>
+    /// <summary>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5. We recommend setting this value greater than the amount of data you typically ingest into the delivery stream in 10 seconds. For example, if you typically ingest data at 1 MB/sec, set this value to 10 MB or higher.</summary>
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
-    /// <summary>The time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
+    /// <summary>Time zone you prefer. Valid values are UTC or a non-3-letter IANA time zones (for example, America/Los_Angeles). Default value is UTC.</summary>
     [JsonPropertyName("customTimeZone")]
     public string? CustomTimeZone { get; set; }
 
@@ -18493,7 +18402,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     [JsonPropertyName("dataFormatConversionConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfiguration? DataFormatConversionConfiguration { get; set; }
 
-    /// <summary>The configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
+    /// <summary>Configuration for dynamic partitioning. Required when using dynamic partitioning. See dynamic_partitioning_configuration block below for details.</summary>
     [JsonPropertyName("dynamicPartitioningConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDynamicPartitioningConfiguration? DynamicPartitioningConfiguration { get; set; }
 
@@ -18501,52 +18410,49 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>The file extension to override the default file extension (for example, .json).</summary>
+    /// <summary>File extension to override the default file extension (for example, .json).</summary>
     [JsonPropertyName("fileExtension")]
     public string? FileExtension { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the AWS credentials.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.</summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -18568,25 +18474,25 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
@@ -18595,21 +18501,21 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
-    /// <summary>The name of the HTTP endpoint common attribute.</summary>
+    /// <summary>Name of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the HTTP endpoint common attribute.</summary>
+    /// <summary>Value of the HTTP endpoint common attribute.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The request configuration.  See request_configuration block below for details.</summary>
+/// <summary>Request configuration.  See request_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfiguration
 {
-    /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
+    /// <summary>Metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
     [JsonPropertyName("commonAttributes")]
     public IList<V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes>? CommonAttributes { get; set; }
 
@@ -18618,30 +18524,30 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     public string? ContentEncoding { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -18653,11 +18559,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -18665,36 +18571,33 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+/// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -18712,19 +18615,19 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The HTTP endpoint name.</summary>
+    /// <summary>HTTP endpoint name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The request configuration.  See request_configuration block below for details.</summary>
+    /// <summary>Request configuration.  See request_configuration block below for details.</summary>
     [JsonPropertyName("requestConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfiguration? RequestConfiguration { get; set; }
 
@@ -18736,37 +18639,37 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDataOnly and AllData.  Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
+    /// <summary>Secret Manager Configuration. See secrets_manager_configuration block below for details.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
+    /// <summary>HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -18775,19 +18678,19 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationCl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationDestinationTableConfiguration
 {
-    /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
+    /// <summary>Name of the AWS Glue database that contains the schema for the output data.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
+    /// <summary>Table specific S3 error output prefix. All the errors that occurred while delivering to this table will be prefixed with this value in S3 destination.</summary>
     [JsonPropertyName("s3ErrorOutputPrefix")]
     public string? S3ErrorOutputPrefix { get; set; }
 
-    /// <summary>Specifies the AWS Glue table that contains the column information that constitutes your data schema.</summary>
+    /// <summary>AWS Glue table that contains the column information that constitutes your data schema.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
-    /// <summary>A list of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
+    /// <summary>List of unique keys for a given Apache Iceberg table. Firehose will use these for running Create, Update, or Delete operations on the given Iceberg table.</summary>
     [JsonPropertyName("uniqueKeys")]
     public IList<string>? UniqueKeys { get; set; }
 }
@@ -18809,53 +18712,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationPr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -18867,11 +18770,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -18879,18 +18782,15 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -18900,6 +18800,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
 {
+    /// <summary>Whether to enable append only operations. When set, Firehose only performs insert operations on the destination Apache Iceberg Tables.</summary>
     [JsonPropertyName("appendOnly")]
     public bool? AppendOnly { get; set; }
 
@@ -18911,11 +18812,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog</summary>
+    /// <summary>Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format arn:aws:glue:region:account-id:catalog.</summary>
     [JsonPropertyName("catalogArn")]
     public string? CatalogArn { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -18923,26 +18824,23 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
     [JsonPropertyName("destinationTableConfiguration")]
     public IList<V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationDestinationTableConfiguration>? DestinationTableConfiguration { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
+    /// <summary>Period of time, in seconds between 0 to 7200, during which Firehose retries to deliver data to the specified destination.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>Amazon S3 backup mode. Valid values are FailedDataOnly and AllData. Default value is FailedDataOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -18952,75 +18850,75 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfiguration
 {
-    /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
+    /// <summary>Kinesis stream used as the source of the firehose delivery stream.</summary>
     [JsonPropertyName("kinesisStreamArn")]
     public string? KinesisStreamArn { get; set; }
 
-    /// <summary>The ARN of the role that provides access to the source Kinesis stream.</summary>
+    /// <summary>ARN of the role that provides access to the source Kinesis stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+/// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfigurationAuthenticationConfiguration
 {
-    /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
+    /// <summary>Type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
     [JsonPropertyName("connectivity")]
     public string? Connectivity { get; set; }
 
-    /// <summary>The ARN of the role used to access the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the role used to access the Amazon MSK cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+/// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfiguration
 {
-    /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
+    /// <summary>Authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderMskSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
-    /// <summary>The ARN of the Amazon MSK cluster.</summary>
+    /// <summary>ARN of the Amazon MSK cluster.</summary>
     [JsonPropertyName("mskClusterArn")]
     public string? MskClusterArn { get; set; }
 
-    /// <summary>The start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
+    /// <summary>Start date and time in UTC for the offset position within your MSK topic from where Firehose begins to read. By default, this is set to timestamp when Firehose becomes Active. If you want to create a Firehose stream with Earliest start position set the read_from_timestamp parameter to Epoch (1970-01-01T00:00:00Z).</summary>
     [JsonPropertyName("readFromTimestamp")]
     public string? ReadFromTimestamp { get; set; }
 
-    /// <summary>The topic name within the Amazon MSK cluster.</summary>
+    /// <summary>Topic name within the Amazon MSK cluster.</summary>
     [JsonPropertyName("topicName")]
     public string? TopicName { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+/// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationDocumentIdOptions
 {
-    /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
+    /// <summary>Method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
     [JsonPropertyName("defaultDocumentIdFormat")]
     public string? DefaultDocumentIdFormat { get; set; }
 }
@@ -19042,53 +18940,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -19100,11 +18998,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -19112,39 +19010,37 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
+    /// <summary>ID of the VPC associated with the delivery stream.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
@@ -19162,31 +19058,31 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
+    /// <summary>Endpoint to use when communicating with the cluster. Conflicts with domain_arn.</summary>
     [JsonPropertyName("clusterEndpoint")]
     public string? ClusterEndpoint { get; set; }
 
-    /// <summary>The method for setting up document ID. See [document_id_options block] below for details.</summary>
+    /// <summary>Method for setting up document ID. See document_id_options block below for details.</summary>
     [JsonPropertyName("documentIdOptions")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationDocumentIdOptions? DocumentIdOptions { get; set; }
 
-    /// <summary>The ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
+    /// <summary>ARN of the Amazon ES domain.  The pattern needs to be arn:.*.  Conflicts with cluster_endpoint.</summary>
     [JsonPropertyName("domainArn")]
     public string? DomainArn { get; set; }
 
-    /// <summary>The OpenSearch index name.</summary>
+    /// <summary>OpenSearch index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
+    /// <summary>OpenSearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are NoRotation, OneHour, OneDay, OneWeek, and OneMonth.  The default value is OneDay.</summary>
     [JsonPropertyName("indexRotationPeriod")]
     public string? IndexRotationPeriod { get; set; }
 
-    /// <summary>The data processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -19194,41 +19090,41 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The IAM role must have permission for DescribeDomain, DescribeDomains, and DescribeDomainConfig.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
+    /// <summary>Elasticsearch type name with maximum length of 100 characters. Types are deprecated in OpenSearch_1.1. TypeName must be empty.</summary>
     [JsonPropertyName("typeName")]
     public string? TypeName { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -19250,53 +19146,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -19308,11 +19204,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -19320,39 +19216,37 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+/// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationVpcConfig
 {
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A list of security group IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of security group IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs to associate with Kinesis Firehose.</summary>
+    /// <summary>List of subnet IDs to associate with Kinesis Firehose.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
+    /// <summary>ID of the VPC associated with the delivery stream.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
@@ -19370,19 +19264,19 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
+    /// <summary>Endpoint to use when communicating with the collection in the Serverless offering for Amazon OpenSearch Service.</summary>
     [JsonPropertyName("collectionEndpoint")]
     public string? CollectionEndpoint { get; set; }
 
-    /// <summary>The Serverless offering for Amazon OpenSearch Service index name.</summary>
+    /// <summary>Serverless offering for Amazon OpenSearch Service index name.</summary>
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -19394,33 +19288,33 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
+    /// <summary>VPC configuration for the delivery stream to connect to OpenSearch Serverless associated with the VPC. See vpc_config block below for details.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -19442,56 +19336,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>
-/// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-/// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-/// </summary>
+/// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfiguration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -19503,11 +19394,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -19515,46 +19406,43 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -19566,11 +19454,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -19578,36 +19466,33 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -19617,58 +19502,55 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfiguration
 {
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The jdbcurl of the redshift cluster.</summary>
+    /// <summary>JDBC URL of the redshift cluster.</summary>
     [JsonPropertyName("clusterJdbcurl")]
     public string? ClusterJdbcurl { get; set; }
 
-    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation</summary>
+    /// <summary>Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the AWS documentation.</summary>
     [JsonPropertyName("copyOptions")]
     public string? CopyOptions { get; set; }
 
-    /// <summary>The data table columns that will be targeted by the copy command.</summary>
+    /// <summary>Data table columns that will be targeted by the copy command.</summary>
     [JsonPropertyName("dataTableColumns")]
     public string? DataTableColumns { get; set; }
 
-    /// <summary>The name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
+    /// <summary>Name of the table in the redshift cluster that the s3 bucket will copy to.</summary>
     [JsonPropertyName("dataTableName")]
     public string? DataTableName { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
+    /// <summary>Length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.</summary>
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The arn of the role the stream assumes.</summary>
+    /// <summary>ARN of the role the stream assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>
-    /// The configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. Supports the same fields as s3_configuration object.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.
-    /// </summary>
+    /// <summary>Configuration for backup in Amazon S3. Required if s3_backup_mode is Enabled. See s3_backup_configuration block below for details.</summary>
     [JsonPropertyName("s3BackupConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
 
-    /// <summary>The Amazon S3 backup mode.  Valid values are Disabled and Enabled.  Default value is Disabled.</summary>
+    /// <summary>Amazon S3 backup mode. Valid values are Disabled and Enabled. Default value is Disabled.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if username and password are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>Username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -19686,25 +19568,25 @@ public partial class V1beta1DeliveryStreamStatusAtProviderServerSideEncryption
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
-    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK</summary>
+    /// <summary>Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -19726,53 +19608,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+/// <summary>Processing configuration. See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -19784,11 +19666,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -19796,60 +19678,57 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
 
-/// <summary>The configuration for Snowflake role.</summary>
+/// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The Snowflake role.</summary>
+    /// <summary>Snowflake role.</summary>
     [JsonPropertyName("snowflakeRole")]
     public string? SnowflakeRole { get; set; }
 }
 
-/// <summary>The VPC configuration for Snowflake.</summary>
+/// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
-    /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
+    /// <summary>VPCE ID for Firehose to privately connect with Snowflake.</summary>
     [JsonPropertyName("privateLinkVpceId")]
     public string? PrivateLinkVpceId { get; set; }
 }
@@ -19859,7 +19738,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 {
-    /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
+    /// <summary>URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
     [JsonPropertyName("accountUrl")]
     public string? AccountUrl { get; set; }
 
@@ -19871,27 +19750,27 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The name of the content column.</summary>
+    /// <summary>Name of the content column.</summary>
     [JsonPropertyName("contentColumnName")]
     public string? ContentColumnName { get; set; }
 
-    /// <summary>The data loading option.</summary>
+    /// <summary>Data loading option.</summary>
     [JsonPropertyName("dataLoadingOption")]
     public string? DataLoadingOption { get; set; }
 
-    /// <summary>The Snowflake database name.</summary>
+    /// <summary>Snowflake database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
-    /// <summary>The name of the metadata column.</summary>
+    /// <summary>Name of the metadata column.</summary>
     [JsonPropertyName("metadataColumnName")]
     public string? MetadataColumnName { get; set; }
 
-    /// <summary>The processing configuration. See processing_configuration block below for details.</summary>
+    /// <summary>Processing configuration. See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -19899,57 +19778,57 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The ARN of the IAM role.</summary>
+    /// <summary>ARN of the IAM role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The S3 backup mode.</summary>
+    /// <summary>S3 backup mode.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Snowflake schema name.</summary>
+    /// <summary>Snowflake schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The configuration for Snowflake role.</summary>
+    /// <summary>Configuration for Snowflake role. See snowflake_role_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeRoleConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeRoleConfiguration? SnowflakeRoleConfiguration { get; set; }
 
-    /// <summary>The VPC configuration for Snowflake.</summary>
+    /// <summary>VPC configuration for Snowflake. See snowflake_vpc_configuration block below for details.</summary>
     [JsonPropertyName("snowflakeVpcConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeVpcConfiguration? SnowflakeVpcConfiguration { get; set; }
 
-    /// <summary>The Snowflake table name.</summary>
+    /// <summary>Snowflake table name.</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
 
-    /// <summary>The user for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
+    /// <summary>User for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
     [JsonPropertyName("user")]
     public string? User { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
@@ -19971,53 +19850,53 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfigurationProcessors
 {
-    /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
+    /// <summary>Processor parameters as multiple blocks. See parameters block below for details.</summary>
     [JsonPropertyName("parameters")]
     public IList<V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
 
-    /// <summary>The type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
+    /// <summary>Type of processor. Valid Values: RecordDeAggregation, Lambda, MetadataExtraction, AppendDelimiterToRecord, Decompression, CloudWatchLogProcessing. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+/// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies the data processors as multiple blocks. See processors block below for details.</summary>
+    /// <summary>Data processors as multiple blocks. See processors block below for details.</summary>
     [JsonPropertyName("processors")]
     public IList<V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
 }
 
-/// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+/// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The CloudWatch group name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch group name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logGroupName")]
     public string? LogGroupName { get; set; }
 
-    /// <summary>The CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
+    /// <summary>CloudWatch log stream name for logging. This value is required if enabled is true.</summary>
     [JsonPropertyName("logStreamName")]
     public string? LogStreamName { get; set; }
 }
 
-/// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+/// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3Configuration
 {
-    /// <summary>The ARN of the S3 bucket</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -20029,11 +19908,11 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3C
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
+    /// <summary>Compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP, Snappy, &amp; HADOOP_SNAPPY.</summary>
     [JsonPropertyName("compressionFormat")]
     public string? CompressionFormat { get; set; }
 
@@ -20041,36 +19920,33 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3C
     [JsonPropertyName("errorOutputPrefix")]
     public string? ErrorOutputPrefix { get; set; }
 
-    /// <summary>
-    /// Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will
-    /// be used.
-    /// </summary>
+    /// <summary>KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The &quot;YYYY/MM/DD/HH&quot; time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket</summary>
+    /// <summary>Extra prefix added in front of the &quot;YYYY/MM/DD/HH&quot; time format prefix that is automatically used for delivered S3 files. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+/// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationSecretsManagerConfiguration
 {
-    /// <summary>Enables or disables the logging. Defaults to false.</summary>
+    /// <summary>Whether the Snowflake role is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
+    /// <summary>ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
+    /// <summary>ARN of the Secrets Manager secret. This value is required if enabled is true.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -20088,23 +19964,23 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfiguration
     [JsonPropertyName("bufferingSize")]
     public double? BufferingSize { get; set; }
 
-    /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
+    /// <summary>CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
+    /// <summary>Amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.</summary>
     [JsonPropertyName("hecAcknowledgmentTimeout")]
     public double? HecAcknowledgmentTimeout { get; set; }
 
-    /// <summary>The HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
+    /// <summary>HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.</summary>
     [JsonPropertyName("hecEndpoint")]
     public string? HecEndpoint { get; set; }
 
-    /// <summary>The HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
+    /// <summary>HEC endpoint type. Valid values are Raw or Event. The default value is Raw.</summary>
     [JsonPropertyName("hecEndpointType")]
     public string? HecEndpointType { get; set; }
 
-    /// <summary>The data processing configuration.  See processing_configuration block below for details.</summary>
+    /// <summary>Data processing configuration.  See processing_configuration block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
 
@@ -20112,18 +19988,15 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfiguration
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>
-    /// Defines how documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.
-    /// secrets_manager_configuration -  The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.
-    /// </summary>
+    /// <summary>How documents should be delivered to Amazon S3.  Valid values are FailedEventsOnly and AllEvents.  Default value is FailedEventsOnly.</summary>
     [JsonPropertyName("s3BackupMode")]
     public string? S3BackupMode { get; set; }
 
-    /// <summary>The S3 Configuration. See s3_configuration block below for details.</summary>
+    /// <summary>S3 Configuration. See s3_configuration block below for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>The Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if user and private_key are not provided.</summary>
+    /// <summary>Secrets Manager configuration. See secrets_manager_configuration block below for details. This value is required if hec_token is not provided.</summary>
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 }
@@ -20136,10 +20009,11 @@ public partial class V1beta1DeliveryStreamStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
+    /// <summary>Destination where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
+    /// <summary>Identifier of the destination for the delivery stream.</summary>
     [JsonPropertyName("destinationId")]
     public string? DestinationId { get; set; }
 
@@ -20166,11 +20040,11 @@ public partial class V1beta1DeliveryStreamStatusAtProvider
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 
-    /// <summary>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
+    /// <summary>Configuration for the Amazon MSK cluster to be used as the source for a delivery stream. See msk_source_configuration block below for details.</summary>
     [JsonPropertyName("mskSourceConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderMskSourceConfiguration? MskSourceConfiguration { get; set; }
 
-    /// <summary>A name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
+    /// <summary>Name to identify the stream. This is unique to the AWS account and region the Stream is created in. When using for WAF logging, name must be prefixed with aws-waf-logs-. See AWS Documentation for more details.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -20209,11 +20083,11 @@ public partial class V1beta1DeliveryStreamStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Specifies the table version for the output data schema. Defaults to LATEST.</summary>
+    /// <summary>Version identifier of the delivery stream.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 }

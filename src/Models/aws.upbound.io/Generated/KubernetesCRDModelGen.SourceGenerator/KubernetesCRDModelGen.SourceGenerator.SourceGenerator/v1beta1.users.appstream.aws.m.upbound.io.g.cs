@@ -213,7 +213,7 @@ public partial class V1beta1UserSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserStatusAtProvider
 {
-    /// <summary>ARN of the appstream user.</summary>
+    /// <summary>ARN of the AppStream user.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -233,7 +233,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("firstName")]
     public string? FirstName { get; set; }
 
-    /// <summary>Unique ID of the appstream user.</summary>
+    /// <summary>Unique ID of the AppStream user.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

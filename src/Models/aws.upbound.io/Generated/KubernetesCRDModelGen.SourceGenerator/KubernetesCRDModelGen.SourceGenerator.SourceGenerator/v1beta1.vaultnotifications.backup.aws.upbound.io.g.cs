@@ -354,7 +354,7 @@ public partial class V1beta1VaultNotificationsSpecForProviderSnsTopicArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultNotificationsSpecForProvider
 {
-    /// <summary>An array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
+    /// <summary>Array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
     [JsonPropertyName("backupVaultEvents")]
     public IList<string>? BackupVaultEvents { get; set; }
 
@@ -700,7 +700,7 @@ public partial class V1beta1VaultNotificationsSpecInitProviderSnsTopicArnSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultNotificationsSpecInitProvider
 {
-    /// <summary>An array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
+    /// <summary>Array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
     [JsonPropertyName("backupVaultEvents")]
     public IList<string>? BackupVaultEvents { get; set; }
 
@@ -916,11 +916,11 @@ public partial class V1beta1VaultNotificationsSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultNotificationsStatusAtProvider
 {
-    /// <summary>The ARN of the vault.</summary>
+    /// <summary>ARN of the vault.</summary>
     [JsonPropertyName("backupVaultArn")]
     public string? BackupVaultArn { get; set; }
 
-    /// <summary>An array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
+    /// <summary>Array of events that indicate the status of jobs to back up resources to the backup vault.</summary>
     [JsonPropertyName("backupVaultEvents")]
     public IList<string>? BackupVaultEvents { get; set; }
 
@@ -928,7 +928,7 @@ public partial class V1beta1VaultNotificationsStatusAtProvider
     [JsonPropertyName("backupVaultName")]
     public string? BackupVaultName { get; set; }
 
-    /// <summary>The name of the vault.</summary>
+    /// <summary>Name of the vault.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

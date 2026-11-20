@@ -208,15 +208,15 @@ public partial class V1beta1VaultLockConfigurationSpecForProvider
     [JsonPropertyName("backupVaultNameSelector")]
     public V1beta1VaultLockConfigurationSpecForProviderBackupVaultNameSelector? BackupVaultNameSelector { get; set; }
 
-    /// <summary>The number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
+    /// <summary>Number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
     [JsonPropertyName("changeableForDays")]
     public double? ChangeableForDays { get; set; }
 
-    /// <summary>The maximum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Maximum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("maxRetentionDays")]
     public double? MaxRetentionDays { get; set; }
 
-    /// <summary>The minimum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Minimum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("minRetentionDays")]
     public double? MinRetentionDays { get; set; }
 
@@ -411,15 +411,15 @@ public partial class V1beta1VaultLockConfigurationSpecInitProvider
     [JsonPropertyName("backupVaultNameSelector")]
     public V1beta1VaultLockConfigurationSpecInitProviderBackupVaultNameSelector? BackupVaultNameSelector { get; set; }
 
-    /// <summary>The number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
+    /// <summary>Number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
     [JsonPropertyName("changeableForDays")]
     public double? ChangeableForDays { get; set; }
 
-    /// <summary>The maximum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Maximum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("maxRetentionDays")]
     public double? MaxRetentionDays { get; set; }
 
-    /// <summary>The minimum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Minimum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("minRetentionDays")]
     public double? MinRetentionDays { get; set; }
 }
@@ -535,7 +535,7 @@ public partial class V1beta1VaultLockConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultLockConfigurationStatusAtProvider
 {
-    /// <summary>The ARN of the vault.</summary>
+    /// <summary>ARN of the vault.</summary>
     [JsonPropertyName("backupVaultArn")]
     public string? BackupVaultArn { get; set; }
 
@@ -543,7 +543,7 @@ public partial class V1beta1VaultLockConfigurationStatusAtProvider
     [JsonPropertyName("backupVaultName")]
     public string? BackupVaultName { get; set; }
 
-    /// <summary>The number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
+    /// <summary>Number of days before the lock date. If omitted creates a vault lock in governance mode, otherwise it will create a vault lock in compliance mode.</summary>
     [JsonPropertyName("changeableForDays")]
     public double? ChangeableForDays { get; set; }
 
@@ -556,11 +556,11 @@ public partial class V1beta1VaultLockConfigurationStatusAtProvider
     [JsonPropertyName("locked")]
     public bool? Locked { get; set; }
 
-    /// <summary>The maximum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Maximum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("maxRetentionDays")]
     public double? MaxRetentionDays { get; set; }
 
-    /// <summary>The minimum retention period that the vault retains its recovery points.</summary>
+    /// <summary>Minimum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("minRetentionDays")]
     public double? MinRetentionDays { get; set; }
 

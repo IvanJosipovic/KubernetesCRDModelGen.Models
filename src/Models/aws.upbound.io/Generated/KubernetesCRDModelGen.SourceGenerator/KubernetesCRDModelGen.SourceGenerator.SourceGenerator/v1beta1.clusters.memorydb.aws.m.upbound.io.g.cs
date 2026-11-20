@@ -816,7 +816,7 @@ public partial class V1beta1ClusterSpecForProviderSubnetGroupNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProvider
 {
-    /// <summary>The name of the Access Control List to associate with the cluster.</summary>
+    /// <summary>Name of the Access Control List to associate with the cluster.</summary>
     [JsonPropertyName("aclName")]
     public string? AclName { get; set; }
 
@@ -840,7 +840,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine that will run on your nodes. Supported values are redis and valkey.</summary>
+    /// <summary>Engine that will run on your nodes. Supported values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -868,11 +868,11 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("kmsKeyArnSelector")]
     public V1beta1ClusterSpecForProviderKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
-    /// <summary>Specifies the weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
+    /// <summary>Weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
+    /// <summary>Multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
     [JsonPropertyName("multiRegionClusterName")]
     public string? MultiRegionClusterName { get; set; }
 
@@ -880,19 +880,19 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
+    /// <summary>Compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
+    /// <summary>Number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
     [JsonPropertyName("numReplicasPerShard")]
     public double? NumReplicasPerShard { get; set; }
 
-    /// <summary>The number of shards in the cluster. Defaults to 1.</summary>
+    /// <summary>Number of shards in the cluster. Defaults to 1.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
-    /// <summary>The name of the parameter group associated with the cluster.</summary>
+    /// <summary>Name of the parameter group associated with the cluster.</summary>
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
@@ -904,7 +904,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("parameterGroupNameSelector")]
     public V1beta1ClusterSpecForProviderParameterGroupNameSelector? ParameterGroupNameSelector { get; set; }
 
-    /// <summary>The port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
+    /// <summary>Port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -931,15 +931,15 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
-    /// <summary>The name of a snapshot from which to restore data into the new cluster.</summary>
+    /// <summary>Name of a snapshot from which to restore data into the new cluster.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 
-    /// <summary>The number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
+    /// <summary>Number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
     [JsonPropertyName("snapshotRetentionLimit")]
     public double? SnapshotRetentionLimit { get; set; }
 
-    /// <summary>The daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
+    /// <summary>Daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
     [JsonPropertyName("snapshotWindow")]
     public string? SnapshotWindow { get; set; }
 
@@ -947,7 +947,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
-    /// <summary>The name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
+    /// <summary>Name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
     [JsonPropertyName("subnetGroupName")]
     public string? SubnetGroupName { get; set; }
 
@@ -963,7 +963,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 }
@@ -1759,7 +1759,7 @@ public partial class V1beta1ClusterSpecInitProviderSubnetGroupNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProvider
 {
-    /// <summary>The name of the Access Control List to associate with the cluster.</summary>
+    /// <summary>Name of the Access Control List to associate with the cluster.</summary>
     [JsonPropertyName("aclName")]
     public string? AclName { get; set; }
 
@@ -1783,7 +1783,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine that will run on your nodes. Supported values are redis and valkey.</summary>
+    /// <summary>Engine that will run on your nodes. Supported values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -1811,11 +1811,11 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("kmsKeyArnSelector")]
     public V1beta1ClusterSpecInitProviderKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
-    /// <summary>Specifies the weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
+    /// <summary>Weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
+    /// <summary>Multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
     [JsonPropertyName("multiRegionClusterName")]
     public string? MultiRegionClusterName { get; set; }
 
@@ -1823,19 +1823,19 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
+    /// <summary>Compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
+    /// <summary>Number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
     [JsonPropertyName("numReplicasPerShard")]
     public double? NumReplicasPerShard { get; set; }
 
-    /// <summary>The number of shards in the cluster. Defaults to 1.</summary>
+    /// <summary>Number of shards in the cluster. Defaults to 1.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
-    /// <summary>The name of the parameter group associated with the cluster.</summary>
+    /// <summary>Name of the parameter group associated with the cluster.</summary>
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
@@ -1847,7 +1847,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("parameterGroupNameSelector")]
     public V1beta1ClusterSpecInitProviderParameterGroupNameSelector? ParameterGroupNameSelector { get; set; }
 
-    /// <summary>The port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
+    /// <summary>Port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1867,15 +1867,15 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
-    /// <summary>The name of a snapshot from which to restore data into the new cluster.</summary>
+    /// <summary>Name of a snapshot from which to restore data into the new cluster.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 
-    /// <summary>The number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
+    /// <summary>Number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
     [JsonPropertyName("snapshotRetentionLimit")]
     public double? SnapshotRetentionLimit { get; set; }
 
-    /// <summary>The daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
+    /// <summary>Daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
     [JsonPropertyName("snapshotWindow")]
     public string? SnapshotWindow { get; set; }
 
@@ -1883,7 +1883,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
-    /// <summary>The name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
+    /// <summary>Name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
     [JsonPropertyName("subnetGroupName")]
     public string? SubnetGroupName { get; set; }
 
@@ -1899,7 +1899,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 }
@@ -2019,7 +2019,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterEndpoint
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>The port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
+    /// <summary>Port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -2032,7 +2032,7 @@ public partial class V1beta1ClusterStatusAtProviderShardsNodesEndpoint
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>The port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
+    /// <summary>Port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -2041,11 +2041,11 @@ public partial class V1beta1ClusterStatusAtProviderShardsNodesEndpoint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderShardsNodes
 {
-    /// <summary>The Availability Zone in which the node resides.</summary>
+    /// <summary>Availability Zone in which the node resides.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
-    /// <summary>The date and time when the node was created. Example: 2022-01-01T21:00:00Z.</summary>
+    /// <summary>Date and time when the node was created. Example: 2022-01-01T21:00:00Z.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
@@ -2082,11 +2082,11 @@ public partial class V1beta1ClusterStatusAtProviderShards
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProvider
 {
-    /// <summary>The name of the Access Control List to associate with the cluster.</summary>
+    /// <summary>Name of the Access Control List to associate with the cluster.</summary>
     [JsonPropertyName("aclName")]
     public string? AclName { get; set; }
 
-    /// <summary>The ARN of the cluster.</summary>
+    /// <summary>ARN of the cluster.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2105,7 +2105,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine that will run on your nodes. Supported values are redis and valkey.</summary>
+    /// <summary>Engine that will run on your nodes. Supported values are redis and valkey.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -2133,11 +2133,11 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>Specifies the weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
+    /// <summary>Weekly time range during which maintenance on the cluster is performed. Specify as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example: sun:23:00-mon:01:30.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
-    /// <summary>The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
+    /// <summary>Multi region cluster identifier specified on aws_memorydb_multi_region_cluster.</summary>
     [JsonPropertyName("multiRegionClusterName")]
     public string? MultiRegionClusterName { get; set; }
 
@@ -2145,23 +2145,23 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
+    /// <summary>Compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.</summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>The number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
+    /// <summary>Number of replicas to apply to each shard, up to a maximum of 5. Defaults to 1 (i.e. 2 nodes per shard).</summary>
     [JsonPropertyName("numReplicasPerShard")]
     public double? NumReplicasPerShard { get; set; }
 
-    /// <summary>The number of shards in the cluster. Defaults to 1.</summary>
+    /// <summary>Number of shards in the cluster. Defaults to 1.</summary>
     [JsonPropertyName("numShards")]
     public double? NumShards { get; set; }
 
-    /// <summary>The name of the parameter group associated with the cluster.</summary>
+    /// <summary>Name of the parameter group associated with the cluster.</summary>
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
-    /// <summary>The port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
+    /// <summary>Port number on which each of the nodes accepts connections. Defaults to 6379.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2184,15 +2184,15 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
-    /// <summary>The name of a snapshot from which to restore data into the new cluster.</summary>
+    /// <summary>Name of a snapshot from which to restore data into the new cluster.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 
-    /// <summary>The number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
+    /// <summary>Number of days for which MemoryDB retains automatic snapshots before deleting them. When set to 0, automatic backups are disabled. Defaults to 0.</summary>
     [JsonPropertyName("snapshotRetentionLimit")]
     public double? SnapshotRetentionLimit { get; set; }
 
-    /// <summary>The daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
+    /// <summary>Daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard. Example: 05:00-09:00.</summary>
     [JsonPropertyName("snapshotWindow")]
     public string? SnapshotWindow { get; set; }
 
@@ -2200,7 +2200,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
-    /// <summary>The name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
+    /// <summary>Name of the subnet group to be used for the cluster. Defaults to a subnet group consisting of default VPC subnets.</summary>
     [JsonPropertyName("subnetGroupName")]
     public string? SubnetGroupName { get; set; }
 
@@ -2208,11 +2208,11 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>A flag to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
+    /// <summary>Whether to enable in-transit encryption on the cluster. When set to false, the acl_name must be open-access. Defaults to true.</summary>
     [JsonPropertyName("tlsEnabled")]
     public bool? TlsEnabled { get; set; }
 }

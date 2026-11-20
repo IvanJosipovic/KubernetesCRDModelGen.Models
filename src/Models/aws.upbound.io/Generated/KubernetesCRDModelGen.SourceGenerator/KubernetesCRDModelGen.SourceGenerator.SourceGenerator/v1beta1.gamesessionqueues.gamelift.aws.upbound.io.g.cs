@@ -383,7 +383,7 @@ public partial class V1beta1GameSessionQueueSpecForProvider
     [JsonPropertyName("destinationsSelector")]
     public V1beta1GameSessionQueueSpecForProviderDestinationsSelector? DestinationsSelector { get; set; }
 
-    /// <summary>An SNS topic ARN that is set up to receive game session placement notifications.</summary>
+    /// <summary>SNS topic ARN that is set up to receive game session placement notifications.</summary>
     [JsonPropertyName("notificationTarget")]
     public string? NotificationTarget { get; set; }
 
@@ -754,7 +754,7 @@ public partial class V1beta1GameSessionQueueSpecInitProvider
     [JsonPropertyName("destinationsSelector")]
     public V1beta1GameSessionQueueSpecInitProviderDestinationsSelector? DestinationsSelector { get; set; }
 
-    /// <summary>An SNS topic ARN that is set up to receive game session placement notifications.</summary>
+    /// <summary>SNS topic ARN that is set up to receive game session placement notifications.</summary>
     [JsonPropertyName("notificationTarget")]
     public string? NotificationTarget { get; set; }
 
@@ -994,7 +994,7 @@ public partial class V1beta1GameSessionQueueStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An SNS topic ARN that is set up to receive game session placement notifications.</summary>
+    /// <summary>SNS topic ARN that is set up to receive game session placement notifications.</summary>
     [JsonPropertyName("notificationTarget")]
     public string? NotificationTarget { get; set; }
 
@@ -1013,7 +1013,7 @@ public partial class V1beta1GameSessionQueueStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

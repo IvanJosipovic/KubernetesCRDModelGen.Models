@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: users.memorydb.aws.upbound.io
 spec:
   group: memorydb.aws.upbound.io
@@ -419,7 +419,7 @@ spec:
                     description: Access permissions string used for this user.
                     type: string
                   authenticationMode:
-                    description: Denotes the user's authentication properties. Detailed below.
+                    description: Authentication properties for the user. Detailed below.
                     properties:
                       passwordsSecretRef:
                         description: Set of passwords used for authentication if type is set to password. You can create up to two passwords for each user.
@@ -442,7 +442,7 @@ spec:
                           type: object
                         type: array
                       type:
-                        description: 'Specifies the authentication type. Valid values are: password or iam.'
+                        description: Type of authentication. Valid values are password or iam.
                         type: string
                     type: object
                   region:
@@ -476,14 +476,14 @@ spec:
                     description: Access permissions string used for this user.
                     type: string
                   authenticationMode:
-                    description: Denotes the user's authentication properties. Detailed below.
+                    description: Authentication properties for the user. Detailed below.
                     properties:
                       passwordsSecretRef:
                         items:
                           type: string
                         type: array
                       type:
-                        description: 'Specifies the authentication type. Valid values are: password or iam.'
+                        description: Type of authentication. Valid values are password or iam.
                         type: string
                     type: object
                   tags:
@@ -596,13 +596,13 @@ spec:
                     description: ARN of the user.
                     type: string
                   authenticationMode:
-                    description: Denotes the user's authentication properties. Detailed below.
+                    description: Authentication properties for the user. Detailed below.
                     properties:
                       passwordCount:
                         description: Number of passwords belonging to the user if type is set to password.
                         type: number
                       type:
-                        description: 'Specifies the authentication type. Valid values are: password or iam.'
+                        description: Type of authentication. Valid values are password or iam.
                         type: string
                     type: object
                   id:
@@ -625,7 +625,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

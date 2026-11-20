@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
-/// <summary>Prompt is the Schema for the Prompts API.</summary>
+/// <summary>Prompt is the Schema for the Prompts API. Manages an AWS Bedrock Agents Prompt.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -192,7 +192,7 @@ public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelecto
     public V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+/// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantGenAiResourceAgent
@@ -202,17 +202,17 @@ public partial class V1beta1PromptSpecForProviderVariantGenAiResourceAgent
     public string? AgentIdentifier { get; set; }
 }
 
-/// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+/// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantGenAiResource
 {
-    /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+    /// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
     [JsonPropertyName("agent")]
     public V1beta1PromptSpecForProviderVariantGenAiResourceAgent? Agent { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantInferenceConfigurationText
@@ -234,12 +234,12 @@ public partial class V1beta1PromptSpecForProviderVariantInferenceConfigurationTe
     public double? TopP { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantInferenceConfiguration
 {
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptSpecForProviderVariantInferenceConfigurationText? Text { get; set; }
 }
@@ -261,17 +261,17 @@ public partial class V1beta1PromptSpecForProviderVariantMetadata
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -280,11 +280,11 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContent
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -293,21 +293,21 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See [Message Content] for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See content Block for more information.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -316,49 +316,49 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystem
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>Description of the prompt.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -367,99 +367,99 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+/// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
     [JsonPropertyName("any")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+    /// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
     [JsonPropertyName("auto")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>List of messages in the chat for the prompt. See message Block for more information.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>List of system prompts to provide context to the model or to describe how it should behave. See system Block for more information.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTextCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -468,39 +468,39 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTex
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTextInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationText
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptSpecForProviderVariantTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+/// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
     [JsonPropertyName("chat")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationText? Text { get; set; }
 }
@@ -509,19 +509,19 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariant
 {
-    /// <summary>Contains model-specific inference configurations that aren’t in the inferenceConfiguration field. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
+    /// <summary>Model-specific inference configurations that aren’t in the inference_configuration block. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+    /// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
     [JsonPropertyName("genAiResource")]
     public V1beta1PromptSpecForProviderVariantGenAiResource? GenAiResource { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1PromptSpecForProviderVariantInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>A list of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See Metadata for more information.</summary>
+    /// <summary>List of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See metadata Block for more information.</summary>
     [JsonPropertyName("metadata")]
     public IList<V1beta1PromptSpecForProviderVariantMetadata>? Metadata { get; set; }
 
@@ -529,11 +529,11 @@ public partial class V1beta1PromptSpecForProviderVariant
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+    /// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1PromptSpecForProviderVariantTemplateConfiguration? TemplateConfiguration { get; set; }
 
@@ -581,7 +581,7 @@ public partial class V1beta1PromptSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A list of objects, each containing details about a variant of the prompt. See Variant for more information.</summary>
+    /// <summary>List of objects, each containing details about a variant of the prompt. See variant Block for more information.</summary>
     [JsonPropertyName("variant")]
     public IList<V1beta1PromptSpecForProviderVariant>? Variant { get; set; }
 }
@@ -741,7 +741,7 @@ public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelect
     public V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+/// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantGenAiResourceAgent
@@ -751,17 +751,17 @@ public partial class V1beta1PromptSpecInitProviderVariantGenAiResourceAgent
     public string? AgentIdentifier { get; set; }
 }
 
-/// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+/// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantGenAiResource
 {
-    /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+    /// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
     [JsonPropertyName("agent")]
     public V1beta1PromptSpecInitProviderVariantGenAiResourceAgent? Agent { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantInferenceConfigurationText
@@ -783,12 +783,12 @@ public partial class V1beta1PromptSpecInitProviderVariantInferenceConfigurationT
     public double? TopP { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantInferenceConfiguration
 {
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptSpecInitProviderVariantInferenceConfigurationText? Text { get; set; }
 }
@@ -810,17 +810,17 @@ public partial class V1beta1PromptSpecInitProviderVariantMetadata
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -829,11 +829,11 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContent
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -842,21 +842,21 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See [Message Content] for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See content Block for more information.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -865,49 +865,49 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystem
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>Description of the prompt.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -916,99 +916,99 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+/// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
     [JsonPropertyName("any")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+    /// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
     [JsonPropertyName("auto")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>List of messages in the chat for the prompt. See message Block for more information.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>List of system prompts to provide context to the model or to describe how it should behave. See system Block for more information.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1017,39 +1017,39 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationText
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+/// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
     [JsonPropertyName("chat")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationText? Text { get; set; }
 }
@@ -1058,19 +1058,19 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariant
 {
-    /// <summary>Contains model-specific inference configurations that aren’t in the inferenceConfiguration field. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
+    /// <summary>Model-specific inference configurations that aren’t in the inference_configuration block. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+    /// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
     [JsonPropertyName("genAiResource")]
     public V1beta1PromptSpecInitProviderVariantGenAiResource? GenAiResource { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1PromptSpecInitProviderVariantInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>A list of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See Metadata for more information.</summary>
+    /// <summary>List of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See metadata Block for more information.</summary>
     [JsonPropertyName("metadata")]
     public IList<V1beta1PromptSpecInitProviderVariantMetadata>? Metadata { get; set; }
 
@@ -1078,11 +1078,11 @@ public partial class V1beta1PromptSpecInitProviderVariant
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+    /// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1PromptSpecInitProviderVariantTemplateConfiguration? TemplateConfiguration { get; set; }
 
@@ -1135,7 +1135,7 @@ public partial class V1beta1PromptSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A list of objects, each containing details about a variant of the prompt. See Variant for more information.</summary>
+    /// <summary>List of objects, each containing details about a variant of the prompt. See variant Block for more information.</summary>
     [JsonPropertyName("variant")]
     public IList<V1beta1PromptSpecInitProviderVariant>? Variant { get; set; }
 }
@@ -1247,7 +1247,7 @@ public partial class V1beta1PromptSpec
     public V1beta1PromptSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+/// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantGenAiResourceAgent
@@ -1257,17 +1257,17 @@ public partial class V1beta1PromptStatusAtProviderVariantGenAiResourceAgent
     public string? AgentIdentifier { get; set; }
 }
 
-/// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+/// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantGenAiResource
 {
-    /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
+    /// <summary>Amazon Bedrock agent with which to use the prompt. See agent Block for more information.</summary>
     [JsonPropertyName("agent")]
     public V1beta1PromptStatusAtProviderVariantGenAiResourceAgent? Agent { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantInferenceConfigurationText
@@ -1289,12 +1289,12 @@ public partial class V1beta1PromptStatusAtProviderVariantInferenceConfigurationT
     public double? TopP { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantInferenceConfiguration
 {
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptStatusAtProviderVariantInferenceConfigurationText? Text { get; set; }
 }
@@ -1316,17 +1316,17 @@ public partial class V1beta1PromptStatusAtProviderVariantMetadata
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1335,11 +1335,11 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContent
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContentCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -1348,21 +1348,21 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessage
 {
-    /// <summary>Contains the content for the message you pass to, or receive from a model. See [Message Content] for more information.</summary>
+    /// <summary>Content for the message you pass to, or receive from, a model. See content Block for more information.</summary>
     [JsonPropertyName("content")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContent>? Content { get; set; }
 
-    /// <summary>The role that the message belongs to.</summary>
+    /// <summary>Role that the message belongs to.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystemCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1371,49 +1371,49 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystem
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystemCachePoint? CachePoint { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+/// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
-    /// <summary>A JSON object defining the input schema for the tool.</summary>
+    /// <summary>JSON object defining the input schema for the tool.</summary>
     [JsonPropertyName("json")]
     public string? Json { get; set; }
 }
 
-/// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+/// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
-    /// <summary>Description of the prompt.</summary>
+    /// <summary>Description of the tool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
+    /// <summary>Input schema of the tool. See input_schema Block for more information.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema? InputSchema { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1422,99 +1422,99 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint? CachePoint { get; set; }
 
-    /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
+    /// <summary>Specification for the tool. See tool_spec Block for more information.</summary>
     [JsonPropertyName("toolSpec")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec? ToolSpec { get; set; }
 }
 
-/// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+/// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
-/// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+/// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
-/// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+/// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+/// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
-    /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
+    /// <summary>Tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
     [JsonPropertyName("any")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny? Any { get; set; }
 
-    /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
+    /// <summary>Tools from which the model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
     [JsonPropertyName("auto")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto? Auto { get; set; }
 
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool? Tool { get; set; }
 }
 
-/// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+/// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfiguration
 {
-    /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
+    /// <summary>Specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See variant.template_configuration.chat.tool_configuration.tool_choice.tool Block for more information.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationTool>? Tool { get; set; }
 
-    /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
+    /// <summary>Configuration for which tools the model should request when invoked. See tool_choice Block for more information.</summary>
     [JsonPropertyName("toolChoice")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoice? ToolChoice { get; set; }
 }
 
-/// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+/// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChat
 {
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatInputVariable>? InputVariable { get; set; }
 
-    /// <summary>A list of messages in the chat for the prompt. See Message for more information.</summary>
+    /// <summary>List of messages in the chat for the prompt. See message Block for more information.</summary>
     [JsonPropertyName("message")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessage>? Message { get; set; }
 
-    /// <summary>A list of system prompts to provide context to the model or to describe how it should behave. See System for more information.</summary>
+    /// <summary>List of system prompts to provide context to the model or to describe how it should behave. See system Block for more information.</summary>
     [JsonPropertyName("system")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystem>? System { get; set; }
 
-    /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
+    /// <summary>Configuration information for the tools that the model can use when generating a response. See tool_configuration Block for more information.</summary>
     [JsonPropertyName("toolConfiguration")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfiguration? ToolConfiguration { get; set; }
 }
 
-/// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+/// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextCachePoint
 {
-    /// <summary>Indicates that the CachePointBlock is of the default type. Valid values: default.</summary>
+    /// <summary>Cache point type. Valid values: default.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1523,39 +1523,39 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextInputVariable
 {
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+/// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationText
 {
-    /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
+    /// <summary>Cache checkpoint within a message. See cache_point Block for more information.</summary>
     [JsonPropertyName("cachePoint")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextCachePoint? CachePoint { get; set; }
 
-    /// <summary>A list of variables in the prompt template. See Input Variable for more information.</summary>
+    /// <summary>List of variables in the prompt template. See input_variable Block for more information.</summary>
     [JsonPropertyName("inputVariable")]
     public IList<V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextInputVariable>? InputVariable { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+/// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfiguration
 {
-    /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
+    /// <summary>Configurations to use the prompt in a conversational format. See chat Block for more information.</summary>
     [JsonPropertyName("chat")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationChat? Chat { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See variant.inference_configuration.text Block for more information.</summary>
     [JsonPropertyName("text")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationText? Text { get; set; }
 }
@@ -1564,19 +1564,19 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariant
 {
-    /// <summary>Contains model-specific inference configurations that aren’t in the inferenceConfiguration field. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
+    /// <summary>Model-specific inference configurations that aren’t in the inference_configuration block. To see model-specific inference parameters, see Inference request parameters and response fields for foundation models.</summary>
     [JsonPropertyName("additionalModelRequestFields")]
     public string? AdditionalModelRequestFields { get; set; }
 
-    /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
+    /// <summary>Generative AI resource with which to use the prompt. If this is not supplied, then a model_id must be defined. See gen_ai_resource Block for more information.</summary>
     [JsonPropertyName("genAiResource")]
     public V1beta1PromptStatusAtProviderVariantGenAiResource? GenAiResource { get; set; }
 
-    /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
+    /// <summary>Inference configurations for the prompt variant. See inference_configuration Block for more information.</summary>
     [JsonPropertyName("inferenceConfiguration")]
     public V1beta1PromptStatusAtProviderVariantInferenceConfiguration? InferenceConfiguration { get; set; }
 
-    /// <summary>A list of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See Metadata for more information.</summary>
+    /// <summary>List of objects, each containing a key-value pair that defines a metadata tag and value to attach to a prompt variant. See metadata Block for more information.</summary>
     [JsonPropertyName("metadata")]
     public IList<V1beta1PromptStatusAtProviderVariantMetadata>? Metadata { get; set; }
 
@@ -1584,11 +1584,11 @@ public partial class V1beta1PromptStatusAtProviderVariant
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 
-    /// <summary>Name of the prompt.</summary>
+    /// <summary>Name of the prompt variant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
+    /// <summary>Configurations for the prompt template. See template_configuration Block for more information.</summary>
     [JsonPropertyName("templateConfiguration")]
     public V1beta1PromptStatusAtProviderVariantTemplateConfiguration? TemplateConfiguration { get; set; }
 
@@ -1640,7 +1640,7 @@ public partial class V1beta1PromptStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -1648,7 +1648,7 @@ public partial class V1beta1PromptStatusAtProvider
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
-    /// <summary>A list of objects, each containing details about a variant of the prompt. See Variant for more information.</summary>
+    /// <summary>List of objects, each containing details about a variant of the prompt. See variant Block for more information.</summary>
     [JsonPropertyName("variant")]
     public IList<V1beta1PromptStatusAtProviderVariant>? Variant { get; set; }
 
@@ -1730,7 +1730,7 @@ public partial class V1beta1PromptStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Prompt is the Schema for the Prompts API.</summary>
+/// <summary>Prompt is the Schema for the Prompts API. Manages an AWS Bedrock Agents Prompt.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

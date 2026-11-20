@@ -518,7 +518,7 @@ public partial class V1beta1MethodSpecForProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
+    /// <summary>Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
     [JsonPropertyName("authorizerId")]
     public string? AuthorizerId { get; set; }
 
@@ -1075,7 +1075,7 @@ public partial class V1beta1MethodSpecInitProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
+    /// <summary>Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
     [JsonPropertyName("authorizerId")]
     public string? AuthorizerId { get; set; }
 
@@ -1255,7 +1255,7 @@ public partial class V1beta1MethodStatusAtProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
+    /// <summary>Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS</summary>
     [JsonPropertyName("authorizerId")]
     public string? AuthorizerId { get; set; }
 

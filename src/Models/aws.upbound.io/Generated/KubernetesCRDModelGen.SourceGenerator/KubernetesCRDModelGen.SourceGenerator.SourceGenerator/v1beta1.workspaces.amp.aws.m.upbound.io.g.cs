@@ -192,12 +192,12 @@ public partial class V1beta1WorkspaceSpecForProviderKmsKeyArnSelector
     public V1beta1WorkspaceSpecForProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+/// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecForProviderLoggingConfiguration
 {
-    /// <summary>The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
+    /// <summary>ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
@@ -206,11 +206,11 @@ public partial class V1beta1WorkspaceSpecForProviderLoggingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecForProvider
 {
-    /// <summary>The alias of the prometheus workspace. See more in AWS Docs.</summary>
+    /// <summary>Alias of the prometheus workspace. See more in AWS Docs.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>The ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
+    /// <summary>ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -222,7 +222,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("kmsKeyArnSelector")]
     public V1beta1WorkspaceSpecForProviderKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
-    /// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+    /// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1WorkspaceSpecForProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
@@ -393,12 +393,12 @@ public partial class V1beta1WorkspaceSpecInitProviderKmsKeyArnSelector
     public V1beta1WorkspaceSpecInitProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+/// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecInitProviderLoggingConfiguration
 {
-    /// <summary>The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
+    /// <summary>ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
@@ -419,11 +419,11 @@ public partial class V1beta1WorkspaceSpecInitProviderLoggingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecInitProvider
 {
-    /// <summary>The alias of the prometheus workspace. See more in AWS Docs.</summary>
+    /// <summary>Alias of the prometheus workspace. See more in AWS Docs.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>The ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
+    /// <summary>ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -435,7 +435,7 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("kmsKeyArnSelector")]
     public V1beta1WorkspaceSpecInitProviderKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
-    /// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+    /// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1WorkspaceSpecInitProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
@@ -551,12 +551,12 @@ public partial class V1beta1WorkspaceSpec
     public V1beta1WorkspaceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+/// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceStatusAtProviderLoggingConfiguration
 {
-    /// <summary>The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
+    /// <summary>ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
@@ -565,7 +565,7 @@ public partial class V1beta1WorkspaceStatusAtProviderLoggingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceStatusAtProvider
 {
-    /// <summary>The alias of the prometheus workspace. See more in AWS Docs.</summary>
+    /// <summary>Alias of the prometheus workspace. See more in AWS Docs.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
@@ -577,11 +577,11 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
+    /// <summary>ARN for the KMS encryption key. If this argument is not provided, then the AWS owned encryption key will be used to encrypt the data in the workspace. See more in AWS Docs</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>Logging configuration for the workspace. See Logging Configuration below for details.</summary>
+    /// <summary>Logging configuration for the workspace. See logging_configuration Block below for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1WorkspaceStatusAtProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
@@ -600,7 +600,7 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

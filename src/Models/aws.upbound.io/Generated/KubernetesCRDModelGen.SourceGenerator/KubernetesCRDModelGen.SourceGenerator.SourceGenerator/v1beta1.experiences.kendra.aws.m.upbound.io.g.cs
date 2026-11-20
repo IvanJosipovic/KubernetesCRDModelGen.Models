@@ -37,12 +37,12 @@ public partial class V1beta1ExperienceList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1Experience> Items { get; set; }
 }
 
-/// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+/// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecForProviderConfigurationContentSourceConfiguration
 {
-    /// <summary>The identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("dataSourceIds")]
     public IList<string>? DataSourceIds { get; set; }
 
@@ -50,17 +50,17 @@ public partial class V1beta1ExperienceSpecForProviderConfigurationContentSourceC
     [JsonPropertyName("directPutContent")]
     public bool? DirectPutContent { get; set; }
 
-    /// <summary>The identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("faqIds")]
     public IList<string>? FaqIds { get; set; }
 }
 
-/// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+/// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecForProviderConfigurationUserIdentityConfiguration
 {
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
     [JsonPropertyName("identityAttributeName")]
     public string? IdentityAttributeName { get; set; }
 }
@@ -70,11 +70,11 @@ public partial class V1beta1ExperienceSpecForProviderConfigurationUserIdentityCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecForProviderConfiguration
 {
-    /// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+    /// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
     [JsonPropertyName("contentSourceConfiguration")]
     public V1beta1ExperienceSpecForProviderConfigurationContentSourceConfiguration? ContentSourceConfiguration { get; set; }
 
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
     [JsonPropertyName("userIdentityConfiguration")]
     public V1beta1ExperienceSpecForProviderConfigurationUserIdentityConfiguration? UserIdentityConfiguration { get; set; }
 }
@@ -397,11 +397,11 @@ public partial class V1beta1ExperienceSpecForProvider
     [JsonPropertyName("configuration")]
     public V1beta1ExperienceSpecForProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>A description for your Amazon Kendra experience.</summary>
+    /// <summary>Description for your Amazon Kendra experience.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra experience.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra experience.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -413,7 +413,7 @@ public partial class V1beta1ExperienceSpecForProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1ExperienceSpecForProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>A name for your Amazon Kendra experience.</summary>
+    /// <summary>Name for your Amazon Kendra experience.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -437,12 +437,12 @@ public partial class V1beta1ExperienceSpecForProvider
     public V1beta1ExperienceSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+/// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecInitProviderConfigurationContentSourceConfiguration
 {
-    /// <summary>The identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("dataSourceIds")]
     public IList<string>? DataSourceIds { get; set; }
 
@@ -450,17 +450,17 @@ public partial class V1beta1ExperienceSpecInitProviderConfigurationContentSource
     [JsonPropertyName("directPutContent")]
     public bool? DirectPutContent { get; set; }
 
-    /// <summary>The identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("faqIds")]
     public IList<string>? FaqIds { get; set; }
 }
 
-/// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+/// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecInitProviderConfigurationUserIdentityConfiguration
 {
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
     [JsonPropertyName("identityAttributeName")]
     public string? IdentityAttributeName { get; set; }
 }
@@ -470,11 +470,11 @@ public partial class V1beta1ExperienceSpecInitProviderConfigurationUserIdentityC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceSpecInitProviderConfiguration
 {
-    /// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+    /// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
     [JsonPropertyName("contentSourceConfiguration")]
     public V1beta1ExperienceSpecInitProviderConfigurationContentSourceConfiguration? ContentSourceConfiguration { get; set; }
 
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
     [JsonPropertyName("userIdentityConfiguration")]
     public V1beta1ExperienceSpecInitProviderConfigurationUserIdentityConfiguration? UserIdentityConfiguration { get; set; }
 }
@@ -809,11 +809,11 @@ public partial class V1beta1ExperienceSpecInitProvider
     [JsonPropertyName("configuration")]
     public V1beta1ExperienceSpecInitProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>A description for your Amazon Kendra experience.</summary>
+    /// <summary>Description for your Amazon Kendra experience.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra experience.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra experience.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -825,7 +825,7 @@ public partial class V1beta1ExperienceSpecInitProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1ExperienceSpecInitProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>A name for your Amazon Kendra experience.</summary>
+    /// <summary>Name for your Amazon Kendra experience.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -949,12 +949,12 @@ public partial class V1beta1ExperienceSpec
     public V1beta1ExperienceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+/// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceStatusAtProviderConfigurationContentSourceConfiguration
 {
-    /// <summary>The identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifiers of the data sources you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("dataSourceIds")]
     public IList<string>? DataSourceIds { get; set; }
 
@@ -962,17 +962,17 @@ public partial class V1beta1ExperienceStatusAtProviderConfigurationContentSource
     [JsonPropertyName("directPutContent")]
     public bool? DirectPutContent { get; set; }
 
-    /// <summary>The identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
+    /// <summary>Identifier of the FAQs that you want to use for your Amazon Kendra experience. Maximum number of 100 items.</summary>
     [JsonPropertyName("faqIds")]
     public IList<string>? FaqIds { get; set; }
 }
 
-/// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+/// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceStatusAtProviderConfigurationUserIdentityConfiguration
 {
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails.</summary>
     [JsonPropertyName("identityAttributeName")]
     public string? IdentityAttributeName { get; set; }
 }
@@ -982,11 +982,11 @@ public partial class V1beta1ExperienceStatusAtProviderConfigurationUserIdentityC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceStatusAtProviderConfiguration
 {
-    /// <summary>The identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
+    /// <summary>Identifiers of your data sources and FAQs. Or, you can specify that you want to use documents indexed via the BatchPutDocument API. Detailed below.</summary>
     [JsonPropertyName("contentSourceConfiguration")]
     public V1beta1ExperienceStatusAtProviderConfigurationContentSourceConfiguration? ContentSourceConfiguration { get; set; }
 
-    /// <summary>The AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
+    /// <summary>AWS SSO field name that contains the identifiers of your users, such as their emails. Detailed below.</summary>
     [JsonPropertyName("userIdentityConfiguration")]
     public V1beta1ExperienceStatusAtProviderConfigurationUserIdentityConfiguration? UserIdentityConfiguration { get; set; }
 }
@@ -995,11 +995,11 @@ public partial class V1beta1ExperienceStatusAtProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperienceStatusAtProviderEndpoints
 {
-    /// <summary>The endpoint of your Amazon Kendra experience.</summary>
+    /// <summary>Endpoint of your Amazon Kendra experience.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>The type of endpoint for your Amazon Kendra experience.</summary>
+    /// <summary>Type of endpoint for your Amazon Kendra experience.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 }
@@ -1016,7 +1016,7 @@ public partial class V1beta1ExperienceStatusAtProvider
     [JsonPropertyName("configuration")]
     public V1beta1ExperienceStatusAtProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>A description for your Amazon Kendra experience.</summary>
+    /// <summary>Description for your Amazon Kendra experience.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1024,19 +1024,19 @@ public partial class V1beta1ExperienceStatusAtProvider
     [JsonPropertyName("endpoints")]
     public IList<V1beta1ExperienceStatusAtProviderEndpoints>? Endpoints { get; set; }
 
-    /// <summary>The unique identifier of the experience.</summary>
+    /// <summary>Unique identifier of the experience.</summary>
     [JsonPropertyName("experienceId")]
     public string? ExperienceId { get; set; }
 
-    /// <summary>The unique identifiers of the experience and index separated by a slash (/).</summary>
+    /// <summary>Unique identifiers of the experience and index separated by a slash (/).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier of the index for your Amazon Kendra experience.</summary>
+    /// <summary>Identifier of the index for your Amazon Kendra experience.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
-    /// <summary>A name for your Amazon Kendra experience.</summary>
+    /// <summary>Name for your Amazon Kendra experience.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1051,7 +1051,7 @@ public partial class V1beta1ExperienceStatusAtProvider
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The current processing status of your Amazon Kendra experience.</summary>
+    /// <summary>Current processing status of your Amazon Kendra experience.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }

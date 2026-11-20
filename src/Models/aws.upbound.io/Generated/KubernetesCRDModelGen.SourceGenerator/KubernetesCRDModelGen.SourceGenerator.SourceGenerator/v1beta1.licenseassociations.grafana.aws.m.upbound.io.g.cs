@@ -196,11 +196,11 @@ public partial class V1beta1LicenseAssociationSpecForProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LicenseAssociationSpecForProvider
 {
-    /// <summary>A token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
+    /// <summary>Token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
     [JsonPropertyName("grafanaToken")]
     public string? GrafanaToken { get; set; }
 
-    /// <summary>The type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
+    /// <summary>Type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
@@ -211,7 +211,7 @@ public partial class V1beta1LicenseAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -395,15 +395,15 @@ public partial class V1beta1LicenseAssociationSpecInitProviderWorkspaceIdSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LicenseAssociationSpecInitProvider
 {
-    /// <summary>A token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
+    /// <summary>Token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
     [JsonPropertyName("grafanaToken")]
     public string? GrafanaToken { get; set; }
 
-    /// <summary>The type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
+    /// <summary>Type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -531,7 +531,7 @@ public partial class V1beta1LicenseAssociationStatusAtProvider
     [JsonPropertyName("freeTrialExpiration")]
     public string? FreeTrialExpiration { get; set; }
 
-    /// <summary>A token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
+    /// <summary>Token from Grafana Labs that ties your AWS account with a Grafana Labs account.</summary>
     [JsonPropertyName("grafanaToken")]
     public string? GrafanaToken { get; set; }
 
@@ -542,7 +542,7 @@ public partial class V1beta1LicenseAssociationStatusAtProvider
     [JsonPropertyName("licenseExpiration")]
     public string? LicenseExpiration { get; set; }
 
-    /// <summary>The type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
+    /// <summary>Type of license for the workspace license association. Valid values are ENTERPRISE and ENTERPRISE_FREE_TRIAL.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
@@ -553,7 +553,7 @@ public partial class V1beta1LicenseAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

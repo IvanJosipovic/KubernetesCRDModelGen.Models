@@ -444,7 +444,7 @@ public partial class V1beta2WorkforceSpecForProviderOidcConfig
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkforceSpecForProviderSourceIpConfig
@@ -491,7 +491,7 @@ public partial class V1beta2WorkforceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
     [JsonPropertyName("sourceIpConfig")]
     public V1beta2WorkforceSpecForProviderSourceIpConfig? SourceIpConfig { get; set; }
 
@@ -888,7 +888,7 @@ public partial class V1beta2WorkforceSpecInitProviderOidcConfig
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkforceSpecInitProviderSourceIpConfig
@@ -940,7 +940,7 @@ public partial class V1beta2WorkforceSpecInitProvider
     [JsonPropertyName("oidcConfig")]
     public V1beta2WorkforceSpecInitProviderOidcConfig? OidcConfig { get; set; }
 
-    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
     [JsonPropertyName("sourceIpConfig")]
     public V1beta2WorkforceSpecInitProviderSourceIpConfig? SourceIpConfig { get; set; }
 
@@ -1188,7 +1188,7 @@ public partial class V1beta2WorkforceStatusAtProviderOidcConfig
     public string? UserInfoEndpoint { get; set; }
 }
 
-/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+/// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkforceStatusAtProviderSourceIpConfig
@@ -1247,7 +1247,7 @@ public partial class V1beta2WorkforceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source Ip Config details below.</summary>
+    /// <summary>A list of IP address ranges Used to create an allow list of IP addresses for a private workforce. By default, a workforce isn&apos;t restricted to specific IP addresses. see Source IP Config details below.</summary>
     [JsonPropertyName("sourceIpConfig")]
     public V1beta2WorkforceStatusAtProviderSourceIpConfig? SourceIpConfig { get; set; }
 

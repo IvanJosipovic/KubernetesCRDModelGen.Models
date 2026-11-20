@@ -783,19 +783,19 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpoints
 {
-    /// <summary>Endpoint for accessing data on your storage virtual machine via iSCSI protocol. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via iSCSI protocol. See endpoints.iscsi below.</summary>
     [JsonPropertyName("iscsi")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsIscsi>? Iscsi { get; set; }
 
-    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See endpoints.management below.</summary>
     [JsonPropertyName("management")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsManagement>? Management { get; set; }
 
-    /// <summary>Endpoint for accessing data on your storage virtual machine via NFS protocol. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via NFS protocol. See endpoints.nfs below.</summary>
     [JsonPropertyName("nfs")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsNfs>? Nfs { get; set; }
 
-    /// <summary>Endpoint for accessing data on your storage virtual machine via SMB protocol. This is only set if an active_directory_configuration has been set. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via SMB protocol. This is only set if an active_directory_configuration has been set. See endpoints.smb below.</summary>
     [JsonPropertyName("smb")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsSmb>? Smb { get; set; }
 }

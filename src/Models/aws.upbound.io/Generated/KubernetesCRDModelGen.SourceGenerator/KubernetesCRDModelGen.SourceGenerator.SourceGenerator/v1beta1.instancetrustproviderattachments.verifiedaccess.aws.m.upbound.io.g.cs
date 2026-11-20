@@ -358,7 +358,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the Verified Access instance to attach the Trust Provider to.</summary>
+    /// <summary>ID of the Verified Access instance to attach the Trust Provider to.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProvider
     [JsonPropertyName("verifiedaccessInstanceIdSelector")]
     public V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelector? VerifiedaccessInstanceIdSelector { get; set; }
 
-    /// <summary>The ID of the Verified Access trust provider.</summary>
+    /// <summary>ID of the Verified Access trust provider.</summary>
     [JsonPropertyName("verifiedaccessTrustProviderId")]
     public string? VerifiedaccessTrustProviderId { get; set; }
 
@@ -709,7 +709,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProvider
 {
-    /// <summary>The ID of the Verified Access instance to attach the Trust Provider to.</summary>
+    /// <summary>ID of the Verified Access instance to attach the Trust Provider to.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -721,7 +721,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProvider
     [JsonPropertyName("verifiedaccessInstanceIdSelector")]
     public V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelector? VerifiedaccessInstanceIdSelector { get; set; }
 
-    /// <summary>The ID of the Verified Access trust provider.</summary>
+    /// <summary>ID of the Verified Access trust provider.</summary>
     [JsonPropertyName("verifiedaccessTrustProviderId")]
     public string? VerifiedaccessTrustProviderId { get; set; }
 
@@ -845,7 +845,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentStatusAtProvider
 {
-    /// <summary>A combination of attributes, separated by a / to create a unique id: verifiedaccess_instance_id,verifiedaccess_trust_provider_id</summary>
+    /// <summary>Combination of attributes, separated by a / to create a unique ID: verifiedaccess_instance_id,verifiedaccess_trust_provider_id</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -856,11 +856,11 @@ public partial class V1beta1InstanceTrustProviderAttachmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the Verified Access instance to attach the Trust Provider to.</summary>
+    /// <summary>ID of the Verified Access instance to attach the Trust Provider to.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
-    /// <summary>The ID of the Verified Access trust provider.</summary>
+    /// <summary>ID of the Verified Access trust provider.</summary>
     [JsonPropertyName("verifiedaccessTrustProviderId")]
     public string? VerifiedaccessTrustProviderId { get; set; }
 }

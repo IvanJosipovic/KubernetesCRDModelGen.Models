@@ -541,7 +541,7 @@ public partial class V1beta1FleetSpecForProviderLaunchTemplateConfigOverrideInst
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -557,7 +557,7 @@ public partial class V1beta1FleetSpecForProviderLaunchTemplateConfigOverrideInst
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -1396,7 +1396,7 @@ public partial class V1beta1FleetSpecInitProviderLaunchTemplateConfigOverrideIns
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -1412,7 +1412,7 @@ public partial class V1beta1FleetSpecInitProviderLaunchTemplateConfigOverrideIns
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -2037,7 +2037,7 @@ public partial class V1beta1FleetStatusAtProviderLaunchTemplateConfigOverrideIns
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -2053,7 +2053,7 @@ public partial class V1beta1FleetStatusAtProviderLaunchTemplateConfigOverrideIns
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 

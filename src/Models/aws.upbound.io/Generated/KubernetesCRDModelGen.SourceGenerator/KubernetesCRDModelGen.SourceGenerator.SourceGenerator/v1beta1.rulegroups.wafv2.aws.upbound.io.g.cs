@@ -60,33 +60,88 @@ public enum V1beta1RuleGroupSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecForProviderCustomResponseBody
 {
-    /// <summary>The payload of the custom response.</summary>
+    /// <summary>Payload of the custom response.</summary>
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>The type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
+    /// <summary>Type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
+    /// <summary>Unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecForProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1RuleGroupSpecForProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecForProviderVisibilityConfig
 {
-    /// <summary>A boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
+    /// <summary>Boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>A boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
+    /// <summary>Boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
     [JsonPropertyName("sampledRequestsEnabled")]
     public bool? SampledRequestsEnabled { get; set; }
 }
@@ -95,19 +150,23 @@ public partial class V1beta1RuleGroupSpecForProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecForProvider
 {
-    /// <summary>The web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
+    /// <summary>Web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1RuleGroupSpecForProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>A friendly description of the rule group.</summary>
+    /// <summary>Friendly description of the rule group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A friendly name of the rule group.</summary>
+    /// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1RuleGroupSpecForProviderMonetizationConfig? MonetizationConfig { get; set; }
+
+    /// <summary>Friendly name of the rule group.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -122,7 +181,7 @@ public partial class V1beta1RuleGroupSpecForProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the rule group, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -130,7 +189,7 @@ public partial class V1beta1RuleGroupSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1RuleGroupSpecForProviderVisibilityConfig? VisibilityConfig { get; set; }
 }
@@ -139,33 +198,88 @@ public partial class V1beta1RuleGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecInitProviderCustomResponseBody
 {
-    /// <summary>The payload of the custom response.</summary>
+    /// <summary>Payload of the custom response.</summary>
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>The type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
+    /// <summary>Type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
+    /// <summary>Unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupSpecInitProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1RuleGroupSpecInitProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecInitProviderVisibilityConfig
 {
-    /// <summary>A boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
+    /// <summary>Boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>A boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
+    /// <summary>Boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
     [JsonPropertyName("sampledRequestsEnabled")]
     public bool? SampledRequestsEnabled { get; set; }
 }
@@ -186,19 +300,23 @@ public partial class V1beta1RuleGroupSpecInitProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupSpecInitProvider
 {
-    /// <summary>The web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
+    /// <summary>Web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1RuleGroupSpecInitProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>A friendly description of the rule group.</summary>
+    /// <summary>Friendly description of the rule group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A friendly name of the rule group.</summary>
+    /// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1RuleGroupSpecInitProviderMonetizationConfig? MonetizationConfig { get; set; }
+
+    /// <summary>Friendly name of the rule group.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -206,7 +324,7 @@ public partial class V1beta1RuleGroupSpecInitProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the rule group, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -214,7 +332,7 @@ public partial class V1beta1RuleGroupSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1RuleGroupSpecInitProviderVisibilityConfig? VisibilityConfig { get; set; }
 }
@@ -406,33 +524,88 @@ public partial class V1beta1RuleGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupStatusAtProviderCustomResponseBody
 {
-    /// <summary>The payload of the custom response.</summary>
+    /// <summary>Payload of the custom response.</summary>
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>The type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
+    /// <summary>Type of content in the payload that you are defining in the content argument. Valid values are TEXT_PLAIN, TEXT_HTML, or APPLICATION_JSON.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
-    /// <summary>A unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
+    /// <summary>Unique key identifying the custom response body. This is referenced by the custom_response_body_key argument in the Custom Response block.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RuleGroupStatusAtProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the rule group. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1RuleGroupStatusAtProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupStatusAtProviderVisibilityConfig
 {
-    /// <summary>A boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
+    /// <summary>Boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.</summary>
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>A boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
+    /// <summary>Boolean indicating whether AWS WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the AWS WAF console.</summary>
     [JsonPropertyName("sampledRequestsEnabled")]
     public bool? SampledRequestsEnabled { get; set; }
 }
@@ -441,30 +614,34 @@ public partial class V1beta1RuleGroupStatusAtProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupStatusAtProvider
 {
-    /// <summary>The ARN of the WAF rule group.</summary>
+    /// <summary>ARN of the WAF rule group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
+    /// <summary>Web ACL capacity units (WCUs) required for this rule group. See here for general information and here for capacity specific information.</summary>
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See Custom Response Body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1RuleGroupStatusAtProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>A friendly description of the rule group.</summary>
+    /// <summary>Friendly description of the rule group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the WAF rule group.</summary>
+    /// <summary>ID of the WAF rule group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     [JsonPropertyName("lockToken")]
     public string? LockToken { get; set; }
 
-    /// <summary>A friendly name of the rule group.</summary>
+    /// <summary>Monetization configuration for the rule group. Required when any rule uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1RuleGroupStatusAtProviderMonetizationConfig? MonetizationConfig { get; set; }
+
+    /// <summary>Friendly name of the rule group.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -479,7 +656,7 @@ public partial class V1beta1RuleGroupStatusAtProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the rule group, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -487,11 +664,11 @@ public partial class V1beta1RuleGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See Visibility Configuration below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1RuleGroupStatusAtProviderVisibilityConfig? VisibilityConfig { get; set; }
 }

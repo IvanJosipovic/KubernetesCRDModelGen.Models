@@ -508,7 +508,7 @@ public partial class V1beta1DeploymentConfigStatusAtProvider
     [JsonPropertyName("computePlatform")]
     public string? ComputePlatform { get; set; }
 
-    /// <summary>The AWS Assigned deployment config id</summary>
+    /// <summary>The AWS Assigned deployment config ID</summary>
     [JsonPropertyName("deploymentConfigId")]
     public string? DeploymentConfigId { get; set; }
 

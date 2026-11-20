@@ -465,7 +465,7 @@ public partial class V1beta1AssociationSpecForProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1AssociationSpecForProviderTargets>? Targets { get; set; }
 
-    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create opration will fail.</summary>
+    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create operation will fail.</summary>
     [JsonPropertyName("waitForSuccessTimeoutSeconds")]
     public double? WaitForSuccessTimeoutSeconds { get; set; }
 }
@@ -903,7 +903,7 @@ public partial class V1beta1AssociationSpecInitProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1AssociationSpecInitProviderTargets>? Targets { get; set; }
 
-    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create opration will fail.</summary>
+    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create operation will fail.</summary>
     [JsonPropertyName("waitForSuccessTimeoutSeconds")]
     public double? WaitForSuccessTimeoutSeconds { get; set; }
 }
@@ -1132,7 +1132,7 @@ public partial class V1beta1AssociationStatusAtProvider
     [JsonPropertyName("targets")]
     public IList<V1beta1AssociationStatusAtProviderTargets>? Targets { get; set; }
 
-    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create opration will fail.</summary>
+    /// <summary>The number of seconds to wait for the association status to be Success. If Success status is not reached within the given time, create operation will fail.</summary>
     [JsonPropertyName("waitForSuccessTimeoutSeconds")]
     public double? WaitForSuccessTimeoutSeconds { get; set; }
 }

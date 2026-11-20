@@ -64,15 +64,15 @@ public partial class V1beta1GroupSpecForProvider
     [JsonPropertyName("awsAccountId")]
     public string? AwsAccountId { get; set; }
 
-    /// <summary>A description for the group.</summary>
+    /// <summary>Description for the group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A name for the group.</summary>
+    /// <summary>Name for the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
-    /// <summary>The namespace. Currently, you should set this to default.</summary>
+    /// <summary>Namespace. Currently, you should set this to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
@@ -104,15 +104,15 @@ public partial class V1beta1GroupSpecInitProvider
     [JsonPropertyName("awsAccountId")]
     public string? AwsAccountId { get; set; }
 
-    /// <summary>A description for the group.</summary>
+    /// <summary>Description for the group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A name for the group.</summary>
+    /// <summary>Name for the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
-    /// <summary>The namespace. Currently, you should set this to default.</summary>
+    /// <summary>Namespace. Currently, you should set this to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -312,18 +312,18 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("awsAccountId")]
     public string? AwsAccountId { get; set; }
 
-    /// <summary>A description for the group.</summary>
+    /// <summary>Description for the group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A name for the group.</summary>
+    /// <summary>Name for the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The namespace. Currently, you should set this to default.</summary>
+    /// <summary>Namespace. Currently, you should set this to default.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 

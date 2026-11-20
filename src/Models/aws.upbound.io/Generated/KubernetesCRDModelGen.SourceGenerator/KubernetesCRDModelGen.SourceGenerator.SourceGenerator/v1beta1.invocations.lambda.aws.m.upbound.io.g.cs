@@ -227,7 +227,7 @@ public partial class V1beta1InvocationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Tenant Id to serve invocations from specified tenant.</summary>
+    /// <summary>Tenant ID to serve invocations from specified tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 
@@ -435,7 +435,7 @@ public partial class V1beta1InvocationSpecInitProvider
     [JsonPropertyName("qualifier")]
     public string? Qualifier { get; set; }
 
-    /// <summary>Tenant Id to serve invocations from specified tenant.</summary>
+    /// <summary>Tenant ID to serve invocations from specified tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 
@@ -589,7 +589,7 @@ public partial class V1beta1InvocationStatusAtProvider
     [JsonPropertyName("result")]
     public string? Result { get; set; }
 
-    /// <summary>Tenant Id to serve invocations from specified tenant.</summary>
+    /// <summary>Tenant ID to serve invocations from specified tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 

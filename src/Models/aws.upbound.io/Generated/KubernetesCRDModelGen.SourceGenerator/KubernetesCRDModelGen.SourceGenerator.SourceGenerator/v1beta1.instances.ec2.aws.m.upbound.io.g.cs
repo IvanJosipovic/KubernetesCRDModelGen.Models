@@ -1349,7 +1349,7 @@ public partial class V1beta1InstanceSpecForProviderVpcSecurityGroupIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProvider
 {
-    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifes an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
+    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifies an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
     [JsonPropertyName("ami")]
     public string? Ami { get; set; }
 
@@ -1469,15 +1469,15 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("networkInterface")]
     public IList<V1beta1InstanceSpecForProviderNetworkInterface>? NetworkInterface { get; set; }
 
-    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id.</summary>
+    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
-    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group.</summary>
+    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroupId")]
     public string? PlacementGroupId { get; set; }
 
-    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;.</summary>
+    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementPartitionNumber")]
     public double? PlacementPartitionNumber { get; set; }
 
@@ -2889,7 +2889,7 @@ public partial class V1beta1InstanceSpecInitProviderVpcSecurityGroupIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProvider
 {
-    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifes an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
+    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifies an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
     [JsonPropertyName("ami")]
     public string? Ami { get; set; }
 
@@ -3009,15 +3009,15 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("networkInterface")]
     public IList<V1beta1InstanceSpecInitProviderNetworkInterface>? NetworkInterface { get; set; }
 
-    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id.</summary>
+    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
-    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group.</summary>
+    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroupId")]
     public string? PlacementGroupId { get; set; }
 
-    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;.</summary>
+    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementPartitionNumber")]
     public double? PlacementPartitionNumber { get; set; }
 
@@ -3593,7 +3593,7 @@ public partial class V1beta1InstanceStatusAtProviderSecondaryNetworkInterface
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProvider
 {
-    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifes an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
+    /// <summary>AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifies an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template.</summary>
     [JsonPropertyName("ami")]
     public string? Ami { get; set; }
 
@@ -3737,15 +3737,15 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("passwordData")]
     public string? PasswordData { get; set; }
 
-    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id.</summary>
+    /// <summary>Placement Group to start the instance in. Conflicts with placement_group_id. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
-    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group.</summary>
+    /// <summary>Placement Group ID to start the instance in. Conflicts with placement_group. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementGroupId")]
     public string? PlacementGroupId { get; set; }
 
-    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;.</summary>
+    /// <summary>Number of the partition the instance is in. Valid only if the  strategy argument is set to &quot;partition&quot;. Updating this argument stops and restarts the EC2 instance, except for Spot Instances and instances with disable_api_stop and force_destroy enabled, which are replaced.</summary>
     [JsonPropertyName("placementPartitionNumber")]
     public double? PlacementPartitionNumber { get; set; }
 

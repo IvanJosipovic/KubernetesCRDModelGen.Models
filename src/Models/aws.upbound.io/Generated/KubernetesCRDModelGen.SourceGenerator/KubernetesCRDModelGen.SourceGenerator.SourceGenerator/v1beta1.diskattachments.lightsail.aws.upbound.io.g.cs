@@ -924,7 +924,7 @@ public partial class V1beta1DiskAttachmentStatusAtProvider
     [JsonPropertyName("diskPath")]
     public string? DiskPath { get; set; }
 
-    /// <summary>Combination of attributes to create a unique id: disk_name,instance_name.</summary>
+    /// <summary>Combination of attributes to create a unique ID: disk_name,instance_name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

@@ -139,7 +139,7 @@ public partial class V1beta1UserSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The username of the user.</summary>
+    /// <summary>The username of the user. For IAM authentication, this value must match user_id.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 }
@@ -217,7 +217,7 @@ public partial class V1beta1UserSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The username of the user.</summary>
+    /// <summary>The username of the user. For IAM authentication, this value must match user_id.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 }
@@ -387,7 +387,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The username of the user.</summary>
+    /// <summary>The username of the user. For IAM authentication, this value must match user_id.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 }

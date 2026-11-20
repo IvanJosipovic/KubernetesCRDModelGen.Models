@@ -192,7 +192,7 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoClientSubne
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+/// <summary>Access control settings for brokers. See public_access Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -202,45 +202,45 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     public string? Type { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable TLS authentication for VPC connectivity.</summary>
     [JsonPropertyName("tls")]
     public bool? Tls { get; set; }
 }
 
-/// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+/// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
 {
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication? ClientAuthentication { get; set; }
 }
 
-/// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+/// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfo
@@ -249,11 +249,11 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+    /// <summary>Access control settings for brokers. See public_access Block below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
 
-    /// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+    /// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
     [JsonPropertyName("vpcConnectivity")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity? VpcConnectivity { get; set; }
 }
@@ -413,54 +413,54 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoSecurityGro
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks</summary>
+    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks.</summary>
     [JsonPropertyName("volumeThroughput")]
     public double? VolumeThroughput { get; set; }
 }
 
-/// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 {
-    /// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
     [JsonPropertyName("provisionedThroughput")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput? ProvisionedThroughput { get; set; }
 
-    /// <summary>The size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
+    /// <summary>Size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
     [JsonPropertyName("volumeSize")]
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+/// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
 {
-    /// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
     [JsonPropertyName("ebsStorageInfo")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo? EbsStorageInfo { get; set; }
 }
 
-/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfo
 {
-    /// <summary>The distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
+    /// <summary>Distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
     [JsonPropertyName("azDistribution")]
     public string? AzDistribution { get; set; }
 
-    /// <summary>A list of subnets to connect to in client VPC (documentation).</summary>
+    /// <summary>List of subnets to connect to in client VPC (documentation).</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
@@ -472,15 +472,15 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfo
     [JsonPropertyName("clientSubnetsSelector")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelector? ClientSubnetsSelector { get; set; }
 
-    /// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+    /// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
     [JsonPropertyName("connectivityInfo")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfo? ConnectivityInfo { get; set; }
 
-    /// <summary>Specify the instance type to use for the kafka brokersE.g., kafka.m5.large. (Pricing info)</summary>
+    /// <summary>Instance type to use for the kafka brokers. For example, kafka.m5.large. (Pricing info)</summary>
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
+    /// <summary>List of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -492,26 +492,26 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfo
     [JsonPropertyName("securityGroupsSelector")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelector? SecurityGroupsSelector { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+    /// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Enables TLS authentication for VPC connectivity.</summary>
+/// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClientAuthenticationTls
@@ -521,20 +521,20 @@ public partial class V1beta1ClusterSpecForProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterSpecForProviderClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
     [JsonPropertyName("tls")]
     public V1beta1ClusterSpecForProviderClientAuthenticationTls? Tls { get; set; }
 
-    /// <summary>Enables unauthenticated access.</summary>
+    /// <summary>Whether to enable unauthenticated access.</summary>
     [JsonPropertyName("unauthenticated")]
     public bool? Unauthenticated { get; set; }
 }
@@ -694,7 +694,7 @@ public partial class V1beta1ClusterSpecForProviderConfigurationInfoArnSelector
     public V1beta1ClusterSpecForProviderConfigurationInfoArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderConfigurationInfo
@@ -871,7 +871,7 @@ public partial class V1beta1ClusterSpecForProviderEncryptionInfoEncryptionAtRest
     public V1beta1ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+/// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderEncryptionInfoEncryptionInTransit
@@ -885,12 +885,12 @@ public partial class V1beta1ClusterSpecForProviderEncryptionInfoEncryptionInTran
     public bool? InCluster { get; set; }
 }
 
-/// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderEncryptionInfo
 {
-    /// <summary>The ARN of the KMS key used for encryption at rest of the broker data volumes.</summary>
+    /// <summary>KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest. If no key is specified, an AWS managed KMS (&apos;aws/msk&apos; managed service) key will be used for encrypting the data at rest.</summary>
     [JsonPropertyName("encryptionAtRestKmsKeyArn")]
     public string? EncryptionAtRestKmsKeyArn { get; set; }
 
@@ -902,7 +902,7 @@ public partial class V1beta1ClusterSpecForProviderEncryptionInfo
     [JsonPropertyName("encryptionAtRestKmsKeyArnSelector")]
     public V1beta1ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelector? EncryptionAtRestKmsKeyArnSelector { get; set; }
 
-    /// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+    /// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ClusterSpecForProviderEncryptionInfoEncryptionInTransit? EncryptionInTransit { get; set; }
 }
@@ -1062,16 +1062,16 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+/// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogs
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Name of the Cloudwatch Log Group to deliver logs to.</summary>
+    /// <summary>Name of the CloudWatch Log Group to deliver logs to.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -1239,7 +1239,7 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseD
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+/// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehose
@@ -1256,7 +1256,7 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehose
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1416,7 +1416,7 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketS
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+/// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3
@@ -1433,7 +1433,7 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3
     [JsonPropertyName("bucketSelector")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1442,84 +1442,84 @@ public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+/// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderLoggingInfoBrokerLogs
 {
-    /// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+    /// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+    /// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogsS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderLoggingInfo
 {
-    /// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
     [JsonPropertyName("brokerLogs")]
     public V1beta1ClusterSpecForProviderLoggingInfoBrokerLogs? BrokerLogs { get; set; }
 }
 
-/// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderOpenMonitoringPrometheusJmxExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderOpenMonitoringPrometheusNodeExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+/// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderOpenMonitoringPrometheus
 {
-    /// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
     [JsonPropertyName("jmxExporter")]
     public V1beta1ClusterSpecForProviderOpenMonitoringPrometheusJmxExporter? JmxExporter { get; set; }
 
-    /// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
     [JsonPropertyName("nodeExporter")]
     public V1beta1ClusterSpecForProviderOpenMonitoringPrometheusNodeExporter? NodeExporter { get; set; }
 }
 
-/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderOpenMonitoring
 {
-    /// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+    /// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
     [JsonPropertyName("prometheus")]
     public V1beta1ClusterSpecForProviderOpenMonitoringPrometheus? Prometheus { get; set; }
 }
 
-/// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+/// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderRebalancing
 {
-    /// <summary>The status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
+    /// <summary>Status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -1528,11 +1528,11 @@ public partial class V1beta1ClusterSpecForProviderRebalancing
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProvider
 {
-    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
     [JsonPropertyName("brokerNodeGroupInfo")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfo? BrokerNodeGroupInfo { get; set; }
 
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterSpecForProviderClientAuthentication? ClientAuthentication { get; set; }
 
@@ -1540,35 +1540,35 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
-    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
     [JsonPropertyName("configurationInfo")]
     public V1beta1ClusterSpecForProviderConfigurationInfo? ConfigurationInfo { get; set; }
 
-    /// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
     [JsonPropertyName("encryptionInfo")]
     public V1beta1ClusterSpecForProviderEncryptionInfo? EncryptionInfo { get; set; }
 
-    /// <summary>Specify the desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch</summary>
+    /// <summary>Desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch.</summary>
     [JsonPropertyName("enhancedMonitoring")]
     public string? EnhancedMonitoring { get; set; }
 
-    /// <summary>Specify the desired Kafka software version.</summary>
+    /// <summary>Desired Kafka software version.</summary>
     [JsonPropertyName("kafkaVersion")]
     public string? KafkaVersion { get; set; }
 
-    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
     [JsonPropertyName("loggingInfo")]
     public V1beta1ClusterSpecForProviderLoggingInfo? LoggingInfo { get; set; }
 
-    /// <summary>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.</summary>
+    /// <summary>Desired total number of broker nodes in the kafka cluster. It must be a multiple of the number of specified client subnets.</summary>
     [JsonPropertyName("numberOfBrokerNodes")]
     public double? NumberOfBrokerNodes { get; set; }
 
-    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
     [JsonPropertyName("openMonitoring")]
     public V1beta1ClusterSpecForProviderOpenMonitoring? OpenMonitoring { get; set; }
 
-    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
     [JsonPropertyName("rebalancing")]
     public V1beta1ClusterSpecForProviderRebalancing? Rebalancing { get; set; }
 
@@ -1743,7 +1743,7 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoClientSubn
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+/// <summary>Access control settings for brokers. See public_access Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -1753,45 +1753,45 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     public string? Type { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable TLS authentication for VPC connectivity.</summary>
     [JsonPropertyName("tls")]
     public bool? Tls { get; set; }
 }
 
-/// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+/// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
 {
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication? ClientAuthentication { get; set; }
 }
 
-/// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+/// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfo
@@ -1800,11 +1800,11 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+    /// <summary>Access control settings for brokers. See public_access Block below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
 
-    /// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+    /// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
     [JsonPropertyName("vpcConnectivity")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity? VpcConnectivity { get; set; }
 }
@@ -1964,54 +1964,54 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGr
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks</summary>
+    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks.</summary>
     [JsonPropertyName("volumeThroughput")]
     public double? VolumeThroughput { get; set; }
 }
 
-/// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 {
-    /// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
     [JsonPropertyName("provisionedThroughput")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput? ProvisionedThroughput { get; set; }
 
-    /// <summary>The size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
+    /// <summary>Size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
     [JsonPropertyName("volumeSize")]
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+/// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo
 {
-    /// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
     [JsonPropertyName("ebsStorageInfo")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo? EbsStorageInfo { get; set; }
 }
 
-/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfo
 {
-    /// <summary>The distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
+    /// <summary>Distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
     [JsonPropertyName("azDistribution")]
     public string? AzDistribution { get; set; }
 
-    /// <summary>A list of subnets to connect to in client VPC (documentation).</summary>
+    /// <summary>List of subnets to connect to in client VPC (documentation).</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
@@ -2023,15 +2023,15 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfo
     [JsonPropertyName("clientSubnetsSelector")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelector? ClientSubnetsSelector { get; set; }
 
-    /// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+    /// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
     [JsonPropertyName("connectivityInfo")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfo? ConnectivityInfo { get; set; }
 
-    /// <summary>Specify the instance type to use for the kafka brokersE.g., kafka.m5.large. (Pricing info)</summary>
+    /// <summary>Instance type to use for the kafka brokers. For example, kafka.m5.large. (Pricing info)</summary>
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
+    /// <summary>List of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -2043,26 +2043,26 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfo
     [JsonPropertyName("securityGroupsSelector")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelector? SecurityGroupsSelector { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+    /// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Enables TLS authentication for VPC connectivity.</summary>
+/// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClientAuthenticationTls
@@ -2072,20 +2072,20 @@ public partial class V1beta1ClusterSpecInitProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterSpecInitProviderClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
     [JsonPropertyName("tls")]
     public V1beta1ClusterSpecInitProviderClientAuthenticationTls? Tls { get; set; }
 
-    /// <summary>Enables unauthenticated access.</summary>
+    /// <summary>Whether to enable unauthenticated access.</summary>
     [JsonPropertyName("unauthenticated")]
     public bool? Unauthenticated { get; set; }
 }
@@ -2245,7 +2245,7 @@ public partial class V1beta1ClusterSpecInitProviderConfigurationInfoArnSelector
     public V1beta1ClusterSpecInitProviderConfigurationInfoArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderConfigurationInfo
@@ -2422,7 +2422,7 @@ public partial class V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionAtRes
     public V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+/// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionInTransit
@@ -2436,12 +2436,12 @@ public partial class V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionInTra
     public bool? InCluster { get; set; }
 }
 
-/// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderEncryptionInfo
 {
-    /// <summary>The ARN of the KMS key used for encryption at rest of the broker data volumes.</summary>
+    /// <summary>KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest. If no key is specified, an AWS managed KMS (&apos;aws/msk&apos; managed service) key will be used for encrypting the data at rest.</summary>
     [JsonPropertyName("encryptionAtRestKmsKeyArn")]
     public string? EncryptionAtRestKmsKeyArn { get; set; }
 
@@ -2453,7 +2453,7 @@ public partial class V1beta1ClusterSpecInitProviderEncryptionInfo
     [JsonPropertyName("encryptionAtRestKmsKeyArnSelector")]
     public V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelector? EncryptionAtRestKmsKeyArnSelector { get; set; }
 
-    /// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+    /// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ClusterSpecInitProviderEncryptionInfoEncryptionInTransit? EncryptionInTransit { get; set; }
 }
@@ -2613,16 +2613,16 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+/// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogs
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Name of the Cloudwatch Log Group to deliver logs to.</summary>
+    /// <summary>Name of the CloudWatch Log Group to deliver logs to.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -2790,7 +2790,7 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+/// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
@@ -2807,7 +2807,7 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -2967,7 +2967,7 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3Bucket
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+/// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3
@@ -2984,7 +2984,7 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3
     [JsonPropertyName("bucketSelector")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2993,84 +2993,84 @@ public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+/// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogs
 {
-    /// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+    /// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+    /// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogsS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderLoggingInfo
 {
-    /// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
     [JsonPropertyName("brokerLogs")]
     public V1beta1ClusterSpecInitProviderLoggingInfoBrokerLogs? BrokerLogs { get; set; }
 }
 
-/// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderOpenMonitoringPrometheusJmxExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderOpenMonitoringPrometheusNodeExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+/// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderOpenMonitoringPrometheus
 {
-    /// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
     [JsonPropertyName("jmxExporter")]
     public V1beta1ClusterSpecInitProviderOpenMonitoringPrometheusJmxExporter? JmxExporter { get; set; }
 
-    /// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
     [JsonPropertyName("nodeExporter")]
     public V1beta1ClusterSpecInitProviderOpenMonitoringPrometheusNodeExporter? NodeExporter { get; set; }
 }
 
-/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderOpenMonitoring
 {
-    /// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+    /// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
     [JsonPropertyName("prometheus")]
     public V1beta1ClusterSpecInitProviderOpenMonitoringPrometheus? Prometheus { get; set; }
 }
 
-/// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+/// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderRebalancing
 {
-    /// <summary>The status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
+    /// <summary>Status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -3091,11 +3091,11 @@ public partial class V1beta1ClusterSpecInitProviderRebalancing
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProvider
 {
-    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
     [JsonPropertyName("brokerNodeGroupInfo")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfo? BrokerNodeGroupInfo { get; set; }
 
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterSpecInitProviderClientAuthentication? ClientAuthentication { get; set; }
 
@@ -3103,35 +3103,35 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
-    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
     [JsonPropertyName("configurationInfo")]
     public V1beta1ClusterSpecInitProviderConfigurationInfo? ConfigurationInfo { get; set; }
 
-    /// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
     [JsonPropertyName("encryptionInfo")]
     public V1beta1ClusterSpecInitProviderEncryptionInfo? EncryptionInfo { get; set; }
 
-    /// <summary>Specify the desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch</summary>
+    /// <summary>Desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch.</summary>
     [JsonPropertyName("enhancedMonitoring")]
     public string? EnhancedMonitoring { get; set; }
 
-    /// <summary>Specify the desired Kafka software version.</summary>
+    /// <summary>Desired Kafka software version.</summary>
     [JsonPropertyName("kafkaVersion")]
     public string? KafkaVersion { get; set; }
 
-    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
     [JsonPropertyName("loggingInfo")]
     public V1beta1ClusterSpecInitProviderLoggingInfo? LoggingInfo { get; set; }
 
-    /// <summary>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.</summary>
+    /// <summary>Desired total number of broker nodes in the kafka cluster. It must be a multiple of the number of specified client subnets.</summary>
     [JsonPropertyName("numberOfBrokerNodes")]
     public double? NumberOfBrokerNodes { get; set; }
 
-    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
     [JsonPropertyName("openMonitoring")]
     public V1beta1ClusterSpecInitProviderOpenMonitoring? OpenMonitoring { get; set; }
 
-    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
     [JsonPropertyName("rebalancing")]
     public V1beta1ClusterSpecInitProviderRebalancing? Rebalancing { get; set; }
 
@@ -3251,7 +3251,7 @@ public partial class V1beta1ClusterSpec
     public V1beta1ClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+/// <summary>Access control settings for brokers. See public_access Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -3261,45 +3261,45 @@ public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public string? Type { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity.client_authentication.sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable TLS authentication for VPC connectivity.</summary>
     [JsonPropertyName("tls")]
     public bool? Tls { get; set; }
 }
 
-/// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+/// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
 {
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Client authentication information for VPC connectivity. See vpc_connectivity.client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication? ClientAuthentication { get; set; }
 }
 
-/// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+/// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfo
@@ -3308,98 +3308,98 @@ public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
+    /// <summary>Access control settings for brokers. See public_access Block below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
 
-    /// <summary>VPC connectivity access control for brokers. See connectivity_info vpc_connectivity Argument Reference below.</summary>
+    /// <summary>VPC connectivity access control for brokers. See vpc_connectivity Block below.</summary>
     [JsonPropertyName("vpcConnectivity")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity? VpcConnectivity { get; set; }
 }
 
-/// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks</summary>
+    /// <summary>Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second. The minimum value is 250. The maximum value varies between broker type. You can refer to the valid values for the maximum volume throughput at the following documentation on throughput bottlenecks.</summary>
     [JsonPropertyName("volumeThroughput")]
     public double? VolumeThroughput { get; set; }
 }
 
-/// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+/// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 {
-    /// <summary>A block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See ebs_storage_info provisioned_throughput Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume provisioned throughput information. To provision storage throughput, you must choose broker type kafka.m5.4xlarge or larger. See provisioned_throughput Block below.</summary>
     [JsonPropertyName("provisionedThroughput")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput? ProvisionedThroughput { get; set; }
 
-    /// <summary>The size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
+    /// <summary>Size in GiB of the EBS volume for the data drive on each broker node. Minimum value of 1 and maximum value of 16384.</summary>
     [JsonPropertyName("volumeSize")]
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+/// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo
 {
-    /// <summary>A block that contains EBS volume information. See storage_info ebs_storage_info Argument Reference below.</summary>
+    /// <summary>Configuration block that contains EBS volume information. See ebs_storage_info Block below.</summary>
     [JsonPropertyName("ebsStorageInfo")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo? EbsStorageInfo { get; set; }
 }
 
-/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+/// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfo
 {
-    /// <summary>The distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
+    /// <summary>Distribution of broker nodes across availability zones (documentation). Currently, the only valid value is DEFAULT.</summary>
     [JsonPropertyName("azDistribution")]
     public string? AzDistribution { get; set; }
 
-    /// <summary>A list of subnets to connect to in client VPC (documentation).</summary>
+    /// <summary>List of subnets to connect to in client VPC (documentation).</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
-    /// <summary>Information about the cluster access configuration. See broker_node_group_info connectivity_info Argument Reference below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
+    /// <summary>Information about the cluster access configuration. See connectivity_info Block below. For security reasons, you can&apos;t turn on public access while creating an MSK cluster. However, you can update an existing cluster to make it publicly accessible. You can also create a new cluster and then update it to make it publicly accessible (documentation).</summary>
     [JsonPropertyName("connectivityInfo")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfo? ConnectivityInfo { get; set; }
 
-    /// <summary>Specify the instance type to use for the kafka brokersE.g., kafka.m5.large. (Pricing info)</summary>
+    /// <summary>Instance type to use for the kafka brokers. For example, kafka.m5.large. (Pricing info)</summary>
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
+    /// <summary>List of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
+    /// <summary>Configuration block that contains information about storage volumes attached to MSK broker nodes. See storage_info Block below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
 
-/// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+/// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClientAuthenticationSasl
 {
-    /// <summary>Enables SASL/IAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/IAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("iam")]
     public bool? Iam { get; set; }
 
-    /// <summary>Enables SASL/SCRAM authentication for VPC connectivity.</summary>
+    /// <summary>Whether to enable SASL/SCRAM authentication for VPC connectivity.</summary>
     [JsonPropertyName("scram")]
     public bool? Scram { get; set; }
 }
 
-/// <summary>Enables TLS authentication for VPC connectivity.</summary>
+/// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClientAuthenticationTls
@@ -3409,25 +3409,25 @@ public partial class V1beta1ClusterStatusAtProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+/// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClientAuthentication
 {
-    /// <summary>SASL authentication type details for VPC connectivity. See vpc_connectivity client_authentication sasl Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying SASL client authentication. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ClusterStatusAtProviderClientAuthenticationSasl? Sasl { get; set; }
 
-    /// <summary>Enables TLS authentication for VPC connectivity.</summary>
+    /// <summary>Configuration block for specifying TLS client authentication. See tls Block below.</summary>
     [JsonPropertyName("tls")]
     public V1beta1ClusterStatusAtProviderClientAuthenticationTls? Tls { get; set; }
 
-    /// <summary>Enables unauthenticated access.</summary>
+    /// <summary>Whether to enable unauthenticated access.</summary>
     [JsonPropertyName("unauthenticated")]
     public bool? Unauthenticated { get; set; }
 }
 
-/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderConfigurationInfo
@@ -3441,7 +3441,7 @@ public partial class V1beta1ClusterStatusAtProviderConfigurationInfo
     public double? Revision { get; set; }
 }
 
-/// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+/// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderEncryptionInfoEncryptionInTransit
@@ -3455,35 +3455,35 @@ public partial class V1beta1ClusterStatusAtProviderEncryptionInfoEncryptionInTra
     public bool? InCluster { get; set; }
 }
 
-/// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+/// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderEncryptionInfo
 {
-    /// <summary>The ARN of the KMS key used for encryption at rest of the broker data volumes.</summary>
+    /// <summary>KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest. If no key is specified, an AWS managed KMS (&apos;aws/msk&apos; managed service) key will be used for encrypting the data at rest.</summary>
     [JsonPropertyName("encryptionAtRestKmsKeyArn")]
     public string? EncryptionAtRestKmsKeyArn { get; set; }
 
-    /// <summary>Configuration block to specify encryption in transit. See encryption_info encryption_in_transit Argument Reference below.</summary>
+    /// <summary>Configuration block to specify encryption in transit. See encryption_in_transit Block below.</summary>
     [JsonPropertyName("encryptionInTransit")]
     public V1beta1ClusterStatusAtProviderEncryptionInfoEncryptionInTransit? EncryptionInTransit { get; set; }
 }
 
-/// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+/// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsCloudwatchLogs
 {
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Name of the Cloudwatch Log Group to deliver logs to.</summary>
+    /// <summary>Name of the CloudWatch Log Group to deliver logs to.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 }
 
-/// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+/// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsFirehose
@@ -3492,12 +3492,12 @@ public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsFirehose
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+/// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsS3
@@ -3506,7 +3506,7 @@ public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsS3
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Controls whether provisioned throughput is enabled or not. Default value: false.</summary>
+    /// <summary>Whether to enable or disable streaming broker logs to S3.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -3515,84 +3515,84 @@ public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-/// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+/// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogs
 {
-    /// <summary>Configuration block for Cloudwatch Logs settings. See logging_info broker_logs cloudwatch_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for CloudWatch Logs settings. See cloudwatch_logs Block below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Configuration block for Kinesis Data Firehose settings. See logging_info broker_logs firehose Argument Reference below.</summary>
+    /// <summary>Configuration block for Kinesis Data Firehose settings. See firehose Block below.</summary>
     [JsonPropertyName("firehose")]
     public V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsFirehose? Firehose { get; set; }
 
-    /// <summary>Configuration block for S3 settings. See logging_info broker_logs s3 Argument Reference below.</summary>
+    /// <summary>Configuration block for S3 settings. See s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogsS3? S3 { get; set; }
 }
 
-/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+/// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderLoggingInfo
 {
-    /// <summary>Configuration block for Broker Logs settings for logging info. See logging_info broker_logs Argument Reference below.</summary>
+    /// <summary>Configuration block for Broker Logs settings for logging info. See broker_logs Block below.</summary>
     [JsonPropertyName("brokerLogs")]
     public V1beta1ClusterStatusAtProviderLoggingInfoBrokerLogs? BrokerLogs { get; set; }
 }
 
-/// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderOpenMonitoringPrometheusJmxExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+/// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderOpenMonitoringPrometheusNodeExporter
 {
-    /// <summary>Indicates whether you want to enable or disable the JMX Exporter.</summary>
+    /// <summary>Whether to enable or disable the Node Exporter.</summary>
     [JsonPropertyName("enabledInBroker")]
     public bool? EnabledInBroker { get; set; }
 }
 
-/// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+/// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderOpenMonitoringPrometheus
 {
-    /// <summary>Configuration block for JMX Exporter. See open_monitoring prometheus jmx_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX Exporter. See jmx_exporter Block below.</summary>
     [JsonPropertyName("jmxExporter")]
     public V1beta1ClusterStatusAtProviderOpenMonitoringPrometheusJmxExporter? JmxExporter { get; set; }
 
-    /// <summary>Configuration block for Node Exporter. See open_monitoring prometheus node_exporter Argument Reference below.</summary>
+    /// <summary>Configuration block for Node Exporter. See node_exporter Block below.</summary>
     [JsonPropertyName("nodeExporter")]
     public V1beta1ClusterStatusAtProviderOpenMonitoringPrometheusNodeExporter? NodeExporter { get; set; }
 }
 
-/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+/// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderOpenMonitoring
 {
-    /// <summary>Configuration block for Prometheus settings for open monitoring. See open_monitoring prometheus Argument Reference below.</summary>
+    /// <summary>Configuration block for Prometheus settings for open monitoring. See prometheus Block below.</summary>
     [JsonPropertyName("prometheus")]
     public V1beta1ClusterStatusAtProviderOpenMonitoringPrometheus? Prometheus { get; set; }
 }
 
-/// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+/// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderRebalancing
 {
-    /// <summary>The status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
+    /// <summary>Status of intelligent rebalancing. Valid values: ACTIVE, PAUSED. Default is ACTIVE for new Express-based clusters.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -3601,7 +3601,7 @@ public partial class V1beta1ClusterStatusAtProviderRebalancing
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProvider
 {
-    /// <summary>ARN of the MSK Configuration to use in the cluster.</summary>
+    /// <summary>ARN of the MSK cluster.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3649,23 +3649,23 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("bootstrapBrokersTlsIpv6")]
     public string? BootstrapBrokersTlsIpv6 { get; set; }
 
-    /// <summary>A string containing one or more DNS names (or IP addresses) and SASL IAM port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
+    /// <summary>One or more DNS names (or IP addresses) and SASL IAM port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
     [JsonPropertyName("bootstrapBrokersVpcConnectivitySaslIam")]
     public string? BootstrapBrokersVpcConnectivitySaslIam { get; set; }
 
-    /// <summary>A string containing one or more DNS names (or IP addresses) and SASL SCRAM port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
+    /// <summary>One or more DNS names (or IP addresses) and SASL SCRAM port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
     [JsonPropertyName("bootstrapBrokersVpcConnectivitySaslScram")]
     public string? BootstrapBrokersVpcConnectivitySaslScram { get; set; }
 
-    /// <summary>A string containing one or more DNS names (or IP addresses) and TLS port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
+    /// <summary>One or more DNS names (or IP addresses) and TLS port pairs for VPC connectivity. AWS may not always return all endpoints so the values may not be stable across applies.</summary>
     [JsonPropertyName("bootstrapBrokersVpcConnectivityTls")]
     public string? BootstrapBrokersVpcConnectivityTls { get; set; }
 
-    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Argument Reference below.</summary>
+    /// <summary>Configuration block for the broker nodes of the Kafka cluster. See broker_node_group_info Block below.</summary>
     [JsonPropertyName("brokerNodeGroupInfo")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfo? BrokerNodeGroupInfo { get; set; }
 
-    /// <summary>Configuration block for specifying a client authentication. See client_authentication Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying a client authentication. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ClusterStatusAtProviderClientAuthentication? ClientAuthentication { get; set; }
 
@@ -3677,7 +3677,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("clusterUuid")]
     public string? ClusterUuid { get; set; }
 
-    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying an MSK Configuration to attach to Kafka brokers. See configuration_info Block below.</summary>
     [JsonPropertyName("configurationInfo")]
     public V1beta1ClusterStatusAtProviderConfigurationInfo? ConfigurationInfo { get; set; }
 
@@ -3689,34 +3689,34 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("customerActionStatus")]
     public string? CustomerActionStatus { get; set; }
 
-    /// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
+    /// <summary>Configuration block for specifying encryption. See encryption_info Block below.</summary>
     [JsonPropertyName("encryptionInfo")]
     public V1beta1ClusterStatusAtProviderEncryptionInfo? EncryptionInfo { get; set; }
 
-    /// <summary>Specify the desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch</summary>
+    /// <summary>Desired enhanced MSK CloudWatch monitoring level. See Monitoring Amazon MSK with Amazon CloudWatch.</summary>
     [JsonPropertyName("enhancedMonitoring")]
     public string? EnhancedMonitoring { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specify the desired Kafka software version.</summary>
+    /// <summary>Desired Kafka software version.</summary>
     [JsonPropertyName("kafkaVersion")]
     public string? KafkaVersion { get; set; }
 
-    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Argument Reference below.</summary>
+    /// <summary>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See logging_info Block below.</summary>
     [JsonPropertyName("loggingInfo")]
     public V1beta1ClusterStatusAtProviderLoggingInfo? LoggingInfo { get; set; }
 
-    /// <summary>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.</summary>
+    /// <summary>Desired total number of broker nodes in the kafka cluster. It must be a multiple of the number of specified client subnets.</summary>
     [JsonPropertyName("numberOfBrokerNodes")]
     public double? NumberOfBrokerNodes { get; set; }
 
-    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Argument Reference below.</summary>
+    /// <summary>Configuration block for JMX and Node monitoring for the MSK cluster. See open_monitoring Block below.</summary>
     [JsonPropertyName("openMonitoring")]
     public V1beta1ClusterStatusAtProviderOpenMonitoring? OpenMonitoring { get; set; }
 
-    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Argument Reference below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
+    /// <summary>Configuration block for intelligent rebalancing. See rebalancing Block below. Only applicable to MSK Provisioned clusters with Express brokers.</summary>
     [JsonPropertyName("rebalancing")]
     public V1beta1ClusterStatusAtProviderRebalancing? Rebalancing { get; set; }
 
@@ -3735,15 +3735,15 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster. The returned values are sorted alphabetically. The AWS API may not return all endpoints, so this value is not guaranteed to be stable across applies.</summary>
+    /// <summary>Comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster. The returned values are sorted alphabetically. The AWS API may not return all endpoints, so this value is not guaranteed to be stable across applies.</summary>
     [JsonPropertyName("zookeeperConnectString")]
     public string? ZookeeperConnectString { get; set; }
 
-    /// <summary>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster via TLS. The returned values are sorted alphabetically. The AWS API may not return all endpoints, so this value is not guaranteed to be stable across applies.</summary>
+    /// <summary>Comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster via TLS. The returned values are sorted alphabetically. The AWS API may not return all endpoints, so this value is not guaranteed to be stable across applies.</summary>
     [JsonPropertyName("zookeeperConnectStringTls")]
     public string? ZookeeperConnectStringTls { get; set; }
 }

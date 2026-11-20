@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: gatewaytargets.bedrockagentcore.aws.upbound.io
 spec:
   group: bedrockagentcore.aws.upbound.io
@@ -87,7 +87,7 @@ spec:
                             description: Prefix to add to the API key credential value.
                             type: string
                           providerArn:
-                            description: ARN of the OIDC provider for API key authentication.
+                            description: ARN of the API key credential provider.
                             type: string
                           providerArnRef:
                             description: Reference to a APIKeyCredentialProvider in bedrockagentcore to populate providerArn.
@@ -206,11 +206,11 @@ spec:
                             type: string
                           grantType:
                             description: |-
-                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
                               The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
                             type: string
                           providerArn:
-                            description: ARN of the Oauth credential provider for OAuth authentication.
+                            description: ARN of the OAuth credential provider.
                             type: string
                           providerArnRef:
                             description: Reference to a Oauth2CredentialProvider in bedrockagentcore to populate providerArn.
@@ -749,7 +749,7 @@ spec:
                     description: Configuration for the target endpoint. See target_configuration Block below.
                     properties:
                       http:
-                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.
+                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.
                         properties:
                           agentcoreRuntime:
                             description: AgentCore Runtime target configuration. See agentcore_runtime Block below.
@@ -837,7 +837,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -847,13 +847,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -872,7 +872,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -882,13 +882,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -924,10 +924,10 @@ spec:
                         description: Inference target configuration for routing requests to a large language model (LLM) provider, either through a built-in connector or an explicitly configured provider. See inference Block below.
                         properties:
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -950,7 +950,7 @@ spec:
                                         description: Single character that separates the provider prefix from the model name (for example, .). Defaults to ..
                                         type: string
                                       strip:
-                                        description: Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
+                                        description: Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
                                         type: boolean
                                     type: object
                                 type: object
@@ -959,11 +959,11 @@ spec:
                                 items:
                                   properties:
                                     model:
-                                      description: List of models supported for this operation. See model Block below.
+                                      description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                       items:
                                         properties:
                                           model:
-                                            description: List of models supported for this operation. See model Block below.
+                                            description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                             type: string
                                         type: object
                                       type: array
@@ -1101,7 +1101,7 @@ spec:
                                 type: string
                             type: object
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               configuration:
                                 description: Per-tool configurations for the connector. See configuration Block below.
@@ -1124,7 +1124,7 @@ spec:
                                             description: Resource path in the REST API (e.g., /pets). Must explicitly match an existing path in the REST API.
                                             type: string
                                           visible:
-                                            description: Whether this parameter is visible to the agent. If not specified, uses the service default.
+                                            description: Whether to make this parameter visible to the agent. If not specified, uses the service default.
                                             type: boolean
                                         type: object
                                       type: array
@@ -1139,7 +1139,7 @@ spec:
                                   type: string
                                 type: array
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -1239,19 +1239,19 @@ spec:
                                           description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                           type: string
                                         inputSchema:
-                                          description: Schema for the tool's input. See schema_definition Block below.
+                                          description: Schema for the tool's input. See input_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -1263,11 +1263,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -1283,32 +1283,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -1320,11 +1320,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -1340,22 +1340,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -1371,42 +1371,42 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                         name:
                                           description: Name of tool. Identifies the tool in the Model Context Protocol.
                                           type: string
                                         outputSchema:
-                                          description: Schema for the tool's output. See schema_definition Block below.
+                                          description: Schema for the tool's output. See output_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -1418,11 +1418,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -1438,32 +1438,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -1475,11 +1475,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -1495,22 +1495,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -1526,35 +1526,35 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                       type: object
                                     type: array
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -1569,7 +1569,7 @@ spec:
                                 description: Listing mode for the MCP server target. Valid values are DEFAULT and DYNAMIC. MCP resources for DEFAULT targets are cached at the control plane for faster access, while resources for DYNAMIC targets are retrieved dynamically when listing tools.
                                 type: string
                               mcpToolSchema:
-                                description: Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
+                                description: Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
                                 properties:
                                   inlinePayload:
                                     description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -1579,13 +1579,13 @@ spec:
                                         type: string
                                     type: object
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -1594,7 +1594,7 @@ spec:
                                 type: number
                             type: object
                           openApiSchema:
-                            description: OpenAPI schema-based target configuration. See api_schema_configuration Block below.
+                            description: OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -1604,18 +1604,18 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object
                           smithyModel:
-                            description: Smithy model-based target configuration. See api_schema_configuration Block below.
+                            description: Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -1625,13 +1625,13 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object
@@ -1669,7 +1669,7 @@ spec:
                             description: Prefix to add to the API key credential value.
                             type: string
                           providerArn:
-                            description: ARN of the OIDC provider for API key authentication.
+                            description: ARN of the API key credential provider.
                             type: string
                           providerArnRef:
                             description: Reference to a APIKeyCredentialProvider in bedrockagentcore to populate providerArn.
@@ -1780,11 +1780,11 @@ spec:
                             type: string
                           grantType:
                             description: |-
-                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
                               The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
                             type: string
                           providerArn:
-                            description: ARN of the Oauth credential provider for OAuth authentication.
+                            description: ARN of the OAuth credential provider.
                             type: string
                           providerArnRef:
                             description: Reference to a Oauth2CredentialProvider in bedrockagentcore to populate providerArn.
@@ -2318,7 +2318,7 @@ spec:
                     description: Configuration for the target endpoint. See target_configuration Block below.
                     properties:
                       http:
-                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.
+                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.
                         properties:
                           agentcoreRuntime:
                             description: AgentCore Runtime target configuration. See agentcore_runtime Block below.
@@ -2406,7 +2406,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -2416,13 +2416,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -2441,7 +2441,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -2451,13 +2451,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -2493,10 +2493,10 @@ spec:
                         description: Inference target configuration for routing requests to a large language model (LLM) provider, either through a built-in connector or an explicitly configured provider. See inference Block below.
                         properties:
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -2519,7 +2519,7 @@ spec:
                                         description: Single character that separates the provider prefix from the model name (for example, .). Defaults to ..
                                         type: string
                                       strip:
-                                        description: Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
+                                        description: Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
                                         type: boolean
                                     type: object
                                 type: object
@@ -2528,11 +2528,11 @@ spec:
                                 items:
                                   properties:
                                     model:
-                                      description: List of models supported for this operation. See model Block below.
+                                      description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                       items:
                                         properties:
                                           model:
-                                            description: List of models supported for this operation. See model Block below.
+                                            description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                             type: string
                                         type: object
                                       type: array
@@ -2670,7 +2670,7 @@ spec:
                                 type: string
                             type: object
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               configuration:
                                 description: Per-tool configurations for the connector. See configuration Block below.
@@ -2693,7 +2693,7 @@ spec:
                                             description: Resource path in the REST API (e.g., /pets). Must explicitly match an existing path in the REST API.
                                             type: string
                                           visible:
-                                            description: Whether this parameter is visible to the agent. If not specified, uses the service default.
+                                            description: Whether to make this parameter visible to the agent. If not specified, uses the service default.
                                             type: boolean
                                         type: object
                                       type: array
@@ -2708,7 +2708,7 @@ spec:
                                   type: string
                                 type: array
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -2808,19 +2808,19 @@ spec:
                                           description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                           type: string
                                         inputSchema:
-                                          description: Schema for the tool's input. See schema_definition Block below.
+                                          description: Schema for the tool's input. See input_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -2832,11 +2832,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -2852,32 +2852,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -2889,11 +2889,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -2909,22 +2909,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -2940,42 +2940,42 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                         name:
                                           description: Name of tool. Identifies the tool in the Model Context Protocol.
                                           type: string
                                         outputSchema:
-                                          description: Schema for the tool's output. See schema_definition Block below.
+                                          description: Schema for the tool's output. See output_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -2987,11 +2987,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -3007,32 +3007,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -3044,11 +3044,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -3064,22 +3064,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -3095,35 +3095,35 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                       type: object
                                     type: array
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -3138,7 +3138,7 @@ spec:
                                 description: Listing mode for the MCP server target. Valid values are DEFAULT and DYNAMIC. MCP resources for DEFAULT targets are cached at the control plane for faster access, while resources for DYNAMIC targets are retrieved dynamically when listing tools.
                                 type: string
                               mcpToolSchema:
-                                description: Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
+                                description: Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
                                 properties:
                                   inlinePayload:
                                     description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -3148,13 +3148,13 @@ spec:
                                         type: string
                                     type: object
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -3163,7 +3163,7 @@ spec:
                                 type: number
                             type: object
                           openApiSchema:
-                            description: OpenAPI schema-based target configuration. See api_schema_configuration Block below.
+                            description: OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -3173,18 +3173,18 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object
                           smithyModel:
-                            description: Smithy model-based target configuration. See api_schema_configuration Block below.
+                            description: Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -3194,13 +3194,13 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object
@@ -3317,7 +3317,7 @@ spec:
                             description: Prefix to add to the API key credential value.
                             type: string
                           providerArn:
-                            description: ARN of the OIDC provider for API key authentication.
+                            description: ARN of the API key credential provider.
                             type: string
                         type: object
                       callerIamCredentials:
@@ -3363,11 +3363,11 @@ spec:
                             type: string
                           grantType:
                             description: |-
-                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+                              OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
                               The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
                             type: string
                           providerArn:
-                            description: ARN of the Oauth credential provider for OAuth authentication.
+                            description: ARN of the OAuth credential provider.
                             type: string
                           scopes:
                             description: Set of OAuth scopes to request.
@@ -3467,7 +3467,7 @@ spec:
                     description: Configuration for the target endpoint. See target_configuration Block below.
                     properties:
                       http:
-                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.
+                        description: HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.
                         properties:
                           agentcoreRuntime:
                             description: AgentCore Runtime target configuration. See agentcore_runtime Block below.
@@ -3482,7 +3482,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -3492,13 +3492,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -3517,7 +3517,7 @@ spec:
                                 description: API schema configuration that defines the structure of the runtime target's API. See schema Block below.
                                 properties:
                                   source:
-                                    description: Configuration for API schema. See api_schema_configuration Block below.
+                                    description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                     properties:
                                       inlinePayload:
                                         description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -3527,13 +3527,13 @@ spec:
                                             type: string
                                         type: object
                                       s3:
-                                        description: S3 location of the tool schema. See s3 Block below.
+                                        description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                         properties:
                                           bucketOwnerAccountId:
                                             description: Account ID of the S3 bucket owner.
                                             type: string
                                           uri:
-                                            description: S3 URI where the tool schema is stored.
+                                            description: S3 URI where the schema is stored.
                                             type: string
                                         type: object
                                     type: object
@@ -3569,10 +3569,10 @@ spec:
                         description: Inference target configuration for routing requests to a large language model (LLM) provider, either through a built-in connector or an explicitly configured provider. See inference Block below.
                         properties:
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -3595,7 +3595,7 @@ spec:
                                         description: Single character that separates the provider prefix from the model name (for example, .). Defaults to ..
                                         type: string
                                       strip:
-                                        description: Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
+                                        description: Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.
                                         type: boolean
                                     type: object
                                 type: object
@@ -3604,11 +3604,11 @@ spec:
                                 items:
                                   properties:
                                     model:
-                                      description: List of models supported for this operation. See model Block below.
+                                      description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                       items:
                                         properties:
                                           model:
-                                            description: List of models supported for this operation. See model Block below.
+                                            description: Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).
                                             type: string
                                         type: object
                                       type: array
@@ -3673,7 +3673,7 @@ spec:
                                 type: string
                             type: object
                           connector:
-                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.
+                            description: Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.
                             properties:
                               configuration:
                                 description: Per-tool configurations for the connector. See configuration Block below.
@@ -3696,7 +3696,7 @@ spec:
                                             description: Resource path in the REST API (e.g., /pets). Must explicitly match an existing path in the REST API.
                                             type: string
                                           visible:
-                                            description: Whether this parameter is visible to the agent. If not specified, uses the service default.
+                                            description: Whether to make this parameter visible to the agent. If not specified, uses the service default.
                                             type: boolean
                                         type: object
                                       type: array
@@ -3711,7 +3711,7 @@ spec:
                                   type: string
                                 type: array
                               source:
-                                description: Configuration for API schema. See api_schema_configuration Block below.
+                                description: Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).
                                 properties:
                                   connectorId:
                                     description: Identifier for the connector integration (for example, bedrock-knowledge-bases).
@@ -3738,19 +3738,19 @@ spec:
                                           description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                           type: string
                                         inputSchema:
-                                          description: Schema for the tool's input. See schema_definition Block below.
+                                          description: Schema for the tool's input. See input_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -3762,11 +3762,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -3782,32 +3782,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -3819,11 +3819,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -3839,22 +3839,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -3870,42 +3870,42 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                         name:
                                           description: Name of tool. Identifies the tool in the Model Context Protocol.
                                           type: string
                                         outputSchema:
-                                          description: Schema for the tool's output. See schema_definition Block below.
+                                          description: Schema for the tool's output. See output_schema Block below.
                                           properties:
                                             description:
                                               description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                               type: string
                                             items:
-                                              description: Items definition for array properties. See items Block above.
+                                              description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                               properties:
                                                 description:
                                                   description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                   type: string
                                                 items:
-                                                  description: Items definition for array properties. See items Block above.
+                                                  description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                   properties:
                                                     description:
                                                       description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -3917,11 +3917,11 @@ spec:
                                                       description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                       type: string
                                                     type:
-                                                      description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                      description: Data type of the property.
                                                       type: string
                                                   type: object
                                                 property:
-                                                  description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                  description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                   items:
                                                     properties:
                                                       description:
@@ -3937,32 +3937,32 @@ spec:
                                                         description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                         type: string
                                                       required:
-                                                        description: Whether this property is required. Defaults to false.
+                                                        description: Whether to mark this property as required. Defaults to false.
                                                         type: boolean
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   type: array
                                                 type:
-                                                  description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                  description: Data type of the property.
                                                   type: string
                                               type: object
                                             property:
-                                              description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                              description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                               items:
                                                 properties:
                                                   description:
                                                     description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                     type: string
                                                   items:
-                                                    description: Items definition for array properties. See items Block above.
+                                                    description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                     properties:
                                                       description:
                                                         description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
                                                         type: string
                                                       items:
-                                                        description: Items definition for array properties. See items Block above.
+                                                        description: Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.
                                                         properties:
                                                           description:
                                                             description: Description of the tool. Provides information about the purpose and usage of the tool. If not provided, uses the description from the API's OpenAPI specification.
@@ -3974,11 +3974,11 @@ spec:
                                                             description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                             type: string
                                                           type:
-                                                            description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                            description: Data type of the property.
                                                             type: string
                                                         type: object
                                                       property:
-                                                        description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                        description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                         items:
                                                           properties:
                                                             description:
@@ -3994,22 +3994,22 @@ spec:
                                                               description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                               type: string
                                                             required:
-                                                              description: Whether this property is required. Defaults to false.
+                                                              description: Whether to mark this property as required. Defaults to false.
                                                               type: boolean
                                                             type:
-                                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                              description: Data type of the property.
                                                               type: string
                                                           type: object
                                                         type: array
                                                       type:
-                                                        description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                        description: Data type of the property.
                                                         type: string
                                                     type: object
                                                   name:
                                                     description: Name of tool. Identifies the tool in the Model Context Protocol.
                                                     type: string
                                                   property:
-                                                    description: Set of property definitions for object types. Can only be used when type is object. See property Block below.
+                                                    description: Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.
                                                     items:
                                                       properties:
                                                         description:
@@ -4025,35 +4025,35 @@ spec:
                                                           description: JSON-encoded schema definition for object properties. Used for complex nested structures. Cannot be used with items_json.
                                                           type: string
                                                         required:
-                                                          description: Whether this property is required. Defaults to false.
+                                                          description: Whether to mark this property as required. Defaults to false.
                                                           type: boolean
                                                         type:
-                                                          description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                          description: Data type of the property.
                                                           type: string
                                                       type: object
                                                     type: array
                                                   required:
-                                                    description: Whether this property is required. Defaults to false.
+                                                    description: Whether to mark this property as required. Defaults to false.
                                                     type: boolean
                                                   type:
-                                                    description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                                    description: Data type of the property.
                                                     type: string
                                                 type: object
                                               type: array
                                             type:
-                                              description: 'Data type of the schema. Valid values: string, number, integer, boolean, array, object.'
+                                              description: Data type of the property.
                                               type: string
                                           type: object
                                       type: object
                                     type: array
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -4068,7 +4068,7 @@ spec:
                                 description: Listing mode for the MCP server target. Valid values are DEFAULT and DYNAMIC. MCP resources for DEFAULT targets are cached at the control plane for faster access, while resources for DYNAMIC targets are retrieved dynamically when listing tools.
                                 type: string
                               mcpToolSchema:
-                                description: Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
+                                description: Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.
                                 properties:
                                   inlinePayload:
                                     description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -4078,13 +4078,13 @@ spec:
                                         type: string
                                     type: object
                                   s3:
-                                    description: S3 location of the tool schema. See s3 Block below.
+                                    description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                     properties:
                                       bucketOwnerAccountId:
                                         description: Account ID of the S3 bucket owner.
                                         type: string
                                       uri:
-                                        description: S3 URI where the tool schema is stored.
+                                        description: S3 URI where the schema is stored.
                                         type: string
                                     type: object
                                 type: object
@@ -4093,7 +4093,7 @@ spec:
                                 type: number
                             type: object
                           openApiSchema:
-                            description: OpenAPI schema-based target configuration. See api_schema_configuration Block below.
+                            description: OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -4103,18 +4103,18 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object
                           smithyModel:
-                            description: Smithy model-based target configuration. See api_schema_configuration Block below.
+                            description: Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).
                             properties:
                               inlinePayload:
                                 description: Inline tool schema payload. The inline_payload block requires a payload (string) containing the MCP tool schema definition.
@@ -4124,13 +4124,13 @@ spec:
                                     type: string
                                 type: object
                               s3:
-                                description: S3 location of the tool schema. See s3 Block below.
+                                description: S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.
                                 properties:
                                   bucketOwnerAccountId:
                                     description: Account ID of the S3 bucket owner.
                                     type: string
                                   uri:
-                                    description: S3 URI where the tool schema is stored.
+                                    description: S3 URI where the schema is stored.
                                     type: string
                                 type: object
                             type: object

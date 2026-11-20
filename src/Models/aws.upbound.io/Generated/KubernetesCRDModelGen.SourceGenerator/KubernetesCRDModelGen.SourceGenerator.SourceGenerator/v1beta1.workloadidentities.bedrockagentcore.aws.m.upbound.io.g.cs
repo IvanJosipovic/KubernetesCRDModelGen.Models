@@ -51,6 +51,10 @@ public partial class V1beta1WorkloadIdentitySpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -72,6 +76,10 @@ public partial class V1beta1WorkloadIdentitySpecInitProvider
     /// <summary>Set of allowed OAuth2 return URLs for resources associated with this workload identity. These URLs are used as valid redirect targets during OAuth2 authentication flows.</summary>
     [JsonPropertyName("allowedResourceOauth2ReturnUrls")]
     public IList<string>? AllowedResourceOauth2ReturnUrls { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -202,6 +210,14 @@ public partial class V1beta1WorkloadIdentityStatusAtProvider
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    [JsonPropertyName("tagsAll")]
+    public IDictionary<string, string>? TagsAll { get; set; }
 
     /// <summary>ARN of the Workload Identity.</summary>
     [JsonPropertyName("workloadIdentityArn")]

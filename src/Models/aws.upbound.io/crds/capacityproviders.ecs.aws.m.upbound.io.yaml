@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: capacityproviders.ecs.aws.m.upbound.io
 spec:
   group: ecs.aws.m.upbound.io
@@ -58,10 +58,10 @@ spec:
               forProvider:
                 properties:
                   autoScalingGroupProvider:
-                    description: Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
+                    description: Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
                     properties:
                       autoScalingGroupArn:
-                        description: '- ARN of the associated auto scaling group.'
+                        description: '- ARN of the associated Auto Scaling group.'
                         type: string
                       autoScalingGroupArnRef:
                         description: Reference to a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.
@@ -165,7 +165,7 @@ spec:
                             type: number
                         type: object
                       managedTerminationProtection:
-                        description: '- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
+                        description: '- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
                         type: string
                     type: object
                   cluster:
@@ -439,10 +439,10 @@ spec:
                   autoscaler.
                 properties:
                   autoScalingGroupProvider:
-                    description: Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
+                    description: Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
                     properties:
                       autoScalingGroupArn:
-                        description: '- ARN of the associated auto scaling group.'
+                        description: '- ARN of the associated Auto Scaling group.'
                         type: string
                       autoScalingGroupArnRef:
                         description: Reference to a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.
@@ -546,7 +546,7 @@ spec:
                             type: number
                         type: object
                       managedTerminationProtection:
-                        description: '- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
+                        description: '- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
                         type: string
                     type: object
                   cluster:
@@ -866,10 +866,10 @@ spec:
                     description: ARN that identifies the capacity provider.
                     type: string
                   autoScalingGroupProvider:
-                    description: Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
+                    description: Configuration block for the provider for the ECS Auto Scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.
                     properties:
                       autoScalingGroupArn:
-                        description: '- ARN of the associated auto scaling group.'
+                        description: '- ARN of the associated Auto Scaling group.'
                         type: string
                       managedDraining:
                         description: '- Enables or disables a graceful shutdown of instances without disturbing workloads. Valid values are ENABLED and DISABLED. The default value is ENABLED when a capacity provider is created.'
@@ -894,7 +894,7 @@ spec:
                             type: number
                         type: object
                       managedTerminationProtection:
-                        description: '- Enables or disables container-aware termination of instances in the auto scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
+                        description: '- Enables or disables container-aware termination of instances in the Auto Scaling group when scale-in happens. Valid values are ENABLED and DISABLED.'
                         type: string
                     type: object
                   cluster:

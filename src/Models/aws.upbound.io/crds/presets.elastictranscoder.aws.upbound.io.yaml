@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: presets.elastictranscoder.aws.upbound.io
 spec:
   group: elastictranscoder.aws.upbound.io
@@ -963,7 +963,7 @@ spec:
                           description: The amount by which you want the horizontal position of the watermark to be offset from the position specified by horizontal_align.
                           type: string
                         id:
-                          description: A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.
+                          description: A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.
                           type: string
                         maxHeight:
                           description: The maximum height of thumbnails, in pixels. If you specify auto, Elastic Transcoder uses 1080 (Full HD) as the default value. If you specify a numeric value, enter an even integer between 32 and 3072, inclusive.
@@ -1138,7 +1138,7 @@ spec:
                           description: The amount by which you want the horizontal position of the watermark to be offset from the position specified by horizontal_align.
                           type: string
                         id:
-                          description: A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.
+                          description: A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.
                           type: string
                         maxHeight:
                           description: The maximum height of thumbnails, in pixels. If you specify auto, Elastic Transcoder uses 1080 (Full HD) as the default value. If you specify a numeric value, enter an even integer between 32 and 3072, inclusive.
@@ -1303,7 +1303,7 @@ spec:
                     description: A description of the preset (maximum 255 characters)
                     type: string
                   id:
-                    description: A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.
+                    description: A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.
                     type: string
                   name:
                     description: The name of the preset. (maximum 40 characters)
@@ -1403,7 +1403,7 @@ spec:
                           description: The amount by which you want the horizontal position of the watermark to be offset from the position specified by horizontal_align.
                           type: string
                         id:
-                          description: A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.
+                          description: A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.
                           type: string
                         maxHeight:
                           description: The maximum height of thumbnails, in pixels. If you specify auto, Elastic Transcoder uses 1080 (Full HD) as the default value. If you specify a numeric value, enter an even integer between 32 and 3072, inclusive.

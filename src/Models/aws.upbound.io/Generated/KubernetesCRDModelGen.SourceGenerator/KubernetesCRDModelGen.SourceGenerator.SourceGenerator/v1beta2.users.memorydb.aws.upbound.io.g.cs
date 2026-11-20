@@ -74,7 +74,7 @@ public partial class V1beta2UserSpecForProviderAuthenticationModePasswordsSecret
     public required string Namespace { get; set; }
 }
 
-/// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+/// <summary>Authentication properties for the user. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecForProviderAuthenticationMode
@@ -83,7 +83,7 @@ public partial class V1beta2UserSpecForProviderAuthenticationMode
     [JsonPropertyName("passwordsSecretRef")]
     public IList<V1beta2UserSpecForProviderAuthenticationModePasswordsSecretRef>? PasswordsSecretRef { get; set; }
 
-    /// <summary>Specifies the authentication type. Valid values are: password or iam.</summary>
+    /// <summary>Type of authentication. Valid values are password or iam.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -96,7 +96,7 @@ public partial class V1beta2UserSpecForProvider
     [JsonPropertyName("accessString")]
     public string? AccessString { get; set; }
 
-    /// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+    /// <summary>Authentication properties for the user. Detailed below.</summary>
     [JsonPropertyName("authenticationMode")]
     public V1beta2UserSpecForProviderAuthenticationMode? AuthenticationMode { get; set; }
 
@@ -112,7 +112,7 @@ public partial class V1beta2UserSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+/// <summary>Authentication properties for the user. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecInitProviderAuthenticationMode
@@ -120,7 +120,7 @@ public partial class V1beta2UserSpecInitProviderAuthenticationMode
     [JsonPropertyName("passwordsSecretRef")]
     public IList<string>? PasswordsSecretRef { get; set; }
 
-    /// <summary>Specifies the authentication type. Valid values are: password or iam.</summary>
+    /// <summary>Type of authentication. Valid values are password or iam.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -145,7 +145,7 @@ public partial class V1beta2UserSpecInitProvider
     [JsonPropertyName("accessString")]
     public string? AccessString { get; set; }
 
-    /// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+    /// <summary>Authentication properties for the user. Detailed below.</summary>
     [JsonPropertyName("authenticationMode")]
     public V1beta2UserSpecInitProviderAuthenticationMode? AuthenticationMode { get; set; }
 
@@ -337,7 +337,7 @@ public partial class V1beta2UserSpec
     public V1beta2UserSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+/// <summary>Authentication properties for the user. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserStatusAtProviderAuthenticationMode
@@ -346,7 +346,7 @@ public partial class V1beta2UserStatusAtProviderAuthenticationMode
     [JsonPropertyName("passwordCount")]
     public double? PasswordCount { get; set; }
 
-    /// <summary>Specifies the authentication type. Valid values are: password or iam.</summary>
+    /// <summary>Type of authentication. Valid values are password or iam.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -363,7 +363,7 @@ public partial class V1beta2UserStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Denotes the user&apos;s authentication properties. Detailed below.</summary>
+    /// <summary>Authentication properties for the user. Detailed below.</summary>
     [JsonPropertyName("authenticationMode")]
     public V1beta2UserStatusAtProviderAuthenticationMode? AuthenticationMode { get; set; }
 
@@ -386,7 +386,7 @@ public partial class V1beta2UserStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

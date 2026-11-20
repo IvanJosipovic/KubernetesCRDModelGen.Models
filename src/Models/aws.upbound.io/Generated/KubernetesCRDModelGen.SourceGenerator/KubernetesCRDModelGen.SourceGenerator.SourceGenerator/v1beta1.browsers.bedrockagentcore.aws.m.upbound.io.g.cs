@@ -42,7 +42,7 @@ public partial class V1beta1BrowserList : IKubernetesObject<V1ListMeta>, IItems<
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderBrowserSigning
 {
-    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    /// <summary>Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -220,7 +220,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
     public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocation
@@ -234,7 +234,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1BrowserSpecForProviderCertificateLocation? Location { get; set; }
 }
@@ -623,7 +623,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3Location
 {
-    /// <summary>Name of the S3 bucket where recordings are stored.</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -635,7 +635,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3Location
     [JsonPropertyName("bucketSelector")]
     public V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>S3 key prefix for recording files.</summary>
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -715,7 +715,7 @@ public partial class V1beta1BrowserSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderBrowserSigning
 {
-    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    /// <summary>Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -893,7 +893,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
     public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocation
@@ -907,7 +907,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1BrowserSpecInitProviderCertificateLocation? Location { get; set; }
 }
@@ -1296,7 +1296,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3Location
 {
-    /// <summary>Name of the S3 bucket where recordings are stored.</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1308,7 +1308,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3Location
     [JsonPropertyName("bucketSelector")]
     public V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>S3 key prefix for recording files.</summary>
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -1500,7 +1500,7 @@ public partial class V1beta1BrowserSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderBrowserSigning
 {
-    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    /// <summary>Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1515,7 +1515,7 @@ public partial class V1beta1BrowserStatusAtProviderCertificateLocationSecretsMan
     public string? SecretArn { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderCertificateLocation
@@ -1529,7 +1529,7 @@ public partial class V1beta1BrowserStatusAtProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1BrowserStatusAtProviderCertificateLocation? Location { get; set; }
 }
@@ -1608,11 +1608,11 @@ public partial class V1beta1BrowserStatusAtProviderNetworkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderRecordingS3Location
 {
-    /// <summary>Name of the S3 bucket where recordings are stored.</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>S3 key prefix for recording files.</summary>
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -1689,7 +1689,7 @@ public partial class V1beta1BrowserStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

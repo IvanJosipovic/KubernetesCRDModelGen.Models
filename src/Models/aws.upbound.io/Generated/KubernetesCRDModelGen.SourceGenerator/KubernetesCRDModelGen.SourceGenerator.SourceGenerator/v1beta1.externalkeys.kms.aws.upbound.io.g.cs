@@ -90,7 +90,7 @@ public partial class V1beta1ExternalKeySpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -98,19 +98,19 @@ public partial class V1beta1ExternalKeySpecForProvider
     [JsonPropertyName("keyMaterialBase64SecretRef")]
     public V1beta1ExternalKeySpecForProviderKeyMaterialBase64SecretRef? KeyMaterialBase64SecretRef { get; set; }
 
-    /// <summary>Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("keySpec")]
     public string? KeySpec { get; set; }
 
-    /// <summary>Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
+    /// <summary>Key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -176,7 +176,7 @@ public partial class V1beta1ExternalKeySpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -184,19 +184,19 @@ public partial class V1beta1ExternalKeySpecInitProvider
     [JsonPropertyName("keyMaterialBase64SecretRef")]
     public V1beta1ExternalKeySpecInitProviderKeyMaterialBase64SecretRef? KeyMaterialBase64SecretRef { get; set; }
 
-    /// <summary>Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("keySpec")]
     public string? KeySpec { get; set; }
 
-    /// <summary>Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
+    /// <summary>Key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -412,7 +412,7 @@ public partial class V1beta1ExternalKeyStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
+    /// <summary>Whether the key is enabled. Keys pending import can only be false. Imported keys default to true unless expired.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -420,27 +420,27 @@ public partial class V1beta1ExternalKeyStatusAtProvider
     [JsonPropertyName("expirationModel")]
     public string? ExpirationModel { get; set; }
 
-    /// <summary>The unique identifier for the key.</summary>
+    /// <summary>Unique identifier for the key.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, or SM2 (China Regions only). Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("keySpec")]
     public string? KeySpec { get; set; }
 
-    /// <summary>The state of the CMK.</summary>
+    /// <summary>State of the CMK.</summary>
     [JsonPropertyName("keyState")]
     public string? KeyState { get; set; }
 
-    /// <summary>Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
+    /// <summary>Key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -455,7 +455,7 @@ public partial class V1beta1ExternalKeyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

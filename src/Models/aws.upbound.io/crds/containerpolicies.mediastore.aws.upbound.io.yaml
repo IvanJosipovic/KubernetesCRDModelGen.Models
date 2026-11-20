@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: containerpolicies.mediastore.aws.upbound.io
 spec:
   group: mediastore.aws.upbound.io
@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   containerName:
-                    description: The name of the container.
+                    description: Name of the container.
                     type: string
                   containerNameRef:
                     description: Reference to a Container in mediastore to populate containerName.
@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   policy:
-                    description: The contents of the policy.
+                    description: Contents of the policy.
                     type: string
                   region:
                     description: |-
@@ -172,7 +172,7 @@ spec:
                   autoscaler.
                 properties:
                   containerName:
-                    description: The name of the container.
+                    description: Name of the container.
                     type: string
                   containerNameRef:
                     description: Reference to a Container in mediastore to populate containerName.
@@ -248,7 +248,7 @@ spec:
                         type: object
                     type: object
                   policy:
-                    description: The contents of the policy.
+                    description: Contents of the policy.
                     type: string
                 type: object
               managementPolicies:
@@ -346,12 +346,12 @@ spec:
               atProvider:
                 properties:
                   containerName:
-                    description: The name of the container.
+                    description: Name of the container.
                     type: string
                   id:
                     type: string
                   policy:
-                    description: The contents of the policy.
+                    description: Contents of the policy.
                     type: string
                   region:
                     description: |-

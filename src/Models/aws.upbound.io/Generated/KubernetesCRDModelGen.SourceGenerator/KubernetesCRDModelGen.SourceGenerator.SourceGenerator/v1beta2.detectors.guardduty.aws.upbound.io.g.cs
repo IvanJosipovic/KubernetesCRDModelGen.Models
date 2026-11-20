@@ -56,125 +56,80 @@ public enum V1beta2DetectorSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>
-/// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-/// See Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesKubernetesAuditLogs
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configures Kubernetes protection.
-/// See Kubernetes and Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesKubernetes
 {
-    /// <summary>
-    /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-    /// See Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
     [JsonPropertyName("auditLogs")]
     public V1beta2DetectorSpecForProviderDatasourcesKubernetesAuditLogs? AuditLogs { get; set; }
 }
 
-/// <summary>
-/// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-/// See EBS volumes below for more details.
-/// </summary>
+/// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-/// See Scan EC2 instance with findings below for more details.
-/// </summary>
+/// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
-    /// <summary>
-    /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-    /// See EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
     [JsonPropertyName("ebsVolumes")]
     public V1beta2DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes? EbsVolumes { get; set; }
 }
 
-/// <summary>
-/// Configures Malware Protection.
-/// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-/// </summary>
+/// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesMalwareProtection
 {
-    /// <summary>
-    /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-    /// See Scan EC2 instance with findings below for more details.
-    /// </summary>
+    /// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
     [JsonPropertyName("scanEc2InstanceWithFindings")]
     public V1beta2DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings? ScanEc2InstanceWithFindings { get; set; }
 }
 
-/// <summary>
-/// Configures S3 protection.
-/// See S3 Logs below for more details.
-/// </summary>
+/// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasourcesS3Logs
 {
-    /// <summary>
-    /// If true, enables S3 protection.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables S3 protection. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+/// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProviderDatasources
 {
-    /// <summary>
-    /// Configures Kubernetes protection.
-    /// See Kubernetes and Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
     [JsonPropertyName("kubernetes")]
     public V1beta2DetectorSpecForProviderDatasourcesKubernetes? Kubernetes { get; set; }
 
-    /// <summary>
-    /// Configures Malware Protection.
-    /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
     [JsonPropertyName("malwareProtection")]
     public V1beta2DetectorSpecForProviderDatasourcesMalwareProtection? MalwareProtection { get; set; }
 
-    /// <summary>
-    /// Configures S3 protection.
-    /// See S3 Logs below for more details.
-    /// </summary>
+    /// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
     [JsonPropertyName("s3Logs")]
     public V1beta2DetectorSpecForProviderDatasourcesS3Logs? S3Logs { get; set; }
 }
@@ -183,7 +138,7 @@ public partial class V1beta2DetectorSpecForProviderDatasources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecForProvider
 {
-    /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+    /// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
     [JsonPropertyName("datasources")]
     public V1beta2DetectorSpecForProviderDatasources? Datasources { get; set; }
 
@@ -191,7 +146,7 @@ public partial class V1beta2DetectorSpecForProvider
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 
-    /// <summary>Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
+    /// <summary>Frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
@@ -207,125 +162,80 @@ public partial class V1beta2DetectorSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>
-/// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-/// See Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesKubernetesAuditLogs
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configures Kubernetes protection.
-/// See Kubernetes and Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesKubernetes
 {
-    /// <summary>
-    /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-    /// See Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
     [JsonPropertyName("auditLogs")]
     public V1beta2DetectorSpecInitProviderDatasourcesKubernetesAuditLogs? AuditLogs { get; set; }
 }
 
-/// <summary>
-/// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-/// See EBS volumes below for more details.
-/// </summary>
+/// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-/// See Scan EC2 instance with findings below for more details.
-/// </summary>
+/// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
-    /// <summary>
-    /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-    /// See EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
     [JsonPropertyName("ebsVolumes")]
     public V1beta2DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes? EbsVolumes { get; set; }
 }
 
-/// <summary>
-/// Configures Malware Protection.
-/// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-/// </summary>
+/// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesMalwareProtection
 {
-    /// <summary>
-    /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-    /// See Scan EC2 instance with findings below for more details.
-    /// </summary>
+    /// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
     [JsonPropertyName("scanEc2InstanceWithFindings")]
     public V1beta2DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings? ScanEc2InstanceWithFindings { get; set; }
 }
 
-/// <summary>
-/// Configures S3 protection.
-/// See S3 Logs below for more details.
-/// </summary>
+/// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasourcesS3Logs
 {
-    /// <summary>
-    /// If true, enables S3 protection.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables S3 protection. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+/// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProviderDatasources
 {
-    /// <summary>
-    /// Configures Kubernetes protection.
-    /// See Kubernetes and Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
     [JsonPropertyName("kubernetes")]
     public V1beta2DetectorSpecInitProviderDatasourcesKubernetes? Kubernetes { get; set; }
 
-    /// <summary>
-    /// Configures Malware Protection.
-    /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
     [JsonPropertyName("malwareProtection")]
     public V1beta2DetectorSpecInitProviderDatasourcesMalwareProtection? MalwareProtection { get; set; }
 
-    /// <summary>
-    /// Configures S3 protection.
-    /// See S3 Logs below for more details.
-    /// </summary>
+    /// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
     [JsonPropertyName("s3Logs")]
     public V1beta2DetectorSpecInitProviderDatasourcesS3Logs? S3Logs { get; set; }
 }
@@ -346,7 +256,7 @@ public partial class V1beta2DetectorSpecInitProviderDatasources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorSpecInitProvider
 {
-    /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+    /// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
     [JsonPropertyName("datasources")]
     public V1beta2DetectorSpecInitProviderDatasources? Datasources { get; set; }
 
@@ -354,7 +264,7 @@ public partial class V1beta2DetectorSpecInitProvider
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 
-    /// <summary>Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
+    /// <summary>Frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
@@ -546,125 +456,80 @@ public partial class V1beta2DetectorSpec
     public V1beta2DetectorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-/// See Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesKubernetesAuditLogs
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configures Kubernetes protection.
-/// See Kubernetes and Kubernetes Audit Logs below for more details.
-/// </summary>
+/// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesKubernetes
 {
-    /// <summary>
-    /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
-    /// See Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes audit logs as a data source for Kubernetes protection. See audit_logs below for more details.</summary>
     [JsonPropertyName("auditLogs")]
     public V1beta2DetectorStatusAtProviderDatasourcesKubernetesAuditLogs? AuditLogs { get; set; }
 }
 
-/// <summary>
-/// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-/// See EBS volumes below for more details.
-/// </summary>
+/// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
-    /// <summary>
-    /// If true, enables Malware Protection as data source for the detector.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables Malware Protection as data source for the detector. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>
-/// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-/// See Scan EC2 instance with findings below for more details.
-/// </summary>
+/// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
-    /// <summary>
-    /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
-    /// See EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings. See ebs_volumes below for more details.</summary>
     [JsonPropertyName("ebsVolumes")]
     public V1beta2DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes? EbsVolumes { get; set; }
 }
 
-/// <summary>
-/// Configures Malware Protection.
-/// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-/// </summary>
+/// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesMalwareProtection
 {
-    /// <summary>
-    /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
-    /// See Scan EC2 instance with findings below for more details.
-    /// </summary>
+    /// <summary>Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector. See scan_ec2_instance_with_findings below for more details.</summary>
     [JsonPropertyName("scanEc2InstanceWithFindings")]
     public V1beta2DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings? ScanEc2InstanceWithFindings { get; set; }
 }
 
-/// <summary>
-/// Configures S3 protection.
-/// See S3 Logs below for more details.
-/// </summary>
+/// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasourcesS3Logs
 {
-    /// <summary>
-    /// If true, enables S3 protection.
-    /// Defaults to true.
-    /// </summary>
+    /// <summary>If true, enables S3 protection. Defaults to true.</summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
-/// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+/// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProviderDatasources
 {
-    /// <summary>
-    /// Configures Kubernetes protection.
-    /// See Kubernetes and Kubernetes Audit Logs below for more details.
-    /// </summary>
+    /// <summary>Configures Kubernetes protection. See kubernetes below for more details.</summary>
     [JsonPropertyName("kubernetes")]
     public V1beta2DetectorStatusAtProviderDatasourcesKubernetes? Kubernetes { get; set; }
 
-    /// <summary>
-    /// Configures Malware Protection.
-    /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
-    /// </summary>
+    /// <summary>Configures Malware Protection. See malware_protection below for more details.</summary>
     [JsonPropertyName("malwareProtection")]
     public V1beta2DetectorStatusAtProviderDatasourcesMalwareProtection? MalwareProtection { get; set; }
 
-    /// <summary>
-    /// Configures S3 protection.
-    /// See S3 Logs below for more details.
-    /// </summary>
+    /// <summary>Configures S3 protection. See s3_logs below for more details.</summary>
     [JsonPropertyName("s3Logs")]
     public V1beta2DetectorStatusAtProviderDatasourcesS3Logs? S3Logs { get; set; }
 }
@@ -673,7 +538,7 @@ public partial class V1beta2DetectorStatusAtProviderDatasources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DetectorStatusAtProvider
 {
-    /// <summary>The AWS account ID of the GuardDuty detector</summary>
+    /// <summary>AWS account ID of the GuardDuty detector</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
@@ -681,7 +546,7 @@ public partial class V1beta2DetectorStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
+    /// <summary>Data sources to enable for the detector. See datasources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
     [JsonPropertyName("datasources")]
     public V1beta2DetectorStatusAtProviderDatasources? Datasources { get; set; }
 
@@ -689,11 +554,11 @@ public partial class V1beta2DetectorStatusAtProvider
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 
-    /// <summary>Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
+    /// <summary>Frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to SIX_HOURS. Valid values for standalone and primary accounts: FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. See AWS Documentation for more information.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
-    /// <summary>The ID of the GuardDuty detector</summary>
+    /// <summary>ID of the GuardDuty detector</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -708,7 +573,7 @@ public partial class V1beta2DetectorStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

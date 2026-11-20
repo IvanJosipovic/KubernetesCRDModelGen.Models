@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.m.upbound.io;
-/// <summary>GuardrailVersion is the Schema for the GuardrailVersions API.</summary>
+/// <summary>GuardrailVersion is the Schema for the GuardrailVersions API. Manages an AWS Bedrock Guardrail Version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -219,7 +219,7 @@ public partial class V1beta1GuardrailVersionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false</summary>
+    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 }
@@ -411,7 +411,7 @@ public partial class V1beta1GuardrailVersionSpecInitProvider
     [JsonPropertyName("guardrailArnSelector")]
     public V1beta1GuardrailVersionSpecInitProviderGuardrailArnSelector? GuardrailArnSelector { get; set; }
 
-    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false</summary>
+    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 }
@@ -545,7 +545,7 @@ public partial class V1beta1GuardrailVersionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false</summary>
+    /// <summary>Whether to retain the old version of a previously deployed Guardrail. Default is false.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 
@@ -627,7 +627,7 @@ public partial class V1beta1GuardrailVersionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>GuardrailVersion is the Schema for the GuardrailVersions API.</summary>
+/// <summary>GuardrailVersion is the Schema for the GuardrailVersions API. Manages an AWS Bedrock Guardrail Version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

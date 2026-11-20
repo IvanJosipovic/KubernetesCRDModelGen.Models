@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
-/// <summary>DataSource is the Schema for the DataSources API.</summary>
+/// <summary>DataSource is the Schema for the DataSources API. Manages an AWS Agents for Amazon Bedrock Data Source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -41,15 +41,15 @@ public partial class V1beta1DataSourceList : IKubernetesObject<V1ListMeta>, IIte
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more exclusion regular expression patterns to exclude object types that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more inclusion regular expression patterns to include object types that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -58,31 +58,31 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -242,16 +242,16 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -263,30 +263,30 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
@@ -300,7 +300,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
     public double? DeletionProtectionThreshold { get; set; }
 }
 
-/// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
@@ -310,7 +310,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
     public string? AudioExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
@@ -320,7 +320,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
     public string? ImageExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
@@ -330,25 +330,91 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
     public string? VideoExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
-    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
     [JsonPropertyName("audioExtractionConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration? AudioExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
     [JsonPropertyName("imageExtractionConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration? ImageExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
     [JsonPropertyName("videoExtractionConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration? VideoExtractionConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+/// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily
+{
+}
+
+/// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth
+{
+}
+
+/// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth
+{
+    /// <summary>Specific day of the month, from 1 to 28.</summary>
+    [JsonPropertyName("dayNumber")]
+    public double? DayNumber { get; set; }
+
+    /// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+    [JsonPropertyName("lastDayOfMonth")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth? LastDayOfMonth { get; set; }
+}
+
+/// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly
+{
+    /// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+    [JsonPropertyName("dayOfMonth")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth? DayOfMonth { get; set; }
+}
+
+/// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly
+{
+    /// <summary>Day of the week on which the weekly sync runs. Valid values: SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY.</summary>
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+}
+
+/// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule
+{
+    /// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+    [JsonPropertyName("daily")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily? Daily { get; set; }
+
+    /// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+    [JsonPropertyName("monthly")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly? Monthly { get; set; }
+
+    /// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+    [JsonPropertyName("weekly")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly? Weekly { get; set; }
+}
+
+/// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
@@ -357,13 +423,17 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
     [JsonPropertyName("connectorParameters")]
     public string? ConnectorParameters { get; set; }
 
-    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
     [JsonPropertyName("deletionProtectionConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration? DeletionProtectionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
     [JsonPropertyName("mediaExtractionConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration? MediaExtractionConfiguration { get; set; }
+
+    /// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+    [JsonPropertyName("syncSchedule")]
+    public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule? SyncSchedule { get; set; }
 }
 
 /// <summary>
@@ -521,7 +591,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configuration
@@ -551,15 +621,15 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -568,31 +638,31 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -752,16 +822,16 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -773,21 +843,21 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
@@ -796,15 +866,15 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -813,31 +883,31 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -997,16 +1067,16 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -1018,38 +1088,38 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The domain of your SharePoint instance or site URL/URLs.</summary>
+    /// <summary>Domain of your SharePoint instance or site URL/URLs.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>A list of one or more SharePoint site URLs.</summary>
+    /// <summary>One or more SharePoint site URLs.</summary>
     [JsonPropertyName("siteUrls")]
     public IList<string>? SiteUrls { get; set; }
 
-    /// <summary>The identifier of your Microsoft 365 tenant.</summary>
+    /// <summary>Identifier of your Microsoft 365 tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
@@ -1063,20 +1133,20 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
     public double? RateLimit { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
-    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
     [JsonPropertyName("crawlerLimits")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits? CrawlerLimits { get; set; }
 
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
@@ -1084,7 +1154,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>String used for identifying the crawler or a bot when it accesses a web server. Default value is bedrockbot_UUID.</summary>
+    /// <summary>Custom suffix appended to the bedrockbot_UUID user agent header that the crawler uses when it accesses a web server. Must be between 15 and 40 characters.</summary>
     [JsonPropertyName("userAgent")]
     public string? UserAgent { get; set; }
 }
@@ -1098,62 +1168,62 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
     public string? Url { get; set; }
 }
 
-/// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+/// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
-    /// <summary>List of one or more seed URLs to crawl. See seed_urls block for details.</summary>
+    /// <summary>List of one or more seed URLs to crawl. See seed_urls Block for details.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls>? SeedUrls { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
-    /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+    /// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
     [JsonPropertyName("urlConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration? UrlConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+/// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfiguration
 {
-    /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
     [JsonPropertyName("confluenceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfiguration? ConfluenceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+    /// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConnectorConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration? ManagedKnowledgeBaseConnectorConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
     [JsonPropertyName("salesforceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfiguration? SalesforceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
     [JsonPropertyName("sharePointConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfiguration? SharePointConfiguration { get; set; }
 
@@ -1161,7 +1231,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfiguration
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
     [JsonPropertyName("webConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfiguration? WebConfiguration { get; set; }
 }
@@ -1476,7 +1546,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
     public V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfiguration
@@ -1494,7 +1564,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
     public V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 }
 
-/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
@@ -1517,61 +1587,99 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public double? MaxTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
-    /// <summary>Maximum number of tokens to include in a chunk. Must contain two level_configurations. See level_configurations for details.</summary>
+    /// <summary>Token settings for each layer. Must contain two level_configuration blocks. See level_configuration Block for details.</summary>
     [JsonPropertyName("levelConfiguration")]
     public IList<V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration>? LevelConfiguration { get; set; }
 
-    /// <summary>The number of tokens to repeat across chunks in the same layer.</summary>
+    /// <summary>Number of tokens to repeat across chunks in the same layer.</summary>
     [JsonPropertyName("overlapTokens")]
     public double? OverlapTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
-    /// <summary>The dissimilarity threshold for splitting chunks.</summary>
+    /// <summary>Dissimilarity threshold for splitting chunks.</summary>
     [JsonPropertyName("breakpointPercentileThreshold")]
     public double? BreakpointPercentileThreshold { get; set; }
 
-    /// <summary>The buffer size.</summary>
+    /// <summary>Buffer size.</summary>
     [JsonPropertyName("bufferSize")]
     public double? BufferSize { get; set; }
 
-    /// <summary>The maximum number of tokens a chunk can contain.</summary>
+    /// <summary>Maximum number of tokens a chunk can contain.</summary>
     [JsonPropertyName("maxToken")]
     public double? MaxToken { get; set; }
 }
 
-/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfiguration
 {
-    /// <summary>Option for chunking your source data, either in fixed-sized chunks or as one chunk. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
+    /// <summary>Option for chunking your source data. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
     [JsonPropertyName("chunkingStrategy")]
     public string? ChunkingStrategy { get; set; }
 
-    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
     [JsonPropertyName("fixedSizeChunkingConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration? FixedSizeChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
     [JsonPropertyName("hierarchicalChunkingConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration? HierarchicalChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
     [JsonPropertyName("semanticChunkingConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration? SemanticChunkingConfiguration { get; set; }
 }
 
-/// <summary>Configuration block for intermedia S3 storage.</summary>
+/// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration
+{
+    /// <summary>Method used to enrich the context of data source documents. Valid value: CHUNK_ENTITY_EXTRACTION.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration
+{
+    /// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+    [JsonPropertyName("enrichmentStrategyConfiguration")]
+    public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration? EnrichmentStrategyConfiguration { get; set; }
+
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
+    [JsonPropertyName("modelArn")]
+    public string? ModelArn { get; set; }
+}
+
+/// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfiguration
+{
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+    [JsonPropertyName("bedrockFoundationModelConfiguration")]
+    public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
+
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
@@ -1581,12 +1689,12 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public string? Uri { get; set; }
 }
 
-/// <summary>The intermediate storage for custom transformation.</summary>
+/// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
-    /// <summary>Configuration block for intermedia S3 storage.</summary>
+    /// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location? S3Location { get; set; }
 }
@@ -1746,12 +1854,12 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration of the lambda function.</summary>
+/// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
-    /// <summary>The ARN of the lambda to use for custom transformation.</summary>
+    /// <summary>ARN of the Lambda to use for custom transformation.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -1764,17 +1872,17 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-/// <summary>The lambda function that processes documents.</summary>
+/// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
-    /// <summary>The configuration of the lambda function.</summary>
+    /// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
     [JsonPropertyName("transformationLambdaConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration? TransformationLambdaConfiguration { get; set; }
 }
 
-/// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+/// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
@@ -1783,36 +1891,36 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     [JsonPropertyName("stepToApply")]
     public string? StepToApply { get; set; }
 
-    /// <summary>The lambda function that processes documents.</summary>
+    /// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
     [JsonPropertyName("transformationFunction")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction? TransformationFunction { get; set; }
 }
 
-/// <summary>Configuration for custom transformation of data source documents.</summary>
+/// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
-    /// <summary>The intermediate storage for custom transformation.</summary>
+    /// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
     [JsonPropertyName("intermediateStorage")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage? IntermediateStorage { get; set; }
 
-    /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+    /// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
     [JsonPropertyName("transformation")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation? Transformation { get; set; }
 }
 
-/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 }
 
-/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
@@ -1822,56 +1930,60 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public string? ParsingPromptString { get; set; }
 }
 
-/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
-    /// <summary>The ARN of the model used to parse documents</summary>
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
     [JsonPropertyName("modelArn")]
     public string? ModelArn { get; set; }
 
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 
-    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
     [JsonPropertyName("parsingPrompt")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt? ParsingPrompt { get; set; }
 }
 
-/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfiguration
 {
-    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
     [JsonPropertyName("bedrockDataAutomationConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration? BedrockDataAutomationConfiguration { get; set; }
 
-    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockFoundationModelConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
 
-    /// <summary>The parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION.</summary>
+    /// <summary>Parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION, SMART_PARSING, MULTI_MODAL_EMBEDDINGS.</summary>
     [JsonPropertyName("parsingStrategy")]
     public string? ParsingStrategy { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+/// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguration
 {
-    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
     [JsonPropertyName("chunkingConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfiguration? ChunkingConfiguration { get; set; }
 
-    /// <summary>Configuration for custom transformation of data source documents.</summary>
+    /// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+    [JsonPropertyName("contextEnrichmentConfiguration")]
+    public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationContextEnrichmentConfiguration? ContextEnrichmentConfiguration { get; set; }
+
+    /// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
     [JsonPropertyName("customTransformationConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfiguration? CustomTransformationConfiguration { get; set; }
 
-    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
     [JsonPropertyName("parsingConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfiguration? ParsingConfiguration { get; set; }
 }
@@ -1884,7 +1996,7 @@ public partial class V1beta1DataSourceSpecForProvider
     [JsonPropertyName("dataDeletionPolicy")]
     public string? DataDeletionPolicy { get; set; }
 
-    /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+    /// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1DataSourceSpecForProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
@@ -1915,11 +2027,11 @@ public partial class V1beta1DataSourceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1DataSourceSpecForProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+    /// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
     [JsonPropertyName("vectorIngestionConfiguration")]
     public V1beta1DataSourceSpecForProviderVectorIngestionConfiguration? VectorIngestionConfiguration { get; set; }
 }
@@ -1928,15 +2040,15 @@ public partial class V1beta1DataSourceSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more exclusion regular expression patterns to exclude object types that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more inclusion regular expression patterns to include object types that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -1945,31 +2057,31 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -2129,16 +2241,16 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -2150,30 +2262,30 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
@@ -2187,7 +2299,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
     public double? DeletionProtectionThreshold { get; set; }
 }
 
-/// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
@@ -2197,7 +2309,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
     public string? AudioExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
@@ -2207,7 +2319,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
     public string? ImageExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
@@ -2217,25 +2329,91 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
     public string? VideoExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
-    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
     [JsonPropertyName("audioExtractionConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration? AudioExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
     [JsonPropertyName("imageExtractionConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration? ImageExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
     [JsonPropertyName("videoExtractionConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration? VideoExtractionConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+/// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily
+{
+}
+
+/// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth
+{
+}
+
+/// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth
+{
+    /// <summary>Specific day of the month, from 1 to 28.</summary>
+    [JsonPropertyName("dayNumber")]
+    public double? DayNumber { get; set; }
+
+    /// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+    [JsonPropertyName("lastDayOfMonth")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth? LastDayOfMonth { get; set; }
+}
+
+/// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly
+{
+    /// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+    [JsonPropertyName("dayOfMonth")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth? DayOfMonth { get; set; }
+}
+
+/// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly
+{
+    /// <summary>Day of the week on which the weekly sync runs. Valid values: SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY.</summary>
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+}
+
+/// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule
+{
+    /// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+    [JsonPropertyName("daily")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily? Daily { get; set; }
+
+    /// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+    [JsonPropertyName("monthly")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly? Monthly { get; set; }
+
+    /// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+    [JsonPropertyName("weekly")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly? Weekly { get; set; }
+}
+
+/// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
@@ -2244,13 +2422,17 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
     [JsonPropertyName("connectorParameters")]
     public string? ConnectorParameters { get; set; }
 
-    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
     [JsonPropertyName("deletionProtectionConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration? DeletionProtectionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
     [JsonPropertyName("mediaExtractionConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration? MediaExtractionConfiguration { get; set; }
+
+    /// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+    [JsonPropertyName("syncSchedule")]
+    public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule? SyncSchedule { get; set; }
 }
 
 /// <summary>
@@ -2408,7 +2590,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configuration
@@ -2438,15 +2620,15 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -2455,31 +2637,31 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -2639,16 +2821,16 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -2660,21 +2842,21 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
@@ -2683,15 +2865,15 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -2700,31 +2882,31 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
@@ -2884,16 +3066,16 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
@@ -2905,38 +3087,38 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
     [JsonPropertyName("credentialsSecretArnSelector")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelector? CredentialsSecretArnSelector { get; set; }
 
-    /// <summary>The domain of your SharePoint instance or site URL/URLs.</summary>
+    /// <summary>Domain of your SharePoint instance or site URL/URLs.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>A list of one or more SharePoint site URLs.</summary>
+    /// <summary>One or more SharePoint site URLs.</summary>
     [JsonPropertyName("siteUrls")]
     public IList<string>? SiteUrls { get; set; }
 
-    /// <summary>The identifier of your Microsoft 365 tenant.</summary>
+    /// <summary>Identifier of your Microsoft 365 tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
@@ -2950,20 +3132,20 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
     public double? RateLimit { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
-    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
     [JsonPropertyName("crawlerLimits")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits? CrawlerLimits { get; set; }
 
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
@@ -2971,7 +3153,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>String used for identifying the crawler or a bot when it accesses a web server. Default value is bedrockbot_UUID.</summary>
+    /// <summary>Custom suffix appended to the bedrockbot_UUID user agent header that the crawler uses when it accesses a web server. Must be between 15 and 40 characters.</summary>
     [JsonPropertyName("userAgent")]
     public string? UserAgent { get; set; }
 }
@@ -2985,62 +3167,62 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
     public string? Url { get; set; }
 }
 
-/// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+/// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
-    /// <summary>List of one or more seed URLs to crawl. See seed_urls block for details.</summary>
+    /// <summary>List of one or more seed URLs to crawl. See seed_urls Block for details.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls>? SeedUrls { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
-    /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+    /// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
     [JsonPropertyName("urlConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration? UrlConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+/// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfiguration
 {
-    /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
     [JsonPropertyName("confluenceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfiguration? ConfluenceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+    /// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConnectorConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration? ManagedKnowledgeBaseConnectorConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
     [JsonPropertyName("salesforceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfiguration? SalesforceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
     [JsonPropertyName("sharePointConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfiguration? SharePointConfiguration { get; set; }
 
@@ -3048,7 +3230,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfiguration
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
     [JsonPropertyName("webConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfiguration? WebConfiguration { get; set; }
 }
@@ -3208,7 +3390,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
     public V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfiguration
@@ -3226,7 +3408,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
     public V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 }
 
-/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
@@ -3249,61 +3431,99 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public double? MaxTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
-    /// <summary>Maximum number of tokens to include in a chunk. Must contain two level_configurations. See level_configurations for details.</summary>
+    /// <summary>Token settings for each layer. Must contain two level_configuration blocks. See level_configuration Block for details.</summary>
     [JsonPropertyName("levelConfiguration")]
     public IList<V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration>? LevelConfiguration { get; set; }
 
-    /// <summary>The number of tokens to repeat across chunks in the same layer.</summary>
+    /// <summary>Number of tokens to repeat across chunks in the same layer.</summary>
     [JsonPropertyName("overlapTokens")]
     public double? OverlapTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
-    /// <summary>The dissimilarity threshold for splitting chunks.</summary>
+    /// <summary>Dissimilarity threshold for splitting chunks.</summary>
     [JsonPropertyName("breakpointPercentileThreshold")]
     public double? BreakpointPercentileThreshold { get; set; }
 
-    /// <summary>The buffer size.</summary>
+    /// <summary>Buffer size.</summary>
     [JsonPropertyName("bufferSize")]
     public double? BufferSize { get; set; }
 
-    /// <summary>The maximum number of tokens a chunk can contain.</summary>
+    /// <summary>Maximum number of tokens a chunk can contain.</summary>
     [JsonPropertyName("maxToken")]
     public double? MaxToken { get; set; }
 }
 
-/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfiguration
 {
-    /// <summary>Option for chunking your source data, either in fixed-sized chunks or as one chunk. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
+    /// <summary>Option for chunking your source data. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
     [JsonPropertyName("chunkingStrategy")]
     public string? ChunkingStrategy { get; set; }
 
-    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
     [JsonPropertyName("fixedSizeChunkingConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration? FixedSizeChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
     [JsonPropertyName("hierarchicalChunkingConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration? HierarchicalChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
     [JsonPropertyName("semanticChunkingConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration? SemanticChunkingConfiguration { get; set; }
 }
 
-/// <summary>Configuration block for intermedia S3 storage.</summary>
+/// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration
+{
+    /// <summary>Method used to enrich the context of data source documents. Valid value: CHUNK_ENTITY_EXTRACTION.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration
+{
+    /// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+    [JsonPropertyName("enrichmentStrategyConfiguration")]
+    public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration? EnrichmentStrategyConfiguration { get; set; }
+
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
+    [JsonPropertyName("modelArn")]
+    public string? ModelArn { get; set; }
+}
+
+/// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfiguration
+{
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+    [JsonPropertyName("bedrockFoundationModelConfiguration")]
+    public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
+
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
@@ -3313,12 +3533,12 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public string? Uri { get; set; }
 }
 
-/// <summary>The intermediate storage for custom transformation.</summary>
+/// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
-    /// <summary>Configuration block for intermedia S3 storage.</summary>
+    /// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location? S3Location { get; set; }
 }
@@ -3478,12 +3698,12 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration of the lambda function.</summary>
+/// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
-    /// <summary>The ARN of the lambda to use for custom transformation.</summary>
+    /// <summary>ARN of the Lambda to use for custom transformation.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -3496,17 +3716,17 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-/// <summary>The lambda function that processes documents.</summary>
+/// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
-    /// <summary>The configuration of the lambda function.</summary>
+    /// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
     [JsonPropertyName("transformationLambdaConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration? TransformationLambdaConfiguration { get; set; }
 }
 
-/// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+/// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
@@ -3515,36 +3735,36 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     [JsonPropertyName("stepToApply")]
     public string? StepToApply { get; set; }
 
-    /// <summary>The lambda function that processes documents.</summary>
+    /// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
     [JsonPropertyName("transformationFunction")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction? TransformationFunction { get; set; }
 }
 
-/// <summary>Configuration for custom transformation of data source documents.</summary>
+/// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
-    /// <summary>The intermediate storage for custom transformation.</summary>
+    /// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
     [JsonPropertyName("intermediateStorage")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage? IntermediateStorage { get; set; }
 
-    /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+    /// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
     [JsonPropertyName("transformation")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation? Transformation { get; set; }
 }
 
-/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 }
 
-/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
@@ -3554,56 +3774,60 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public string? ParsingPromptString { get; set; }
 }
 
-/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
-    /// <summary>The ARN of the model used to parse documents</summary>
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
     [JsonPropertyName("modelArn")]
     public string? ModelArn { get; set; }
 
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 
-    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
     [JsonPropertyName("parsingPrompt")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt? ParsingPrompt { get; set; }
 }
 
-/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfiguration
 {
-    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
     [JsonPropertyName("bedrockDataAutomationConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration? BedrockDataAutomationConfiguration { get; set; }
 
-    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockFoundationModelConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
 
-    /// <summary>The parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION.</summary>
+    /// <summary>Parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION, SMART_PARSING, MULTI_MODAL_EMBEDDINGS.</summary>
     [JsonPropertyName("parsingStrategy")]
     public string? ParsingStrategy { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+/// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfiguration
 {
-    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
     [JsonPropertyName("chunkingConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfiguration? ChunkingConfiguration { get; set; }
 
-    /// <summary>Configuration for custom transformation of data source documents.</summary>
+    /// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+    [JsonPropertyName("contextEnrichmentConfiguration")]
+    public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationContextEnrichmentConfiguration? ContextEnrichmentConfiguration { get; set; }
+
+    /// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
     [JsonPropertyName("customTransformationConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfiguration? CustomTransformationConfiguration { get; set; }
 
-    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
     [JsonPropertyName("parsingConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfiguration? ParsingConfiguration { get; set; }
 }
@@ -3628,7 +3852,7 @@ public partial class V1beta1DataSourceSpecInitProvider
     [JsonPropertyName("dataDeletionPolicy")]
     public string? DataDeletionPolicy { get; set; }
 
-    /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+    /// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1DataSourceSpecInitProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
@@ -3640,11 +3864,11 @@ public partial class V1beta1DataSourceSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1DataSourceSpecInitProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+    /// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
     [JsonPropertyName("vectorIngestionConfiguration")]
     public V1beta1DataSourceSpecInitProviderVectorIngestionConfiguration? VectorIngestionConfiguration { get; set; }
 }
@@ -3760,15 +3984,15 @@ public partial class V1beta1DataSourceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more exclusion regular expression patterns to exclude object types that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>One or more inclusion regular expression patterns to include object types that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -3777,72 +4001,72 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.confluence_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for Confluence content. See data_source_configuration.confluence_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your Confluence data source. See data_source_configuration.confluence_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+/// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
@@ -3856,7 +4080,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
     public double? DeletionProtectionThreshold { get; set; }
 }
 
-/// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
@@ -3866,7 +4090,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
     public string? AudioExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
@@ -3876,7 +4100,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
     public string? ImageExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
@@ -3886,25 +4110,91 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
     public string? VideoExtractionStatus { get; set; }
 }
 
-/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+/// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
-    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting audio content. See audio_extraction_configuration Block for details.</summary>
     [JsonPropertyName("audioExtractionConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration? AudioExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting image content. See image_extraction_configuration Block for details.</summary>
     [JsonPropertyName("imageExtractionConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration? ImageExtractionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting video content. See video_extraction_configuration Block for details.</summary>
     [JsonPropertyName("videoExtractionConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration? VideoExtractionConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+/// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily
+{
+}
+
+/// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth
+{
+}
+
+/// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth
+{
+    /// <summary>Specific day of the month, from 1 to 28.</summary>
+    [JsonPropertyName("dayNumber")]
+    public double? DayNumber { get; set; }
+
+    /// <summary>Configure this option to run the monthly sync on the last calendar day of each month. See last_day_of_month Block for details.</summary>
+    [JsonPropertyName("lastDayOfMonth")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth? LastDayOfMonth { get; set; }
+}
+
+/// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly
+{
+    /// <summary>Day of the month on which the monthly sync runs. See day_of_month Block for details.</summary>
+    [JsonPropertyName("dayOfMonth")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth? DayOfMonth { get; set; }
+}
+
+/// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly
+{
+    /// <summary>Day of the week on which the weekly sync runs. Valid values: SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY.</summary>
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+}
+
+/// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule
+{
+    /// <summary>Daily sync that runs once a day at a system-chosen off-peak time. The run time is not configurable. See daily Block for details.</summary>
+    [JsonPropertyName("daily")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily? Daily { get; set; }
+
+    /// <summary>Monthly sync that runs once a month on the specified day of the month. See monthly Block for details.</summary>
+    [JsonPropertyName("monthly")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly? Monthly { get; set; }
+
+    /// <summary>Weekly sync that runs once a week on the specified day of the week. See weekly Block for details.</summary>
+    [JsonPropertyName("weekly")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly? Weekly { get; set; }
+}
+
+/// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
@@ -3913,16 +4203,20 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
     [JsonPropertyName("connectorParameters")]
     public string? ConnectorParameters { get; set; }
 
-    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
+    /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration Block for details.</summary>
     [JsonPropertyName("deletionProtectionConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration? DeletionProtectionConfiguration { get; set; }
 
-    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
+    /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration Block for details.</summary>
     [JsonPropertyName("mediaExtractionConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration? MediaExtractionConfiguration { get; set; }
+
+    /// <summary>Recurring schedule on which the connector automatically syncs this data source. See sync_schedule Block for details.</summary>
+    [JsonPropertyName("syncSchedule")]
+    public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule? SyncSchedule { get; set; }
 }
 
-/// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationS3Configuration
@@ -3944,15 +4238,15 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationS3C
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -3961,63 +4255,63 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>The Salesforce host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
+    /// <summary>Confluence host URL or instance URL. Pattern: ^https://[A-Za-z0-9][^\s]*$.</summary>
     [JsonPropertyName("hostUrl")]
     public string? HostUrl { get; set; }
 }
 
-/// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
@@ -4026,15 +4320,15 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
-    /// <summary>The supported object type or content type of the data source.</summary>
+    /// <summary>Object type or content type of the data source.</summary>
     [JsonPropertyName("objectType")]
     public string? ObjectType { get; set; }
 }
@@ -4043,80 +4337,80 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
-    /// <summary>The configuration of specific filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters.</summary>
+    /// <summary>Filters applied to your data source content. Minimum of 1 filter and maximum of 25 filters. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter.filters Block for details.</summary>
     [JsonPropertyName("filters")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters>? Filters { get; set; }
 }
 
-/// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+/// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
-    /// <summary>The configuration of filtering certain objects or content types of the data source. See pattern_object_filter block for details.</summary>
+    /// <summary>Configuration for filtering objects or content types of the data source. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration.pattern_object_filter Block for details.</summary>
     [JsonPropertyName("patternObjectFilter")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter>? PatternObjectFilter { get; set; }
 
-    /// <summary>Type of storage for the data source. Valid values: S3, WEB, CONFLUENCE, SALESFORCE, SHAREPOINT, CUSTOM, REDSHIFT_METADATA, MANAGED_KNOWLEDGE_BASE_CONNECTOR.</summary>
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
-    /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
+    /// <summary>Object configuration used to filter crawled content. See data_source_configuration.share_point_configuration.crawler_configuration.filter_configuration Block for details.</summary>
     [JsonPropertyName("filterConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration? FilterConfiguration { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
-    /// <summary>The supported authentication type to authenticate and connect to your SharePoint site. Valid values: OAUTH2_CLIENT_CREDENTIALS, OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS.</summary>
+    /// <summary>Supported authentication type to authenticate and connect to your Confluence instance. Valid values: BASIC, OAUTH2_CLIENT_CREDENTIALS.</summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
+    /// <summary>ARN of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration. Pattern: ^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$.</summary>
     [JsonPropertyName("credentialsSecretArn")]
     public string? CredentialsSecretArn { get; set; }
 
-    /// <summary>The domain of your SharePoint instance or site URL/URLs.</summary>
+    /// <summary>Domain of your SharePoint instance or site URL/URLs.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The supported host type, whether online/cloud or server/on-premises. Valid values: ONLINE.</summary>
+    /// <summary>Supported host type, whether online/cloud or server/on-premises. Valid values: SAAS.</summary>
     [JsonPropertyName("hostType")]
     public string? HostType { get; set; }
 
-    /// <summary>A list of one or more SharePoint site URLs.</summary>
+    /// <summary>One or more SharePoint site URLs.</summary>
     [JsonPropertyName("siteUrls")]
     public IList<string>? SiteUrls { get; set; }
 
-    /// <summary>The identifier of your Microsoft 365 tenant.</summary>
+    /// <summary>Identifier of your Microsoft 365 tenant.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 }
 
-/// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+/// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
@@ -4130,20 +4424,20 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
     public double? RateLimit { get; set; }
 }
 
-/// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+/// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
-    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
+    /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits Block for details.</summary>
     [JsonPropertyName("crawlerLimits")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits? CrawlerLimits { get; set; }
 
-    /// <summary>A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more exclusion regular expression patterns to exclude URLs that match the pattern.</summary>
     [JsonPropertyName("exclusionFilters")]
     public IList<string>? ExclusionFilters { get; set; }
 
-    /// <summary>List of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern.</summary>
+    /// <summary>List of one or more inclusion regular expression patterns to include URLs that match the pattern.</summary>
     [JsonPropertyName("inclusionFilters")]
     public IList<string>? InclusionFilters { get; set; }
 
@@ -4151,7 +4445,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>String used for identifying the crawler or a bot when it accesses a web server. Default value is bedrockbot_UUID.</summary>
+    /// <summary>Custom suffix appended to the bedrockbot_UUID user agent header that the crawler uses when it accesses a web server. Must be between 15 and 40 characters.</summary>
     [JsonPropertyName("userAgent")]
     public string? UserAgent { get; set; }
 }
@@ -4165,62 +4459,62 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
     public string? Url { get; set; }
 }
 
-/// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+/// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
-    /// <summary>List of one or more seed URLs to crawl. See seed_urls block for details.</summary>
+    /// <summary>List of one or more seed URLs to crawl. See seed_urls Block for details.</summary>
     [JsonPropertyName("seedUrls")]
     public IList<V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls>? SeedUrls { get; set; }
 }
 
-/// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+/// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
-    /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
+    /// <summary>URL configuration of your web data source. See url_configuration Block for details.</summary>
     [JsonPropertyName("urlConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration? UrlConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+/// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfiguration
 {
-    /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
+    /// <summary>Configuration for web content. See data_source_configuration.web_configuration.crawler_configuration Block for details.</summary>
     [JsonPropertyName("crawlerConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration? CrawlerConfiguration { get; set; }
 
-    /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
+    /// <summary>Endpoint information to connect to your web data source. See data_source_configuration.web_configuration.source_configuration Block for details.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-/// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+/// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfiguration
 {
-    /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Confluence data source. See data_source_configuration.confluence_configuration Block for details.</summary>
     [JsonPropertyName("confluenceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfiguration? ConfluenceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
+    /// <summary>Configuration details for a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration Block for details.</summary>
     [JsonPropertyName("managedKnowledgeBaseConnectorConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration? ManagedKnowledgeBaseConnectorConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the S3 object that contains the data source. See s3_configuration Block for details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationS3Configuration? S3Configuration { get; set; }
 
-    /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the Salesforce data source. See data_source_configuration.salesforce_configuration Block for details.</summary>
     [JsonPropertyName("salesforceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfiguration? SalesforceConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the SharePoint data source. See data_source_configuration.share_point_configuration Block for details.</summary>
     [JsonPropertyName("sharePointConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfiguration? SharePointConfiguration { get; set; }
 
@@ -4228,12 +4522,12 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfiguration
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
+    /// <summary>Configuration details for the web data source. See data_source_configuration.web_configuration Block for details.</summary>
     [JsonPropertyName("webConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfiguration? WebConfiguration { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+/// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderServerSideEncryptionConfiguration
@@ -4243,7 +4537,7 @@ public partial class V1beta1DataSourceStatusAtProviderServerSideEncryptionConfig
     public string? KmsKeyArn { get; set; }
 }
 
-/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
@@ -4266,61 +4560,99 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     public double? MaxTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
-    /// <summary>Maximum number of tokens to include in a chunk. Must contain two level_configurations. See level_configurations for details.</summary>
+    /// <summary>Token settings for each layer. Must contain two level_configuration blocks. See level_configuration Block for details.</summary>
     [JsonPropertyName("levelConfiguration")]
     public IList<V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration>? LevelConfiguration { get; set; }
 
-    /// <summary>The number of tokens to repeat across chunks in the same layer.</summary>
+    /// <summary>Number of tokens to repeat across chunks in the same layer.</summary>
     [JsonPropertyName("overlapTokens")]
     public double? OverlapTokens { get; set; }
 }
 
-/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+/// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
-    /// <summary>The dissimilarity threshold for splitting chunks.</summary>
+    /// <summary>Dissimilarity threshold for splitting chunks.</summary>
     [JsonPropertyName("breakpointPercentileThreshold")]
     public double? BreakpointPercentileThreshold { get; set; }
 
-    /// <summary>The buffer size.</summary>
+    /// <summary>Buffer size.</summary>
     [JsonPropertyName("bufferSize")]
     public double? BufferSize { get; set; }
 
-    /// <summary>The maximum number of tokens a chunk can contain.</summary>
+    /// <summary>Maximum number of tokens a chunk can contain.</summary>
     [JsonPropertyName("maxToken")]
     public double? MaxToken { get; set; }
 }
 
-/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+/// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfiguration
 {
-    /// <summary>Option for chunking your source data, either in fixed-sized chunks or as one chunk. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
+    /// <summary>Option for chunking your source data. Valid values: FIXED_SIZE, HIERARCHICAL, SEMANTIC, NONE.</summary>
     [JsonPropertyName("chunkingStrategy")]
     public string? ChunkingStrategy { get; set; }
 
-    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration Block for details.</summary>
     [JsonPropertyName("fixedSizeChunkingConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration? FixedSizeChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration Block for details.</summary>
     [JsonPropertyName("hierarchicalChunkingConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration? HierarchicalChunkingConfiguration { get; set; }
 
-    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
+    /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration Block for details.</summary>
     [JsonPropertyName("semanticChunkingConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration? SemanticChunkingConfiguration { get; set; }
 }
 
-/// <summary>Configuration block for intermedia S3 storage.</summary>
+/// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration
+{
+    /// <summary>Method used to enrich the context of data source documents. Valid value: CHUNK_ENTITY_EXTRACTION.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration
+{
+    /// <summary>Strategy used to enrich the context of data source documents. See context_enrichment_configuration.bedrock_foundation_model_configuration.enrichment_strategy_configuration Block for details.</summary>
+    [JsonPropertyName("enrichmentStrategyConfiguration")]
+    public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration? EnrichmentStrategyConfiguration { get; set; }
+
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
+    [JsonPropertyName("modelArn")]
+    public string? ModelArn { get; set; }
+}
+
+/// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfiguration
+{
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
+    [JsonPropertyName("bedrockFoundationModelConfiguration")]
+    public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
+
+    /// <summary>Type of filtering to apply to objects or content of the data source. For example, the PATTERN type uses regular expression patterns to filter content.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
@@ -4330,37 +4662,37 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     public string? Uri { get; set; }
 }
 
-/// <summary>The intermediate storage for custom transformation.</summary>
+/// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
-    /// <summary>Configuration block for intermedia S3 storage.</summary>
+    /// <summary>Configuration block for intermediate S3 storage. See s3_location Block for details.</summary>
     [JsonPropertyName("s3Location")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location? S3Location { get; set; }
 }
 
-/// <summary>The configuration of the lambda function.</summary>
+/// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
-    /// <summary>The ARN of the lambda to use for custom transformation.</summary>
+    /// <summary>ARN of the Lambda to use for custom transformation.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 }
 
-/// <summary>The lambda function that processes documents.</summary>
+/// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
-    /// <summary>The configuration of the lambda function.</summary>
+    /// <summary>Configuration of the Lambda function. See transformation_lambda_configuration Block for details.</summary>
     [JsonPropertyName("transformationLambdaConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration? TransformationLambdaConfiguration { get; set; }
 }
 
-/// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+/// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
@@ -4369,36 +4701,36 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     [JsonPropertyName("stepToApply")]
     public string? StepToApply { get; set; }
 
-    /// <summary>The lambda function that processes documents.</summary>
+    /// <summary>Lambda function that processes documents. See transformation_function Block for details.</summary>
     [JsonPropertyName("transformationFunction")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction? TransformationFunction { get; set; }
 }
 
-/// <summary>Configuration for custom transformation of data source documents.</summary>
+/// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
-    /// <summary>The intermediate storage for custom transformation.</summary>
+    /// <summary>Intermediate storage for custom transformation. See intermediate_storage Block for details.</summary>
     [JsonPropertyName("intermediateStorage")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage? IntermediateStorage { get; set; }
 
-    /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
+    /// <summary>Custom processing step for documents moving through the data source ingestion pipeline. See transformation Block for details.</summary>
     [JsonPropertyName("transformation")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation? Transformation { get; set; }
 }
 
-/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+/// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 }
 
-/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+/// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
@@ -4408,56 +4740,60 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     public string? ParsingPromptString { get; set; }
 }
 
-/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+/// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
-    /// <summary>The ARN of the model used to parse documents</summary>
+    /// <summary>ARN of the cross-Region inference profile used for context enrichment.</summary>
     [JsonPropertyName("modelArn")]
     public string? ModelArn { get; set; }
 
-    /// <summary>Specifies whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
+    /// <summary>Whether to enable parsing of multimodal data, including both text and images. Valid value: MULTIMODAL.</summary>
     [JsonPropertyName("parsingModality")]
     public string? ParsingModality { get; set; }
 
-    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
+    /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt Block for details.</summary>
     [JsonPropertyName("parsingPrompt")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt? ParsingPrompt { get; set; }
 }
 
-/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+/// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfiguration
 {
-    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
+    /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration Block for details.</summary>
     [JsonPropertyName("bedrockDataAutomationConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration? BedrockDataAutomationConfiguration { get; set; }
 
-    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
+    /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration Block for details.</summary>
     [JsonPropertyName("bedrockFoundationModelConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration? BedrockFoundationModelConfiguration { get; set; }
 
-    /// <summary>The parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION.</summary>
+    /// <summary>Parsing strategy to use. Valid values: BEDROCK_FOUNDATION_MODEL, BEDROCK_DATA_AUTOMATION, SMART_PARSING, MULTI_MODAL_EMBEDDINGS.</summary>
     [JsonPropertyName("parsingStrategy")]
     public string? ParsingStrategy { get; set; }
 }
 
-/// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+/// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfiguration
 {
-    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
+    /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration Block for details.</summary>
     [JsonPropertyName("chunkingConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfiguration? ChunkingConfiguration { get; set; }
 
-    /// <summary>Configuration for custom transformation of data source documents.</summary>
+    /// <summary>Context enrichment configuration used to provide additional context to the RAG application. Required when the knowledge base uses Amazon Neptune Analytics (GraphRAG) storage. See context_enrichment_configuration Block for details.</summary>
+    [JsonPropertyName("contextEnrichmentConfiguration")]
+    public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationContextEnrichmentConfiguration? ContextEnrichmentConfiguration { get; set; }
+
+    /// <summary>Configuration for custom transformation of data source documents. See custom_transformation_configuration Block for details.</summary>
     [JsonPropertyName("customTransformationConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfiguration? CustomTransformationConfiguration { get; set; }
 
-    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
+    /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration Block for details.</summary>
     [JsonPropertyName("parsingConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfiguration? ParsingConfiguration { get; set; }
 }
@@ -4470,7 +4806,7 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("dataDeletionPolicy")]
     public string? DataDeletionPolicy { get; set; }
 
-    /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
+    /// <summary>Details about how the data source is stored. See data_source_configuration Block for details.</summary>
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1DataSourceStatusAtProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
@@ -4501,11 +4837,11 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
+    /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration Block for details.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta1DataSourceStatusAtProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
-    /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
+    /// <summary>Details about how to ingest the documents in the data source. See vector_ingestion_configuration Block for details.</summary>
     [JsonPropertyName("vectorIngestionConfiguration")]
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfiguration? VectorIngestionConfiguration { get; set; }
 }
@@ -4583,7 +4919,7 @@ public partial class V1beta1DataSourceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DataSource is the Schema for the DataSources API.</summary>
+/// <summary>DataSource is the Schema for the DataSources API. Manages an AWS Agents for Amazon Bedrock Data Source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -64,7 +64,7 @@ public partial class V1beta1SamplingRuleSpecForProvider
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>The percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
+    /// <summary>Percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
     [JsonPropertyName("fixedRate")]
     public double? FixedRate { get; set; }
 
@@ -76,7 +76,7 @@ public partial class V1beta1SamplingRuleSpecForProvider
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>The priority of the sampling rule.</summary>
+    /// <summary>Priority of the sampling rule.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -87,7 +87,7 @@ public partial class V1beta1SamplingRuleSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
+    /// <summary>Fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
     [JsonPropertyName("reservoirSize")]
     public double? ReservoirSize { get; set; }
 
@@ -111,7 +111,7 @@ public partial class V1beta1SamplingRuleSpecForProvider
     [JsonPropertyName("urlPath")]
     public string? UrlPath { get; set; }
 
-    /// <summary>The version of the sampling rule format (1 )</summary>
+    /// <summary>Version of the sampling rule format (1 )</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
 }
@@ -136,7 +136,7 @@ public partial class V1beta1SamplingRuleSpecInitProvider
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>The percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
+    /// <summary>Percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
     [JsonPropertyName("fixedRate")]
     public double? FixedRate { get; set; }
 
@@ -148,11 +148,11 @@ public partial class V1beta1SamplingRuleSpecInitProvider
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>The priority of the sampling rule.</summary>
+    /// <summary>Priority of the sampling rule.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
+    /// <summary>Fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
     [JsonPropertyName("reservoirSize")]
     public double? ReservoirSize { get; set; }
 
@@ -176,7 +176,7 @@ public partial class V1beta1SamplingRuleSpecInitProvider
     [JsonPropertyName("urlPath")]
     public string? UrlPath { get; set; }
 
-    /// <summary>The version of the sampling rule format (1 )</summary>
+    /// <summary>Version of the sampling rule format (1 )</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
 }
@@ -368,7 +368,7 @@ public partial class V1beta1SamplingRuleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SamplingRuleStatusAtProvider
 {
-    /// <summary>The ARN of the sampling rule.</summary>
+    /// <summary>ARN of the sampling rule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1SamplingRuleStatusAtProvider
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>The percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
+    /// <summary>Percentage of matching requests to instrument, after the reservoir is exhausted.</summary>
     [JsonPropertyName("fixedRate")]
     public double? FixedRate { get; set; }
 
@@ -388,11 +388,11 @@ public partial class V1beta1SamplingRuleStatusAtProvider
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>The name of the sampling rule.</summary>
+    /// <summary>Name of the sampling rule.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The priority of the sampling rule.</summary>
+    /// <summary>Priority of the sampling rule.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1SamplingRuleStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
+    /// <summary>Fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</summary>
     [JsonPropertyName("reservoirSize")]
     public double? ReservoirSize { get; set; }
 
@@ -423,7 +423,7 @@ public partial class V1beta1SamplingRuleStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -431,7 +431,7 @@ public partial class V1beta1SamplingRuleStatusAtProvider
     [JsonPropertyName("urlPath")]
     public string? UrlPath { get; set; }
 
-    /// <summary>The version of the sampling rule format (1 )</summary>
+    /// <summary>Version of the sampling rule format (1 )</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
 }

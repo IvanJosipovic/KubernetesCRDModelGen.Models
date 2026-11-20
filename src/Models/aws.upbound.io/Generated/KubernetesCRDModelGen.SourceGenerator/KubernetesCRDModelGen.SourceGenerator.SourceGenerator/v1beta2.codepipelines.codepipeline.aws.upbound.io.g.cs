@@ -2748,7 +2748,7 @@ public partial class V1beta2CodepipelineStatusAtProviderVariable
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProvider
 {
-    /// <summary>Codepipeline ARN.</summary>
+    /// <summary>CodePipeline ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2760,7 +2760,7 @@ public partial class V1beta2CodepipelineStatusAtProvider
     [JsonPropertyName("executionMode")]
     public string? ExecutionMode { get; set; }
 
-    /// <summary>Codepipeline ID.</summary>
+    /// <summary>CodePipeline ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

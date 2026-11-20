@@ -60,11 +60,11 @@ public enum V1beta1NetworkPerformanceMetricSubscriptionSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkPerformanceMetricSubscriptionSpecForProvider
 {
-    /// <summary>The target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
+    /// <summary>Target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
-    /// <summary>The metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
+    /// <summary>Metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
     [JsonPropertyName("metric")]
     public string? Metric { get; set; }
 
@@ -75,11 +75,11 @@ public partial class V1beta1NetworkPerformanceMetricSubscriptionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
+    /// <summary>Source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
+    /// <summary>Statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 }
@@ -100,19 +100,19 @@ public partial class V1beta1NetworkPerformanceMetricSubscriptionSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkPerformanceMetricSubscriptionSpecInitProvider
 {
-    /// <summary>The target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
+    /// <summary>Target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
-    /// <summary>The metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
+    /// <summary>Metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
     [JsonPropertyName("metric")]
     public string? Metric { get; set; }
 
-    /// <summary>The source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
+    /// <summary>Source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
+    /// <summary>Statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 }
@@ -304,18 +304,18 @@ public partial class V1beta1NetworkPerformanceMetricSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkPerformanceMetricSubscriptionStatusAtProvider
 {
-    /// <summary>The target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
+    /// <summary>Target Region or Availability Zone that the metric subscription is enabled for. For example, eu-west-1.</summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
+    /// <summary>Metric used for the enabled subscription. Valid values: aggregate-latency. Default: aggregate-latency.</summary>
     [JsonPropertyName("metric")]
     public string? Metric { get; set; }
 
-    /// <summary>The data aggregation time for the subscription.</summary>
+    /// <summary>Data aggregation time for the subscription.</summary>
     [JsonPropertyName("period")]
     public string? Period { get; set; }
 
@@ -326,11 +326,11 @@ public partial class V1beta1NetworkPerformanceMetricSubscriptionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
+    /// <summary>Source Region or Availability Zone that the metric subscription is enabled for. For example, us-east-1.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>The statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
+    /// <summary>Statistic used for the enabled subscription. Valid values: p50. Default: p50.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 }

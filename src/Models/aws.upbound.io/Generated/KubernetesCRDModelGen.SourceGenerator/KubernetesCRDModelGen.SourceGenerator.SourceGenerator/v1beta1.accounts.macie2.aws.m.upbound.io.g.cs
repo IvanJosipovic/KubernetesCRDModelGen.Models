@@ -41,7 +41,7 @@ public partial class V1beta1AccountList : IKubernetesObject<V1ListMeta>, IItems<
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecForProvider
 {
-    /// <summary>Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
+    /// <summary>How often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
@@ -52,7 +52,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -73,11 +73,11 @@ public partial class V1beta1AccountSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecInitProvider
 {
-    /// <summary>Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
+    /// <summary>How often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -193,15 +193,15 @@ public partial class V1beta1AccountSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProvider
 {
-    /// <summary>The date and time, in UTC and extended RFC 3339 format, when the Amazon Macie account was created.</summary>
+    /// <summary>Date and time, in UTC and extended RFC 3339 format, when the Amazon Macie account was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
+    /// <summary>How often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events). Valid values are FIFTEEN_MINUTES, ONE_HOUR or SIX_HOURS.</summary>
     [JsonPropertyName("findingPublishingFrequency")]
     public string? FindingPublishingFrequency { get; set; }
 
-    /// <summary>The unique identifier (ID) of the macie account.</summary>
+    /// <summary>Unique identifier (ID) of the Macie account.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -216,11 +216,11 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>The date and time, in UTC and extended RFC 3339 format, of the most recent change to the status of the Macie account.</summary>
+    /// <summary>Date and time, in UTC and extended RFC 3339 format, of the most recent change to the status of the Macie account.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 }

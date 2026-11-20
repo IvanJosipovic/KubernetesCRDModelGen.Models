@@ -1129,7 +1129,7 @@ public partial class V1beta1DirectorySpecForProviderWorkspaceCreationPropertiesC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecForProviderWorkspaceCreationProperties
 {
-    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.</summary>
+    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.</summary>
     [JsonPropertyName("customSecurityGroupId")]
     public string? CustomSecurityGroupId { get; set; }
 
@@ -2346,7 +2346,7 @@ public partial class V1beta1DirectorySpecInitProviderWorkspaceCreationProperties
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecInitProviderWorkspaceCreationProperties
 {
-    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.</summary>
+    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.</summary>
     [JsonPropertyName("customSecurityGroupId")]
     public string? CustomSecurityGroupId { get; set; }
 
@@ -2729,7 +2729,7 @@ public partial class V1beta1DirectoryStatusAtProviderWorkspaceAccessProperties
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectoryStatusAtProviderWorkspaceCreationProperties
 {
-    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.</summary>
+    /// <summary>The identifier of your custom security group. Should relate to the same VPC, where WorkSpaces reside in.</summary>
     [JsonPropertyName("customSecurityGroupId")]
     public string? CustomSecurityGroupId { get; set; }
 

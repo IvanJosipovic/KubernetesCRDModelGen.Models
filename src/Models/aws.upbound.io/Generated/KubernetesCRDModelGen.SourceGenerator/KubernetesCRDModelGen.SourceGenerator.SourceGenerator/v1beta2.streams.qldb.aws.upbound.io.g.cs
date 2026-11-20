@@ -203,12 +203,12 @@ public partial class V1beta2StreamSpecForProviderKinesisConfigurationStreamArnSe
     public V1beta2StreamSpecForProviderKinesisConfigurationStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+/// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamSpecForProviderKinesisConfiguration
 {
-    /// <summary>Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
+    /// <summary>Whether to allow QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
@@ -523,19 +523,19 @@ public partial class V1beta2StreamSpecForProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamSpecForProvider
 {
-    /// <summary>The exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
+    /// <summary>Exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
     [JsonPropertyName("exclusiveEndTime")]
     public string? ExclusiveEndTime { get; set; }
 
-    /// <summary>The inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
+    /// <summary>Inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
     [JsonPropertyName("inclusiveStartTime")]
     public string? InclusiveStartTime { get; set; }
 
-    /// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+    /// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
     [JsonPropertyName("kinesisConfiguration")]
     public V1beta2StreamSpecForProviderKinesisConfiguration? KinesisConfiguration { get; set; }
 
-    /// <summary>The name of the QLDB ledger.</summary>
+    /// <summary>Name of the QLDB ledger.</summary>
     [JsonPropertyName("ledgerName")]
     public string? LedgerName { get; set; }
 
@@ -566,7 +566,7 @@ public partial class V1beta2StreamSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta2StreamSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
+    /// <summary>Name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
@@ -722,12 +722,12 @@ public partial class V1beta2StreamSpecInitProviderKinesisConfigurationStreamArnS
     public V1beta2StreamSpecInitProviderKinesisConfigurationStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+/// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamSpecInitProviderKinesisConfiguration
 {
-    /// <summary>Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
+    /// <summary>Whether to allow QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
@@ -1054,19 +1054,19 @@ public partial class V1beta2StreamSpecInitProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamSpecInitProvider
 {
-    /// <summary>The exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
+    /// <summary>Exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
     [JsonPropertyName("exclusiveEndTime")]
     public string? ExclusiveEndTime { get; set; }
 
-    /// <summary>The inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
+    /// <summary>Inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
     [JsonPropertyName("inclusiveStartTime")]
     public string? InclusiveStartTime { get; set; }
 
-    /// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+    /// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
     [JsonPropertyName("kinesisConfiguration")]
     public V1beta2StreamSpecInitProviderKinesisConfiguration? KinesisConfiguration { get; set; }
 
-    /// <summary>The name of the QLDB ledger.</summary>
+    /// <summary>Name of the QLDB ledger.</summary>
     [JsonPropertyName("ledgerName")]
     public string? LedgerName { get; set; }
 
@@ -1090,7 +1090,7 @@ public partial class V1beta2StreamSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta2StreamSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
+    /// <summary>Name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
@@ -1282,12 +1282,12 @@ public partial class V1beta2StreamSpec
     public V1beta2StreamSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+/// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamStatusAtProviderKinesisConfiguration
 {
-    /// <summary>Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
+    /// <summary>Whether to allow QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.</summary>
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
@@ -1300,27 +1300,27 @@ public partial class V1beta2StreamStatusAtProviderKinesisConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamStatusAtProvider
 {
-    /// <summary>The ARN of the QLDB Stream.</summary>
+    /// <summary>ARN of the QLDB Stream.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
+    /// <summary>Exclusive date and time that specifies when the stream ends. If you don&apos;t define this parameter, the stream runs indefinitely until you cancel it. It must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.</summary>
     [JsonPropertyName("exclusiveEndTime")]
     public string? ExclusiveEndTime { get; set; }
 
-    /// <summary>The ID of the QLDB Stream.</summary>
+    /// <summary>ID of the QLDB Stream.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
+    /// <summary>Inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: &quot;2019-06-13T21:36:34Z&quot;.  This cannot be in the future and must be before exclusive_end_time.  If you provide a value that is before the ledger&apos;s CreationDateTime, QLDB effectively defaults it to the ledger&apos;s CreationDateTime.</summary>
     [JsonPropertyName("inclusiveStartTime")]
     public string? InclusiveStartTime { get; set; }
 
-    /// <summary>The configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
+    /// <summary>Configuration settings of the Kinesis Data Streams destination for your stream request. Documented below.</summary>
     [JsonPropertyName("kinesisConfiguration")]
     public V1beta2StreamStatusAtProviderKinesisConfiguration? KinesisConfiguration { get; set; }
 
-    /// <summary>The name of the QLDB ledger.</summary>
+    /// <summary>Name of the QLDB ledger.</summary>
     [JsonPropertyName("ledgerName")]
     public string? LedgerName { get; set; }
 
@@ -1335,7 +1335,7 @@ public partial class V1beta2StreamStatusAtProvider
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
+    /// <summary>Name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
@@ -1343,7 +1343,7 @@ public partial class V1beta2StreamStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

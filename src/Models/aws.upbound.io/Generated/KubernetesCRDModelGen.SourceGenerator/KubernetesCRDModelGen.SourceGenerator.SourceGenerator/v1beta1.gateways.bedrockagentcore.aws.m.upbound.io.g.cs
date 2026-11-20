@@ -831,7 +831,7 @@ public partial class V1beta1GatewaySpecForProviderProtocolConfigurationMcpSessio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewaySpecForProviderProtocolConfigurationMcpStreamingConfiguration
 {
-    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    /// <summary>Whether to enable response streaming for the gateway.</summary>
     [JsonPropertyName("enableResponseStreaming")]
     public bool? EnableResponseStreaming { get; set; }
 }
@@ -1897,7 +1897,7 @@ public partial class V1beta1GatewaySpecInitProviderProtocolConfigurationMcpSessi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewaySpecInitProviderProtocolConfigurationMcpStreamingConfiguration
 {
-    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    /// <summary>Whether to enable response streaming for the gateway.</summary>
     [JsonPropertyName("enableResponseStreaming")]
     public bool? EnableResponseStreaming { get; set; }
 }
@@ -2594,7 +2594,7 @@ public partial class V1beta1GatewayStatusAtProviderProtocolConfigurationMcpSessi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayStatusAtProviderProtocolConfigurationMcpStreamingConfiguration
 {
-    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    /// <summary>Whether to enable response streaming for the gateway.</summary>
     [JsonPropertyName("enableResponseStreaming")]
     public bool? EnableResponseStreaming { get; set; }
 }
@@ -2718,7 +2718,7 @@ public partial class V1beta1GatewayStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

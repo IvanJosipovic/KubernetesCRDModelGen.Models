@@ -363,7 +363,7 @@ public partial class V1beta1InstanceRoleAssociationSpecForProvider
     [JsonPropertyName("dbInstanceIdentifierSelector")]
     public V1beta1InstanceRoleAssociationSpecForProviderDbInstanceIdentifierSelector? DbInstanceIdentifierSelector { get; set; }
 
-    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI rds describe-db-engine-versions.</summary>
+    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI .</summary>
     [JsonPropertyName("featureName")]
     public string? FeatureName { get; set; }
 
@@ -725,7 +725,7 @@ public partial class V1beta1InstanceRoleAssociationSpecInitProvider
     [JsonPropertyName("dbInstanceIdentifierSelector")]
     public V1beta1InstanceRoleAssociationSpecInitProviderDbInstanceIdentifierSelector? DbInstanceIdentifierSelector { get; set; }
 
-    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI rds describe-db-engine-versions.</summary>
+    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI .</summary>
     [JsonPropertyName("featureName")]
     public string? FeatureName { get; set; }
 
@@ -857,7 +857,7 @@ public partial class V1beta1InstanceRoleAssociationStatusAtProvider
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
 
-    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI rds describe-db-engine-versions.</summary>
+    /// <summary>Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the SupportedFeatureNames list returned by AWS CLI .</summary>
     [JsonPropertyName("featureName")]
     public string? FeatureName { get; set; }
 

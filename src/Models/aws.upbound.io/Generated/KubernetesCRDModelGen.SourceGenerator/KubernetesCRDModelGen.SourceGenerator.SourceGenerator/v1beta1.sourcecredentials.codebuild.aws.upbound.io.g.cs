@@ -85,7 +85,7 @@ public partial class V1beta1SourceCredentialSpecForProvider
     /// <summary>
     /// The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket
     /// repository. Valid values are BASIC_AUTH,
-    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAUTH connection is not supported by the API.
+    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAuth connection is not supported by the API.
     /// </summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
@@ -158,7 +158,7 @@ public partial class V1beta1SourceCredentialSpecInitProvider
     /// <summary>
     /// The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket
     /// repository. Valid values are BASIC_AUTH,
-    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAUTH connection is not supported by the API.
+    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAuth connection is not supported by the API.
     /// </summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
@@ -377,7 +377,7 @@ public partial class V1beta1SourceCredentialStatusAtProvider
     /// <summary>
     /// The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket
     /// repository. Valid values are BASIC_AUTH,
-    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAUTH connection is not supported by the API.
+    /// PERSONAL_ACCESS_TOKEN, CODECONNECTIONS, and SECRETS_MANAGER. An OAuth connection is not supported by the API.
     /// </summary>
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }

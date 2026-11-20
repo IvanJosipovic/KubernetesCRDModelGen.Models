@@ -196,11 +196,11 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
 {
-    /// <summary>The CIDR you want to assign to the pool.</summary>
+    /// <summary>CIDR you want to assign to the pool.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>The description for the allocation.</summary>
+    /// <summary>Description for the allocation.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -208,7 +208,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
     [JsonPropertyName("disallowedCidrs")]
     public IList<string>? DisallowedCidrs { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
@@ -220,7 +220,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
     [JsonPropertyName("ipamPoolIdSelector")]
     public V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelector? IpamPoolIdSelector { get; set; }
 
-    /// <summary>The netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
+    /// <summary>Netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 
@@ -407,11 +407,11 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
 {
-    /// <summary>The CIDR you want to assign to the pool.</summary>
+    /// <summary>CIDR you want to assign to the pool.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>The description for the allocation.</summary>
+    /// <summary>Description for the allocation.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -419,7 +419,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
     [JsonPropertyName("disallowedCidrs")]
     public IList<string>? DisallowedCidrs { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
@@ -431,7 +431,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
     [JsonPropertyName("ipamPoolIdSelector")]
     public V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelector? IpamPoolIdSelector { get; set; }
 
-    /// <summary>The netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
+    /// <summary>Netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 
@@ -551,11 +551,11 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
 {
-    /// <summary>The CIDR you want to assign to the pool.</summary>
+    /// <summary>CIDR you want to assign to the pool.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>The description for the allocation.</summary>
+    /// <summary>Description for the allocation.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -563,19 +563,19 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
     [JsonPropertyName("disallowedCidrs")]
     public IList<string>? DisallowedCidrs { get; set; }
 
-    /// <summary>The ID of the allocation.</summary>
+    /// <summary>ID of the allocation.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ID of the allocation.</summary>
+    /// <summary>ID of the allocation.</summary>
     [JsonPropertyName("ipamPoolAllocationId")]
     public string? IpamPoolAllocationId { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
-    /// <summary>The netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
+    /// <summary>Netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 
@@ -586,15 +586,15 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the resource.</summary>
+    /// <summary>ID of the resource.</summary>
     [JsonPropertyName("resourceId")]
     public string? ResourceId { get; set; }
 
-    /// <summary>The owner of the resource.</summary>
+    /// <summary>Owner of the resource.</summary>
     [JsonPropertyName("resourceOwner")]
     public string? ResourceOwner { get; set; }
 
-    /// <summary>The type of the resource.</summary>
+    /// <summary>Type of the resource.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: deploymentgroups.deploy.aws.upbound.io
 spec:
   group: deploy.aws.upbound.io
@@ -2301,7 +2301,7 @@ spec:
                         x-kubernetes-list-type: set
                     type: object
                   autoscalingGroups:
-                    description: Autoscaling groups associated with the deployment group.
+                    description: Auto Scaling groups associated with the deployment group.
                     items:
                       type: string
                     type: array
@@ -3064,7 +3064,7 @@ spec:
                         x-kubernetes-list-type: set
                     type: object
                   autoscalingGroups:
-                    description: Autoscaling groups associated with the deployment group.
+                    description: Auto Scaling groups associated with the deployment group.
                     items:
                       type: string
                     type: array
@@ -3904,7 +3904,7 @@ spec:
                         x-kubernetes-list-type: set
                     type: object
                   autoscalingGroups:
-                    description: Autoscaling groups associated with the deployment group.
+                    description: Auto Scaling groups associated with the deployment group.
                     items:
                       type: string
                     type: array

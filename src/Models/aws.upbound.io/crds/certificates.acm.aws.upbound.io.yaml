@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: certificates.acm.aws.upbound.io
 spec:
   group: acm.aws.upbound.io
@@ -868,7 +868,7 @@ spec:
                     description: Configuration block used to set certificate options. Detailed below.
                     properties:
                       certificateTransparencyLoggingPreference:
-                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.
+                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.
                         type: string
                       export:
                         description: Whether the certificate can be exported. Valid values are ENABLED or DISABLED (default). Note Issuing an exportable certificate is subject to additional charges. See AWS Certificate Manager pricing for more details.
@@ -1045,7 +1045,7 @@ spec:
                     description: Configuration block used to set certificate options. Detailed below.
                     properties:
                       certificateTransparencyLoggingPreference:
-                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.
+                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.
                         type: string
                       export:
                         description: Whether the certificate can be exported. Valid values are ENABLED or DISABLED (default). Note Issuing an exportable certificate is subject to additional charges. See AWS Certificate Manager pricing for more details.
@@ -1253,7 +1253,7 @@ spec:
                     description: Configuration block used to set certificate options. Detailed below.
                     properties:
                       certificateTransparencyLoggingPreference:
-                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.
+                        description: Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.
                         type: string
                       export:
                         description: Whether the certificate can be exported. Valid values are ENABLED or DISABLED (default). Note Issuing an exportable certificate is subject to additional charges. See AWS Certificate Manager pricing for more details.

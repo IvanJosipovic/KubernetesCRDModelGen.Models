@@ -468,7 +468,7 @@ public partial class V1beta1WebACLLoggingConfigurationSpecForProviderResourceArn
 public partial class V1beta1WebACLLoggingConfigurationSpecForProvider
 {
     /// <summary>
-    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, Cloudwatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
+    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, CloudWatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
     /// AWS Kinesis Firehose Delivery Stream ARNs
     /// </summary>
     [JsonPropertyName("logDestinationConfigs")]
@@ -804,7 +804,7 @@ public partial class V1beta1WebACLLoggingConfigurationSpecInitProviderRedactedFi
 public partial class V1beta1WebACLLoggingConfigurationSpecInitProvider
 {
     /// <summary>
-    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, Cloudwatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
+    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, CloudWatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
     /// AWS Kinesis Firehose Delivery Stream ARNs
     /// </summary>
     [JsonPropertyName("logDestinationConfigs")]
@@ -1062,7 +1062,7 @@ public partial class V1beta1WebACLLoggingConfigurationStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, Cloudwatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
+    /// Configuration block that allows you to associate Amazon Kinesis Data Firehose, CloudWatch Log log group, or S3 bucket ARNs with the web ACL. Note: data firehose, log group, or bucket name must be prefixed with aws-waf-logs-, e.g. aws-waf-logs-example-firehose, aws-waf-logs-example-log-group, or aws-waf-logs-example-bucket.
     /// AWS Kinesis Firehose Delivery Stream ARNs
     /// </summary>
     [JsonPropertyName("logDestinationConfigs")]

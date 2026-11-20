@@ -657,12 +657,12 @@ public partial class V1beta1ThesaurusSpecForProviderSourceS3PathKeySelector
     public V1beta1ThesaurusSpecForProviderSourceS3PathKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+/// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThesaurusSpecForProviderSourceS3Path
 {
-    /// <summary>The name of the S3 bucket that contains the file.</summary>
+    /// <summary>Name of the S3 bucket that contains the file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -674,7 +674,7 @@ public partial class V1beta1ThesaurusSpecForProviderSourceS3Path
     [JsonPropertyName("bucketSelector")]
     public V1beta1ThesaurusSpecForProviderSourceS3PathBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>The name of the file.</summary>
+    /// <summary>Name of the file.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -691,11 +691,11 @@ public partial class V1beta1ThesaurusSpecForProviderSourceS3Path
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThesaurusSpecForProvider
 {
-    /// <summary>The description for a thesaurus.</summary>
+    /// <summary>Description for a thesaurus.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for a thesaurus.</summary>
+    /// <summary>Identifier of the index for a thesaurus.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -707,7 +707,7 @@ public partial class V1beta1ThesaurusSpecForProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1ThesaurusSpecForProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>The name for the thesaurus.</summary>
+    /// <summary>Name for the thesaurus.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -718,7 +718,7 @@ public partial class V1beta1ThesaurusSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
+    /// <summary>IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -730,11 +730,11 @@ public partial class V1beta1ThesaurusSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ThesaurusSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+    /// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta1ThesaurusSpecForProviderSourceS3Path? SourceS3Path { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1359,12 +1359,12 @@ public partial class V1beta1ThesaurusSpecInitProviderSourceS3PathKeySelector
     public V1beta1ThesaurusSpecInitProviderSourceS3PathKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+/// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThesaurusSpecInitProviderSourceS3Path
 {
-    /// <summary>The name of the S3 bucket that contains the file.</summary>
+    /// <summary>Name of the S3 bucket that contains the file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1376,7 +1376,7 @@ public partial class V1beta1ThesaurusSpecInitProviderSourceS3Path
     [JsonPropertyName("bucketSelector")]
     public V1beta1ThesaurusSpecInitProviderSourceS3PathBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>The name of the file.</summary>
+    /// <summary>Name of the file.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -1405,11 +1405,11 @@ public partial class V1beta1ThesaurusSpecInitProviderSourceS3Path
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThesaurusSpecInitProvider
 {
-    /// <summary>The description for a thesaurus.</summary>
+    /// <summary>Description for a thesaurus.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier of the index for a thesaurus.</summary>
+    /// <summary>Identifier of the index for a thesaurus.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
@@ -1421,11 +1421,11 @@ public partial class V1beta1ThesaurusSpecInitProvider
     [JsonPropertyName("indexIdSelector")]
     public V1beta1ThesaurusSpecInitProviderIndexIdSelector? IndexIdSelector { get; set; }
 
-    /// <summary>The name for the thesaurus.</summary>
+    /// <summary>Name for the thesaurus.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
+    /// <summary>IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1437,11 +1437,11 @@ public partial class V1beta1ThesaurusSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ThesaurusSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+    /// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta1ThesaurusSpecInitProviderSourceS3Path? SourceS3Path { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1553,16 +1553,16 @@ public partial class V1beta1ThesaurusSpec
     public V1beta1ThesaurusSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+/// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThesaurusStatusAtProviderSourceS3Path
 {
-    /// <summary>The name of the S3 bucket that contains the file.</summary>
+    /// <summary>Name of the S3 bucket that contains the file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name of the file.</summary>
+    /// <summary>Name of the file.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
@@ -1575,19 +1575,19 @@ public partial class V1beta1ThesaurusStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The description for a thesaurus.</summary>
+    /// <summary>Description for a thesaurus.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique identifiers of the thesaurus and index separated by a slash (/).</summary>
+    /// <summary>Unique identifiers of the thesaurus and index separated by a slash (/).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier of the index for a thesaurus.</summary>
+    /// <summary>Identifier of the index for a thesaurus.</summary>
     [JsonPropertyName("indexId")]
     public string? IndexId { get; set; }
 
-    /// <summary>The name for the thesaurus.</summary>
+    /// <summary>Name for the thesaurus.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1598,27 +1598,27 @@ public partial class V1beta1ThesaurusStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
+    /// <summary>IAM (Identity and Access Management) role used to access the thesaurus file in S3.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The S3 path where your thesaurus file sits in S3. Detailed below.</summary>
+    /// <summary>S3 path where your thesaurus file sits in S3. Detailed below.</summary>
     [JsonPropertyName("sourceS3Path")]
     public V1beta1ThesaurusStatusAtProviderSourceS3Path? SourceS3Path { get; set; }
 
-    /// <summary>The current status of the thesaurus.</summary>
+    /// <summary>Current status of the thesaurus.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>Key-value map of resource tags. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.</summary>
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The unique identifiers of the thesaurus and index separated by a slash (/).</summary>
+    /// <summary>Unique identifier of the thesaurus.</summary>
     [JsonPropertyName("thesaurusId")]
     public string? ThesaurusId { get; set; }
 }

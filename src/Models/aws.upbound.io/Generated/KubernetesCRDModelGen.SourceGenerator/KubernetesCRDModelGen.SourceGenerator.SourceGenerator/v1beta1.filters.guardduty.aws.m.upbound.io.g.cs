@@ -200,23 +200,23 @@ public partial class V1beta1FilterSpecForProviderFindingCriteriaCriterion
     [JsonPropertyName("equals")]
     public IList<string>? Equals { get; set; }
 
-    /// <summary>The name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
+    /// <summary>Name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -233,7 +233,7 @@ public partial class V1beta1FilterSpecForProviderFindingCriteriaCriterion
     public IList<string>? NotMatches { get; set; }
 }
 
-/// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+/// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterSpecForProviderFindingCriteria
@@ -246,7 +246,7 @@ public partial class V1beta1FilterSpecForProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterSpecForProvider
 {
-    /// <summary>Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
+    /// <summary>Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -266,11 +266,11 @@ public partial class V1beta1FilterSpecForProvider
     [JsonPropertyName("detectorIdSelector")]
     public V1beta1FilterSpecForProviderDetectorIdSelector? DetectorIdSelector { get; set; }
 
-    /// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+    /// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FilterSpecForProviderFindingCriteria? FindingCriteria { get; set; }
 
-    /// <summary>Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
     [JsonPropertyName("rank")]
     public double? Rank { get; set; }
 
@@ -294,23 +294,23 @@ public partial class V1beta1FilterSpecInitProviderFindingCriteriaCriterion
     [JsonPropertyName("equals")]
     public IList<string>? Equals { get; set; }
 
-    /// <summary>The name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
+    /// <summary>Name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -327,7 +327,7 @@ public partial class V1beta1FilterSpecInitProviderFindingCriteriaCriterion
     public IList<string>? NotMatches { get; set; }
 }
 
-/// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+/// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterSpecInitProviderFindingCriteria
@@ -352,7 +352,7 @@ public partial class V1beta1FilterSpecInitProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterSpecInitProvider
 {
-    /// <summary>Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
+    /// <summary>Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -360,11 +360,11 @@ public partial class V1beta1FilterSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+    /// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FilterSpecInitProviderFindingCriteria? FindingCriteria { get; set; }
 
-    /// <summary>Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
     [JsonPropertyName("rank")]
     public double? Rank { get; set; }
 
@@ -488,23 +488,23 @@ public partial class V1beta1FilterStatusAtProviderFindingCriteriaCriterion
     [JsonPropertyName("equals")]
     public IList<string>? Equals { get; set; }
 
-    /// <summary>The name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
+    /// <summary>Name of the field to be evaluated. The full list of field names can be found in AWS documentation.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
+    /// <summary>Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -521,7 +521,7 @@ public partial class V1beta1FilterStatusAtProviderFindingCriteriaCriterion
     public IList<string>? NotMatches { get; set; }
 }
 
-/// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+/// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterStatusAtProviderFindingCriteria
@@ -534,11 +534,11 @@ public partial class V1beta1FilterStatusAtProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FilterStatusAtProvider
 {
-    /// <summary>Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
+    /// <summary>Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>The ARN of the GuardDuty filter.</summary>
+    /// <summary>ARN of the GuardDuty filter.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -550,14 +550,14 @@ public partial class V1beta1FilterStatusAtProvider
     [JsonPropertyName("detectorId")]
     public string? DetectorId { get; set; }
 
-    /// <summary>Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
+    /// <summary>Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FilterStatusAtProviderFindingCriteria? FindingCriteria { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.</summary>
     [JsonPropertyName("rank")]
     public double? Rank { get; set; }
 
@@ -572,7 +572,7 @@ public partial class V1beta1FilterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

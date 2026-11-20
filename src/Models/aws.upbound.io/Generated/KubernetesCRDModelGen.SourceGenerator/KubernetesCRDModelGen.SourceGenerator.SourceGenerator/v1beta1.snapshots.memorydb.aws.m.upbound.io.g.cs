@@ -857,7 +857,7 @@ public partial class V1beta1SnapshotStatusAtProviderClusterConfiguration
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine that will run on cluster nodes.</summary>
+    /// <summary>Engine that will run on cluster nodes.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -865,7 +865,7 @@ public partial class V1beta1SnapshotStatusAtProviderClusterConfiguration
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>The weekly time range during which maintenance on the cluster is performed.</summary>
+    /// <summary>Weekly time range during which maintenance on the cluster is performed.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public string? MaintenanceWindow { get; set; }
 
@@ -893,7 +893,7 @@ public partial class V1beta1SnapshotStatusAtProviderClusterConfiguration
     [JsonPropertyName("snapshotRetentionLimit")]
     public double? SnapshotRetentionLimit { get; set; }
 
-    /// <summary>The daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of the shard.</summary>
+    /// <summary>Daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of the shard.</summary>
     [JsonPropertyName("snapshotWindow")]
     public string? SnapshotWindow { get; set; }
 
@@ -905,7 +905,7 @@ public partial class V1beta1SnapshotStatusAtProviderClusterConfiguration
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 
-    /// <summary>The VPC in which the cluster exists.</summary>
+    /// <summary>VPC in which the cluster exists.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
@@ -914,11 +914,11 @@ public partial class V1beta1SnapshotStatusAtProviderClusterConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotStatusAtProvider
 {
-    /// <summary>The ARN of the snapshot.</summary>
+    /// <summary>ARN of the snapshot.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The configuration of the cluster from which the snapshot was taken.</summary>
+    /// <summary>Configuration of the cluster from which the snapshot was taken.</summary>
     [JsonPropertyName("clusterConfiguration")]
     public IList<V1beta1SnapshotStatusAtProviderClusterConfiguration>? ClusterConfiguration { get; set; }
 
@@ -926,7 +926,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
-    /// <summary>The name of the snapshot.</summary>
+    /// <summary>Name of the snapshot.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -941,7 +941,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Indicates whether the snapshot is from an automatic backup (automated) or was created manually (manual).</summary>
+    /// <summary>Whether the snapshot is from an automatic backup (automated) or was created manually (manual).</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
@@ -949,7 +949,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

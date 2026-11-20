@@ -205,13 +205,6 @@ public partial class V1alpha1UserSpecForProviderPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1UserSpecForProviderPending
-{
-}
-
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UserSpecForProvider
@@ -239,10 +232,6 @@ public partial class V1alpha1UserSpecForProvider
     /// <summary>The password for the user. Must be at least 12 characters long.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1alpha1UserSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
-
-    /// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
-    [JsonPropertyName("pending")]
-    public V1alpha1UserSpecForProviderPending? Pending { get; set; }
 
     /// <summary>Region is the region you&apos;d like your resource to be created in.</summary>
     [JsonPropertyName("region")]
@@ -425,13 +414,6 @@ public partial class V1alpha1UserSpecInitProviderPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1UserSpecInitProviderPending
-{
-}
-
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -471,10 +453,6 @@ public partial class V1alpha1UserSpecInitProvider
     /// <summary>The password for the user. Must be at least 12 characters long.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public required V1alpha1UserSpecInitProviderPasswordSecretRef PasswordSecretRef { get; set; }
-
-    /// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
-    [JsonPropertyName("pending")]
-    public V1alpha1UserSpecInitProviderPending? Pending { get; set; }
 
     /// <summary>Whether the user is a replication user.</summary>
     [JsonPropertyName("replicationUser")]
@@ -592,20 +570,17 @@ public partial class V1alpha1UserSpec
     public V1alpha1UserSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
+/// <summary>Tracks pending modifications returned by the AWS MQ API: the type of pending change (CREATE, UPDATE or DELETE) and the pending console_access and groups values while a change is being processed.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UserStatusAtProviderPending
 {
-    /// <summary>The pending console access value if a change to console access is being processed.</summary>
     [JsonPropertyName("consoleAccess")]
     public bool? ConsoleAccess { get; set; }
 
-    /// <summary>The pending groups value if a change to groups is being processed.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
-    /// <summary>The type of pending change. Valid values are CREATE, UPDATE, or DELETE.</summary>
     [JsonPropertyName("pendingChange")]
     public string? PendingChange { get; set; }
 }
@@ -629,7 +604,7 @@ public partial class V1alpha1UserStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Tracks pending modifications returned by the AWS MQ API. This field allows you to monitor changes that are actively being processed before they are fully applied.</summary>
+    /// <summary>Tracks pending modifications returned by the AWS MQ API: the type of pending change (CREATE, UPDATE or DELETE) and the pending console_access and groups values while a change is being processed.</summary>
     [JsonPropertyName("pending")]
     public V1alpha1UserStatusAtProviderPending? Pending { get; set; }
 

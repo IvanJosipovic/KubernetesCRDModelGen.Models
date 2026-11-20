@@ -207,11 +207,11 @@ public partial class V1beta1VaultSpecForProviderKmsKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultSpecForProvider
 {
-    /// <summary>A boolean that indicates that all recovery points stored in the vault are deleted so that the vault can be destroyed without error.</summary>
+    /// <summary>Whether to delete all recovery points stored in the vault so that the vault can be destroyed without error. Default value: false.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The server-side encryption key that is used to protect your backups.</summary>
+    /// <summary>Server-side encryption key that is used to protect your backups.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -398,11 +398,11 @@ public partial class V1beta1VaultSpecInitProviderKmsKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultSpecInitProvider
 {
-    /// <summary>A boolean that indicates that all recovery points stored in the vault are deleted so that the vault can be destroyed without error.</summary>
+    /// <summary>Whether to delete all recovery points stored in the vault so that the vault can be destroyed without error. Default value: false.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The server-side encryption key that is used to protect your backups.</summary>
+    /// <summary>Server-side encryption key that is used to protect your backups.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -606,23 +606,23 @@ public partial class V1beta1VaultSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultStatusAtProvider
 {
-    /// <summary>The ARN of the vault.</summary>
+    /// <summary>ARN of the vault.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A boolean that indicates that all recovery points stored in the vault are deleted so that the vault can be destroyed without error.</summary>
+    /// <summary>Whether to delete all recovery points stored in the vault so that the vault can be destroyed without error. Default value: false.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The name of the vault.</summary>
+    /// <summary>Name of the vault.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The server-side encryption key that is used to protect your backups.</summary>
+    /// <summary>Server-side encryption key that is used to protect your backups.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The number of recovery points that are stored in a backup vault.</summary>
+    /// <summary>Number of recovery points that are stored in a backup vault.</summary>
     [JsonPropertyName("recoveryPoints")]
     public double? RecoveryPoints { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1VaultStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

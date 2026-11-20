@@ -192,7 +192,7 @@ public partial class V1beta1WorkspaceSpecForProviderKmsKeyIdSelector
     public V1beta1WorkspaceSpecForProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+/// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecForProviderNetworkAccessControl
@@ -361,7 +361,7 @@ public partial class V1beta1WorkspaceSpecForProviderRoleArnSelector
     public V1beta1WorkspaceSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+/// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecForProviderVpcConfiguration
@@ -379,31 +379,31 @@ public partial class V1beta1WorkspaceSpecForProviderVpcConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecForProvider
 {
-    /// <summary>The type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
+    /// <summary>Type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
     [JsonPropertyName("accountAccessType")]
     public string? AccountAccessType { get; set; }
 
-    /// <summary>The authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
+    /// <summary>Authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
     [JsonPropertyName("authenticationProviders")]
     public IList<string>? AuthenticationProviders { get; set; }
 
-    /// <summary>The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
+    /// <summary>Configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
+    /// <summary>Data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
-    /// <summary>The workspace description.</summary>
+    /// <summary>Workspace description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Version of Grafana to support in the new workspace. Supported values are 9.4, 10.4, 12.4 and 13.2. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key for encrypting workspace data.</summary>
+    /// <summary>ARN of the AWS KMS key for encrypting workspace data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -415,27 +415,27 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1WorkspaceSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The Grafana workspace name.</summary>
+    /// <summary>Grafana workspace name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+    /// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
     [JsonPropertyName("networkAccessControl")]
     public V1beta1WorkspaceSpecForProviderNetworkAccessControl? NetworkAccessControl { get; set; }
 
-    /// <summary>The notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
+    /// <summary>Notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
     [JsonPropertyName("notificationDestinations")]
     public IList<string>? NotificationDestinations { get; set; }
 
-    /// <summary>The role name that the workspace uses to access resources through Amazon Organizations.</summary>
+    /// <summary>Role name that the workspace uses to access resources through Amazon Organizations.</summary>
     [JsonPropertyName("organizationRoleName")]
     public string? OrganizationRoleName { get; set; }
 
-    /// <summary>The Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
+    /// <summary>Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
     [JsonPropertyName("organizationalUnits")]
     public IList<string>? OrganizationalUnits { get; set; }
 
-    /// <summary>The permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
+    /// <summary>Permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
     [JsonPropertyName("permissionType")]
     public string? PermissionType { get; set; }
 
@@ -446,7 +446,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The IAM role ARN that the workspace assumes.</summary>
+    /// <summary>IAM role ARN that the workspace assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -458,7 +458,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1WorkspaceSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
+    /// <summary>AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
     [JsonPropertyName("stackSetName")]
     public string? StackSetName { get; set; }
 
@@ -466,7 +466,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+    /// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1WorkspaceSpecForProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -626,7 +626,7 @@ public partial class V1beta1WorkspaceSpecInitProviderKmsKeyIdSelector
     public V1beta1WorkspaceSpecInitProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+/// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecInitProviderNetworkAccessControl
@@ -795,7 +795,7 @@ public partial class V1beta1WorkspaceSpecInitProviderRoleArnSelector
     public V1beta1WorkspaceSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+/// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecInitProviderVpcConfiguration
@@ -825,31 +825,31 @@ public partial class V1beta1WorkspaceSpecInitProviderVpcConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSpecInitProvider
 {
-    /// <summary>The type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
+    /// <summary>Type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
     [JsonPropertyName("accountAccessType")]
     public string? AccountAccessType { get; set; }
 
-    /// <summary>The authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
+    /// <summary>Authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
     [JsonPropertyName("authenticationProviders")]
     public IList<string>? AuthenticationProviders { get; set; }
 
-    /// <summary>The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
+    /// <summary>Configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
+    /// <summary>Data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
-    /// <summary>The workspace description.</summary>
+    /// <summary>Workspace description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Version of Grafana to support in the new workspace. Supported values are 9.4, 10.4, 12.4 and 13.2. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key for encrypting workspace data.</summary>
+    /// <summary>ARN of the AWS KMS key for encrypting workspace data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -861,31 +861,31 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1WorkspaceSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The Grafana workspace name.</summary>
+    /// <summary>Grafana workspace name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+    /// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
     [JsonPropertyName("networkAccessControl")]
     public V1beta1WorkspaceSpecInitProviderNetworkAccessControl? NetworkAccessControl { get; set; }
 
-    /// <summary>The notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
+    /// <summary>Notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
     [JsonPropertyName("notificationDestinations")]
     public IList<string>? NotificationDestinations { get; set; }
 
-    /// <summary>The role name that the workspace uses to access resources through Amazon Organizations.</summary>
+    /// <summary>Role name that the workspace uses to access resources through Amazon Organizations.</summary>
     [JsonPropertyName("organizationRoleName")]
     public string? OrganizationRoleName { get; set; }
 
-    /// <summary>The Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
+    /// <summary>Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
     [JsonPropertyName("organizationalUnits")]
     public IList<string>? OrganizationalUnits { get; set; }
 
-    /// <summary>The permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
+    /// <summary>Permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
     [JsonPropertyName("permissionType")]
     public string? PermissionType { get; set; }
 
-    /// <summary>The IAM role ARN that the workspace assumes.</summary>
+    /// <summary>IAM role ARN that the workspace assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -897,7 +897,7 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1WorkspaceSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
+    /// <summary>AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
     [JsonPropertyName("stackSetName")]
     public string? StackSetName { get; set; }
 
@@ -905,7 +905,7 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+    /// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1WorkspaceSpecInitProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -1017,7 +1017,7 @@ public partial class V1beta1WorkspaceSpec
     public V1beta1WorkspaceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+/// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceStatusAtProviderNetworkAccessControl
@@ -1031,7 +1031,7 @@ public partial class V1beta1WorkspaceStatusAtProviderNetworkAccessControl
     public IList<string>? VpceIds { get; set; }
 }
 
-/// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+/// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceStatusAtProviderVpcConfiguration
@@ -1049,7 +1049,7 @@ public partial class V1beta1WorkspaceStatusAtProviderVpcConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceStatusAtProvider
 {
-    /// <summary>The type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
+    /// <summary>Type of account access for the workspace. Valid values are CURRENT_ACCOUNT and ORGANIZATION. If ORGANIZATION is specified, then organizational_units must also be present.</summary>
     [JsonPropertyName("accountAccessType")]
     public string? AccountAccessType { get; set; }
 
@@ -1057,58 +1057,58 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
+    /// <summary>Authentication providers for the workspace. Valid values are AWS_SSO, SAML, or both.</summary>
     [JsonPropertyName("authenticationProviders")]
     public IList<string>? AuthenticationProviders { get; set; }
 
-    /// <summary>The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
+    /// <summary>Configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.</summary>
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
+    /// <summary>Data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
-    /// <summary>The workspace description.</summary>
+    /// <summary>Workspace description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The endpoint of the Grafana workspace.</summary>
+    /// <summary>Endpoint of the Grafana workspace.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Version of Grafana to support in the new workspace. Supported values are 9.4, 10.4, 12.4 and 13.2. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key for encrypting workspace data.</summary>
+    /// <summary>ARN of the AWS KMS key for encrypting workspace data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The Grafana workspace name.</summary>
+    /// <summary>Grafana workspace name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration for network access to your workspace.See Network Access Control below.</summary>
+    /// <summary>Configuration for network access to your workspace. See network_access_control Block below.</summary>
     [JsonPropertyName("networkAccessControl")]
     public V1beta1WorkspaceStatusAtProviderNetworkAccessControl? NetworkAccessControl { get; set; }
 
-    /// <summary>The notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
+    /// <summary>Notification destinations. If a data source is specified here, Amazon Managed Grafana will create IAM roles and permissions needed to use these destinations. Must be set to SNS.</summary>
     [JsonPropertyName("notificationDestinations")]
     public IList<string>? NotificationDestinations { get; set; }
 
-    /// <summary>The role name that the workspace uses to access resources through Amazon Organizations.</summary>
+    /// <summary>Role name that the workspace uses to access resources through Amazon Organizations.</summary>
     [JsonPropertyName("organizationRoleName")]
     public string? OrganizationRoleName { get; set; }
 
-    /// <summary>The Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
+    /// <summary>Amazon Organizations organizational units that the workspace is authorized to use data sources from.</summary>
     [JsonPropertyName("organizationalUnits")]
     public IList<string>? OrganizationalUnits { get; set; }
 
-    /// <summary>The permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
+    /// <summary>Permission type of the workspace. If SERVICE_MANAGED is specified, the IAM roles and IAM policy attachments are generated automatically. If CUSTOMER_MANAGED is specified, the IAM roles and IAM policy attachments will not be created.</summary>
     [JsonPropertyName("permissionType")]
     public string? PermissionType { get; set; }
 
@@ -1119,14 +1119,15 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IAM role ARN that the workspace assumes.</summary>
+    /// <summary>IAM role ARN that the workspace assumes.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
+    /// <summary>Status of the SAML configuration.</summary>
     [JsonPropertyName("samlConfigurationStatus")]
     public string? SamlConfigurationStatus { get; set; }
 
-    /// <summary>The AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
+    /// <summary>AWS CloudFormation stack set name that provisions IAM roles to be used by the workspace.</summary>
     [JsonPropertyName("stackSetName")]
     public string? StackSetName { get; set; }
 
@@ -1138,7 +1139,7 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See VPC Configuration below.</summary>
+    /// <summary>Configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1WorkspaceStatusAtProviderVpcConfiguration? VpcConfiguration { get; set; }
 }

@@ -203,7 +203,7 @@ public partial class V1beta1CiphertextSpecForProviderKeyIdSelector
     public V1beta1CiphertextSpecForProviderKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>(Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
+/// <summary>Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecForProviderPlaintextSecretRef
@@ -221,7 +221,7 @@ public partial class V1beta1CiphertextSpecForProviderPlaintextSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>(Write-Only, Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
+/// <summary>Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecForProviderPlaintextWoSecretRef
@@ -243,7 +243,7 @@ public partial class V1beta1CiphertextSpecForProviderPlaintextWoSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecForProvider
 {
-    /// <summary>An optional mapping that makes up the encryption context.</summary>
+    /// <summary>Mapping that makes up the encryption context.</summary>
     [JsonPropertyName("context")]
     public IDictionary<string, string>? Context { get; set; }
 
@@ -259,15 +259,15 @@ public partial class V1beta1CiphertextSpecForProvider
     [JsonPropertyName("keyIdSelector")]
     public V1beta1CiphertextSpecForProviderKeyIdSelector? KeyIdSelector { get; set; }
 
-    /// <summary>(Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
+    /// <summary>Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
     [JsonPropertyName("plaintextSecretRef")]
     public V1beta1CiphertextSpecForProviderPlaintextSecretRef? PlaintextSecretRef { get; set; }
 
-    /// <summary>(Write-Only, Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
+    /// <summary>Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
     [JsonPropertyName("plaintextWoSecretRef")]
     public V1beta1CiphertextSpecForProviderPlaintextWoSecretRef? PlaintextWoSecretRef { get; set; }
 
-    /// <summary>Used together with plaintext_wo to trigger a replacement. Modify this value when a replacement is required.</summary>
+    /// <summary>Triggers a replacement together with plaintext_wo. Modify this value when a replacement is required.</summary>
     [JsonPropertyName("plaintextWoVersion")]
     public string? PlaintextWoVersion { get; set; }
 
@@ -426,7 +426,7 @@ public partial class V1beta1CiphertextSpecInitProviderKeyIdSelector
     public V1beta1CiphertextSpecInitProviderKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>(Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
+/// <summary>Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecInitProviderPlaintextSecretRef
@@ -444,7 +444,7 @@ public partial class V1beta1CiphertextSpecInitProviderPlaintextSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>(Write-Only, Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
+/// <summary>Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecInitProviderPlaintextWoSecretRef
@@ -478,7 +478,7 @@ public partial class V1beta1CiphertextSpecInitProviderPlaintextWoSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CiphertextSpecInitProvider
 {
-    /// <summary>An optional mapping that makes up the encryption context.</summary>
+    /// <summary>Mapping that makes up the encryption context.</summary>
     [JsonPropertyName("context")]
     public IDictionary<string, string>? Context { get; set; }
 
@@ -494,15 +494,15 @@ public partial class V1beta1CiphertextSpecInitProvider
     [JsonPropertyName("keyIdSelector")]
     public V1beta1CiphertextSpecInitProviderKeyIdSelector? KeyIdSelector { get; set; }
 
-    /// <summary>(Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
+    /// <summary>Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.</summary>
     [JsonPropertyName("plaintextSecretRef")]
     public V1beta1CiphertextSpecInitProviderPlaintextSecretRef? PlaintextSecretRef { get; set; }
 
-    /// <summary>(Write-Only, Exactly one of plaintext or plaintext_wo must be set) Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
+    /// <summary>Data to be encrypted. Note that this may show up in logs. It will not be stored in the state file.</summary>
     [JsonPropertyName("plaintextWoSecretRef")]
     public V1beta1CiphertextSpecInitProviderPlaintextWoSecretRef? PlaintextWoSecretRef { get; set; }
 
-    /// <summary>Used together with plaintext_wo to trigger a replacement. Modify this value when a replacement is required.</summary>
+    /// <summary>Triggers a replacement together with plaintext_wo. Modify this value when a replacement is required.</summary>
     [JsonPropertyName("plaintextWoVersion")]
     public string? PlaintextWoVersion { get; set; }
 }
@@ -698,7 +698,7 @@ public partial class V1beta1CiphertextStatusAtProvider
     [JsonPropertyName("ciphertextBlob")]
     public string? CiphertextBlob { get; set; }
 
-    /// <summary>An optional mapping that makes up the encryption context.</summary>
+    /// <summary>Mapping that makes up the encryption context.</summary>
     [JsonPropertyName("context")]
     public IDictionary<string, string>? Context { get; set; }
 
@@ -709,7 +709,7 @@ public partial class V1beta1CiphertextStatusAtProvider
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>Used together with plaintext_wo to trigger a replacement. Modify this value when a replacement is required.</summary>
+    /// <summary>Triggers a replacement together with plaintext_wo. Modify this value when a replacement is required.</summary>
     [JsonPropertyName("plaintextWoVersion")]
     public string? PlaintextWoVersion { get; set; }
 

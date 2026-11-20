@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: activities.sfn.aws.upbound.io
 spec:
   group: sfn.aws.upbound.io
@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   encryptionConfiguration:
-                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.
+                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.
                     properties:
                       kmsDataKeyReusePeriodSeconds:
                         description: Maximum duration for which Activities will reuse data keys. When the period expires, Activities will call GenerateDataKey. This setting only applies to customer managed KMS key and does not apply to AWS owned KMS key.
@@ -185,7 +185,7 @@ spec:
                   autoscaler.
                 properties:
                   encryptionConfiguration:
-                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.
+                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.
                     properties:
                       kmsDataKeyReusePeriodSeconds:
                         description: Maximum duration for which Activities will reuse data keys. When the period expires, Activities will call GenerateDataKey. This setting only applies to customer managed KMS key and does not apply to AWS owned KMS key.
@@ -375,7 +375,7 @@ spec:
                     description: Date the activity was created.
                     type: string
                   encryptionConfiguration:
-                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encyption in the AWS Step Functions User Guide.
+                    description: Defines what encryption configuration is used to encrypt data in the Activity. For more information see the section Data at rest encryption in the AWS Step Functions User Guide.
                     properties:
                       kmsDataKeyReusePeriodSeconds:
                         description: Maximum duration for which Activities will reuse data keys. When the period expires, Activities will call GenerateDataKey. This setting only applies to customer managed KMS key and does not apply to AWS owned KMS key.

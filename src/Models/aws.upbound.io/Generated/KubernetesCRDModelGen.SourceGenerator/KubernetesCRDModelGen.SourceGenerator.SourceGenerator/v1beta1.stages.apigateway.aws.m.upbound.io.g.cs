@@ -37,7 +37,7 @@ public partial class V1beta1StageList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Stage> Items { get; set; }
 }
 
-/// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+/// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProviderAccessLogSettings
@@ -51,7 +51,7 @@ public partial class V1beta1StageSpecForProviderAccessLogSettings
     public string? Format { get; set; }
 }
 
-/// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+/// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProviderCanarySettings
@@ -387,7 +387,7 @@ public partial class V1beta1StageSpecForProviderRestApiIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProvider
 {
-    /// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+    /// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageSpecForProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -399,7 +399,7 @@ public partial class V1beta1StageSpecForProvider
     [JsonPropertyName("cacheClusterSize")]
     public string? CacheClusterSize { get; set; }
 
-    /// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+    /// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
     [JsonPropertyName("canarySettings")]
     public V1beta1StageSpecForProviderCanarySettings? CanarySettings { get; set; }
 
@@ -463,7 +463,7 @@ public partial class V1beta1StageSpecForProvider
     public bool? XrayTracingEnabled { get; set; }
 }
 
-/// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+/// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProviderAccessLogSettings
@@ -477,7 +477,7 @@ public partial class V1beta1StageSpecInitProviderAccessLogSettings
     public string? Format { get; set; }
 }
 
-/// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+/// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProviderCanarySettings
@@ -825,7 +825,7 @@ public partial class V1beta1StageSpecInitProviderRestApiIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProvider
 {
-    /// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+    /// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageSpecInitProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -837,7 +837,7 @@ public partial class V1beta1StageSpecInitProvider
     [JsonPropertyName("cacheClusterSize")]
     public string? CacheClusterSize { get; set; }
 
-    /// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+    /// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
     [JsonPropertyName("canarySettings")]
     public V1beta1StageSpecInitProviderCanarySettings? CanarySettings { get; set; }
 
@@ -1001,7 +1001,7 @@ public partial class V1beta1StageSpec
     public V1beta1StageSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+/// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProviderAccessLogSettings
@@ -1015,7 +1015,7 @@ public partial class V1beta1StageStatusAtProviderAccessLogSettings
     public string? Format { get; set; }
 }
 
-/// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+/// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProviderCanarySettings
@@ -1041,7 +1041,7 @@ public partial class V1beta1StageStatusAtProviderCanarySettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProvider
 {
-    /// <summary>Enables access logs for the API stage. See Access Log Settings below.</summary>
+    /// <summary>Enables access logs for the API stage. See access_log_settings Block below.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageStatusAtProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -1057,7 +1057,7 @@ public partial class V1beta1StageStatusAtProvider
     [JsonPropertyName("cacheClusterSize")]
     public string? CacheClusterSize { get; set; }
 
-    /// <summary>Configuration settings of a canary deployment. See Canary Settings below.</summary>
+    /// <summary>Configuration settings of a canary deployment. See canary_settings Block below.</summary>
     [JsonPropertyName("canarySettings")]
     public V1beta1StageStatusAtProviderCanarySettings? CanarySettings { get; set; }
 

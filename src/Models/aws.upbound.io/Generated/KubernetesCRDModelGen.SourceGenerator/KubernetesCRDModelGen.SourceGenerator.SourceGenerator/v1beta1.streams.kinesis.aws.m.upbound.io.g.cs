@@ -192,12 +192,12 @@ public partial class V1beta1StreamSpecForProviderKmsKeyIdSelector
     public V1beta1StreamSpecForProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+/// <summary>Capacity mode of the data stream. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderStreamModeDetails
 {
-    /// <summary>Specifies the capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
+    /// <summary>Capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
     [JsonPropertyName("streamMode")]
     public string? StreamMode { get; set; }
 }
@@ -206,15 +206,15 @@ public partial class V1beta1StreamSpecForProviderStreamModeDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProvider
 {
-    /// <summary>The encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
+    /// <summary>Encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is false.</summary>
+    /// <summary>Whether to deregister all registered consumers from the stream so that the stream can be destroyed without error. The default value is false.</summary>
     [JsonPropertyName("enforceConsumerDeletion")]
     public bool? EnforceConsumerDeletion { get; set; }
 
-    /// <summary>The identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
+    /// <summary>Identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -226,7 +226,7 @@ public partial class V1beta1StreamSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1StreamSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
+    /// <summary>Maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
     [JsonPropertyName("maxRecordSizeInKib")]
     public double? MaxRecordSizeInKib { get; set; }
 
@@ -241,15 +241,15 @@ public partial class V1beta1StreamSpecForProvider
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
+    /// <summary>Number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
     [JsonPropertyName("shardCount")]
     public double? ShardCount { get; set; }
 
-    /// <summary>A list of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
+    /// <summary>List of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
     [JsonPropertyName("shardLevelMetrics")]
     public IList<string>? ShardLevelMetrics { get; set; }
 
-    /// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+    /// <summary>Capacity mode of the data stream. Detailed below.</summary>
     [JsonPropertyName("streamModeDetails")]
     public V1beta1StreamSpecForProviderStreamModeDetails? StreamModeDetails { get; set; }
 
@@ -417,12 +417,12 @@ public partial class V1beta1StreamSpecInitProviderKmsKeyIdSelector
     public V1beta1StreamSpecInitProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+/// <summary>Capacity mode of the data stream. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderStreamModeDetails
 {
-    /// <summary>Specifies the capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
+    /// <summary>Capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
     [JsonPropertyName("streamMode")]
     public string? StreamMode { get; set; }
 }
@@ -443,15 +443,15 @@ public partial class V1beta1StreamSpecInitProviderStreamModeDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProvider
 {
-    /// <summary>The encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
+    /// <summary>Encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is false.</summary>
+    /// <summary>Whether to deregister all registered consumers from the stream so that the stream can be destroyed without error. The default value is false.</summary>
     [JsonPropertyName("enforceConsumerDeletion")]
     public bool? EnforceConsumerDeletion { get; set; }
 
-    /// <summary>The identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
+    /// <summary>Identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -463,7 +463,7 @@ public partial class V1beta1StreamSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1StreamSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
+    /// <summary>Maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
     [JsonPropertyName("maxRecordSizeInKib")]
     public double? MaxRecordSizeInKib { get; set; }
 
@@ -471,15 +471,15 @@ public partial class V1beta1StreamSpecInitProvider
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
+    /// <summary>Number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
     [JsonPropertyName("shardCount")]
     public double? ShardCount { get; set; }
 
-    /// <summary>A list of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
+    /// <summary>List of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
     [JsonPropertyName("shardLevelMetrics")]
     public IList<string>? ShardLevelMetrics { get; set; }
 
-    /// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+    /// <summary>Capacity mode of the data stream. Detailed below.</summary>
     [JsonPropertyName("streamModeDetails")]
     public V1beta1StreamSpecInitProviderStreamModeDetails? StreamModeDetails { get; set; }
 
@@ -599,12 +599,12 @@ public partial class V1beta1StreamSpec
     public V1beta1StreamSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+/// <summary>Capacity mode of the data stream. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderStreamModeDetails
 {
-    /// <summary>Specifies the capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
+    /// <summary>Capacity mode of the stream. Must be either PROVISIONED or ON_DEMAND.</summary>
     [JsonPropertyName("streamMode")]
     public string? StreamMode { get; set; }
 }
@@ -617,23 +617,23 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
+    /// <summary>Encryption type to use. The only acceptable values are NONE or KMS. The default value is NONE.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is false.</summary>
+    /// <summary>Whether to deregister all registered consumers from the stream so that the stream can be destroyed without error. The default value is false.</summary>
     [JsonPropertyName("enforceConsumerDeletion")]
     public bool? EnforceConsumerDeletion { get; set; }
 
-    /// <summary>The unique stream ID.</summary>
+    /// <summary>Unique stream ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
+    /// <summary>Identifier for the customer-managed KMS key to use for encryption. This can be a Key ID (UUID), a Key ARN, an Alias Name (prefixed with alias/), or an Alias ARN. You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
+    /// <summary>Maximum size for a single data record in KiB. The minimum value is 1024. The maximum value is 10240.</summary>
     [JsonPropertyName("maxRecordSizeInKib")]
     public double? MaxRecordSizeInKib { get; set; }
 
@@ -648,15 +648,15 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
+    /// <summary>Number of shards that the stream will use. If the stream_mode is PROVISIONED, this field is required. Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See Amazon Kinesis Streams for more.</summary>
     [JsonPropertyName("shardCount")]
     public double? ShardCount { get; set; }
 
-    /// <summary>A list of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
+    /// <summary>List of shard-level CloudWatch metrics which can be enabled for the stream. See Monitoring with CloudWatch for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.</summary>
     [JsonPropertyName("shardLevelMetrics")]
     public IList<string>? ShardLevelMetrics { get; set; }
 
-    /// <summary>Indicates the capacity mode of the data stream. Detailed below.</summary>
+    /// <summary>Capacity mode of the data stream. Detailed below.</summary>
     [JsonPropertyName("streamModeDetails")]
     public V1beta1StreamStatusAtProviderStreamModeDetails? StreamModeDetails { get; set; }
 
@@ -664,7 +664,7 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

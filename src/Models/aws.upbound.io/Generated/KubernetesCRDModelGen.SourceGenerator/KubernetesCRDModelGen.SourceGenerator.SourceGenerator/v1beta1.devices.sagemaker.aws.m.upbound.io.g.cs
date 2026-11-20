@@ -588,7 +588,7 @@ public partial class V1beta1DeviceStatusAtProvider
     [JsonPropertyName("deviceFleetName")]
     public string? DeviceFleetName { get; set; }
 
-    /// <summary>The id is constructed from device-fleet-name/device-name.</summary>
+    /// <summary>The ID is constructed from device-fleet-name/device-name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

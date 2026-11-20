@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: maintenancewindowtasks.ssm.aws.m.upbound.io
 spec:
   group: ssm.aws.m.upbound.io
@@ -163,7 +163,7 @@ spec:
                         type: object
                     type: object
                   targets:
-                    description: The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+                    description: The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
                     items:
                       properties:
                         key:
@@ -795,7 +795,7 @@ spec:
                     description: 'The type of task being registered. Valid values: AUTOMATION, LAMBDA, RUN_COMMAND or STEP_FUNCTIONS.'
                     type: string
                   windowId:
-                    description: The Id of the maintenance window to register the task with.
+                    description: The ID of the maintenance window to register the task with.
                     type: string
                   windowIdRef:
                     description: Reference to a MaintenanceWindow in ssm to populate windowId.
@@ -993,7 +993,7 @@ spec:
                         type: object
                     type: object
                   targets:
-                    description: The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+                    description: The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
                     items:
                       properties:
                         key:
@@ -1625,7 +1625,7 @@ spec:
                     description: 'The type of task being registered. Valid values: AUTOMATION, LAMBDA, RUN_COMMAND or STEP_FUNCTIONS.'
                     type: string
                   windowId:
-                    description: The Id of the maintenance window to register the task with.
+                    description: The ID of the maintenance window to register the task with.
                     type: string
                   windowIdRef:
                     description: Reference to a MaintenanceWindow in ssm to populate windowId.
@@ -1806,7 +1806,7 @@ spec:
                     description: The role that should be assumed when executing the task. If a role is not provided, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created for you.
                     type: string
                   targets:
-                    description: The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
+                    description: The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
                     items:
                       properties:
                         key:
@@ -1934,7 +1934,7 @@ spec:
                     description: 'The type of task being registered. Valid values: AUTOMATION, LAMBDA, RUN_COMMAND or STEP_FUNCTIONS.'
                     type: string
                   windowId:
-                    description: The Id of the maintenance window to register the task with.
+                    description: The ID of the maintenance window to register the task with.
                     type: string
                   windowTaskId:
                     description: The ID of the maintenance window task.

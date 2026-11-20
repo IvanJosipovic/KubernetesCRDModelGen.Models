@@ -222,6 +222,15 @@ public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionCidrResource
+{
+    /// <summary>Set of 1 to 10 IPv4 and/or IPv6 CIDR ranges (prefix length required), for example 10.0.0.0/16. 0.0.0.0/0 and ::/0 are only allowed as the sole range. Reserved ranges such as 169.254.0.0/16, 100.64.0.0/10, 224.0.0.0/4, fe80::/10 and ff00::/8 are rejected by AWS.</summary>
+    [JsonPropertyName("cidrRanges")]
+    public IList<string>? CidrRanges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionDnsResource
 {
     /// <summary>Hostname of the Resource for this configuration.</summary>
@@ -249,6 +258,10 @@ public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigur
     /// <summary>Resource DNS Configuration. See arn_resource Block for details.</summary>
     [JsonPropertyName("arnResource")]
     public IList<V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionArnResource>? ArnResource { get; set; }
+
+    /// <summary>Resource CIDR configuration. Only valid when type is CIDR. See cidr_resource Block for details.</summary>
+    [JsonPropertyName("cidrResource")]
+    public IList<V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionCidrResource>? CidrResource { get; set; }
 
     /// <summary>Resource DNS Configuration. See dns_resource Block for details.</summary>
     [JsonPropertyName("dnsResource")]
@@ -426,11 +439,11 @@ public partial class V1beta1ResourceConfigurationSpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range.</summary>
+    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range. For CIDR resource configurations, include port 53 to allow DNS.</summary>
     [JsonPropertyName("portRanges")]
     public IList<string>? PortRanges { get; set; }
 
-    /// <summary>Protocol for the Resource TCP is currently the only supported value.  MUST be specified if resource_configuration_group_id is not.</summary>
+    /// <summary>Protocol for the Resource. Valid values are TCP and TCP_UDP. TCP_UDP is only supported when type is CIDR (UDP is only supported for DNS). MUST be specified if resource_configuration_group_id is not.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
@@ -465,7 +478,7 @@ public partial class V1beta1ResourceConfigurationSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN.</summary>
+    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN, CIDR. Use CIDR with a cidr_resource block.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -636,6 +649,15 @@ public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionCidrResource
+{
+    /// <summary>Set of 1 to 10 IPv4 and/or IPv6 CIDR ranges (prefix length required), for example 10.0.0.0/16. 0.0.0.0/0 and ::/0 are only allowed as the sole range. Reserved ranges such as 169.254.0.0/16, 100.64.0.0/10, 224.0.0.0/4, fe80::/10 and ff00::/8 are rejected by AWS.</summary>
+    [JsonPropertyName("cidrRanges")]
+    public IList<string>? CidrRanges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionDnsResource
 {
     /// <summary>Hostname of the Resource for this configuration.</summary>
@@ -663,6 +685,10 @@ public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigu
     /// <summary>Resource DNS Configuration. See arn_resource Block for details.</summary>
     [JsonPropertyName("arnResource")]
     public IList<V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionArnResource>? ArnResource { get; set; }
+
+    /// <summary>Resource CIDR configuration. Only valid when type is CIDR. See cidr_resource Block for details.</summary>
+    [JsonPropertyName("cidrResource")]
+    public IList<V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionCidrResource>? CidrResource { get; set; }
 
     /// <summary>Resource DNS Configuration. See dns_resource Block for details.</summary>
     [JsonPropertyName("dnsResource")]
@@ -852,11 +878,11 @@ public partial class V1beta1ResourceConfigurationSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range.</summary>
+    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range. For CIDR resource configurations, include port 53 to allow DNS.</summary>
     [JsonPropertyName("portRanges")]
     public IList<string>? PortRanges { get; set; }
 
-    /// <summary>Protocol for the Resource TCP is currently the only supported value.  MUST be specified if resource_configuration_group_id is not.</summary>
+    /// <summary>Protocol for the Resource. Valid values are TCP and TCP_UDP. TCP_UDP is only supported when type is CIDR (UDP is only supported for DNS). MUST be specified if resource_configuration_group_id is not.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
@@ -884,7 +910,7 @@ public partial class V1beta1ResourceConfigurationSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN.</summary>
+    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN, CIDR. Use CIDR with a cidr_resource block.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1083,6 +1109,15 @@ public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionCidrResource
+{
+    /// <summary>Set of 1 to 10 IPv4 and/or IPv6 CIDR ranges (prefix length required), for example 10.0.0.0/16. 0.0.0.0/0 and ::/0 are only allowed as the sole range. Reserved ranges such as 169.254.0.0/16, 100.64.0.0/10, 224.0.0.0/4, fe80::/10 and ff00::/8 are rejected by AWS.</summary>
+    [JsonPropertyName("cidrRanges")]
+    public IList<string>? CidrRanges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionDnsResource
 {
     /// <summary>Hostname of the Resource for this configuration.</summary>
@@ -1110,6 +1145,10 @@ public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigu
     /// <summary>Resource DNS Configuration. See arn_resource Block for details.</summary>
     [JsonPropertyName("arnResource")]
     public IList<V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionArnResource>? ArnResource { get; set; }
+
+    /// <summary>Resource CIDR configuration. Only valid when type is CIDR. See cidr_resource Block for details.</summary>
+    [JsonPropertyName("cidrResource")]
+    public IList<V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionCidrResource>? CidrResource { get; set; }
 
     /// <summary>Resource DNS Configuration. See dns_resource Block for details.</summary>
     [JsonPropertyName("dnsResource")]
@@ -1156,11 +1195,11 @@ public partial class V1beta1ResourceConfigurationStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range.</summary>
+    /// <summary>Port ranges to access the Resource either single port 80 or range 80-81 range. For CIDR resource configurations, include port 53 to allow DNS.</summary>
     [JsonPropertyName("portRanges")]
     public IList<string>? PortRanges { get; set; }
 
-    /// <summary>Protocol for the Resource TCP is currently the only supported value.  MUST be specified if resource_configuration_group_id is not.</summary>
+    /// <summary>Protocol for the Resource. Valid values are TCP and TCP_UDP. TCP_UDP is only supported when type is CIDR (UDP is only supported for DNS). MUST be specified if resource_configuration_group_id is not.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
@@ -1191,7 +1230,7 @@ public partial class V1beta1ResourceConfigurationStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN.</summary>
+    /// <summary>Type of Resource Configuration. Must be one of GROUP, CHILD, SINGLE, ARN, CIDR. Use CIDR with a cidr_resource block.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }

@@ -709,7 +709,7 @@ public partial class V1beta1FirewallSpecForProvider
     [JsonPropertyName("availabilityZoneChangeProtection")]
     public bool? AvailabilityZoneChangeProtection { get; set; }
 
-    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the avaiability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
+    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the availability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
     [JsonPropertyName("availabilityZoneMapping")]
     public IList<V1beta1FirewallSpecForProviderAvailabilityZoneMapping>? AvailabilityZoneMapping { get; set; }
 
@@ -1477,7 +1477,7 @@ public partial class V1beta1FirewallSpecInitProvider
     [JsonPropertyName("availabilityZoneChangeProtection")]
     public bool? AvailabilityZoneChangeProtection { get; set; }
 
-    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the avaiability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
+    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the availability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
     [JsonPropertyName("availabilityZoneMapping")]
     public IList<V1beta1FirewallSpecInitProviderAvailabilityZoneMapping>? AvailabilityZoneMapping { get; set; }
 
@@ -1757,7 +1757,7 @@ public partial class V1beta1FirewallStatusAtProvider
     [JsonPropertyName("availabilityZoneChangeProtection")]
     public bool? AvailabilityZoneChangeProtection { get; set; }
 
-    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the avaiability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
+    /// <summary>Required when creating a transit gateway-attached firewall. Set of configuration blocks describing the availability availability where you want to create firewall endpoints for a transit gateway-attached firewall.</summary>
     [JsonPropertyName("availabilityZoneMapping")]
     public IList<V1beta1FirewallStatusAtProviderAvailabilityZoneMapping>? AvailabilityZoneMapping { get; set; }
 

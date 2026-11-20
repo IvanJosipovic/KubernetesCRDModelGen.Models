@@ -193,7 +193,7 @@ public partial class V1beta1PresetSpecForProviderVideoWatermarks
     [JsonPropertyName("horizontalOffset")]
     public string? HorizontalOffset { get; set; }
 
-    /// <summary>A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
+    /// <summary>A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -433,7 +433,7 @@ public partial class V1beta1PresetSpecInitProviderVideoWatermarks
     [JsonPropertyName("horizontalOffset")]
     public string? HorizontalOffset { get; set; }
 
-    /// <summary>A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
+    /// <summary>A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -785,7 +785,7 @@ public partial class V1beta1PresetStatusAtProviderVideoWatermarks
     [JsonPropertyName("horizontalOffset")]
     public string? HorizontalOffset { get; set; }
 
-    /// <summary>A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
+    /// <summary>A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -842,7 +842,7 @@ public partial class V1beta1PresetStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
+    /// <summary>A unique identifier for the settings for one watermark. The value of ID can be up to 40 characters long. You can specify settings for up to four watermarks.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

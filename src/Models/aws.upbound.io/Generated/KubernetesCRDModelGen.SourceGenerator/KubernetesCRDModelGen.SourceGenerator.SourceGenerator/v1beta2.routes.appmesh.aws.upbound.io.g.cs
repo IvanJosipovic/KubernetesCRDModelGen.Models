@@ -395,7 +395,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeout
     public V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+/// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRoute
@@ -1321,7 +1321,7 @@ public partial class V1beta2RouteSpecForProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpec
 {
-    /// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+    /// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteSpecForProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
@@ -1880,7 +1880,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeout
     public V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+/// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRoute
@@ -2806,7 +2806,7 @@ public partial class V1beta2RouteSpecInitProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpec
 {
-    /// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+    /// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteSpecInitProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
@@ -3406,7 +3406,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeout
     public V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+/// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRoute
@@ -4022,7 +4022,7 @@ public partial class V1beta2RouteStatusAtProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpec
 {
-    /// <summary>GRPC routing information for the route. See spec.grpc_route Block for details.</summary>
+    /// <summary>gRPC routing information for the route. See spec.grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteStatusAtProviderSpecGrpcRoute? GrpcRoute { get; set; }
 

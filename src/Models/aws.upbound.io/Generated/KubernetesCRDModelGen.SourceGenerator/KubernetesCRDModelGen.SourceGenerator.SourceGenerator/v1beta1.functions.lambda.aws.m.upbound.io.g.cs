@@ -238,6 +238,161 @@ public partial class V1beta1FunctionSpecForProviderDeadLetterConfig
     public V1beta1FunctionSpecForProviderDeadLetterConfigTargetArnSelector? TargetArnSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelectorPolicy? Policy { get; set; }
+}
+
 /// <summary>Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -246,6 +401,18 @@ public partial class V1beta1FunctionSpecForProviderDurableConfig
     /// <summary>Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).</summary>
     [JsonPropertyName("executionTimeout")]
     public double? ExecutionTimeout { get; set; }
+
+    /// <summary>ARN of the KMS customer managed key used to encrypt the durable function&apos;s execution state (input, output, and error payloads). If not specified, the execution state is encrypted with an AWS managed key. Changing this value applies the new key to executions that start after the change; executions already in progress continue to use the key they started with. Note that the top-level kms_key_arn argument is not used for durable function state encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnRef")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnRef? KmsKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnSelector")]
+    public V1beta1FunctionSpecForProviderDurableConfigKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
     /// <summary>Number of days to retain the function&apos;s execution state. Valid value between 1 and 90. If not specified, the function&apos;s execution state is not retained. Defaults to 14.</summary>
     [JsonPropertyName("retentionPeriod")]
@@ -2206,6 +2373,161 @@ public partial class V1beta1FunctionSpecInitProviderDeadLetterConfig
     public V1beta1FunctionSpecInitProviderDeadLetterConfigTargetArnSelector? TargetArnSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelectorPolicy? Policy { get; set; }
+}
+
 /// <summary>Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2214,6 +2536,18 @@ public partial class V1beta1FunctionSpecInitProviderDurableConfig
     /// <summary>Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).</summary>
     [JsonPropertyName("executionTimeout")]
     public double? ExecutionTimeout { get; set; }
+
+    /// <summary>ARN of the KMS customer managed key used to encrypt the durable function&apos;s execution state (input, output, and error payloads). If not specified, the execution state is encrypted with an AWS managed key. Changing this value applies the new key to executions that start after the change; executions already in progress continue to use the key they started with. Note that the top-level kms_key_arn argument is not used for durable function state encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnRef")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnRef? KmsKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnSelector")]
+    public V1beta1FunctionSpecInitProviderDurableConfigKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
 
     /// <summary>Number of days to retain the function&apos;s execution state. Valid value between 1 and 90. If not specified, the function&apos;s execution state is not retained. Defaults to 14.</summary>
     [JsonPropertyName("retentionPeriod")]
@@ -4131,6 +4465,10 @@ public partial class V1beta1FunctionStatusAtProviderDurableConfig
     /// <summary>Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).</summary>
     [JsonPropertyName("executionTimeout")]
     public double? ExecutionTimeout { get; set; }
+
+    /// <summary>ARN of the KMS customer managed key used to encrypt the durable function&apos;s execution state (input, output, and error payloads). If not specified, the execution state is encrypted with an AWS managed key. Changing this value applies the new key to executions that start after the change; executions already in progress continue to use the key they started with. Note that the top-level kms_key_arn argument is not used for durable function state encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
 
     /// <summary>Number of days to retain the function&apos;s execution state. Valid value between 1 and 90. If not specified, the function&apos;s execution state is not retained. Defaults to 14.</summary>
     [JsonPropertyName("retentionPeriod")]

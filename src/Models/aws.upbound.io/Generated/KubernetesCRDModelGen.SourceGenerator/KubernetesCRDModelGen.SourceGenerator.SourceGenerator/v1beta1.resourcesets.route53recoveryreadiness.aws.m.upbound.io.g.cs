@@ -88,7 +88,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
     [JsonPropertyName("hostedZoneArn")]
     public string? HostedZoneArn { get; set; }
 
-    /// <summary>Route53 record set id to uniquely identify a record given a domain_name and a record_type.</summary>
+    /// <summary>Route53 record set ID to uniquely identify a record given a domain_name and a record_type.</summary>
     [JsonPropertyName("recordSetId")]
     public string? RecordSetId { get; set; }
 
@@ -349,7 +349,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourc
     [JsonPropertyName("hostedZoneArn")]
     public string? HostedZoneArn { get; set; }
 
-    /// <summary>Route53 record set id to uniquely identify a record given a domain_name and a record_type.</summary>
+    /// <summary>Route53 record set ID to uniquely identify a record given a domain_name and a record_type.</summary>
     [JsonPropertyName("recordSetId")]
     public string? RecordSetId { get; set; }
 
@@ -729,7 +729,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourc
     [JsonPropertyName("hostedZoneArn")]
     public string? HostedZoneArn { get; set; }
 
-    /// <summary>Route53 record set id to uniquely identify a record given a domain_name and a record_type.</summary>
+    /// <summary>Route53 record set ID to uniquely identify a record given a domain_name and a record_type.</summary>
     [JsonPropertyName("recordSetId")]
     public string? RecordSetId { get; set; }
 

@@ -45,7 +45,7 @@ public partial class V1beta1HTTPNamespaceSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the http namespace.</summary>
+    /// <summary>The name of the HTTP namespace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -81,7 +81,7 @@ public partial class V1beta1HTTPNamespaceSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the http namespace.</summary>
+    /// <summary>The name of the HTTP namespace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -217,7 +217,7 @@ public partial class V1beta1HTTPNamespaceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the http namespace.</summary>
+    /// <summary>The name of the HTTP namespace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 

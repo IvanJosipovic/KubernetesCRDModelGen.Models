@@ -140,7 +140,7 @@ public partial class V1beta1FeatureGroupSpecForProviderOnlineStoreConfigSecurity
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeatureGroupSpecForProviderOnlineStoreConfigTtlDuration
@@ -171,7 +171,7 @@ public partial class V1beta1FeatureGroupSpecForProviderOnlineStoreConfig
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
-    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
     [JsonPropertyName("ttlDuration")]
     public V1beta1FeatureGroupSpecForProviderOnlineStoreConfigTtlDuration? TtlDuration { get; set; }
 }
@@ -503,7 +503,7 @@ public partial class V1beta1FeatureGroupSpecInitProviderOnlineStoreConfigSecurit
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeatureGroupSpecInitProviderOnlineStoreConfigTtlDuration
@@ -534,7 +534,7 @@ public partial class V1beta1FeatureGroupSpecInitProviderOnlineStoreConfig
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
-    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
     [JsonPropertyName("ttlDuration")]
     public V1beta1FeatureGroupSpecInitProviderOnlineStoreConfigTtlDuration? TtlDuration { get; set; }
 }
@@ -978,7 +978,7 @@ public partial class V1beta1FeatureGroupStatusAtProviderOnlineStoreConfigSecurit
     public string? KmsKeyId { get; set; }
 }
 
-/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+/// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeatureGroupStatusAtProviderOnlineStoreConfigTtlDuration
@@ -1009,7 +1009,7 @@ public partial class V1beta1FeatureGroupStatusAtProviderOnlineStoreConfig
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
-    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTl Duration Below.</summary>
+    /// <summary>Time to live duration, where the record is hard deleted after the expiration time is reached; ExpiresAt = EventTime + TtlDuration.. See TTL Duration Below.</summary>
     [JsonPropertyName("ttlDuration")]
     public V1beta1FeatureGroupStatusAtProviderOnlineStoreConfigTtlDuration? TtlDuration { get; set; }
 }

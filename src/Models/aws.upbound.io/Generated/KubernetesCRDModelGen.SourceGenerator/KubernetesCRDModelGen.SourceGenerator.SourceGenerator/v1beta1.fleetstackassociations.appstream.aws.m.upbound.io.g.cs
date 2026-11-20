@@ -516,7 +516,7 @@ public partial class V1beta1FleetStackAssociationStatusAtProvider
     [JsonPropertyName("fleetName")]
     public string? FleetName { get; set; }
 
-    /// <summary>Unique ID of the appstream stack fleet association, composed of the fleet_name and stack_name separated by a slash (/).</summary>
+    /// <summary>Unique ID of the AppStream stack fleet association, composed of the fleet_name and stack_name separated by a slash (/).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

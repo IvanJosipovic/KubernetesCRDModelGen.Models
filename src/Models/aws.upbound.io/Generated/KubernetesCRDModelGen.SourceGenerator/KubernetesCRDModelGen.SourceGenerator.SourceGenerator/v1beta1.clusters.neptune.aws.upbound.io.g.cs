@@ -1265,6 +1265,10 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("neptuneSubnetGroupNameSelector")]
     public V1beta1ClusterSpecForProviderNeptuneSubnetGroupNameSelector? NeptuneSubnetGroupNameSelector { get; set; }
 
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
@@ -2557,6 +2561,10 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("neptuneSubnetGroupNameSelector")]
     public V1beta1ClusterSpecInitProviderNeptuneSubnetGroupNameSelector? NeptuneSubnetGroupNameSelector { get; set; }
 
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
@@ -2926,6 +2934,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>Neptune subnet group to associate with this Neptune instance.</summary>
     [JsonPropertyName("neptuneSubnetGroupName")]
     public string? NeptuneSubnetGroupName { get; set; }
+
+    /// <summary>Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>Port on which the Neptune accepts connections. Default is 8182.</summary>
     [JsonPropertyName("port")]

@@ -64,7 +64,7 @@ public partial class V1beta1AccountPublicAccessBlockSpecForProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
@@ -101,7 +101,7 @@ public partial class V1beta1AccountPublicAccessBlockSpecInitProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
@@ -309,7 +309,7 @@ public partial class V1beta1AccountPublicAccessBlockStatusAtProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 

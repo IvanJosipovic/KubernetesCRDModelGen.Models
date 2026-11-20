@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: vpcendpointservices.ec2.aws.m.upbound.io
 spec:
   group: ec2.aws.m.upbound.io
@@ -237,7 +237,7 @@ spec:
                         type: object
                     type: object
                   privateDnsName:
-                    description: The private DNS name for the service.
+                    description: Private DNS name for the service.
                     type: string
                   region:
                     description: |-
@@ -245,13 +245,13 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   supportedIpAddressTypes:
-                    description: The supported IP address types. The possible values are ipv4 and ipv6.
+                    description: Supported IP address types. The possible values are ipv4 and ipv6.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   supportedRegions:
-                    description: The set of regions from which service consumers can access the service.
+                    description: Set of regions from which service consumers can access the service.
                     items:
                       type: string
                     type: array
@@ -458,16 +458,16 @@ spec:
                         type: object
                     type: object
                   privateDnsName:
-                    description: The private DNS name for the service.
+                    description: Private DNS name for the service.
                     type: string
                   supportedIpAddressTypes:
-                    description: The supported IP address types. The possible values are ipv4 and ipv6.
+                    description: Supported IP address types. The possible values are ipv4 and ipv6.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   supportedRegions:
-                    description: The set of regions from which service consumers can access the service.
+                    description: Set of regions from which service consumers can access the service.
                     items:
                       type: string
                     type: array
@@ -549,7 +549,7 @@ spec:
                     description: Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - true or false.
                     type: boolean
                   allowedPrincipals:
-                    description: The ARNs of one or more principals allowed to discover the endpoint service.
+                    description: ARNs of one or more principals allowed to discover the endpoint service.
                     items:
                       type: string
                     type: array
@@ -558,13 +558,13 @@ spec:
                     description: ARN of the VPC endpoint service.
                     type: string
                   availabilityZones:
-                    description: A set of Availability Zones in which the service is available.
+                    description: Set of Availability Zones in which the service is available.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   baseEndpointDnsNames:
-                    description: A set of DNS names for the service.
+                    description: Set of DNS names for the service.
                     items:
                       type: string
                     type: array
@@ -576,7 +576,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   id:
-                    description: The ID of the VPC endpoint service.
+                    description: ID of the VPC endpoint service.
                     type: string
                   managesVpcEndpoints:
                     description: Whether or not the service manages its VPC endpoints - true or false.
@@ -588,7 +588,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   privateDnsName:
-                    description: The private DNS name for the service.
+                    description: Private DNS name for the service.
                     type: string
                   privateDnsNameConfiguration:
                     description: List of objects containing information about the endpoint service private DNS name configuration.
@@ -598,7 +598,7 @@ spec:
                           description: Name of the record subdomain the service provider needs to create.
                           type: string
                         state:
-                          description: The state of the VPC endpoint service.
+                          description: Verification state of the VPC endpoint service. Consumers of the endpoint service can use the private name only when the state is verified.
                           type: string
                         type:
                           description: Endpoint service verification type, for example TXT.
@@ -614,22 +614,22 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serviceName:
-                    description: The service name.
+                    description: Service name.
                     type: string
                   serviceType:
-                    description: The service type, Gateway or Interface.
+                    description: Service type, Gateway or Interface.
                     type: string
                   state:
-                    description: The state of the VPC endpoint service.
+                    description: Verification state of the VPC endpoint service. Consumers of the endpoint service can use the private name only when the state is verified.
                     type: string
                   supportedIpAddressTypes:
-                    description: The supported IP address types. The possible values are ipv4 and ipv6.
+                    description: Supported IP address types. The possible values are ipv4 and ipv6.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   supportedRegions:
-                    description: The set of regions from which service consumers can access the service.
+                    description: Set of regions from which service consumers can access the service.
                     items:
                       type: string
                     type: array
@@ -643,7 +643,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

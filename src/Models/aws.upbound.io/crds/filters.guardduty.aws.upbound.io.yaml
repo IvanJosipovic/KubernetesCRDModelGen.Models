@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: filters.guardduty.aws.upbound.io
 spec:
   group: guardduty.aws.upbound.io
@@ -595,7 +595,7 @@ spec:
               forProvider:
                 properties:
                   action:
-                    description: Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
+                    description: Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
                     type: string
                   description:
                     description: Description of the filter.
@@ -677,7 +677,7 @@ spec:
                         type: object
                     type: object
                   findingCriteria:
-                    description: Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
+                    description: Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
                     properties:
                       criterion:
                         items:
@@ -688,19 +688,19 @@ spec:
                                 type: string
                               type: array
                             field:
-                              description: The name of the field to be evaluated. The full list of field names can be found in AWS documentation.
+                              description: Name of the field to be evaluated. The full list of field names can be found in AWS documentation.
                               type: string
                             greaterThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             greaterThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             matches:
                               description: List of string values to be evaluated as matching conditions.
@@ -721,7 +721,7 @@ spec:
                         type: array
                     type: object
                   rank:
-                    description: Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
+                    description: Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
                     type: number
                   region:
                     description: |-
@@ -751,13 +751,13 @@ spec:
                   autoscaler.
                 properties:
                   action:
-                    description: Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
+                    description: Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
                     type: string
                   description:
                     description: Description of the filter.
                     type: string
                   findingCriteria:
-                    description: Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
+                    description: Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
                     properties:
                       criterion:
                         items:
@@ -768,19 +768,19 @@ spec:
                                 type: string
                               type: array
                             field:
-                              description: The name of the field to be evaluated. The full list of field names can be found in AWS documentation.
+                              description: Name of the field to be evaluated. The full list of field names can be found in AWS documentation.
                               type: string
                             greaterThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             greaterThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             matches:
                               description: List of string values to be evaluated as matching conditions.
@@ -801,7 +801,7 @@ spec:
                         type: array
                     type: object
                   rank:
-                    description: Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
+                    description: Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
                     type: number
                   tags:
                     additionalProperties:
@@ -909,10 +909,10 @@ spec:
               atProvider:
                 properties:
                   action:
-                    description: Specifies the action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
+                    description: Action that is to be applied to the findings that match the filter. Can be one of ARCHIVE or NOOP.
                     type: string
                   arn:
-                    description: The ARN of the GuardDuty filter.
+                    description: ARN of the GuardDuty filter.
                     type: string
                   description:
                     description: Description of the filter.
@@ -921,7 +921,7 @@ spec:
                     description: ID of a GuardDuty detector, attached to your account.
                     type: string
                   findingCriteria:
-                    description: Represents the criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
+                    description: Criteria to be used in the filter for querying findings. Contains one or more criterion blocks, documented below.
                     properties:
                       criterion:
                         items:
@@ -932,19 +932,19 @@ spec:
                                 type: string
                               type: array
                             field:
-                              description: The name of the field to be evaluated. The full list of field names can be found in AWS documentation.
+                              description: Name of the field to be evaluated. The full list of field names can be found in AWS documentation.
                               type: string
                             greaterThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             greaterThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThan:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             lessThanOrEqual:
-                              description: A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
+                              description: Value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.
                               type: string
                             matches:
                               description: List of string values to be evaluated as matching conditions.
@@ -967,7 +967,7 @@ spec:
                   id:
                     type: string
                   rank:
-                    description: Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
+                    description: Position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
                     type: number
                   region:
                     description: |-
@@ -983,7 +983,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

@@ -41,15 +41,15 @@ public partial class V1beta1InstanceList : IKubernetesObject<V1ListMeta>, IItems
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProvider
 {
-    /// <summary>The custom subdomain for the CIDR endpoints.</summary>
+    /// <summary>Custom subdomain for the CIDR endpoints.</summary>
     [JsonPropertyName("cidrEndpointsCustomSubdomain")]
     public string? CidrEndpointsCustomSubdomain { get; set; }
 
-    /// <summary>A description for the AWS Verified Access Instance.</summary>
+    /// <summary>Description for the AWS Verified Access Instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable or disable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
+    /// <summary>Whether to enable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
     [JsonPropertyName("fipsEnabled")]
     public bool? FipsEnabled { get; set; }
 
@@ -81,15 +81,15 @@ public partial class V1beta1InstanceSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProvider
 {
-    /// <summary>The custom subdomain for the CIDR endpoints.</summary>
+    /// <summary>Custom subdomain for the CIDR endpoints.</summary>
     [JsonPropertyName("cidrEndpointsCustomSubdomain")]
     public string? CidrEndpointsCustomSubdomain { get; set; }
 
-    /// <summary>A description for the AWS Verified Access Instance.</summary>
+    /// <summary>Description for the AWS Verified Access Instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable or disable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
+    /// <summary>Whether to enable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
     [JsonPropertyName("fipsEnabled")]
     public bool? FipsEnabled { get; set; }
 
@@ -209,23 +209,23 @@ public partial class V1beta1InstanceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderVerifiedAccessTrustProviders
 {
-    /// <summary>The description of trust provider.</summary>
+    /// <summary>Description of trust provider.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The type of device-based trust provider.</summary>
+    /// <summary>Type of device-based trust provider.</summary>
     [JsonPropertyName("deviceTrustProviderType")]
     public string? DeviceTrustProviderType { get; set; }
 
-    /// <summary>The type of trust provider (user- or device-based).</summary>
+    /// <summary>Type of trust provider (user- or device-based).</summary>
     [JsonPropertyName("trustProviderType")]
     public string? TrustProviderType { get; set; }
 
-    /// <summary>The type of user-based trust provider.</summary>
+    /// <summary>Type of user-based trust provider.</summary>
     [JsonPropertyName("userTrustProviderType")]
     public string? UserTrustProviderType { get; set; }
 
-    /// <summary>The ID of the trust provider.</summary>
+    /// <summary>ID of the trust provider.</summary>
     [JsonPropertyName("verifiedAccessTrustProviderId")]
     public string? VerifiedAccessTrustProviderId { get; set; }
 }
@@ -234,30 +234,31 @@ public partial class V1beta1InstanceStatusAtProviderVerifiedAccessTrustProviders
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProvider
 {
-    /// <summary>The custom subdomain for the CIDR endpoints.</summary>
+    /// <summary>Custom subdomain for the CIDR endpoints.</summary>
     [JsonPropertyName("cidrEndpointsCustomSubdomain")]
     public string? CidrEndpointsCustomSubdomain { get; set; }
 
-    /// <summary>The time that the Verified Access Instance was created.</summary>
+    /// <summary>Time that the Verified Access Instance was created.</summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
 
-    /// <summary>A description for the AWS Verified Access Instance.</summary>
+    /// <summary>Description for the AWS Verified Access Instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable or disable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
+    /// <summary>Whether to enable support for Federal Information Processing Standards (FIPS) on the AWS Verified Access Instance.</summary>
     [JsonPropertyName("fipsEnabled")]
     public bool? FipsEnabled { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access Instance.</summary>
+    /// <summary>ID of the AWS Verified Access Instance.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The time that the Verified Access Instance was last updated.</summary>
+    /// <summary>Time that the Verified Access Instance was last updated.</summary>
     [JsonPropertyName("lastUpdatedTime")]
     public string? LastUpdatedTime { get; set; }
 
+    /// <summary>List of DNS names servers that clients can use to connect to the Verified Access Instance.</summary>
     [JsonPropertyName("nameServers")]
     public IList<string>? NameServers { get; set; }
 
@@ -275,7 +276,7 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>One or more blocks of providing information about the AWS Verified Access Trust Providers. See verified_access_trust_providers below for details.One or more blocks</summary>
+    /// <summary>One or more blocks providing information about the AWS Verified Access Trust Providers. See verified_access_trust_providers below for details.</summary>
     [JsonPropertyName("verifiedAccessTrustProviders")]
     public IList<V1beta1InstanceStatusAtProviderVerifiedAccessTrustProviders>? VerifiedAccessTrustProviders { get; set; }
 }

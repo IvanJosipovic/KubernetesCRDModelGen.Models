@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: launchconfigurations.autoscaling.aws.upbound.io
 spec:
   group: autoscaling.aws.upbound.io
@@ -680,7 +680,7 @@ spec:
     name: v1beta2
     schema:
       openAPIV3Schema:
-        description: LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.
+        description: LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for Auto Scaling groups.
         properties:
           apiVersion:
             description: |-
@@ -719,7 +719,7 @@ spec:
               forProvider:
                 properties:
                   associatePublicIpAddress:
-                    description: Associate a public ip address with an instance in a VPC.
+                    description: Associate a public IP address with an instance in a VPC.
                     type: boolean
                   ebsBlockDevice:
                     description: Additional EBS block devices to attach to the instance. See Block Devices below for details.
@@ -836,7 +836,7 @@ spec:
                         type: string
                     type: object
                   securityGroups:
-                    description: A list of associated security group IDS.
+                    description: A list of associated security group IDs.
                     items:
                       type: string
                     type: array
@@ -867,7 +867,7 @@ spec:
                   autoscaler.
                 properties:
                   associatePublicIpAddress:
-                    description: Associate a public ip address with an instance in a VPC.
+                    description: Associate a public IP address with an instance in a VPC.
                     type: boolean
                   ebsBlockDevice:
                     description: Additional EBS block devices to attach to the instance. See Block Devices below for details.
@@ -979,7 +979,7 @@ spec:
                         type: string
                     type: object
                   securityGroups:
-                    description: A list of associated security group IDS.
+                    description: A list of associated security group IDs.
                     items:
                       type: string
                     type: array
@@ -1094,7 +1094,7 @@ spec:
                     description: ARN of the launch configuration.
                     type: string
                   associatePublicIpAddress:
-                    description: Associate a public ip address with an instance in a VPC.
+                    description: Associate a public IP address with an instance in a VPC.
                     type: boolean
                   ebsBlockDevice:
                     description: Additional EBS block devices to attach to the instance. See Block Devices below for details.
@@ -1214,7 +1214,7 @@ spec:
                         type: string
                     type: object
                   securityGroups:
-                    description: A list of associated security group IDS.
+                    description: A list of associated security group IDs.
                     items:
                       type: string
                     type: array

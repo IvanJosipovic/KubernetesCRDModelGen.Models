@@ -207,11 +207,11 @@ public partial class V1beta1StreamSpecForProviderKmsKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProvider
 {
-    /// <summary>The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
+    /// <summary>Number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
     [JsonPropertyName("dataRetentionInHours")]
     public double? DataRetentionInHours { get; set; }
 
-    /// <summary>The name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
+    /// <summary>Name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
@@ -227,14 +227,11 @@ public partial class V1beta1StreamSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1StreamSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
+    /// <summary>Media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
     [JsonPropertyName("mediaType")]
     public string? MediaType { get; set; }
 
-    /// <summary>
-    /// A name to identify the stream. This is unique to the
-    /// AWS account and region the Stream is created in.
-    /// </summary>
+    /// <summary>Name to identify the stream. Unique to the AWS account and region the stream is created in.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -413,11 +410,11 @@ public partial class V1beta1StreamSpecInitProviderKmsKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProvider
 {
-    /// <summary>The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
+    /// <summary>Number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
     [JsonPropertyName("dataRetentionInHours")]
     public double? DataRetentionInHours { get; set; }
 
-    /// <summary>The name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
+    /// <summary>Name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
@@ -433,14 +430,11 @@ public partial class V1beta1StreamSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1StreamSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
+    /// <summary>Media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
     [JsonPropertyName("mediaType")]
     public string? MediaType { get; set; }
 
-    /// <summary>
-    /// A name to identify the stream. This is unique to the
-    /// AWS account and region the Stream is created in.
-    /// </summary>
+    /// <summary>Name to identify the stream. Unique to the AWS account and region the stream is created in.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -636,23 +630,23 @@ public partial class V1beta1StreamSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProvider
 {
-    /// <summary>ARN specifying the Stream (same as id)</summary>
+    /// <summary>ARN specifying the Stream (same as id).</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A time stamp that indicates when the stream was created.</summary>
+    /// <summary>Time stamp that indicates when the stream was created.</summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
 
-    /// <summary>The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
+    /// <summary>Number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.</summary>
     [JsonPropertyName("dataRetentionInHours")]
     public double? DataRetentionInHours { get; set; }
 
-    /// <summary>The name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
+    /// <summary>Name of the device that is writing to the stream. In the current implementation, Kinesis Video Streams does not use this name.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>The unique Stream id</summary>
+    /// <summary>Unique Stream ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -660,14 +654,11 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
+    /// <summary>Media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines.</summary>
     [JsonPropertyName("mediaType")]
     public string? MediaType { get; set; }
 
-    /// <summary>
-    /// A name to identify the stream. This is unique to the
-    /// AWS account and region the Stream is created in.
-    /// </summary>
+    /// <summary>Name to identify the stream. Unique to the AWS account and region the stream is created in.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -682,11 +673,11 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The version of the stream.</summary>
+    /// <summary>Version of the stream.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
