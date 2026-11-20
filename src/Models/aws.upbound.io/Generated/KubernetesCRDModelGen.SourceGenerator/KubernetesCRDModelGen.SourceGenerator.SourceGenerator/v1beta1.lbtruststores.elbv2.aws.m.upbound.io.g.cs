@@ -49,7 +49,7 @@ public partial class V1beta1LBTrustStoreSpecForProvider
     [JsonPropertyName("caCertificatesBundleS3Key")]
     public string? CaCertificatesBundleS3Key { get; set; }
 
-    /// <summary>Version Id of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
+    /// <summary>Version ID of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
     [JsonPropertyName("caCertificatesBundleS3ObjectVersion")]
     public string? CaCertificatesBundleS3ObjectVersion { get; set; }
 
@@ -93,7 +93,7 @@ public partial class V1beta1LBTrustStoreSpecInitProvider
     [JsonPropertyName("caCertificatesBundleS3Key")]
     public string? CaCertificatesBundleS3Key { get; set; }
 
-    /// <summary>Version Id of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
+    /// <summary>Version ID of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
     [JsonPropertyName("caCertificatesBundleS3ObjectVersion")]
     public string? CaCertificatesBundleS3ObjectVersion { get; set; }
 
@@ -233,7 +233,7 @@ public partial class V1beta1LBTrustStoreStatusAtProvider
     [JsonPropertyName("caCertificatesBundleS3Key")]
     public string? CaCertificatesBundleS3Key { get; set; }
 
-    /// <summary>Version Id of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
+    /// <summary>Version ID of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.</summary>
     [JsonPropertyName("caCertificatesBundleS3ObjectVersion")]
     public string? CaCertificatesBundleS3ObjectVersion { get; set; }
 

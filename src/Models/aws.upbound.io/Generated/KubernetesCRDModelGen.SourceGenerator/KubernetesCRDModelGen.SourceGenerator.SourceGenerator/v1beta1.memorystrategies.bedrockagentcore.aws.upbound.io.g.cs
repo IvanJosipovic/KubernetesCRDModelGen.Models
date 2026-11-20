@@ -426,7 +426,7 @@ public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManage
     public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector? TopicArnSelector { get; set; }
 }
 
-/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+/// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
@@ -436,7 +436,7 @@ public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManage
     public double? MessageCount { get; set; }
 }
 
-/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+/// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
@@ -446,7 +446,7 @@ public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManage
     public double? IdleSessionTimeout { get; set; }
 }
 
-/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+/// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
@@ -461,15 +461,15 @@ public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManage
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditions
 {
-    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    /// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
     [JsonPropertyName("messageBasedTrigger")]
     public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
 
-    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    /// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
     [JsonPropertyName("timeBasedTrigger")]
     public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
 
-    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    /// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
     [JsonPropertyName("tokenBasedTrigger")]
     public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
 }
@@ -981,11 +981,11 @@ public partial class V1beta1MemoryStrategySpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured.</summary>
     [JsonPropertyName("namespaceTemplates")]
     public IList<string>? NamespaceTemplates { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
@@ -1375,7 +1375,7 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManag
     public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector? TopicArnSelector { get; set; }
 }
 
-/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+/// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
@@ -1385,7 +1385,7 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManag
     public double? MessageCount { get; set; }
 }
 
-/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+/// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
@@ -1395,7 +1395,7 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManag
     public double? IdleSessionTimeout { get; set; }
 }
 
-/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+/// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
@@ -1410,15 +1410,15 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditions
 {
-    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    /// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
     [JsonPropertyName("messageBasedTrigger")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
 
-    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    /// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
     [JsonPropertyName("timeBasedTrigger")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
 
-    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    /// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
     [JsonPropertyName("tokenBasedTrigger")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
 }
@@ -1942,11 +1942,11 @@ public partial class V1beta1MemoryStrategySpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured.</summary>
     [JsonPropertyName("namespaceTemplates")]
     public IList<string>? NamespaceTemplates { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
@@ -2202,7 +2202,7 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManag
     public string? TopicArn { get; set; }
 }
 
-/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+/// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
@@ -2212,7 +2212,7 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManag
     public double? MessageCount { get; set; }
 }
 
-/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+/// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
@@ -2222,7 +2222,7 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManag
     public double? IdleSessionTimeout { get; set; }
 }
 
-/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+/// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
@@ -2237,15 +2237,15 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditions
 {
-    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    /// <summary>Message-based condition. See configuration.self_managed_configuration.trigger_conditions.message_based_trigger Block below.</summary>
     [JsonPropertyName("messageBasedTrigger")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
 
-    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    /// <summary>Idle-time condition. See configuration.self_managed_configuration.trigger_conditions.time_based_trigger Block below.</summary>
     [JsonPropertyName("timeBasedTrigger")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
 
-    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    /// <summary>Token-based condition. See configuration.self_managed_configuration.trigger_conditions.token_based_trigger Block below.</summary>
     [JsonPropertyName("tokenBasedTrigger")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
 }
@@ -2502,11 +2502,11 @@ public partial class V1beta1MemoryStrategyStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured.</summary>
     [JsonPropertyName("namespaceTemplates")]
     public IList<string>? NamespaceTemplates { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured, except for CUSTOM strategies using SELF_MANAGED configuration, where neither can be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 

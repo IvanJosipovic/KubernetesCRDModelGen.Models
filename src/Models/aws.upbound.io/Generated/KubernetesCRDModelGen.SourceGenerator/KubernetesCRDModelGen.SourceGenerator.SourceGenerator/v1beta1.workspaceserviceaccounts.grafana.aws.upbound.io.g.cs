@@ -207,11 +207,11 @@ public partial class V1beta1WorkspaceServiceAccountSpecForProviderWorkspaceIdSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountSpecForProvider
 {
-    /// <summary>The permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
+    /// <summary>Permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
     [JsonPropertyName("grafanaRole")]
     public string? GrafanaRole { get; set; }
 
-    /// <summary>A name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
+    /// <summary>Name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -222,7 +222,7 @@ public partial class V1beta1WorkspaceServiceAccountSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account is associated.</summary>
+    /// <summary>Grafana workspace with which the service account is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -398,15 +398,15 @@ public partial class V1beta1WorkspaceServiceAccountSpecInitProviderWorkspaceIdSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountSpecInitProvider
 {
-    /// <summary>The permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
+    /// <summary>Permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
     [JsonPropertyName("grafanaRole")]
     public string? GrafanaRole { get; set; }
 
-    /// <summary>A name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
+    /// <summary>Name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account is associated.</summary>
+    /// <summary>Grafana workspace with which the service account is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -606,14 +606,14 @@ public partial class V1beta1WorkspaceServiceAccountSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountStatusAtProvider
 {
-    /// <summary>The permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
+    /// <summary>Permission level to use for this service account. For more information about the roles and the permissions each has, see the User roles documentation.</summary>
     [JsonPropertyName("grafanaRole")]
     public string? GrafanaRole { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
+    /// <summary>Name for the service account. The name must be unique within the workspace, as it determines the ID associated with the service account.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -628,7 +628,7 @@ public partial class V1beta1WorkspaceServiceAccountStatusAtProvider
     [JsonPropertyName("serviceAccountId")]
     public string? ServiceAccountId { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account is associated.</summary>
+    /// <summary>Grafana workspace with which the service account is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

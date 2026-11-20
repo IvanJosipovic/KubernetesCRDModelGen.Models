@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: taskdefinitions.ecs.aws.upbound.io
 spec:
   group: ecs.aws.upbound.io
@@ -1131,7 +1131,7 @@ spec:
                     description: List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.
                     type: string
                   cpu:
-                    description: Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.
+                    description: Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   enableFaultInjection:
                     description: Enables fault injection and allows for fault injection requests to be accepted from the task's containers. Default is false.
@@ -1277,7 +1277,7 @@ spec:
                     description: Configuration block for runtime_platform that containers in your task may use.
                     properties:
                       cpuArchitecture:
-                        description: Must be set to either X86_64 or ARM64; see cpu architecture
+                        description: Must be set to either X86_64 or ARM64; see CPU architecture
                         type: string
                       operatingSystemFamily:
                         description: If the requires_compatibilities is FARGATE this field is required; must be set to a valid option from the operating system family in the runtime platform setting
@@ -1357,7 +1357,7 @@ spec:
                               type: number
                           type: object
                         fsxWindowsFileServerVolumeConfiguration:
-                          description: Configuration block for an FSX Windows File Server volume. Detailed below.
+                          description: Configuration block for an FSx Windows File Server volume. Detailed below.
                           properties:
                             authorizationConfig:
                               description: Configuration block for authorization for the Amazon EFS file system. Detailed below.
@@ -1420,7 +1420,7 @@ spec:
                     description: List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.
                     type: string
                   cpu:
-                    description: Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.
+                    description: Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   enableFaultInjection:
                     description: Enables fault injection and allows for fault injection requests to be accepted from the task's containers. Default is false.
@@ -1561,7 +1561,7 @@ spec:
                     description: Configuration block for runtime_platform that containers in your task may use.
                     properties:
                       cpuArchitecture:
-                        description: Must be set to either X86_64 or ARM64; see cpu architecture
+                        description: Must be set to either X86_64 or ARM64; see CPU architecture
                         type: string
                       operatingSystemFamily:
                         description: If the requires_compatibilities is FARGATE this field is required; must be set to a valid option from the operating system family in the runtime platform setting
@@ -1641,7 +1641,7 @@ spec:
                               type: number
                           type: object
                         fsxWindowsFileServerVolumeConfiguration:
-                          description: Configuration block for an FSX Windows File Server volume. Detailed below.
+                          description: Configuration block for an FSx Windows File Server volume. Detailed below.
                           properties:
                             authorizationConfig:
                               description: Configuration block for authorization for the Amazon EFS file system. Detailed below.
@@ -1791,7 +1791,7 @@ spec:
                     description: List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.
                     type: string
                   cpu:
-                    description: Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.
+                    description: Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   enableFaultInjection:
                     description: Enables fault injection and allows for fault injection requests to be accepted from the task's containers. Default is false.
@@ -1869,7 +1869,7 @@ spec:
                     description: Configuration block for runtime_platform that containers in your task may use.
                     properties:
                       cpuArchitecture:
-                        description: Must be set to either X86_64 or ARM64; see cpu architecture
+                        description: Must be set to either X86_64 or ARM64; see CPU architecture
                         type: string
                       operatingSystemFamily:
                         description: If the requires_compatibilities is FARGATE this field is required; must be set to a valid option from the operating system family in the runtime platform setting
@@ -1955,7 +1955,7 @@ spec:
                               type: number
                           type: object
                         fsxWindowsFileServerVolumeConfiguration:
-                          description: Configuration block for an FSX Windows File Server volume. Detailed below.
+                          description: Configuration block for an FSx Windows File Server volume. Detailed below.
                           properties:
                             authorizationConfig:
                               description: Configuration block for authorization for the Amazon EFS file system. Detailed below.

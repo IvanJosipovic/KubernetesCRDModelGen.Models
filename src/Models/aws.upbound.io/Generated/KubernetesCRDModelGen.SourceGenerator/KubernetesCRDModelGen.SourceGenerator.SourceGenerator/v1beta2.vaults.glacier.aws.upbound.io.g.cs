@@ -203,7 +203,7 @@ public partial class V1beta2VaultSpecForProviderNotificationSnsTopicSelector
     public V1beta2VaultSpecForProviderNotificationSnsTopicSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The notifications for the Vault. Fields documented below.</summary>
+/// <summary>Notifications for the Vault. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultSpecForProviderNotification
@@ -212,7 +212,7 @@ public partial class V1beta2VaultSpecForProviderNotification
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
-    /// <summary>The SNS Topic ARN.</summary>
+    /// <summary>SNS Topic ARN.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 
@@ -229,14 +229,11 @@ public partial class V1beta2VaultSpecForProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultSpecForProvider
 {
-    /// <summary>
-    /// The policy document. This is a JSON formatted string.
-    /// The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
-    /// </summary>
+    /// <summary>Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy</summary>
     [JsonPropertyName("accessPolicy")]
     public string? AccessPolicy { get; set; }
 
-    /// <summary>The notifications for the Vault. Fields documented below.</summary>
+    /// <summary>Notifications for the Vault. See below.</summary>
     [JsonPropertyName("notification")]
     public V1beta2VaultSpecForProviderNotification? Notification { get; set; }
 
@@ -399,7 +396,7 @@ public partial class V1beta2VaultSpecInitProviderNotificationSnsTopicSelector
     public V1beta2VaultSpecInitProviderNotificationSnsTopicSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The notifications for the Vault. Fields documented below.</summary>
+/// <summary>Notifications for the Vault. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultSpecInitProviderNotification
@@ -408,7 +405,7 @@ public partial class V1beta2VaultSpecInitProviderNotification
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
-    /// <summary>The SNS Topic ARN.</summary>
+    /// <summary>SNS Topic ARN.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 
@@ -437,14 +434,11 @@ public partial class V1beta2VaultSpecInitProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultSpecInitProvider
 {
-    /// <summary>
-    /// The policy document. This is a JSON formatted string.
-    /// The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
-    /// </summary>
+    /// <summary>Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy</summary>
     [JsonPropertyName("accessPolicy")]
     public string? AccessPolicy { get; set; }
 
-    /// <summary>The notifications for the Vault. Fields documented below.</summary>
+    /// <summary>Notifications for the Vault. See below.</summary>
     [JsonPropertyName("notification")]
     public V1beta2VaultSpecInitProviderNotification? Notification { get; set; }
 
@@ -636,7 +630,7 @@ public partial class V1beta2VaultSpec
     public V1beta2VaultSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The notifications for the Vault. Fields documented below.</summary>
+/// <summary>Notifications for the Vault. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultStatusAtProviderNotification
@@ -645,7 +639,7 @@ public partial class V1beta2VaultStatusAtProviderNotification
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
-    /// <summary>The SNS Topic ARN.</summary>
+    /// <summary>SNS Topic ARN.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 }
@@ -654,25 +648,22 @@ public partial class V1beta2VaultStatusAtProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VaultStatusAtProvider
 {
-    /// <summary>
-    /// The policy document. This is a JSON formatted string.
-    /// The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
-    /// </summary>
+    /// <summary>Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy</summary>
     [JsonPropertyName("accessPolicy")]
     public string? AccessPolicy { get; set; }
 
-    /// <summary>The ARN of the vault.</summary>
+    /// <summary>ARN of the vault.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The URI of the vault that was created.</summary>
+    /// <summary>URI of the vault that was created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The notifications for the Vault. Fields documented below.</summary>
+    /// <summary>Notifications for the Vault. See below.</summary>
     [JsonPropertyName("notification")]
     public V1beta2VaultStatusAtProviderNotification? Notification { get; set; }
 
@@ -687,7 +678,7 @@ public partial class V1beta2VaultStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

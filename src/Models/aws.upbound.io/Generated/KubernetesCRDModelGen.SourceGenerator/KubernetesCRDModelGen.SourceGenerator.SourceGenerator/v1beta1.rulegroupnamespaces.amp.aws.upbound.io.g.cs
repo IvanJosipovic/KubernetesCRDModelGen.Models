@@ -447,7 +447,7 @@ public partial class V1beta1RuleGroupNamespaceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupNamespaceStatusAtProvider
 {
-    /// <summary>The ARN of the rule group namespace.</summary>
+    /// <summary>ARN of the rule group namespace.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

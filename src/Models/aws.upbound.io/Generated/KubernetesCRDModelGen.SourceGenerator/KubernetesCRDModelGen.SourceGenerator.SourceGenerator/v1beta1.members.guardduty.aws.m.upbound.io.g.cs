@@ -363,7 +363,7 @@ public partial class V1beta1MemberSpecForProvider
     [JsonPropertyName("accountIdSelector")]
     public V1beta1MemberSpecForProviderAccountIdSelector? AccountIdSelector { get; set; }
 
-    /// <summary>The detector ID of the GuardDuty account where you want to create member accounts.</summary>
+    /// <summary>Detector ID of the GuardDuty account where you want to create member accounts.</summary>
     [JsonPropertyName("detectorId")]
     public string? DetectorId { get; set; }
 
@@ -737,7 +737,7 @@ public partial class V1beta1MemberSpecInitProvider
     [JsonPropertyName("accountIdSelector")]
     public V1beta1MemberSpecInitProviderAccountIdSelector? AccountIdSelector { get; set; }
 
-    /// <summary>The detector ID of the GuardDuty account where you want to create member accounts.</summary>
+    /// <summary>Detector ID of the GuardDuty account where you want to create member accounts.</summary>
     [JsonPropertyName("detectorId")]
     public string? DetectorId { get; set; }
 
@@ -881,7 +881,7 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The detector ID of the GuardDuty account where you want to create member accounts.</summary>
+    /// <summary>Detector ID of the GuardDuty account where you want to create member accounts.</summary>
     [JsonPropertyName("detectorId")]
     public string? DetectorId { get; set; }
 
@@ -911,7 +911,7 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The status of the relationship between the member account and its primary account. More information can be found in Amazon GuardDuty API Reference.</summary>
+    /// <summary>Status of the relationship between the member account and its primary account. More information can be found in Amazon GuardDuty API Reference.</summary>
     [JsonPropertyName("relationshipStatus")]
     public string? RelationshipStatus { get; set; }
 }

@@ -254,7 +254,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProvider
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
-    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.</summary>
+    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.</summary>
     [JsonPropertyName("primaryReplicationGroupId")]
     public string? PrimaryReplicationGroupId { get; set; }
 
@@ -503,7 +503,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProvider
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
-    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.</summary>
+    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.</summary>
     [JsonPropertyName("primaryReplicationGroupId")]
     public string? PrimaryReplicationGroupId { get; set; }
 
@@ -733,7 +733,7 @@ public partial class V1beta1GlobalReplicationGroupStatusAtProvider
     [JsonPropertyName("parameterGroupName")]
     public string? ParameterGroupName { get; set; }
 
-    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.</summary>
+    /// <summary>The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.</summary>
     [JsonPropertyName("primaryReplicationGroupId")]
     public string? PrimaryReplicationGroupId { get; set; }
 

@@ -41,7 +41,7 @@ public partial class V1beta1BucketList : IKubernetesObject<V1ListMeta>, IItems<V
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecForProvider
 {
-    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.</summary>
+    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.</summary>
     [JsonPropertyName("bundleId")]
     public string? BundleId { get; set; }
 
@@ -77,7 +77,7 @@ public partial class V1beta1BucketSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecInitProvider
 {
-    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.</summary>
+    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.</summary>
     [JsonPropertyName("bundleId")]
     public string? BundleId { get; set; }
 
@@ -209,7 +209,7 @@ public partial class V1beta1BucketStatusAtProvider
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
-    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.</summary>
+    /// <summary>Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.</summary>
     [JsonPropertyName("bundleId")]
     public string? BundleId { get; set; }
 

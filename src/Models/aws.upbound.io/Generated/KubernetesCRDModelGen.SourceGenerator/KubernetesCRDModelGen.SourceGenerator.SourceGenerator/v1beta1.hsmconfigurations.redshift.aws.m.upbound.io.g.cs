@@ -251,7 +251,7 @@ public partial class V1beta1HSMConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HSMConfigurationStatusAtProvider
 {
-    /// <summary>ARN of the Hsm Client Certificate.</summary>
+    /// <summary>ARN of the HSM Client Certificate.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

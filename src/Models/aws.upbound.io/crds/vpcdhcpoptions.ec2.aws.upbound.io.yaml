@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: vpcdhcpoptions.ec2.aws.upbound.io
 spec:
   group: ec2.aws.upbound.io
@@ -88,7 +88,7 @@ spec:
                       type: string
                     type: array
                   netbiosNodeType:
-                    description: The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
+                    description: NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
                     type: string
                   ntpServers:
                     description: List of NTP servers to configure.
@@ -139,7 +139,7 @@ spec:
                       type: string
                     type: array
                   netbiosNodeType:
-                    description: The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
+                    description: NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
                     type: string
                   ntpServers:
                     description: List of NTP servers to configure.
@@ -245,7 +245,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The ARN of the DHCP Options Set.
+                    description: ARN of the DHCP Options Set.
                     type: string
                   domainName:
                     description: the suffix domain name to use by default when resolving non Fully Qualified Domain Names. In other words, this is what ends up being the search value in the /etc/resolv.conf file.
@@ -256,7 +256,7 @@ spec:
                       type: string
                     type: array
                   id:
-                    description: The ID of the DHCP Options Set.
+                    description: ID of the DHCP Options Set.
                     type: string
                   ipv6AddressPreferredLeaseTime:
                     description: How frequently, in seconds, a running instance with an IPv6 assigned to it goes through DHCPv6 lease renewal. Acceptable values are between 140 and 2147483647 (approximately 68 years). If no value is entered, the default lease time is 140 seconds. If you use long-term addressing for EC2 instances, you can increase the lease time and avoid frequent lease renewal requests. Lease renewal typically occurs when half of the lease time has elapsed.
@@ -267,7 +267,7 @@ spec:
                       type: string
                     type: array
                   netbiosNodeType:
-                    description: The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
+                    description: NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.
                     type: string
                   ntpServers:
                     description: List of NTP servers to configure.
@@ -275,7 +275,7 @@ spec:
                       type: string
                     type: array
                   ownerId:
-                    description: The ID of the AWS account that owns the DHCP options set.
+                    description: ID of the AWS account that owns the DHCP options set.
                     type: string
                   region:
                     description: |-
@@ -291,7 +291,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

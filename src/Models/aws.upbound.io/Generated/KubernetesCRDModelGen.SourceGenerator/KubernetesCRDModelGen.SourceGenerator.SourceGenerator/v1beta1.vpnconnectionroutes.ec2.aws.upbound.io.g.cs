@@ -207,7 +207,7 @@ public partial class V1beta1VPNConnectionRouteSpecForProviderVpnConnectionIdSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNConnectionRouteSpecForProvider
 {
-    /// <summary>The CIDR block associated with the local subnet of the customer network.</summary>
+    /// <summary>CIDR block associated with the local subnet of the customer network.</summary>
     [JsonPropertyName("destinationCidrBlock")]
     public string? DestinationCidrBlock { get; set; }
 
@@ -218,7 +218,7 @@ public partial class V1beta1VPNConnectionRouteSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the VPN connection.</summary>
+    /// <summary>ID of the VPN connection.</summary>
     [JsonPropertyName("vpnConnectionId")]
     public string? VpnConnectionId { get; set; }
 
@@ -394,11 +394,11 @@ public partial class V1beta1VPNConnectionRouteSpecInitProviderVpnConnectionIdSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNConnectionRouteSpecInitProvider
 {
-    /// <summary>The CIDR block associated with the local subnet of the customer network.</summary>
+    /// <summary>CIDR block associated with the local subnet of the customer network.</summary>
     [JsonPropertyName("destinationCidrBlock")]
     public string? DestinationCidrBlock { get; set; }
 
-    /// <summary>The ID of the VPN connection.</summary>
+    /// <summary>ID of the VPN connection.</summary>
     [JsonPropertyName("vpnConnectionId")]
     public string? VpnConnectionId { get; set; }
 
@@ -598,7 +598,7 @@ public partial class V1beta1VPNConnectionRouteSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNConnectionRouteStatusAtProvider
 {
-    /// <summary>The CIDR block associated with the local subnet of the customer network.</summary>
+    /// <summary>CIDR block associated with the local subnet of the customer network.</summary>
     [JsonPropertyName("destinationCidrBlock")]
     public string? DestinationCidrBlock { get; set; }
 
@@ -612,7 +612,7 @@ public partial class V1beta1VPNConnectionRouteStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the VPN connection.</summary>
+    /// <summary>ID of the VPN connection.</summary>
     [JsonPropertyName("vpnConnectionId")]
     public string? VpnConnectionId { get; set; }
 }

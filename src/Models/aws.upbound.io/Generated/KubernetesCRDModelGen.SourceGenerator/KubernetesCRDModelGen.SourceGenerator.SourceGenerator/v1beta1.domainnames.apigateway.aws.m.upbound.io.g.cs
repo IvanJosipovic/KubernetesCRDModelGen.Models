@@ -1091,7 +1091,7 @@ public partial class V1beta1DomainNameStatusAtProvider
     [JsonPropertyName("certificateUploadDate")]
     public string? CertificateUploadDate { get; set; }
 
-    /// <summary>Hostname created by Cloudfront to represent the distribution that implements this domain name mapping.</summary>
+    /// <summary>Hostname created by CloudFront to represent the distribution that implements this domain name mapping.</summary>
     [JsonPropertyName("cloudfrontDomainName")]
     public string? CloudfrontDomainName { get; set; }
 

@@ -37,20 +37,20 @@ public partial class V1beta1QueueList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Queue> Items { get; set; }
 }
 
-/// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+/// <summary>Detail pricing plan of the reserved queue. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueSpecForProviderReservationPlanSettings
 {
-    /// <summary>The length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
+    /// <summary>Length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
     [JsonPropertyName("commitment")]
     public string? Commitment { get; set; }
 
-    /// <summary>Specifies whether the term of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
+    /// <summary>Renewal type of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
     [JsonPropertyName("renewalType")]
     public string? RenewalType { get; set; }
 
-    /// <summary>Specifies the number of reserved transcode slots (RTS) for queue.</summary>
+    /// <summary>Number of reserved transcode slots (RTS) for queue.</summary>
     [JsonPropertyName("reservedSlots")]
     public double? ReservedSlots { get; set; }
 }
@@ -59,15 +59,15 @@ public partial class V1beta1QueueSpecForProviderReservationPlanSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueSpecForProvider
 {
-    /// <summary>The maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
+    /// <summary>Maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
     [JsonPropertyName("concurrentJobs")]
     public double? ConcurrentJobs { get; set; }
 
-    /// <summary>A description of the queue</summary>
+    /// <summary>Description of the queue</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
+    /// <summary>Whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
@@ -78,11 +78,11 @@ public partial class V1beta1QueueSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+    /// <summary>Detail pricing plan of the reserved queue. See below.</summary>
     [JsonPropertyName("reservationPlanSettings")]
     public V1beta1QueueSpecForProviderReservationPlanSettings? ReservationPlanSettings { get; set; }
 
-    /// <summary>A status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
+    /// <summary>Status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -91,20 +91,20 @@ public partial class V1beta1QueueSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+/// <summary>Detail pricing plan of the reserved queue. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueSpecInitProviderReservationPlanSettings
 {
-    /// <summary>The length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
+    /// <summary>Length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
     [JsonPropertyName("commitment")]
     public string? Commitment { get; set; }
 
-    /// <summary>Specifies whether the term of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
+    /// <summary>Renewal type of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
     [JsonPropertyName("renewalType")]
     public string? RenewalType { get; set; }
 
-    /// <summary>Specifies the number of reserved transcode slots (RTS) for queue.</summary>
+    /// <summary>Number of reserved transcode slots (RTS) for queue.</summary>
     [JsonPropertyName("reservedSlots")]
     public double? ReservedSlots { get; set; }
 }
@@ -125,23 +125,23 @@ public partial class V1beta1QueueSpecInitProviderReservationPlanSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueSpecInitProvider
 {
-    /// <summary>The maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
+    /// <summary>Maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
     [JsonPropertyName("concurrentJobs")]
     public double? ConcurrentJobs { get; set; }
 
-    /// <summary>A description of the queue</summary>
+    /// <summary>Description of the queue</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
+    /// <summary>Whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
-    /// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+    /// <summary>Detail pricing plan of the reserved queue. See below.</summary>
     [JsonPropertyName("reservationPlanSettings")]
     public V1beta1QueueSpecInitProviderReservationPlanSettings? ReservationPlanSettings { get; set; }
 
-    /// <summary>A status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
+    /// <summary>Status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -257,20 +257,20 @@ public partial class V1beta1QueueSpec
     public V1beta1QueueSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+/// <summary>Detail pricing plan of the reserved queue. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueStatusAtProviderReservationPlanSettings
 {
-    /// <summary>The length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
+    /// <summary>Length of the term of your reserved queue pricing plan commitment. Valid value is ONE_YEAR.</summary>
     [JsonPropertyName("commitment")]
     public string? Commitment { get; set; }
 
-    /// <summary>Specifies whether the term of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
+    /// <summary>Renewal type of your reserved queue pricing plan. Valid values are AUTO_RENEW or EXPIRE.</summary>
     [JsonPropertyName("renewalType")]
     public string? RenewalType { get; set; }
 
-    /// <summary>Specifies the number of reserved transcode slots (RTS) for queue.</summary>
+    /// <summary>Number of reserved transcode slots (RTS) for queue.</summary>
     [JsonPropertyName("reservedSlots")]
     public double? ReservedSlots { get; set; }
 }
@@ -279,23 +279,23 @@ public partial class V1beta1QueueStatusAtProviderReservationPlanSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueStatusAtProvider
 {
-    /// <summary>The Arn of the queue</summary>
+    /// <summary>ARN of the queue</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
+    /// <summary>Maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead.</summary>
     [JsonPropertyName("concurrentJobs")]
     public double? ConcurrentJobs { get; set; }
 
-    /// <summary>A description of the queue</summary>
+    /// <summary>Description of the queue</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The same as name</summary>
+    /// <summary>Same as name</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
+    /// <summary>Whether the pricing plan for the queue is on-demand or reserved. Valid values are ON_DEMAND or RESERVED. Default to ON_DEMAND.</summary>
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
@@ -306,11 +306,11 @@ public partial class V1beta1QueueStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A detail pricing plan of the  reserved queue. See below.</summary>
+    /// <summary>Detail pricing plan of the reserved queue. See below.</summary>
     [JsonPropertyName("reservationPlanSettings")]
     public V1beta1QueueStatusAtProviderReservationPlanSettings? ReservationPlanSettings { get; set; }
 
-    /// <summary>A status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
+    /// <summary>Status of the queue. Valid values are ACTIVE or RESERVED. Default to PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -318,7 +318,7 @@ public partial class V1beta1QueueStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

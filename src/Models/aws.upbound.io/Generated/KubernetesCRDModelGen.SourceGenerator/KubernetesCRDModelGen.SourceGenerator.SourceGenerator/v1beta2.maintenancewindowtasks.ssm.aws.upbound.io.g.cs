@@ -1543,7 +1543,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProvider
     [JsonPropertyName("serviceRoleArnSelector")]
     public V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelector? ServiceRoleArnSelector { get; set; }
 
-    /// <summary>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
+    /// <summary>The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
     [JsonPropertyName("targets")]
     public IList<V1beta2MaintenanceWindowTaskSpecForProviderTargets>? Targets { get; set; }
 
@@ -1567,7 +1567,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProvider
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the task with.</summary>
+    /// <summary>The ID of the maintenance window to register the task with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 
@@ -3072,7 +3072,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProvider
     [JsonPropertyName("serviceRoleArnSelector")]
     public V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelector? ServiceRoleArnSelector { get; set; }
 
-    /// <summary>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
+    /// <summary>The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
     [JsonPropertyName("targets")]
     public IList<V1beta2MaintenanceWindowTaskSpecInitProviderTargets>? Targets { get; set; }
 
@@ -3096,7 +3096,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProvider
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the task with.</summary>
+    /// <summary>The ID of the maintenance window to register the task with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 
@@ -3519,7 +3519,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProvider
     [JsonPropertyName("serviceRoleArn")]
     public string? ServiceRoleArn { get; set; }
 
-    /// <summary>The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
+    /// <summary>The targets (either instances or window target IDs). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target IDs are specified using Key=WindowTargetIds,Values=window target id1, window target id2.</summary>
     [JsonPropertyName("targets")]
     public IList<V1beta2MaintenanceWindowTaskStatusAtProviderTargets>? Targets { get; set; }
 
@@ -3535,7 +3535,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProvider
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 
-    /// <summary>The Id of the maintenance window to register the task with.</summary>
+    /// <summary>The ID of the maintenance window to register the task with.</summary>
     [JsonPropertyName("windowId")]
     public string? WindowId { get; set; }
 

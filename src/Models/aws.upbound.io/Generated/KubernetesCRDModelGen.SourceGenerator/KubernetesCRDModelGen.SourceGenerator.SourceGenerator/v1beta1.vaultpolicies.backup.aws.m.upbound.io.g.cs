@@ -208,7 +208,7 @@ public partial class V1beta1VaultPolicySpecForProvider
     [JsonPropertyName("backupVaultNameSelector")]
     public V1beta1VaultPolicySpecForProviderBackupVaultNameSelector? BackupVaultNameSelector { get; set; }
 
-    /// <summary>The backup vault access policy document in JSON format.</summary>
+    /// <summary>Backup vault access policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1VaultPolicySpecInitProvider
     [JsonPropertyName("backupVaultNameSelector")]
     public V1beta1VaultPolicySpecInitProviderBackupVaultNameSelector? BackupVaultNameSelector { get; set; }
 
-    /// <summary>The backup vault access policy document in JSON format.</summary>
+    /// <summary>Backup vault access policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -519,7 +519,7 @@ public partial class V1beta1VaultPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VaultPolicyStatusAtProvider
 {
-    /// <summary>The ARN of the vault.</summary>
+    /// <summary>ARN of the vault.</summary>
     [JsonPropertyName("backupVaultArn")]
     public string? BackupVaultArn { get; set; }
 
@@ -527,11 +527,11 @@ public partial class V1beta1VaultPolicyStatusAtProvider
     [JsonPropertyName("backupVaultName")]
     public string? BackupVaultName { get; set; }
 
-    /// <summary>The name of the vault.</summary>
+    /// <summary>Name of the vault.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The backup vault access policy document in JSON format.</summary>
+    /// <summary>Backup vault access policy document in JSON format.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

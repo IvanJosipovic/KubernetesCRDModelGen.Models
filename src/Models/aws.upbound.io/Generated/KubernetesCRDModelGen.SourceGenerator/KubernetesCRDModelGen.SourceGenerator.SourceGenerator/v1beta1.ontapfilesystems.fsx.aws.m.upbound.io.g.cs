@@ -1701,7 +1701,7 @@ public partial class V1beta1OntapFileSystemStatusAtProviderDiskIopsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProviderEndpointsIntercluster
 {
-    /// <summary>DNS name for the file system.</summary>
+    /// <summary>Domain Name Service (DNS) name for the file system. You can mount your file system using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -1714,7 +1714,7 @@ public partial class V1beta1OntapFileSystemStatusAtProviderEndpointsIntercluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProviderEndpointsManagement
 {
-    /// <summary>DNS name for the file system.</summary>
+    /// <summary>Domain Name Service (DNS) name for the file system. You can mount your file system using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -1727,11 +1727,11 @@ public partial class V1beta1OntapFileSystemStatusAtProviderEndpointsManagement
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProviderEndpoints
 {
-    /// <summary>Endpoint for managing your file system by setting up NetApp SnapMirror with other ONTAP systems. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system by setting up NetApp SnapMirror with other ONTAP systems. See endpoints.intercluster below.</summary>
     [JsonPropertyName("intercluster")]
     public IList<V1beta1OntapFileSystemStatusAtProviderEndpointsIntercluster>? Intercluster { get; set; }
 
-    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See endpoints.management below.</summary>
     [JsonPropertyName("management")]
     public IList<V1beta1OntapFileSystemStatusAtProviderEndpointsManagement>? Management { get; set; }
 }

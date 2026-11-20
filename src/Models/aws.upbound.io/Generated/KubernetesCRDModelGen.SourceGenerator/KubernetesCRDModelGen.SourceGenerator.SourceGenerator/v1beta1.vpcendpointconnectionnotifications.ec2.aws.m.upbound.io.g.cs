@@ -355,7 +355,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProvider
     [JsonPropertyName("connectionEvents")]
     public IList<string>? ConnectionEvents { get; set; }
 
-    /// <summary>The ARN of the SNS topic for the notifications.</summary>
+    /// <summary>ARN of the SNS topic for the notifications.</summary>
     [JsonPropertyName("connectionNotificationArn")]
     public string? ConnectionNotificationArn { get; set; }
 
@@ -374,11 +374,11 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint Service to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint Service to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 
@@ -721,7 +721,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProvider
     [JsonPropertyName("connectionEvents")]
     public IList<string>? ConnectionEvents { get; set; }
 
-    /// <summary>The ARN of the SNS topic for the notifications.</summary>
+    /// <summary>ARN of the SNS topic for the notifications.</summary>
     [JsonPropertyName("connectionNotificationArn")]
     public string? ConnectionNotificationArn { get; set; }
 
@@ -733,11 +733,11 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProvider
     [JsonPropertyName("connectionNotificationArnSelector")]
     public V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelector? ConnectionNotificationArnSelector { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint Service to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint Service to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 
@@ -865,15 +865,15 @@ public partial class V1beta1VPCEndpointConnectionNotificationStatusAtProvider
     [JsonPropertyName("connectionEvents")]
     public IList<string>? ConnectionEvents { get; set; }
 
-    /// <summary>The ARN of the SNS topic for the notifications.</summary>
+    /// <summary>ARN of the SNS topic for the notifications.</summary>
     [JsonPropertyName("connectionNotificationArn")]
     public string? ConnectionNotificationArn { get; set; }
 
-    /// <summary>The ID of the VPC connection notification.</summary>
+    /// <summary>ID of the VPC connection notification.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The type of notification.</summary>
+    /// <summary>Type of notification.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -884,15 +884,15 @@ public partial class V1beta1VPCEndpointConnectionNotificationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The state of the notification.</summary>
+    /// <summary>State of the notification.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The ID of the VPC Endpoint Service to receive notifications for.</summary>
+    /// <summary>ID of the VPC Endpoint Service to receive notifications for.</summary>
     [JsonPropertyName("vpcEndpointServiceId")]
     public string? VpcEndpointServiceId { get; set; }
 }

@@ -56,12 +56,12 @@ public enum V1beta1TransitGatewayPeeringAttachmentSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+/// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPeeringAttachmentSpecForProviderOptions
 {
-    /// <summary>Indicates whether dynamic routing is enabled or disabled.. Supports enable and disable.</summary>
+    /// <summary>Indicates whether dynamic routing is enabled or disabled. Supports enable and disable. If not configured, the value is populated from the API.</summary>
     [JsonPropertyName("dynamicRouting")]
     public string? DynamicRouting { get; set; }
 }
@@ -364,7 +364,7 @@ public partial class V1beta1TransitGatewayPeeringAttachmentSpecForProviderTransi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPeeringAttachmentSpecForProvider
 {
-    /// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+    /// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
     [JsonPropertyName("options")]
     public V1beta1TransitGatewayPeeringAttachmentSpecForProviderOptions? Options { get; set; }
 
@@ -412,12 +412,12 @@ public partial class V1beta1TransitGatewayPeeringAttachmentSpecForProvider
     public V1beta1TransitGatewayPeeringAttachmentSpecForProviderTransitGatewayIdSelector? TransitGatewayIdSelector { get; set; }
 }
 
-/// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+/// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPeeringAttachmentSpecInitProviderOptions
 {
-    /// <summary>Indicates whether dynamic routing is enabled or disabled.. Supports enable and disable.</summary>
+    /// <summary>Indicates whether dynamic routing is enabled or disabled. Supports enable and disable. If not configured, the value is populated from the API.</summary>
     [JsonPropertyName("dynamicRouting")]
     public string? DynamicRouting { get; set; }
 }
@@ -732,7 +732,7 @@ public partial class V1beta1TransitGatewayPeeringAttachmentSpecInitProviderTrans
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPeeringAttachmentSpecInitProvider
 {
-    /// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+    /// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
     [JsonPropertyName("options")]
     public V1beta1TransitGatewayPeeringAttachmentSpecInitProviderOptions? Options { get; set; }
 
@@ -956,12 +956,12 @@ public partial class V1beta1TransitGatewayPeeringAttachmentSpec
     public V1beta1TransitGatewayPeeringAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+/// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPeeringAttachmentStatusAtProviderOptions
 {
-    /// <summary>Indicates whether dynamic routing is enabled or disabled.. Supports enable and disable.</summary>
+    /// <summary>Indicates whether dynamic routing is enabled or disabled. Supports enable and disable. If not configured, the value is populated from the API.</summary>
     [JsonPropertyName("dynamicRouting")]
     public string? DynamicRouting { get; set; }
 }
@@ -978,7 +978,7 @@ public partial class V1beta1TransitGatewayPeeringAttachmentStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Describes whether dynamic routing is enabled or disabled for the transit gateway peering request. See options below for more details!</summary>
+    /// <summary>Block describing whether dynamic routing is enabled or disabled for the transit gateway peering request. If not configured, the value is populated from the API. See options below for more details!</summary>
     [JsonPropertyName("options")]
     public V1beta1TransitGatewayPeeringAttachmentStatusAtProviderOptions? Options { get; set; }
 

@@ -266,7 +266,7 @@ public partial class V1beta1ParameterGroupStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProvider
 {
-    /// <summary>ARN of the db parameter group.</summary>
+    /// <summary>ARN of the DB parameter group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

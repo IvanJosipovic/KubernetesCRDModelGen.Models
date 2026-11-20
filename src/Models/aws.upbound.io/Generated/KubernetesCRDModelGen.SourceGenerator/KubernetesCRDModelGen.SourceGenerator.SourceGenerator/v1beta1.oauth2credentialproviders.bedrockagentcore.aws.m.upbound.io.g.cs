@@ -37,7 +37,7 @@ public partial class V1beta1Oauth2CredentialProviderList : IKubernetesObject<V1L
     public required IList<V1beta1Oauth2CredentialProvider> Items { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdSecretRef
@@ -218,7 +218,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig
@@ -266,16 +266,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -283,7 +283,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -300,7 +300,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef
@@ -481,7 +481,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig
@@ -529,7 +529,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
@@ -555,12 +555,12 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public IList<string>? TokenEndpointAuthMethods { get; set; }
 }
 
-/// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+/// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata? AuthorizationServerMetadata { get; set; }
 
@@ -569,7 +569,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig
@@ -583,7 +583,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public IList<string>? ActorTokenScopes { get; set; }
 }
 
-/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig
@@ -592,17 +592,17 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
     [JsonPropertyName("tokenExchangeGrantTypeConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig? TokenExchangeGrantTypeConfig { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -627,7 +627,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource
@@ -637,26 +637,26 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -681,7 +681,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource
@@ -691,16 +691,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -713,58 +713,67 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
+/// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource
 {
+    /// <summary>ARN of the AWS KMS key used to sign the JWT.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
 
+/// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource
 {
+    /// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
     [JsonPropertyName("kmsKeySource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource? KmsKeySource { get; set; }
 }
 
+/// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig
 {
+    /// <summary>Key-value map of additional claims to include in the JWT header.</summary>
     [JsonPropertyName("additionalHeaderClaims")]
     public IDictionary<string, string>? AdditionalHeaderClaims { get; set; }
 
+    /// <summary>Key-value map of additional claims to include in the JWT payload.</summary>
     [JsonPropertyName("additionalPayloadClaims")]
     public IDictionary<string, string>? AdditionalPayloadClaims { get; set; }
 
+    /// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
     [JsonPropertyName("privateKeySource")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource? PrivateKeySource { get; set; }
 
+    /// <summary>Algorithm used to sign the JWT.</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+/// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
-    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT.</summary>
+    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT, PRIVATE_KEY_JWT.</summary>
     [JsonPropertyName("clientAuthenticationMethod")]
     public string? ClientAuthenticationMethod { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -772,7 +781,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -788,27 +797,28 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientSecretWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery? OauthDiscovery { get; set; }
 
-    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
     [JsonPropertyName("onBehalfOfTokenExchangeConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig? OnBehalfOfTokenExchangeConfig { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override below.</summary>
+    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override Block below.</summary>
     [JsonPropertyName("privateEndpointOverride")]
     public IList<V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverride>? PrivateEndpointOverride { get; set; }
 
+    /// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
     [JsonPropertyName("privateKeyJwtConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig? PrivateKeyJwtConfig { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef
@@ -989,7 +999,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig
@@ -1037,16 +1047,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -1054,7 +1064,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -1071,7 +1081,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef
@@ -1252,7 +1262,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig
@@ -1300,16 +1310,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -1317,7 +1327,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -1334,7 +1344,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdSecretRef
@@ -1515,7 +1525,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig
@@ -1563,7 +1573,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfig
@@ -1572,11 +1582,11 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -1584,7 +1594,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -1609,7 +1619,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public string? TokenEndpoint { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdSecretRef
@@ -1790,7 +1800,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig
@@ -1838,16 +1848,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -1855,7 +1865,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -1872,7 +1882,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef
@@ -2053,7 +2063,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig
@@ -2101,7 +2111,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id_wo.</summary>
+/// <summary>Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdSecretRef
@@ -2114,7 +2124,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id. Must be used together with tenant_id_wo_version.</summary>
+/// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id. Must be used together with tenant_id_wo_version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdWoSecretRef
@@ -2127,16 +2137,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -2144,7 +2154,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -2160,20 +2170,20 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientSecretWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 
-    /// <summary>Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id_wo.</summary>
+    /// <summary>Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id_wo.</summary>
     [JsonPropertyName("tenantIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdSecretRef? TenantIdSecretRef { get; set; }
 
-    /// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id. Must be used together with tenant_id_wo_version.</summary>
+    /// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id. Must be used together with tenant_id_wo_version.</summary>
     [JsonPropertyName("tenantIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdWoSecretRef? TenantIdWoSecretRef { get; set; }
 
-    /// <summary>Used together with write-only tenant ID to trigger an update. Increment this value when an update to tenant_id_wo is required.</summary>
+    /// <summary>Version paired with the write-only tenant ID. Increment this value to trigger an update to tenant_id_wo.</summary>
     [JsonPropertyName("tenantIdWoVersion")]
     public double? TenantIdWoVersion { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef
@@ -2354,7 +2364,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig
@@ -2402,16 +2412,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -2419,7 +2429,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -2436,7 +2446,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef
@@ -2617,7 +2627,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig
@@ -2665,16 +2675,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public required string Name { get; set; }
 }
 
-/// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -2682,7 +2692,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -2699,44 +2709,44 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfig
 {
-    /// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("atlassianOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig? AtlassianOauth2ProviderConfig { get; set; }
 
-    /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+    /// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("customOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfig? CustomOauth2ProviderConfig { get; set; }
 
-    /// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("githubOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfig? GithubOauth2ProviderConfig { get; set; }
 
-    /// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("googleOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfig? GoogleOauth2ProviderConfig { get; set; }
 
-    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("includedOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigIncludedOauth2ProviderConfig? IncludedOauth2ProviderConfig { get; set; }
 
-    /// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("linkedinOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig? LinkedinOauth2ProviderConfig { get; set; }
 
-    /// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("microsoftOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig? MicrosoftOauth2ProviderConfig { get; set; }
 
-    /// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("salesforceOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig? SalesforceOauth2ProviderConfig { get; set; }
 
-    /// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("slackOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfig? SlackOauth2ProviderConfig { get; set; }
 }
@@ -2745,11 +2755,11 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProvider
 {
-    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list. See the note under included_oauth2_provider_config for vendors that are not yet supported.</summary>
+    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list.</summary>
     [JsonPropertyName("credentialProviderVendor")]
     public string? CredentialProviderVendor { get; set; }
 
-    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
     [JsonPropertyName("oauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfig? Oauth2ProviderConfig { get; set; }
 
@@ -2765,7 +2775,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdSecretRef
@@ -2946,7 +2956,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig
@@ -2994,16 +3004,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -3011,7 +3021,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -3028,7 +3038,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef
@@ -3209,7 +3219,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig
@@ -3257,7 +3267,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
@@ -3283,12 +3293,12 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public IList<string>? TokenEndpointAuthMethods { get; set; }
 }
 
-/// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+/// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata? AuthorizationServerMetadata { get; set; }
 
@@ -3297,7 +3307,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig
@@ -3311,7 +3321,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public IList<string>? ActorTokenScopes { get; set; }
 }
 
-/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig
@@ -3320,17 +3330,17 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
     [JsonPropertyName("tokenExchangeGrantTypeConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig? TokenExchangeGrantTypeConfig { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -3355,7 +3365,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource
@@ -3365,26 +3375,26 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -3409,7 +3419,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource
@@ -3419,16 +3429,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -3441,58 +3451,67 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
+/// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource
 {
+    /// <summary>ARN of the AWS KMS key used to sign the JWT.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
 
+/// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource
 {
+    /// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
     [JsonPropertyName("kmsKeySource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource? KmsKeySource { get; set; }
 }
 
+/// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig
 {
+    /// <summary>Key-value map of additional claims to include in the JWT header.</summary>
     [JsonPropertyName("additionalHeaderClaims")]
     public IDictionary<string, string>? AdditionalHeaderClaims { get; set; }
 
+    /// <summary>Key-value map of additional claims to include in the JWT payload.</summary>
     [JsonPropertyName("additionalPayloadClaims")]
     public IDictionary<string, string>? AdditionalPayloadClaims { get; set; }
 
+    /// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
     [JsonPropertyName("privateKeySource")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource? PrivateKeySource { get; set; }
 
+    /// <summary>Algorithm used to sign the JWT.</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+/// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
-    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT.</summary>
+    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT, PRIVATE_KEY_JWT.</summary>
     [JsonPropertyName("clientAuthenticationMethod")]
     public string? ClientAuthenticationMethod { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -3500,7 +3519,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -3516,27 +3535,28 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientSecretWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery? OauthDiscovery { get; set; }
 
-    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
     [JsonPropertyName("onBehalfOfTokenExchangeConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig? OnBehalfOfTokenExchangeConfig { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override below.</summary>
+    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override Block below.</summary>
     [JsonPropertyName("privateEndpointOverride")]
     public IList<V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverride>? PrivateEndpointOverride { get; set; }
 
+    /// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
     [JsonPropertyName("privateKeyJwtConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig? PrivateKeyJwtConfig { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef
@@ -3717,7 +3737,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig
@@ -3765,16 +3785,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -3782,7 +3802,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -3799,7 +3819,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef
@@ -3980,7 +4000,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig
@@ -4028,16 +4048,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -4045,7 +4065,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -4062,7 +4082,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdSecretRef
@@ -4243,7 +4263,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig
@@ -4291,7 +4311,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfig
@@ -4300,11 +4320,11 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -4312,7 +4332,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -4337,7 +4357,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdSecretRef
@@ -4518,7 +4538,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig
@@ -4566,16 +4586,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -4583,7 +4603,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -4600,7 +4620,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef
@@ -4781,7 +4801,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig
@@ -4829,7 +4849,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id_wo.</summary>
+/// <summary>Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdSecretRef
@@ -4842,7 +4862,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id. Must be used together with tenant_id_wo_version.</summary>
+/// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id. Must be used together with tenant_id_wo_version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdWoSecretRef
@@ -4855,16 +4875,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -4872,7 +4892,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -4888,20 +4908,20 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientSecretWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 
-    /// <summary>Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id_wo.</summary>
+    /// <summary>Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id_wo.</summary>
     [JsonPropertyName("tenantIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdSecretRef? TenantIdSecretRef { get; set; }
 
-    /// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Cannot be used with tenant_id. Must be used together with tenant_id_wo_version.</summary>
+    /// <summary>Write-only Microsoft Entra (Azure AD) tenant ID. Conflicts with tenant_id. Must be used together with tenant_id_wo_version.</summary>
     [JsonPropertyName("tenantIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigTenantIdWoSecretRef? TenantIdWoSecretRef { get; set; }
 
-    /// <summary>Used together with write-only tenant ID to trigger an update. Increment this value when an update to tenant_id_wo is required.</summary>
+    /// <summary>Version paired with the write-only tenant ID. Increment this value to trigger an update to tenant_id_wo.</summary>
     [JsonPropertyName("tenantIdWoVersion")]
     public double? TenantIdWoVersion { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef
@@ -5082,7 +5102,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig
@@ -5130,16 +5150,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -5147,7 +5167,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -5164,7 +5184,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+/// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef
@@ -5345,7 +5365,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig
@@ -5393,16 +5413,16 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public required string Name { get; set; }
 }
 
-/// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret.</summary>
+    /// <summary>OAuth2 client ID. Conflicts with client_id_wo. Must be used together with client_secret unless client_secret_source is EXTERNAL.</summary>
     [JsonPropertyName("clientIdSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
 
@@ -5410,7 +5430,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     [JsonPropertyName("clientIdWoSecretRef")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdWoSecretRef? ClientIdWoSecretRef { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -5427,44 +5447,44 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretWoSecretRef? ClientSecretWoSecretRef { get; set; }
 }
 
-/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfig
 {
-    /// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("atlassianOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig? AtlassianOauth2ProviderConfig { get; set; }
 
-    /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+    /// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("customOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfig? CustomOauth2ProviderConfig { get; set; }
 
-    /// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("githubOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfig? GithubOauth2ProviderConfig { get; set; }
 
-    /// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("googleOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfig? GoogleOauth2ProviderConfig { get; set; }
 
-    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("includedOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigIncludedOauth2ProviderConfig? IncludedOauth2ProviderConfig { get; set; }
 
-    /// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("linkedinOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig? LinkedinOauth2ProviderConfig { get; set; }
 
-    /// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("microsoftOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig? MicrosoftOauth2ProviderConfig { get; set; }
 
-    /// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("salesforceOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig? SalesforceOauth2ProviderConfig { get; set; }
 
-    /// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("slackOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfig? SlackOauth2ProviderConfig { get; set; }
 }
@@ -5485,11 +5505,11 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProvider
 {
-    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list. See the note under included_oauth2_provider_config for vendors that are not yet supported.</summary>
+    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list.</summary>
     [JsonPropertyName("credentialProviderVendor")]
     public string? CredentialProviderVendor { get; set; }
 
-    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
     [JsonPropertyName("oauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfig? Oauth2ProviderConfig { get; set; }
 
@@ -5614,7 +5634,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderClientSecret
     public string? SecretArn { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig
@@ -5657,7 +5677,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -5666,16 +5686,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -5683,12 +5703,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig
@@ -5702,7 +5722,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? SecretId { get; set; }
 }
 
-/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+/// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
@@ -5728,12 +5748,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<string>? TokenEndpointAuthMethods { get; set; }
 }
 
-/// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+/// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata? AuthorizationServerMetadata { get; set; }
 
@@ -5742,7 +5762,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+/// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig
@@ -5756,7 +5776,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<string>? ActorTokenScopes { get; set; }
 }
 
-/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+/// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig
@@ -5765,17 +5785,17 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config below.</summary>
+    /// <summary>Configuration specific to the TOKEN_EXCHANGE grant type (RFC 8693). See token_exchange_grant_type_config Block below.</summary>
     [JsonPropertyName("tokenExchangeGrantTypeConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfigTokenExchangeGrantTypeConfig? TokenExchangeGrantTypeConfig { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -5800,7 +5820,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource
@@ -5810,26 +5830,26 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource
 {
-    /// <summary>IP address type for the endpoint. Valid values: IPV4, DUALSTACK.</summary>
+    /// <summary>IP address type for the endpoint. Valid values: IPV4, IPV6.</summary>
     [JsonPropertyName("endpointIpAddressType")]
     public string? EndpointIpAddressType { get; set; }
 
@@ -5854,7 +5874,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource
@@ -5864,16 +5884,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+/// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint
 {
-    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Service-managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -5886,58 +5906,67 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverridePrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
+/// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource
 {
+    /// <summary>ARN of the AWS KMS key used to sign the JWT.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
 
+/// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource
 {
+    /// <summary>AWS KMS key source configuration for the signing key. See kms_key_source Block below.</summary>
     [JsonPropertyName("kmsKeySource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySourceKmsKeySource? KmsKeySource { get; set; }
 }
 
+/// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig
 {
+    /// <summary>Key-value map of additional claims to include in the JWT header.</summary>
     [JsonPropertyName("additionalHeaderClaims")]
     public IDictionary<string, string>? AdditionalHeaderClaims { get; set; }
 
+    /// <summary>Key-value map of additional claims to include in the JWT payload.</summary>
     [JsonPropertyName("additionalPayloadClaims")]
     public IDictionary<string, string>? AdditionalPayloadClaims { get; set; }
 
+    /// <summary>Source of the private key used to sign the JWT. See private_key_source Block below.</summary>
     [JsonPropertyName("privateKeySource")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfigPrivateKeySource? PrivateKeySource { get; set; }
 
+    /// <summary>Algorithm used to sign the JWT.</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+/// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
-    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT.</summary>
+    /// <summary>Client authentication method used with the token endpoint. Valid values: CLIENT_SECRET_BASIC, CLIENT_SECRET_POST, AWS_IAM_ID_TOKEN_JWT, PRIVATE_KEY_JWT.</summary>
     [JsonPropertyName("clientAuthenticationMethod")]
     public string? ClientAuthenticationMethod { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -5945,27 +5974,28 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery? OauthDiscovery { get; set; }
 
-    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config below.</summary>
+    /// <summary>On-behalf-of token exchange configuration, enabling RFC 8693 token exchange or RFC 7523 JWT authorization grant flows. See on_behalf_of_token_exchange_config Block below.</summary>
     [JsonPropertyName("onBehalfOfTokenExchangeConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOnBehalfOfTokenExchangeConfig? OnBehalfOfTokenExchangeConfig { get; set; }
 
-    /// <summary>Private endpoint configuration for the domain. See private_endpoint above.</summary>
+    /// <summary>Private endpoint configuration for the domain. See private_endpoint Block above.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override below.</summary>
+    /// <summary>Private endpoint overrides for the custom OAuth2 provider configuration. See private_endpoint_override Block below.</summary>
     [JsonPropertyName("privateEndpointOverride")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateEndpointOverride>? PrivateEndpointOverride { get; set; }
 
+    /// <summary>Private key JWT client authentication configuration used when signing client assertions. See private_key_jwt_config Block below.</summary>
     [JsonPropertyName("privateKeyJwtConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigPrivateKeyJwtConfig? PrivateKeyJwtConfig { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig
@@ -6008,7 +6038,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6017,16 +6047,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6034,12 +6064,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig
@@ -6082,7 +6112,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6091,16 +6121,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6108,12 +6138,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig
@@ -6156,7 +6186,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6165,7 +6195,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+/// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfig
@@ -6174,11 +6204,11 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("authorizationEndpoint")]
     public string? AuthorizationEndpoint { get; set; }
 
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6190,7 +6220,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 
@@ -6199,7 +6229,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig
@@ -6242,7 +6272,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6251,16 +6281,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6268,12 +6298,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig
@@ -6316,7 +6346,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6325,16 +6355,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6342,16 +6372,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 
-    /// <summary>Used together with write-only tenant ID to trigger an update. Increment this value when an update to tenant_id_wo is required.</summary>
+    /// <summary>Version paired with the write-only tenant ID. Increment this value to trigger an update to tenant_id_wo.</summary>
     [JsonPropertyName("tenantIdWoVersion")]
     public double? TenantIdWoVersion { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig
@@ -6394,7 +6424,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6403,16 +6433,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6420,12 +6450,12 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+/// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig
@@ -6468,7 +6498,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscovery
 {
-    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
+    /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See oauth2_provider_config.custom_oauth2_provider_config.oauth_discovery.authorization_server_metadata Block below.</summary>
     [JsonPropertyName("authorizationServerMetadata")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata>? AuthorizationServerMetadata { get; set; }
 
@@ -6477,16 +6507,16 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? DiscoveryUrl { get; set; }
 }
 
-/// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+/// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
-    /// <summary>Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
+    /// <summary>Version used together with the write-only credentials. Required when client_id_wo and client_secret_wo are set. Changing this value triggers an update to client_id_wo and client_secret_wo.</summary>
     [JsonPropertyName("clientCredentialsWoVersion")]
     public double? ClientCredentialsWoVersion { get; set; }
 
-    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config below.</summary>
+    /// <summary>Reference to an AWS Secrets Manager secret that stores the client secret. Required when client_secret_source is EXTERNAL. See client_secret_config Block below.</summary>
     [JsonPropertyName("clientSecretConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretConfig? ClientSecretConfig { get; set; }
 
@@ -6494,49 +6524,49 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     [JsonPropertyName("clientSecretSource")]
     public string? ClientSecretSource { get; set; }
 
-    /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
+    /// <summary>OAuth discovery configuration resolved by the service. See oauth2_provider_config.atlassian_oauth2_provider_config.oauth_discovery Block below.</summary>
     [JsonPropertyName("oauthDiscovery")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+/// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfig
 {
-    /// <summary>Atlassian OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Atlassian OAuth provider configuration. See atlassian_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("atlassianOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigAtlassianOauth2ProviderConfig? AtlassianOauth2ProviderConfig { get; set; }
 
-    /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
+    /// <summary>Custom OAuth2 provider configuration. See custom_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("customOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfig? CustomOauth2ProviderConfig { get; set; }
 
-    /// <summary>GitHub OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>GitHub OAuth provider configuration. See github_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("githubOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfig? GithubOauth2ProviderConfig { get; set; }
 
-    /// <summary>Google OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Google OAuth provider configuration. See google_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("googleOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfig? GoogleOauth2ProviderConfig { get; set; }
 
-    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See predefined providers below.</summary>
+    /// <summary>Configuration for an included (vendor-supported) OAuth2 provider, used for the additional supported vendors. See included_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("includedOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigIncludedOauth2ProviderConfig? IncludedOauth2ProviderConfig { get; set; }
 
-    /// <summary>LinkedIn OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>LinkedIn OAuth provider configuration. See linkedin_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("linkedinOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigLinkedinOauth2ProviderConfig? LinkedinOauth2ProviderConfig { get; set; }
 
-    /// <summary>Microsoft OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Microsoft OAuth provider configuration. See microsoft_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("microsoftOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig? MicrosoftOauth2ProviderConfig { get; set; }
 
-    /// <summary>Salesforce OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Salesforce OAuth provider configuration. See salesforce_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("salesforceOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig? SalesforceOauth2ProviderConfig { get; set; }
 
-    /// <summary>Slack OAuth provider configuration. See predefined providers below.</summary>
+    /// <summary>Slack OAuth provider configuration. See slack_oauth2_provider_config Block below.</summary>
     [JsonPropertyName("slackOauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfig? SlackOauth2ProviderConfig { get; set; }
 }
@@ -6549,7 +6579,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
     [JsonPropertyName("callbackUrl")]
     public string? CallbackUrl { get; set; }
 
-    /// <summary>ARN of the AWS Secrets Manager secret containing the client secret.</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret containing the client secret. See client_secret_arn Block below.</summary>
     [JsonPropertyName("clientSecretArn")]
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderClientSecretArn>? ClientSecretArn { get; set; }
 
@@ -6557,7 +6587,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
     [JsonPropertyName("credentialProviderArn")]
     public string? CredentialProviderArn { get; set; }
 
-    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list. See the note under included_oauth2_provider_config for vendors that are not yet supported.</summary>
+    /// <summary>Vendor of the OAuth2 credential provider. Valid values include CustomOauth2, GithubOauth2, GoogleOauth2, MicrosoftOauth2, SalesforceOauth2, SlackOauth2, AtlassianOauth2, LinkedinOauth2, and a number of additional supported vendors (e.g. XOauth2, FacebookOauth2, SpotifyOauth2) configured via included_oauth2_provider_config. Refer to the AWS API for the full, current list.</summary>
     [JsonPropertyName("credentialProviderVendor")]
     public string? CredentialProviderVendor { get; set; }
 
@@ -6568,7 +6598,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
+    /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config Block below.</summary>
     [JsonPropertyName("oauth2ProviderConfig")]
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfig? Oauth2ProviderConfig { get; set; }
 
@@ -6583,7 +6613,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

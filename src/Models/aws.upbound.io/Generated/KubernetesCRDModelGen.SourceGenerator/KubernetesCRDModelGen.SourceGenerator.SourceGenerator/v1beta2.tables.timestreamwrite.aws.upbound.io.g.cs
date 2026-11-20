@@ -203,7 +203,7 @@ public partial class V1beta2TableSpecForProviderDatabaseNameSelector
     public V1beta2TableSpecForProviderDatabaseNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration
@@ -216,7 +216,7 @@ public partial class V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagn
     [JsonPropertyName("encryptionOption")]
     public string? EncryptionOption { get; set; }
 
-    /// <summary>KMS key arn for the customer s3 location when encrypting with a KMS managed key.</summary>
+    /// <summary>KMS key ARN for the customer s3 location when encrypting with a KMS managed key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -225,68 +225,68 @@ public partial class V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagn
     public string? ObjectKeyPrefix { get; set; }
 }
 
-/// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+/// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation
 {
-    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+/// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderMagneticStoreWriteProperties
 {
-    /// <summary>A flag to enable magnetic store writes.</summary>
+    /// <summary>Whether to enable magnetic store writes.</summary>
     [JsonPropertyName("enableMagneticStoreWrites")]
     public bool? EnableMagneticStoreWrites { get; set; }
 
-    /// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+    /// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
     [JsonPropertyName("magneticStoreRejectedDataLocation")]
     public V1beta2TableSpecForProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation? MagneticStoreRejectedDataLocation { get; set; }
 }
 
-/// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+/// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderRetentionProperties
 {
-    /// <summary>The duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
+    /// <summary>Duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
     [JsonPropertyName("magneticStoreRetentionPeriodInDays")]
     public double? MagneticStoreRetentionPeriodInDays { get; set; }
 
-    /// <summary>The duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
+    /// <summary>Duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
     [JsonPropertyName("memoryStoreRetentionPeriodInHours")]
     public double? MemoryStoreRetentionPeriodInHours { get; set; }
 }
 
-/// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+/// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaCompositePartitionKey
 {
-    /// <summary>The level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
+    /// <summary>Level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
     [JsonPropertyName("enforcementInRecord")]
     public string? EnforcementInRecord { get; set; }
 
-    /// <summary>The name of the attribute used for a dimension key.</summary>
+    /// <summary>Name of the attribute used for a dimension key.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
+    /// <summary>Type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The schema of the table. See Schema below for more details.</summary>
+/// <summary>Schema of the table. See schema Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchema
 {
-    /// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+    /// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
     [JsonPropertyName("compositePartitionKey")]
     public V1beta2TableSpecForProviderSchemaCompositePartitionKey? CompositePartitionKey { get; set; }
 }
@@ -295,7 +295,7 @@ public partial class V1beta2TableSpecForProviderSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProvider
 {
-    /// <summary>The name of the Timestream database.</summary>
+    /// <summary>Name of the Timestream database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -307,7 +307,7 @@ public partial class V1beta2TableSpecForProvider
     [JsonPropertyName("databaseNameSelector")]
     public V1beta2TableSpecForProviderDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+    /// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
     [JsonPropertyName("magneticStoreWriteProperties")]
     public V1beta2TableSpecForProviderMagneticStoreWriteProperties? MagneticStoreWriteProperties { get; set; }
 
@@ -318,15 +318,15 @@ public partial class V1beta2TableSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+    /// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
     [JsonPropertyName("retentionProperties")]
     public V1beta2TableSpecForProviderRetentionProperties? RetentionProperties { get; set; }
 
-    /// <summary>The schema of the table. See Schema below for more details.</summary>
+    /// <summary>Schema of the table. See schema Block below for more details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2TableSpecForProviderSchema? Schema { get; set; }
 
-    /// <summary>The name of the Timestream table.</summary>
+    /// <summary>Name of the Timestream table.</summary>
     [JsonPropertyName("tableName")]
     public required string TableName { get; set; }
 
@@ -335,7 +335,7 @@ public partial class V1beta2TableSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration
@@ -348,7 +348,7 @@ public partial class V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMag
     [JsonPropertyName("encryptionOption")]
     public string? EncryptionOption { get; set; }
 
-    /// <summary>KMS key arn for the customer s3 location when encrypting with a KMS managed key.</summary>
+    /// <summary>KMS key ARN for the customer s3 location when encrypting with a KMS managed key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -357,68 +357,68 @@ public partial class V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMag
     public string? ObjectKeyPrefix { get; set; }
 }
 
-/// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+/// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation
 {
-    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+/// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderMagneticStoreWriteProperties
 {
-    /// <summary>A flag to enable magnetic store writes.</summary>
+    /// <summary>Whether to enable magnetic store writes.</summary>
     [JsonPropertyName("enableMagneticStoreWrites")]
     public bool? EnableMagneticStoreWrites { get; set; }
 
-    /// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+    /// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
     [JsonPropertyName("magneticStoreRejectedDataLocation")]
     public V1beta2TableSpecInitProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation? MagneticStoreRejectedDataLocation { get; set; }
 }
 
-/// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+/// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderRetentionProperties
 {
-    /// <summary>The duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
+    /// <summary>Duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
     [JsonPropertyName("magneticStoreRetentionPeriodInDays")]
     public double? MagneticStoreRetentionPeriodInDays { get; set; }
 
-    /// <summary>The duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
+    /// <summary>Duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
     [JsonPropertyName("memoryStoreRetentionPeriodInHours")]
     public double? MemoryStoreRetentionPeriodInHours { get; set; }
 }
 
-/// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+/// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaCompositePartitionKey
 {
-    /// <summary>The level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
+    /// <summary>Level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
     [JsonPropertyName("enforcementInRecord")]
     public string? EnforcementInRecord { get; set; }
 
-    /// <summary>The name of the attribute used for a dimension key.</summary>
+    /// <summary>Name of the attribute used for a dimension key.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
+    /// <summary>Type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The schema of the table. See Schema below for more details.</summary>
+/// <summary>Schema of the table. See schema Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchema
 {
-    /// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+    /// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
     [JsonPropertyName("compositePartitionKey")]
     public V1beta2TableSpecInitProviderSchemaCompositePartitionKey? CompositePartitionKey { get; set; }
 }
@@ -439,15 +439,15 @@ public partial class V1beta2TableSpecInitProviderSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProvider
 {
-    /// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+    /// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
     [JsonPropertyName("magneticStoreWriteProperties")]
     public V1beta2TableSpecInitProviderMagneticStoreWriteProperties? MagneticStoreWriteProperties { get; set; }
 
-    /// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+    /// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
     [JsonPropertyName("retentionProperties")]
     public V1beta2TableSpecInitProviderRetentionProperties? RetentionProperties { get; set; }
 
-    /// <summary>The schema of the table. See Schema below for more details.</summary>
+    /// <summary>Schema of the table. See schema Block below for more details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2TableSpecInitProviderSchema? Schema { get; set; }
 
@@ -639,7 +639,7 @@ public partial class V1beta2TableSpec
     public V1beta2TableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+/// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration
@@ -652,7 +652,7 @@ public partial class V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMag
     [JsonPropertyName("encryptionOption")]
     public string? EncryptionOption { get; set; }
 
-    /// <summary>KMS key arn for the customer s3 location when encrypting with a KMS managed key.</summary>
+    /// <summary>KMS key ARN for the customer s3 location when encrypting with a KMS managed key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -661,68 +661,68 @@ public partial class V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMag
     public string? ObjectKeyPrefix { get; set; }
 }
 
-/// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+/// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation
 {
-    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See S3 Configuration below for more details.</summary>
+    /// <summary>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes. See s3_configuration Block below for more details.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+/// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderMagneticStoreWriteProperties
 {
-    /// <summary>A flag to enable magnetic store writes.</summary>
+    /// <summary>Whether to enable magnetic store writes.</summary>
     [JsonPropertyName("enableMagneticStoreWrites")]
     public bool? EnableMagneticStoreWrites { get; set; }
 
-    /// <summary>The location to write error reports for records rejected asynchronously during magnetic store writes. See Magnetic Store Rejected Data Location below for more details.</summary>
+    /// <summary>Location to write error reports for records rejected asynchronously during magnetic store writes. See magnetic_store_rejected_data_location Block below for more details.</summary>
     [JsonPropertyName("magneticStoreRejectedDataLocation")]
     public V1beta2TableStatusAtProviderMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation? MagneticStoreRejectedDataLocation { get; set; }
 }
 
-/// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+/// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderRetentionProperties
 {
-    /// <summary>The duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
+    /// <summary>Duration for which data must be stored in the magnetic store. Minimum value of 1. Maximum value of 73000.</summary>
     [JsonPropertyName("magneticStoreRetentionPeriodInDays")]
     public double? MagneticStoreRetentionPeriodInDays { get; set; }
 
-    /// <summary>The duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
+    /// <summary>Duration for which data must be stored in the memory store. Minimum value of 1. Maximum value of 8766.</summary>
     [JsonPropertyName("memoryStoreRetentionPeriodInHours")]
     public double? MemoryStoreRetentionPeriodInHours { get; set; }
 }
 
-/// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+/// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaCompositePartitionKey
 {
-    /// <summary>The level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
+    /// <summary>Level of enforcement for the specification of a dimension key in ingested records. Valid values: REQUIRED, OPTIONAL.</summary>
     [JsonPropertyName("enforcementInRecord")]
     public string? EnforcementInRecord { get; set; }
 
-    /// <summary>The name of the attribute used for a dimension key.</summary>
+    /// <summary>Name of the attribute used for a dimension key.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
+    /// <summary>Type of the partition key. Valid values: DIMENSION, MEASURE.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The schema of the table. See Schema below for more details.</summary>
+/// <summary>Schema of the table. See schema Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchema
 {
-    /// <summary>A non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See Composite Partition Key below for more details.</summary>
+    /// <summary>Non-empty list of partition keys defining the attributes used to partition the table data. The order of the list determines the partition hierarchy. The name and type of each partition key as well as the partition key order cannot be changed after the table is created. However, the enforcement level of each partition key can be changed. See composite_partition_key Block below for more details.</summary>
     [JsonPropertyName("compositePartitionKey")]
     public V1beta2TableStatusAtProviderSchemaCompositePartitionKey? CompositePartitionKey { get; set; }
 }
@@ -731,19 +731,19 @@ public partial class V1beta2TableStatusAtProviderSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProvider
 {
-    /// <summary>The ARN that uniquely identifies this table.</summary>
+    /// <summary>ARN that uniquely identifies this table.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The name of the Timestream database.</summary>
+    /// <summary>Name of the Timestream database.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The table_name and database_name separated by a colon (:).</summary>
+    /// <summary>table_name and database_name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Contains properties to set on the table when enabling magnetic store writes. See Magnetic Store Write Properties below for more details.</summary>
+    /// <summary>Properties to set on the table when enabling magnetic store writes. See magnetic_store_write_properties Block below for more details.</summary>
     [JsonPropertyName("magneticStoreWriteProperties")]
     public V1beta2TableStatusAtProviderMagneticStoreWriteProperties? MagneticStoreWriteProperties { get; set; }
 
@@ -754,15 +754,15 @@ public partial class V1beta2TableStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The retention duration for the memory store and magnetic store. See Retention Properties below for more details. If not provided, magnetic_store_retention_period_in_days default to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
+    /// <summary>Retention duration for the memory store and magnetic store. See retention_properties Block below for more details. If not provided, magnetic_store_retention_period_in_days defaults to 73000 and memory_store_retention_period_in_hours defaults to 6.</summary>
     [JsonPropertyName("retentionProperties")]
     public V1beta2TableStatusAtProviderRetentionProperties? RetentionProperties { get; set; }
 
-    /// <summary>The schema of the table. See Schema below for more details.</summary>
+    /// <summary>Schema of the table. See schema Block below for more details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2TableStatusAtProviderSchema? Schema { get; set; }
 
-    /// <summary>The name of the Timestream table.</summary>
+    /// <summary>Name of the Timestream table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -770,7 +770,7 @@ public partial class V1beta2TableStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

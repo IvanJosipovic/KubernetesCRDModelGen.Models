@@ -961,7 +961,7 @@ public partial class V1beta1NodeGroupSpecForProviderVersionSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupSpecForProviderWarmPoolConfig
 {
-    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.</summary>
     [JsonPropertyName("maxGroupPreparedCapacity")]
     public double? MaxGroupPreparedCapacity { get; set; }
 
@@ -973,7 +973,7 @@ public partial class V1beta1NodeGroupSpecForProviderWarmPoolConfig
     [JsonPropertyName("poolState")]
     public string? PoolState { get; set; }
 
-    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    /// <summary>Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
     [JsonPropertyName("reuseOnScaleIn")]
     public bool? ReuseOnScaleIn { get; set; }
 }
@@ -1867,7 +1867,7 @@ public partial class V1beta1NodeGroupSpecInitProviderVersionSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupSpecInitProviderWarmPoolConfig
 {
-    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.</summary>
     [JsonPropertyName("maxGroupPreparedCapacity")]
     public double? MaxGroupPreparedCapacity { get; set; }
 
@@ -1879,7 +1879,7 @@ public partial class V1beta1NodeGroupSpecInitProviderWarmPoolConfig
     [JsonPropertyName("poolState")]
     public string? PoolState { get; set; }
 
-    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    /// <summary>Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
     [JsonPropertyName("reuseOnScaleIn")]
     public bool? ReuseOnScaleIn { get; set; }
 }
@@ -2191,7 +2191,7 @@ public partial class V1beta1NodeGroupStatusAtProviderRemoteAccess
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupStatusAtProviderResourcesAutoscalingGroups
 {
-    /// <summary>Name of the AutoScaling Group.</summary>
+    /// <summary>Name of the Auto Scaling group.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -2200,7 +2200,7 @@ public partial class V1beta1NodeGroupStatusAtProviderResourcesAutoscalingGroups
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupStatusAtProviderResources
 {
-    /// <summary>List of objects containing information about AutoScaling Groups.</summary>
+    /// <summary>List of objects containing information about Auto Scaling groups.</summary>
     [JsonPropertyName("autoscalingGroups")]
     public IList<V1beta1NodeGroupStatusAtProviderResourcesAutoscalingGroups>? AutoscalingGroups { get; set; }
 
@@ -2267,7 +2267,7 @@ public partial class V1beta1NodeGroupStatusAtProviderUpdateConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupStatusAtProviderWarmPoolConfig
 {
-    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling group. Use -1 to specify an unlimited capacity.</summary>
     [JsonPropertyName("maxGroupPreparedCapacity")]
     public double? MaxGroupPreparedCapacity { get; set; }
 
@@ -2279,7 +2279,7 @@ public partial class V1beta1NodeGroupStatusAtProviderWarmPoolConfig
     [JsonPropertyName("poolState")]
     public string? PoolState { get; set; }
 
-    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    /// <summary>Whether to return instances in the Auto Scaling group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
     [JsonPropertyName("reuseOnScaleIn")]
     public bool? ReuseOnScaleIn { get; set; }
 }

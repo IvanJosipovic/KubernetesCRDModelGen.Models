@@ -37,7 +37,7 @@ public partial class V1beta1ServerlessClusterList : IKubernetesObject<V1ListMeta
     public required IList<V1beta1ServerlessCluster> Items { get; set; }
 }
 
-/// <summary>Details for client authentication using IAM. See below.</summary>
+/// <summary>Details for client authentication using IAM. See iam Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecForProviderClientAuthenticationSaslIam
@@ -47,22 +47,22 @@ public partial class V1beta1ServerlessClusterSpecForProviderClientAuthentication
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Details for client authentication using SASL. See below.</summary>
+/// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecForProviderClientAuthenticationSasl
 {
-    /// <summary>Details for client authentication using IAM. See below.</summary>
+    /// <summary>Details for client authentication using IAM. See iam Block below.</summary>
     [JsonPropertyName("iam")]
     public V1beta1ServerlessClusterSpecForProviderClientAuthenticationSaslIam? Iam { get; set; }
 }
 
-/// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+/// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecForProviderClientAuthentication
 {
-    /// <summary>Details for client authentication using SASL. See below.</summary>
+    /// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ServerlessClusterSpecForProviderClientAuthenticationSasl? Sasl { get; set; }
 }
@@ -389,7 +389,7 @@ public partial class V1beta1ServerlessClusterSpecForProviderVpcConfig
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1ServerlessClusterSpecForProviderVpcConfigSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>Specifies up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
+    /// <summary>Up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -401,7 +401,7 @@ public partial class V1beta1ServerlessClusterSpecForProviderVpcConfig
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1ServerlessClusterSpecForProviderVpcConfigSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of subnets in at least two different Availability Zones that host your client applications.</summary>
+    /// <summary>List of subnets in at least two different Availability Zones that host your client applications.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -410,11 +410,11 @@ public partial class V1beta1ServerlessClusterSpecForProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecForProvider
 {
-    /// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+    /// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ServerlessClusterSpecForProviderClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>The name of the serverless cluster.</summary>
+    /// <summary>Name of the serverless cluster.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
@@ -429,12 +429,12 @@ public partial class V1beta1ServerlessClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>VPC configuration information. See below.</summary>
+    /// <summary>VPC configuration information. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public IList<V1beta1ServerlessClusterSpecForProviderVpcConfig>? VpcConfig { get; set; }
 }
 
-/// <summary>Details for client authentication using IAM. See below.</summary>
+/// <summary>Details for client authentication using IAM. See iam Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecInitProviderClientAuthenticationSaslIam
@@ -444,22 +444,22 @@ public partial class V1beta1ServerlessClusterSpecInitProviderClientAuthenticatio
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Details for client authentication using SASL. See below.</summary>
+/// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecInitProviderClientAuthenticationSasl
 {
-    /// <summary>Details for client authentication using IAM. See below.</summary>
+    /// <summary>Details for client authentication using IAM. See iam Block below.</summary>
     [JsonPropertyName("iam")]
     public V1beta1ServerlessClusterSpecInitProviderClientAuthenticationSaslIam? Iam { get; set; }
 }
 
-/// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+/// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecInitProviderClientAuthentication
 {
-    /// <summary>Details for client authentication using SASL. See below.</summary>
+    /// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ServerlessClusterSpecInitProviderClientAuthenticationSasl? Sasl { get; set; }
 }
@@ -786,7 +786,7 @@ public partial class V1beta1ServerlessClusterSpecInitProviderVpcConfig
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1ServerlessClusterSpecInitProviderVpcConfigSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>Specifies up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
+    /// <summary>Up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -798,7 +798,7 @@ public partial class V1beta1ServerlessClusterSpecInitProviderVpcConfig
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1ServerlessClusterSpecInitProviderVpcConfigSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of subnets in at least two different Availability Zones that host your client applications.</summary>
+    /// <summary>List of subnets in at least two different Availability Zones that host your client applications.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -819,11 +819,11 @@ public partial class V1beta1ServerlessClusterSpecInitProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterSpecInitProvider
 {
-    /// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+    /// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ServerlessClusterSpecInitProviderClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>The name of the serverless cluster.</summary>
+    /// <summary>Name of the serverless cluster.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
@@ -831,7 +831,7 @@ public partial class V1beta1ServerlessClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>VPC configuration information. See below.</summary>
+    /// <summary>VPC configuration information. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public IList<V1beta1ServerlessClusterSpecInitProviderVpcConfig>? VpcConfig { get; set; }
 }
@@ -943,7 +943,7 @@ public partial class V1beta1ServerlessClusterSpec
     public V1beta1ServerlessClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Details for client authentication using IAM. See below.</summary>
+/// <summary>Details for client authentication using IAM. See iam Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterStatusAtProviderClientAuthenticationSaslIam
@@ -953,22 +953,22 @@ public partial class V1beta1ServerlessClusterStatusAtProviderClientAuthenticatio
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Details for client authentication using SASL. See below.</summary>
+/// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterStatusAtProviderClientAuthenticationSasl
 {
-    /// <summary>Details for client authentication using IAM. See below.</summary>
+    /// <summary>Details for client authentication using IAM. See iam Block below.</summary>
     [JsonPropertyName("iam")]
     public V1beta1ServerlessClusterStatusAtProviderClientAuthenticationSaslIam? Iam { get; set; }
 }
 
-/// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+/// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterStatusAtProviderClientAuthentication
 {
-    /// <summary>Details for client authentication using SASL. See below.</summary>
+    /// <summary>Details for client authentication using SASL. See sasl Block below.</summary>
     [JsonPropertyName("sasl")]
     public V1beta1ServerlessClusterStatusAtProviderClientAuthenticationSasl? Sasl { get; set; }
 }
@@ -977,11 +977,11 @@ public partial class V1beta1ServerlessClusterStatusAtProviderClientAuthenticatio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterStatusAtProviderVpcConfig
 {
-    /// <summary>Specifies up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
+    /// <summary>Up to five security groups that control inbound and outbound traffic for the serverless cluster.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnets in at least two different Availability Zones that host your client applications.</summary>
+    /// <summary>List of subnets in at least two different Availability Zones that host your client applications.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -990,7 +990,7 @@ public partial class V1beta1ServerlessClusterStatusAtProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessClusterStatusAtProvider
 {
-    /// <summary>The ARN of the serverless cluster.</summary>
+    /// <summary>ARN of the serverless cluster.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -998,11 +998,11 @@ public partial class V1beta1ServerlessClusterStatusAtProvider
     [JsonPropertyName("bootstrapBrokersSaslIam")]
     public string? BootstrapBrokersSaslIam { get; set; }
 
-    /// <summary>Specifies client authentication information for the serverless cluster. See below.</summary>
+    /// <summary>Client authentication information for the serverless cluster. See client_authentication Block below.</summary>
     [JsonPropertyName("clientAuthentication")]
     public V1beta1ServerlessClusterStatusAtProviderClientAuthentication? ClientAuthentication { get; set; }
 
-    /// <summary>The name of the serverless cluster.</summary>
+    /// <summary>Name of the serverless cluster.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
@@ -1024,11 +1024,11 @@ public partial class V1beta1ServerlessClusterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>VPC configuration information. See below.</summary>
+    /// <summary>VPC configuration information. See vpc_config Block below.</summary>
     [JsonPropertyName("vpcConfig")]
     public IList<V1beta1ServerlessClusterStatusAtProviderVpcConfig>? VpcConfig { get; set; }
 }

@@ -455,7 +455,7 @@ public partial class V1beta1DomainEntryStatusAtProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>Combination of attributes to create a unique id: name,domain_name,type,target.</summary>
+    /// <summary>Combination of attributes to create a unique ID: name,domain_name,type,target.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

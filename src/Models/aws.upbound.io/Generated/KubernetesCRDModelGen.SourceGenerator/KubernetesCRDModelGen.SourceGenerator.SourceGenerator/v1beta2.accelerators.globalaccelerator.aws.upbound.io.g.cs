@@ -56,20 +56,20 @@ public enum V1beta2AcceleratorSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The attributes of the accelerator. Fields documented below.</summary>
+/// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorSpecForProviderAttributes
 {
-    /// <summary>Indicates whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
+    /// <summary>Whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
     [JsonPropertyName("flowLogsEnabled")]
     public bool? FlowLogsEnabled { get; set; }
 
-    /// <summary>The name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Bucket")]
     public string? FlowLogsS3Bucket { get; set; }
 
-    /// <summary>The prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Prefix")]
     public string? FlowLogsS3Prefix { get; set; }
 }
@@ -78,23 +78,23 @@ public partial class V1beta2AcceleratorSpecForProviderAttributes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorSpecForProvider
 {
-    /// <summary>The attributes of the accelerator. Fields documented below.</summary>
+    /// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
     [JsonPropertyName("attributes")]
     public V1beta2AcceleratorSpecForProviderAttributes? Attributes { get; set; }
 
-    /// <summary>Indicates whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
+    /// <summary>Whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
+    /// <summary>Value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
+    /// <summary>IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
     [JsonPropertyName("ipAddresses")]
     public IList<string>? IpAddresses { get; set; }
 
-    /// <summary>The name of the accelerator.</summary>
+    /// <summary>Name of the accelerator.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -103,20 +103,20 @@ public partial class V1beta2AcceleratorSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>The attributes of the accelerator. Fields documented below.</summary>
+/// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorSpecInitProviderAttributes
 {
-    /// <summary>Indicates whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
+    /// <summary>Whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
     [JsonPropertyName("flowLogsEnabled")]
     public bool? FlowLogsEnabled { get; set; }
 
-    /// <summary>The name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Bucket")]
     public string? FlowLogsS3Bucket { get; set; }
 
-    /// <summary>The prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Prefix")]
     public string? FlowLogsS3Prefix { get; set; }
 }
@@ -137,23 +137,23 @@ public partial class V1beta2AcceleratorSpecInitProviderAttributes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorSpecInitProvider
 {
-    /// <summary>The attributes of the accelerator. Fields documented below.</summary>
+    /// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
     [JsonPropertyName("attributes")]
     public V1beta2AcceleratorSpecInitProviderAttributes? Attributes { get; set; }
 
-    /// <summary>Indicates whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
+    /// <summary>Whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
+    /// <summary>Value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
+    /// <summary>IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
     [JsonPropertyName("ipAddresses")]
     public IList<string>? IpAddresses { get; set; }
 
-    /// <summary>The name of the accelerator.</summary>
+    /// <summary>Name of the accelerator.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -345,20 +345,20 @@ public partial class V1beta2AcceleratorSpec
     public V1beta2AcceleratorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The attributes of the accelerator. Fields documented below.</summary>
+/// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorStatusAtProviderAttributes
 {
-    /// <summary>Indicates whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
+    /// <summary>Whether flow logs are enabled. Defaults to false. Valid values: true, false.</summary>
     [JsonPropertyName("flowLogsEnabled")]
     public bool? FlowLogsEnabled { get; set; }
 
-    /// <summary>The name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Name of the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Bucket")]
     public string? FlowLogsS3Bucket { get; set; }
 
-    /// <summary>The prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
+    /// <summary>Prefix for the location in the Amazon S3 bucket for the flow logs. Required if flow_logs_enabled is true.</summary>
     [JsonPropertyName("flowLogsS3Prefix")]
     public string? FlowLogsS3Prefix { get; set; }
 }
@@ -367,11 +367,11 @@ public partial class V1beta2AcceleratorStatusAtProviderAttributes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AcceleratorStatusAtProviderIpSets
 {
-    /// <summary>The IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
+    /// <summary>List of IP addresses in the IP address set.</summary>
     [JsonPropertyName("ipAddresses")]
     public IList<string>? IpAddresses { get; set; }
 
-    /// <summary>The type of IP addresses included in this IP set.</summary>
+    /// <summary>Type of IP addresses included in this IP set.</summary>
     [JsonPropertyName("ipFamily")]
     public string? IpFamily { get; set; }
 }
@@ -384,27 +384,23 @@ public partial class V1beta2AcceleratorStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The attributes of the accelerator. Fields documented below.</summary>
+    /// <summary>Configuration block with accelerator attributes. See attributes below.</summary>
     [JsonPropertyName("attributes")]
     public V1beta2AcceleratorStatusAtProviderAttributes? Attributes { get; set; }
 
-    /// <summary>The DNS name of the accelerator. For example, a5d53ff5ee6bca4ce.awsglobalaccelerator.com.</summary>
+    /// <summary>DNS name of the accelerator. For example, a5d53ff5ee6bca4ce.awsglobalaccelerator.com.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>DNS name that Global Accelerator creates that points to a dual-stack accelerator&apos;s four static IP addresses: two IPv4 addresses and two IPv6 addresses. For example, a1234567890abcdef.dualstack.awsglobalaccelerator.com.</summary>
+    /// <summary>DNS name that points to a dual-stack accelerator&apos;s four static IP addresses: two IPv4 addresses and two IPv6 addresses. For example, a1234567890abcdef.dualstack.awsglobalaccelerator.com.</summary>
     [JsonPropertyName("dualStackDnsName")]
     public string? DualStackDnsName { get; set; }
 
-    /// <summary>Indicates whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
+    /// <summary>Whether the accelerator is enabled. Defaults to true. Valid values: true, false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>
-    /// -  The Global Accelerator Route 53 zone ID that can be used to
-    /// route an Alias Resource Record Set to the Global Accelerator. This attribute
-    /// is simply an alias for the zone ID Z2BJ6XQ5FK7U4H.
-    /// </summary>
+    /// <summary>Global Accelerator Route 53 zone ID used to route an Alias Resource Record Set to the accelerator. This is an alias for the zone ID Z2BJ6XQ5FK7U4H.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
@@ -412,19 +408,19 @@ public partial class V1beta2AcceleratorStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
+    /// <summary>Value for the address type. Defaults to IPV4. Valid values: IPV4, DUAL_STACK.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
+    /// <summary>IP addresses to use for BYOIP accelerators. If not specified, the service assigns IP addresses. Valid values: 1 or 2 IPv4 addresses.</summary>
     [JsonPropertyName("ipAddresses")]
     public IList<string>? IpAddresses { get; set; }
 
-    /// <summary>IP address set associated with the accelerator.</summary>
+    /// <summary>IP address set associated with the accelerator. See ip_sets below.</summary>
     [JsonPropertyName("ipSets")]
     public IList<V1beta2AcceleratorStatusAtProviderIpSets>? IpSets { get; set; }
 
-    /// <summary>The name of the accelerator.</summary>
+    /// <summary>Name of the accelerator.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -432,7 +428,7 @@ public partial class V1beta2AcceleratorStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

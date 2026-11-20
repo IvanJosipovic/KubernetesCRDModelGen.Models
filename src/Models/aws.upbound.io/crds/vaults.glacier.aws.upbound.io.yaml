@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: vaults.glacier.aws.upbound.io
 spec:
   group: glacier.aws.upbound.io
@@ -553,12 +553,10 @@ spec:
               forProvider:
                 properties:
                   accessPolicy:
-                    description: |-
-                      The policy document. This is a JSON formatted string.
-                      The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
+                    description: Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
                     type: string
                   notification:
-                    description: The notifications for the Vault. Fields documented below.
+                    description: Notifications for the Vault. See below.
                     properties:
                       events:
                         description: You can configure a vault to publish a notification for ArchiveRetrievalCompleted and InventoryRetrievalCompleted events.
@@ -567,7 +565,7 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                       snsTopic:
-                        description: The SNS Topic ARN.
+                        description: SNS Topic ARN.
                         type: string
                       snsTopicRef:
                         description: Reference to a Topic in sns to populate snsTopic.
@@ -671,12 +669,10 @@ spec:
                   autoscaler.
                 properties:
                   accessPolicy:
-                    description: |-
-                      The policy document. This is a JSON formatted string.
-                      The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
+                    description: Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
                     type: string
                   notification:
-                    description: The notifications for the Vault. Fields documented below.
+                    description: Notifications for the Vault. See below.
                     properties:
                       events:
                         description: You can configure a vault to publish a notification for ArchiveRetrievalCompleted and InventoryRetrievalCompleted events.
@@ -685,7 +681,7 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                       snsTopic:
-                        description: The SNS Topic ARN.
+                        description: SNS Topic ARN.
                         type: string
                       snsTopicRef:
                         description: Reference to a Topic in sns to populate snsTopic.
@@ -860,20 +856,18 @@ spec:
               atProvider:
                 properties:
                   accessPolicy:
-                    description: |-
-                      The policy document. This is a JSON formatted string.
-                      The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
+                    description: Policy document. This is a JSON formatted string. The heredoc syntax or file function is helpful here. Use the Glacier Developer Guide for more information on Glacier Vault Policy
                     type: string
                   arn:
-                    description: The ARN of the vault.
+                    description: ARN of the vault.
                     type: string
                   id:
                     type: string
                   location:
-                    description: The URI of the vault that was created.
+                    description: URI of the vault that was created.
                     type: string
                   notification:
-                    description: The notifications for the Vault. Fields documented below.
+                    description: Notifications for the Vault. See below.
                     properties:
                       events:
                         description: You can configure a vault to publish a notification for ArchiveRetrievalCompleted and InventoryRetrievalCompleted events.
@@ -882,7 +876,7 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                       snsTopic:
-                        description: The SNS Topic ARN.
+                        description: SNS Topic ARN.
                         type: string
                     type: object
                   region:
@@ -899,7 +893,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

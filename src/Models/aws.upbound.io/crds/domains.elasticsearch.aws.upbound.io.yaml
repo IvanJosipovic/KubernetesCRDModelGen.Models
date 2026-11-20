@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: domains.elasticsearch.aws.upbound.io
 spec:
   group: elasticsearch.aws.upbound.io
@@ -1626,7 +1626,7 @@ spec:
                     items:
                       properties:
                         cloudwatchLogGroupArn:
-                          description: ARN of the Cloudwatch log group to which log needs to be published.
+                          description: ARN of the CloudWatch log group to which log needs to be published.
                           type: string
                         cloudwatchLogGroupArnRef:
                           description: Reference to a Group in cloudwatchlogs to populate cloudwatchLogGroupArn.
@@ -2037,7 +2037,7 @@ spec:
                     items:
                       properties:
                         cloudwatchLogGroupArn:
-                          description: ARN of the Cloudwatch log group to which log needs to be published.
+                          description: ARN of the CloudWatch log group to which log needs to be published.
                           type: string
                         cloudwatchLogGroupArnRef:
                           description: Reference to a Group in cloudwatchlogs to populate cloudwatchLogGroupArn.
@@ -2509,14 +2509,14 @@ spec:
                   id:
                     type: string
                   kibanaEndpoint:
-                    description: Domain-specific endpoint for kibana without https scheme.
+                    description: Domain-specific endpoint for kibana without HTTPS scheme.
                     type: string
                   logPublishingOptions:
                     description: Configuration block for publishing slow and application logs to CloudWatch Logs. This block can be declared multiple times, for each log_type, within the same resource. Detailed below.
                     items:
                       properties:
                         cloudwatchLogGroupArn:
-                          description: ARN of the Cloudwatch log group to which log needs to be published.
+                          description: ARN of the CloudWatch log group to which log needs to be published.
                           type: string
                         enabled:
                           description: Whether given log publishing option is enabled or not.

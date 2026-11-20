@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: spotfleetrequests.ec2.aws.upbound.io
 spec:
   group: ec2.aws.upbound.io
@@ -2450,7 +2450,7 @@ spec:
                               description: The name of the launch template. Conflicts with id.
                               type: string
                             version:
-                              description: Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
+                              description: Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
                               type: string
                             versionRef:
                               description: Reference to a LaunchTemplate in ec2 to populate version.
@@ -2553,7 +2553,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   acceleratorNames:
-                                    description: List of accelerator names. Default is any acclerator.
+                                    description: List of accelerator names. Default is any accelerator.
                                     items:
                                       type: string
                                     type: array
@@ -2581,7 +2581,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   bareMetal:
-                                    description: Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.
+                                    description: Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.
                                     type: string
                                   baselineEbsBandwidthMbps:
                                     description: Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.
@@ -3119,7 +3119,7 @@ spec:
                               description: The name of the launch template. Conflicts with id.
                               type: string
                             version:
-                              description: Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
+                              description: Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
                               type: string
                             versionRef:
                               description: Reference to a LaunchTemplate in ec2 to populate version.
@@ -3222,7 +3222,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   acceleratorNames:
-                                    description: List of accelerator names. Default is any acclerator.
+                                    description: List of accelerator names. Default is any accelerator.
                                     items:
                                       type: string
                                     type: array
@@ -3250,7 +3250,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   bareMetal:
-                                    description: Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.
+                                    description: Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.
                                     type: string
                                   baselineEbsBandwidthMbps:
                                     description: Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.
@@ -3723,7 +3723,7 @@ spec:
                               description: The name of the launch template. Conflicts with id.
                               type: string
                             version:
-                              description: Template version. Unlike the autoscaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
+                              description: Template version. Unlike the AutoScaling equivalent, does not support $Latest or $Default, so use the launch_template resource's attribute, e.g., "${aws_launch_template.foo.latest_version}". It will use the default version if omitted.
                               type: string
                           type: object
                         overrides:
@@ -3753,7 +3753,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   acceleratorNames:
-                                    description: List of accelerator names. Default is any acclerator.
+                                    description: List of accelerator names. Default is any accelerator.
                                     items:
                                       type: string
                                     type: array
@@ -3781,7 +3781,7 @@ spec:
                                     type: array
                                     x-kubernetes-list-type: set
                                   bareMetal:
-                                    description: Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.
+                                    description: Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.
                                     type: string
                                   baselineEbsBandwidthMbps:
                                     description: Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.

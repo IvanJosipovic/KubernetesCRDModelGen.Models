@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: agentknowledgebaseassociations.bedrockagent.aws.m.upbound.io
 spec:
   group: bedrockagent.aws.m.upbound.io
@@ -33,7 +33,7 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API.
+        description: AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API. Manages an AWS Agents for Amazon Bedrock Agent Knowledge Base Association.
         properties:
           apiVersion:
             description: |-
@@ -140,7 +140,7 @@ spec:
                         type: object
                     type: object
                   agentVersion:
-                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.'
+                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.'
                     type: string
                   description:
                     description: Description of what the agent should use the knowledge base for.
@@ -252,7 +252,7 @@ spec:
                   autoscaler.
                 properties:
                   agentVersion:
-                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.'
+                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.'
                     type: string
                   description:
                     description: Description of what the agent should use the knowledge base for.
@@ -333,7 +333,7 @@ spec:
                     description: Unique identifier of the agent with which you want to associate the knowledge base.
                     type: string
                   agentVersion:
-                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT.'
+                    description: 'Version of the agent with which you want to associate the knowledge base. Valid values: DRAFT. Defaults to DRAFT.'
                     type: string
                   description:
                     description: Description of what the agent should use the knowledge base for.

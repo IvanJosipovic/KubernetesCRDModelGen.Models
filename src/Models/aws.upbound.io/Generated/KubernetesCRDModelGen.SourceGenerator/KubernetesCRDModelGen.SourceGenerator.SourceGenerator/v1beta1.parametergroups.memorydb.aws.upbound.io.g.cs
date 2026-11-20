@@ -60,11 +60,11 @@ public enum V1beta1ParameterGroupSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecForProviderParameter
 {
-    /// <summary>The name of the parameter.</summary>
+    /// <summary>Name of the parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the parameter.</summary>
+    /// <summary>Value of the parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -77,7 +77,7 @@ public partial class V1beta1ParameterGroupSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine version that the parameter group can be used with.</summary>
+    /// <summary>Engine version that the parameter group can be used with.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
@@ -101,11 +101,11 @@ public partial class V1beta1ParameterGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecInitProviderParameter
 {
-    /// <summary>The name of the parameter.</summary>
+    /// <summary>Name of the parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the parameter.</summary>
+    /// <summary>Value of the parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -130,7 +130,7 @@ public partial class V1beta1ParameterGroupSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine version that the parameter group can be used with.</summary>
+    /// <summary>Engine version that the parameter group can be used with.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
@@ -330,11 +330,11 @@ public partial class V1beta1ParameterGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProviderParameter
 {
-    /// <summary>The name of the parameter.</summary>
+    /// <summary>Name of the parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the parameter.</summary>
+    /// <summary>Value of the parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -343,7 +343,7 @@ public partial class V1beta1ParameterGroupStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProvider
 {
-    /// <summary>The ARN of the parameter group.</summary>
+    /// <summary>ARN of the parameter group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -351,7 +351,7 @@ public partial class V1beta1ParameterGroupStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The engine version that the parameter group can be used with.</summary>
+    /// <summary>Engine version that the parameter group can be used with.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
@@ -374,7 +374,7 @@ public partial class V1beta1ParameterGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

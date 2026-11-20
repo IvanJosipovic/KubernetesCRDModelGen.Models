@@ -219,7 +219,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrder
     [JsonPropertyName("computeEnvironmentSelector")]
     public V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelector? ComputeEnvironmentSelector { get; set; }
 
-    /// <summary>The order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
+    /// <summary>Order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
     [JsonPropertyName("order")]
     public double? Order { get; set; }
 }
@@ -228,19 +228,19 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrder
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderJobStateTimeLimitAction
 {
-    /// <summary>The action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
+    /// <summary>Action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
+    /// <summary>Approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
     [JsonPropertyName("maxTimeSeconds")]
     public double? MaxTimeSeconds { get; set; }
 
-    /// <summary>The reason to log for the action being taken.</summary>
+    /// <summary>Reason to log for the action being taken.</summary>
     [JsonPropertyName("reason")]
     public string? Reason { get; set; }
 
-    /// <summary>The state of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
+    /// <summary>State of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -396,18 +396,15 @@ public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProvider
 {
-    /// <summary>The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
+    /// <summary>Set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
     [JsonPropertyName("computeEnvironmentOrder")]
     public IList<V1beta1JobQueueSpecForProviderComputeEnvironmentOrder>? ComputeEnvironmentOrder { get; set; }
 
-    /// <summary>The set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
+    /// <summary>Set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
     [JsonPropertyName("jobStateTimeLimitAction")]
     public IList<V1beta1JobQueueSpecForProviderJobStateTimeLimitAction>? JobStateTimeLimitAction { get; set; }
 
-    /// <summary>
-    /// The priority of the job queue. Job queues with a higher priority
-    /// are evaluated first when associated with the same compute environment.
-    /// </summary>
+    /// <summary>Priority of the job queue. Job queues with a higher priority are evaluated first when associated with the same compute environment.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -418,7 +415,7 @@ public partial class V1beta1JobQueueSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
+    /// <summary>ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
     [JsonPropertyName("schedulingPolicyArn")]
     public string? SchedulingPolicyArn { get; set; }
 
@@ -430,7 +427,7 @@ public partial class V1beta1JobQueueSpecForProvider
     [JsonPropertyName("schedulingPolicyArnSelector")]
     public V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelector? SchedulingPolicyArnSelector { get; set; }
 
-    /// <summary>The state of the job queue. Must be one of: ENABLED or DISABLED</summary>
+    /// <summary>State of the job queue. Must be one of: ENABLED or DISABLED</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -602,7 +599,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder
     [JsonPropertyName("computeEnvironmentSelector")]
     public V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelector? ComputeEnvironmentSelector { get; set; }
 
-    /// <summary>The order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
+    /// <summary>Order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
     [JsonPropertyName("order")]
     public double? Order { get; set; }
 }
@@ -611,19 +608,19 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderJobStateTimeLimitAction
 {
-    /// <summary>The action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
+    /// <summary>Action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
+    /// <summary>Approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
     [JsonPropertyName("maxTimeSeconds")]
     public double? MaxTimeSeconds { get; set; }
 
-    /// <summary>The reason to log for the action being taken.</summary>
+    /// <summary>Reason to log for the action being taken.</summary>
     [JsonPropertyName("reason")]
     public string? Reason { get; set; }
 
-    /// <summary>The state of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
+    /// <summary>State of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -791,22 +788,19 @@ public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProvider
 {
-    /// <summary>The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
+    /// <summary>Set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
     [JsonPropertyName("computeEnvironmentOrder")]
     public IList<V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder>? ComputeEnvironmentOrder { get; set; }
 
-    /// <summary>The set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
+    /// <summary>Set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
     [JsonPropertyName("jobStateTimeLimitAction")]
     public IList<V1beta1JobQueueSpecInitProviderJobStateTimeLimitAction>? JobStateTimeLimitAction { get; set; }
 
-    /// <summary>
-    /// The priority of the job queue. Job queues with a higher priority
-    /// are evaluated first when associated with the same compute environment.
-    /// </summary>
+    /// <summary>Priority of the job queue. Job queues with a higher priority are evaluated first when associated with the same compute environment.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
+    /// <summary>ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
     [JsonPropertyName("schedulingPolicyArn")]
     public string? SchedulingPolicyArn { get; set; }
 
@@ -818,7 +812,7 @@ public partial class V1beta1JobQueueSpecInitProvider
     [JsonPropertyName("schedulingPolicyArnSelector")]
     public V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelector? SchedulingPolicyArnSelector { get; set; }
 
-    /// <summary>The state of the job queue. Must be one of: ENABLED or DISABLED</summary>
+    /// <summary>State of the job queue. Must be one of: ENABLED or DISABLED</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -1018,7 +1012,7 @@ public partial class V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder
     [JsonPropertyName("computeEnvironment")]
     public string? ComputeEnvironment { get; set; }
 
-    /// <summary>The order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
+    /// <summary>Order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.</summary>
     [JsonPropertyName("order")]
     public double? Order { get; set; }
 }
@@ -1027,19 +1021,19 @@ public partial class V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProviderJobStateTimeLimitAction
 {
-    /// <summary>The action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
+    /// <summary>Action to take when a job is at the head of the job queue in the specified state for the specified period of time. Valid values include &quot;CANCEL&quot;</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
+    /// <summary>Approximate amount of time, in seconds, that must pass with the job in the specified state before the action is taken. Valid values include integers between 600 &amp; 86400</summary>
     [JsonPropertyName("maxTimeSeconds")]
     public double? MaxTimeSeconds { get; set; }
 
-    /// <summary>The reason to log for the action being taken.</summary>
+    /// <summary>Reason to log for the action being taken.</summary>
     [JsonPropertyName("reason")]
     public string? Reason { get; set; }
 
-    /// <summary>The state of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
+    /// <summary>State of the job needed to trigger the action. Valid values include &quot;RUNNABLE&quot;.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -1052,21 +1046,18 @@ public partial class V1beta1JobQueueStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
+    /// <summary>Set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.</summary>
     [JsonPropertyName("computeEnvironmentOrder")]
     public IList<V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder>? ComputeEnvironmentOrder { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
+    /// <summary>Set of job state time limit actions mapped to a job queue. Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</summary>
     [JsonPropertyName("jobStateTimeLimitAction")]
     public IList<V1beta1JobQueueStatusAtProviderJobStateTimeLimitAction>? JobStateTimeLimitAction { get; set; }
 
-    /// <summary>
-    /// The priority of the job queue. Job queues with a higher priority
-    /// are evaluated first when associated with the same compute environment.
-    /// </summary>
+    /// <summary>Priority of the job queue. Job queues with a higher priority are evaluated first when associated with the same compute environment.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -1077,11 +1068,11 @@ public partial class V1beta1JobQueueStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
+    /// <summary>ARN of the fair share scheduling policy. If this parameter is specified, the job queue uses a fair share scheduling policy. If this parameter isn&apos;t specified, the job queue uses a first in, first out (FIFO) scheduling policy. After a job queue is created, you can replace but can&apos;t remove the fair share scheduling policy.</summary>
     [JsonPropertyName("schedulingPolicyArn")]
     public string? SchedulingPolicyArn { get; set; }
 
-    /// <summary>The state of the job queue. Must be one of: ENABLED or DISABLED</summary>
+    /// <summary>State of the job queue. Must be one of: ENABLED or DISABLED</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -1089,7 +1080,7 @@ public partial class V1beta1JobQueueStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

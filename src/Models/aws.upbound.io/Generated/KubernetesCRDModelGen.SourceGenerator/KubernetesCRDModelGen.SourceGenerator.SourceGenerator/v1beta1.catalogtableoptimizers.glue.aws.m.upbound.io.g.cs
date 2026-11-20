@@ -41,15 +41,15 @@ public partial class V1beta1CatalogTableOptimizerList : IKubernetesObject<V1List
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
-    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    /// <summary>Minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
     [JsonPropertyName("deleteFileThreshold")]
     public double? DeleteFileThreshold { get; set; }
 
-    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    /// <summary>Minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
     [JsonPropertyName("minInputFiles")]
     public double? MinInputFiles { get; set; }
 
-    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    /// <summary>Strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 }
@@ -58,7 +58,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCom
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -67,15 +67,15 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCom
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
-    /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
+    /// <summary>Directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
+    /// <summary>Number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
     [JsonPropertyName("orphanFileRetentionPeriodInDays")]
     public double? OrphanFileRetentionPeriodInDays { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 }
@@ -84,7 +84,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -97,15 +97,15 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRet
     [JsonPropertyName("cleanExpiredFiles")]
     public bool? CleanExpiredFiles { get; set; }
 
-    /// <summary>The number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("numberOfSnapshotsToRetain")]
     public double? NumberOfSnapshotsToRetain { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 
-    /// <summary>The number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("snapshotRetentionPeriodInDays")]
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
@@ -114,34 +114,46 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationVpcConfiguration
+{
+    [JsonPropertyName("glueConnectionName")]
+    public string? GlueConnectionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfiguration
 {
-    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    /// <summary>Configuration block for a compaction optimizer. See compaction_configuration Block for additional details.</summary>
     [JsonPropertyName("compactionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
 
-    /// <summary>Indicates whether the table optimizer is enabled.</summary>
+    /// <summary>Whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The configuration block for an orphan file deletion optimizer. See Orphan File Deletion Configuration for additional details.</summary>
+    /// <summary>Configuration block for an orphan file deletion optimizer. See orphan_file_deletion_configuration Block for additional details.</summary>
     [JsonPropertyName("orphanFileDeletionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfiguration>? OrphanFileDeletionConfiguration { get; set; }
 
-    /// <summary>The configuration block for a snapshot retention optimizer. See Retention Configuration for additional details.</summary>
+    /// <summary>Configuration block for a snapshot retention optimizer. See retention_configuration Block for additional details.</summary>
     [JsonPropertyName("retentionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfiguration>? RetentionConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to use for the table optimizer.</summary>
+    /// <summary>ARN of the IAM role to use for the table optimizer.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
+    [JsonPropertyName("vpcConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationVpcConfiguration>? VpcConfiguration { get; set; }
 }
 
 /// <summary>
@@ -303,15 +315,15 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProvider
 {
-    /// <summary>The Catalog ID of the table.</summary>
+    /// <summary>Catalog ID of the table.</summary>
     [JsonPropertyName("catalogId")]
     public required string CatalogId { get; set; }
 
-    /// <summary>A configuration block that defines the table optimizer settings. See Configuration for additional details.</summary>
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
     [JsonPropertyName("configuration")]
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfiguration>? Configuration { get; set; }
 
-    /// <summary>The name of the database in the catalog in which the table resides.</summary>
+    /// <summary>Name of the database in the catalog in which the table resides.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -330,11 +342,11 @@ public partial class V1beta1CatalogTableOptimizerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
-    /// <summary>The type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
+    /// <summary>Type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -343,15 +355,15 @@ public partial class V1beta1CatalogTableOptimizerSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
-    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    /// <summary>Minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
     [JsonPropertyName("deleteFileThreshold")]
     public double? DeleteFileThreshold { get; set; }
 
-    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    /// <summary>Minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
     [JsonPropertyName("minInputFiles")]
     public double? MinInputFiles { get; set; }
 
-    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    /// <summary>Strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 }
@@ -360,7 +372,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -369,15 +381,15 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
-    /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
+    /// <summary>Directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
+    /// <summary>Number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
     [JsonPropertyName("orphanFileRetentionPeriodInDays")]
     public double? OrphanFileRetentionPeriodInDays { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 }
@@ -386,7 +398,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -399,15 +411,15 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRe
     [JsonPropertyName("cleanExpiredFiles")]
     public bool? CleanExpiredFiles { get; set; }
 
-    /// <summary>The number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("numberOfSnapshotsToRetain")]
     public double? NumberOfSnapshotsToRetain { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 
-    /// <summary>The number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("snapshotRetentionPeriodInDays")]
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
@@ -416,34 +428,46 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationVpcConfiguration
+{
+    [JsonPropertyName("glueConnectionName")]
+    public string? GlueConnectionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfiguration
 {
-    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    /// <summary>Configuration block for a compaction optimizer. See compaction_configuration Block for additional details.</summary>
     [JsonPropertyName("compactionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
 
-    /// <summary>Indicates whether the table optimizer is enabled.</summary>
+    /// <summary>Whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The configuration block for an orphan file deletion optimizer. See Orphan File Deletion Configuration for additional details.</summary>
+    /// <summary>Configuration block for an orphan file deletion optimizer. See orphan_file_deletion_configuration Block for additional details.</summary>
     [JsonPropertyName("orphanFileDeletionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfiguration>? OrphanFileDeletionConfiguration { get; set; }
 
-    /// <summary>The configuration block for a snapshot retention optimizer. See Retention Configuration for additional details.</summary>
+    /// <summary>Configuration block for a snapshot retention optimizer. See retention_configuration Block for additional details.</summary>
     [JsonPropertyName("retentionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfiguration>? RetentionConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to use for the table optimizer.</summary>
+    /// <summary>ARN of the IAM role to use for the table optimizer.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
+    [JsonPropertyName("vpcConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationVpcConfiguration>? VpcConfiguration { get; set; }
 }
 
 /// <summary>
@@ -462,15 +486,15 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProvider
 {
-    /// <summary>A configuration block that defines the table optimizer settings. See Configuration for additional details.</summary>
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
     [JsonPropertyName("configuration")]
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfiguration>? Configuration { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
-    /// <summary>The type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
+    /// <summary>Type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -586,15 +610,15 @@ public partial class V1beta1CatalogTableOptimizerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
-    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    /// <summary>Minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
     [JsonPropertyName("deleteFileThreshold")]
     public double? DeleteFileThreshold { get; set; }
 
-    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    /// <summary>Minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
     [JsonPropertyName("minInputFiles")]
     public double? MinInputFiles { get; set; }
 
-    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    /// <summary>Strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
     [JsonPropertyName("strategy")]
     public string? Strategy { get; set; }
 }
@@ -603,7 +627,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -612,15 +636,15 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
-    /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
+    /// <summary>Directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
+    /// <summary>Number of days that orphan files should be retained before file deletion. Defaults to 3.</summary>
     [JsonPropertyName("orphanFileRetentionPeriodInDays")]
     public double? OrphanFileRetentionPeriodInDays { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 }
@@ -629,7 +653,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
@@ -642,15 +666,15 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRe
     [JsonPropertyName("cleanExpiredFiles")]
     public bool? CleanExpiredFiles { get; set; }
 
-    /// <summary>The number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of Iceberg snapshots to retain within the retention period. Defaults to 1 or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("numberOfSnapshotsToRetain")]
     public double? NumberOfSnapshotsToRetain { get; set; }
 
-    /// <summary>interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
+    /// <summary>Interval in hours between orphan file deletion job runs. Defaults to 24.</summary>
     [JsonPropertyName("runRateInHours")]
     public double? RunRateInHours { get; set; }
 
-    /// <summary>The number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
+    /// <summary>Number of days to retain the Iceberg snapshots. Defaults to 5, or the corresponding Iceberg table configuration field if it exists.</summary>
     [JsonPropertyName("snapshotRetentionPeriodInDays")]
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
@@ -659,49 +683,61 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfiguration
 {
-    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    /// <summary>Configuration for an Iceberg compaction optimizer. See configuration.compaction_configuration.iceberg_configuration Block for additional details.</summary>
     [JsonPropertyName("icebergConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationVpcConfiguration
+{
+    [JsonPropertyName("glueConnectionName")]
+    public string? GlueConnectionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfiguration
 {
-    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    /// <summary>Configuration block for a compaction optimizer. See compaction_configuration Block for additional details.</summary>
     [JsonPropertyName("compactionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
 
-    /// <summary>Indicates whether the table optimizer is enabled.</summary>
+    /// <summary>Whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The configuration block for an orphan file deletion optimizer. See Orphan File Deletion Configuration for additional details.</summary>
+    /// <summary>Configuration block for an orphan file deletion optimizer. See orphan_file_deletion_configuration Block for additional details.</summary>
     [JsonPropertyName("orphanFileDeletionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfiguration>? OrphanFileDeletionConfiguration { get; set; }
 
-    /// <summary>The configuration block for a snapshot retention optimizer. See Retention Configuration for additional details.</summary>
+    /// <summary>Configuration block for a snapshot retention optimizer. See retention_configuration Block for additional details.</summary>
     [JsonPropertyName("retentionConfiguration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfiguration>? RetentionConfiguration { get; set; }
 
-    /// <summary>The ARN of the IAM role to use for the table optimizer.</summary>
+    /// <summary>ARN of the IAM role to use for the table optimizer.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
+    [JsonPropertyName("vpcConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationVpcConfiguration>? VpcConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProvider
 {
-    /// <summary>The Catalog ID of the table.</summary>
+    /// <summary>Catalog ID of the table.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>A configuration block that defines the table optimizer settings. See Configuration for additional details.</summary>
+    /// <summary>Configuration block that defines the table optimizer settings. See configuration Block for additional details.</summary>
     [JsonPropertyName("configuration")]
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfiguration>? Configuration { get; set; }
 
-    /// <summary>The name of the database in the catalog in which the table resides.</summary>
+    /// <summary>Name of the database in the catalog in which the table resides.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -715,11 +751,11 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
-    /// <summary>The type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
+    /// <summary>Type of table optimizer. Valid values are compaction, retention, and orphan_file_deletion.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }

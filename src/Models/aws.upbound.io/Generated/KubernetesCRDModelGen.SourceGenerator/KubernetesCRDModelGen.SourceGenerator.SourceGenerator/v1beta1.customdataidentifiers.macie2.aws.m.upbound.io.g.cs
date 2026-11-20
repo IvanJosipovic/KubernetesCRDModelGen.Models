@@ -41,27 +41,27 @@ public partial class V1beta1CustomDataIdentifierList : IKubernetesObject<V1ListM
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomDataIdentifierSpecForProvider
 {
-    /// <summary>A custom description of the custom data identifier. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the custom data identifier. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>An array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
     [JsonPropertyName("ignoreWords")]
     public IList<string>? IgnoreWords { get; set; }
 
-    /// <summary>An array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
     [JsonPropertyName("keywords")]
     public IList<string>? Keywords { get; set; }
 
-    /// <summary>The maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
+    /// <summary>Maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
     [JsonPropertyName("maximumMatchDistance")]
     public double? MaximumMatchDistance { get; set; }
 
-    /// <summary>A custom name for the custom data identifier. The name can contain as many as 128 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the custom data identifier. Can contain as many as 128 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
+    /// <summary>Regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -93,27 +93,27 @@ public partial class V1beta1CustomDataIdentifierSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomDataIdentifierSpecInitProvider
 {
-    /// <summary>A custom description of the custom data identifier. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the custom data identifier. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>An array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
     [JsonPropertyName("ignoreWords")]
     public IList<string>? IgnoreWords { get; set; }
 
-    /// <summary>An array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
     [JsonPropertyName("keywords")]
     public IList<string>? Keywords { get; set; }
 
-    /// <summary>The maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
+    /// <summary>Maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
     [JsonPropertyName("maximumMatchDistance")]
     public double? MaximumMatchDistance { get; set; }
 
-    /// <summary>A custom name for the custom data identifier. The name can contain as many as 128 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the custom data identifier. Can contain as many as 128 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
+    /// <summary>Regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -237,35 +237,35 @@ public partial class V1beta1CustomDataIdentifierStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The date and time, in UTC and extended RFC 3339 format, when the Amazon Macie account was created.</summary>
+    /// <summary>Date and time, in UTC and extended RFC 3339 format, when the custom data identifier was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>A custom description of the custom data identifier. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the custom data identifier. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique identifier (ID) of the macie custom data identifier.</summary>
+    /// <summary>Unique identifier (ID) of the Macie custom data identifier.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. The array can contain as many as 10 ignore words. Each ignore word can contain 4 - 90 characters. Ignore words are case sensitive.</summary>
     [JsonPropertyName("ignoreWords")]
     public IList<string>? IgnoreWords { get; set; }
 
-    /// <summary>An array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
+    /// <summary>Array that lists specific character sequences (keywords), one of which must be within proximity (maximum_match_distance) of the regular expression to match. The array can contain as many as 50 keywords. Each keyword can contain 3 - 90 characters. Keywords aren&apos;t case sensitive.</summary>
     [JsonPropertyName("keywords")]
     public IList<string>? Keywords { get; set; }
 
-    /// <summary>The maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
+    /// <summary>Maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern. The distance can be 1 - 300 characters. The default value is 50.</summary>
     [JsonPropertyName("maximumMatchDistance")]
     public double? MaximumMatchDistance { get; set; }
 
-    /// <summary>A custom name for the custom data identifier. The name can contain as many as 128 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the custom data identifier. Can contain as many as 128 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
+    /// <summary>Regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -280,7 +280,7 @@ public partial class V1beta1CustomDataIdentifierStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

@@ -196,7 +196,7 @@ public partial class V1beta1LedgerSpecForProviderKmsKeySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LedgerSpecForProvider
 {
-    /// <summary>The deletion protection for the QLDB Ledger instance. By default it is true.</summary>
+    /// <summary>Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
@@ -212,7 +212,7 @@ public partial class V1beta1LedgerSpecForProvider
     [JsonPropertyName("kmsKeySelector")]
     public V1beta1LedgerSpecForProviderKmsKeySelector? KmsKeySelector { get; set; }
 
-    /// <summary>The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
+    /// <summary>Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
     [JsonPropertyName("permissionsMode")]
     public string? PermissionsMode { get; set; }
 
@@ -399,7 +399,7 @@ public partial class V1beta1LedgerSpecInitProviderKmsKeySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LedgerSpecInitProvider
 {
-    /// <summary>The deletion protection for the QLDB Ledger instance. By default it is true.</summary>
+    /// <summary>Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
@@ -415,7 +415,7 @@ public partial class V1beta1LedgerSpecInitProvider
     [JsonPropertyName("kmsKeySelector")]
     public V1beta1LedgerSpecInitProviderKmsKeySelector? KmsKeySelector { get; set; }
 
-    /// <summary>The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
+    /// <summary>Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
     [JsonPropertyName("permissionsMode")]
     public string? PermissionsMode { get; set; }
 
@@ -535,15 +535,15 @@ public partial class V1beta1LedgerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LedgerStatusAtProvider
 {
-    /// <summary>The ARN of the QLDB Ledger</summary>
+    /// <summary>ARN of the QLDB Ledger</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The deletion protection for the QLDB Ledger instance. By default it is true.</summary>
+    /// <summary>Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The Name of the QLDB Ledger</summary>
+    /// <summary>Name of the QLDB Ledger</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -551,7 +551,7 @@ public partial class V1beta1LedgerStatusAtProvider
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
-    /// <summary>The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
+    /// <summary>Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.</summary>
     [JsonPropertyName("permissionsMode")]
     public string? PermissionsMode { get; set; }
 
@@ -566,7 +566,7 @@ public partial class V1beta1LedgerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

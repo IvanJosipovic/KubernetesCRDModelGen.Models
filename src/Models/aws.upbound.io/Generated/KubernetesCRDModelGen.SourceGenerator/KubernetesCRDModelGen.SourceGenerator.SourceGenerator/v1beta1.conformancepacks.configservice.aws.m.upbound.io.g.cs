@@ -77,7 +77,7 @@ public partial class V1beta1ConformancePackSpecForProvider
     [JsonPropertyName("templateBody")]
     public string? TemplateBody { get; set; }
 
-    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The uri must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
+    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The URI must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
     [JsonPropertyName("templateS3Uri")]
     public string? TemplateS3Uri { get; set; }
 }
@@ -127,7 +127,7 @@ public partial class V1beta1ConformancePackSpecInitProvider
     [JsonPropertyName("templateBody")]
     public string? TemplateBody { get; set; }
 
-    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The uri must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
+    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The URI must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
     [JsonPropertyName("templateS3Uri")]
     public string? TemplateS3Uri { get; set; }
 }
@@ -286,7 +286,7 @@ public partial class V1beta1ConformancePackStatusAtProvider
     [JsonPropertyName("templateBody")]
     public string? TemplateBody { get; set; }
 
-    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The uri must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
+    /// <summary>Location of file, e.g., s3://bucketname/prefix, containing the template body. The URI must point to the conformance pack template that is located in an Amazon S3 bucket in the same region as the conformance pack. Maximum length of 1024. Drift detection is not possible with this argument.</summary>
     [JsonPropertyName("templateS3Uri")]
     public string? TemplateS3Uri { get; set; }
 }

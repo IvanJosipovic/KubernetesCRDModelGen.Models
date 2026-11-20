@@ -631,7 +631,7 @@ public partial class V1beta1VPCStatusAtProvider
     [JsonPropertyName("defaultSecurityGroupId")]
     public string? DefaultSecurityGroupId { get; set; }
 
-    /// <summary>DHCP options id of the desired VPC.</summary>
+    /// <summary>DHCP options ID of the desired VPC.</summary>
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 

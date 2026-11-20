@@ -207,11 +207,11 @@ public partial class V1beta1VPCIpamScopeSpecForProviderIpamIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamScopeSpecForProvider
 {
-    /// <summary>A description for the scope you&apos;re creating.</summary>
+    /// <summary>Description for the scope you&apos;re creating.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the IPAM for which you&apos;re creating this scope.</summary>
+    /// <summary>ID of the IPAM for which you&apos;re creating this scope.</summary>
     [JsonPropertyName("ipamId")]
     public string? IpamId { get; set; }
 
@@ -398,11 +398,11 @@ public partial class V1beta1VPCIpamScopeSpecInitProviderIpamIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamScopeSpecInitProvider
 {
-    /// <summary>A description for the scope you&apos;re creating.</summary>
+    /// <summary>Description for the scope you&apos;re creating.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the IPAM for which you&apos;re creating this scope.</summary>
+    /// <summary>ID of the IPAM for which you&apos;re creating this scope.</summary>
     [JsonPropertyName("ipamId")]
     public string? IpamId { get; set; }
 
@@ -610,31 +610,31 @@ public partial class V1beta1VPCIpamScopeStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A description for the scope you&apos;re creating.</summary>
+    /// <summary>Description for the scope you&apos;re creating.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the IPAM Scope.</summary>
+    /// <summary>ID of the IPAM Scope.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the IPAM for which you&apos;re creating this scope.</summary>
+    /// <summary>ARN of the IPAM for which you&apos;re creating this scope.</summary>
     [JsonPropertyName("ipamArn")]
     public string? IpamArn { get; set; }
 
-    /// <summary>The ID of the IPAM for which you&apos;re creating this scope.</summary>
+    /// <summary>ID of the IPAM for which you&apos;re creating this scope.</summary>
     [JsonPropertyName("ipamId")]
     public string? IpamId { get; set; }
 
-    /// <summary>The type of the scope.</summary>
+    /// <summary>Type of the scope.</summary>
     [JsonPropertyName("ipamScopeType")]
     public string? IpamScopeType { get; set; }
 
-    /// <summary>Defines if the scope is the default scope or not.</summary>
+    /// <summary>Whether the scope is the default scope.</summary>
     [JsonPropertyName("isDefault")]
     public bool? IsDefault { get; set; }
 
-    /// <summary>The number of pools in the scope.</summary>
+    /// <summary>Number of pools in the scope.</summary>
     [JsonPropertyName("poolCount")]
     public double? PoolCount { get; set; }
 

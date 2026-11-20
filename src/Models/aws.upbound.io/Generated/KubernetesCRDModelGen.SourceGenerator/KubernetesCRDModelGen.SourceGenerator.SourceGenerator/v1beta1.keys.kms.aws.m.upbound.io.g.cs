@@ -41,12 +41,7 @@ public partial class V1beta1KeyList : IKubernetesObject<V1ListMeta>, IItems<V1be
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeySpecForProvider
 {
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
@@ -54,45 +49,35 @@ public partial class V1beta1KeySpecForProvider
     [JsonPropertyName("customKeyStoreId")]
     public string? CustomKeyStoreId { get; set; }
 
-    /// <summary>
-    /// Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports.
-    /// Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.
-    /// </summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("customerMasterKeySpec")]
     public string? CustomerMasterKeySpec { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30. If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>The description of the key as viewed in AWS console.</summary>
+    /// <summary>Description of the key as viewed in AWS console.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether key rotation is enabled. Defaults to false.</summary>
+    /// <summary>Whether key rotation is enabled. Defaults to false.</summary>
     [JsonPropertyName("enableKeyRotation")]
     public bool? EnableKeyRotation { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Defaults to true.</summary>
+    /// <summary>Whether the key is enabled. Defaults to true.</summary>
     [JsonPropertyName("isEnabled")]
     public bool? IsEnabled { get; set; }
 
-    /// <summary>
-    /// Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC.
-    /// Defaults to ENCRYPT_DECRYPT.
-    /// </summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
+    /// <summary>Valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -111,7 +96,7 @@ public partial class V1beta1KeySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Identifies the external key that serves as key material for the KMS key in an external key store.</summary>
+    /// <summary>External key that serves as key material for the KMS key in an external key store.</summary>
     [JsonPropertyName("xksKeyId")]
     public string? XksKeyId { get; set; }
 }
@@ -132,12 +117,7 @@ public partial class V1beta1KeySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeySpecInitProvider
 {
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
@@ -145,45 +125,35 @@ public partial class V1beta1KeySpecInitProvider
     [JsonPropertyName("customKeyStoreId")]
     public string? CustomKeyStoreId { get; set; }
 
-    /// <summary>
-    /// Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports.
-    /// Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.
-    /// </summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("customerMasterKeySpec")]
     public string? CustomerMasterKeySpec { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30. If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>The description of the key as viewed in AWS console.</summary>
+    /// <summary>Description of the key as viewed in AWS console.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether key rotation is enabled. Defaults to false.</summary>
+    /// <summary>Whether key rotation is enabled. Defaults to false.</summary>
     [JsonPropertyName("enableKeyRotation")]
     public bool? EnableKeyRotation { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Defaults to true.</summary>
+    /// <summary>Whether the key is enabled. Defaults to true.</summary>
     [JsonPropertyName("isEnabled")]
     public bool? IsEnabled { get; set; }
 
-    /// <summary>
-    /// Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC.
-    /// Defaults to ENCRYPT_DECRYPT.
-    /// </summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
+    /// <summary>Valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -195,7 +165,7 @@ public partial class V1beta1KeySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Identifies the external key that serves as key material for the KMS key in an external key store.</summary>
+    /// <summary>External key that serves as key material for the KMS key in an external key store.</summary>
     [JsonPropertyName("xksKeyId")]
     public string? XksKeyId { get; set; }
 }
@@ -315,12 +285,7 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>
-    /// A flag to indicate whether to bypass the key policy lockout safety check.
-    /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
-    /// The default value is false.
-    /// </summary>
+    /// <summary>Whether to bypass the key policy lockout safety check. Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately. For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide. The default value is false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
@@ -328,26 +293,19 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("customKeyStoreId")]
     public string? CustomKeyStoreId { get; set; }
 
-    /// <summary>
-    /// Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports.
-    /// Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.
-    /// </summary>
+    /// <summary>Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC_DEFAULT, RSA_2048, RSA_3072, RSA_4096, HMAC_224, HMAC_256, HMAC_384, HMAC_512, ECC_NIST_P256, ECC_NIST_P384, ECC_NIST_P521, ECC_SECG_P256K1, ML_DSA_44, ML_DSA_65, ML_DSA_87, SM2 (China Regions only), or ECC_NIST_EDWARDS25519. Defaults to SYMMETRIC_DEFAULT. For help with choosing a key spec, see the AWS KMS Developer Guide.</summary>
     [JsonPropertyName("customerMasterKeySpec")]
     public string? CustomerMasterKeySpec { get; set; }
 
-    /// <summary>
-    /// The waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key.
-    /// If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30.
-    /// If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.
-    /// </summary>
+    /// <summary>Waiting period, specified in number of days. After the waiting period ends, AWS KMS deletes the KMS key. If you specify a value, it must be between 7 and 30, inclusive. If you do not specify a value, it defaults to 30. If the KMS key is a multi-Region primary key with replicas, the waiting period begins when the last of its replica keys is deleted. Otherwise, the waiting period begins immediately.</summary>
     [JsonPropertyName("deletionWindowInDays")]
     public double? DeletionWindowInDays { get; set; }
 
-    /// <summary>The description of the key as viewed in AWS console.</summary>
+    /// <summary>Description of the key as viewed in AWS console.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies whether key rotation is enabled. Defaults to false.</summary>
+    /// <summary>Whether key rotation is enabled. Defaults to false.</summary>
     [JsonPropertyName("enableKeyRotation")]
     public bool? EnableKeyRotation { get; set; }
 
@@ -355,26 +313,23 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies whether the key is enabled. Defaults to true.</summary>
+    /// <summary>Whether the key is enabled. Defaults to true.</summary>
     [JsonPropertyName("isEnabled")]
     public bool? IsEnabled { get; set; }
 
-    /// <summary>The globally unique identifier for the key.</summary>
+    /// <summary>Globally unique identifier for the key.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>
-    /// Specifies the intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC.
-    /// Defaults to ENCRYPT_DECRYPT.
-    /// </summary>
+    /// <summary>Intended use of the key. Valid values: ENCRYPT_DECRYPT, SIGN_VERIFY, or GENERATE_VERIFY_MAC. Defaults to ENCRYPT_DECRYPT.</summary>
     [JsonPropertyName("keyUsage")]
     public string? KeyUsage { get; set; }
 
-    /// <summary>Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
+    /// <summary>Whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false.</summary>
     [JsonPropertyName("multiRegion")]
     public bool? MultiRegion { get; set; }
 
-    /// <summary>A valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
+    /// <summary>Valid policy JSON document. Although this is a key policy, not an IAM policy, an aws_iam_policy_document, in the form that designates a principal, can be used.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -393,11 +348,11 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Identifies the external key that serves as key material for the KMS key in an external key store.</summary>
+    /// <summary>External key that serves as key material for the KMS key in an external key store.</summary>
     [JsonPropertyName("xksKeyId")]
     public string? XksKeyId { get; set; }
 }

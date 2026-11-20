@@ -389,7 +389,7 @@ public partial class V1beta1TransitGatewayConnectSpecForProvider
     [JsonPropertyName("transitGatewayIdSelector")]
     public V1beta1TransitGatewayConnectSpecForProviderTransitGatewayIdSelector? TransitGatewayIdSelector { get; set; }
 
-    /// <summary>The underlaying VPC attachment</summary>
+    /// <summary>The underlying VPC attachment</summary>
     [JsonPropertyName("transportAttachmentId")]
     public string? TransportAttachmentId { get; set; }
 
@@ -740,7 +740,7 @@ public partial class V1beta1TransitGatewayConnectSpecInitProvider
     [JsonPropertyName("transitGatewayIdSelector")]
     public V1beta1TransitGatewayConnectSpecInitProviderTransitGatewayIdSelector? TransitGatewayIdSelector { get; set; }
 
-    /// <summary>The underlaying VPC attachment</summary>
+    /// <summary>The underlying VPC attachment</summary>
     [JsonPropertyName("transportAttachmentId")]
     public string? TransportAttachmentId { get; set; }
 
@@ -975,7 +975,7 @@ public partial class V1beta1TransitGatewayConnectStatusAtProvider
     [JsonPropertyName("transitGatewayId")]
     public string? TransitGatewayId { get; set; }
 
-    /// <summary>The underlaying VPC attachment</summary>
+    /// <summary>The underlying VPC attachment</summary>
     [JsonPropertyName("transportAttachmentId")]
     public string? TransportAttachmentId { get; set; }
 }

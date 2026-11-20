@@ -60,11 +60,11 @@ public enum V1beta1ChannelSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProvider
 {
-    /// <summary>A unique identifier describing the channel</summary>
+    /// <summary>Unique identifier describing the channel</summary>
     [JsonPropertyName("channelId")]
     public string? ChannelId { get; set; }
 
-    /// <summary>A description of the channel</summary>
+    /// <summary>Description of the channel</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -96,11 +96,11 @@ public partial class V1beta1ChannelSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProvider
 {
-    /// <summary>A unique identifier describing the channel</summary>
+    /// <summary>Unique identifier describing the channel</summary>
     [JsonPropertyName("channelId")]
     public string? ChannelId { get; set; }
 
-    /// <summary>A description of the channel</summary>
+    /// <summary>Description of the channel</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -296,15 +296,15 @@ public partial class V1beta1ChannelSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderHlsIngestIngestEndpoints
 {
-    /// <summary>The password</summary>
+    /// <summary>Password</summary>
     [JsonPropertyName("password")]
     public string? Password { get; set; }
 
-    /// <summary>The URL</summary>
+    /// <summary>URL</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The username</summary>
+    /// <summary>Username</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -313,7 +313,7 @@ public partial class V1beta1ChannelStatusAtProviderHlsIngestIngestEndpoints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderHlsIngest
 {
-    /// <summary>A list of the ingest endpoints</summary>
+    /// <summary>List of the ingest endpoints</summary>
     [JsonPropertyName("ingestEndpoints")]
     public IList<V1beta1ChannelStatusAtProviderHlsIngestIngestEndpoints>? IngestEndpoints { get; set; }
 }
@@ -322,23 +322,23 @@ public partial class V1beta1ChannelStatusAtProviderHlsIngest
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProvider
 {
-    /// <summary>The ARN of the channel</summary>
+    /// <summary>ARN of the channel</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A unique identifier describing the channel</summary>
+    /// <summary>Unique identifier describing the channel</summary>
     [JsonPropertyName("channelId")]
     public string? ChannelId { get; set; }
 
-    /// <summary>A description of the channel</summary>
+    /// <summary>Description of the channel</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A single item list of HLS ingest information</summary>
+    /// <summary>Single item list of HLS ingest information</summary>
     [JsonPropertyName("hlsIngest")]
     public IList<V1beta1ChannelStatusAtProviderHlsIngest>? HlsIngest { get; set; }
 
-    /// <summary>The same as channel_id</summary>
+    /// <summary>Same as channel_id</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -353,7 +353,7 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

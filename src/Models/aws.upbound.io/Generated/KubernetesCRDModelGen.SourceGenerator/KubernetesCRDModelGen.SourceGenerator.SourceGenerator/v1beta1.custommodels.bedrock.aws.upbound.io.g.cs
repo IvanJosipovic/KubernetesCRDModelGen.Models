@@ -203,12 +203,12 @@ public partial class V1beta1CustomModelSpecForProviderCustomModelKmsKeyIdSelecto
     public V1beta1CustomModelSpecForProviderCustomModelKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>S3 location for the output data.</summary>
+/// <summary>S3 location for the output data. See output_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecForProviderOutputDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the output data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
@@ -360,12 +360,12 @@ public partial class V1beta1CustomModelSpecForProviderRoleArnSelector
     public V1beta1CustomModelSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Information about the training dataset.</summary>
+/// <summary>Information about the training dataset. See training_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecForProviderTrainingDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
@@ -374,17 +374,17 @@ public partial class V1beta1CustomModelSpecForProviderTrainingDataConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecForProviderValidationDataConfigValidator
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
 
-/// <summary>Information about the validation dataset.</summary>
+/// <summary>Information about the validation dataset. See validation_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecForProviderValidationDataConfig
 {
-    /// <summary>Information about the validators.</summary>
+    /// <summary>Information about the validators. See validator below.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1CustomModelSpecForProviderValidationDataConfigValidator>? Validator { get; set; }
 }
@@ -683,7 +683,7 @@ public partial class V1beta1CustomModelSpecForProviderVpcConfigSubnetIdSelector
     public V1beta1CustomModelSpecForProviderVpcConfigSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecForProviderVpcConfig
@@ -721,7 +721,7 @@ public partial class V1beta1CustomModelSpecForProvider
     [JsonPropertyName("baseModelIdentifier")]
     public string? BaseModelIdentifier { get; set; }
 
-    /// <summary>The custom model is encrypted at rest using this key. Specify the key ARN.</summary>
+    /// <summary>Key ARN used to encrypt the custom model at rest.</summary>
     [JsonPropertyName("customModelKmsKeyId")]
     public string? CustomModelKmsKeyId { get; set; }
 
@@ -737,7 +737,7 @@ public partial class V1beta1CustomModelSpecForProvider
     [JsonPropertyName("customModelName")]
     public string? CustomModelName { get; set; }
 
-    /// <summary>The customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
+    /// <summary>Customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
     [JsonPropertyName("customizationType")]
     public string? CustomizationType { get; set; }
 
@@ -745,11 +745,11 @@ public partial class V1beta1CustomModelSpecForProvider
     [JsonPropertyName("hyperparameters")]
     public IDictionary<string, string>? Hyperparameters { get; set; }
 
-    /// <summary>A name for the customization job.</summary>
+    /// <summary>Name for the customization job.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
-    /// <summary>S3 location for the output data.</summary>
+    /// <summary>S3 location for the output data. See output_data_config below.</summary>
     [JsonPropertyName("outputDataConfig")]
     public V1beta1CustomModelSpecForProviderOutputDataConfig? OutputDataConfig { get; set; }
 
@@ -776,15 +776,15 @@ public partial class V1beta1CustomModelSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Information about the training dataset.</summary>
+    /// <summary>Information about the training dataset. See training_data_config below.</summary>
     [JsonPropertyName("trainingDataConfig")]
     public V1beta1CustomModelSpecForProviderTrainingDataConfig? TrainingDataConfig { get; set; }
 
-    /// <summary>Information about the validation dataset.</summary>
+    /// <summary>Information about the validation dataset. See validation_data_config below.</summary>
     [JsonPropertyName("validationDataConfig")]
     public V1beta1CustomModelSpecForProviderValidationDataConfig? ValidationDataConfig { get; set; }
 
-    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1CustomModelSpecForProviderVpcConfig? VpcConfig { get; set; }
 }
@@ -936,12 +936,12 @@ public partial class V1beta1CustomModelSpecInitProviderCustomModelKmsKeyIdSelect
     public V1beta1CustomModelSpecInitProviderCustomModelKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>S3 location for the output data.</summary>
+/// <summary>S3 location for the output data. See output_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecInitProviderOutputDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the output data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
@@ -1093,12 +1093,12 @@ public partial class V1beta1CustomModelSpecInitProviderRoleArnSelector
     public V1beta1CustomModelSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Information about the training dataset.</summary>
+/// <summary>Information about the training dataset. See training_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecInitProviderTrainingDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
@@ -1107,17 +1107,17 @@ public partial class V1beta1CustomModelSpecInitProviderTrainingDataConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecInitProviderValidationDataConfigValidator
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
 
-/// <summary>Information about the validation dataset.</summary>
+/// <summary>Information about the validation dataset. See validation_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecInitProviderValidationDataConfig
 {
-    /// <summary>Information about the validators.</summary>
+    /// <summary>Information about the validators. See validator below.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1CustomModelSpecInitProviderValidationDataConfigValidator>? Validator { get; set; }
 }
@@ -1416,7 +1416,7 @@ public partial class V1beta1CustomModelSpecInitProviderVpcConfigSubnetIdSelector
     public V1beta1CustomModelSpecInitProviderVpcConfigSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelSpecInitProviderVpcConfig
@@ -1466,7 +1466,7 @@ public partial class V1beta1CustomModelSpecInitProvider
     [JsonPropertyName("baseModelIdentifier")]
     public string? BaseModelIdentifier { get; set; }
 
-    /// <summary>The custom model is encrypted at rest using this key. Specify the key ARN.</summary>
+    /// <summary>Key ARN used to encrypt the custom model at rest.</summary>
     [JsonPropertyName("customModelKmsKeyId")]
     public string? CustomModelKmsKeyId { get; set; }
 
@@ -1482,7 +1482,7 @@ public partial class V1beta1CustomModelSpecInitProvider
     [JsonPropertyName("customModelName")]
     public string? CustomModelName { get; set; }
 
-    /// <summary>The customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
+    /// <summary>Customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
     [JsonPropertyName("customizationType")]
     public string? CustomizationType { get; set; }
 
@@ -1490,11 +1490,11 @@ public partial class V1beta1CustomModelSpecInitProvider
     [JsonPropertyName("hyperparameters")]
     public IDictionary<string, string>? Hyperparameters { get; set; }
 
-    /// <summary>A name for the customization job.</summary>
+    /// <summary>Name for the customization job.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
-    /// <summary>S3 location for the output data.</summary>
+    /// <summary>S3 location for the output data. See output_data_config below.</summary>
     [JsonPropertyName("outputDataConfig")]
     public V1beta1CustomModelSpecInitProviderOutputDataConfig? OutputDataConfig { get; set; }
 
@@ -1514,15 +1514,15 @@ public partial class V1beta1CustomModelSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Information about the training dataset.</summary>
+    /// <summary>Information about the training dataset. See training_data_config below.</summary>
     [JsonPropertyName("trainingDataConfig")]
     public V1beta1CustomModelSpecInitProviderTrainingDataConfig? TrainingDataConfig { get; set; }
 
-    /// <summary>Information about the validation dataset.</summary>
+    /// <summary>Information about the validation dataset. See validation_data_config below.</summary>
     [JsonPropertyName("validationDataConfig")]
     public V1beta1CustomModelSpecInitProviderValidationDataConfig? ValidationDataConfig { get; set; }
 
-    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1CustomModelSpecInitProviderVpcConfig? VpcConfig { get; set; }
 }
@@ -1710,22 +1710,22 @@ public partial class V1beta1CustomModelSpec
     public V1beta1CustomModelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>S3 location for the output data.</summary>
+/// <summary>S3 location for the output data. See output_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderOutputDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the output data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
 
-/// <summary>Information about the training dataset.</summary>
+/// <summary>Information about the training dataset. See training_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderTrainingDataConfig
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
@@ -1744,17 +1744,17 @@ public partial class V1beta1CustomModelStatusAtProviderTrainingMetrics
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderValidationDataConfigValidator
 {
-    /// <summary>The S3 URI where the output data is stored.</summary>
+    /// <summary>S3 URI where the training data is stored.</summary>
     [JsonPropertyName("s3Uri")]
     public string? S3Uri { get; set; }
 }
 
-/// <summary>Information about the validation dataset.</summary>
+/// <summary>Information about the validation dataset. See validation_data_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderValidationDataConfig
 {
-    /// <summary>Information about the validators.</summary>
+    /// <summary>Information about the validators. See validator below.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1CustomModelStatusAtProviderValidationDataConfigValidator>? Validator { get; set; }
 }
@@ -1763,12 +1763,12 @@ public partial class V1beta1CustomModelStatusAtProviderValidationDataConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderValidationMetrics
 {
-    /// <summary>The validation loss associated with the validator.</summary>
+    /// <summary>Validation loss associated with the validator.</summary>
     [JsonPropertyName("validationLoss")]
     public double? ValidationLoss { get; set; }
 }
 
-/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+/// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomModelStatusAtProviderVpcConfig
@@ -1790,11 +1790,11 @@ public partial class V1beta1CustomModelStatusAtProvider
     [JsonPropertyName("baseModelIdentifier")]
     public string? BaseModelIdentifier { get; set; }
 
-    /// <summary>The ARN of the output model.</summary>
+    /// <summary>ARN of the output model.</summary>
     [JsonPropertyName("customModelArn")]
     public string? CustomModelArn { get; set; }
 
-    /// <summary>The custom model is encrypted at rest using this key. Specify the key ARN.</summary>
+    /// <summary>Key ARN used to encrypt the custom model at rest.</summary>
     [JsonPropertyName("customModelKmsKeyId")]
     public string? CustomModelKmsKeyId { get; set; }
 
@@ -1802,7 +1802,7 @@ public partial class V1beta1CustomModelStatusAtProvider
     [JsonPropertyName("customModelName")]
     public string? CustomModelName { get; set; }
 
-    /// <summary>The customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
+    /// <summary>Customization type. Valid values: FINE_TUNING, CONTINUED_PRE_TRAINING.</summary>
     [JsonPropertyName("customizationType")]
     public string? CustomizationType { get; set; }
 
@@ -1813,19 +1813,19 @@ public partial class V1beta1CustomModelStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the customization job.</summary>
+    /// <summary>ARN of the customization job.</summary>
     [JsonPropertyName("jobArn")]
     public string? JobArn { get; set; }
 
-    /// <summary>A name for the customization job.</summary>
+    /// <summary>Name for the customization job.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
-    /// <summary>The status of the customization job. A successful job transitions from InProgress to Completed when the output model is ready to use.</summary>
+    /// <summary>Status of the customization job. A successful job transitions from InProgress to Completed when the output model is ready to use.</summary>
     [JsonPropertyName("jobStatus")]
     public string? JobStatus { get; set; }
 
-    /// <summary>S3 location for the output data.</summary>
+    /// <summary>S3 location for the output data. See output_data_config below.</summary>
     [JsonPropertyName("outputDataConfig")]
     public V1beta1CustomModelStatusAtProviderOutputDataConfig? OutputDataConfig { get; set; }
 
@@ -1848,7 +1848,7 @@ public partial class V1beta1CustomModelStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Information about the training dataset.</summary>
+    /// <summary>Information about the training dataset. See training_data_config below.</summary>
     [JsonPropertyName("trainingDataConfig")]
     public V1beta1CustomModelStatusAtProviderTrainingDataConfig? TrainingDataConfig { get; set; }
 
@@ -1856,15 +1856,15 @@ public partial class V1beta1CustomModelStatusAtProvider
     [JsonPropertyName("trainingMetrics")]
     public V1beta1CustomModelStatusAtProviderTrainingMetrics? TrainingMetrics { get; set; }
 
-    /// <summary>Information about the validation dataset.</summary>
+    /// <summary>Information about the validation dataset. See validation_data_config below.</summary>
     [JsonPropertyName("validationDataConfig")]
     public V1beta1CustomModelStatusAtProviderValidationDataConfig? ValidationDataConfig { get; set; }
 
-    /// <summary>The loss metric for each validator that you provided.</summary>
+    /// <summary>Loss metric for each validator that you provided.</summary>
     [JsonPropertyName("validationMetrics")]
     public IList<V1beta1CustomModelStatusAtProviderValidationMetrics>? ValidationMetrics { get; set; }
 
-    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job.</summary>
+    /// <summary>Configuration parameters for the private VPC that contains the resources you are using for this job. See vpc_config below.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1CustomModelStatusAtProviderVpcConfig? VpcConfig { get; set; }
 }

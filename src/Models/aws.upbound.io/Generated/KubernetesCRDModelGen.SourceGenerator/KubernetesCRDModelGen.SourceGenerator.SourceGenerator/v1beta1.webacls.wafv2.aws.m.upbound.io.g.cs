@@ -42,7 +42,7 @@ public partial class V1beta1WebACLList : IKubernetesObject<V1ListMeta>, IItems<V
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApiGateway
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -52,7 +52,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyAppRunnerService
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -62,7 +62,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCloudfront
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -72,17 +72,17 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyClo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCognitoUserPool
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-/// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+/// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -107,12 +107,12 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBody
     [JsonPropertyName("cognitoUserPool")]
     public V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCognitoUserPool? CognitoUserPool { get; set; }
 
-    /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+    /// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
     [JsonPropertyName("verifiedAccessInstance")]
     public V1beta1WebACLSpecForProviderAssociationConfigRequestBodyVerifiedAccessInstance? VerifiedAccessInstance { get; set; }
 }
 
-/// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+/// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfig
@@ -122,42 +122,42 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfig
     public IList<V1beta1WebACLSpecForProviderAssociationConfigRequestBody>? RequestBody { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderCaptchaConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderCaptchaConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLSpecForProviderCaptchaConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderChallengeConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderChallengeConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLSpecForProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
@@ -179,7 +179,7 @@ public partial class V1beta1WebACLSpecForProviderCustomResponseBody
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+/// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtectionField
@@ -188,7 +188,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtect
     [JsonPropertyName("fieldKeys")]
     public IList<string>? FieldKeys { get; set; }
 
-    /// <summary>Specifies the web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
+    /// <summary>Web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
     [JsonPropertyName("fieldType")]
     public string? FieldType { get; set; }
 }
@@ -197,7 +197,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtection
 {
-    /// <summary>Specifies how to protect the field. Valid values are SUBSTITUTION or HASH.</summary>
+    /// <summary>Protection behavior to apply to the field. Valid values are SUBSTITUTION or HASH.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -209,17 +209,17 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtect
     [JsonPropertyName("excludeRuleMatchDetails")]
     public bool? ExcludeRuleMatchDetails { get; set; }
 
-    /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+    /// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
     [JsonPropertyName("field")]
     public V1beta1WebACLSpecForProviderDataProtectionConfigDataProtectionField? Field { get; set; }
 }
 
-/// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+/// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfig
 {
-    /// <summary>A block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
+    /// <summary>Block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
     [JsonPropertyName("dataProtection")]
     public IList<V1beta1WebACLSpecForProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
@@ -237,22 +237,22 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequest
     public string? Value { get; set; }
 }
 
-/// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+/// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandling
 {
-    /// <summary>The insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
+    /// <summary>insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
     [JsonPropertyName("insertHeader")]
     public IList<V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandlingInsertHeader>? InsertHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+/// <summary>Allows requests by default. See allow below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllow
 {
-    /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+    /// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
     [JsonPropertyName("customRequestHandling")]
     public V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
@@ -270,7 +270,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomRespons
     public string? Value { get; set; }
 }
 
-/// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+/// <summary>Custom response for the web request. See custom_response below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponse
@@ -279,21 +279,21 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomRespons
     [JsonPropertyName("customResponseBodyKey")]
     public string? CustomResponseBodyKey { get; set; }
 
-    /// <summary>The HTTP status code to return to the client.</summary>
+    /// <summary>HTTP status code to return to the client.</summary>
     [JsonPropertyName("responseCode")]
     public double? ResponseCode { get; set; }
 
-    /// <summary>The response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
+    /// <summary>response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
     [JsonPropertyName("responseHeader")]
     public IList<V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponseResponseHeader>? ResponseHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+/// <summary>Blocks requests by default. See block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlock
 {
-    /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+    /// <summary>Custom response for the web request. See custom_response below for details.</summary>
     [JsonPropertyName("customResponse")]
     public V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponse? CustomResponse { get; set; }
 }
@@ -303,16 +303,71 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlock
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultAction
 {
-    /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+    /// <summary>Allows requests by default. See allow below for details.</summary>
     [JsonPropertyName("allow")]
     public V1beta1WebACLSpecForProviderDefaultActionAllow? Allow { get; set; }
 
-    /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+    /// <summary>Blocks requests by default. See block below for details.</summary>
     [JsonPropertyName("block")]
     public V1beta1WebACLSpecForProviderDefaultActionBlock? Block { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecForProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1WebACLSpecForProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderVisibilityConfig
@@ -321,7 +376,7 @@ public partial class V1beta1WebACLSpecForProviderVisibilityConfig
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
@@ -334,23 +389,23 @@ public partial class V1beta1WebACLSpecForProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProvider
 {
-    /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+    /// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
     [JsonPropertyName("associationConfig")]
     public V1beta1WebACLSpecForProviderAssociationConfig? AssociationConfig { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
     [JsonPropertyName("captchaConfig")]
     public V1beta1WebACLSpecForProviderCaptchaConfig? CaptchaConfig { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
     [JsonPropertyName("challengeConfig")]
     public V1beta1WebACLSpecForProviderChallengeConfig? ChallengeConfig { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1WebACLSpecForProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+    /// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
     [JsonPropertyName("dataProtectionConfig")]
     public V1beta1WebACLSpecForProviderDataProtectionConfig? DataProtectionConfig { get; set; }
 
@@ -361,6 +416,10 @@ public partial class V1beta1WebACLSpecForProvider
     /// <summary>Friendly description of the WebACL.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1WebACLSpecForProviderMonetizationConfig? MonetizationConfig { get; set; }
 
     /// <summary>Friendly name of the WebACL. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
@@ -377,7 +436,7 @@ public partial class V1beta1WebACLSpecForProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the web ACL, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -385,11 +444,11 @@ public partial class V1beta1WebACLSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies the domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
+    /// <summary>Domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
     [JsonPropertyName("tokenDomains")]
     public IList<string>? TokenDomains { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1WebACLSpecForProviderVisibilityConfig? VisibilityConfig { get; set; }
 }
@@ -399,7 +458,7 @@ public partial class V1beta1WebACLSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyApiGateway
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -409,7 +468,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAppRunnerService
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -419,7 +478,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCloudfront
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -429,17 +488,17 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCognitoUserPool
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-/// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+/// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -464,12 +523,12 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBody
     [JsonPropertyName("cognitoUserPool")]
     public V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCognitoUserPool? CognitoUserPool { get; set; }
 
-    /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+    /// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
     [JsonPropertyName("verifiedAccessInstance")]
     public V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyVerifiedAccessInstance? VerifiedAccessInstance { get; set; }
 }
 
-/// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+/// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfig
@@ -479,42 +538,42 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfig
     public IList<V1beta1WebACLSpecInitProviderAssociationConfigRequestBody>? RequestBody { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderCaptchaConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderCaptchaConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLSpecInitProviderCaptchaConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderChallengeConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderChallengeConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLSpecInitProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
@@ -536,7 +595,7 @@ public partial class V1beta1WebACLSpecInitProviderCustomResponseBody
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+/// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtectionField
@@ -545,7 +604,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtec
     [JsonPropertyName("fieldKeys")]
     public IList<string>? FieldKeys { get; set; }
 
-    /// <summary>Specifies the web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
+    /// <summary>Web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
     [JsonPropertyName("fieldType")]
     public string? FieldType { get; set; }
 }
@@ -554,7 +613,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtection
 {
-    /// <summary>Specifies how to protect the field. Valid values are SUBSTITUTION or HASH.</summary>
+    /// <summary>Protection behavior to apply to the field. Valid values are SUBSTITUTION or HASH.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -566,17 +625,17 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtec
     [JsonPropertyName("excludeRuleMatchDetails")]
     public bool? ExcludeRuleMatchDetails { get; set; }
 
-    /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+    /// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
     [JsonPropertyName("field")]
     public V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtectionField? Field { get; set; }
 }
 
-/// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+/// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfig
 {
-    /// <summary>A block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
+    /// <summary>Block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
     [JsonPropertyName("dataProtection")]
     public IList<V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
@@ -594,22 +653,22 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomReques
     public string? Value { get; set; }
 }
 
-/// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+/// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandling
 {
-    /// <summary>The insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
+    /// <summary>insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
     [JsonPropertyName("insertHeader")]
     public IList<V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandlingInsertHeader>? InsertHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+/// <summary>Allows requests by default. See allow below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllow
 {
-    /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+    /// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
     [JsonPropertyName("customRequestHandling")]
     public V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
@@ -627,7 +686,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomRespon
     public string? Value { get; set; }
 }
 
-/// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+/// <summary>Custom response for the web request. See custom_response below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponse
@@ -636,21 +695,21 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomRespon
     [JsonPropertyName("customResponseBodyKey")]
     public string? CustomResponseBodyKey { get; set; }
 
-    /// <summary>The HTTP status code to return to the client.</summary>
+    /// <summary>HTTP status code to return to the client.</summary>
     [JsonPropertyName("responseCode")]
     public double? ResponseCode { get; set; }
 
-    /// <summary>The response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
+    /// <summary>response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
     [JsonPropertyName("responseHeader")]
     public IList<V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponseResponseHeader>? ResponseHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+/// <summary>Blocks requests by default. See block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlock
 {
-    /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+    /// <summary>Custom response for the web request. See custom_response below for details.</summary>
     [JsonPropertyName("customResponse")]
     public V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponse? CustomResponse { get; set; }
 }
@@ -660,16 +719,71 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlock
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultAction
 {
-    /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+    /// <summary>Allows requests by default. See allow below for details.</summary>
     [JsonPropertyName("allow")]
     public V1beta1WebACLSpecInitProviderDefaultActionAllow? Allow { get; set; }
 
-    /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+    /// <summary>Blocks requests by default. See block below for details.</summary>
     [JsonPropertyName("block")]
     public V1beta1WebACLSpecInitProviderDefaultActionBlock? Block { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLSpecInitProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1WebACLSpecInitProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderVisibilityConfig
@@ -678,7 +792,7 @@ public partial class V1beta1WebACLSpecInitProviderVisibilityConfig
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
@@ -703,23 +817,23 @@ public partial class V1beta1WebACLSpecInitProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProvider
 {
-    /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+    /// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
     [JsonPropertyName("associationConfig")]
     public V1beta1WebACLSpecInitProviderAssociationConfig? AssociationConfig { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
     [JsonPropertyName("captchaConfig")]
     public V1beta1WebACLSpecInitProviderCaptchaConfig? CaptchaConfig { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
     [JsonPropertyName("challengeConfig")]
     public V1beta1WebACLSpecInitProviderChallengeConfig? ChallengeConfig { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1WebACLSpecInitProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+    /// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
     [JsonPropertyName("dataProtectionConfig")]
     public V1beta1WebACLSpecInitProviderDataProtectionConfig? DataProtectionConfig { get; set; }
 
@@ -731,6 +845,10 @@ public partial class V1beta1WebACLSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1WebACLSpecInitProviderMonetizationConfig? MonetizationConfig { get; set; }
+
     /// <summary>Friendly name of the WebACL. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -739,7 +857,7 @@ public partial class V1beta1WebACLSpecInitProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the web ACL, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -747,11 +865,11 @@ public partial class V1beta1WebACLSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies the domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
+    /// <summary>Domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
     [JsonPropertyName("tokenDomains")]
     public IList<string>? TokenDomains { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1WebACLSpecInitProviderVisibilityConfig? VisibilityConfig { get; set; }
 }
@@ -868,7 +986,7 @@ public partial class V1beta1WebACLSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyApiGateway
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -878,7 +996,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAppRunnerService
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -888,7 +1006,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCloudfront
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -898,17 +1016,17 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCognitoUserPool
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-/// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+/// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
-    /// <summary>Specifies the maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
+    /// <summary>Maximum size of the web request body component that an associated AWS Verified Access instances should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body. Valid values are KB_16, KB_32, KB_48 and KB_64.</summary>
     [JsonPropertyName("defaultSizeInspectionLimit")]
     public string? DefaultSizeInspectionLimit { get; set; }
 }
@@ -933,12 +1051,12 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBody
     [JsonPropertyName("cognitoUserPool")]
     public V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCognitoUserPool? CognitoUserPool { get; set; }
 
-    /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
+    /// <summary>Customizes the request body that your protected AWS Verified Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
     [JsonPropertyName("verifiedAccessInstance")]
     public V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyVerifiedAccessInstance? VerifiedAccessInstance { get; set; }
 }
 
-/// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+/// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfig
@@ -948,42 +1066,42 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfig
     public IList<V1beta1WebACLStatusAtProviderAssociationConfigRequestBody>? RequestBody { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderCaptchaConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderCaptchaConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLStatusAtProviderCaptchaConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-/// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+/// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderChallengeConfigImmunityTimeProperty
 {
-    /// <summary>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
+    /// <summary>Amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by AWS WAF. The default setting is 300.</summary>
     [JsonPropertyName("immunityTime")]
     public double? ImmunityTime { get; set; }
 }
 
-/// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+/// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderChallengeConfig
 {
-    /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
+    /// <summary>Custom immunity time. See immunity_time_property below for details.</summary>
     [JsonPropertyName("immunityTimeProperty")]
     public V1beta1WebACLStatusAtProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
@@ -1005,7 +1123,7 @@ public partial class V1beta1WebACLStatusAtProviderCustomResponseBody
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+/// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtectionField
@@ -1014,7 +1132,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtec
     [JsonPropertyName("fieldKeys")]
     public IList<string>? FieldKeys { get; set; }
 
-    /// <summary>Specifies the web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
+    /// <summary>Web request component type to protect. Valid Values are SINGLE_HEADER, SINGLE_COOKIE, SINGLE_QUERY_ARGUMENT, QUERY_STRING, BODY.</summary>
     [JsonPropertyName("fieldType")]
     public string? FieldType { get; set; }
 }
@@ -1023,7 +1141,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtection
 {
-    /// <summary>Specifies how to protect the field. Valid values are SUBSTITUTION or HASH.</summary>
+    /// <summary>Protection behavior to apply to the field. Valid values are SUBSTITUTION or HASH.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -1035,17 +1153,17 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtec
     [JsonPropertyName("excludeRuleMatchDetails")]
     public bool? ExcludeRuleMatchDetails { get; set; }
 
-    /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
+    /// <summary>Field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
     [JsonPropertyName("field")]
     public V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtectionField? Field { get; set; }
 }
 
-/// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+/// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfig
 {
-    /// <summary>A block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
+    /// <summary>Block for data protection configurations for specific web request field types. See data_protection block for details.</summary>
     [JsonPropertyName("dataProtection")]
     public IList<V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
@@ -1063,22 +1181,22 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomReques
     public string? Value { get; set; }
 }
 
-/// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+/// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandling
 {
-    /// <summary>The insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
+    /// <summary>insert_header blocks used to define HTTP headers added to the request. See insert_header below for details.</summary>
     [JsonPropertyName("insertHeader")]
     public IList<V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandlingInsertHeader>? InsertHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+/// <summary>Allows requests by default. See allow below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllow
 {
-    /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
+    /// <summary>Custom handling for the web request. See custom_request_handling below for details.</summary>
     [JsonPropertyName("customRequestHandling")]
     public V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
@@ -1096,7 +1214,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomRespon
     public string? Value { get; set; }
 }
 
-/// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+/// <summary>Custom response for the web request. See custom_response below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponse
@@ -1105,21 +1223,21 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomRespon
     [JsonPropertyName("customResponseBodyKey")]
     public string? CustomResponseBodyKey { get; set; }
 
-    /// <summary>The HTTP status code to return to the client.</summary>
+    /// <summary>HTTP status code to return to the client.</summary>
     [JsonPropertyName("responseCode")]
     public double? ResponseCode { get; set; }
 
-    /// <summary>The response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
+    /// <summary>response_header blocks used to define the HTTP response headers added to the response. See response_header below for details.</summary>
     [JsonPropertyName("responseHeader")]
     public IList<V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponseResponseHeader>? ResponseHeader { get; set; }
 }
 
-/// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+/// <summary>Blocks requests by default. See block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlock
 {
-    /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
+    /// <summary>Custom response for the web request. See custom_response below for details.</summary>
     [JsonPropertyName("customResponse")]
     public V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponse? CustomResponse { get; set; }
 }
@@ -1129,16 +1247,71 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlock
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultAction
 {
-    /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
+    /// <summary>Allows requests by default. See allow below for details.</summary>
     [JsonPropertyName("allow")]
     public V1beta1WebACLStatusAtProviderDefaultActionAllow? Allow { get; set; }
 
-    /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
+    /// <summary>Blocks requests by default. See block below for details.</summary>
     [JsonPropertyName("block")]
     public V1beta1WebACLStatusAtProviderDefaultActionBlock? Block { get; set; }
 }
 
-/// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+/// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfigPaymentNetworkPrices
+{
+    /// <summary>Base price amount per request, expressed as a decimal string with up to 3 decimal places. Minimum 0.001, maximum 999999999.999 (for example, &quot;0.001&quot;).</summary>
+    [JsonPropertyName("amount")]
+    public string? Amount { get; set; }
+
+    /// <summary>Currency of the price amount. Valid value is USDC.</summary>
+    [JsonPropertyName("currency")]
+    public string? Currency { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfigPaymentNetwork
+{
+    /// <summary>Blockchain network used for settlement. Valid values are BASE, SOLANA, BASE_SEPOLIA, and SOLANA_DEVNET.</summary>
+    [JsonPropertyName("chain")]
+    public string? Chain { get; set; }
+
+    /// <summary>Price configuration for this payment network. Currently supports a single price entry. See prices below for details.</summary>
+    [JsonPropertyName("prices")]
+    public V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfigPaymentNetworkPrices? Prices { get; set; }
+
+    /// <summary>Payee wallet address on the specified blockchain that receives payments.</summary>
+    [JsonPropertyName("walletAddress")]
+    public string? WalletAddress { get; set; }
+}
+
+/// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfig
+{
+    /// <summary>Blockchain payment networks configured to receive payments. You can specify 1 to 2 networks. See payment_network below for details.</summary>
+    [JsonPropertyName("paymentNetwork")]
+    public IList<V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfigPaymentNetwork>? PaymentNetwork { get; set; }
+}
+
+/// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WebACLStatusAtProviderMonetizationConfig
+{
+    /// <summary>Cryptocurrency payment configuration for the web ACL. See crypto_config below for details.</summary>
+    [JsonPropertyName("cryptoConfig")]
+    public V1beta1WebACLStatusAtProviderMonetizationConfigCryptoConfig? CryptoConfig { get; set; }
+
+    /// <summary>Currency mode for monetized requests. Valid values are TEST and REAL. Defaults to REAL.</summary>
+    [JsonPropertyName("currencyMode")]
+    public string? CurrencyMode { get; set; }
+}
+
+/// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderVisibilityConfig
@@ -1147,7 +1320,7 @@ public partial class V1beta1WebACLStatusAtProviderVisibilityConfig
     [JsonPropertyName("cloudwatchMetricsEnabled")]
     public bool? CloudwatchMetricsEnabled { get; set; }
 
-    /// <summary>A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
+    /// <summary>Friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9) hyphen(-) and underscore (_), with length from one to 128 characters. It can&apos;t contain whitespace or metric names reserved for AWS WAF, for example All and Default_Action.</summary>
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
@@ -1160,15 +1333,15 @@ public partial class V1beta1WebACLStatusAtProviderVisibilityConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProvider
 {
-    /// <summary>The URL to use in SDK integrations with managed rule groups.</summary>
+    /// <summary>URL to use in SDK integrations with managed rule groups.</summary>
     [JsonPropertyName("applicationIntegrationUrl")]
     public string? ApplicationIntegrationUrl { get; set; }
 
-    /// <summary>The ARN of the WAF WebACL.</summary>
+    /// <summary>ARN of the WAF WebACL.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
+    /// <summary>Custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
     [JsonPropertyName("associationConfig")]
     public V1beta1WebACLStatusAtProviderAssociationConfig? AssociationConfig { get; set; }
 
@@ -1176,19 +1349,19 @@ public partial class V1beta1WebACLStatusAtProvider
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles CAPTCHA evaluations at the web ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
     [JsonPropertyName("captchaConfig")]
     public V1beta1WebACLStatusAtProviderCaptchaConfig? CaptchaConfig { get; set; }
 
-    /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
+    /// <summary>Configuration for how AWS WAF handles Challenge evaluations at the web ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
     [JsonPropertyName("challengeConfig")]
     public V1beta1WebACLStatusAtProviderChallengeConfig? ChallengeConfig { get; set; }
 
-    /// <summary>Defines custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
+    /// <summary>Custom response bodies that can be referenced by custom_response actions. See custom_response_body below for details.</summary>
     [JsonPropertyName("customResponseBody")]
     public IList<V1beta1WebACLStatusAtProviderCustomResponseBody>? CustomResponseBody { get; set; }
 
-    /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
+    /// <summary>Data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
     [JsonPropertyName("dataProtectionConfig")]
     public V1beta1WebACLStatusAtProviderDataProtectionConfig? DataProtectionConfig { get; set; }
 
@@ -1200,12 +1373,16 @@ public partial class V1beta1WebACLStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the WAF WebACL.</summary>
+    /// <summary>ID of the WAF WebACL.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     [JsonPropertyName("lockToken")]
     public string? LockToken { get; set; }
+
+    /// <summary>Monetization configuration for the web ACL. Provide this when any rule in the web ACL uses the monetize action. See monetization_config below for details.</summary>
+    [JsonPropertyName("monetizationConfig")]
+    public V1beta1WebACLStatusAtProviderMonetizationConfig? MonetizationConfig { get; set; }
 
     /// <summary>Friendly name of the WebACL. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
@@ -1222,7 +1399,7 @@ public partial class V1beta1WebACLStatusAtProvider
     [JsonPropertyName("ruleJson")]
     public string? RuleJson { get; set; }
 
-    /// <summary>Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
+    /// <summary>Scope of the web ACL, either an AWS CloudFront distribution or a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the region us-east-1 (N. Virginia) on the AWS provider.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
@@ -1234,11 +1411,11 @@ public partial class V1beta1WebACLStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Specifies the domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
+    /// <summary>Domains that AWS WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When AWS WAF provides a token, it uses the domain of the AWS resource that the web ACL is protecting. If you don&apos;t specify a list of token domains, AWS WAF accepts tokens only for the domain of the protected resource. With a token domain list, AWS WAF accepts the resource&apos;s host domain plus all domains in the token domain list, including their prefixed subdomains.</summary>
     [JsonPropertyName("tokenDomains")]
     public IList<string>? TokenDomains { get; set; }
 
-    /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
+    /// <summary>Amazon CloudWatch metrics and web request sample collection configuration. See visibility_config below for details.</summary>
     [JsonPropertyName("visibilityConfig")]
     public V1beta1WebACLStatusAtProviderVisibilityConfig? VisibilityConfig { get; set; }
 }

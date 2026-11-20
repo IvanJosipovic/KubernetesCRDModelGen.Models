@@ -207,11 +207,11 @@ public partial class V1beta1WorkspaceAPIKeySpecForProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceAPIKeySpecForProvider
 {
-    /// <summary>Specifies the name of the API key. Key names must be unique to the workspace.</summary>
+    /// <summary>Name of the API key. Key names must be unique to the workspace.</summary>
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>Specifies the permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
+    /// <summary>Permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
     [JsonPropertyName("keyRole")]
     public string? KeyRole { get; set; }
 
@@ -222,11 +222,11 @@ public partial class V1beta1WorkspaceAPIKeySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
+    /// <summary>Time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the workspace that the API key is valid for.</summary>
+    /// <summary>ID of the workspace that the API key is valid for.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -402,19 +402,19 @@ public partial class V1beta1WorkspaceAPIKeySpecInitProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceAPIKeySpecInitProvider
 {
-    /// <summary>Specifies the name of the API key. Key names must be unique to the workspace.</summary>
+    /// <summary>Name of the API key. Key names must be unique to the workspace.</summary>
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>Specifies the permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
+    /// <summary>Permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
     [JsonPropertyName("keyRole")]
     public string? KeyRole { get; set; }
 
-    /// <summary>Specifies the time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
+    /// <summary>Time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the workspace that the API key is valid for.</summary>
+    /// <summary>ID of the workspace that the API key is valid for.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -617,11 +617,11 @@ public partial class V1beta1WorkspaceAPIKeyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the name of the API key. Key names must be unique to the workspace.</summary>
+    /// <summary>Name of the API key. Key names must be unique to the workspace.</summary>
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>Specifies the permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
+    /// <summary>Permission level of the API key. Valid values are VIEWER, EDITOR, or ADMIN.</summary>
     [JsonPropertyName("keyRole")]
     public string? KeyRole { get; set; }
 
@@ -632,11 +632,11 @@ public partial class V1beta1WorkspaceAPIKeyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
+    /// <summary>Time in seconds until the API key expires. Keys can be valid for up to 30 days.</summary>
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the workspace that the API key is valid for.</summary>
+    /// <summary>ID of the workspace that the API key is valid for.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

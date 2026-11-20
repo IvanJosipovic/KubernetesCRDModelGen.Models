@@ -214,7 +214,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public IList<string>? FailureValues { get; set; }
 
     /// <summary>
-    /// Identifier for the value to match against in the JSON.
+    /// Name of the username field.
     /// Identifier of the JSON field to inspect
     /// </summary>
     [JsonPropertyName("identifier")]
@@ -1636,7 +1636,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public IList<string>? FailureValues { get; set; }
 
     /// <summary>
-    /// Identifier for the value to match against in the JSON.
+    /// Name of the username field.
     /// Identifier of the JSON field to inspect
     /// </summary>
     [JsonPropertyName("identifier")]
@@ -3246,7 +3246,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public IList<string>? FailureValues { get; set; }
 
     /// <summary>
-    /// Identifier for the value to match against in the JSON.
+    /// Name of the username field.
     /// Identifier of the JSON field to inspect
     /// </summary>
     [JsonPropertyName("identifier")]

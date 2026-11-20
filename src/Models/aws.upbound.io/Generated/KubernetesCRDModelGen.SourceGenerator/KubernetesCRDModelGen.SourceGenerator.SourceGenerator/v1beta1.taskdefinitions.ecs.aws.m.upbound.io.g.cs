@@ -238,7 +238,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderProxyConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderRuntimePlatform
 {
-    /// <summary>Must be set to either X86_64 or ARM64; see cpu architecture</summary>
+    /// <summary>Must be set to either X86_64 or ARM64; see CPU architecture</summary>
     [JsonPropertyName("cpuArchitecture")]
     public string? CpuArchitecture { get; set; }
 
@@ -327,7 +327,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileSer
     public string? Domain { get; set; }
 }
 
-/// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+/// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfiguration
@@ -383,7 +383,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolume
     [JsonPropertyName("efsVolumeConfiguration")]
     public V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfiguration? EfsVolumeConfiguration { get; set; }
 
-    /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+    /// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
     [JsonPropertyName("fsxWindowsFileServerVolumeConfiguration")]
     public V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfiguration? FsxWindowsFileServerVolumeConfiguration { get; set; }
 
@@ -408,7 +408,7 @@ public partial class V1beta1TaskDefinitionSpecForProvider
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
-    /// <summary>Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
+    /// <summary>Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
     [JsonPropertyName("cpu")]
     public string? Cpu { get; set; }
 
@@ -697,7 +697,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderProxyConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderRuntimePlatform
 {
-    /// <summary>Must be set to either X86_64 or ARM64; see cpu architecture</summary>
+    /// <summary>Must be set to either X86_64 or ARM64; see CPU architecture</summary>
     [JsonPropertyName("cpuArchitecture")]
     public string? CpuArchitecture { get; set; }
 
@@ -786,7 +786,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileSe
     public string? Domain { get; set; }
 }
 
-/// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+/// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfiguration
@@ -842,7 +842,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolume
     [JsonPropertyName("efsVolumeConfiguration")]
     public V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfiguration? EfsVolumeConfiguration { get; set; }
 
-    /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+    /// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
     [JsonPropertyName("fsxWindowsFileServerVolumeConfiguration")]
     public V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfiguration? FsxWindowsFileServerVolumeConfiguration { get; set; }
 
@@ -879,7 +879,7 @@ public partial class V1beta1TaskDefinitionSpecInitProvider
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
-    /// <summary>Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
+    /// <summary>Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
     [JsonPropertyName("cpu")]
     public string? Cpu { get; set; }
 
@@ -1113,7 +1113,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderProxyConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderRuntimePlatform
 {
-    /// <summary>Must be set to either X86_64 or ARM64; see cpu architecture</summary>
+    /// <summary>Must be set to either X86_64 or ARM64; see CPU architecture</summary>
     [JsonPropertyName("cpuArchitecture")]
     public string? CpuArchitecture { get; set; }
 
@@ -1202,7 +1202,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileSe
     public string? Domain { get; set; }
 }
 
-/// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+/// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfiguration
@@ -1258,7 +1258,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolume
     [JsonPropertyName("efsVolumeConfiguration")]
     public V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfiguration? EfsVolumeConfiguration { get; set; }
 
-    /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
+    /// <summary>Configuration block for an FSx Windows File Server volume. Detailed below.</summary>
     [JsonPropertyName("fsxWindowsFileServerVolumeConfiguration")]
     public V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfiguration? FsxWindowsFileServerVolumeConfiguration { get; set; }
 
@@ -1291,7 +1291,7 @@ public partial class V1beta1TaskDefinitionStatusAtProvider
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
-    /// <summary>Number of cpu units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
+    /// <summary>Number of CPU units used by the task. If the requires_compatibilities is FARGATE this field is required.</summary>
     [JsonPropertyName("cpu")]
     public string? Cpu { get; set; }
 

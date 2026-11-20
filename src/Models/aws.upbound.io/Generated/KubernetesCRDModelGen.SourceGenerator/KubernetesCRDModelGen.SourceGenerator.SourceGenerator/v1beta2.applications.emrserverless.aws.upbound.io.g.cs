@@ -280,11 +280,11 @@ public partial class V1beta2ApplicationSpecForProviderMonitoringConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderNetworkConfiguration
 {
-    /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of security group IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The array of subnet Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of subnet IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -615,11 +615,11 @@ public partial class V1beta2ApplicationSpecInitProviderMonitoringConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderNetworkConfiguration
 {
-    /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of security group IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The array of subnet Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of subnet IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -1138,11 +1138,11 @@ public partial class V1beta2ApplicationStatusAtProviderMonitoringConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderNetworkConfiguration
 {
-    /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of security group IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The array of subnet Ids for customer VPC connectivity.</summary>
+    /// <summary>The array of subnet IDs for customer VPC connectivity.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }

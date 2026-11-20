@@ -719,7 +719,7 @@ public partial class V1beta1ProjectSpecForProviderSecondarySourcesBuildStatusCon
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]
@@ -999,7 +999,7 @@ public partial class V1beta1ProjectSpecForProviderSourceBuildStatusConfig
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]
@@ -2418,7 +2418,7 @@ public partial class V1beta1ProjectSpecInitProviderSecondarySourcesBuildStatusCo
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]
@@ -2698,7 +2698,7 @@ public partial class V1beta1ProjectSpecInitProviderSourceBuildStatusConfig
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]
@@ -4066,7 +4066,7 @@ public partial class V1beta1ProjectStatusAtProviderSecondarySourcesBuildStatusCo
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]
@@ -4191,7 +4191,7 @@ public partial class V1beta1ProjectStatusAtProviderSourceBuildStatusConfig
     public string? Context { get; set; }
 
     /// <summary>
-    /// Specifies the target url of the build status CodeBuild sends to the source provider. The
+    /// Specifies the target URL of the build status CodeBuild sends to the source provider. The
     /// usage of this parameter depends on the source provider.
     /// </summary>
     [JsonPropertyName("targetUrl")]

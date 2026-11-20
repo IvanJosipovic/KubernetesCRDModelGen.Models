@@ -484,7 +484,7 @@ public partial class V1beta1LBCertificateStatusAtProvider
     [JsonPropertyName("domainValidationRecords")]
     public IList<V1beta1LBCertificateStatusAtProviderDomainValidationRecords>? DomainValidationRecords { get; set; }
 
-    /// <summary>Combination of attributes to create a unique id: lb_name,name</summary>
+    /// <summary>Combination of attributes to create a unique ID: lb_name,name</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

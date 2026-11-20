@@ -350,12 +350,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationAp
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationFileKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+/// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN for the S3 bucket containing the application code.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -367,7 +367,7 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationAp
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>File key for the object containing the application code.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
@@ -379,59 +379,59 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationAp
     [JsonPropertyName("fileKeySelector")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationFileKeySelector? FileKeySelector { get; set; }
 
-    /// <summary>The version of the object containing the application code.</summary>
+    /// <summary>Version of the object containing the application code.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
 
-/// <summary>The location and type of the application code.</summary>
+/// <summary>Location and type of the application code. See code_content Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContent
 {
-    /// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+    /// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
     [JsonPropertyName("s3ContentLocation")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation? S3ContentLocation { get; set; }
 
-    /// <summary>The text-format code for the application.</summary>
+    /// <summary>Text-format code for the application.</summary>
     [JsonPropertyName("textContent")]
     public string? TextContent { get; set; }
 }
 
-/// <summary>The code location and type parameters for the application.</summary>
+/// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfiguration
 {
-    /// <summary>The location and type of the application code.</summary>
+    /// <summary>Location and type of the application code. See code_content Block below.</summary>
     [JsonPropertyName("codeContent")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfigurationCodeContent? CodeContent { get; set; }
 
-    /// <summary>Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
+    /// <summary>Whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
     [JsonPropertyName("codeContentType")]
     public string? CodeContentType { get; set; }
 }
 
-/// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+/// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationEncryptionConfiguration
 {
-    /// <summary>The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.</summary>
+    /// <summary>ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same Region as the application.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
+    /// <summary>Type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+/// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationSnapshotConfiguration
 {
-    /// <summary>Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether snapshots are enabled for a Flink-based application.</summary>
     [JsonPropertyName("snapshotsEnabled")]
     public bool? SnapshotsEnabled { get; set; }
 }
@@ -440,7 +440,7 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup
 {
-    /// <summary>The key of the application execution property key-value map.</summary>
+    /// <summary>Key of the application execution property key-value map.</summary>
     [JsonPropertyName("propertyGroupId")]
     public string? PropertyGroupId { get; set; }
 
@@ -449,163 +449,160 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationEn
     public IDictionary<string, string>? PropertyMap { get; set; }
 }
 
-/// <summary>Describes execution properties for a Flink-based application.</summary>
+/// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationEnvironmentProperties
 {
-    /// <summary>Describes the execution property groups.</summary>
+    /// <summary>Execution property groups. See property_group Block below.</summary>
     [JsonPropertyName("propertyGroup")]
     public IList<V1beta2ApplicationSpecForProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup>? PropertyGroup { get; set; }
 }
 
-/// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+/// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
 {
-    /// <summary>Describes the interval in milliseconds between checkpoint operations.</summary>
+    /// <summary>Interval in milliseconds between checkpoint operations.</summary>
     [JsonPropertyName("checkpointInterval")]
     public double? CheckpointInterval { get; set; }
 
-    /// <summary>Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether checkpointing is enabled for a Flink-based application.</summary>
     [JsonPropertyName("checkpointingEnabled")]
     public bool? CheckpointingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
+    /// <summary>Minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
     [JsonPropertyName("minPauseBetweenCheckpoints")]
     public double? MinPauseBetweenCheckpoints { get; set; }
 }
 
-/// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+/// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
 {
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
+    /// <summary>Verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Describes the granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
+    /// <summary>Granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
     [JsonPropertyName("metricsLevel")]
     public string? MetricsLevel { get; set; }
 }
 
-/// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+/// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
 {
-    /// <summary>Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
+    /// <summary>Whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
     [JsonPropertyName("autoScalingEnabled")]
     public bool? AutoScalingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the initial number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform.</summary>
+    /// <summary>Initial number of parallel tasks that a Flink-based application can perform.</summary>
     [JsonPropertyName("parallelism")]
     public double? Parallelism { get; set; }
 
-    /// <summary>Describes the number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
+    /// <summary>Number of parallel tasks that a Flink-based application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
     [JsonPropertyName("parallelismPerKpu")]
     public double? ParallelismPerKpu { get; set; }
 }
 
-/// <summary>The configuration of a Flink-based application.</summary>
+/// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfiguration
 {
-    /// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+    /// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
     [JsonPropertyName("checkpointConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration? CheckpointConfiguration { get; set; }
 
-    /// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+    /// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
     [JsonPropertyName("monitoringConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration? MonitoringConfiguration { get; set; }
 
-    /// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+    /// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
     [JsonPropertyName("parallelismConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration? ParallelismConfiguration { get; set; }
 }
 
-/// <summary>The restore behavior of a restarting application.</summary>
+/// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration
 {
-    /// <summary>Specifies how the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
+    /// <summary>How the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
     [JsonPropertyName("applicationRestoreType")]
     public string? ApplicationRestoreType { get; set; }
 
-    /// <summary>The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
+    /// <summary>Identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 }
 
-/// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+/// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration
 {
-    /// <summary>When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. Default is false.</summary>
+    /// <summary>Whether the runtime is allowed to skip a state that cannot be mapped to the new program when restoring from a snapshot. Default is false.</summary>
     [JsonPropertyName("allowNonRestoredState")]
     public bool? AllowNonRestoredState { get; set; }
 }
 
-/// <summary>Describes the starting properties for a Flink-based application.</summary>
+/// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfiguration
 {
-    /// <summary>The restore behavior of a restarting application.</summary>
+    /// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
     [JsonPropertyName("applicationRestoreConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration? ApplicationRestoreConfiguration { get; set; }
 
-    /// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
     [JsonPropertyName("flinkRunConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration? FlinkRunConfiguration { get; set; }
 }
 
-/// <summary>Describes the number of in-application streams to create.</summary>
+/// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism
 {
-    /// <summary>The number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+/// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>
-/// The input processing configuration for the input.
-/// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-/// </summary>
+/// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
 {
-    /// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+    /// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
     [JsonPropertyName("inputLambdaProcessor")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor? InputLambdaProcessor { get; set; }
 }
@@ -614,85 +611,85 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -701,17 +698,17 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("inputStartingPosition")]
     public string? InputStartingPosition { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -863,12 +860,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -881,49 +878,46 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelector? ResourceArnSelector { get; set; }
 }
 
-/// <summary>The input stream used by the application.</summary>
+/// <summary>Input stream used by the application. See input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInput
 {
-    /// <summary>Describes the number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
     [JsonPropertyName("inputParallelism")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism? InputParallelism { get; set; }
 
-    /// <summary>
-    /// The input processing configuration for the input.
-    /// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-    /// </summary>
+    /// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
     [JsonPropertyName("inputProcessingConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration? InputProcessingConfiguration { get; set; }
 
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema? InputSchema { get; set; }
 
-    /// <summary>The point at which the application starts processing records from the streaming source.</summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See input_starting_position_configuration Block below.</summary>
     [JsonPropertyName("inputStartingPositionConfiguration")]
     public IList<V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration>? InputStartingPositionConfiguration { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 
-    /// <summary>The name prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 }
 
-/// <summary>Describes the data format when records are written to the destination.</summary>
+/// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
 {
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
@@ -1075,12 +1069,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+/// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -1093,12 +1087,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputResourceArnSelector? ResourceArnSelector { get; set; }
 }
 
-/// <summary>Identifies a Kinesis data stream as the destination.</summary>
+/// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -1250,12 +1244,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies a Lambda function as the destination.</summary>
+/// <summary>Destination Lambda function. See lambda_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -1272,23 +1266,23 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutput
 {
-    /// <summary>Describes the data format when records are written to the destination.</summary>
+    /// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
     [JsonPropertyName("destinationSchema")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema? DestinationSchema { get; set; }
 
-    /// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+    /// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
     [JsonPropertyName("kinesisFirehoseOutput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput? KinesisFirehoseOutput { get; set; }
 
-    /// <summary>Identifies a Kinesis data stream as the destination.</summary>
+    /// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
     [JsonPropertyName("kinesisStreamsOutput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput? KinesisStreamsOutput { get; set; }
 
-    /// <summary>Identifies a Lambda function as the destination.</summary>
+    /// <summary>Destination Lambda function. See lambda_output Block below.</summary>
     [JsonPropertyName("lambdaOutput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput? LambdaOutput { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1297,85 +1291,85 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -1527,12 +1521,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+/// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -1544,43 +1538,43 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>Object key name containing the reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 }
 
-/// <summary>The reference data source used by the application.</summary>
+/// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
 {
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
     [JsonPropertyName("referenceSchema")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema? ReferenceSchema { get; set; }
 
-    /// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+    /// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
     [JsonPropertyName("s3ReferenceDataSource")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource? S3ReferenceDataSource { get; set; }
 
-    /// <summary>The name of the in-application table to create.</summary>
+    /// <summary>Name of the in-application table to create.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
 
-/// <summary>The configuration of a SQL-based application.</summary>
+/// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfiguration
 {
-    /// <summary>The input stream used by the application.</summary>
+    /// <summary>Input stream used by the application. See input Block below.</summary>
     [JsonPropertyName("input")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInput? Input { get; set; }
 
-    /// <summary>The destination streams used by the application.</summary>
+    /// <summary>Destination streams used by the application. See output Block below.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationOutput>? Output { get; set; }
 
-    /// <summary>The reference data source used by the application.</summary>
+    /// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
     [JsonPropertyName("referenceDataSource")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource? ReferenceDataSource { get; set; }
 }
@@ -1879,12 +1873,12 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationVp
     public V1beta2ApplicationSpecForProviderApplicationConfigurationVpcConfigurationSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration of a Flink-based application.</summary>
+/// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationVpcConfiguration
 {
-    /// <summary>The Security Group IDs used by the VPC configuration.</summary>
+    /// <summary>Security Group IDs used by the VPC configuration.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -1896,7 +1890,7 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationVp
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationVpcConfigurationSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The Subnet IDs used by the VPC configuration.</summary>
+    /// <summary>Subnet IDs used by the VPC configuration.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1909,40 +1903,40 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationVp
     public V1beta2ApplicationSpecForProviderApplicationConfigurationVpcConfigurationSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
-/// <summary>The application&apos;s configuration</summary>
+/// <summary>Application configuration. See application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfiguration
 {
-    /// <summary>The code location and type parameters for the application.</summary>
+    /// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
     [JsonPropertyName("applicationCodeConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationCodeConfiguration? ApplicationCodeConfiguration { get; set; }
 
-    /// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+    /// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
     [JsonPropertyName("applicationEncryptionConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationEncryptionConfiguration? ApplicationEncryptionConfiguration { get; set; }
 
-    /// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+    /// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
     [JsonPropertyName("applicationSnapshotConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationApplicationSnapshotConfiguration? ApplicationSnapshotConfiguration { get; set; }
 
-    /// <summary>Describes execution properties for a Flink-based application.</summary>
+    /// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
     [JsonPropertyName("environmentProperties")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationEnvironmentProperties? EnvironmentProperties { get; set; }
 
-    /// <summary>The configuration of a Flink-based application.</summary>
+    /// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
     [JsonPropertyName("flinkApplicationConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationFlinkApplicationConfiguration? FlinkApplicationConfiguration { get; set; }
 
-    /// <summary>Describes the starting properties for a Flink-based application.</summary>
+    /// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
     [JsonPropertyName("runConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationRunConfiguration? RunConfiguration { get; set; }
 
-    /// <summary>The configuration of a SQL-based application.</summary>
+    /// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
     [JsonPropertyName("sqlApplicationConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfiguration? SqlApplicationConfiguration { get; set; }
 
-    /// <summary>The VPC configuration of a Flink-based application.</summary>
+    /// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -2094,12 +2088,12 @@ public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsLo
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsLogStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+/// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions
 {
-    /// <summary>The ARN of the CloudWatch log stream to receive application messages.</summary>
+    /// <summary>ARN of the CloudWatch log stream to receive application messages.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 
@@ -2263,19 +2257,19 @@ public partial class V1beta2ApplicationSpecForProviderServiceExecutionRoleSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProvider
 {
-    /// <summary>The application&apos;s configuration</summary>
+    /// <summary>Application configuration. See application_configuration Block below.</summary>
     [JsonPropertyName("applicationConfiguration")]
     public V1beta2ApplicationSpecForProviderApplicationConfiguration? ApplicationConfiguration { get; set; }
 
-    /// <summary>The application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
+    /// <summary>Application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
     [JsonPropertyName("applicationMode")]
     public string? ApplicationMode { get; set; }
 
-    /// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+    /// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>A summary description of the application.</summary>
+    /// <summary>Summary description of the application.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -2290,11 +2284,11 @@ public partial class V1beta2ApplicationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
+    /// <summary>Runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2, FLINK-2_3.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
+    /// <summary>ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
     [JsonPropertyName("serviceExecutionRole")]
     public string? ServiceExecutionRole { get; set; }
 
@@ -2609,12 +2603,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationA
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationFileKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+/// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN for the S3 bucket containing the application code.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -2626,7 +2620,7 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationA
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>File key for the object containing the application code.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
@@ -2638,59 +2632,59 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationA
     [JsonPropertyName("fileKeySelector")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationFileKeySelector? FileKeySelector { get; set; }
 
-    /// <summary>The version of the object containing the application code.</summary>
+    /// <summary>Version of the object containing the application code.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
 
-/// <summary>The location and type of the application code.</summary>
+/// <summary>Location and type of the application code. See code_content Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContent
 {
-    /// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+    /// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
     [JsonPropertyName("s3ContentLocation")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation? S3ContentLocation { get; set; }
 
-    /// <summary>The text-format code for the application.</summary>
+    /// <summary>Text-format code for the application.</summary>
     [JsonPropertyName("textContent")]
     public string? TextContent { get; set; }
 }
 
-/// <summary>The code location and type parameters for the application.</summary>
+/// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfiguration
 {
-    /// <summary>The location and type of the application code.</summary>
+    /// <summary>Location and type of the application code. See code_content Block below.</summary>
     [JsonPropertyName("codeContent")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfigurationCodeContent? CodeContent { get; set; }
 
-    /// <summary>Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
+    /// <summary>Whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
     [JsonPropertyName("codeContentType")]
     public string? CodeContentType { get; set; }
 }
 
-/// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+/// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationEncryptionConfiguration
 {
-    /// <summary>The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.</summary>
+    /// <summary>ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same Region as the application.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
+    /// <summary>Type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+/// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationSnapshotConfiguration
 {
-    /// <summary>Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether snapshots are enabled for a Flink-based application.</summary>
     [JsonPropertyName("snapshotsEnabled")]
     public bool? SnapshotsEnabled { get; set; }
 }
@@ -2699,7 +2693,7 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup
 {
-    /// <summary>The key of the application execution property key-value map.</summary>
+    /// <summary>Key of the application execution property key-value map.</summary>
     [JsonPropertyName("propertyGroupId")]
     public string? PropertyGroupId { get; set; }
 
@@ -2708,163 +2702,160 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationE
     public IDictionary<string, string>? PropertyMap { get; set; }
 }
 
-/// <summary>Describes execution properties for a Flink-based application.</summary>
+/// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationEnvironmentProperties
 {
-    /// <summary>Describes the execution property groups.</summary>
+    /// <summary>Execution property groups. See property_group Block below.</summary>
     [JsonPropertyName("propertyGroup")]
     public IList<V1beta2ApplicationSpecInitProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup>? PropertyGroup { get; set; }
 }
 
-/// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+/// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
 {
-    /// <summary>Describes the interval in milliseconds between checkpoint operations.</summary>
+    /// <summary>Interval in milliseconds between checkpoint operations.</summary>
     [JsonPropertyName("checkpointInterval")]
     public double? CheckpointInterval { get; set; }
 
-    /// <summary>Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether checkpointing is enabled for a Flink-based application.</summary>
     [JsonPropertyName("checkpointingEnabled")]
     public bool? CheckpointingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
+    /// <summary>Minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
     [JsonPropertyName("minPauseBetweenCheckpoints")]
     public double? MinPauseBetweenCheckpoints { get; set; }
 }
 
-/// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+/// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
 {
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
+    /// <summary>Verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Describes the granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
+    /// <summary>Granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
     [JsonPropertyName("metricsLevel")]
     public string? MetricsLevel { get; set; }
 }
 
-/// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+/// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
 {
-    /// <summary>Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
+    /// <summary>Whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
     [JsonPropertyName("autoScalingEnabled")]
     public bool? AutoScalingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the initial number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform.</summary>
+    /// <summary>Initial number of parallel tasks that a Flink-based application can perform.</summary>
     [JsonPropertyName("parallelism")]
     public double? Parallelism { get; set; }
 
-    /// <summary>Describes the number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
+    /// <summary>Number of parallel tasks that a Flink-based application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
     [JsonPropertyName("parallelismPerKpu")]
     public double? ParallelismPerKpu { get; set; }
 }
 
-/// <summary>The configuration of a Flink-based application.</summary>
+/// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfiguration
 {
-    /// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+    /// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
     [JsonPropertyName("checkpointConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration? CheckpointConfiguration { get; set; }
 
-    /// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+    /// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
     [JsonPropertyName("monitoringConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration? MonitoringConfiguration { get; set; }
 
-    /// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+    /// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
     [JsonPropertyName("parallelismConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration? ParallelismConfiguration { get; set; }
 }
 
-/// <summary>The restore behavior of a restarting application.</summary>
+/// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration
 {
-    /// <summary>Specifies how the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
+    /// <summary>How the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
     [JsonPropertyName("applicationRestoreType")]
     public string? ApplicationRestoreType { get; set; }
 
-    /// <summary>The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
+    /// <summary>Identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 }
 
-/// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+/// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration
 {
-    /// <summary>When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. Default is false.</summary>
+    /// <summary>Whether the runtime is allowed to skip a state that cannot be mapped to the new program when restoring from a snapshot. Default is false.</summary>
     [JsonPropertyName("allowNonRestoredState")]
     public bool? AllowNonRestoredState { get; set; }
 }
 
-/// <summary>Describes the starting properties for a Flink-based application.</summary>
+/// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfiguration
 {
-    /// <summary>The restore behavior of a restarting application.</summary>
+    /// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
     [JsonPropertyName("applicationRestoreConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration? ApplicationRestoreConfiguration { get; set; }
 
-    /// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
     [JsonPropertyName("flinkRunConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration? FlinkRunConfiguration { get; set; }
 }
 
-/// <summary>Describes the number of in-application streams to create.</summary>
+/// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism
 {
-    /// <summary>The number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+/// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>
-/// The input processing configuration for the input.
-/// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-/// </summary>
+/// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
 {
-    /// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+    /// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
     [JsonPropertyName("inputLambdaProcessor")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor? InputLambdaProcessor { get; set; }
 }
@@ -2873,85 +2864,85 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -2960,17 +2951,17 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("inputStartingPosition")]
     public string? InputStartingPosition { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -3122,12 +3113,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -3140,49 +3131,46 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelector? ResourceArnSelector { get; set; }
 }
 
-/// <summary>The input stream used by the application.</summary>
+/// <summary>Input stream used by the application. See input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInput
 {
-    /// <summary>Describes the number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
     [JsonPropertyName("inputParallelism")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism? InputParallelism { get; set; }
 
-    /// <summary>
-    /// The input processing configuration for the input.
-    /// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-    /// </summary>
+    /// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
     [JsonPropertyName("inputProcessingConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration? InputProcessingConfiguration { get; set; }
 
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema? InputSchema { get; set; }
 
-    /// <summary>The point at which the application starts processing records from the streaming source.</summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See input_starting_position_configuration Block below.</summary>
     [JsonPropertyName("inputStartingPositionConfiguration")]
     public IList<V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration>? InputStartingPositionConfiguration { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 
-    /// <summary>The name prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 }
 
-/// <summary>Describes the data format when records are written to the destination.</summary>
+/// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
 {
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
@@ -3334,12 +3322,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+/// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -3352,12 +3340,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputResourceArnSelector? ResourceArnSelector { get; set; }
 }
 
-/// <summary>Identifies a Kinesis data stream as the destination.</summary>
+/// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -3509,12 +3497,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies a Lambda function as the destination.</summary>
+/// <summary>Destination Lambda function. See lambda_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -3531,23 +3519,23 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutput
 {
-    /// <summary>Describes the data format when records are written to the destination.</summary>
+    /// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
     [JsonPropertyName("destinationSchema")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema? DestinationSchema { get; set; }
 
-    /// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+    /// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
     [JsonPropertyName("kinesisFirehoseOutput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput? KinesisFirehoseOutput { get; set; }
 
-    /// <summary>Identifies a Kinesis data stream as the destination.</summary>
+    /// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
     [JsonPropertyName("kinesisStreamsOutput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput? KinesisStreamsOutput { get; set; }
 
-    /// <summary>Identifies a Lambda function as the destination.</summary>
+    /// <summary>Destination Lambda function. See lambda_output Block below.</summary>
     [JsonPropertyName("lambdaOutput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput? LambdaOutput { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -3556,85 +3544,85 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -3786,12 +3774,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+/// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -3803,43 +3791,43 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>Object key name containing the reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 }
 
-/// <summary>The reference data source used by the application.</summary>
+/// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
 {
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
     [JsonPropertyName("referenceSchema")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema? ReferenceSchema { get; set; }
 
-    /// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+    /// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
     [JsonPropertyName("s3ReferenceDataSource")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource? S3ReferenceDataSource { get; set; }
 
-    /// <summary>The name of the in-application table to create.</summary>
+    /// <summary>Name of the in-application table to create.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
 
-/// <summary>The configuration of a SQL-based application.</summary>
+/// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfiguration
 {
-    /// <summary>The input stream used by the application.</summary>
+    /// <summary>Input stream used by the application. See input Block below.</summary>
     [JsonPropertyName("input")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInput? Input { get; set; }
 
-    /// <summary>The destination streams used by the application.</summary>
+    /// <summary>Destination streams used by the application. See output Block below.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationOutput>? Output { get; set; }
 
-    /// <summary>The reference data source used by the application.</summary>
+    /// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
     [JsonPropertyName("referenceDataSource")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource? ReferenceDataSource { get; set; }
 }
@@ -4138,12 +4126,12 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationV
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationVpcConfigurationSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The VPC configuration of a Flink-based application.</summary>
+/// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationVpcConfiguration
 {
-    /// <summary>The Security Group IDs used by the VPC configuration.</summary>
+    /// <summary>Security Group IDs used by the VPC configuration.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -4155,7 +4143,7 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationV
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationVpcConfigurationSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The Subnet IDs used by the VPC configuration.</summary>
+    /// <summary>Subnet IDs used by the VPC configuration.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -4168,40 +4156,40 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationV
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationVpcConfigurationSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
-/// <summary>The application&apos;s configuration</summary>
+/// <summary>Application configuration. See application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfiguration
 {
-    /// <summary>The code location and type parameters for the application.</summary>
+    /// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
     [JsonPropertyName("applicationCodeConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationCodeConfiguration? ApplicationCodeConfiguration { get; set; }
 
-    /// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+    /// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
     [JsonPropertyName("applicationEncryptionConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationEncryptionConfiguration? ApplicationEncryptionConfiguration { get; set; }
 
-    /// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+    /// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
     [JsonPropertyName("applicationSnapshotConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationApplicationSnapshotConfiguration? ApplicationSnapshotConfiguration { get; set; }
 
-    /// <summary>Describes execution properties for a Flink-based application.</summary>
+    /// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
     [JsonPropertyName("environmentProperties")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationEnvironmentProperties? EnvironmentProperties { get; set; }
 
-    /// <summary>The configuration of a Flink-based application.</summary>
+    /// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
     [JsonPropertyName("flinkApplicationConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationFlinkApplicationConfiguration? FlinkApplicationConfiguration { get; set; }
 
-    /// <summary>Describes the starting properties for a Flink-based application.</summary>
+    /// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
     [JsonPropertyName("runConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationRunConfiguration? RunConfiguration { get; set; }
 
-    /// <summary>The configuration of a SQL-based application.</summary>
+    /// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
     [JsonPropertyName("sqlApplicationConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfiguration? SqlApplicationConfiguration { get; set; }
 
-    /// <summary>The VPC configuration of a Flink-based application.</summary>
+    /// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -4353,12 +4341,12 @@ public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsL
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsLogStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+/// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions
 {
-    /// <summary>The ARN of the CloudWatch log stream to receive application messages.</summary>
+    /// <summary>ARN of the CloudWatch log stream to receive application messages.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 
@@ -4534,19 +4522,19 @@ public partial class V1beta2ApplicationSpecInitProviderServiceExecutionRoleSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProvider
 {
-    /// <summary>The application&apos;s configuration</summary>
+    /// <summary>Application configuration. See application_configuration Block below.</summary>
     [JsonPropertyName("applicationConfiguration")]
     public V1beta2ApplicationSpecInitProviderApplicationConfiguration? ApplicationConfiguration { get; set; }
 
-    /// <summary>The application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
+    /// <summary>Application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
     [JsonPropertyName("applicationMode")]
     public string? ApplicationMode { get; set; }
 
-    /// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+    /// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>A summary description of the application.</summary>
+    /// <summary>Summary description of the application.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -4554,11 +4542,11 @@ public partial class V1beta2ApplicationSpecInitProvider
     [JsonPropertyName("forceStop")]
     public bool? ForceStop { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
+    /// <summary>Runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2, FLINK-2_3.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
+    /// <summary>ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
     [JsonPropertyName("serviceExecutionRole")]
     public string? ServiceExecutionRole { get; set; }
 
@@ -4762,72 +4750,72 @@ public partial class V1beta2ApplicationSpec
     public V1beta2ApplicationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+/// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN for the S3 bucket containing the application code.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>File key for the object containing the application code.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
-    /// <summary>The version of the object containing the application code.</summary>
+    /// <summary>Version of the object containing the application code.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 }
 
-/// <summary>The location and type of the application code.</summary>
+/// <summary>Location and type of the application code. See code_content Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfigurationCodeContent
 {
-    /// <summary>Information about the Amazon S3 bucket containing the application code.</summary>
+    /// <summary>Information about the Amazon S3 bucket containing the application code. See s3_content_location Block below.</summary>
     [JsonPropertyName("s3ContentLocation")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation? S3ContentLocation { get; set; }
 
-    /// <summary>The text-format code for the application.</summary>
+    /// <summary>Text-format code for the application.</summary>
     [JsonPropertyName("textContent")]
     public string? TextContent { get; set; }
 }
 
-/// <summary>The code location and type parameters for the application.</summary>
+/// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfiguration
 {
-    /// <summary>The location and type of the application code.</summary>
+    /// <summary>Location and type of the application code. See code_content Block below.</summary>
     [JsonPropertyName("codeContent")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfigurationCodeContent? CodeContent { get; set; }
 
-    /// <summary>Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
+    /// <summary>Whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.</summary>
     [JsonPropertyName("codeContentType")]
     public string? CodeContentType { get; set; }
 }
 
-/// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+/// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationEncryptionConfiguration
 {
-    /// <summary>The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.</summary>
+    /// <summary>ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same Region as the application.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
+    /// <summary>Type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.</summary>
     [JsonPropertyName("keyType")]
     public string? KeyType { get; set; }
 }
 
-/// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+/// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationSnapshotConfiguration
 {
-    /// <summary>Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether snapshots are enabled for a Flink-based application.</summary>
     [JsonPropertyName("snapshotsEnabled")]
     public bool? SnapshotsEnabled { get; set; }
 }
@@ -4836,7 +4824,7 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup
 {
-    /// <summary>The key of the application execution property key-value map.</summary>
+    /// <summary>Key of the application execution property key-value map.</summary>
     [JsonPropertyName("propertyGroupId")]
     public string? PropertyGroupId { get; set; }
 
@@ -4845,163 +4833,160 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationE
     public IDictionary<string, string>? PropertyMap { get; set; }
 }
 
-/// <summary>Describes execution properties for a Flink-based application.</summary>
+/// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationEnvironmentProperties
 {
-    /// <summary>Describes the execution property groups.</summary>
+    /// <summary>Execution property groups. See property_group Block below.</summary>
     [JsonPropertyName("propertyGroup")]
     public IList<V1beta2ApplicationStatusAtProviderApplicationConfigurationEnvironmentPropertiesPropertyGroup>? PropertyGroup { get; set; }
 }
 
-/// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+/// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
 {
-    /// <summary>Describes the interval in milliseconds between checkpoint operations.</summary>
+    /// <summary>Interval in milliseconds between checkpoint operations.</summary>
     [JsonPropertyName("checkpointInterval")]
     public double? CheckpointInterval { get; set; }
 
-    /// <summary>Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Whether checkpointing is enabled for a Flink-based application.</summary>
     [JsonPropertyName("checkpointingEnabled")]
     public bool? CheckpointingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
+    /// <summary>Minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start.</summary>
     [JsonPropertyName("minPauseBetweenCheckpoints")]
     public double? MinPauseBetweenCheckpoints { get; set; }
 }
 
-/// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+/// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
 {
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
+    /// <summary>Verbosity of the CloudWatch Logs for an application. Valid values: DEBUG, ERROR, INFO, WARN.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Describes the granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
+    /// <summary>Granularity of the CloudWatch Logs for an application. Valid values: APPLICATION, OPERATOR, PARALLELISM, TASK.</summary>
     [JsonPropertyName("metricsLevel")]
     public string? MetricsLevel { get; set; }
 }
 
-/// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+/// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
 {
-    /// <summary>Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
+    /// <summary>Whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.</summary>
     [JsonPropertyName("autoScalingEnabled")]
     public bool? AutoScalingEnabled { get; set; }
 
-    /// <summary>Describes whether the application uses Kinesis Data Analytics&apos; default checkpointing behavior. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified checkpointing_enabled, checkpoint_interval, or min_pause_between_checkpoints attribute values to be effective. If this attribute is set to DEFAULT, the application will always use the following values:</summary>
+    /// <summary>Whether the application uses the default parallelism for the Kinesis Data Analytics service. Valid values: CUSTOM, DEFAULT. Set this attribute to CUSTOM in order for any specified auto_scaling_enabled, parallelism, or parallelism_per_kpu attribute values to be effective.</summary>
     [JsonPropertyName("configurationType")]
     public string? ConfigurationType { get; set; }
 
-    /// <summary>Describes the initial number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform.</summary>
+    /// <summary>Initial number of parallel tasks that a Flink-based application can perform.</summary>
     [JsonPropertyName("parallelism")]
     public double? Parallelism { get; set; }
 
-    /// <summary>Describes the number of parallel tasks that a Flink-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
+    /// <summary>Number of parallel tasks that a Flink-based application can perform per Kinesis Processing Unit (KPU) used by the application.</summary>
     [JsonPropertyName("parallelismPerKpu")]
     public double? ParallelismPerKpu { get; set; }
 }
 
-/// <summary>The configuration of a Flink-based application.</summary>
+/// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfiguration
 {
-    /// <summary>Describes an application&apos;s checkpointing configuration.</summary>
+    /// <summary>Application&apos;s checkpointing configuration. See checkpoint_configuration Block below.</summary>
     [JsonPropertyName("checkpointConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration? CheckpointConfiguration { get; set; }
 
-    /// <summary>Describes configuration parameters for CloudWatch logging for an application.</summary>
+    /// <summary>Configuration parameters for CloudWatch logging for an application. See monitoring_configuration Block below.</summary>
     [JsonPropertyName("monitoringConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration? MonitoringConfiguration { get; set; }
 
-    /// <summary>Describes parameters for how an application executes multiple tasks simultaneously.</summary>
+    /// <summary>Parameters for how an application executes multiple tasks simultaneously. See parallelism_configuration Block below.</summary>
     [JsonPropertyName("parallelismConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration? ParallelismConfiguration { get; set; }
 }
 
-/// <summary>The restore behavior of a restarting application.</summary>
+/// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration
 {
-    /// <summary>Specifies how the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
+    /// <summary>How the application should be restored. Valid values: RESTORE_FROM_CUSTOM_SNAPSHOT, RESTORE_FROM_LATEST_SNAPSHOT, SKIP_RESTORE_FROM_SNAPSHOT.</summary>
     [JsonPropertyName("applicationRestoreType")]
     public string? ApplicationRestoreType { get; set; }
 
-    /// <summary>The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
+    /// <summary>Identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for application_restore_type.</summary>
     [JsonPropertyName("snapshotName")]
     public string? SnapshotName { get; set; }
 }
 
-/// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+/// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration
 {
-    /// <summary>When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. Default is false.</summary>
+    /// <summary>Whether the runtime is allowed to skip a state that cannot be mapped to the new program when restoring from a snapshot. Default is false.</summary>
     [JsonPropertyName("allowNonRestoredState")]
     public bool? AllowNonRestoredState { get; set; }
 }
 
-/// <summary>Describes the starting properties for a Flink-based application.</summary>
+/// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfiguration
 {
-    /// <summary>The restore behavior of a restarting application.</summary>
+    /// <summary>Restore behavior of a restarting application. See application_restore_configuration Block below.</summary>
     [JsonPropertyName("applicationRestoreConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfigurationApplicationRestoreConfiguration? ApplicationRestoreConfiguration { get; set; }
 
-    /// <summary>The starting parameters for a Flink-based Kinesis Data Analytics application.</summary>
+    /// <summary>Starting parameters for a Flink-based application. See flink_run_configuration Block below.</summary>
     [JsonPropertyName("flinkRunConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfigurationFlinkRunConfiguration? FlinkRunConfiguration { get; set; }
 }
 
-/// <summary>Describes the number of in-application streams to create.</summary>
+/// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism
 {
-    /// <summary>The number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+/// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>
-/// The input processing configuration for the input.
-/// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-/// </summary>
+/// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
 {
-    /// <summary>Describes the Lambda function that is used to preprocess the records in the stream before being processed by your application code.</summary>
+    /// <summary>Lambda function used to preprocess the records in the stream before being processed by your application code. See input_lambda_processor Block below.</summary>
     [JsonPropertyName("inputLambdaProcessor")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor? InputLambdaProcessor { get; set; }
 }
@@ -5010,85 +4995,85 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -5097,111 +5082,109 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("inputStartingPosition")]
     public string? InputStartingPosition { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>The input stream used by the application.</summary>
+/// <summary>Input stream used by the application. See input Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInput
 {
+    /// <summary>In-application stream names.</summary>
     [JsonPropertyName("inAppStreamNames")]
     public IList<string>? InAppStreamNames { get; set; }
 
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the input configuration.</summary>
     [JsonPropertyName("inputId")]
     public string? InputId { get; set; }
 
-    /// <summary>Describes the number of in-application streams to create.</summary>
+    /// <summary>Number of in-application streams to create. See input_parallelism Block below.</summary>
     [JsonPropertyName("inputParallelism")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputParallelism? InputParallelism { get; set; }
 
-    /// <summary>
-    /// The input processing configuration for the input.
-    /// An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes.
-    /// </summary>
+    /// <summary>Input processing configuration for the input. An input processor transforms records as they are received from the stream, before the application&apos;s SQL code executes. See input_processing_configuration Block below.</summary>
     [JsonPropertyName("inputProcessingConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration? InputProcessingConfiguration { get; set; }
 
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputSchema? InputSchema { get; set; }
 
-    /// <summary>The point at which the application starts processing records from the streaming source.</summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See input_starting_position_configuration Block below.</summary>
     [JsonPropertyName("inputStartingPositionConfiguration")]
     public IList<V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration>? InputStartingPositionConfiguration { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis Data Firehose delivery stream, identifies the delivery stream&apos;s ARN. See kinesis_firehose_input Block below.</summary>
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN. See kinesis_streams_input Block below.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 
-    /// <summary>The name prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 }
 
-/// <summary>Describes the data format when records are written to the destination.</summary>
+/// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
 {
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+/// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>Identifies a Kinesis data stream as the destination.</summary>
+/// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>Identifies a Lambda function as the destination.</summary>
+/// <summary>Destination Lambda function. See lambda_output Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput
 {
-    /// <summary>The ARN of the Lambda function that operates on records in the stream.</summary>
+    /// <summary>ARN of the destination Lambda function to write to.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -5210,27 +5193,27 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutput
 {
-    /// <summary>Describes the data format when records are written to the destination.</summary>
+    /// <summary>Data format when records are written to the destination. See destination_schema Block below.</summary>
     [JsonPropertyName("destinationSchema")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema? DestinationSchema { get; set; }
 
-    /// <summary>Identifies a Kinesis Data Firehose delivery stream as the destination.</summary>
+    /// <summary>Destination Kinesis Data Firehose delivery stream. See kinesis_firehose_output Block below.</summary>
     [JsonPropertyName("kinesisFirehoseOutput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput? KinesisFirehoseOutput { get; set; }
 
-    /// <summary>Identifies a Kinesis data stream as the destination.</summary>
+    /// <summary>Destination Kinesis data stream. See kinesis_streams_output Block below.</summary>
     [JsonPropertyName("kinesisStreamsOutput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput? KinesisStreamsOutput { get; set; }
 
-    /// <summary>Identifies a Lambda function as the destination.</summary>
+    /// <summary>Destination Lambda function. See lambda_output Block below.</summary>
     [JsonPropertyName("lambdaOutput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput? LambdaOutput { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the output configuration.</summary>
     [JsonPropertyName("outputId")]
     public string? OutputId { get; set; }
 }
@@ -5239,213 +5222,213 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn
 {
-    /// <summary>A reference to the data element in the streaming input or the reference data source.</summary>
+    /// <summary>Reference to the data element in the streaming input or the reference data source.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
-    /// <summary>The name of the application.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The type of column created in the in-application input stream or reference table.</summary>
+    /// <summary>Type of column created in the in-application input stream or reference table.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+/// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters
 {
-    /// <summary>The column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
+    /// <summary>Column delimiter. For example, in a CSV format, a comma (,) is the typical column delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
+    /// <summary>Row delimiter. For example, in a CSV format, \n is the typical row delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+/// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters
 {
-    /// <summary>The path to the top-level parent that contains the records.</summary>
+    /// <summary>Path to the top-level parent that contains the records.</summary>
     [JsonPropertyName("recordRowPath")]
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+/// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters
 {
-    /// <summary>Provides additional mapping information when the record format uses delimiters (for example, CSV).</summary>
+    /// <summary>Additional mapping information when the record format uses delimiters (for example, CSV). See csv_mapping_parameters Block below.</summary>
     [JsonPropertyName("csvMappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters? CsvMappingParameters { get; set; }
 
-    /// <summary>Provides additional mapping information when JSON is the record format on the streaming source.</summary>
+    /// <summary>Additional mapping information when JSON is the record format on the streaming source. See json_mapping_parameters Block below.</summary>
     [JsonPropertyName("jsonMappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters? JsonMappingParameters { get; set; }
 }
 
-/// <summary>Specifies the format of the records on the streaming source.</summary>
+/// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat
 {
-    /// <summary>Provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.</summary>
+    /// <summary>Additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source. See mapping_parameters Block below.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The type of record format. Valid values: CSV, JSON.</summary>
+    /// <summary>Type of record format. Valid values: CSV, JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+/// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
 {
-    /// <summary>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</summary>
+    /// <summary>Mapping of each data element in the streaming source to the corresponding column in the in-application stream. See record_column Block above.</summary>
     [JsonPropertyName("recordColumn")]
     public IList<V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn>? RecordColumn { get; set; }
 
-    /// <summary>Specifies the encoding of the records in the streaming source. For example, UTF-8.</summary>
+    /// <summary>Encoding of the records in the streaming source. For example, UTF-8.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>Specifies the format of the records on the streaming source.</summary>
+    /// <summary>Format of the records on the streaming source. See record_format Block above.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat? RecordFormat { get; set; }
 }
 
-/// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+/// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
 {
-    /// <summary>The ARN for the S3 bucket containing the application code.</summary>
+    /// <summary>ARN of the S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The file key for the object containing the application code.</summary>
+    /// <summary>Object key name containing the reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 }
 
-/// <summary>The reference data source used by the application.</summary>
+/// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
 {
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the reference data source.</summary>
     [JsonPropertyName("referenceId")]
     public string? ReferenceId { get; set; }
 
-    /// <summary>Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.</summary>
+    /// <summary>Format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream. See reference_schema Block below.</summary>
     [JsonPropertyName("referenceSchema")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema? ReferenceSchema { get; set; }
 
-    /// <summary>Identifies the S3 bucket and object that contains the reference data.</summary>
+    /// <summary>S3 bucket and object that contains the reference data. See s3_reference_data_source Block below.</summary>
     [JsonPropertyName("s3ReferenceDataSource")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource? S3ReferenceDataSource { get; set; }
 
-    /// <summary>The name of the in-application table to create.</summary>
+    /// <summary>Name of the in-application table to create.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
 
-/// <summary>The configuration of a SQL-based application.</summary>
+/// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfiguration
 {
-    /// <summary>The input stream used by the application.</summary>
+    /// <summary>Input stream used by the application. See input Block below.</summary>
     [JsonPropertyName("input")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInput? Input { get; set; }
 
-    /// <summary>The destination streams used by the application.</summary>
+    /// <summary>Destination streams used by the application. See output Block below.</summary>
     [JsonPropertyName("output")]
     public IList<V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationOutput>? Output { get; set; }
 
-    /// <summary>The reference data source used by the application.</summary>
+    /// <summary>Reference data source used by the application. See reference_data_source Block below.</summary>
     [JsonPropertyName("referenceDataSource")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationReferenceDataSource? ReferenceDataSource { get; set; }
 }
 
-/// <summary>The VPC configuration of a Flink-based application.</summary>
+/// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationVpcConfiguration
 {
-    /// <summary>The Security Group IDs used by the VPC configuration.</summary>
+    /// <summary>Security Group IDs used by the VPC configuration.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The Subnet IDs used by the VPC configuration.</summary>
+    /// <summary>Subnet IDs used by the VPC configuration.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the VPC configuration.</summary>
     [JsonPropertyName("vpcConfigurationId")]
     public string? VpcConfigurationId { get; set; }
 
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
 
-/// <summary>The application&apos;s configuration</summary>
+/// <summary>Application configuration. See application_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfiguration
 {
-    /// <summary>The code location and type parameters for the application.</summary>
+    /// <summary>Code location and type parameters for the application. See application_code_configuration Block below.</summary>
     [JsonPropertyName("applicationCodeConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationCodeConfiguration? ApplicationCodeConfiguration { get; set; }
 
-    /// <summary>The encryption configuration for the application. This can be used to encrypt data at rest in the application.</summary>
+    /// <summary>Encryption configuration for the application. Use this to encrypt data at rest in the application. See application_encryption_configuration Block below.</summary>
     [JsonPropertyName("applicationEncryptionConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationEncryptionConfiguration? ApplicationEncryptionConfiguration { get; set; }
 
-    /// <summary>Describes whether snapshots are enabled for a Flink-based application.</summary>
+    /// <summary>Snapshot configuration for a Flink-based application. See application_snapshot_configuration Block below.</summary>
     [JsonPropertyName("applicationSnapshotConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationApplicationSnapshotConfiguration? ApplicationSnapshotConfiguration { get; set; }
 
-    /// <summary>Describes execution properties for a Flink-based application.</summary>
+    /// <summary>Execution properties for a Flink-based application. See environment_properties Block below.</summary>
     [JsonPropertyName("environmentProperties")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationEnvironmentProperties? EnvironmentProperties { get; set; }
 
-    /// <summary>The configuration of a Flink-based application.</summary>
+    /// <summary>Configuration of a Flink-based application. See flink_application_configuration Block below.</summary>
     [JsonPropertyName("flinkApplicationConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationFlinkApplicationConfiguration? FlinkApplicationConfiguration { get; set; }
 
-    /// <summary>Describes the starting properties for a Flink-based application.</summary>
+    /// <summary>Starting properties for a Flink-based application. See run_configuration Block below.</summary>
     [JsonPropertyName("runConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationRunConfiguration? RunConfiguration { get; set; }
 
-    /// <summary>The configuration of a SQL-based application.</summary>
+    /// <summary>Configuration of a SQL-based application. See sql_application_configuration Block below.</summary>
     [JsonPropertyName("sqlApplicationConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfiguration? SqlApplicationConfiguration { get; set; }
 
-    /// <summary>The VPC configuration of a Flink-based application.</summary>
+    /// <summary>VPC configuration of a Flink-based application. See vpc_configuration Block below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationVpcConfiguration? VpcConfiguration { get; set; }
 }
 
-/// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+/// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderCloudwatchLoggingOptions
 {
-    /// <summary>The application identifier.</summary>
+    /// <summary>Identifier of the CloudWatch logging option.</summary>
     [JsonPropertyName("cloudwatchLoggingOptionId")]
     public string? CloudwatchLoggingOptionId { get; set; }
 
-    /// <summary>The ARN of the CloudWatch log stream to receive application messages.</summary>
+    /// <summary>ARN of the CloudWatch log stream to receive application messages.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 }
@@ -5454,27 +5437,27 @@ public partial class V1beta2ApplicationStatusAtProviderCloudwatchLoggingOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProvider
 {
-    /// <summary>The application&apos;s configuration</summary>
+    /// <summary>Application configuration. See application_configuration Block below.</summary>
     [JsonPropertyName("applicationConfiguration")]
     public V1beta2ApplicationStatusAtProviderApplicationConfiguration? ApplicationConfiguration { get; set; }
 
-    /// <summary>The application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
+    /// <summary>Application&apos;s mode. Valid values are STREAMING, INTERACTIVE.</summary>
     [JsonPropertyName("applicationMode")]
     public string? ApplicationMode { get; set; }
 
-    /// <summary>The ARN of the application.</summary>
+    /// <summary>ARN of the application.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A CloudWatch log stream to monitor application configuration errors.</summary>
+    /// <summary>CloudWatch log stream to monitor application configuration errors. See cloudwatch_logging_options Block below.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationStatusAtProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
-    /// <summary>The current timestamp when the application was created.</summary>
+    /// <summary>Current timestamp when the application was created.</summary>
     [JsonPropertyName("createTimestamp")]
     public string? CreateTimestamp { get; set; }
 
-    /// <summary>A summary description of the application.</summary>
+    /// <summary>Summary description of the application.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -5482,11 +5465,11 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("forceStop")]
     public bool? ForceStop { get; set; }
 
-    /// <summary>The application identifier.</summary>
+    /// <summary>Application identifier.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The current timestamp when the application was last updated.</summary>
+    /// <summary>Current timestamp when the application was last updated.</summary>
     [JsonPropertyName("lastUpdateTimestamp")]
     public string? LastUpdateTimestamp { get; set; }
 
@@ -5497,11 +5480,11 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
+    /// <summary>Runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2, FLINK-2_3.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
-    /// <summary>The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
+    /// <summary>ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.</summary>
     [JsonPropertyName("serviceExecutionRole")]
     public string? ServiceExecutionRole { get; set; }
 
@@ -5509,7 +5492,7 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("startApplication")]
     public bool? StartApplication { get; set; }
 
-    /// <summary>The status of the application.</summary>
+    /// <summary>Status of the application.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -5517,11 +5500,11 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The current application version. Kinesis Data Analytics updates the version_id each time the application is updated.</summary>
+    /// <summary>Current application version. Kinesis Data Analytics updates the version_id each time the application is updated.</summary>
     [JsonPropertyName("versionId")]
     public double? VersionId { get; set; }
 }

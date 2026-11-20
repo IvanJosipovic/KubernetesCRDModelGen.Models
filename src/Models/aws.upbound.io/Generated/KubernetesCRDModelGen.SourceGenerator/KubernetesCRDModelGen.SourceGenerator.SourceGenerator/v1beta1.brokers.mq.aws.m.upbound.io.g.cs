@@ -2011,7 +2011,7 @@ public partial class V1beta1BrokerStatusAtProviderInstances
     [JsonPropertyName("consoleUrl")]
     public string? ConsoleUrl { get; set; }
 
-    /// <summary>Broker&apos;s wire-level protocol endpoints referenceable e.g., as instances.0.endpoints.0. Known endpoints are returned in the deterministic order below, based on protocol prefix and port number; any additional endpoint types introduced in the future are appended afterward in the order returned by the API.</summary>
+    /// <summary>Broker&apos;s wire-level protocol endpoints, referenceable e.g., as instances.0.endpoints.0.</summary>
     [JsonPropertyName("endpoints")]
     public IList<string>? Endpoints { get; set; }
 
@@ -2200,7 +2200,7 @@ public partial class V1beta1BrokerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>List of information about allocated brokers (both active &amp; standby).</summary>
+    /// <summary>List of information about allocated brokers (both active &amp; standby). See instances Block for details.</summary>
     [JsonPropertyName("instances")]
     public IList<V1beta1BrokerStatusAtProviderInstances>? Instances { get; set; }
 
@@ -2239,7 +2239,7 @@ public partial class V1beta1BrokerStatusAtProvider
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>List of resources shared with the broker via resource_share_arns. Only populated for engine_type of RabbitMQ.</summary>
+    /// <summary>List of resources shared with the broker via resource_share_arns. Only populated for engine_type of RabbitMQ. See shared_resources Block for details.</summary>
     [JsonPropertyName("sharedResources")]
     public IList<V1beta1BrokerStatusAtProviderSharedResources>? SharedResources { get; set; }
 

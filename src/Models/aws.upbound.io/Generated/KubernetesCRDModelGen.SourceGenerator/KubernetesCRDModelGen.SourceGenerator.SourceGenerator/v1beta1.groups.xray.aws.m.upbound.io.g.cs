@@ -42,11 +42,11 @@ public partial class V1beta1GroupList : IKubernetesObject<V1ListMeta>, IItems<V1
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecForProviderInsightsConfiguration
 {
-    /// <summary>Specifies whether insights are enabled.</summary>
+    /// <summary>Whether insights are enabled.</summary>
     [JsonPropertyName("insightsEnabled")]
     public bool? InsightsEnabled { get; set; }
 
-    /// <summary>Specifies whether insight notifications are enabled.</summary>
+    /// <summary>Whether insight notifications are enabled.</summary>
     [JsonPropertyName("notificationsEnabled")]
     public bool? NotificationsEnabled { get; set; }
 }
@@ -55,11 +55,11 @@ public partial class V1beta1GroupSpecForProviderInsightsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecForProvider
 {
-    /// <summary>The filter expression defining criteria by which to group traces. more info can be found in official docs.</summary>
+    /// <summary>Filter expression defining criteria by which to group traces. More info can be found in official docs.</summary>
     [JsonPropertyName("filterExpression")]
     public string? FilterExpression { get; set; }
 
-    /// <summary>The name of the group.</summary>
+    /// <summary>Name of the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
@@ -84,11 +84,11 @@ public partial class V1beta1GroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecInitProviderInsightsConfiguration
 {
-    /// <summary>Specifies whether insights are enabled.</summary>
+    /// <summary>Whether insights are enabled.</summary>
     [JsonPropertyName("insightsEnabled")]
     public bool? InsightsEnabled { get; set; }
 
-    /// <summary>Specifies whether insight notifications are enabled.</summary>
+    /// <summary>Whether insight notifications are enabled.</summary>
     [JsonPropertyName("notificationsEnabled")]
     public bool? NotificationsEnabled { get; set; }
 }
@@ -109,11 +109,11 @@ public partial class V1beta1GroupSpecInitProviderInsightsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecInitProvider
 {
-    /// <summary>The filter expression defining criteria by which to group traces. more info can be found in official docs.</summary>
+    /// <summary>Filter expression defining criteria by which to group traces. More info can be found in official docs.</summary>
     [JsonPropertyName("filterExpression")]
     public string? FilterExpression { get; set; }
 
-    /// <summary>The name of the group.</summary>
+    /// <summary>Name of the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
@@ -238,11 +238,11 @@ public partial class V1beta1GroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProviderInsightsConfiguration
 {
-    /// <summary>Specifies whether insights are enabled.</summary>
+    /// <summary>Whether insights are enabled.</summary>
     [JsonPropertyName("insightsEnabled")]
     public bool? InsightsEnabled { get; set; }
 
-    /// <summary>Specifies whether insight notifications are enabled.</summary>
+    /// <summary>Whether insight notifications are enabled.</summary>
     [JsonPropertyName("notificationsEnabled")]
     public bool? NotificationsEnabled { get; set; }
 }
@@ -251,19 +251,19 @@ public partial class V1beta1GroupStatusAtProviderInsightsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProvider
 {
-    /// <summary>The ARN of the Group.</summary>
+    /// <summary>ARN of the Group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The filter expression defining criteria by which to group traces. more info can be found in official docs.</summary>
+    /// <summary>Filter expression defining criteria by which to group traces. More info can be found in official docs.</summary>
     [JsonPropertyName("filterExpression")]
     public string? FilterExpression { get; set; }
 
-    /// <summary>The name of the group.</summary>
+    /// <summary>Name of the group.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
 
-    /// <summary>The ARN of the Group.</summary>
+    /// <summary>ARN of the Group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -282,7 +282,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

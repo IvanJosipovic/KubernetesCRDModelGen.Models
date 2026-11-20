@@ -207,7 +207,7 @@ public partial class V1beta1ContainerPolicySpecForProviderContainerNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerPolicySpecForProvider
 {
-    /// <summary>The name of the container.</summary>
+    /// <summary>Name of the container.</summary>
     [JsonPropertyName("containerName")]
     public string? ContainerName { get; set; }
 
@@ -219,7 +219,7 @@ public partial class V1beta1ContainerPolicySpecForProvider
     [JsonPropertyName("containerNameSelector")]
     public V1beta1ContainerPolicySpecForProviderContainerNameSelector? ContainerNameSelector { get; set; }
 
-    /// <summary>The contents of the policy.</summary>
+    /// <summary>Contents of the policy.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -394,7 +394,7 @@ public partial class V1beta1ContainerPolicySpecInitProviderContainerNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerPolicySpecInitProvider
 {
-    /// <summary>The name of the container.</summary>
+    /// <summary>Name of the container.</summary>
     [JsonPropertyName("containerName")]
     public string? ContainerName { get; set; }
 
@@ -406,7 +406,7 @@ public partial class V1beta1ContainerPolicySpecInitProvider
     [JsonPropertyName("containerNameSelector")]
     public V1beta1ContainerPolicySpecInitProviderContainerNameSelector? ContainerNameSelector { get; set; }
 
-    /// <summary>The contents of the policy.</summary>
+    /// <summary>Contents of the policy.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -598,14 +598,14 @@ public partial class V1beta1ContainerPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerPolicyStatusAtProvider
 {
-    /// <summary>The name of the container.</summary>
+    /// <summary>Name of the container.</summary>
     [JsonPropertyName("containerName")]
     public string? ContainerName { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The contents of the policy.</summary>
+    /// <summary>Contents of the policy.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

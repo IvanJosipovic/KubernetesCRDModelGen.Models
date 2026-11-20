@@ -354,23 +354,15 @@ public partial class V1beta1VolumeAttachmentSpecForProviderVolumeIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VolumeAttachmentSpecForProvider
 {
-    /// <summary>
-    /// The device name to expose to the instance (for
-    /// example, /dev/sdh or xvdh).  See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.
-    /// </summary>
+    /// <summary>Device name to expose to the instance (for example, /dev/sdh or xvdh). See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>
-    /// Set to true if you want to force the
-    /// volume to detach. Useful if previous attempts failed, but use this option only
-    /// as a last resort, as this can result in data loss. See
-    /// Detaching an Amazon EBS Volume from an Instance for more information.
-    /// </summary>
+    /// <summary>Whether to force the volume to detach. Useful if previous attempts failed, but use this option only as a last resort, as this can result in data loss. See Detaching an Amazon EBS Volume from an Instance for more information.</summary>
     [JsonPropertyName("forceDetach")]
     public bool? ForceDetach { get; set; }
 
-    /// <summary>ID of the Instance to attach to</summary>
+    /// <summary>ID of the Instance to attach to.</summary>
     [JsonPropertyName("instanceId")]
     public string? InstanceId { get; set; }
 
@@ -389,22 +381,15 @@ public partial class V1beta1VolumeAttachmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// This is
-    /// useful when destroying an instance which has volumes created by some other
-    /// means attached.
-    /// </summary>
+    /// <summary>This is useful when destroying an instance which has volumes created by some other means attached.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 
-    /// <summary>
-    /// Set this to true to ensure that the target instance is stopped
-    /// before trying to detach the volume. Stops the instance, if it is not already stopped.
-    /// </summary>
+    /// <summary>Whether to ensure that the target instance is stopped before trying to detach the volume. Stops the instance, if it is not already stopped.</summary>
     [JsonPropertyName("stopInstanceBeforeDetaching")]
     public bool? StopInstanceBeforeDetaching { get; set; }
 
-    /// <summary>ID of the Volume to be attached</summary>
+    /// <summary>ID of the Volume to be attached.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 
@@ -727,23 +712,15 @@ public partial class V1beta1VolumeAttachmentSpecInitProviderVolumeIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VolumeAttachmentSpecInitProvider
 {
-    /// <summary>
-    /// The device name to expose to the instance (for
-    /// example, /dev/sdh or xvdh).  See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.
-    /// </summary>
+    /// <summary>Device name to expose to the instance (for example, /dev/sdh or xvdh). See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>
-    /// Set to true if you want to force the
-    /// volume to detach. Useful if previous attempts failed, but use this option only
-    /// as a last resort, as this can result in data loss. See
-    /// Detaching an Amazon EBS Volume from an Instance for more information.
-    /// </summary>
+    /// <summary>Whether to force the volume to detach. Useful if previous attempts failed, but use this option only as a last resort, as this can result in data loss. See Detaching an Amazon EBS Volume from an Instance for more information.</summary>
     [JsonPropertyName("forceDetach")]
     public bool? ForceDetach { get; set; }
 
-    /// <summary>ID of the Instance to attach to</summary>
+    /// <summary>ID of the Instance to attach to.</summary>
     [JsonPropertyName("instanceId")]
     public string? InstanceId { get; set; }
 
@@ -755,22 +732,15 @@ public partial class V1beta1VolumeAttachmentSpecInitProvider
     [JsonPropertyName("instanceIdSelector")]
     public V1beta1VolumeAttachmentSpecInitProviderInstanceIdSelector? InstanceIdSelector { get; set; }
 
-    /// <summary>
-    /// This is
-    /// useful when destroying an instance which has volumes created by some other
-    /// means attached.
-    /// </summary>
+    /// <summary>This is useful when destroying an instance which has volumes created by some other means attached.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 
-    /// <summary>
-    /// Set this to true to ensure that the target instance is stopped
-    /// before trying to detach the volume. Stops the instance, if it is not already stopped.
-    /// </summary>
+    /// <summary>Whether to ensure that the target instance is stopped before trying to detach the volume. Stops the instance, if it is not already stopped.</summary>
     [JsonPropertyName("stopInstanceBeforeDetaching")]
     public bool? StopInstanceBeforeDetaching { get; set; }
 
-    /// <summary>ID of the Volume to be attached</summary>
+    /// <summary>ID of the Volume to be attached.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 
@@ -970,26 +940,18 @@ public partial class V1beta1VolumeAttachmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VolumeAttachmentStatusAtProvider
 {
-    /// <summary>
-    /// The device name to expose to the instance (for
-    /// example, /dev/sdh or xvdh).  See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.
-    /// </summary>
+    /// <summary>Device name to expose to the instance (for example, /dev/sdh or xvdh). See Device Naming on Linux Instances and Device Naming on Windows Instances for more information.</summary>
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>
-    /// Set to true if you want to force the
-    /// volume to detach. Useful if previous attempts failed, but use this option only
-    /// as a last resort, as this can result in data loss. See
-    /// Detaching an Amazon EBS Volume from an Instance for more information.
-    /// </summary>
+    /// <summary>Whether to force the volume to detach. Useful if previous attempts failed, but use this option only as a last resort, as this can result in data loss. See Detaching an Amazon EBS Volume from an Instance for more information.</summary>
     [JsonPropertyName("forceDetach")]
     public bool? ForceDetach { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>ID of the Instance to attach to</summary>
+    /// <summary>ID of the Instance to attach to.</summary>
     [JsonPropertyName("instanceId")]
     public string? InstanceId { get; set; }
 
@@ -1000,22 +962,15 @@ public partial class V1beta1VolumeAttachmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// This is
-    /// useful when destroying an instance which has volumes created by some other
-    /// means attached.
-    /// </summary>
+    /// <summary>This is useful when destroying an instance which has volumes created by some other means attached.</summary>
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
 
-    /// <summary>
-    /// Set this to true to ensure that the target instance is stopped
-    /// before trying to detach the volume. Stops the instance, if it is not already stopped.
-    /// </summary>
+    /// <summary>Whether to ensure that the target instance is stopped before trying to detach the volume. Stops the instance, if it is not already stopped.</summary>
     [JsonPropertyName("stopInstanceBeforeDetaching")]
     public bool? StopInstanceBeforeDetaching { get; set; }
 
-    /// <summary>ID of the Volume to be attached</summary>
+    /// <summary>ID of the Volume to be attached.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 }

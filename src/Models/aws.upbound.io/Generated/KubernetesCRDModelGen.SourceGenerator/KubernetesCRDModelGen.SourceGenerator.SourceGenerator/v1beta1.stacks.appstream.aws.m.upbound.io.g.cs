@@ -482,7 +482,7 @@ public partial class V1beta1StackStatusAtProvider
     [JsonPropertyName("applicationSettings")]
     public V1beta1StackStatusAtProviderApplicationSettings? ApplicationSettings { get; set; }
 
-    /// <summary>ARN of the appstream stack.</summary>
+    /// <summary>ARN of the AppStream stack.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -506,7 +506,7 @@ public partial class V1beta1StackStatusAtProvider
     [JsonPropertyName("feedbackUrl")]
     public string? FeedbackUrl { get; set; }
 
-    /// <summary>Unique ID of the appstream stack.</summary>
+    /// <summary>Unique ID of the AppStream stack.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

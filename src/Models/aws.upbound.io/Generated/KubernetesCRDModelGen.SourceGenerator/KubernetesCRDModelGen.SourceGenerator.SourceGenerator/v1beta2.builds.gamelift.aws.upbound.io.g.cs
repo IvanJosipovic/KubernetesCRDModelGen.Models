@@ -526,7 +526,7 @@ public partial class V1beta2BuildSpecForProviderStorageLocation
     [JsonPropertyName("keySelector")]
     public V1beta2BuildSpecForProviderStorageLocationKeySelector? KeySelector { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -1045,7 +1045,7 @@ public partial class V1beta2BuildSpecInitProviderStorageLocation
     [JsonPropertyName("keySelector")]
     public V1beta2BuildSpecInitProviderStorageLocationKeySelector? KeySelector { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -1295,7 +1295,7 @@ public partial class V1beta2BuildStatusAtProviderStorageLocation
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>A specific version of the file. If not set, the latest version of the file is retrieved.</summary>
+    /// <summary>Specific version of the file. If not set, the latest version of the file is retrieved.</summary>
     [JsonPropertyName("objectVersion")]
     public string? ObjectVersion { get; set; }
 
@@ -1339,7 +1339,7 @@ public partial class V1beta2BuildStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

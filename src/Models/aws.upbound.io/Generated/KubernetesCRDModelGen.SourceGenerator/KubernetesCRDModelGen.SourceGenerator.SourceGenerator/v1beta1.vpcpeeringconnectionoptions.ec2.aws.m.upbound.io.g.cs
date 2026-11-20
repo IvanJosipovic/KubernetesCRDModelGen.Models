@@ -37,22 +37,22 @@ public partial class V1beta1VPCPeeringConnectionOptionsList : IKubernetesObject<
     public required IList<V1beta1VPCPeeringConnectionOptions> Items { get; set; }
 }
 
-/// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecForProviderAccepter
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecForProviderRequester
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -216,7 +216,7 @@ public partial class V1beta1VPCPeeringConnectionOptionsSpecForProviderVpcPeering
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecForProvider
 {
-    /// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionOptionsSpecForProviderAccepter? Accepter { get; set; }
 
@@ -227,11 +227,11 @@ public partial class V1beta1VPCPeeringConnectionOptionsSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionOptionsSpecForProviderRequester? Requester { get; set; }
 
-    /// <summary>The ID of the requester VPC peering connection.</summary>
+    /// <summary>ID of the requester VPC peering connection.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 
@@ -244,22 +244,22 @@ public partial class V1beta1VPCPeeringConnectionOptionsSpecForProvider
     public V1beta1VPCPeeringConnectionOptionsSpecForProviderVpcPeeringConnectionIdSelector? VpcPeeringConnectionIdSelector { get; set; }
 }
 
-/// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecInitProviderAccepter
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecInitProviderRequester
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -435,15 +435,15 @@ public partial class V1beta1VPCPeeringConnectionOptionsSpecInitProviderVpcPeerin
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsSpecInitProvider
 {
-    /// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionOptionsSpecInitProviderAccepter? Accepter { get; set; }
 
-    /// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionOptionsSpecInitProviderRequester? Requester { get; set; }
 
-    /// <summary>The ID of the requester VPC peering connection.</summary>
+    /// <summary>ID of the requester VPC peering connection.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 
@@ -563,22 +563,22 @@ public partial class V1beta1VPCPeeringConnectionOptionsSpec
     public V1beta1VPCPeeringConnectionOptionsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsStatusAtProviderAccepter
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsStatusAtProviderRequester
 {
-    /// <summary>Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -587,11 +587,11 @@ public partial class V1beta1VPCPeeringConnectionOptionsStatusAtProviderRequester
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionOptionsStatusAtProvider
 {
-    /// <summary>An optional configuration block that allows for VPC Peering Connection options to be set for the VPC that accepts the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionOptionsStatusAtProviderAccepter? Accepter { get; set; }
 
-    /// <summary>The ID of the VPC Peering Connection Options.</summary>
+    /// <summary>ID of the VPC Peering Connection Options.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -602,11 +602,11 @@ public partial class V1beta1VPCPeeringConnectionOptionsStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A optional configuration block that allows for VPC Peering Connection options to be set for the VPC that requests the peering connection (a maximum of one).</summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionOptionsStatusAtProviderRequester? Requester { get; set; }
 
-    /// <summary>The ID of the requester VPC peering connection.</summary>
+    /// <summary>ID of the requester VPC peering connection.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 }

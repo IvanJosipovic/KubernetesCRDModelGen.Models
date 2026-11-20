@@ -192,13 +192,16 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretC
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfig
 {
+    /// <summary>JSON key used to extract the secret value from the AWS Secrets Manager secret.</summary>
     [JsonPropertyName("jsonKey")]
     public string? JsonKey { get; set; }
 
+    /// <summary>ID of the AWS Secrets Manager secret that stores the secret value.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -211,7 +214,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretC
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelector? SecretIdSelector { get; set; }
 }
 
-/// <summary>API key value. Conflicts with api_key_wo.</summary>
+/// <summary>API key value. Exactly one of api_key, api_key_secret_config, or api_key_wo must be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretRef
@@ -224,7 +227,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretR
     public required string Name { get; set; }
 }
 
-/// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
+/// <summary>Write-only API key value. Conflicts with api_key and api_key_secret_config. If set, requires api_key_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecretRef
@@ -241,21 +244,23 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecre
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProvider
 {
+    /// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
     [JsonPropertyName("apiKeySecretConfig")]
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
 
-    /// <summary>API key value. Conflicts with api_key_wo.</summary>
+    /// <summary>API key value. Exactly one of api_key, api_key_secret_config, or api_key_wo must be set.</summary>
     [JsonPropertyName("apiKeySecretRef")]
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretRef? ApiKeySecretRef { get; set; }
 
+    /// <summary>Source of the secret backing the credential provider. Valid values are MANAGED (AgentCore creates and manages the secret from the supplied api_key) and EXTERNAL (the provider references a customer-managed AWS Secrets Manager secret via api_key_secret_config). Changing between MANAGED and EXTERNAL forces replacement of the resource.</summary>
     [JsonPropertyName("apiKeySecretSource")]
     public string? ApiKeySecretSource { get; set; }
 
-    /// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
+    /// <summary>Write-only API key value. Conflicts with api_key and api_key_secret_config. If set, requires api_key_wo_version to be set.</summary>
     [JsonPropertyName("apiKeyWoSecretRef")]
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecretRef? ApiKeyWoSecretRef { get; set; }
 
-    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
+    /// <summary>Version used together with the write-only API key. Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 
@@ -426,13 +431,16 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecret
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfig
 {
+    /// <summary>JSON key used to extract the secret value from the AWS Secrets Manager secret.</summary>
     [JsonPropertyName("jsonKey")]
     public string? JsonKey { get; set; }
 
+    /// <summary>ID of the AWS Secrets Manager secret that stores the secret value.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -445,7 +453,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecret
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelector? SecretIdSelector { get; set; }
 }
 
-/// <summary>API key value. Conflicts with api_key_wo.</summary>
+/// <summary>API key value. Exactly one of api_key, api_key_secret_config, or api_key_wo must be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretRef
@@ -458,7 +466,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecret
     public required string Name { get; set; }
 }
 
-/// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
+/// <summary>Write-only API key value. Conflicts with api_key and api_key_secret_config. If set, requires api_key_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecretRef
@@ -487,21 +495,23 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProvider
 {
+    /// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
     [JsonPropertyName("apiKeySecretConfig")]
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
 
-    /// <summary>API key value. Conflicts with api_key_wo.</summary>
+    /// <summary>API key value. Exactly one of api_key, api_key_secret_config, or api_key_wo must be set.</summary>
     [JsonPropertyName("apiKeySecretRef")]
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretRef? ApiKeySecretRef { get; set; }
 
+    /// <summary>Source of the secret backing the credential provider. Valid values are MANAGED (AgentCore creates and manages the secret from the supplied api_key) and EXTERNAL (the provider references a customer-managed AWS Secrets Manager secret via api_key_secret_config). Changing between MANAGED and EXTERNAL forces replacement of the resource.</summary>
     [JsonPropertyName("apiKeySecretSource")]
     public string? ApiKeySecretSource { get; set; }
 
-    /// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
+    /// <summary>Write-only API key value. Conflicts with api_key and api_key_secret_config. If set, requires api_key_wo_version to be set.</summary>
     [JsonPropertyName("apiKeyWoSecretRef")]
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecretRef? ApiKeyWoSecretRef { get; set; }
 
-    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
+    /// <summary>Version used together with the write-only API key. Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 
@@ -627,13 +637,16 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecret
     public string? SecretArn { get; set; }
 }
 
+/// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretConfig
 {
+    /// <summary>JSON key used to extract the secret value from the AWS Secrets Manager secret.</summary>
     [JsonPropertyName("jsonKey")]
     public string? JsonKey { get; set; }
 
+    /// <summary>ID of the AWS Secrets Manager secret that stores the secret value.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 }
@@ -646,13 +659,15 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProvider
     [JsonPropertyName("apiKeySecretArn")]
     public V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretArn? ApiKeySecretArn { get; set; }
 
+    /// <summary>Reference to a customer-managed AWS Secrets Manager secret that stores the API key. Requires api_key_secret_source = &quot;EXTERNAL&quot;. See below.</summary>
     [JsonPropertyName("apiKeySecretConfig")]
     public V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
 
+    /// <summary>Source of the secret backing the credential provider. Valid values are MANAGED (AgentCore creates and manages the secret from the supplied api_key) and EXTERNAL (the provider references a customer-managed AWS Secrets Manager secret via api_key_secret_config). Changing between MANAGED and EXTERNAL forces replacement of the resource.</summary>
     [JsonPropertyName("apiKeySecretSource")]
     public string? ApiKeySecretSource { get; set; }
 
-    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
+    /// <summary>Version used together with the write-only API key. Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 
@@ -678,7 +693,7 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

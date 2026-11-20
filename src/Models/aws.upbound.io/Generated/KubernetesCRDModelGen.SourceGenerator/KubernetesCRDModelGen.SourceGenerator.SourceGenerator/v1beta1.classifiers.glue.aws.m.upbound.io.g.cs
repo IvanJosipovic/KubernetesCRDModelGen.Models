@@ -37,7 +37,7 @@ public partial class V1beta1ClassifierList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1Classifier> Items { get; set; }
 }
 
-/// <summary>A classifier for CSV content. Defined below.</summary>
+/// <summary>Classifier for CSV content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecForProviderCsvClassifier
@@ -46,7 +46,7 @@ public partial class V1beta1ClassifierSpecForProviderCsvClassifier
     [JsonPropertyName("allowSingleColumn")]
     public bool? AllowSingleColumn { get; set; }
 
-    /// <summary>Indicates whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
+    /// <summary>Whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
     [JsonPropertyName("containsHeader")]
     public string? ContainsHeader { get; set; }
 
@@ -54,37 +54,37 @@ public partial class V1beta1ClassifierSpecForProviderCsvClassifier
     [JsonPropertyName("customDatatypeConfigured")]
     public bool? CustomDatatypeConfigured { get; set; }
 
-    /// <summary>A list of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
+    /// <summary>List of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
     [JsonPropertyName("customDatatypes")]
     public IList<string>? CustomDatatypes { get; set; }
 
-    /// <summary>The delimiter used in the CSV to separate columns.</summary>
+    /// <summary>Delimiter used in the CSV to separate columns.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>Specifies whether to trim column values.</summary>
+    /// <summary>Whether to trim column values.</summary>
     [JsonPropertyName("disableValueTrimming")]
     public bool? DisableValueTrimming { get; set; }
 
-    /// <summary>A list of strings representing column names.</summary>
+    /// <summary>List of strings representing column names.</summary>
     [JsonPropertyName("header")]
     public IList<string>? Header { get; set; }
 
-    /// <summary>A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
+    /// <summary>Custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
     [JsonPropertyName("quoteSymbol")]
     public string? QuoteSymbol { get; set; }
 
-    /// <summary>The SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
+    /// <summary>SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
     [JsonPropertyName("serde")]
     public string? Serde { get; set; }
 }
 
-/// <summary>A classifier that uses grok patterns. Defined below.</summary>
+/// <summary>Classifier that uses grok patterns. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecForProviderGrokClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
+    /// <summary>Identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
@@ -92,31 +92,31 @@ public partial class V1beta1ClassifierSpecForProviderGrokClassifier
     [JsonPropertyName("customPatterns")]
     public string? CustomPatterns { get; set; }
 
-    /// <summary>The grok pattern used by this classifier.</summary>
+    /// <summary>Grok pattern used by this classifier.</summary>
     [JsonPropertyName("grokPattern")]
     public string? GrokPattern { get; set; }
 }
 
-/// <summary>A classifier for JSON content. Defined below.</summary>
+/// <summary>Classifier for JSON content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecForProviderJsonClassifier
 {
-    /// <summary>A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
+    /// <summary>JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
     [JsonPropertyName("jsonPath")]
     public string? JsonPath { get; set; }
 }
 
-/// <summary>A classifier for XML content. Defined below.</summary>
+/// <summary>Classifier for XML content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecForProviderXmlClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches.</summary>
+    /// <summary>Identifier of the data format that the classifier matches.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
-    /// <summary>The XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
+    /// <summary>XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
     [JsonPropertyName("rowTag")]
     public string? RowTag { get; set; }
 }
@@ -125,15 +125,15 @@ public partial class V1beta1ClassifierSpecForProviderXmlClassifier
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecForProvider
 {
-    /// <summary>A classifier for CSV content. Defined below.</summary>
+    /// <summary>Classifier for CSV content. Defined below.</summary>
     [JsonPropertyName("csvClassifier")]
     public V1beta1ClassifierSpecForProviderCsvClassifier? CsvClassifier { get; set; }
 
-    /// <summary>A classifier that uses grok patterns. Defined below.</summary>
+    /// <summary>Classifier that uses grok patterns. Defined below.</summary>
     [JsonPropertyName("grokClassifier")]
     public V1beta1ClassifierSpecForProviderGrokClassifier? GrokClassifier { get; set; }
 
-    /// <summary>A classifier for JSON content. Defined below.</summary>
+    /// <summary>Classifier for JSON content. Defined below.</summary>
     [JsonPropertyName("jsonClassifier")]
     public V1beta1ClassifierSpecForProviderJsonClassifier? JsonClassifier { get; set; }
 
@@ -144,12 +144,12 @@ public partial class V1beta1ClassifierSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A classifier for XML content. Defined below.</summary>
+    /// <summary>Classifier for XML content. Defined below.</summary>
     [JsonPropertyName("xmlClassifier")]
     public V1beta1ClassifierSpecForProviderXmlClassifier? XmlClassifier { get; set; }
 }
 
-/// <summary>A classifier for CSV content. Defined below.</summary>
+/// <summary>Classifier for CSV content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecInitProviderCsvClassifier
@@ -158,7 +158,7 @@ public partial class V1beta1ClassifierSpecInitProviderCsvClassifier
     [JsonPropertyName("allowSingleColumn")]
     public bool? AllowSingleColumn { get; set; }
 
-    /// <summary>Indicates whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
+    /// <summary>Whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
     [JsonPropertyName("containsHeader")]
     public string? ContainsHeader { get; set; }
 
@@ -166,37 +166,37 @@ public partial class V1beta1ClassifierSpecInitProviderCsvClassifier
     [JsonPropertyName("customDatatypeConfigured")]
     public bool? CustomDatatypeConfigured { get; set; }
 
-    /// <summary>A list of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
+    /// <summary>List of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
     [JsonPropertyName("customDatatypes")]
     public IList<string>? CustomDatatypes { get; set; }
 
-    /// <summary>The delimiter used in the CSV to separate columns.</summary>
+    /// <summary>Delimiter used in the CSV to separate columns.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>Specifies whether to trim column values.</summary>
+    /// <summary>Whether to trim column values.</summary>
     [JsonPropertyName("disableValueTrimming")]
     public bool? DisableValueTrimming { get; set; }
 
-    /// <summary>A list of strings representing column names.</summary>
+    /// <summary>List of strings representing column names.</summary>
     [JsonPropertyName("header")]
     public IList<string>? Header { get; set; }
 
-    /// <summary>A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
+    /// <summary>Custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
     [JsonPropertyName("quoteSymbol")]
     public string? QuoteSymbol { get; set; }
 
-    /// <summary>The SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
+    /// <summary>SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
     [JsonPropertyName("serde")]
     public string? Serde { get; set; }
 }
 
-/// <summary>A classifier that uses grok patterns. Defined below.</summary>
+/// <summary>Classifier that uses grok patterns. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecInitProviderGrokClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
+    /// <summary>Identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
@@ -204,31 +204,31 @@ public partial class V1beta1ClassifierSpecInitProviderGrokClassifier
     [JsonPropertyName("customPatterns")]
     public string? CustomPatterns { get; set; }
 
-    /// <summary>The grok pattern used by this classifier.</summary>
+    /// <summary>Grok pattern used by this classifier.</summary>
     [JsonPropertyName("grokPattern")]
     public string? GrokPattern { get; set; }
 }
 
-/// <summary>A classifier for JSON content. Defined below.</summary>
+/// <summary>Classifier for JSON content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecInitProviderJsonClassifier
 {
-    /// <summary>A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
+    /// <summary>JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
     [JsonPropertyName("jsonPath")]
     public string? JsonPath { get; set; }
 }
 
-/// <summary>A classifier for XML content. Defined below.</summary>
+/// <summary>Classifier for XML content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecInitProviderXmlClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches.</summary>
+    /// <summary>Identifier of the data format that the classifier matches.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
-    /// <summary>The XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
+    /// <summary>XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
     [JsonPropertyName("rowTag")]
     public string? RowTag { get; set; }
 }
@@ -249,19 +249,19 @@ public partial class V1beta1ClassifierSpecInitProviderXmlClassifier
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierSpecInitProvider
 {
-    /// <summary>A classifier for CSV content. Defined below.</summary>
+    /// <summary>Classifier for CSV content. Defined below.</summary>
     [JsonPropertyName("csvClassifier")]
     public V1beta1ClassifierSpecInitProviderCsvClassifier? CsvClassifier { get; set; }
 
-    /// <summary>A classifier that uses grok patterns. Defined below.</summary>
+    /// <summary>Classifier that uses grok patterns. Defined below.</summary>
     [JsonPropertyName("grokClassifier")]
     public V1beta1ClassifierSpecInitProviderGrokClassifier? GrokClassifier { get; set; }
 
-    /// <summary>A classifier for JSON content. Defined below.</summary>
+    /// <summary>Classifier for JSON content. Defined below.</summary>
     [JsonPropertyName("jsonClassifier")]
     public V1beta1ClassifierSpecInitProviderJsonClassifier? JsonClassifier { get; set; }
 
-    /// <summary>A classifier for XML content. Defined below.</summary>
+    /// <summary>Classifier for XML content. Defined below.</summary>
     [JsonPropertyName("xmlClassifier")]
     public V1beta1ClassifierSpecInitProviderXmlClassifier? XmlClassifier { get; set; }
 }
@@ -373,7 +373,7 @@ public partial class V1beta1ClassifierSpec
     public V1beta1ClassifierSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A classifier for CSV content. Defined below.</summary>
+/// <summary>Classifier for CSV content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierStatusAtProviderCsvClassifier
@@ -382,7 +382,7 @@ public partial class V1beta1ClassifierStatusAtProviderCsvClassifier
     [JsonPropertyName("allowSingleColumn")]
     public bool? AllowSingleColumn { get; set; }
 
-    /// <summary>Indicates whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
+    /// <summary>Whether the CSV file contains a header. This can be one of &quot;ABSENT&quot;, &quot;PRESENT&quot;, or &quot;UNKNOWN&quot;.</summary>
     [JsonPropertyName("containsHeader")]
     public string? ContainsHeader { get; set; }
 
@@ -390,37 +390,37 @@ public partial class V1beta1ClassifierStatusAtProviderCsvClassifier
     [JsonPropertyName("customDatatypeConfigured")]
     public bool? CustomDatatypeConfigured { get; set; }
 
-    /// <summary>A list of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
+    /// <summary>List of supported custom datatypes. Valid values are BINARY, BOOLEAN, DATE, DECIMAL, DOUBLE, FLOAT, INT, LONG, SHORT, STRING, TIMESTAMP.</summary>
     [JsonPropertyName("customDatatypes")]
     public IList<string>? CustomDatatypes { get; set; }
 
-    /// <summary>The delimiter used in the CSV to separate columns.</summary>
+    /// <summary>Delimiter used in the CSV to separate columns.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>Specifies whether to trim column values.</summary>
+    /// <summary>Whether to trim column values.</summary>
     [JsonPropertyName("disableValueTrimming")]
     public bool? DisableValueTrimming { get; set; }
 
-    /// <summary>A list of strings representing column names.</summary>
+    /// <summary>List of strings representing column names.</summary>
     [JsonPropertyName("header")]
     public IList<string>? Header { get; set; }
 
-    /// <summary>A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
+    /// <summary>Custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.</summary>
     [JsonPropertyName("quoteSymbol")]
     public string? QuoteSymbol { get; set; }
 
-    /// <summary>The SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
+    /// <summary>SerDe for processing CSV. Valid values are OpenCSVSerDe, LazySimpleSerDe, None.</summary>
     [JsonPropertyName("serde")]
     public string? Serde { get; set; }
 }
 
-/// <summary>A classifier that uses grok patterns. Defined below.</summary>
+/// <summary>Classifier that uses grok patterns. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierStatusAtProviderGrokClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
+    /// <summary>Identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
@@ -428,31 +428,31 @@ public partial class V1beta1ClassifierStatusAtProviderGrokClassifier
     [JsonPropertyName("customPatterns")]
     public string? CustomPatterns { get; set; }
 
-    /// <summary>The grok pattern used by this classifier.</summary>
+    /// <summary>Grok pattern used by this classifier.</summary>
     [JsonPropertyName("grokPattern")]
     public string? GrokPattern { get; set; }
 }
 
-/// <summary>A classifier for JSON content. Defined below.</summary>
+/// <summary>Classifier for JSON content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierStatusAtProviderJsonClassifier
 {
-    /// <summary>A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
+    /// <summary>JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.</summary>
     [JsonPropertyName("jsonPath")]
     public string? JsonPath { get; set; }
 }
 
-/// <summary>A classifier for XML content. Defined below.</summary>
+/// <summary>Classifier for XML content. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierStatusAtProviderXmlClassifier
 {
-    /// <summary>An identifier of the data format that the classifier matches.</summary>
+    /// <summary>Identifier of the data format that the classifier matches.</summary>
     [JsonPropertyName("classification")]
     public string? Classification { get; set; }
 
-    /// <summary>The XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
+    /// <summary>XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; &gt; &lt;/row&gt; is okay, but &lt;row item_a=&quot;A&quot; item_b=&quot;B&quot; /&gt; is not).</summary>
     [JsonPropertyName("rowTag")]
     public string? RowTag { get; set; }
 }
@@ -461,11 +461,11 @@ public partial class V1beta1ClassifierStatusAtProviderXmlClassifier
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClassifierStatusAtProvider
 {
-    /// <summary>A classifier for CSV content. Defined below.</summary>
+    /// <summary>Classifier for CSV content. Defined below.</summary>
     [JsonPropertyName("csvClassifier")]
     public V1beta1ClassifierStatusAtProviderCsvClassifier? CsvClassifier { get; set; }
 
-    /// <summary>A classifier that uses grok patterns. Defined below.</summary>
+    /// <summary>Classifier that uses grok patterns. Defined below.</summary>
     [JsonPropertyName("grokClassifier")]
     public V1beta1ClassifierStatusAtProviderGrokClassifier? GrokClassifier { get; set; }
 
@@ -473,7 +473,7 @@ public partial class V1beta1ClassifierStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A classifier for JSON content. Defined below.</summary>
+    /// <summary>Classifier for JSON content. Defined below.</summary>
     [JsonPropertyName("jsonClassifier")]
     public V1beta1ClassifierStatusAtProviderJsonClassifier? JsonClassifier { get; set; }
 
@@ -484,7 +484,7 @@ public partial class V1beta1ClassifierStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A classifier for XML content. Defined below.</summary>
+    /// <summary>Classifier for XML content. Defined below.</summary>
     [JsonPropertyName("xmlClassifier")]
     public V1beta1ClassifierStatusAtProviderXmlClassifier? XmlClassifier { get; set; }
 }

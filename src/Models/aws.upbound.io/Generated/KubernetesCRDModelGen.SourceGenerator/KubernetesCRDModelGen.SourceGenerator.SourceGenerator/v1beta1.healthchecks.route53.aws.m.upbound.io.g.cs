@@ -1040,7 +1040,7 @@ public partial class V1beta1HealthCheckStatusAtProvider
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
 
-    /// <summary>The id of the health check</summary>
+    /// <summary>The ID of the health check</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

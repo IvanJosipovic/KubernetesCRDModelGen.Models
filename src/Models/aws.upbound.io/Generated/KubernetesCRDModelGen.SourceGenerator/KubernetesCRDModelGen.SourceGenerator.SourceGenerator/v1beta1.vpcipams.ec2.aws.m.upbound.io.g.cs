@@ -41,7 +41,7 @@ public partial class V1beta1VPCIpamList : IKubernetesObject<V1ListMeta>, IItems<
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamSpecForProviderOperatingRegions
 {
-    /// <summary>The name of the Region you want to add to the IPAM.</summary>
+    /// <summary>Name of the Region you want to add to the IPAM.</summary>
     [JsonPropertyName("regionName")]
     public string? RegionName { get; set; }
 }
@@ -50,15 +50,15 @@ public partial class V1beta1VPCIpamSpecForProviderOperatingRegions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamSpecForProvider
 {
-    /// <summary>Enables you to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
+    /// <summary>Whether to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>A description for the IPAM.</summary>
+    /// <summary>Description for the IPAM.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable this option to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
+    /// <summary>Whether to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
     [JsonPropertyName("enablePrivateGua")]
     public bool? EnablePrivateGua { get; set; }
 
@@ -66,7 +66,7 @@ public partial class V1beta1VPCIpamSpecForProvider
     [JsonPropertyName("meteredAccount")]
     public string? MeteredAccount { get; set; }
 
-    /// <summary>Determines which locales can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
+    /// <summary>Locales that can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
     [JsonPropertyName("operatingRegions")]
     public IList<V1beta1VPCIpamSpecForProviderOperatingRegions>? OperatingRegions { get; set; }
 
@@ -90,7 +90,7 @@ public partial class V1beta1VPCIpamSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamSpecInitProviderOperatingRegions
 {
-    /// <summary>The name of the Region you want to add to the IPAM.</summary>
+    /// <summary>Name of the Region you want to add to the IPAM.</summary>
     [JsonPropertyName("regionName")]
     public string? RegionName { get; set; }
 }
@@ -111,15 +111,15 @@ public partial class V1beta1VPCIpamSpecInitProviderOperatingRegions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamSpecInitProvider
 {
-    /// <summary>Enables you to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
+    /// <summary>Whether to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>A description for the IPAM.</summary>
+    /// <summary>Description for the IPAM.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable this option to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
+    /// <summary>Whether to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
     [JsonPropertyName("enablePrivateGua")]
     public bool? EnablePrivateGua { get; set; }
 
@@ -127,7 +127,7 @@ public partial class V1beta1VPCIpamSpecInitProvider
     [JsonPropertyName("meteredAccount")]
     public string? MeteredAccount { get; set; }
 
-    /// <summary>Determines which locales can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
+    /// <summary>Locales that can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
     [JsonPropertyName("operatingRegions")]
     public IList<V1beta1VPCIpamSpecInitProviderOperatingRegions>? OperatingRegions { get; set; }
 
@@ -251,7 +251,7 @@ public partial class V1beta1VPCIpamSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamStatusAtProviderOperatingRegions
 {
-    /// <summary>The name of the Region you want to add to the IPAM.</summary>
+    /// <summary>Name of the Region you want to add to the IPAM.</summary>
     [JsonPropertyName("regionName")]
     public string? RegionName { get; set; }
 }
@@ -264,27 +264,27 @@ public partial class V1beta1VPCIpamStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Enables you to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
+    /// <summary>Whether to quickly delete an IPAM, private scopes, pools in private scopes, and any allocations in the pools in private scopes.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>The IPAM&apos;s default resource discovery association ID.</summary>
+    /// <summary>IPAM&apos;s default resource discovery association ID.</summary>
     [JsonPropertyName("defaultResourceDiscoveryAssociationId")]
     public string? DefaultResourceDiscoveryAssociationId { get; set; }
 
-    /// <summary>The IPAM&apos;s default resource discovery ID.</summary>
+    /// <summary>IPAM&apos;s default resource discovery ID.</summary>
     [JsonPropertyName("defaultResourceDiscoveryId")]
     public string? DefaultResourceDiscoveryId { get; set; }
 
-    /// <summary>A description for the IPAM.</summary>
+    /// <summary>Description for the IPAM.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Enable this option to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
+    /// <summary>Whether to use your own GUA ranges as private IPv6 addresses. Default: false.</summary>
     [JsonPropertyName("enablePrivateGua")]
     public bool? EnablePrivateGua { get; set; }
 
-    /// <summary>The ID of the IPAM</summary>
+    /// <summary>ID of the IPAM</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -292,18 +292,15 @@ public partial class V1beta1VPCIpamStatusAtProvider
     [JsonPropertyName("meteredAccount")]
     public string? MeteredAccount { get; set; }
 
-    /// <summary>Determines which locales can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
+    /// <summary>Locales that can be chosen when you create pools. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. You specify a region using the region_name parameter. You must set your provider block region as an operating_region.</summary>
     [JsonPropertyName("operatingRegions")]
     public IList<V1beta1VPCIpamStatusAtProviderOperatingRegions>? OperatingRegions { get; set; }
 
-    /// <summary>The ID of the IPAM&apos;s private scope. A scope is a top-level container in IPAM. Each scope represents an IP-independent network. Scopes enable you to represent networks where you have overlapping IP space. When you create an IPAM, IPAM automatically creates two scopes: public and private. The private scope is intended for private IP space. The public scope is intended for all internet-routable IP space.</summary>
+    /// <summary>ID of the IPAM&apos;s private scope. A scope is a top-level container in IPAM. Each scope represents an IP-independent network. Scopes enable you to represent networks where you have overlapping IP space. When you create an IPAM, IPAM automatically creates two scopes: public and private. The private scope is intended for private IP space. The public scope is intended for all internet-routable IP space.</summary>
     [JsonPropertyName("privateDefaultScopeId")]
     public string? PrivateDefaultScopeId { get; set; }
 
-    /// <summary>
-    /// The ID of the IPAM&apos;s public scope. A scope is a top-level container in IPAM. Each scope represents an IP-independent network. Scopes enable you to represent networks where you have overlapping IP space. When you create an IPAM, IPAM automatically creates two scopes: public and private. The private scope is intended for private
-    /// IP space. The public scope is intended for all internet-routable IP space.
-    /// </summary>
+    /// <summary>ID of the IPAM&apos;s public scope. A scope is a top-level container in IPAM. Each scope represents an IP-independent network. Scopes enable you to represent networks where you have overlapping IP space. When you create an IPAM, IPAM automatically creates two scopes: public and private. The private scope is intended for private IP space. The public scope is intended for all internet-routable IP space.</summary>
     [JsonPropertyName("publicDefaultScopeId")]
     public string? PublicDefaultScopeId { get; set; }
 
@@ -314,7 +311,7 @@ public partial class V1beta1VPCIpamStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The number of scopes in the IPAM.</summary>
+    /// <summary>Number of scopes in the IPAM.</summary>
     [JsonPropertyName("scopeCount")]
     public double? ScopeCount { get; set; }
 
@@ -322,7 +319,7 @@ public partial class V1beta1VPCIpamStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

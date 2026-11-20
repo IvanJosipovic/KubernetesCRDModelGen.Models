@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: routes.appmesh.aws.upbound.io
 spec:
   group: appmesh.aws.upbound.io
@@ -2860,7 +2860,7 @@ spec:
                     description: Route specification to apply. See spec Block for details.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route. See spec.grpc_route Block for details.
+                        description: gRPC routing information for the route. See spec.grpc_route Block for details.
                         properties:
                           action:
                             description: Action to take if a match is determined. See spec.grpc_route.action Block for details.
@@ -3685,7 +3685,7 @@ spec:
                     description: Route specification to apply. See spec Block for details.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route. See spec.grpc_route Block for details.
+                        description: gRPC routing information for the route. See spec.grpc_route Block for details.
                         properties:
                           action:
                             description: Action to take if a match is determined. See spec.grpc_route.action Block for details.
@@ -4538,7 +4538,7 @@ spec:
                     description: Route specification to apply. See spec Block for details.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route. See spec.grpc_route Block for details.
+                        description: gRPC routing information for the route. See spec.grpc_route Block for details.
                         properties:
                           action:
                             description: Action to take if a match is determined. See spec.grpc_route.action Block for details.

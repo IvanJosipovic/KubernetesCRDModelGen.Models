@@ -1756,7 +1756,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above. Note: Do not set availability_zones to the output of a data source such as aws_availability_zones, as this may be subject to change (for example, when a new AZ is added to a Region). Changing availability_zones forces a replacement, which will destroy and recreate the cluster. Always use an explicit, static list of AZs.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -1864,7 +1864,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("enableLocalWriteForwarding")]
     public bool? EnableLocalWriteForwarding { get; set; }
 
-    /// <summary>Set of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
+    /// <summary>Set of log types to export to CloudWatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
     [JsonPropertyName("enabledCloudwatchLogsExports")]
     public IList<string>? EnabledCloudwatchLogsExports { get; set; }
 
@@ -1998,6 +1998,10 @@ public partial class V1beta1ClusterSpecForProvider
     /// <summary>Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30</summary>
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -3794,7 +3798,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above. Note: Do not set availability_zones to the output of a data source such as aws_availability_zones, as this may be subject to change (for example, when a new AZ is added to a Region). Changing availability_zones forces a replacement, which will destroy and recreate the cluster. Always use an explicit, static list of AZs.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -3902,7 +3906,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("enableLocalWriteForwarding")]
     public bool? EnableLocalWriteForwarding { get; set; }
 
-    /// <summary>Set of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
+    /// <summary>Set of log types to export to CloudWatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
     [JsonPropertyName("enabledCloudwatchLogsExports")]
     public IList<string>? EnabledCloudwatchLogsExports { get; set; }
 
@@ -4036,6 +4040,10 @@ public partial class V1beta1ClusterSpecInitProvider
     /// <summary>Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30</summary>
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
 
     /// <summary>ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica. Note: Removing this attribute after creation will promote the read replica to a standalone cluster.</summary>
     [JsonPropertyName("replicationSourceIdentifier")]
@@ -4346,7 +4354,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above. Note: Do not set availability_zones to the output of a data source such as aws_availability_zones, as this may be subject to change (for example, when a new AZ is added to a Region). Changing availability_zones forces a replacement, which will destroy and recreate the cluster. Always use an explicit, static list of AZs.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -4438,7 +4446,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("enableLocalWriteForwarding")]
     public bool? EnableLocalWriteForwarding { get; set; }
 
-    /// <summary>Set of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
+    /// <summary>Set of log types to export to CloudWatch. If omitted, no logs will be exported. The following log types are supported: audit, error, general, iam-db-auth-error, instance, postgresql (PostgreSQL), slowquery.</summary>
     [JsonPropertyName("enabledCloudwatchLogsExports")]
     public IList<string>? EnabledCloudwatchLogsExports { get; set; }
 
@@ -4553,6 +4561,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30</summary>
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>Whether the DB cluster is publicly accessible. Valid only for Multi-AZ DB clusters. If not specified, defaults to true when db_subnet_group_name is not set or is default, and false otherwise. If true, the VPC of the DB subnet group must have an internet gateway attached. Cannot be used with s3_import.</summary>
+    [JsonPropertyName("publiclyAccessible")]
+    public bool? PubliclyAccessible { get; set; }
 
     /// <summary>Read-only endpoint for the Aurora cluster, automatically load-balanced across replicas</summary>
     [JsonPropertyName("readerEndpoint")]

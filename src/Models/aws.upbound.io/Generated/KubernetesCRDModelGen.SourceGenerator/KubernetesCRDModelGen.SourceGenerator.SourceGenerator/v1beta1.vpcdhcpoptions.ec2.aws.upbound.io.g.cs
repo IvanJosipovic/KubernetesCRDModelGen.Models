@@ -76,7 +76,7 @@ public partial class V1beta1VPCDHCPOptionsSpecForProvider
     [JsonPropertyName("netbiosNameServers")]
     public IList<string>? NetbiosNameServers { get; set; }
 
-    /// <summary>The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
+    /// <summary>NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
     [JsonPropertyName("netbiosNodeType")]
     public string? NetbiosNodeType { get; set; }
 
@@ -128,7 +128,7 @@ public partial class V1beta1VPCDHCPOptionsSpecInitProvider
     [JsonPropertyName("netbiosNameServers")]
     public IList<string>? NetbiosNameServers { get; set; }
 
-    /// <summary>The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
+    /// <summary>NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
     [JsonPropertyName("netbiosNodeType")]
     public string? NetbiosNodeType { get; set; }
 
@@ -328,7 +328,7 @@ public partial class V1beta1VPCDHCPOptionsSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsStatusAtProvider
 {
-    /// <summary>The ARN of the DHCP Options Set.</summary>
+    /// <summary>ARN of the DHCP Options Set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -340,7 +340,7 @@ public partial class V1beta1VPCDHCPOptionsStatusAtProvider
     [JsonPropertyName("domainNameServers")]
     public IList<string>? DomainNameServers { get; set; }
 
-    /// <summary>The ID of the DHCP Options Set.</summary>
+    /// <summary>ID of the DHCP Options Set.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -352,7 +352,7 @@ public partial class V1beta1VPCDHCPOptionsStatusAtProvider
     [JsonPropertyName("netbiosNameServers")]
     public IList<string>? NetbiosNameServers { get; set; }
 
-    /// <summary>The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
+    /// <summary>NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see RFC 2132.</summary>
     [JsonPropertyName("netbiosNodeType")]
     public string? NetbiosNodeType { get; set; }
 
@@ -360,7 +360,7 @@ public partial class V1beta1VPCDHCPOptionsStatusAtProvider
     [JsonPropertyName("ntpServers")]
     public IList<string>? NtpServers { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the DHCP options set.</summary>
+    /// <summary>ID of the AWS account that owns the DHCP options set.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
@@ -375,7 +375,7 @@ public partial class V1beta1VPCDHCPOptionsStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

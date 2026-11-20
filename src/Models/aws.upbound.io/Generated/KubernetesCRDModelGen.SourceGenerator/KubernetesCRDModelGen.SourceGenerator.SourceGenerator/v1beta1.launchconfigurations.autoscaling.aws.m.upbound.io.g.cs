@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.autoscaling.aws.m.upbound.io;
-/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.</summary>
+/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for Auto Scaling groups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -154,7 +154,7 @@ public partial class V1beta1LaunchConfigurationSpecForProviderRootBlockDevice
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LaunchConfigurationSpecForProvider
 {
-    /// <summary>Associate a public ip address with an instance in a VPC.</summary>
+    /// <summary>Associate a public IP address with an instance in a VPC.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public bool? AssociatePublicIpAddress { get; set; }
 
@@ -209,7 +209,7 @@ public partial class V1beta1LaunchConfigurationSpecForProvider
     [JsonPropertyName("rootBlockDevice")]
     public V1beta1LaunchConfigurationSpecForProviderRootBlockDevice? RootBlockDevice { get; set; }
 
-    /// <summary>A list of associated security group IDS.</summary>
+    /// <summary>A list of associated security group IDs.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -355,7 +355,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProviderRootBlockDevice
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LaunchConfigurationSpecInitProvider
 {
-    /// <summary>Associate a public ip address with an instance in a VPC.</summary>
+    /// <summary>Associate a public IP address with an instance in a VPC.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public bool? AssociatePublicIpAddress { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProvider
     [JsonPropertyName("rootBlockDevice")]
     public V1beta1LaunchConfigurationSpecInitProviderRootBlockDevice? RootBlockDevice { get; set; }
 
-    /// <summary>A list of associated security group IDS.</summary>
+    /// <summary>A list of associated security group IDs.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -648,7 +648,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Associate a public ip address with an instance in a VPC.</summary>
+    /// <summary>Associate a public IP address with an instance in a VPC.</summary>
     [JsonPropertyName("associatePublicIpAddress")]
     public bool? AssociatePublicIpAddress { get; set; }
 
@@ -707,7 +707,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProvider
     [JsonPropertyName("rootBlockDevice")]
     public V1beta1LaunchConfigurationStatusAtProviderRootBlockDevice? RootBlockDevice { get; set; }
 
-    /// <summary>A list of associated security group IDS.</summary>
+    /// <summary>A list of associated security group IDs.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -797,7 +797,7 @@ public partial class V1beta1LaunchConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.</summary>
+/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for Auto Scaling groups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

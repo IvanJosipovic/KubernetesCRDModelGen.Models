@@ -196,11 +196,11 @@ public partial class V1beta1UserDefinedFunctionSpecForProviderDatabaseNameSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserDefinedFunctionSpecForProviderResourceUris
 {
-    /// <summary>The type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
+    /// <summary>Type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
-    /// <summary>The URI for accessing the resource.</summary>
+    /// <summary>URI for accessing the resource.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -213,11 +213,11 @@ public partial class V1beta1UserDefinedFunctionSpecForProvider
     [JsonPropertyName("catalogId")]
     public required string CatalogId { get; set; }
 
-    /// <summary>The Java class that contains the function code.</summary>
+    /// <summary>Java class that contains the function code.</summary>
     [JsonPropertyName("className")]
     public string? ClassName { get; set; }
 
-    /// <summary>The name of the Database to create the Function.</summary>
+    /// <summary>Name of the Database to create the Function.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
@@ -229,11 +229,11 @@ public partial class V1beta1UserDefinedFunctionSpecForProvider
     [JsonPropertyName("databaseNameSelector")]
     public V1beta1UserDefinedFunctionSpecForProviderDatabaseNameSelector? DatabaseNameSelector { get; set; }
 
-    /// <summary>The owner of the function.</summary>
+    /// <summary>Owner of the function.</summary>
     [JsonPropertyName("ownerName")]
     public string? OwnerName { get; set; }
 
-    /// <summary>The owner type. can be one of USER, ROLE, and GROUP.</summary>
+    /// <summary>Owner type. can be one of USER, ROLE, and GROUP.</summary>
     [JsonPropertyName("ownerType")]
     public string? OwnerType { get; set; }
 
@@ -244,7 +244,7 @@ public partial class V1beta1UserDefinedFunctionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The configuration block for Resource URIs. See resource uris below for more details.</summary>
+    /// <summary>Configuration block for Resource URIs. See resource_uris Block below for more details.</summary>
     [JsonPropertyName("resourceUris")]
     public IList<V1beta1UserDefinedFunctionSpecForProviderResourceUris>? ResourceUris { get; set; }
 }
@@ -253,11 +253,11 @@ public partial class V1beta1UserDefinedFunctionSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserDefinedFunctionSpecInitProviderResourceUris
 {
-    /// <summary>The type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
+    /// <summary>Type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
-    /// <summary>The URI for accessing the resource.</summary>
+    /// <summary>URI for accessing the resource.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -278,19 +278,19 @@ public partial class V1beta1UserDefinedFunctionSpecInitProviderResourceUris
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserDefinedFunctionSpecInitProvider
 {
-    /// <summary>The Java class that contains the function code.</summary>
+    /// <summary>Java class that contains the function code.</summary>
     [JsonPropertyName("className")]
     public string? ClassName { get; set; }
 
-    /// <summary>The owner of the function.</summary>
+    /// <summary>Owner of the function.</summary>
     [JsonPropertyName("ownerName")]
     public string? OwnerName { get; set; }
 
-    /// <summary>The owner type. can be one of USER, ROLE, and GROUP.</summary>
+    /// <summary>Owner type. can be one of USER, ROLE, and GROUP.</summary>
     [JsonPropertyName("ownerType")]
     public string? OwnerType { get; set; }
 
-    /// <summary>The configuration block for Resource URIs. See resource uris below for more details.</summary>
+    /// <summary>Configuration block for Resource URIs. See resource_uris Block below for more details.</summary>
     [JsonPropertyName("resourceUris")]
     public IList<V1beta1UserDefinedFunctionSpecInitProviderResourceUris>? ResourceUris { get; set; }
 }
@@ -406,11 +406,11 @@ public partial class V1beta1UserDefinedFunctionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserDefinedFunctionStatusAtProviderResourceUris
 {
-    /// <summary>The type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
+    /// <summary>Type of the resource. can be one of JAR, FILE, and ARCHIVE.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
-    /// <summary>The URI for accessing the resource.</summary>
+    /// <summary>URI for accessing the resource.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -419,7 +419,7 @@ public partial class V1beta1UserDefinedFunctionStatusAtProviderResourceUris
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserDefinedFunctionStatusAtProvider
 {
-    /// <summary>The ARN of the Glue User Defined Function.</summary>
+    /// <summary>ARN of the Glue User Defined Function.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -427,27 +427,27 @@ public partial class V1beta1UserDefinedFunctionStatusAtProvider
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>The Java class that contains the function code.</summary>
+    /// <summary>Java class that contains the function code.</summary>
     [JsonPropertyName("className")]
     public string? ClassName { get; set; }
 
-    /// <summary>The time at which the function was created.</summary>
+    /// <summary>Time at which the function was created.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
-    /// <summary>The name of the Database to create the Function.</summary>
+    /// <summary>Name of the Database to create the Function.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The id of the Glue User Defined Function.</summary>
+    /// <summary>ID of the Glue User Defined Function.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The owner of the function.</summary>
+    /// <summary>Owner of the function.</summary>
     [JsonPropertyName("ownerName")]
     public string? OwnerName { get; set; }
 
-    /// <summary>The owner type. can be one of USER, ROLE, and GROUP.</summary>
+    /// <summary>Owner type. can be one of USER, ROLE, and GROUP.</summary>
     [JsonPropertyName("ownerType")]
     public string? OwnerType { get; set; }
 
@@ -458,7 +458,7 @@ public partial class V1beta1UserDefinedFunctionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The configuration block for Resource URIs. See resource uris below for more details.</summary>
+    /// <summary>Configuration block for Resource URIs. See resource_uris Block below for more details.</summary>
     [JsonPropertyName("resourceUris")]
     public IList<V1beta1UserDefinedFunctionStatusAtProviderResourceUris>? ResourceUris { get; set; }
 }

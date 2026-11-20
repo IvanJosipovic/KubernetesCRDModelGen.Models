@@ -223,7 +223,7 @@ public partial class V1beta1IdentityProviderSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The user pool id</summary>
+    /// <summary>The user pool ID</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
 
@@ -427,7 +427,7 @@ public partial class V1beta1IdentityProviderSpecInitProvider
     [JsonPropertyName("providerType")]
     public string? ProviderType { get; set; }
 
-    /// <summary>The user pool id</summary>
+    /// <summary>The user pool ID</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
 
@@ -581,7 +581,7 @@ public partial class V1beta1IdentityProviderStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The user pool id</summary>
+    /// <summary>The user pool ID</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
 }

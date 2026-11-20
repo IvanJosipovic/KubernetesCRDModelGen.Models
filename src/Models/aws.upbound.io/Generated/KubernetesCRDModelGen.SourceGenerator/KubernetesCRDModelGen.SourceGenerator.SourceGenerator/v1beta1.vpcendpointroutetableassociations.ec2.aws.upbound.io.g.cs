@@ -908,7 +908,7 @@ public partial class V1beta1VPCEndpointRouteTableAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointRouteTableAssociationStatusAtProvider
 {
-    /// <summary>A hash of the EC2 Route Table and VPC Endpoint identifiers.</summary>
+    /// <summary>Hash of the EC2 Route Table and VPC Endpoint identifiers.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

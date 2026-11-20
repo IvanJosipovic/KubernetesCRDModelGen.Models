@@ -296,7 +296,7 @@ public partial class V1beta1AccountSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProvider
 {
-    /// <summary>ARN of the SecurityHub Hub created in the account.</summary>
+    /// <summary>ARN of the Security Hub Hub created in the account.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -838,7 +838,7 @@ public partial class V1beta1InstanceSpecForProviderPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
+/// <summary>Password for the master DB user. Note that this may show up in logs. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderPasswordWoSecretRef
@@ -1439,7 +1439,7 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
-    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
+    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle DB name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
@@ -1591,6 +1591,10 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>National character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets Supported in Amazon RDS.</summary>
     [JsonPropertyName("ncharCharacterSetName")]
     public string? NcharCharacterSetName { get; set; }
@@ -1622,7 +1626,7 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1InstanceSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
+    /// <summary>Password for the master DB user. Note that this may show up in logs. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
     [JsonPropertyName("passwordWoSecretRef")]
     public V1beta1InstanceSpecForProviderPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
 
@@ -2543,7 +2547,7 @@ public partial class V1beta1InstanceSpecInitProviderPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
+/// <summary>Password for the master DB user. Note that this may show up in logs. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderPasswordWoSecretRef
@@ -3149,7 +3153,7 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
-    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
+    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle DB name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
@@ -3301,6 +3305,10 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>National character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets Supported in Amazon RDS.</summary>
     [JsonPropertyName("ncharCharacterSetName")]
     public string? NcharCharacterSetName { get; set; }
@@ -3332,7 +3340,7 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1InstanceSpecInitProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
+    /// <summary>Password for the master DB user. Note that this may show up in logs. Cannot be set if manage_master_user_password is set to true. If set, requires password_wo_version to be set.</summary>
     [JsonPropertyName("passwordWoSecretRef")]
     public V1beta1InstanceSpecInitProviderPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
 
@@ -3566,15 +3574,15 @@ public partial class V1beta1InstanceStatusAtProviderBlueGreenUpdate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderListenerEndpoint
 {
-    /// <summary>Hostname of the RDS instance. See also endpoint and port.</summary>
+    /// <summary>DNS address of the DB instance.</summary>
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>Canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).</summary>
+    /// <summary>ID that Amazon Route 53 assigns when you create a hosted zone.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
-    /// <summary>Port on which the DB accepts connections.</summary>
+    /// <summary>Port that the database engine is listening on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -3720,7 +3728,7 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
-    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
+    /// <summary>Name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle DB name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
@@ -3832,7 +3840,7 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("licenseModel")]
     public string? LicenseModel { get; set; }
 
-    /// <summary>Listener connection endpoint for SQL Server Always On. See Endpoint below.</summary>
+    /// <summary>Listener connection endpoint for SQL Server Always On. See listener_endpoint Block below.</summary>
     [JsonPropertyName("listenerEndpoint")]
     public IList<V1beta1InstanceStatusAtProviderListenerEndpoint>? ListenerEndpoint { get; set; }
 
@@ -3867,6 +3875,10 @@ public partial class V1beta1InstanceStatusAtProvider
     /// <summary>Whether the RDS instance is multi-AZ.</summary>
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
+
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
 
     /// <summary>National character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances. This can&apos;t be changed. See Oracle Character Sets Supported in Amazon RDS.</summary>
     [JsonPropertyName("ncharCharacterSetName")]

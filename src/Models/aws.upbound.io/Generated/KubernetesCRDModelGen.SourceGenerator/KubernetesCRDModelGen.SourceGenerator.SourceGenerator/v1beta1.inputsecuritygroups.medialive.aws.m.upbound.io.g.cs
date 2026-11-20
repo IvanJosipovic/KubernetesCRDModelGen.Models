@@ -41,7 +41,7 @@ public partial class V1beta1InputSecurityGroupList : IKubernetesObject<V1ListMet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSecurityGroupSpecForProviderWhitelistRules
 {
-    /// <summary>The IPv4 CIDR that&apos;s whitelisted.</summary>
+    /// <summary>IPv4 CIDR that&apos;s whitelisted.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 }
@@ -61,7 +61,7 @@ public partial class V1beta1InputSecurityGroupSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Whitelist rules. See Whitelist Rules for more details.</summary>
+    /// <summary>Whitelist rules. See whitelist_rules Block for more details.</summary>
     [JsonPropertyName("whitelistRules")]
     public IList<V1beta1InputSecurityGroupSpecForProviderWhitelistRules>? WhitelistRules { get; set; }
 }
@@ -70,7 +70,7 @@ public partial class V1beta1InputSecurityGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSecurityGroupSpecInitProviderWhitelistRules
 {
-    /// <summary>The IPv4 CIDR that&apos;s whitelisted.</summary>
+    /// <summary>IPv4 CIDR that&apos;s whitelisted.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 }
@@ -95,7 +95,7 @@ public partial class V1beta1InputSecurityGroupSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Whitelist rules. See Whitelist Rules for more details.</summary>
+    /// <summary>Whitelist rules. See whitelist_rules Block for more details.</summary>
     [JsonPropertyName("whitelistRules")]
     public IList<V1beta1InputSecurityGroupSpecInitProviderWhitelistRules>? WhitelistRules { get; set; }
 }
@@ -211,7 +211,7 @@ public partial class V1beta1InputSecurityGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InputSecurityGroupStatusAtProviderWhitelistRules
 {
-    /// <summary>The IPv4 CIDR that&apos;s whitelisted.</summary>
+    /// <summary>IPv4 CIDR that&apos;s whitelisted.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 }
@@ -224,11 +224,11 @@ public partial class V1beta1InputSecurityGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>InputSecurityGroup Id.</summary>
+    /// <summary>InputSecurityGroup ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The list of inputs currently using this InputSecurityGroup.</summary>
+    /// <summary>List of inputs currently using this InputSecurityGroup.</summary>
     [JsonPropertyName("inputs")]
     public IList<string>? Inputs { get; set; }
 
@@ -246,7 +246,7 @@ public partial class V1beta1InputSecurityGroupStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Whitelist rules. See Whitelist Rules for more details.</summary>
+    /// <summary>Whitelist rules. See whitelist_rules Block for more details.</summary>
     [JsonPropertyName("whitelistRules")]
     public IList<V1beta1InputSecurityGroupStatusAtProviderWhitelistRules>? WhitelistRules { get; set; }
 }

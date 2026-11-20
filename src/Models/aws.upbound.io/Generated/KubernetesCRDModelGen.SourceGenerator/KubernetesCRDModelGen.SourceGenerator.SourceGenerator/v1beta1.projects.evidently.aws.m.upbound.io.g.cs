@@ -355,7 +355,7 @@ public partial class V1beta1ProjectStatusAtProvider
     [JsonPropertyName("featureCount")]
     public double? FeatureCount { get; set; }
 
-    /// <summary>The ID has the same value as the arn of the project.</summary>
+    /// <summary>The ID has the same value as the ARN of the project.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

@@ -266,6 +266,20 @@ public partial class V1beta2ServiceSpecForProviderDeploymentConfigurationCanaryC
     public double? CanaryPercent { get; set; }
 }
 
+/// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServiceSpecForProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderDeploymentConfigurationLifecycleHook
@@ -274,7 +288,7 @@ public partial class V1beta2ServiceSpecForProviderDeploymentConfigurationLifecyc
     [JsonPropertyName("hookDetails")]
     public string? HookDetails { get; set; }
 
-    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook.</summary>
+    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("hookTargetArn")]
     public string? HookTargetArn { get; set; }
 
@@ -282,9 +296,17 @@ public partial class V1beta2ServiceSpecForProviderDeploymentConfigurationLifecyc
     [JsonPropertyName("lifecycleStages")]
     public IList<string>? LifecycleStages { get; set; }
 
-    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
+    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public V1beta2ServiceSpecForProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration? TimeoutConfiguration { get; set; }
 }
 
 /// <summary>Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.</summary>
@@ -1731,6 +1753,20 @@ public partial class V1beta2ServiceSpecInitProviderDeploymentConfigurationCanary
     public double? CanaryPercent { get; set; }
 }
 
+/// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServiceSpecInitProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderDeploymentConfigurationLifecycleHook
@@ -1739,7 +1775,7 @@ public partial class V1beta2ServiceSpecInitProviderDeploymentConfigurationLifecy
     [JsonPropertyName("hookDetails")]
     public string? HookDetails { get; set; }
 
-    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook.</summary>
+    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("hookTargetArn")]
     public string? HookTargetArn { get; set; }
 
@@ -1747,9 +1783,17 @@ public partial class V1beta2ServiceSpecInitProviderDeploymentConfigurationLifecy
     [JsonPropertyName("lifecycleStages")]
     public IList<string>? LifecycleStages { get; set; }
 
-    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
+    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public V1beta2ServiceSpecInitProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration? TimeoutConfiguration { get; set; }
 }
 
 /// <summary>Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.</summary>
@@ -3372,6 +3416,20 @@ public partial class V1beta2ServiceStatusAtProviderDeploymentConfigurationCanary
     public double? CanaryPercent { get; set; }
 }
 
+/// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServiceStatusAtProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderDeploymentConfigurationLifecycleHook
@@ -3380,7 +3438,7 @@ public partial class V1beta2ServiceStatusAtProviderDeploymentConfigurationLifecy
     [JsonPropertyName("hookDetails")]
     public string? HookDetails { get; set; }
 
-    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook.</summary>
+    /// <summary>ARN of the Lambda function to invoke for the lifecycle hook. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("hookTargetArn")]
     public string? HookTargetArn { get; set; }
 
@@ -3388,9 +3446,17 @@ public partial class V1beta2ServiceStatusAtProviderDeploymentConfigurationLifecy
     [JsonPropertyName("lifecycleStages")]
     public IList<string>? LifecycleStages { get; set; }
 
-    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
+    /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function. Required when target_type is AWS_LAMBDA. Not used when target_type is PAUSE.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public V1beta2ServiceStatusAtProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration? TimeoutConfiguration { get; set; }
 }
 
 /// <summary>Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.</summary>

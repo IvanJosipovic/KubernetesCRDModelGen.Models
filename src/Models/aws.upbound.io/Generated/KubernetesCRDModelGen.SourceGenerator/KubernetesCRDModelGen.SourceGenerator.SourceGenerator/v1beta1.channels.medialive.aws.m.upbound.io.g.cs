@@ -37,12 +37,12 @@ public partial class V1beta1ChannelList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1beta1Channel> Items { get; set; }
 }
 
-/// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+/// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderCdiInputSpecification
 {
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum CDI input resolution.</summary>
     [JsonPropertyName("resolution")]
     public string? Resolution { get; set; }
 }
@@ -56,16 +56,16 @@ public partial class V1beta1ChannelSpecForProviderDestinationsMediaPackageSettin
     public string? ChannelId { get; set; }
 }
 
-/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderDestinationsMultiplexSettings
 {
-    /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
+    /// <summary>ID of the Multiplex that the encoder is providing output to.</summary>
     [JsonPropertyName("multiplexId")]
     public string? MultiplexId { get; set; }
 
-    /// <summary>The program name of the Multiplex program that the encoder is providing output to.</summary>
+    /// <summary>Program name of the Multiplex program that the encoder is providing output to.</summary>
     [JsonPropertyName("programName")]
     public string? ProgramName { get; set; }
 }
@@ -78,15 +78,15 @@ public partial class V1beta1ChannelSpecForProviderDestinationsSettings
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
-    /// <summary>A URL specifying a destination.</summary>
+    /// <summary>URL for the destination.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -95,29 +95,29 @@ public partial class V1beta1ChannelSpecForProviderDestinationsSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderDestinations
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>User-specified ID used in an output group or an output.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See Media Package Settings for more details.</summary>
+    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See media_package_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageSettings")]
     public IList<V1beta1ChannelSpecForProviderDestinationsMediaPackageSettings>? MediaPackageSettings { get; set; }
 
-    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1ChannelSpecForProviderDestinationsMultiplexSettings? MultiplexSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See settings Block for details.</summary>
     [JsonPropertyName("settings")]
     public IList<V1beta1ChannelSpecForProviderDestinationsSettings>? Settings { get; set; }
 }
 
-/// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+/// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
-    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
+    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification; itu17702 conforms to the EBU R-128 specification.</summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
@@ -130,15 +130,16 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? TargetLkfs { get; set; }
 }
 
-/// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+/// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
+    /// <summary>CBET check digits to use for the watermark.</summary>
     [JsonPropertyName("cbetCheckDigitString")]
     public string? CbetCheckDigitString { get; set; }
 
-    /// <summary>Determines the method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
+    /// <summary>Method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
     [JsonPropertyName("cbetStepaside")]
     public string? CbetStepaside { get; set; }
 
@@ -151,20 +152,21 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
+    /// <summary>Check digit string for the watermark.</summary>
     [JsonPropertyName("checkDigitString")]
     public string? CheckDigitString { get; set; }
 
-    /// <summary>The Nielsen Source ID to include in the watermark.</summary>
+    /// <summary>Nielsen source ID to include in the watermark.</summary>
     [JsonPropertyName("sid")]
     public double? Sid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
-    /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
     [JsonPropertyName("nielsenCbetSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings? NielsenCbetSettings { get; set; }
 
@@ -172,22 +174,22 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("nielsenDistributionType")]
     public string? NielsenDistributionType { get; set; }
 
-    /// <summary>Used to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See Nielsen NAES II NW Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See nielsen_naes_ii_nw_settings Block for details.</summary>
     [JsonPropertyName("nielsenNaesIiNwSettings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings>? NielsenNaesIiNwSettings { get; set; }
 }
 
-/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
     [JsonPropertyName("nielsenWatermarksSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings? NielsenWatermarksSettings { get; set; }
 }
 
-/// <summary>Aac Settings. See AAC Settings for more details.</summary>
+/// <summary>AAC settings. See aac_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
@@ -196,19 +198,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Set to &quot;broadcasterMixedAd&quot; when input contains pre-mixed main audio + AD (narration) as a stereo pair.</summary>
+    /// <summary>Set to broadcasterMixedAd when input contains pre-mixed main audio and AD (narration) as a stereo pair.</summary>
     [JsonPropertyName("inputType")]
     public string? InputType { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
@@ -220,16 +222,16 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("sampleRate")]
     public double? SampleRate { get; set; }
 
-    /// <summary>Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
+    /// <summary>Whether to use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
     [JsonPropertyName("spec")]
     public string? Spec { get; set; }
 
-    /// <summary>VBR Quality Level - Only used if rateControlMode is VBR.</summary>
+    /// <summary>VBR quality level. Only used if rate_control_mode is VBR.</summary>
     [JsonPropertyName("vbrQuality")]
     public string? VbrQuality { get; set; }
 }
 
-/// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+/// <summary>AC3 settings. See ac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
@@ -238,19 +240,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
-    /// <summary>If set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
+    /// <summary>When set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
     [JsonPropertyName("drcProfile")]
     public string? DrcProfile { get; set; }
 
@@ -263,7 +265,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public string? MetadataControl { get; set; }
 }
 
-/// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+/// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
@@ -272,11 +274,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -284,7 +286,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
@@ -297,12 +299,12 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? SurroundTrim { get; set; }
 }
 
-/// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+/// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
-    /// <summary>Sets the attenuation control.</summary>
+    /// <summary>Attenuation control.</summary>
     [JsonPropertyName("attenuationControl")]
     public string? AttenuationControl { get; set; }
 
@@ -310,18 +312,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
+    /// <summary>Whether to activate a DC filter for the channels.</summary>
     [JsonPropertyName("dcFilter")]
     public string? DcFilter { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -329,10 +332,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
+    /// <summary>When set to lfe, the EAC3 output contains an LFE channel.</summary>
     [JsonPropertyName("lfeControl")]
     public string? LfeControl { get; set; }
 
@@ -340,19 +344,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("lfeFilter")]
     public string? LfeFilter { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total center mix level.</summary>
     [JsonPropertyName("loRoCenterMixLevel")]
     public double? LoRoCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total surround mix level.</summary>
     [JsonPropertyName("loRoSurroundMixLevel")]
     public double? LoRoSurroundMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only center mix level.</summary>
     [JsonPropertyName("ltRtCenterMixLevel")]
     public double? LtRtCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only surround mix level.</summary>
     [JsonPropertyName("ltRtSurroundMixLevel")]
     public double? LtRtSurroundMixLevel { get; set; }
 
@@ -360,23 +364,28 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("metadataControl")]
     public string? MetadataControl { get; set; }
 
+    /// <summary>When set to whenPossible, input DD+ audio is passed through if present.</summary>
     [JsonPropertyName("passthroughControl")]
     public string? PassthroughControl { get; set; }
 
+    /// <summary>Whether to invert the phase of the surround channels.</summary>
     [JsonPropertyName("phaseControl")]
     public string? PhaseControl { get; set; }
 
+    /// <summary>Stereo downmix preference.</summary>
     [JsonPropertyName("stereoDownmix")]
     public string? StereoDownmix { get; set; }
 
+    /// <summary>Whether to encode the stream as Dolby Digital EX.</summary>
     [JsonPropertyName("surroundExMode")]
     public string? SurroundExMode { get; set; }
 
+    /// <summary>Whether to encode the stream as a surround sound stream.</summary>
     [JsonPropertyName("surroundMode")]
     public string? SurroundMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>MP2 settings. See mp2_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
@@ -385,7 +394,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -394,22 +403,23 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Pass-through settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WAV settings. See wav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
+    /// <summary>Bits per sample.</summary>
     [JsonPropertyName("bitDepth")]
     public double? BitDepth { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -418,36 +428,36 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
-    /// <summary>Aac Settings. See AAC Settings for more details.</summary>
+    /// <summary>AAC settings. See aac_settings Block for details.</summary>
     [JsonPropertyName("aacSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings? AacSettings { get; set; }
 
-    /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+    /// <summary>AC3 settings. See ac3_settings Block for details.</summary>
     [JsonPropertyName("ac3Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings? Ac3Settings { get; set; }
 
-    /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+    /// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
     [JsonPropertyName("eac3AtmosSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings? Eac3AtmosSettings { get; set; }
 
-    /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+    /// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
     [JsonPropertyName("eac3Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings? Eac3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>MP2 settings. See mp2_settings Block for details.</summary>
     [JsonPropertyName("mp2Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings? Mp2Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Pass-through settings. Can be set as an empty block.</summary>
     [JsonPropertyName("passThroughSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings? PassThroughSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WAV settings. See wav_settings Block for details.</summary>
     [JsonPropertyName("wavSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
@@ -456,9 +466,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
+    /// <summary>Remixing value, from -60 to 6 decibels.</summary>
     [JsonPropertyName("gain")]
     public double? Gain { get; set; }
 
+    /// <summary>Index of the input channel used as a source.</summary>
     [JsonPropertyName("inputChannel")]
     public double? InputChannel { get; set; }
 }
@@ -467,24 +479,29 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
+    /// <summary>Levels for each of the input channels. See input_channel_levels Block for details.</summary>
     [JsonPropertyName("inputChannelLevels")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels>? InputChannelLevels { get; set; }
 
+    /// <summary>Index of the output channel being produced.</summary>
     [JsonPropertyName("outputChannel")]
     public double? OutputChannel { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
+    /// <summary>Mapping of input channels to output channels. See channel_mappings Block for details.</summary>
     [JsonPropertyName("channelMappings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings>? ChannelMappings { get; set; }
 
+    /// <summary>Number of input channels to be used.</summary>
     [JsonPropertyName("channelsIn")]
     public double? ChannelsIn { get; set; }
 
+    /// <summary>Number of output channels to be produced.</summary>
     [JsonPropertyName("channelsOut")]
     public double? ChannelsOut { get; set; }
 }
@@ -493,51 +510,52 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptions
 {
-    /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+    /// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
     [JsonPropertyName("audioNormalizationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings? AudioNormalizationSettings { get; set; }
 
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1.</summary>
+    /// <summary>Applies only if audio_type_control is useConfigured. Values for audio_type are defined in ISO-IEC 13818-1.</summary>
     [JsonPropertyName("audioType")]
     public string? AudioType { get; set; }
 
-    /// <summary>Determined how audio type is determined.</summary>
+    /// <summary>How audio type is determined.</summary>
     [JsonPropertyName("audioTypeControl")]
     public string? AudioTypeControl { get; set; }
 
-    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
     [JsonPropertyName("audioWatermarkSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings? AudioWatermarkSettings { get; set; }
 
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
+    /// <summary>How to handle the audio language code.</summary>
     [JsonPropertyName("languageCodeControl")]
     public string? LanguageCodeControl { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
     [JsonPropertyName("remixSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettings? RemixSettings { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
 
-/// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+/// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlankingAvailBlankingImage
@@ -550,33 +568,33 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlankingAv
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+/// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlanking
 {
-    /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+    /// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
     [JsonPropertyName("availBlankingImage")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAvailBlankingAvailBlankingImage? AvailBlankingImage { get; set; }
 
-    /// <summary>When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added.</summary>
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>ARIB Destination Settings.</summary>
+/// <summary>ARIB destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
@@ -589,86 +607,86 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+/// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
@@ -681,230 +699,230 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+/// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+/// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
-    /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
+    /// <summary>Name of the copyright holder to include in the copyright tag in the captions metadata.</summary>
     [JsonPropertyName("copyrightHolder")]
     public string? CopyrightHolder { get; set; }
 
-    /// <summary>Specifies how to handle the gap between the lines (in multi-line captions). - enabled: Fill with the captions background color (as specified in the input captions). - disabled: Leave the gap unfilled.</summary>
+    /// <summary>How to handle the gap between the lines in multi-line captions. enabled fills the gap with the captions background color as specified in the input captions; disabled leaves the gap unfilled.</summary>
     [JsonPropertyName("fillLineGap")]
     public string? FillLineGap { get; set; }
 
-    /// <summary>Specifies the font family to include in the font data attached to the EBU-TT captions. Valid only if styleControl is set to include. If you leave this field empty, the font family is set to “monospaced”. (If styleControl is set to exclude, the font family is always set to “monospaced”.) You specify only the font family. All other style information (color, bold, position and so on) is copied from the input captions. The size is always set to 100% to allow the downstream player to choose the size. - Enter a list of font families, as a comma-separated list of font names, in order of preference. The name can be a font family (such as “Arial”), or a generic font family (such as “serif”), or “default” (to let the downstream player choose the font). - Leave blank to set the family to “monospace”.</summary>
+    /// <summary>Font family to include in the font data attached to the EBU-TT captions. Valid only if style_control is set to include. If you leave this field empty, the font family is set to monospaced. You specify only the font family; all other style information (color, bold, position, and so on) is copied from the input captions, and the size is always set to 100% to allow the downstream player to choose the size. Enter a comma-separated list of font names in order of preference, a generic font family such as serif, or default to let the downstream player choose the font.</summary>
     [JsonPropertyName("fontFamily")]
     public string? FontFamily { get; set; }
 
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Embedded Destination Settings.</summary>
+/// <summary>Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
-/// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+/// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
-/// <summary>RTMP Caption Info Destination Settings.</summary>
+/// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
-/// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+/// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
-/// <summary>SCTE27 Destination Settings.</summary>
+/// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
-/// <summary>SMPTE TT Destination Settings.</summary>
+/// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
-/// <summary>Teletext Destination Settings.</summary>
+/// <summary>Teletext destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
-/// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+/// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+/// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+/// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
-    /// <summary>ARIB Destination Settings.</summary>
+    /// <summary>ARIB destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings? AribDestinationSettings { get; set; }
 
-    /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+    /// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
     [JsonPropertyName("burnInDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings? BurnInDestinationSettings { get; set; }
 
-    /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+    /// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
     [JsonPropertyName("dvbSubDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings? DvbSubDestinationSettings { get; set; }
 
-    /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+    /// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
     [JsonPropertyName("ebuTtDDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings? EbuTtDDestinationSettings { get; set; }
 
-    /// <summary>Embedded Destination Settings.</summary>
+    /// <summary>Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings? EmbeddedDestinationSettings { get; set; }
 
-    /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+    /// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedPlusScte20DestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings? EmbeddedPlusScte20DestinationSettings { get; set; }
 
-    /// <summary>RTMP Caption Info Destination Settings.</summary>
+    /// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rtmpCaptionInfoDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings? RtmpCaptionInfoDestinationSettings { get; set; }
 
-    /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+    /// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte20PlusEmbeddedDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings? Scte20PlusEmbeddedDestinationSettings { get; set; }
 
-    /// <summary>SCTE27 Destination Settings.</summary>
+    /// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte27DestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings? Scte27DestinationSettings { get; set; }
 
-    /// <summary>SMPTE TT Destination Settings.</summary>
+    /// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("smpteTtDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings? SmpteTtDestinationSettings { get; set; }
 
-    /// <summary>Teletext Destination Settings.</summary>
+    /// <summary>Teletext destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("teletextDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings? TeletextDestinationSettings { get; set; }
 
-    /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+    /// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
     [JsonPropertyName("ttmlDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings? TtmlDestinationSettings { get; set; }
 
-    /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+    /// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
     [JsonPropertyName("webvttDestinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
@@ -913,31 +931,32 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptions
 {
-    /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
+    /// <summary>Whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
     [JsonPropertyName("accessibility")]
     public string? Accessibility { get; set; }
 
-    /// <summary>Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.</summary>
+    /// <summary>Input caption selector to use as a caption source when generating output captions. Must match a caption selector name.</summary>
     [JsonPropertyName("captionSelectorName")]
     public string? CaptionSelectorName { get; set; }
 
-    /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+    /// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
     [JsonPropertyName("destinationSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettings? DestinationSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
+/// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
@@ -950,99 +969,104 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigura
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+/// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
+    /// <summary>Amount of time, in milliseconds, to display black video when the input is lost.</summary>
     [JsonPropertyName("blackFrameMsec")]
     public double? BlackFrameMsec { get; set; }
 
+    /// <summary>Color to display, as a hexadecimal RGBA value, when input_loss_image_type is color.</summary>
     [JsonPropertyName("inputLossImageColor")]
     public string? InputLossImageColor { get; set; }
 
+    /// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
     [JsonPropertyName("inputLossImageSlate")]
     public V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate? InputLossImageSlate { get; set; }
 
+    /// <summary>Whether to display a solid color or a slate image when input is lost.</summary>
     [JsonPropertyName("inputLossImageType")]
     public string? InputLossImageType { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, to repeat the previous picture when the input is lost.</summary>
     [JsonPropertyName("repeatFrameMsec")]
     public double? RepeatFrameMsec { get; set; }
 }
 
-/// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+/// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfiguration
 {
-    /// <summary>Value to set the initial audio gain for the Live Event.</summary>
+    /// <summary>Value to set the initial audio gain for the live event.</summary>
     [JsonPropertyName("initialAudioGain")]
     public double? InitialAudioGain { get; set; }
 
-    /// <summary>Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input. When “none” is configured the encoder will transcode either black, a solid color, or a user specified slate images per the “Input Loss Behavior” configuration until the next input switch occurs (which is controlled through the Channel Schedule API).</summary>
+    /// <summary>Action to take when the current input completes. When switchAndLoopInputs is configured, the encoder restarts at the beginning of the first input. When none is configured, the encoder transcodes black, a solid color, or a user-specified slate image per the input loss behavior configuration until the next input switch occurs, which is controlled through the Channel Schedule API.</summary>
     [JsonPropertyName("inputEndAction")]
     public string? InputEndAction { get; set; }
 
-    /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+    /// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
     [JsonPropertyName("inputLossBehavior")]
     public V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehavior? InputLossBehavior { get; set; }
 
-    /// <summary>Indicates how MediaLive pipelines are synchronized. PIPELINE_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other. EPOCH_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.</summary>
+    /// <summary>How MediaLive pipelines are synchronized. PIPELINE_LOCKING attempts to synchronize the output of each pipeline to the other. EPOCH_LOCKING attempts to synchronize the output of each pipeline to the Unix epoch.</summary>
     [JsonPropertyName("outputLockingMode")]
     public string? OutputLockingMode { get; set; }
 
-    /// <summary>Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.</summary>
+    /// <summary>Whether the rate of frames emitted by the live encoder is paced by its system clock, which optionally may be locked to another source via NTP, or locked to the clock of the input source.</summary>
     [JsonPropertyName("outputTimingSource")]
     public string? OutputTimingSource { get; set; }
 
-    /// <summary>Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
+    /// <summary>Adjusts the video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
     [JsonPropertyName("supportLowFramerateInputs")]
     public string? SupportLowFramerateInputs { get; set; }
 }
 
-/// <summary>Html Motion Graphics Settings.</summary>
+/// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
-/// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+/// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
-    /// <summary>Html Motion Graphics Settings.</summary>
+    /// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
     [JsonPropertyName("htmlMotionGraphicsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings? HtmlMotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+/// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfiguration
 {
-    /// <summary>Motion Graphics Insertion.</summary>
+    /// <summary>Whether to activate motion graphics insertion.</summary>
     [JsonPropertyName("motionGraphicsInsertion")]
     public string? MotionGraphicsInsertion { get; set; }
 
-    /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+    /// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
     [JsonPropertyName("motionGraphicsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings? MotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+/// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsNielsenConfiguration
 {
-    /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
+    /// <summary>Distributor ID assigned to your organization by Nielsen.</summary>
     [JsonPropertyName("distributorId")]
     public string? DistributorId { get; set; }
 
@@ -1051,27 +1075,27 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsNielsenConfigur
     public string? NielsenPcmToId3Tagging { get; set; }
 }
 
-/// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+/// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
-    /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+    /// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
     [JsonPropertyName("archiveS3Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings? ArchiveS3Settings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
@@ -1085,20 +1109,20 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
-    /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
     [JsonPropertyName("archiveCdnSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings? ArchiveCdnSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Number of seconds to write to archive file before closing and starting a new one.</summary>
+    /// <summary>Number of seconds to write to an archive file before closing and starting a new one.</summary>
     [JsonPropertyName("rolloverInterval")]
     public double? RolloverInterval { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
@@ -1108,36 +1132,36 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureS3Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings? FrameCaptureS3Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureCdnSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
@@ -1146,19 +1170,20 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
+    /// <summary>Caption channel to install in the output.</summary>
     [JsonPropertyName("captionChannel")]
     public double? CaptionChannel { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
@@ -1168,18 +1193,20 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -1191,22 +1218,25 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>Salt for authenticated Akamai.</summary>
     [JsonPropertyName("salt")]
     public string? Salt { get; set; }
 
+    /// <summary>Token parameter for authenticated Akamai.</summary>
     [JsonPropertyName("token")]
     public string? Token { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
@@ -1219,18 +1249,20 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>MediaStore storage class to use.</summary>
     [JsonPropertyName("mediaStoreStorageClass")]
     public string? MediaStoreStorageClass { get; set; }
 
@@ -1243,28 +1275,30 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -1281,27 +1315,28 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
     [JsonPropertyName("hlsAkamaiSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings? HlsAkamaiSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
     [JsonPropertyName("hlsBasicPutSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings? HlsBasicPutSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
     [JsonPropertyName("hlsMediaStoreSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings? HlsMediaStoreSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
     [JsonPropertyName("hlsS3Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings? HlsS3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
     [JsonPropertyName("hlsWebdavSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
+/// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
@@ -1314,7 +1349,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1323,165 +1358,200 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
+    /// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
     [JsonPropertyName("keyProviderServer")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer? KeyProviderServer { get; set; }
 
+    /// <summary>Static key value as a 32-character hexadecimal string.</summary>
     [JsonPropertyName("staticKeyValue")]
     public string? StaticKeyValue { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Static key settings. See static_key_settings Block for details.</summary>
     [JsonPropertyName("staticKeySettings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings>? StaticKeySettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
+    /// <summary>Prepends a value to the URI of each media (segment) file in the manifest.</summary>
     [JsonPropertyName("baseUrlContent")]
     public string? BaseUrlContent { get; set; }
 
+    /// <summary>Alternate base URL for content, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlContent1")]
     public string? BaseUrlContent1 { get; set; }
 
+    /// <summary>Prepends a value to the URI of each variant manifest file in the master manifest.</summary>
     [JsonPropertyName("baseUrlManifest")]
     public string? BaseUrlManifest { get; set; }
 
+    /// <summary>Alternate base URL for manifests, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlManifest1")]
     public string? BaseUrlManifest1 { get; set; }
 
+    /// <summary>Mapping of up to 4 caption channels to caption languages. See caption_language_mappings Block for details.</summary>
     [JsonPropertyName("captionLanguageMappings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings>? CaptionLanguageMappings { get; set; }
 
+    /// <summary>How audio and caption language setting tags are written in the manifest.</summary>
     [JsonPropertyName("captionLanguageSetting")]
     public string? CaptionLanguageSetting { get; set; }
 
+    /// <summary>When set to disabled, sets the #EXT-X-ALLOW-CACHE:no tag in the manifest.</summary>
     [JsonPropertyName("clientCache")]
     public string? ClientCache { get; set; }
 
+    /// <summary>Specification to use for the codec in the manifest.</summary>
     [JsonPropertyName("codecSpecification")]
     public string? CodecSpecification { get; set; }
 
+    /// <summary>128-bit, 16-byte hex value represented by a 32-character text string, used with the key for encrypting blocks.</summary>
     [JsonPropertyName("constantIv")]
     public string? ConstantIv { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination? Destination { get; set; }
 
+    /// <summary>Place for the media and manifest files.</summary>
     [JsonPropertyName("directoryStructure")]
     public string? DirectoryStructure { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>How the EXT-X-DISCONTINUITY tags are inserted.</summary>
     [JsonPropertyName("discontinuityTags")]
     public string? DiscontinuityTags { get; set; }
 
+    /// <summary>Encryption type.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See hls_cdn_settings Block for details.</summary>
     [JsonPropertyName("hlsCdnSettings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings>? HlsCdnSettings { get; set; }
 
+    /// <summary>State of HLS ID3 segment tagging.</summary>
     [JsonPropertyName("hlsId3SegmentTagging")]
     public string? HlsId3SegmentTagging { get; set; }
 
+    /// <summary>When set to standard, an I-Frame only playlist is written out for each video output in the output group.</summary>
     [JsonPropertyName("iframeOnlyPlaylists")]
     public string? IframeOnlyPlaylists { get; set; }
 
+    /// <summary>Behavior of the segment that is in progress at a channel restart or input switch.</summary>
     [JsonPropertyName("incompleteSegmentBehavior")]
     public string? IncompleteSegmentBehavior { get; set; }
 
+    /// <summary>Number of segments to keep in the manifest.</summary>
     [JsonPropertyName("indexNSegments")]
     public double? IndexNSegments { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
+    /// <summary>Whether the initialization vector is included in the key method on the segment.</summary>
     [JsonPropertyName("ivInManifest")]
     public string? IvInManifest { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Whether the initialization vector follows the segment number or is from the group.</summary>
     [JsonPropertyName("ivSource")]
     public string? IvSource { get; set; }
 
+    /// <summary>Number of segments to retain in the destination directory.</summary>
     [JsonPropertyName("keepSegments")]
     public double? KeepSegments { get; set; }
 
+    /// <summary>Value for the key URI format in the key method.</summary>
     [JsonPropertyName("keyFormat")]
     public string? KeyFormat { get; set; }
 
+    /// <summary>Versions of the key format in the key method.</summary>
     [JsonPropertyName("keyFormatVersions")]
     public string? KeyFormatVersions { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
     [JsonPropertyName("keyProviderSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings? KeyProviderSettings { get; set; }
 
+    /// <summary>Whether the manifest is compressed with gzip.</summary>
     [JsonPropertyName("manifestCompression")]
     public string? ManifestCompression { get; set; }
 
+    /// <summary>Format of the segment duration in the manifest.</summary>
     [JsonPropertyName("manifestDurationFormat")]
     public string? ManifestDurationFormat { get; set; }
 
+    /// <summary>Minimum length, in seconds, for each segment.</summary>
     [JsonPropertyName("minSegmentLength")]
     public double? MinSegmentLength { get; set; }
 
+    /// <summary>HLS mode.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Generation of the manifest and segments or only variant manifests.</summary>
     [JsonPropertyName("outputSelection")]
     public string? OutputSelection { get; set; }
 
+    /// <summary>Whether to include an EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTime")]
     public string? ProgramDateTime { get; set; }
 
+    /// <summary>Clock source for the EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTimeClock")]
     public string? ProgramDateTimeClock { get; set; }
 
+    /// <summary>Period, in seconds, between EXT-X-PROGRAM-DATE-TIME tags.</summary>
     [JsonPropertyName("programDateTimePeriod")]
     public double? ProgramDateTimePeriod { get; set; }
 
+    /// <summary>When set to enabled, writes a secondary manifest for each output group.</summary>
     [JsonPropertyName("redundantManifest")]
     public string? RedundantManifest { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentLength")]
     public double? SegmentLength { get; set; }
 
+    /// <summary>Number of segments to write to a subdirectory before starting a new one.</summary>
     [JsonPropertyName("segmentsPerSubdirectory")]
     public double? SegmentsPerSubdirectory { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Whether to include the resolution in the EXT-X-STREAM-INF tag.</summary>
     [JsonPropertyName("streamInfResolution")]
     public string? StreamInfResolution { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 
+    /// <summary>Value, in milliseconds, to offset the program date time from the input timestamp.</summary>
     [JsonPropertyName("timestampDeltaMilliseconds")]
     public double? TimestampDeltaMilliseconds { get; set; }
 
+    /// <summary>Whether segments are placed in subdirectories.</summary>
     [JsonPropertyName("tsFileMode")]
     public string? TsFileMode { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
@@ -1491,17 +1561,17 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+/// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
@@ -1511,47 +1581,52 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Identifier used to associate the segments between the output and the ingest server.</summary>
     [JsonPropertyName("acquisitionPointId")]
     public string? AcquisitionPointId { get; set; }
 
+    /// <summary>Whether to put a timecode in the single video track of an audio-only output.</summary>
     [JsonPropertyName("audioOnlyTimecodeControl")]
     public string? AudioOnlyTimecodeControl { get; set; }
 
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Microsoft Smooth channel ID that is sent to the IIS server.</summary>
     [JsonPropertyName("eventId")]
     public string? EventId { get; set; }
 
+    /// <summary>How the event ID is generated.</summary>
     [JsonPropertyName("eventIdMode")]
     public string? EventIdMode { get; set; }
 
+    /// <summary>When set to sendEos, sends an end-of-stream to the IIS server when a stream stops.</summary>
     [JsonPropertyName("eventStopBehavior")]
     public string? EventStopBehavior { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>Length, in seconds, of mp4 fragments to generate.</summary>
     [JsonPropertyName("fragmentLength")]
     public double? FragmentLength { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -1563,58 +1638,64 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>When set to useInputSegmentation, segmentation markers from the input are used.</summary>
     [JsonPropertyName("segmentationMode")]
     public string? SegmentationMode { get; set; }
 
+    /// <summary>Number of milliseconds to delay the output from the second pipeline.</summary>
     [JsonPropertyName("sendDelayMs")]
     public double? SendDelayMs { get; set; }
 
+    /// <summary>Type of the sparse track that carries timed metadata.</summary>
     [JsonPropertyName("sparseTrackType")]
     public string? SparseTrackType { get; set; }
 
+    /// <summary>When set to send, sends a stream manifest so the publishing point does not start until the first segment is sent.</summary>
     [JsonPropertyName("streamManifestBehavior")]
     public string? StreamManifestBehavior { get; set; }
 
+    /// <summary>Timestamp offset for the event.</summary>
     [JsonPropertyName("timestampOffset")]
     public string? TimestampOffset { get; set; }
 
+    /// <summary>Type of timestamp date offset to use.</summary>
     [JsonPropertyName("timestampOffsetMode")]
     public string? TimestampOffsetMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Multiplex group settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
-/// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+/// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
-    /// <summary>Authentication scheme to use when connecting with CDN.</summary>
+    /// <summary>Authentication scheme to use when connecting with the CDN.</summary>
     [JsonPropertyName("authenticationScheme")]
     public string? AuthenticationScheme { get; set; }
 
-    /// <summary>Controls behavior when content cache fills up.</summary>
+    /// <summary>Behavior when the content cache fills up.</summary>
     [JsonPropertyName("cacheFullBehavior")]
     public string? CacheFullBehavior { get; set; }
 
-    /// <summary>Cache length in seconds, is used to calculate buffer size.</summary>
+    /// <summary>Cache length, in seconds, used to calculate buffer size.</summary>
     [JsonPropertyName("cacheLength")]
     public double? CacheLength { get; set; }
 
-    /// <summary>Controls the types of data that passes to onCaptionInfo outputs.</summary>
+    /// <summary>Controls the types of data that pass to onCaptionInfo outputs.</summary>
     [JsonPropertyName("captionData")]
     public string? CaptionData { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -1623,134 +1704,146 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 }
 
-/// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+/// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
-    /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
+    /// <summary>Archive group settings. See archive_group_settings Block for details.</summary>
     [JsonPropertyName("archiveGroupSettings")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings>? ArchiveGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings? FrameCaptureGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
     [JsonPropertyName("hlsGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings? HlsGroupSettings { get; set; }
 
-    /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+    /// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings? MediaPackageGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
     [JsonPropertyName("msSmoothGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings? MsSmoothGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Multiplex group settings. Can be set as an empty block.</summary>
     [JsonPropertyName("multiplexGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings? MultiplexGroupSettings { get; set; }
 
-    /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+    /// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
     [JsonPropertyName("rtmpGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings? RtmpGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
     [JsonPropertyName("udpGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings? UdpGroupSettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -1758,103 +1851,123 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -1862,58 +1975,62 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Raw Settings. This can be set as an empty block.</summary>
+/// <summary>Raw settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 
-    /// <summary>Raw Settings. This can be set as an empty block.</summary>
+    /// <summary>Raw settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rawSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings? RawSettings { get; set; }
 }
 
-/// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+/// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
@@ -1921,21 +2038,22 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("extension")]
     public string? Extension { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
+/// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
@@ -1948,93 +2066,108 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>Group to which the audio rendition belongs.</summary>
     [JsonPropertyName("audioGroupId")]
     public string? AudioGroupId { get; set; }
 
+    /// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
     [JsonPropertyName("audioOnlyImage")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage? AudioOnlyImage { get; set; }
 
+    /// <summary>Four types of audio-only tracks.</summary>
     [JsonPropertyName("audioTrackType")]
     public string? AudioTrackType { get; set; }
 
+    /// <summary>Whether the stream is an audio-only stream.</summary>
     [JsonPropertyName("segmentType")]
     public string? SegmentType { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to passthrough, passes through SCTE-35.</summary>
     [JsonPropertyName("scte35Behavior")]
     public string? Scte35Behavior { get; set; }
 
@@ -2042,98 +2175,103 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
     [JsonPropertyName("m3u8Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings? M3u8Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
     [JsonPropertyName("audioOnlyHlsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings? AudioOnlyHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
     [JsonPropertyName("fmp4HlsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings? Fmp4HlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
     [JsonPropertyName("frameCaptureHlsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings? FrameCaptureHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
     [JsonPropertyName("standardHlsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings? StandardHlsSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
     [JsonPropertyName("hlsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings? HlsSettings { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("segmentModifier")]
     public string? SegmentModifier { get; set; }
 }
 
-/// <summary>Media package output settings. This can be set as an empty block.</summary>
+/// <summary>Media package output settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
@@ -2143,17 +2281,17 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+/// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
@@ -2163,20 +2301,20 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+/// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination? Destination { get; set; }
 
@@ -2185,79 +2323,90 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public double? NumRetries { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -2265,103 +2414,123 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -2369,42 +2538,46 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
@@ -2414,12 +2587,12 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
-    /// <summary>The height of the FEC protection matrix.</summary>
+    /// <summary>Height of the FEC protection matrix.</summary>
     [JsonPropertyName("columnDepth")]
     public double? ColumnDepth { get; set; }
 
@@ -2427,67 +2600,67 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     [JsonPropertyName("includeFec")]
     public string? IncludeFec { get; set; }
 
-    /// <summary>The width of the FEC protection matrix.</summary>
+    /// <summary>Width of the FEC protection matrix.</summary>
     [JsonPropertyName("rowLength")]
     public double? RowLength { get; set; }
 }
 
-/// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+/// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
-    /// <summary>UDP output buffering in milliseconds.</summary>
+    /// <summary>UDP output buffering, in milliseconds.</summary>
     [JsonPropertyName("bufferMsec")]
     public double? BufferMsec { get; set; }
 
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination? Destination { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
     [JsonPropertyName("fecOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings? FecOutputSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for the output. See output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
-    /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+    /// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
     [JsonPropertyName("archiveOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings? ArchiveOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings? FrameCaptureOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
     [JsonPropertyName("hlsOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings? HlsOutputSettings { get; set; }
 
-    /// <summary>Media package output settings. This can be set as an empty block.</summary>
+    /// <summary>Media package output settings. Can be set as an empty block.</summary>
     [JsonPropertyName("mediaPackageOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings? MediaPackageOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
     [JsonPropertyName("msSmoothOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings? MsSmoothOutputSettings { get; set; }
 
-    /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+    /// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
     [JsonPropertyName("multiplexOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings? MultiplexOutputSettings { get; set; }
 
-    /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+    /// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
     [JsonPropertyName("rtmpOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings? RtmpOutputSettings { get; set; }
 
-    /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+    /// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
     [JsonPropertyName("udpOutputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
@@ -2496,23 +2669,23 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputs
 {
-    /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
+    /// <summary>Names of the audio descriptions used as audio sources for the output.</summary>
     [JsonPropertyName("audioDescriptionNames")]
     public IList<string>? AudioDescriptionNames { get; set; }
 
-    /// <summary>The names of the caption descriptions used as caption sources for the output.</summary>
+    /// <summary>Names of the caption descriptions used as caption sources for the output.</summary>
     [JsonPropertyName("captionDescriptionNames")]
     public IList<string>? CaptionDescriptionNames { get; set; }
 
-    /// <summary>The name used to identify an output.</summary>
+    /// <summary>Name used to identify an output.</summary>
     [JsonPropertyName("outputName")]
     public string? OutputName { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for the output. See output_settings Block for details.</summary>
     [JsonPropertyName("outputSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettings? OutputSettings { get; set; }
 
-    /// <summary>The name of the video description used as video source for the output.</summary>
+    /// <summary>Name of the video description used as the video source for the output.</summary>
     [JsonPropertyName("videoDescriptionName")]
     public string? VideoDescriptionName { get; set; }
 }
@@ -2521,39 +2694,49 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+    /// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
     [JsonPropertyName("outputGroupSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettings? OutputGroupSettings { get; set; }
 
-    /// <summary>List of outputs. See Outputs for more details.</summary>
+    /// <summary>List of outputs. See outputs Block for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputs>? Outputs { get; set; }
 }
 
-/// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+/// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ChannelSpecForProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+/// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsTimecodeConfig
 {
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the timecode associated with the event outputs.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Threshold in frames beyond which output timecode is resynchronized to the input timecode.</summary>
+    /// <summary>Threshold, in frames, beyond which output timecode is resynchronized to the input timecode.</summary>
     [JsonPropertyName("syncThreshold")]
     public double? SyncThreshold { get; set; }
 }
 
-/// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+/// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
-    /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
+    /// <summary>Frequency at which to capture frames for inclusion in the output.</summary>
     [JsonPropertyName("captureInterval")]
     public double? CaptureInterval { get; set; }
 
@@ -2562,7 +2745,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     public string? CaptureIntervalUnits { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
@@ -2576,17 +2759,17 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>H264 settings. See H264 Settings for more details.</summary>
+/// <summary>H264 settings. See h264_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
@@ -2595,7 +2778,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
@@ -2603,14 +2786,15 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Percentage of the buffer that should initially be filled.</summary>
     [JsonPropertyName("bufFillPct")]
     public double? BufFillPct { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
@@ -2618,22 +2802,23 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("entropyEncoding")]
     public string? EntropyEncoding { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
-    /// <summary>Controls whether coding is performed on a field basis or on a frame basis.</summary>
+    /// <summary>Whether coding is performed on a field basis or on a frame basis.</summary>
     [JsonPropertyName("forceFieldPictures")]
     public string? ForceFieldPictures { get; set; }
 
-    /// <summary>Indicates how the output video frame rate is specified.</summary>
+    /// <summary>How the output video frame rate is specified.</summary>
     [JsonPropertyName("framerateControl")]
     public string? FramerateControl { get; set; }
 
@@ -2657,15 +2842,15 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("gopNumBFrames")]
     public double? GopNumBFrames { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -2673,11 +2858,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
@@ -2685,19 +2870,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("numRefFrames")]
     public double? NumRefFrames { get; set; }
 
-    /// <summary>Indicates how the output pixel aspect ratio is specified.</summary>
+    /// <summary>How the output pixel aspect ratio is specified.</summary>
     [JsonPropertyName("parControl")]
     public string? ParControl { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
@@ -2705,15 +2890,15 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("qualityLevel")]
     public string? QualityLevel { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -2745,26 +2930,26 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("temporalAq")]
     public string? TemporalAq { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 }
 
-/// <summary>Sets the colorspace metadata to be passed through.</summary>
+/// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
-/// <summary>Set the colorspace to Dolby Vision81.</summary>
+/// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
-/// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+/// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
@@ -2778,47 +2963,47 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     public double? MaxFall { get; set; }
 }
 
-/// <summary>Set the colorspace to Rec. 601.</summary>
+/// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
-/// <summary>Set the colorspace to Rec. 709.</summary>
+/// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
-/// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+/// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
-    /// <summary>Sets the colorspace metadata to be passed through.</summary>
+    /// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
     [JsonPropertyName("colorSpacePassthroughSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings? ColorSpacePassthroughSettings { get; set; }
 
-    /// <summary>Set the colorspace to Dolby Vision81.</summary>
+    /// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
     [JsonPropertyName("dolbyVision81Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings? DolbyVision81Settings { get; set; }
 
-    /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+    /// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
     [JsonPropertyName("hdr10Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings? Hdr10Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 601.</summary>
+    /// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
     [JsonPropertyName("rec601Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings? Rec601Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 709.</summary>
+    /// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
     [JsonPropertyName("rec709Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings? Rec709Settings { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
@@ -2832,35 +3017,35 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+/// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
-    /// <summary>Set a prefix on the burned in timecode.</summary>
+    /// <summary>Prefix on the burned-in timecode.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Sets the size of the burned in timecode.</summary>
+    /// <summary>Size of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninFontSize")]
     public string? TimecodeBurninFontSize { get; set; }
 
-    /// <summary>Sets the position of the burned in timecode.</summary>
+    /// <summary>Position of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninPosition")]
     public string? TimecodeBurninPosition { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>H265 settings. See h265_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
@@ -2869,11 +3054,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
-    /// <summary>Whether or not EML should insert an Alternative Transfer Function SEI message.</summary>
+    /// <summary>Whether EML inserts an Alternative Transfer Function SEI message.</summary>
     [JsonPropertyName("alternativeTransferFunction")]
     public string? AlternativeTransferFunction { get; set; }
 
@@ -2881,26 +3066,27 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
-    /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+    /// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
     [JsonPropertyName("colorSpaceSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings? ColorSpaceSettings { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
@@ -2916,15 +3102,15 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("gopClosedCadence")]
     public double? GopClosedCadence { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -2932,19 +3118,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
-    /// <summary>Set the minimum QP.</summary>
+    /// <summary>Sets the minimum QP.</summary>
     [JsonPropertyName("minQp")]
     public double? MinQp { get; set; }
 
-    /// <summary>Enables or disables motion vector over picture boundaries.</summary>
+    /// <summary>Enables or disables motion vectors over picture boundaries.</summary>
     [JsonPropertyName("mvOverPictureBoundaries")]
     public string? MvOverPictureBoundaries { get; set; }
 
@@ -2952,27 +3138,27 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("mvTemporalPredictor")]
     public string? MvTemporalPredictor { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -2984,11 +3170,11 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("slices")]
     public double? Slices { get; set; }
 
-    /// <summary>Set the H265 tier in the output.</summary>
+    /// <summary>H265 tier in the output.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 
-    /// <summary>Sets the height of tiles.</summary>
+    /// <summary>Height of tiles.</summary>
     [JsonPropertyName("tileHeight")]
     public double? TileHeight { get; set; }
 
@@ -2996,37 +3182,37 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("tilePadding")]
     public string? TilePadding { get; set; }
 
-    /// <summary>Sets the width of tiles.</summary>
+    /// <summary>Width of tiles.</summary>
     [JsonPropertyName("tileWidth")]
     public double? TileWidth { get; set; }
 
-    /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+    /// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
     [JsonPropertyName("timecodeBurninSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings? TimecodeBurninSettings { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 
-    /// <summary>Sets the size of the treeblock.</summary>
+    /// <summary>Size of the treeblock.</summary>
     [JsonPropertyName("treeblockSize")]
     public string? TreeblockSize { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
-    /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+    /// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings? FrameCaptureSettings { get; set; }
 
-    /// <summary>H264 settings. See H264 Settings for more details.</summary>
+    /// <summary>H264 settings. See h264_settings Block for details.</summary>
     [JsonPropertyName("h264Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings? H264Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>H265 settings. See h265_settings Block for details.</summary>
     [JsonPropertyName("h265Settings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
@@ -3035,19 +3221,19 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptions
 {
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Indicate how to respond to the AFD values that might be in the input video.</summary>
+    /// <summary>How to respond to the AFD values that might be in the input video.</summary>
     [JsonPropertyName("respondToAfd")]
     public string? RespondToAfd { get; set; }
 
@@ -3055,109 +3241,113 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
     [JsonPropertyName("scalingBehavior")]
     public string? ScalingBehavior { get; set; }
 
-    /// <summary>Changes the strength of the anti-alias filter used for scaling.</summary>
+    /// <summary>Strength of the anti-alias filter used for scaling.</summary>
     [JsonPropertyName("sharpness")]
     public double? Sharpness { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+/// <summary>Encoder settings. See encoder_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderEncoderSettings
 {
-    /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
+    /// <summary>Audio descriptions for the channel. See audio_descriptions Block for details.</summary>
     [JsonPropertyName("audioDescriptions")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptions>? AudioDescriptions { get; set; }
 
-    /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+    /// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
     [JsonPropertyName("availBlanking")]
     public V1beta1ChannelSpecForProviderEncoderSettingsAvailBlanking? AvailBlanking { get; set; }
 
-    /// <summary>Caption Descriptions. See Caption Descriptions for more details.</summary>
+    /// <summary>Caption descriptions for the channel. See caption_descriptions Block for details.</summary>
     [JsonPropertyName("captionDescriptions")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptions>? CaptionDescriptions { get; set; }
 
-    /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+    /// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
     [JsonPropertyName("globalConfiguration")]
     public V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfiguration? GlobalConfiguration { get; set; }
 
-    /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+    /// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
     [JsonPropertyName("motionGraphicsConfiguration")]
     public V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfiguration? MotionGraphicsConfiguration { get; set; }
 
-    /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+    /// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
     [JsonPropertyName("nielsenConfiguration")]
     public V1beta1ChannelSpecForProviderEncoderSettingsNielsenConfiguration? NielsenConfiguration { get; set; }
 
-    /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
+    /// <summary>Output groups for the channel. See output_groups Block for details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
 
-    /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public V1beta1ChannelSpecForProviderEncoderSettingsThumbnailConfiguration? ThumbnailConfiguration { get; set; }
+
+    /// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
     [JsonPropertyName("timecodeConfig")]
     public V1beta1ChannelSpecForProviderEncoderSettingsTimecodeConfig? TimecodeConfig { get; set; }
 
-    /// <summary>Video Descriptions. See Video Descriptions for more details.</summary>
+    /// <summary>Video descriptions for the channel. See video_descriptions Block for details.</summary>
     [JsonPropertyName("videoDescriptions")]
     public IList<V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptions>? VideoDescriptions { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
     [JsonPropertyName("audioSilenceThresholdMsec")]
     public double? AudioSilenceThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
-    /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
+    /// <summary>Amount of time, in milliseconds, that no input is detected before an input failover occurs.</summary>
     [JsonPropertyName("inputLossThresholdMsec")]
     public double? InputLossThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
-    /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
+    /// <summary>Threshold below which MediaLive considers a pixel to be black, expressed as a decimal fraction of white. For example, 0.1 means 10% white (90% black). For the input to be considered black, every pixel in a frame must be below this threshold. The range is 0.0 to 1.0, with any number of decimal places.</summary>
     [JsonPropertyName("blackDetectThreshold")]
     public double? BlackDetectThreshold { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be black before automatic input failover occurs.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be black before automatic input failover occurs.</summary>
     [JsonPropertyName("videoBlackThresholdMsec")]
     public double? VideoBlackThresholdMsec { get; set; }
 }
 
-/// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+/// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
-    /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
     [JsonPropertyName("audioSilenceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings? AudioSilenceSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
     [JsonPropertyName("inputLossSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings? InputLossSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
     [JsonPropertyName("videoBlackSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
@@ -3166,21 +3356,21 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
-    /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+    /// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
     [JsonPropertyName("failoverConditionSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings? FailoverConditionSettings { get; set; }
 }
 
-/// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+/// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettings
 {
-    /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
+    /// <summary>Amount of time, in milliseconds, that a recovered input must have no failover conditions before it is considered healthy. This value is particularly important when input_preference is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive switches back to the primary input.</summary>
     [JsonPropertyName("errorClearTimeMsec")]
     public double? ErrorClearTimeMsec { get; set; }
 
-    /// <summary>A list of failover conditions. If any of these conditions occur, MediaLive will perform a failover to the other input. See Failover Condition Block for more details.</summary>
+    /// <summary>Failover conditions. If any of these conditions occur, MediaLive fails over to the other input. See failover_condition Block for details.</summary>
     [JsonPropertyName("failoverCondition")]
     public IList<V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition>? FailoverCondition { get; set; }
 
@@ -3188,7 +3378,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
     [JsonPropertyName("inputPreference")]
     public string? InputPreference { get; set; }
 
-    /// <summary>The input ID of the secondary input in the automatic input failover pair.</summary>
+    /// <summary>Input ID of the secondary input in the automatic input failover pair.</summary>
     [JsonPropertyName("secondaryInputId")]
     public string? SecondaryInputId { get; set; }
 }
@@ -3348,50 +3538,50 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelecto
     public V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+/// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+/// <summary>Language selection. See audio_language_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>When set to “strict”, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present then mute will be encoded until the language returns. If “loose”, then on a PMT update the demux will choose another audio stream in the program with the same stream type if it can’t find one with the same language.</summary>
+    /// <summary>How to handle a change in the language of the audio stream after it is selected. When set to strict, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present, then mute is encoded until the language returns. When set to loose, the demux chooses another audio stream in the program with the same stream type on a PMT update if it cannot find one with the same language.</summary>
     [JsonPropertyName("languageSelectionPolicy")]
     public string? LanguageSelectionPolicy { get; set; }
 }
 
-/// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+/// <summary>PID selection. See audio_pid_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+/// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
-    /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
+    /// <summary>Program ID of the Dolby E program to extract from the specified track. Applies only to Dolby E. One program is extracted per audio selector. To select multiple programs, create multiple selectors with the same track and different program numbers. All channels ignores the program IDs and includes all the channels in this selector; useful if metadata is known to be incorrect.</summary>
     [JsonPropertyName("programSelection")]
     public string? ProgramSelection { get; set; }
 }
@@ -3405,38 +3595,38 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
     public double? Track { get; set; }
 }
 
-/// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+/// <summary>Track selection. See audio_track_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
-    /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+    /// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
     [JsonPropertyName("dolbyEDecode")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode? DolbyEDecode { get; set; }
 
-    /// <summary>Selects one or more unique audio tracks from within a source. See Audio Tracks for more details.</summary>
+    /// <summary>One or more unique audio tracks from within a source. See tracks Block for details.</summary>
     [JsonPropertyName("tracks")]
     public IList<V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks>? Tracks { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
-    /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+    /// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
     [JsonPropertyName("audioHlsRenditionSelection")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection? AudioHlsRenditionSelection { get; set; }
 
-    /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+    /// <summary>Language selection. See audio_language_selection Block for details.</summary>
     [JsonPropertyName("audioLanguageSelection")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection? AudioLanguageSelection { get; set; }
 
-    /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+    /// <summary>PID selection. See audio_pid_selection Block for details.</summary>
     [JsonPropertyName("audioPidSelection")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection? AudioPidSelection { get; set; }
 
-    /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+    /// <summary>Track selection. See audio_track_selection Block for details.</summary>
     [JsonPropertyName("audioTrackSelection")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
@@ -3445,158 +3635,158 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelector
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+/// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
-    /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
+    /// <summary>Captions channel, from 1 to 4, to extract from the ancillary captions. Complete this field if you plan to convert the ancillary captions to another format. Leave blank if you plan to choose Embedded as the captions destination in the output, because MediaLive ignores the field.</summary>
     [JsonPropertyName("sourceAncillaryChannelNumber")]
     public double? SourceAncillaryChannelNumber { get; set; }
 }
 
-/// <summary>ARIB Source Settings.</summary>
+/// <summary>ARIB source settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
-/// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+/// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+/// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Set to “auto” to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions.</summary>
+    /// <summary>Set to auto to handle streams with intermittent or non-aligned SCTE-20 and Embedded captions.</summary>
     [JsonPropertyName("scte20Detection")]
     public string? Scte20Detection { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+/// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+/// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+/// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. (Make sure to leave the default if you don’t have either of these formats in the output.) You can define a display rectangle for the captions that is smaller than the underlying video frame. You define the rectangle by specifying the position of the left edge, top edge, bottom edge, and right edge of the rectangle, all within the underlying video frame. The units for the measurements are percentages. If you specify a value for one of these fields, you must specify a value for all of them. For leftOffset, specify the position of the left edge of the rectangle, as a percentage of the underlying frame width, and relative to the left edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame width. The rectangle left edge starts at that position from the left edge of the frame. This field corresponds to tts:origin - X in the TTML standard.</summary>
+    /// <summary>Position of the left edge of the rectangle as a percentage of the underlying frame width, relative to the left edge of the frame. Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. You can define a display rectangle smaller than the underlying video frame; if you specify a value for one of the offset or dimension fields, you must specify a value for all of them. This field corresponds to tts:origin - X in the TTML standard.</summary>
     [JsonPropertyName("leftOffset")]
     public double? LeftOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For top_offset, specify the position of the top edge of the rectangle, as a percentage of the underlying frame height, and relative to the top edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame height. The rectangle top edge starts at that position from the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
+    /// <summary>Position of the top edge of the rectangle as a percentage of the underlying frame height, relative to the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
     [JsonPropertyName("topOffset")]
     public double? TopOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+/// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
-    /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+    /// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
     [JsonPropertyName("outputRectangle")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle? OutputRectangle { get; set; }
 
-    /// <summary>Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no “0x” prefix.</summary>
+    /// <summary>Teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303), specified as a hexadecimal string with no 0x prefix. Unused for passthrough.</summary>
     [JsonPropertyName("pageNumber")]
     public string? PageNumber { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
-    /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+    /// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
     [JsonPropertyName("ancillarySourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings? AncillarySourceSettings { get; set; }
 
-    /// <summary>ARIB Source Settings.</summary>
+    /// <summary>ARIB source settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribSourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings? AribSourceSettings { get; set; }
 
-    /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+    /// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
     [JsonPropertyName("dvbSubSourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings? DvbSubSourceSettings { get; set; }
 
-    /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+    /// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
     [JsonPropertyName("embeddedSourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings? EmbeddedSourceSettings { get; set; }
 
-    /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+    /// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
     [JsonPropertyName("scte20SourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings? Scte20SourceSettings { get; set; }
 
-    /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+    /// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
     [JsonPropertyName("scte27SourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings? Scte27SourceSettings { get; set; }
 
-    /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+    /// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
     [JsonPropertyName("teletextSourceSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
@@ -3605,25 +3795,25 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelector
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+/// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
-    /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
+    /// <summary>Bitrate, in bits per second, as in an HLS manifest.</summary>
     [JsonPropertyName("bandwidth")]
     public double? Bandwidth { get; set; }
 
@@ -3631,25 +3821,25 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsN
     [JsonPropertyName("bufferSegments")]
     public double? BufferSegments { get; set; }
 
-    /// <summary>The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
+    /// <summary>Number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
     [JsonPropertyName("retries")]
     public double? Retries { get; set; }
 
-    /// <summary>The number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
+    /// <summary>Number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
     [JsonPropertyName("retryInterval")]
     public double? RetryInterval { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the SCTE-35 messages that MediaLive ingests.</summary>
     [JsonPropertyName("scte35Source")]
     public string? Scte35Source { get; set; }
 }
 
-/// <summary>Input settings. See Network Input Settings for more details.</summary>
+/// <summary>Input settings. See network_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
-    /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+    /// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
     [JsonPropertyName("hlsInputSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings? HlsInputSettings { get; set; }
 
@@ -3658,39 +3848,42 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsN
     public string? ServerValidation { get; set; }
 }
 
+/// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsVideoSelector
 {
+    /// <summary>Color space of the input.</summary>
     [JsonPropertyName("colorSpace")]
     public string? ColorSpace { get; set; }
 
+    /// <summary>How MediaLive applies the color space metadata from the input.</summary>
     [JsonPropertyName("colorSpaceUsage")]
     public string? ColorSpaceUsage { get; set; }
 }
 
-/// <summary>Settings of an input. See Input Settings for more details.</summary>
+/// <summary>Settings of an input. See input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
 {
-    /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
+    /// <summary>Select the audio stream to decode for inputs that have multiple. See audio_selector Block for details.</summary>
     [JsonPropertyName("audioSelector")]
     public IList<V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelector>? AudioSelector { get; set; }
 
-    /// <summary>Used to select the caption input to use for inputs that have multiple available. See Caption Selectors for more details.</summary>
+    /// <summary>Select the caption input to use for inputs that have multiple available. See caption_selector Block for details.</summary>
     [JsonPropertyName("captionSelector")]
     public IList<V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelector>? CaptionSelector { get; set; }
 
-    /// <summary>Enable or disable the deblock filter when filtering.</summary>
+    /// <summary>Whether to enable the deblock filter when filtering.</summary>
     [JsonPropertyName("deblockFilter")]
     public string? DeblockFilter { get; set; }
 
-    /// <summary>Enable or disable the denoise filter when filtering.</summary>
+    /// <summary>Whether to enable the denoise filter when filtering.</summary>
     [JsonPropertyName("denoiseFilter")]
     public string? DenoiseFilter { get; set; }
 
-    /// <summary>Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
+    /// <summary>Magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
     [JsonPropertyName("filterStrength")]
     public double? FilterStrength { get; set; }
 
@@ -3698,7 +3891,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
     [JsonPropertyName("inputFilter")]
     public string? InputFilter { get; set; }
 
-    /// <summary>Input settings. See Network Input Settings for more details.</summary>
+    /// <summary>Input settings. See network_input_settings Block for details.</summary>
     [JsonPropertyName("networkInputSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettings? NetworkInputSettings { get; set; }
 
@@ -3706,7 +3899,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
     [JsonPropertyName("scte35Pid")]
     public double? Scte35Pid { get; set; }
 
-    /// <summary>Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
+    /// <summary>Whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
     [JsonPropertyName("smpte2038DataPreference")]
     public string? Smpte2038DataPreference { get; set; }
 
@@ -3714,6 +3907,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
     [JsonPropertyName("sourceEndBehavior")]
     public string? SourceEndBehavior { get; set; }
 
+    /// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
     [JsonPropertyName("videoSelector")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
@@ -3722,7 +3916,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputAttachments
 {
-    /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+    /// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
     [JsonPropertyName("automaticInputFailoverSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettings? AutomaticInputFailoverSettings { get; set; }
 
@@ -3730,7 +3924,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachments
     [JsonPropertyName("inputAttachmentName")]
     public string? InputAttachmentName { get; set; }
 
-    /// <summary>The ID of the input.</summary>
+    /// <summary>ID of the input.</summary>
     [JsonPropertyName("inputId")]
     public string? InputId { get; set; }
 
@@ -3742,38 +3936,39 @@ public partial class V1beta1ChannelSpecForProviderInputAttachments
     [JsonPropertyName("inputIdSelector")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelector? InputIdSelector { get; set; }
 
-    /// <summary>Settings of an input. See Input Settings for more details.</summary>
+    /// <summary>Settings of an input. See input_settings Block for details.</summary>
     [JsonPropertyName("inputSettings")]
     public V1beta1ChannelSpecForProviderInputAttachmentsInputSettings? InputSettings { get; set; }
 }
 
-/// <summary>Specification of network and file inputs for the channel.</summary>
+/// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderInputSpecification
 {
+    /// <summary>Codec to use for the input.</summary>
     [JsonPropertyName("codec")]
     public string? Codec { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum input resolution.</summary>
     [JsonPropertyName("inputResolution")]
     public string? InputResolution { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Maximum input bitrate for an input.</summary>
     [JsonPropertyName("maximumBitrate")]
     public string? MaximumBitrate { get; set; }
 }
 
-/// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+/// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderMaintenance
 {
-    /// <summary>The day of the week to use for maintenance.</summary>
+    /// <summary>Day of the week to use for maintenance.</summary>
     [JsonPropertyName("maintenanceDay")]
     public string? MaintenanceDay { get; set; }
 
-    /// <summary>The hour maintenance will start.</summary>
+    /// <summary>Hour maintenance will start.</summary>
     [JsonPropertyName("maintenanceStartTime")]
     public string? MaintenanceStartTime { get; set; }
 }
@@ -3933,20 +4128,20 @@ public partial class V1beta1ChannelSpecForProviderRoleArnSelector
     public V1beta1ChannelSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+/// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProviderVpc
 {
-    /// <summary>List of public address allocation ids to associate with ENIs that will be created in Output VPC. Must specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
+    /// <summary>List of public address allocation IDs to associate with ENIs created in the output VPC. Specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
     [JsonPropertyName("publicAddressAllocationIds")]
     public IList<string>? PublicAddressAllocationIds { get; set; }
 
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Output VPC network interfaces. If none are specified then the VPC default security group will be used.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the output VPC network interfaces. The VPC default security group is used if none are specified.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of VPC subnet IDs from the same VPC. If STANDARD channel, subnet IDs must be mapped to two unique availability zones (AZ).</summary>
+    /// <summary>List of VPC subnet IDs from the same VPC. For a STANDARD channel, subnet IDs must map to two unique availability zones.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -3955,39 +4150,39 @@ public partial class V1beta1ChannelSpecForProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecForProvider
 {
-    /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+    /// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
     [JsonPropertyName("cdiInputSpecification")]
     public V1beta1ChannelSpecForProviderCdiInputSpecification? CdiInputSpecification { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>Class of the channel. Valid values: STANDARD, SINGLE_PIPELINE.</summary>
     [JsonPropertyName("channelClass")]
     public string? ChannelClass { get; set; }
 
-    /// <summary>Destinations for channel. See Destinations for more details.</summary>
+    /// <summary>Destinations for the channel. See destinations Block for details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1ChannelSpecForProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+    /// <summary>Encoder settings. See encoder_settings Block for details.</summary>
     [JsonPropertyName("encoderSettings")]
     public V1beta1ChannelSpecForProviderEncoderSettings? EncoderSettings { get; set; }
 
-    /// <summary>Input attachments for the channel. See Input Attachments for more details.</summary>
+    /// <summary>Input attachments for the channel. See input_attachments Block for details.</summary>
     [JsonPropertyName("inputAttachments")]
     public IList<V1beta1ChannelSpecForProviderInputAttachments>? InputAttachments { get; set; }
 
-    /// <summary>Specification of network and file inputs for the channel.</summary>
+    /// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
     [JsonPropertyName("inputSpecification")]
     public V1beta1ChannelSpecForProviderInputSpecification? InputSpecification { get; set; }
 
-    /// <summary>The log level to write to Cloudwatch logs.</summary>
+    /// <summary>Level of verbosity for the logs written to CloudWatch Logs.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+    /// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
     [JsonPropertyName("maintenance")]
     public V1beta1ChannelSpecForProviderMaintenance? Maintenance { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -3998,7 +4193,7 @@ public partial class V1beta1ChannelSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>ARN of the IAM role for the channel.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -4010,7 +4205,7 @@ public partial class V1beta1ChannelSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ChannelSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Whether to start/stop channel. Default: false</summary>
+    /// <summary>Whether to start/stop channel. Default: false.</summary>
     [JsonPropertyName("startChannel")]
     public bool? StartChannel { get; set; }
 
@@ -4018,17 +4213,17 @@ public partial class V1beta1ChannelSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+    /// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1ChannelSpecForProviderVpc? Vpc { get; set; }
 }
 
-/// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+/// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderCdiInputSpecification
 {
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum CDI input resolution.</summary>
     [JsonPropertyName("resolution")]
     public string? Resolution { get; set; }
 }
@@ -4042,16 +4237,16 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsMediaPackageSetti
     public string? ChannelId { get; set; }
 }
 
-/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderDestinationsMultiplexSettings
 {
-    /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
+    /// <summary>ID of the Multiplex that the encoder is providing output to.</summary>
     [JsonPropertyName("multiplexId")]
     public string? MultiplexId { get; set; }
 
-    /// <summary>The program name of the Multiplex program that the encoder is providing output to.</summary>
+    /// <summary>Program name of the Multiplex program that the encoder is providing output to.</summary>
     [JsonPropertyName("programName")]
     public string? ProgramName { get; set; }
 }
@@ -4064,15 +4259,15 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsSettings
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
-    /// <summary>A URL specifying a destination.</summary>
+    /// <summary>URL for the destination.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -4081,29 +4276,29 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderDestinations
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>User-specified ID used in an output group or an output.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See Media Package Settings for more details.</summary>
+    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See media_package_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageSettings")]
     public IList<V1beta1ChannelSpecInitProviderDestinationsMediaPackageSettings>? MediaPackageSettings { get; set; }
 
-    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1ChannelSpecInitProviderDestinationsMultiplexSettings? MultiplexSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See settings Block for details.</summary>
     [JsonPropertyName("settings")]
     public IList<V1beta1ChannelSpecInitProviderDestinationsSettings>? Settings { get; set; }
 }
 
-/// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+/// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
-    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
+    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification; itu17702 conforms to the EBU R-128 specification.</summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
@@ -4116,15 +4311,16 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? TargetLkfs { get; set; }
 }
 
-/// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+/// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
+    /// <summary>CBET check digits to use for the watermark.</summary>
     [JsonPropertyName("cbetCheckDigitString")]
     public string? CbetCheckDigitString { get; set; }
 
-    /// <summary>Determines the method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
+    /// <summary>Method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
     [JsonPropertyName("cbetStepaside")]
     public string? CbetStepaside { get; set; }
 
@@ -4137,20 +4333,21 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
+    /// <summary>Check digit string for the watermark.</summary>
     [JsonPropertyName("checkDigitString")]
     public string? CheckDigitString { get; set; }
 
-    /// <summary>The Nielsen Source ID to include in the watermark.</summary>
+    /// <summary>Nielsen source ID to include in the watermark.</summary>
     [JsonPropertyName("sid")]
     public double? Sid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
-    /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
     [JsonPropertyName("nielsenCbetSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings? NielsenCbetSettings { get; set; }
 
@@ -4158,22 +4355,22 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("nielsenDistributionType")]
     public string? NielsenDistributionType { get; set; }
 
-    /// <summary>Used to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See Nielsen NAES II NW Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See nielsen_naes_ii_nw_settings Block for details.</summary>
     [JsonPropertyName("nielsenNaesIiNwSettings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings>? NielsenNaesIiNwSettings { get; set; }
 }
 
-/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
     [JsonPropertyName("nielsenWatermarksSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings? NielsenWatermarksSettings { get; set; }
 }
 
-/// <summary>Aac Settings. See AAC Settings for more details.</summary>
+/// <summary>AAC settings. See aac_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
@@ -4182,19 +4379,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Set to &quot;broadcasterMixedAd&quot; when input contains pre-mixed main audio + AD (narration) as a stereo pair.</summary>
+    /// <summary>Set to broadcasterMixedAd when input contains pre-mixed main audio and AD (narration) as a stereo pair.</summary>
     [JsonPropertyName("inputType")]
     public string? InputType { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
@@ -4206,16 +4403,16 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("sampleRate")]
     public double? SampleRate { get; set; }
 
-    /// <summary>Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
+    /// <summary>Whether to use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
     [JsonPropertyName("spec")]
     public string? Spec { get; set; }
 
-    /// <summary>VBR Quality Level - Only used if rateControlMode is VBR.</summary>
+    /// <summary>VBR quality level. Only used if rate_control_mode is VBR.</summary>
     [JsonPropertyName("vbrQuality")]
     public string? VbrQuality { get; set; }
 }
 
-/// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+/// <summary>AC3 settings. See ac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
@@ -4224,19 +4421,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
-    /// <summary>If set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
+    /// <summary>When set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
     [JsonPropertyName("drcProfile")]
     public string? DrcProfile { get; set; }
 
@@ -4249,7 +4446,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public string? MetadataControl { get; set; }
 }
 
-/// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+/// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
@@ -4258,11 +4455,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -4270,7 +4467,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
@@ -4283,12 +4480,12 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? SurroundTrim { get; set; }
 }
 
-/// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+/// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
-    /// <summary>Sets the attenuation control.</summary>
+    /// <summary>Attenuation control.</summary>
     [JsonPropertyName("attenuationControl")]
     public string? AttenuationControl { get; set; }
 
@@ -4296,18 +4493,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
+    /// <summary>Whether to activate a DC filter for the channels.</summary>
     [JsonPropertyName("dcFilter")]
     public string? DcFilter { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -4315,10 +4513,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
+    /// <summary>When set to lfe, the EAC3 output contains an LFE channel.</summary>
     [JsonPropertyName("lfeControl")]
     public string? LfeControl { get; set; }
 
@@ -4326,19 +4525,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("lfeFilter")]
     public string? LfeFilter { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total center mix level.</summary>
     [JsonPropertyName("loRoCenterMixLevel")]
     public double? LoRoCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total surround mix level.</summary>
     [JsonPropertyName("loRoSurroundMixLevel")]
     public double? LoRoSurroundMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only center mix level.</summary>
     [JsonPropertyName("ltRtCenterMixLevel")]
     public double? LtRtCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only surround mix level.</summary>
     [JsonPropertyName("ltRtSurroundMixLevel")]
     public double? LtRtSurroundMixLevel { get; set; }
 
@@ -4346,23 +4545,28 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("metadataControl")]
     public string? MetadataControl { get; set; }
 
+    /// <summary>When set to whenPossible, input DD+ audio is passed through if present.</summary>
     [JsonPropertyName("passthroughControl")]
     public string? PassthroughControl { get; set; }
 
+    /// <summary>Whether to invert the phase of the surround channels.</summary>
     [JsonPropertyName("phaseControl")]
     public string? PhaseControl { get; set; }
 
+    /// <summary>Stereo downmix preference.</summary>
     [JsonPropertyName("stereoDownmix")]
     public string? StereoDownmix { get; set; }
 
+    /// <summary>Whether to encode the stream as Dolby Digital EX.</summary>
     [JsonPropertyName("surroundExMode")]
     public string? SurroundExMode { get; set; }
 
+    /// <summary>Whether to encode the stream as a surround sound stream.</summary>
     [JsonPropertyName("surroundMode")]
     public string? SurroundMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>MP2 settings. See mp2_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
@@ -4371,7 +4575,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -4380,22 +4584,23 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Pass-through settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WAV settings. See wav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
+    /// <summary>Bits per sample.</summary>
     [JsonPropertyName("bitDepth")]
     public double? BitDepth { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -4404,36 +4609,36 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
-    /// <summary>Aac Settings. See AAC Settings for more details.</summary>
+    /// <summary>AAC settings. See aac_settings Block for details.</summary>
     [JsonPropertyName("aacSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings? AacSettings { get; set; }
 
-    /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+    /// <summary>AC3 settings. See ac3_settings Block for details.</summary>
     [JsonPropertyName("ac3Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings? Ac3Settings { get; set; }
 
-    /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+    /// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
     [JsonPropertyName("eac3AtmosSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings? Eac3AtmosSettings { get; set; }
 
-    /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+    /// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
     [JsonPropertyName("eac3Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings? Eac3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>MP2 settings. See mp2_settings Block for details.</summary>
     [JsonPropertyName("mp2Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings? Mp2Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Pass-through settings. Can be set as an empty block.</summary>
     [JsonPropertyName("passThroughSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings? PassThroughSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WAV settings. See wav_settings Block for details.</summary>
     [JsonPropertyName("wavSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
@@ -4442,9 +4647,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
+    /// <summary>Remixing value, from -60 to 6 decibels.</summary>
     [JsonPropertyName("gain")]
     public double? Gain { get; set; }
 
+    /// <summary>Index of the input channel used as a source.</summary>
     [JsonPropertyName("inputChannel")]
     public double? InputChannel { get; set; }
 }
@@ -4453,24 +4660,29 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
+    /// <summary>Levels for each of the input channels. See input_channel_levels Block for details.</summary>
     [JsonPropertyName("inputChannelLevels")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels>? InputChannelLevels { get; set; }
 
+    /// <summary>Index of the output channel being produced.</summary>
     [JsonPropertyName("outputChannel")]
     public double? OutputChannel { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
+    /// <summary>Mapping of input channels to output channels. See channel_mappings Block for details.</summary>
     [JsonPropertyName("channelMappings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings>? ChannelMappings { get; set; }
 
+    /// <summary>Number of input channels to be used.</summary>
     [JsonPropertyName("channelsIn")]
     public double? ChannelsIn { get; set; }
 
+    /// <summary>Number of output channels to be produced.</summary>
     [JsonPropertyName("channelsOut")]
     public double? ChannelsOut { get; set; }
 }
@@ -4479,51 +4691,52 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptions
 {
-    /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+    /// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
     [JsonPropertyName("audioNormalizationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings? AudioNormalizationSettings { get; set; }
 
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1.</summary>
+    /// <summary>Applies only if audio_type_control is useConfigured. Values for audio_type are defined in ISO-IEC 13818-1.</summary>
     [JsonPropertyName("audioType")]
     public string? AudioType { get; set; }
 
-    /// <summary>Determined how audio type is determined.</summary>
+    /// <summary>How audio type is determined.</summary>
     [JsonPropertyName("audioTypeControl")]
     public string? AudioTypeControl { get; set; }
 
-    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
     [JsonPropertyName("audioWatermarkSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings? AudioWatermarkSettings { get; set; }
 
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
+    /// <summary>How to handle the audio language code.</summary>
     [JsonPropertyName("languageCodeControl")]
     public string? LanguageCodeControl { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
     [JsonPropertyName("remixSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettings? RemixSettings { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
 
-/// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+/// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlankingAvailBlankingImage
@@ -4536,33 +4749,33 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlankingA
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+/// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlanking
 {
-    /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+    /// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
     [JsonPropertyName("availBlankingImage")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlankingAvailBlankingImage? AvailBlankingImage { get; set; }
 
-    /// <summary>When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added.</summary>
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>ARIB Destination Settings.</summary>
+/// <summary>ARIB destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
@@ -4575,86 +4788,86 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+/// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
@@ -4667,230 +4880,230 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+/// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+/// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
-    /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
+    /// <summary>Name of the copyright holder to include in the copyright tag in the captions metadata.</summary>
     [JsonPropertyName("copyrightHolder")]
     public string? CopyrightHolder { get; set; }
 
-    /// <summary>Specifies how to handle the gap between the lines (in multi-line captions). - enabled: Fill with the captions background color (as specified in the input captions). - disabled: Leave the gap unfilled.</summary>
+    /// <summary>How to handle the gap between the lines in multi-line captions. enabled fills the gap with the captions background color as specified in the input captions; disabled leaves the gap unfilled.</summary>
     [JsonPropertyName("fillLineGap")]
     public string? FillLineGap { get; set; }
 
-    /// <summary>Specifies the font family to include in the font data attached to the EBU-TT captions. Valid only if styleControl is set to include. If you leave this field empty, the font family is set to “monospaced”. (If styleControl is set to exclude, the font family is always set to “monospaced”.) You specify only the font family. All other style information (color, bold, position and so on) is copied from the input captions. The size is always set to 100% to allow the downstream player to choose the size. - Enter a list of font families, as a comma-separated list of font names, in order of preference. The name can be a font family (such as “Arial”), or a generic font family (such as “serif”), or “default” (to let the downstream player choose the font). - Leave blank to set the family to “monospace”.</summary>
+    /// <summary>Font family to include in the font data attached to the EBU-TT captions. Valid only if style_control is set to include. If you leave this field empty, the font family is set to monospaced. You specify only the font family; all other style information (color, bold, position, and so on) is copied from the input captions, and the size is always set to 100% to allow the downstream player to choose the size. Enter a comma-separated list of font names in order of preference, a generic font family such as serif, or default to let the downstream player choose the font.</summary>
     [JsonPropertyName("fontFamily")]
     public string? FontFamily { get; set; }
 
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Embedded Destination Settings.</summary>
+/// <summary>Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
-/// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+/// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
-/// <summary>RTMP Caption Info Destination Settings.</summary>
+/// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
-/// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+/// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
-/// <summary>SCTE27 Destination Settings.</summary>
+/// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
-/// <summary>SMPTE TT Destination Settings.</summary>
+/// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
-/// <summary>Teletext Destination Settings.</summary>
+/// <summary>Teletext destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
-/// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+/// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+/// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+/// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
-    /// <summary>ARIB Destination Settings.</summary>
+    /// <summary>ARIB destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings? AribDestinationSettings { get; set; }
 
-    /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+    /// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
     [JsonPropertyName("burnInDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings? BurnInDestinationSettings { get; set; }
 
-    /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+    /// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
     [JsonPropertyName("dvbSubDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings? DvbSubDestinationSettings { get; set; }
 
-    /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+    /// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
     [JsonPropertyName("ebuTtDDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings? EbuTtDDestinationSettings { get; set; }
 
-    /// <summary>Embedded Destination Settings.</summary>
+    /// <summary>Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings? EmbeddedDestinationSettings { get; set; }
 
-    /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+    /// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedPlusScte20DestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings? EmbeddedPlusScte20DestinationSettings { get; set; }
 
-    /// <summary>RTMP Caption Info Destination Settings.</summary>
+    /// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rtmpCaptionInfoDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings? RtmpCaptionInfoDestinationSettings { get; set; }
 
-    /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+    /// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte20PlusEmbeddedDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings? Scte20PlusEmbeddedDestinationSettings { get; set; }
 
-    /// <summary>SCTE27 Destination Settings.</summary>
+    /// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte27DestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings? Scte27DestinationSettings { get; set; }
 
-    /// <summary>SMPTE TT Destination Settings.</summary>
+    /// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("smpteTtDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings? SmpteTtDestinationSettings { get; set; }
 
-    /// <summary>Teletext Destination Settings.</summary>
+    /// <summary>Teletext destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("teletextDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings? TeletextDestinationSettings { get; set; }
 
-    /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+    /// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
     [JsonPropertyName("ttmlDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings? TtmlDestinationSettings { get; set; }
 
-    /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+    /// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
     [JsonPropertyName("webvttDestinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
@@ -4899,31 +5112,32 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptions
 {
-    /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
+    /// <summary>Whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
     [JsonPropertyName("accessibility")]
     public string? Accessibility { get; set; }
 
-    /// <summary>Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.</summary>
+    /// <summary>Input caption selector to use as a caption source when generating output captions. Must match a caption selector name.</summary>
     [JsonPropertyName("captionSelectorName")]
     public string? CaptionSelectorName { get; set; }
 
-    /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+    /// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
     [JsonPropertyName("destinationSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettings? DestinationSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
+/// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
@@ -4936,99 +5150,104 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigur
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+/// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
+    /// <summary>Amount of time, in milliseconds, to display black video when the input is lost.</summary>
     [JsonPropertyName("blackFrameMsec")]
     public double? BlackFrameMsec { get; set; }
 
+    /// <summary>Color to display, as a hexadecimal RGBA value, when input_loss_image_type is color.</summary>
     [JsonPropertyName("inputLossImageColor")]
     public string? InputLossImageColor { get; set; }
 
+    /// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
     [JsonPropertyName("inputLossImageSlate")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate? InputLossImageSlate { get; set; }
 
+    /// <summary>Whether to display a solid color or a slate image when input is lost.</summary>
     [JsonPropertyName("inputLossImageType")]
     public string? InputLossImageType { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, to repeat the previous picture when the input is lost.</summary>
     [JsonPropertyName("repeatFrameMsec")]
     public double? RepeatFrameMsec { get; set; }
 }
 
-/// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+/// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfiguration
 {
-    /// <summary>Value to set the initial audio gain for the Live Event.</summary>
+    /// <summary>Value to set the initial audio gain for the live event.</summary>
     [JsonPropertyName("initialAudioGain")]
     public double? InitialAudioGain { get; set; }
 
-    /// <summary>Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input. When “none” is configured the encoder will transcode either black, a solid color, or a user specified slate images per the “Input Loss Behavior” configuration until the next input switch occurs (which is controlled through the Channel Schedule API).</summary>
+    /// <summary>Action to take when the current input completes. When switchAndLoopInputs is configured, the encoder restarts at the beginning of the first input. When none is configured, the encoder transcodes black, a solid color, or a user-specified slate image per the input loss behavior configuration until the next input switch occurs, which is controlled through the Channel Schedule API.</summary>
     [JsonPropertyName("inputEndAction")]
     public string? InputEndAction { get; set; }
 
-    /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+    /// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
     [JsonPropertyName("inputLossBehavior")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehavior? InputLossBehavior { get; set; }
 
-    /// <summary>Indicates how MediaLive pipelines are synchronized. PIPELINE_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other. EPOCH_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.</summary>
+    /// <summary>How MediaLive pipelines are synchronized. PIPELINE_LOCKING attempts to synchronize the output of each pipeline to the other. EPOCH_LOCKING attempts to synchronize the output of each pipeline to the Unix epoch.</summary>
     [JsonPropertyName("outputLockingMode")]
     public string? OutputLockingMode { get; set; }
 
-    /// <summary>Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.</summary>
+    /// <summary>Whether the rate of frames emitted by the live encoder is paced by its system clock, which optionally may be locked to another source via NTP, or locked to the clock of the input source.</summary>
     [JsonPropertyName("outputTimingSource")]
     public string? OutputTimingSource { get; set; }
 
-    /// <summary>Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
+    /// <summary>Adjusts the video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
     [JsonPropertyName("supportLowFramerateInputs")]
     public string? SupportLowFramerateInputs { get; set; }
 }
 
-/// <summary>Html Motion Graphics Settings.</summary>
+/// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
-/// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+/// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
-    /// <summary>Html Motion Graphics Settings.</summary>
+    /// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
     [JsonPropertyName("htmlMotionGraphicsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings? HtmlMotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+/// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfiguration
 {
-    /// <summary>Motion Graphics Insertion.</summary>
+    /// <summary>Whether to activate motion graphics insertion.</summary>
     [JsonPropertyName("motionGraphicsInsertion")]
     public string? MotionGraphicsInsertion { get; set; }
 
-    /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+    /// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
     [JsonPropertyName("motionGraphicsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings? MotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+/// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsNielsenConfiguration
 {
-    /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
+    /// <summary>Distributor ID assigned to your organization by Nielsen.</summary>
     [JsonPropertyName("distributorId")]
     public string? DistributorId { get; set; }
 
@@ -5037,27 +5256,27 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsNielsenConfigu
     public string? NielsenPcmToId3Tagging { get; set; }
 }
 
-/// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+/// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
-    /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+    /// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
     [JsonPropertyName("archiveS3Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings? ArchiveS3Settings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
@@ -5071,20 +5290,20 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
-    /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
     [JsonPropertyName("archiveCdnSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings? ArchiveCdnSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Number of seconds to write to archive file before closing and starting a new one.</summary>
+    /// <summary>Number of seconds to write to an archive file before closing and starting a new one.</summary>
     [JsonPropertyName("rolloverInterval")]
     public double? RolloverInterval { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
@@ -5094,36 +5313,36 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureS3Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings? FrameCaptureS3Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureCdnSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
@@ -5132,19 +5351,20 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
+    /// <summary>Caption channel to install in the output.</summary>
     [JsonPropertyName("captionChannel")]
     public double? CaptionChannel { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
@@ -5154,18 +5374,20 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -5177,22 +5399,25 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>Salt for authenticated Akamai.</summary>
     [JsonPropertyName("salt")]
     public string? Salt { get; set; }
 
+    /// <summary>Token parameter for authenticated Akamai.</summary>
     [JsonPropertyName("token")]
     public string? Token { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
@@ -5205,18 +5430,20 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>MediaStore storage class to use.</summary>
     [JsonPropertyName("mediaStoreStorageClass")]
     public string? MediaStoreStorageClass { get; set; }
 
@@ -5229,28 +5456,30 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -5267,27 +5496,28 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
     [JsonPropertyName("hlsAkamaiSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings? HlsAkamaiSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
     [JsonPropertyName("hlsBasicPutSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings? HlsBasicPutSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
     [JsonPropertyName("hlsMediaStoreSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings? HlsMediaStoreSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
     [JsonPropertyName("hlsS3Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings? HlsS3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
     [JsonPropertyName("hlsWebdavSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
+/// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
@@ -5300,7 +5530,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -5309,165 +5539,200 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
+    /// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
     [JsonPropertyName("keyProviderServer")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer? KeyProviderServer { get; set; }
 
+    /// <summary>Static key value as a 32-character hexadecimal string.</summary>
     [JsonPropertyName("staticKeyValue")]
     public string? StaticKeyValue { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Static key settings. See static_key_settings Block for details.</summary>
     [JsonPropertyName("staticKeySettings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings>? StaticKeySettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
+    /// <summary>Prepends a value to the URI of each media (segment) file in the manifest.</summary>
     [JsonPropertyName("baseUrlContent")]
     public string? BaseUrlContent { get; set; }
 
+    /// <summary>Alternate base URL for content, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlContent1")]
     public string? BaseUrlContent1 { get; set; }
 
+    /// <summary>Prepends a value to the URI of each variant manifest file in the master manifest.</summary>
     [JsonPropertyName("baseUrlManifest")]
     public string? BaseUrlManifest { get; set; }
 
+    /// <summary>Alternate base URL for manifests, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlManifest1")]
     public string? BaseUrlManifest1 { get; set; }
 
+    /// <summary>Mapping of up to 4 caption channels to caption languages. See caption_language_mappings Block for details.</summary>
     [JsonPropertyName("captionLanguageMappings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings>? CaptionLanguageMappings { get; set; }
 
+    /// <summary>How audio and caption language setting tags are written in the manifest.</summary>
     [JsonPropertyName("captionLanguageSetting")]
     public string? CaptionLanguageSetting { get; set; }
 
+    /// <summary>When set to disabled, sets the #EXT-X-ALLOW-CACHE:no tag in the manifest.</summary>
     [JsonPropertyName("clientCache")]
     public string? ClientCache { get; set; }
 
+    /// <summary>Specification to use for the codec in the manifest.</summary>
     [JsonPropertyName("codecSpecification")]
     public string? CodecSpecification { get; set; }
 
+    /// <summary>128-bit, 16-byte hex value represented by a 32-character text string, used with the key for encrypting blocks.</summary>
     [JsonPropertyName("constantIv")]
     public string? ConstantIv { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination? Destination { get; set; }
 
+    /// <summary>Place for the media and manifest files.</summary>
     [JsonPropertyName("directoryStructure")]
     public string? DirectoryStructure { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>How the EXT-X-DISCONTINUITY tags are inserted.</summary>
     [JsonPropertyName("discontinuityTags")]
     public string? DiscontinuityTags { get; set; }
 
+    /// <summary>Encryption type.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See hls_cdn_settings Block for details.</summary>
     [JsonPropertyName("hlsCdnSettings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings>? HlsCdnSettings { get; set; }
 
+    /// <summary>State of HLS ID3 segment tagging.</summary>
     [JsonPropertyName("hlsId3SegmentTagging")]
     public string? HlsId3SegmentTagging { get; set; }
 
+    /// <summary>When set to standard, an I-Frame only playlist is written out for each video output in the output group.</summary>
     [JsonPropertyName("iframeOnlyPlaylists")]
     public string? IframeOnlyPlaylists { get; set; }
 
+    /// <summary>Behavior of the segment that is in progress at a channel restart or input switch.</summary>
     [JsonPropertyName("incompleteSegmentBehavior")]
     public string? IncompleteSegmentBehavior { get; set; }
 
+    /// <summary>Number of segments to keep in the manifest.</summary>
     [JsonPropertyName("indexNSegments")]
     public double? IndexNSegments { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
+    /// <summary>Whether the initialization vector is included in the key method on the segment.</summary>
     [JsonPropertyName("ivInManifest")]
     public string? IvInManifest { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Whether the initialization vector follows the segment number or is from the group.</summary>
     [JsonPropertyName("ivSource")]
     public string? IvSource { get; set; }
 
+    /// <summary>Number of segments to retain in the destination directory.</summary>
     [JsonPropertyName("keepSegments")]
     public double? KeepSegments { get; set; }
 
+    /// <summary>Value for the key URI format in the key method.</summary>
     [JsonPropertyName("keyFormat")]
     public string? KeyFormat { get; set; }
 
+    /// <summary>Versions of the key format in the key method.</summary>
     [JsonPropertyName("keyFormatVersions")]
     public string? KeyFormatVersions { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
     [JsonPropertyName("keyProviderSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings? KeyProviderSettings { get; set; }
 
+    /// <summary>Whether the manifest is compressed with gzip.</summary>
     [JsonPropertyName("manifestCompression")]
     public string? ManifestCompression { get; set; }
 
+    /// <summary>Format of the segment duration in the manifest.</summary>
     [JsonPropertyName("manifestDurationFormat")]
     public string? ManifestDurationFormat { get; set; }
 
+    /// <summary>Minimum length, in seconds, for each segment.</summary>
     [JsonPropertyName("minSegmentLength")]
     public double? MinSegmentLength { get; set; }
 
+    /// <summary>HLS mode.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Generation of the manifest and segments or only variant manifests.</summary>
     [JsonPropertyName("outputSelection")]
     public string? OutputSelection { get; set; }
 
+    /// <summary>Whether to include an EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTime")]
     public string? ProgramDateTime { get; set; }
 
+    /// <summary>Clock source for the EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTimeClock")]
     public string? ProgramDateTimeClock { get; set; }
 
+    /// <summary>Period, in seconds, between EXT-X-PROGRAM-DATE-TIME tags.</summary>
     [JsonPropertyName("programDateTimePeriod")]
     public double? ProgramDateTimePeriod { get; set; }
 
+    /// <summary>When set to enabled, writes a secondary manifest for each output group.</summary>
     [JsonPropertyName("redundantManifest")]
     public string? RedundantManifest { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentLength")]
     public double? SegmentLength { get; set; }
 
+    /// <summary>Number of segments to write to a subdirectory before starting a new one.</summary>
     [JsonPropertyName("segmentsPerSubdirectory")]
     public double? SegmentsPerSubdirectory { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Whether to include the resolution in the EXT-X-STREAM-INF tag.</summary>
     [JsonPropertyName("streamInfResolution")]
     public string? StreamInfResolution { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 
+    /// <summary>Value, in milliseconds, to offset the program date time from the input timestamp.</summary>
     [JsonPropertyName("timestampDeltaMilliseconds")]
     public double? TimestampDeltaMilliseconds { get; set; }
 
+    /// <summary>Whether segments are placed in subdirectories.</summary>
     [JsonPropertyName("tsFileMode")]
     public string? TsFileMode { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
@@ -5477,17 +5742,17 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+/// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
@@ -5497,47 +5762,52 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Identifier used to associate the segments between the output and the ingest server.</summary>
     [JsonPropertyName("acquisitionPointId")]
     public string? AcquisitionPointId { get; set; }
 
+    /// <summary>Whether to put a timecode in the single video track of an audio-only output.</summary>
     [JsonPropertyName("audioOnlyTimecodeControl")]
     public string? AudioOnlyTimecodeControl { get; set; }
 
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Microsoft Smooth channel ID that is sent to the IIS server.</summary>
     [JsonPropertyName("eventId")]
     public string? EventId { get; set; }
 
+    /// <summary>How the event ID is generated.</summary>
     [JsonPropertyName("eventIdMode")]
     public string? EventIdMode { get; set; }
 
+    /// <summary>When set to sendEos, sends an end-of-stream to the IIS server when a stream stops.</summary>
     [JsonPropertyName("eventStopBehavior")]
     public string? EventStopBehavior { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>Length, in seconds, of mp4 fragments to generate.</summary>
     [JsonPropertyName("fragmentLength")]
     public double? FragmentLength { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -5549,58 +5819,64 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>When set to useInputSegmentation, segmentation markers from the input are used.</summary>
     [JsonPropertyName("segmentationMode")]
     public string? SegmentationMode { get; set; }
 
+    /// <summary>Number of milliseconds to delay the output from the second pipeline.</summary>
     [JsonPropertyName("sendDelayMs")]
     public double? SendDelayMs { get; set; }
 
+    /// <summary>Type of the sparse track that carries timed metadata.</summary>
     [JsonPropertyName("sparseTrackType")]
     public string? SparseTrackType { get; set; }
 
+    /// <summary>When set to send, sends a stream manifest so the publishing point does not start until the first segment is sent.</summary>
     [JsonPropertyName("streamManifestBehavior")]
     public string? StreamManifestBehavior { get; set; }
 
+    /// <summary>Timestamp offset for the event.</summary>
     [JsonPropertyName("timestampOffset")]
     public string? TimestampOffset { get; set; }
 
+    /// <summary>Type of timestamp date offset to use.</summary>
     [JsonPropertyName("timestampOffsetMode")]
     public string? TimestampOffsetMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Multiplex group settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
-/// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+/// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
-    /// <summary>Authentication scheme to use when connecting with CDN.</summary>
+    /// <summary>Authentication scheme to use when connecting with the CDN.</summary>
     [JsonPropertyName("authenticationScheme")]
     public string? AuthenticationScheme { get; set; }
 
-    /// <summary>Controls behavior when content cache fills up.</summary>
+    /// <summary>Behavior when the content cache fills up.</summary>
     [JsonPropertyName("cacheFullBehavior")]
     public string? CacheFullBehavior { get; set; }
 
-    /// <summary>Cache length in seconds, is used to calculate buffer size.</summary>
+    /// <summary>Cache length, in seconds, used to calculate buffer size.</summary>
     [JsonPropertyName("cacheLength")]
     public double? CacheLength { get; set; }
 
-    /// <summary>Controls the types of data that passes to onCaptionInfo outputs.</summary>
+    /// <summary>Controls the types of data that pass to onCaptionInfo outputs.</summary>
     [JsonPropertyName("captionData")]
     public string? CaptionData { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -5609,134 +5885,146 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 }
 
-/// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+/// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
-    /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
+    /// <summary>Archive group settings. See archive_group_settings Block for details.</summary>
     [JsonPropertyName("archiveGroupSettings")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings>? ArchiveGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings? FrameCaptureGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
     [JsonPropertyName("hlsGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings? HlsGroupSettings { get; set; }
 
-    /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+    /// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings? MediaPackageGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
     [JsonPropertyName("msSmoothGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings? MsSmoothGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Multiplex group settings. Can be set as an empty block.</summary>
     [JsonPropertyName("multiplexGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings? MultiplexGroupSettings { get; set; }
 
-    /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+    /// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
     [JsonPropertyName("rtmpGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings? RtmpGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
     [JsonPropertyName("udpGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings? UdpGroupSettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -5744,103 +6032,123 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -5848,58 +6156,62 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Raw Settings. This can be set as an empty block.</summary>
+/// <summary>Raw settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 
-    /// <summary>Raw Settings. This can be set as an empty block.</summary>
+    /// <summary>Raw settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rawSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings? RawSettings { get; set; }
 }
 
-/// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+/// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
@@ -5907,21 +6219,22 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("extension")]
     public string? Extension { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
+/// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
@@ -5934,93 +6247,108 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>Group to which the audio rendition belongs.</summary>
     [JsonPropertyName("audioGroupId")]
     public string? AudioGroupId { get; set; }
 
+    /// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
     [JsonPropertyName("audioOnlyImage")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage? AudioOnlyImage { get; set; }
 
+    /// <summary>Four types of audio-only tracks.</summary>
     [JsonPropertyName("audioTrackType")]
     public string? AudioTrackType { get; set; }
 
+    /// <summary>Whether the stream is an audio-only stream.</summary>
     [JsonPropertyName("segmentType")]
     public string? SegmentType { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to passthrough, passes through SCTE-35.</summary>
     [JsonPropertyName("scte35Behavior")]
     public string? Scte35Behavior { get; set; }
 
@@ -6028,98 +6356,103 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
     [JsonPropertyName("m3u8Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings? M3u8Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
     [JsonPropertyName("audioOnlyHlsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings? AudioOnlyHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
     [JsonPropertyName("fmp4HlsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings? Fmp4HlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
     [JsonPropertyName("frameCaptureHlsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings? FrameCaptureHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
     [JsonPropertyName("standardHlsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings? StandardHlsSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
     [JsonPropertyName("hlsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings? HlsSettings { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("segmentModifier")]
     public string? SegmentModifier { get; set; }
 }
 
-/// <summary>Media package output settings. This can be set as an empty block.</summary>
+/// <summary>Media package output settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
@@ -6129,17 +6462,17 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+/// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
@@ -6149,20 +6482,20 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+/// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination? Destination { get; set; }
 
@@ -6171,79 +6504,90 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public double? NumRetries { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -6251,103 +6595,123 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -6355,42 +6719,46 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
@@ -6400,12 +6768,12 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
-    /// <summary>The height of the FEC protection matrix.</summary>
+    /// <summary>Height of the FEC protection matrix.</summary>
     [JsonPropertyName("columnDepth")]
     public double? ColumnDepth { get; set; }
 
@@ -6413,67 +6781,67 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("includeFec")]
     public string? IncludeFec { get; set; }
 
-    /// <summary>The width of the FEC protection matrix.</summary>
+    /// <summary>Width of the FEC protection matrix.</summary>
     [JsonPropertyName("rowLength")]
     public double? RowLength { get; set; }
 }
 
-/// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+/// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
-    /// <summary>UDP output buffering in milliseconds.</summary>
+    /// <summary>UDP output buffering, in milliseconds.</summary>
     [JsonPropertyName("bufferMsec")]
     public double? BufferMsec { get; set; }
 
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination? Destination { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
     [JsonPropertyName("fecOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings? FecOutputSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for the output. See output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
-    /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+    /// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
     [JsonPropertyName("archiveOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings? ArchiveOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings? FrameCaptureOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
     [JsonPropertyName("hlsOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings? HlsOutputSettings { get; set; }
 
-    /// <summary>Media package output settings. This can be set as an empty block.</summary>
+    /// <summary>Media package output settings. Can be set as an empty block.</summary>
     [JsonPropertyName("mediaPackageOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings? MediaPackageOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
     [JsonPropertyName("msSmoothOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings? MsSmoothOutputSettings { get; set; }
 
-    /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+    /// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
     [JsonPropertyName("multiplexOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings? MultiplexOutputSettings { get; set; }
 
-    /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+    /// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
     [JsonPropertyName("rtmpOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings? RtmpOutputSettings { get; set; }
 
-    /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+    /// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
     [JsonPropertyName("udpOutputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
@@ -6482,23 +6850,23 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputs
 {
-    /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
+    /// <summary>Names of the audio descriptions used as audio sources for the output.</summary>
     [JsonPropertyName("audioDescriptionNames")]
     public IList<string>? AudioDescriptionNames { get; set; }
 
-    /// <summary>The names of the caption descriptions used as caption sources for the output.</summary>
+    /// <summary>Names of the caption descriptions used as caption sources for the output.</summary>
     [JsonPropertyName("captionDescriptionNames")]
     public IList<string>? CaptionDescriptionNames { get; set; }
 
-    /// <summary>The name used to identify an output.</summary>
+    /// <summary>Name used to identify an output.</summary>
     [JsonPropertyName("outputName")]
     public string? OutputName { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for the output. See output_settings Block for details.</summary>
     [JsonPropertyName("outputSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettings? OutputSettings { get; set; }
 
-    /// <summary>The name of the video description used as video source for the output.</summary>
+    /// <summary>Name of the video description used as the video source for the output.</summary>
     [JsonPropertyName("videoDescriptionName")]
     public string? VideoDescriptionName { get; set; }
 }
@@ -6507,39 +6875,49 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+    /// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
     [JsonPropertyName("outputGroupSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettings? OutputGroupSettings { get; set; }
 
-    /// <summary>List of outputs. See Outputs for more details.</summary>
+    /// <summary>List of outputs. See outputs Block for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputs>? Outputs { get; set; }
 }
 
-/// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+/// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ChannelSpecInitProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+/// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 {
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the timecode associated with the event outputs.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Threshold in frames beyond which output timecode is resynchronized to the input timecode.</summary>
+    /// <summary>Threshold, in frames, beyond which output timecode is resynchronized to the input timecode.</summary>
     [JsonPropertyName("syncThreshold")]
     public double? SyncThreshold { get; set; }
 }
 
-/// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+/// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
-    /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
+    /// <summary>Frequency at which to capture frames for inclusion in the output.</summary>
     [JsonPropertyName("captureInterval")]
     public double? CaptureInterval { get; set; }
 
@@ -6548,7 +6926,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     public string? CaptureIntervalUnits { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
@@ -6562,17 +6940,17 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>H264 settings. See H264 Settings for more details.</summary>
+/// <summary>H264 settings. See h264_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
@@ -6581,7 +6959,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
@@ -6589,14 +6967,15 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Percentage of the buffer that should initially be filled.</summary>
     [JsonPropertyName("bufFillPct")]
     public double? BufFillPct { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
@@ -6604,22 +6983,23 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("entropyEncoding")]
     public string? EntropyEncoding { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
-    /// <summary>Controls whether coding is performed on a field basis or on a frame basis.</summary>
+    /// <summary>Whether coding is performed on a field basis or on a frame basis.</summary>
     [JsonPropertyName("forceFieldPictures")]
     public string? ForceFieldPictures { get; set; }
 
-    /// <summary>Indicates how the output video frame rate is specified.</summary>
+    /// <summary>How the output video frame rate is specified.</summary>
     [JsonPropertyName("framerateControl")]
     public string? FramerateControl { get; set; }
 
@@ -6643,15 +7023,15 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("gopNumBFrames")]
     public double? GopNumBFrames { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -6659,11 +7039,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
@@ -6671,19 +7051,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("numRefFrames")]
     public double? NumRefFrames { get; set; }
 
-    /// <summary>Indicates how the output pixel aspect ratio is specified.</summary>
+    /// <summary>How the output pixel aspect ratio is specified.</summary>
     [JsonPropertyName("parControl")]
     public string? ParControl { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
@@ -6691,15 +7071,15 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("qualityLevel")]
     public string? QualityLevel { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -6731,26 +7111,26 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("temporalAq")]
     public string? TemporalAq { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 }
 
-/// <summary>Sets the colorspace metadata to be passed through.</summary>
+/// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
-/// <summary>Set the colorspace to Dolby Vision81.</summary>
+/// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
-/// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+/// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
@@ -6764,47 +7144,47 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     public double? MaxFall { get; set; }
 }
 
-/// <summary>Set the colorspace to Rec. 601.</summary>
+/// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
-/// <summary>Set the colorspace to Rec. 709.</summary>
+/// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
-/// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+/// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
-    /// <summary>Sets the colorspace metadata to be passed through.</summary>
+    /// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
     [JsonPropertyName("colorSpacePassthroughSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings? ColorSpacePassthroughSettings { get; set; }
 
-    /// <summary>Set the colorspace to Dolby Vision81.</summary>
+    /// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
     [JsonPropertyName("dolbyVision81Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings? DolbyVision81Settings { get; set; }
 
-    /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+    /// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
     [JsonPropertyName("hdr10Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings? Hdr10Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 601.</summary>
+    /// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
     [JsonPropertyName("rec601Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings? Rec601Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 709.</summary>
+    /// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
     [JsonPropertyName("rec709Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings? Rec709Settings { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
@@ -6818,35 +7198,35 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+/// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
-    /// <summary>Set a prefix on the burned in timecode.</summary>
+    /// <summary>Prefix on the burned-in timecode.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Sets the size of the burned in timecode.</summary>
+    /// <summary>Size of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninFontSize")]
     public string? TimecodeBurninFontSize { get; set; }
 
-    /// <summary>Sets the position of the burned in timecode.</summary>
+    /// <summary>Position of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninPosition")]
     public string? TimecodeBurninPosition { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>H265 settings. See h265_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
@@ -6855,11 +7235,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
-    /// <summary>Whether or not EML should insert an Alternative Transfer Function SEI message.</summary>
+    /// <summary>Whether EML inserts an Alternative Transfer Function SEI message.</summary>
     [JsonPropertyName("alternativeTransferFunction")]
     public string? AlternativeTransferFunction { get; set; }
 
@@ -6867,26 +7247,27 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
-    /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+    /// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
     [JsonPropertyName("colorSpaceSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings? ColorSpaceSettings { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
@@ -6902,15 +7283,15 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("gopClosedCadence")]
     public double? GopClosedCadence { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -6918,19 +7299,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
-    /// <summary>Set the minimum QP.</summary>
+    /// <summary>Sets the minimum QP.</summary>
     [JsonPropertyName("minQp")]
     public double? MinQp { get; set; }
 
-    /// <summary>Enables or disables motion vector over picture boundaries.</summary>
+    /// <summary>Enables or disables motion vectors over picture boundaries.</summary>
     [JsonPropertyName("mvOverPictureBoundaries")]
     public string? MvOverPictureBoundaries { get; set; }
 
@@ -6938,27 +7319,27 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("mvTemporalPredictor")]
     public string? MvTemporalPredictor { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -6970,11 +7351,11 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("slices")]
     public double? Slices { get; set; }
 
-    /// <summary>Set the H265 tier in the output.</summary>
+    /// <summary>H265 tier in the output.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 
-    /// <summary>Sets the height of tiles.</summary>
+    /// <summary>Height of tiles.</summary>
     [JsonPropertyName("tileHeight")]
     public double? TileHeight { get; set; }
 
@@ -6982,37 +7363,37 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("tilePadding")]
     public string? TilePadding { get; set; }
 
-    /// <summary>Sets the width of tiles.</summary>
+    /// <summary>Width of tiles.</summary>
     [JsonPropertyName("tileWidth")]
     public double? TileWidth { get; set; }
 
-    /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+    /// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
     [JsonPropertyName("timecodeBurninSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings? TimecodeBurninSettings { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 
-    /// <summary>Sets the size of the treeblock.</summary>
+    /// <summary>Size of the treeblock.</summary>
     [JsonPropertyName("treeblockSize")]
     public string? TreeblockSize { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
-    /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+    /// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings? FrameCaptureSettings { get; set; }
 
-    /// <summary>H264 settings. See H264 Settings for more details.</summary>
+    /// <summary>H264 settings. See h264_settings Block for details.</summary>
     [JsonPropertyName("h264Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings? H264Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>H265 settings. See h265_settings Block for details.</summary>
     [JsonPropertyName("h265Settings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
@@ -7021,19 +7402,19 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptions
 {
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Indicate how to respond to the AFD values that might be in the input video.</summary>
+    /// <summary>How to respond to the AFD values that might be in the input video.</summary>
     [JsonPropertyName("respondToAfd")]
     public string? RespondToAfd { get; set; }
 
@@ -7041,109 +7422,113 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("scalingBehavior")]
     public string? ScalingBehavior { get; set; }
 
-    /// <summary>Changes the strength of the anti-alias filter used for scaling.</summary>
+    /// <summary>Strength of the anti-alias filter used for scaling.</summary>
     [JsonPropertyName("sharpness")]
     public double? Sharpness { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+/// <summary>Encoder settings. See encoder_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettings
 {
-    /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
+    /// <summary>Audio descriptions for the channel. See audio_descriptions Block for details.</summary>
     [JsonPropertyName("audioDescriptions")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptions>? AudioDescriptions { get; set; }
 
-    /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+    /// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
     [JsonPropertyName("availBlanking")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlanking? AvailBlanking { get; set; }
 
-    /// <summary>Caption Descriptions. See Caption Descriptions for more details.</summary>
+    /// <summary>Caption descriptions for the channel. See caption_descriptions Block for details.</summary>
     [JsonPropertyName("captionDescriptions")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptions>? CaptionDescriptions { get; set; }
 
-    /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+    /// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
     [JsonPropertyName("globalConfiguration")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfiguration? GlobalConfiguration { get; set; }
 
-    /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+    /// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
     [JsonPropertyName("motionGraphicsConfiguration")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfiguration? MotionGraphicsConfiguration { get; set; }
 
-    /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+    /// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
     [JsonPropertyName("nielsenConfiguration")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsNielsenConfiguration? NielsenConfiguration { get; set; }
 
-    /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
+    /// <summary>Output groups for the channel. See output_groups Block for details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
 
-    /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public V1beta1ChannelSpecInitProviderEncoderSettingsThumbnailConfiguration? ThumbnailConfiguration { get; set; }
+
+    /// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
     [JsonPropertyName("timecodeConfig")]
     public V1beta1ChannelSpecInitProviderEncoderSettingsTimecodeConfig? TimecodeConfig { get; set; }
 
-    /// <summary>Video Descriptions. See Video Descriptions for more details.</summary>
+    /// <summary>Video descriptions for the channel. See video_descriptions Block for details.</summary>
     [JsonPropertyName("videoDescriptions")]
     public IList<V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptions>? VideoDescriptions { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
     [JsonPropertyName("audioSilenceThresholdMsec")]
     public double? AudioSilenceThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
-    /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
+    /// <summary>Amount of time, in milliseconds, that no input is detected before an input failover occurs.</summary>
     [JsonPropertyName("inputLossThresholdMsec")]
     public double? InputLossThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
-    /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
+    /// <summary>Threshold below which MediaLive considers a pixel to be black, expressed as a decimal fraction of white. For example, 0.1 means 10% white (90% black). For the input to be considered black, every pixel in a frame must be below this threshold. The range is 0.0 to 1.0, with any number of decimal places.</summary>
     [JsonPropertyName("blackDetectThreshold")]
     public double? BlackDetectThreshold { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be black before automatic input failover occurs.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be black before automatic input failover occurs.</summary>
     [JsonPropertyName("videoBlackThresholdMsec")]
     public double? VideoBlackThresholdMsec { get; set; }
 }
 
-/// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+/// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
-    /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
     [JsonPropertyName("audioSilenceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings? AudioSilenceSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
     [JsonPropertyName("inputLossSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings? InputLossSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
     [JsonPropertyName("videoBlackSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
@@ -7152,21 +7537,21 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
-    /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+    /// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
     [JsonPropertyName("failoverConditionSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings? FailoverConditionSettings { get; set; }
 }
 
-/// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+/// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettings
 {
-    /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
+    /// <summary>Amount of time, in milliseconds, that a recovered input must have no failover conditions before it is considered healthy. This value is particularly important when input_preference is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive switches back to the primary input.</summary>
     [JsonPropertyName("errorClearTimeMsec")]
     public double? ErrorClearTimeMsec { get; set; }
 
-    /// <summary>A list of failover conditions. If any of these conditions occur, MediaLive will perform a failover to the other input. See Failover Condition Block for more details.</summary>
+    /// <summary>Failover conditions. If any of these conditions occur, MediaLive fails over to the other input. See failover_condition Block for details.</summary>
     [JsonPropertyName("failoverCondition")]
     public IList<V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition>? FailoverCondition { get; set; }
 
@@ -7174,7 +7559,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
     [JsonPropertyName("inputPreference")]
     public string? InputPreference { get; set; }
 
-    /// <summary>The input ID of the secondary input in the automatic input failover pair.</summary>
+    /// <summary>Input ID of the secondary input in the automatic input failover pair.</summary>
     [JsonPropertyName("secondaryInputId")]
     public string? SecondaryInputId { get; set; }
 }
@@ -7334,50 +7719,50 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelect
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+/// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+/// <summary>Language selection. See audio_language_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>When set to “strict”, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present then mute will be encoded until the language returns. If “loose”, then on a PMT update the demux will choose another audio stream in the program with the same stream type if it can’t find one with the same language.</summary>
+    /// <summary>How to handle a change in the language of the audio stream after it is selected. When set to strict, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present, then mute is encoded until the language returns. When set to loose, the demux chooses another audio stream in the program with the same stream type on a PMT update if it cannot find one with the same language.</summary>
     [JsonPropertyName("languageSelectionPolicy")]
     public string? LanguageSelectionPolicy { get; set; }
 }
 
-/// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+/// <summary>PID selection. See audio_pid_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+/// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
-    /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
+    /// <summary>Program ID of the Dolby E program to extract from the specified track. Applies only to Dolby E. One program is extracted per audio selector. To select multiple programs, create multiple selectors with the same track and different program numbers. All channels ignores the program IDs and includes all the channels in this selector; useful if metadata is known to be incorrect.</summary>
     [JsonPropertyName("programSelection")]
     public string? ProgramSelection { get; set; }
 }
@@ -7391,38 +7776,38 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     public double? Track { get; set; }
 }
 
-/// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+/// <summary>Track selection. See audio_track_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
-    /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+    /// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
     [JsonPropertyName("dolbyEDecode")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode? DolbyEDecode { get; set; }
 
-    /// <summary>Selects one or more unique audio tracks from within a source. See Audio Tracks for more details.</summary>
+    /// <summary>One or more unique audio tracks from within a source. See tracks Block for details.</summary>
     [JsonPropertyName("tracks")]
     public IList<V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks>? Tracks { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
-    /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+    /// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
     [JsonPropertyName("audioHlsRenditionSelection")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection? AudioHlsRenditionSelection { get; set; }
 
-    /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+    /// <summary>Language selection. See audio_language_selection Block for details.</summary>
     [JsonPropertyName("audioLanguageSelection")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection? AudioLanguageSelection { get; set; }
 
-    /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+    /// <summary>PID selection. See audio_pid_selection Block for details.</summary>
     [JsonPropertyName("audioPidSelection")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection? AudioPidSelection { get; set; }
 
-    /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+    /// <summary>Track selection. See audio_track_selection Block for details.</summary>
     [JsonPropertyName("audioTrackSelection")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
@@ -7431,158 +7816,158 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelector
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+/// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
-    /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
+    /// <summary>Captions channel, from 1 to 4, to extract from the ancillary captions. Complete this field if you plan to convert the ancillary captions to another format. Leave blank if you plan to choose Embedded as the captions destination in the output, because MediaLive ignores the field.</summary>
     [JsonPropertyName("sourceAncillaryChannelNumber")]
     public double? SourceAncillaryChannelNumber { get; set; }
 }
 
-/// <summary>ARIB Source Settings.</summary>
+/// <summary>ARIB source settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
-/// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+/// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+/// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Set to “auto” to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions.</summary>
+    /// <summary>Set to auto to handle streams with intermittent or non-aligned SCTE-20 and Embedded captions.</summary>
     [JsonPropertyName("scte20Detection")]
     public string? Scte20Detection { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+/// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+/// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+/// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. (Make sure to leave the default if you don’t have either of these formats in the output.) You can define a display rectangle for the captions that is smaller than the underlying video frame. You define the rectangle by specifying the position of the left edge, top edge, bottom edge, and right edge of the rectangle, all within the underlying video frame. The units for the measurements are percentages. If you specify a value for one of these fields, you must specify a value for all of them. For leftOffset, specify the position of the left edge of the rectangle, as a percentage of the underlying frame width, and relative to the left edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame width. The rectangle left edge starts at that position from the left edge of the frame. This field corresponds to tts:origin - X in the TTML standard.</summary>
+    /// <summary>Position of the left edge of the rectangle as a percentage of the underlying frame width, relative to the left edge of the frame. Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. You can define a display rectangle smaller than the underlying video frame; if you specify a value for one of the offset or dimension fields, you must specify a value for all of them. This field corresponds to tts:origin - X in the TTML standard.</summary>
     [JsonPropertyName("leftOffset")]
     public double? LeftOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For top_offset, specify the position of the top edge of the rectangle, as a percentage of the underlying frame height, and relative to the top edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame height. The rectangle top edge starts at that position from the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
+    /// <summary>Position of the top edge of the rectangle as a percentage of the underlying frame height, relative to the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
     [JsonPropertyName("topOffset")]
     public double? TopOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+/// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
-    /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+    /// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
     [JsonPropertyName("outputRectangle")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle? OutputRectangle { get; set; }
 
-    /// <summary>Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no “0x” prefix.</summary>
+    /// <summary>Teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303), specified as a hexadecimal string with no 0x prefix. Unused for passthrough.</summary>
     [JsonPropertyName("pageNumber")]
     public string? PageNumber { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
-    /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+    /// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
     [JsonPropertyName("ancillarySourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings? AncillarySourceSettings { get; set; }
 
-    /// <summary>ARIB Source Settings.</summary>
+    /// <summary>ARIB source settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribSourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings? AribSourceSettings { get; set; }
 
-    /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+    /// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
     [JsonPropertyName("dvbSubSourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings? DvbSubSourceSettings { get; set; }
 
-    /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+    /// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
     [JsonPropertyName("embeddedSourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings? EmbeddedSourceSettings { get; set; }
 
-    /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+    /// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
     [JsonPropertyName("scte20SourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings? Scte20SourceSettings { get; set; }
 
-    /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+    /// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
     [JsonPropertyName("scte27SourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings? Scte27SourceSettings { get; set; }
 
-    /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+    /// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
     [JsonPropertyName("teletextSourceSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
@@ -7591,25 +7976,25 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelector
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+/// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
-    /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
+    /// <summary>Bitrate, in bits per second, as in an HLS manifest.</summary>
     [JsonPropertyName("bandwidth")]
     public double? Bandwidth { get; set; }
 
@@ -7617,25 +8002,25 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     [JsonPropertyName("bufferSegments")]
     public double? BufferSegments { get; set; }
 
-    /// <summary>The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
+    /// <summary>Number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
     [JsonPropertyName("retries")]
     public double? Retries { get; set; }
 
-    /// <summary>The number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
+    /// <summary>Number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
     [JsonPropertyName("retryInterval")]
     public double? RetryInterval { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the SCTE-35 messages that MediaLive ingests.</summary>
     [JsonPropertyName("scte35Source")]
     public string? Scte35Source { get; set; }
 }
 
-/// <summary>Input settings. See Network Input Settings for more details.</summary>
+/// <summary>Input settings. See network_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
-    /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+    /// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
     [JsonPropertyName("hlsInputSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings? HlsInputSettings { get; set; }
 
@@ -7644,39 +8029,42 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     public string? ServerValidation { get; set; }
 }
 
+/// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsVideoSelector
 {
+    /// <summary>Color space of the input.</summary>
     [JsonPropertyName("colorSpace")]
     public string? ColorSpace { get; set; }
 
+    /// <summary>How MediaLive applies the color space metadata from the input.</summary>
     [JsonPropertyName("colorSpaceUsage")]
     public string? ColorSpaceUsage { get; set; }
 }
 
-/// <summary>Settings of an input. See Input Settings for more details.</summary>
+/// <summary>Settings of an input. See input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 {
-    /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
+    /// <summary>Select the audio stream to decode for inputs that have multiple. See audio_selector Block for details.</summary>
     [JsonPropertyName("audioSelector")]
     public IList<V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelector>? AudioSelector { get; set; }
 
-    /// <summary>Used to select the caption input to use for inputs that have multiple available. See Caption Selectors for more details.</summary>
+    /// <summary>Select the caption input to use for inputs that have multiple available. See caption_selector Block for details.</summary>
     [JsonPropertyName("captionSelector")]
     public IList<V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelector>? CaptionSelector { get; set; }
 
-    /// <summary>Enable or disable the deblock filter when filtering.</summary>
+    /// <summary>Whether to enable the deblock filter when filtering.</summary>
     [JsonPropertyName("deblockFilter")]
     public string? DeblockFilter { get; set; }
 
-    /// <summary>Enable or disable the denoise filter when filtering.</summary>
+    /// <summary>Whether to enable the denoise filter when filtering.</summary>
     [JsonPropertyName("denoiseFilter")]
     public string? DenoiseFilter { get; set; }
 
-    /// <summary>Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
+    /// <summary>Magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
     [JsonPropertyName("filterStrength")]
     public double? FilterStrength { get; set; }
 
@@ -7684,7 +8072,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     [JsonPropertyName("inputFilter")]
     public string? InputFilter { get; set; }
 
-    /// <summary>Input settings. See Network Input Settings for more details.</summary>
+    /// <summary>Input settings. See network_input_settings Block for details.</summary>
     [JsonPropertyName("networkInputSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettings? NetworkInputSettings { get; set; }
 
@@ -7692,7 +8080,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     [JsonPropertyName("scte35Pid")]
     public double? Scte35Pid { get; set; }
 
-    /// <summary>Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
+    /// <summary>Whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
     [JsonPropertyName("smpte2038DataPreference")]
     public string? Smpte2038DataPreference { get; set; }
 
@@ -7700,6 +8088,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
     [JsonPropertyName("sourceEndBehavior")]
     public string? SourceEndBehavior { get; set; }
 
+    /// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
     [JsonPropertyName("videoSelector")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
@@ -7708,7 +8097,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputAttachments
 {
-    /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+    /// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
     [JsonPropertyName("automaticInputFailoverSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettings? AutomaticInputFailoverSettings { get; set; }
 
@@ -7716,7 +8105,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachments
     [JsonPropertyName("inputAttachmentName")]
     public string? InputAttachmentName { get; set; }
 
-    /// <summary>The ID of the input.</summary>
+    /// <summary>ID of the input.</summary>
     [JsonPropertyName("inputId")]
     public string? InputId { get; set; }
 
@@ -7728,38 +8117,39 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachments
     [JsonPropertyName("inputIdSelector")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelector? InputIdSelector { get; set; }
 
-    /// <summary>Settings of an input. See Input Settings for more details.</summary>
+    /// <summary>Settings of an input. See input_settings Block for details.</summary>
     [JsonPropertyName("inputSettings")]
     public V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings? InputSettings { get; set; }
 }
 
-/// <summary>Specification of network and file inputs for the channel.</summary>
+/// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderInputSpecification
 {
+    /// <summary>Codec to use for the input.</summary>
     [JsonPropertyName("codec")]
     public string? Codec { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum input resolution.</summary>
     [JsonPropertyName("inputResolution")]
     public string? InputResolution { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Maximum input bitrate for an input.</summary>
     [JsonPropertyName("maximumBitrate")]
     public string? MaximumBitrate { get; set; }
 }
 
-/// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+/// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderMaintenance
 {
-    /// <summary>The day of the week to use for maintenance.</summary>
+    /// <summary>Day of the week to use for maintenance.</summary>
     [JsonPropertyName("maintenanceDay")]
     public string? MaintenanceDay { get; set; }
 
-    /// <summary>The hour maintenance will start.</summary>
+    /// <summary>Hour maintenance will start.</summary>
     [JsonPropertyName("maintenanceStartTime")]
     public string? MaintenanceStartTime { get; set; }
 }
@@ -7919,20 +8309,20 @@ public partial class V1beta1ChannelSpecInitProviderRoleArnSelector
     public V1beta1ChannelSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+/// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProviderVpc
 {
-    /// <summary>List of public address allocation ids to associate with ENIs that will be created in Output VPC. Must specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
+    /// <summary>List of public address allocation IDs to associate with ENIs created in the output VPC. Specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
     [JsonPropertyName("publicAddressAllocationIds")]
     public IList<string>? PublicAddressAllocationIds { get; set; }
 
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Output VPC network interfaces. If none are specified then the VPC default security group will be used.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the output VPC network interfaces. The VPC default security group is used if none are specified.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of VPC subnet IDs from the same VPC. If STANDARD channel, subnet IDs must be mapped to two unique availability zones (AZ).</summary>
+    /// <summary>List of VPC subnet IDs from the same VPC. For a STANDARD channel, subnet IDs must map to two unique availability zones.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -7953,43 +8343,43 @@ public partial class V1beta1ChannelSpecInitProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelSpecInitProvider
 {
-    /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+    /// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
     [JsonPropertyName("cdiInputSpecification")]
     public V1beta1ChannelSpecInitProviderCdiInputSpecification? CdiInputSpecification { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>Class of the channel. Valid values: STANDARD, SINGLE_PIPELINE.</summary>
     [JsonPropertyName("channelClass")]
     public string? ChannelClass { get; set; }
 
-    /// <summary>Destinations for channel. See Destinations for more details.</summary>
+    /// <summary>Destinations for the channel. See destinations Block for details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1ChannelSpecInitProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+    /// <summary>Encoder settings. See encoder_settings Block for details.</summary>
     [JsonPropertyName("encoderSettings")]
     public V1beta1ChannelSpecInitProviderEncoderSettings? EncoderSettings { get; set; }
 
-    /// <summary>Input attachments for the channel. See Input Attachments for more details.</summary>
+    /// <summary>Input attachments for the channel. See input_attachments Block for details.</summary>
     [JsonPropertyName("inputAttachments")]
     public IList<V1beta1ChannelSpecInitProviderInputAttachments>? InputAttachments { get; set; }
 
-    /// <summary>Specification of network and file inputs for the channel.</summary>
+    /// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
     [JsonPropertyName("inputSpecification")]
     public V1beta1ChannelSpecInitProviderInputSpecification? InputSpecification { get; set; }
 
-    /// <summary>The log level to write to Cloudwatch logs.</summary>
+    /// <summary>Level of verbosity for the logs written to CloudWatch Logs.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+    /// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
     [JsonPropertyName("maintenance")]
     public V1beta1ChannelSpecInitProviderMaintenance? Maintenance { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>ARN of the IAM role for the channel.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -8001,7 +8391,7 @@ public partial class V1beta1ChannelSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ChannelSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Whether to start/stop channel. Default: false</summary>
+    /// <summary>Whether to start/stop channel. Default: false.</summary>
     [JsonPropertyName("startChannel")]
     public bool? StartChannel { get; set; }
 
@@ -8009,7 +8399,7 @@ public partial class V1beta1ChannelSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+    /// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1ChannelSpecInitProviderVpc? Vpc { get; set; }
 }
@@ -8121,12 +8511,12 @@ public partial class V1beta1ChannelSpec
     public V1beta1ChannelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+/// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderCdiInputSpecification
 {
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum CDI input resolution.</summary>
     [JsonPropertyName("resolution")]
     public string? Resolution { get; set; }
 }
@@ -8140,16 +8530,16 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsMediaPackageSetti
     public string? ChannelId { get; set; }
 }
 
-/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+/// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderDestinationsMultiplexSettings
 {
-    /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
+    /// <summary>ID of the Multiplex that the encoder is providing output to.</summary>
     [JsonPropertyName("multiplexId")]
     public string? MultiplexId { get; set; }
 
-    /// <summary>The program name of the Multiplex program that the encoder is providing output to.</summary>
+    /// <summary>Program name of the Multiplex program that the encoder is providing output to.</summary>
     [JsonPropertyName("programName")]
     public string? ProgramName { get; set; }
 }
@@ -8162,15 +8552,15 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsSettings
     [JsonPropertyName("passwordParam")]
     public string? PasswordParam { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 
-    /// <summary>A URL specifying a destination.</summary>
+    /// <summary>URL for the destination.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -8179,29 +8569,29 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderDestinations
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>User-specified ID used in an output group or an output.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See Media Package Settings for more details.</summary>
+    /// <summary>Destination settings for a MediaPackage output; one destination for both encoders. See media_package_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageSettings")]
     public IList<V1beta1ChannelStatusAtProviderDestinationsMediaPackageSettings>? MediaPackageSettings { get; set; }
 
-    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
+    /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See multiplex_settings Block for details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1ChannelStatusAtProviderDestinationsMultiplexSettings? MultiplexSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See settings Block for details.</summary>
     [JsonPropertyName("settings")]
     public IList<V1beta1ChannelStatusAtProviderDestinationsSettings>? Settings { get; set; }
 }
 
-/// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+/// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
-    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
+    /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification; itu17702 conforms to the EBU R-128 specification.</summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
@@ -8214,15 +8604,16 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? TargetLkfs { get; set; }
 }
 
-/// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+/// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
+    /// <summary>CBET check digits to use for the watermark.</summary>
     [JsonPropertyName("cbetCheckDigitString")]
     public string? CbetCheckDigitString { get; set; }
 
-    /// <summary>Determines the method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
+    /// <summary>Method of CBET insertion mode when prior encoding is detected on the same layer.</summary>
     [JsonPropertyName("cbetStepaside")]
     public string? CbetStepaside { get; set; }
 
@@ -8235,20 +8626,21 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
+    /// <summary>Check digit string for the watermark.</summary>
     [JsonPropertyName("checkDigitString")]
     public string? CheckDigitString { get; set; }
 
-    /// <summary>The Nielsen Source ID to include in the watermark.</summary>
+    /// <summary>Nielsen source ID to include in the watermark.</summary>
     [JsonPropertyName("sid")]
     public double? Sid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
-    /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen CBET. See nielsen_cbet_settings Block for details.</summary>
     [JsonPropertyName("nielsenCbetSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings? NielsenCbetSettings { get; set; }
 
@@ -8256,22 +8648,22 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("nielsenDistributionType")]
     public string? NielsenDistributionType { get; set; }
 
-    /// <summary>Used to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See Nielsen NAES II NW Settings for more details.</summary>
+    /// <summary>Settings to insert watermarks of type Nielsen NAES, II (N2) and Nielsen NAES VI (NW). See nielsen_naes_ii_nw_settings Block for details.</summary>
     [JsonPropertyName("nielsenNaesIiNwSettings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings>? NielsenNaesIiNwSettings { get; set; }
 }
 
-/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+/// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to configure Nielsen watermarks in the audio encode. See nielsen_watermarks_settings Block for details.</summary>
     [JsonPropertyName("nielsenWatermarksSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings? NielsenWatermarksSettings { get; set; }
 }
 
-/// <summary>Aac Settings. See AAC Settings for more details.</summary>
+/// <summary>AAC settings. See aac_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
@@ -8280,19 +8672,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Set to &quot;broadcasterMixedAd&quot; when input contains pre-mixed main audio + AD (narration) as a stereo pair.</summary>
+    /// <summary>Set to broadcasterMixedAd when input contains pre-mixed main audio and AD (narration) as a stereo pair.</summary>
     [JsonPropertyName("inputType")]
     public string? InputType { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
@@ -8304,16 +8696,16 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("sampleRate")]
     public double? SampleRate { get; set; }
 
-    /// <summary>Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
+    /// <summary>Whether to use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.</summary>
     [JsonPropertyName("spec")]
     public string? Spec { get; set; }
 
-    /// <summary>VBR Quality Level - Only used if rateControlMode is VBR.</summary>
+    /// <summary>VBR quality level. Only used if rate_control_mode is VBR.</summary>
     [JsonPropertyName("vbrQuality")]
     public string? VbrQuality { get; set; }
 }
 
-/// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+/// <summary>AC3 settings. See ac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
@@ -8322,19 +8714,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
-    /// <summary>If set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
+    /// <summary>When set to filmStandard, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.</summary>
     [JsonPropertyName("drcProfile")]
     public string? DrcProfile { get; set; }
 
@@ -8347,7 +8739,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public string? MetadataControl { get; set; }
 }
 
-/// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+/// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
@@ -8356,11 +8748,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -8368,7 +8760,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
@@ -8381,12 +8773,12 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? SurroundTrim { get; set; }
 }
 
-/// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+/// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
-    /// <summary>Sets the attenuation control.</summary>
+    /// <summary>Attenuation control.</summary>
     [JsonPropertyName("attenuationControl")]
     public string? AttenuationControl { get; set; }
 
@@ -8394,18 +8786,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Specifies the bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
+    /// <summary>Bitstream mode (bsmod) for the emitted AC-3 stream.</summary>
     [JsonPropertyName("bitstreamMode")]
     public string? BitstreamMode { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
+    /// <summary>Whether to activate a DC filter for the channels.</summary>
     [JsonPropertyName("dcFilter")]
     public string? DcFilter { get; set; }
 
-    /// <summary>Sets the dialnorm of the output.</summary>
+    /// <summary>Sets the dialnorm for the output.</summary>
     [JsonPropertyName("dialnorm")]
     public double? Dialnorm { get; set; }
 
@@ -8413,10 +8806,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("drcLine")]
     public string? DrcLine { get; set; }
 
-    /// <summary>Sets the profile for heavy Dolby dynamic range compression.</summary>
+    /// <summary>Profile for heavy Dolby dynamic range compression.</summary>
     [JsonPropertyName("drcRf")]
     public string? DrcRf { get; set; }
 
+    /// <summary>When set to lfe, the EAC3 output contains an LFE channel.</summary>
     [JsonPropertyName("lfeControl")]
     public string? LfeControl { get; set; }
 
@@ -8424,19 +8818,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("lfeFilter")]
     public string? LfeFilter { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total center mix level.</summary>
     [JsonPropertyName("loRoCenterMixLevel")]
     public double? LoRoCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left total/right total surround mix level.</summary>
     [JsonPropertyName("loRoSurroundMixLevel")]
     public double? LoRoSurroundMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only center mix level.</summary>
     [JsonPropertyName("ltRtCenterMixLevel")]
     public double? LtRtCenterMixLevel { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>Left only/right only surround mix level.</summary>
     [JsonPropertyName("ltRtSurroundMixLevel")]
     public double? LtRtSurroundMixLevel { get; set; }
 
@@ -8444,23 +8838,28 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("metadataControl")]
     public string? MetadataControl { get; set; }
 
+    /// <summary>When set to whenPossible, input DD+ audio is passed through if present.</summary>
     [JsonPropertyName("passthroughControl")]
     public string? PassthroughControl { get; set; }
 
+    /// <summary>Whether to invert the phase of the surround channels.</summary>
     [JsonPropertyName("phaseControl")]
     public string? PhaseControl { get; set; }
 
+    /// <summary>Stereo downmix preference.</summary>
     [JsonPropertyName("stereoDownmix")]
     public string? StereoDownmix { get; set; }
 
+    /// <summary>Whether to encode the stream as Dolby Digital EX.</summary>
     [JsonPropertyName("surroundExMode")]
     public string? SurroundExMode { get; set; }
 
+    /// <summary>Whether to encode the stream as a surround sound stream.</summary>
     [JsonPropertyName("surroundMode")]
     public string? SurroundMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>MP2 settings. See mp2_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
@@ -8469,7 +8868,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -8478,22 +8877,23 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Pass-through settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WAV settings. See wav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
+    /// <summary>Bits per sample.</summary>
     [JsonPropertyName("bitDepth")]
     public double? BitDepth { get; set; }
 
-    /// <summary>Mono, Stereo, or 5.1 channel layout.</summary>
+    /// <summary>WAV coding mode.</summary>
     [JsonPropertyName("codingMode")]
     public string? CodingMode { get; set; }
 
@@ -8502,36 +8902,36 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? SampleRate { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
-    /// <summary>Aac Settings. See AAC Settings for more details.</summary>
+    /// <summary>AAC settings. See aac_settings Block for details.</summary>
     [JsonPropertyName("aacSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings? AacSettings { get; set; }
 
-    /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
+    /// <summary>AC3 settings. See ac3_settings Block for details.</summary>
     [JsonPropertyName("ac3Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings? Ac3Settings { get; set; }
 
-    /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
+    /// <summary>EAC3 Atmos settings. See eac3_atmos_settings Block for details.</summary>
     [JsonPropertyName("eac3AtmosSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings? Eac3AtmosSettings { get; set; }
 
-    /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
+    /// <summary>EAC3 settings. See eac3_settings Block for details.</summary>
     [JsonPropertyName("eac3Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings? Eac3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>MP2 settings. See mp2_settings Block for details.</summary>
     [JsonPropertyName("mp2Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings? Mp2Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Pass-through settings. Can be set as an empty block.</summary>
     [JsonPropertyName("passThroughSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings? PassThroughSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WAV settings. See wav_settings Block for details.</summary>
     [JsonPropertyName("wavSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
@@ -8540,9 +8940,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
+    /// <summary>Remixing value, from -60 to 6 decibels.</summary>
     [JsonPropertyName("gain")]
     public double? Gain { get; set; }
 
+    /// <summary>Index of the input channel used as a source.</summary>
     [JsonPropertyName("inputChannel")]
     public double? InputChannel { get; set; }
 }
@@ -8551,24 +8953,29 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
+    /// <summary>Levels for each of the input channels. See input_channel_levels Block for details.</summary>
     [JsonPropertyName("inputChannelLevels")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels>? InputChannelLevels { get; set; }
 
+    /// <summary>Index of the output channel being produced.</summary>
     [JsonPropertyName("outputChannel")]
     public double? OutputChannel { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
+    /// <summary>Mapping of input channels to output channels. See channel_mappings Block for details.</summary>
     [JsonPropertyName("channelMappings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings>? ChannelMappings { get; set; }
 
+    /// <summary>Number of input channels to be used.</summary>
     [JsonPropertyName("channelsIn")]
     public double? ChannelsIn { get; set; }
 
+    /// <summary>Number of output channels to be produced.</summary>
     [JsonPropertyName("channelsOut")]
     public double? ChannelsOut { get; set; }
 }
@@ -8577,51 +8984,52 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptions
 {
-    /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
+    /// <summary>Advanced audio normalization settings. See audio_normalization_settings Block for details.</summary>
     [JsonPropertyName("audioNormalizationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings? AudioNormalizationSettings { get; set; }
 
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1.</summary>
+    /// <summary>Applies only if audio_type_control is useConfigured. Values for audio_type are defined in ISO-IEC 13818-1.</summary>
     [JsonPropertyName("audioType")]
     public string? AudioType { get; set; }
 
-    /// <summary>Determined how audio type is determined.</summary>
+    /// <summary>How audio type is determined.</summary>
     [JsonPropertyName("audioTypeControl")]
     public string? AudioTypeControl { get; set; }
 
-    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
+    /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See audio_watermark_settings Block for details.</summary>
     [JsonPropertyName("audioWatermarkSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings? AudioWatermarkSettings { get; set; }
 
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
+    /// <summary>How to handle the audio language code.</summary>
     [JsonPropertyName("languageCodeControl")]
     public string? LanguageCodeControl { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings to remix the audio. See remix_settings Block for details.</summary>
     [JsonPropertyName("remixSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettings? RemixSettings { get; set; }
 
-    /// <summary>Stream name RTMP destinations (URLs of type rtmp://)</summary>
+    /// <summary>Stream name for RTMP destinations (URLs of type rtmp://).</summary>
     [JsonPropertyName("streamName")]
     public string? StreamName { get; set; }
 }
 
-/// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+/// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlankingAvailBlankingImage
@@ -8634,33 +9042,33 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlankingA
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+/// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlanking
 {
-    /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
+    /// <summary>Blanking image to be used. See avail_blanking_image Block for details.</summary>
     [JsonPropertyName("availBlankingImage")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlankingAvailBlankingImage? AvailBlankingImage { get; set; }
 
-    /// <summary>When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added.</summary>
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>ARIB Destination Settings.</summary>
+/// <summary>ARIB destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
@@ -8673,86 +9081,86 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+/// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+/// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
@@ -8765,230 +9173,230 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+/// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
-    /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Justification of the caption text. When no explicit x_position or y_position is provided, centered places the captions at the bottom center of the output and left aligns captions to the bottom left. If x_position and y_position are given with the alignment parameter, the font is justified (left or centered) relative to those coordinates. Selecting smart justification left-justifies live subtitles and center-justifies pre-recorded subtitles.</summary>
     [JsonPropertyName("alignment")]
     public string? Alignment { get; set; }
 
-    /// <summary>Specifies the color of the rectangle behind the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the rectangle behind the captions.</summary>
     [JsonPropertyName("backgroundColor")]
     public string? BackgroundColor { get; set; }
 
-    /// <summary>Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("backgroundOpacity")]
     public double? BackgroundOpacity { get; set; }
 
-    /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
+    /// <summary>External font file used for caption burn-in. File extension must be ttf or tte. Although you can select output fonts for many different types of input captions, embedded, STL, and teletext sources use a strict grid system; using external fonts with these caption sources could cause unexpected display of proportional fonts. See font Block for details.</summary>
     [JsonPropertyName("font")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont? Font { get; set; }
 
-    /// <summary>Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded, or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("fontColor")]
     public string? FontColor { get; set; }
 
-    /// <summary>Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the burned-in captions. 255 is opaque; 0 is transparent.</summary>
     [JsonPropertyName("fontOpacity")]
     public double? FontOpacity { get; set; }
 
-    /// <summary>Font resolution in DPI (dots per inch); default is 96 dpi. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font resolution in DPI (dots per inch). Default is 96 dpi.</summary>
     [JsonPropertyName("fontResolution")]
     public double? FontResolution { get; set; }
 
-    /// <summary>When set to ‘auto’ fontSize will scale depending on the size of the output. Giving a positive integer will specify the exact font size in points. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>When set to auto, font size scales depending on the size of the output. A positive integer sets the exact font size in points.</summary>
     [JsonPropertyName("fontSize")]
     public string? FontSize { get; set; }
 
-    /// <summary>Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineColor")]
     public string? OutlineColor { get; set; }
 
-    /// <summary>Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream.</summary>
     [JsonPropertyName("outlineSize")]
     public double? OutlineSize { get; set; }
 
-    /// <summary>Specifies the color of the shadow cast by the captions. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Color of the shadow cast by the captions.</summary>
     [JsonPropertyName("shadowColor")]
     public string? ShadowColor { get; set; }
 
-    /// <summary>Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent).</summary>
     [JsonPropertyName("shadowOpacity")]
     public double? ShadowOpacity { get; set; }
 
-    /// <summary>Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels to the left.</summary>
     [JsonPropertyName("shadowXOffset")]
     public double? ShadowXOffset { get; set; }
 
-    /// <summary>Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical offset, in pixels, of the shadow relative to the captions. A value of -2 results in a shadow offset 2 pixels above the text.</summary>
     [JsonPropertyName("shadowYOffset")]
     public double? ShadowYOffset { get; set; }
 
-    /// <summary>Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
+    /// <summary>Whether a fixed grid size is used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs.</summary>
     [JsonPropertyName("teletextGridControl")]
     public string? TeletextGridControl { get; set; }
 
-    /// <summary>Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Horizontal position, in pixels, of the caption relative to the left side of the output. A value of 10 results in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position is determined by the alignment parameter.</summary>
     [JsonPropertyName("xPosition")]
     public double? XPosition { get; set; }
 
-    /// <summary>Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match.</summary>
+    /// <summary>Vertical position, in pixels, of the caption relative to the top of the output. A value of 10 results in the captions starting 10 pixels from the top of the output. If no explicit y_position is provided, the caption is positioned towards the bottom of the output.</summary>
     [JsonPropertyName("yPosition")]
     public double? YPosition { get; set; }
 }
 
-/// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+/// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
-    /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
+    /// <summary>Name of the copyright holder to include in the copyright tag in the captions metadata.</summary>
     [JsonPropertyName("copyrightHolder")]
     public string? CopyrightHolder { get; set; }
 
-    /// <summary>Specifies how to handle the gap between the lines (in multi-line captions). - enabled: Fill with the captions background color (as specified in the input captions). - disabled: Leave the gap unfilled.</summary>
+    /// <summary>How to handle the gap between the lines in multi-line captions. enabled fills the gap with the captions background color as specified in the input captions; disabled leaves the gap unfilled.</summary>
     [JsonPropertyName("fillLineGap")]
     public string? FillLineGap { get; set; }
 
-    /// <summary>Specifies the font family to include in the font data attached to the EBU-TT captions. Valid only if styleControl is set to include. If you leave this field empty, the font family is set to “monospaced”. (If styleControl is set to exclude, the font family is always set to “monospaced”.) You specify only the font family. All other style information (color, bold, position and so on) is copied from the input captions. The size is always set to 100% to allow the downstream player to choose the size. - Enter a list of font families, as a comma-separated list of font names, in order of preference. The name can be a font family (such as “Arial”), or a generic font family (such as “serif”), or “default” (to let the downstream player choose the font). - Leave blank to set the family to “monospace”.</summary>
+    /// <summary>Font family to include in the font data attached to the EBU-TT captions. Valid only if style_control is set to include. If you leave this field empty, the font family is set to monospaced. You specify only the font family; all other style information (color, bold, position, and so on) is copied from the input captions, and the size is always set to 100% to allow the downstream player to choose the size. Enter a comma-separated list of font names in order of preference, a generic font family such as serif, or default to let the downstream player choose the font.</summary>
     [JsonPropertyName("fontFamily")]
     public string? FontFamily { get; set; }
 
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Embedded Destination Settings.</summary>
+/// <summary>Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
-/// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+/// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
-/// <summary>RTMP Caption Info Destination Settings.</summary>
+/// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
-/// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+/// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
-/// <summary>SCTE27 Destination Settings.</summary>
+/// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
-/// <summary>SMPTE TT Destination Settings.</summary>
+/// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
-/// <summary>Teletext Destination Settings.</summary>
+/// <summary>Teletext destination settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
-/// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+/// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+/// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
-    /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
+    /// <summary>Style information to include in the font data that is attached to the EBU-TT captions. include takes the style information from the source captions and includes it in the font data, valid only if the source captions are Embedded or Teletext. exclude sets the font family to monospaced and does not include any other style information.</summary>
     [JsonPropertyName("styleControl")]
     public string? StyleControl { get; set; }
 }
 
-/// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+/// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
-    /// <summary>ARIB Destination Settings.</summary>
+    /// <summary>ARIB destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings? AribDestinationSettings { get; set; }
 
-    /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
+    /// <summary>Burn-in destination settings. See burn_in_destination_settings Block for details.</summary>
     [JsonPropertyName("burnInDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings? BurnInDestinationSettings { get; set; }
 
-    /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
+    /// <summary>DVB Sub destination settings. See dvb_sub_destination_settings Block for details.</summary>
     [JsonPropertyName("dvbSubDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings? DvbSubDestinationSettings { get; set; }
 
-    /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
+    /// <summary>EBU TT D destination settings. See ebu_tt_d_destination_settings Block for details.</summary>
     [JsonPropertyName("ebuTtDDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings? EbuTtDDestinationSettings { get; set; }
 
-    /// <summary>Embedded Destination Settings.</summary>
+    /// <summary>Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings? EmbeddedDestinationSettings { get; set; }
 
-    /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
+    /// <summary>Embedded Plus SCTE-20 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("embeddedPlusScte20DestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings? EmbeddedPlusScte20DestinationSettings { get; set; }
 
-    /// <summary>RTMP Caption Info Destination Settings.</summary>
+    /// <summary>RTMP caption info destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rtmpCaptionInfoDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings? RtmpCaptionInfoDestinationSettings { get; set; }
 
-    /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
+    /// <summary>SCTE-20 Plus Embedded destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte20PlusEmbeddedDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings? Scte20PlusEmbeddedDestinationSettings { get; set; }
 
-    /// <summary>SCTE27 Destination Settings.</summary>
+    /// <summary>SCTE-27 destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("scte27DestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings? Scte27DestinationSettings { get; set; }
 
-    /// <summary>SMPTE TT Destination Settings.</summary>
+    /// <summary>SMPTE TT destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("smpteTtDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings? SmpteTtDestinationSettings { get; set; }
 
-    /// <summary>Teletext Destination Settings.</summary>
+    /// <summary>Teletext destination settings. Can be set as an empty block.</summary>
     [JsonPropertyName("teletextDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings? TeletextDestinationSettings { get; set; }
 
-    /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
+    /// <summary>TTML destination settings. See ttml_destination_settings Block for details.</summary>
     [JsonPropertyName("ttmlDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings? TtmlDestinationSettings { get; set; }
 
-    /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
+    /// <summary>WebVTT destination settings. See webvtt_destination_settings Block for details.</summary>
     [JsonPropertyName("webvttDestinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
@@ -8997,31 +9405,32 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptions
 {
-    /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
+    /// <summary>Whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
     [JsonPropertyName("accessibility")]
     public string? Accessibility { get; set; }
 
-    /// <summary>Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.</summary>
+    /// <summary>Input caption selector to use as a caption source when generating output captions. Must match a caption selector name.</summary>
     [JsonPropertyName("captionSelectorName")]
     public string? CaptionSelectorName { get; set; }
 
-    /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
+    /// <summary>Additional settings for the captions destination that depend on the destination type. See destination_settings Block for details.</summary>
     [JsonPropertyName("destinationSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettings? DestinationSettings { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
+/// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
@@ -9034,99 +9443,104 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigur
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+/// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
+    /// <summary>Amount of time, in milliseconds, to display black video when the input is lost.</summary>
     [JsonPropertyName("blackFrameMsec")]
     public double? BlackFrameMsec { get; set; }
 
+    /// <summary>Color to display, as a hexadecimal RGBA value, when input_loss_image_type is color.</summary>
     [JsonPropertyName("inputLossImageColor")]
     public string? InputLossImageColor { get; set; }
 
+    /// <summary>Image to display when input_loss_image_type is slate. See input_loss_image_slate Block for details.</summary>
     [JsonPropertyName("inputLossImageSlate")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate? InputLossImageSlate { get; set; }
 
+    /// <summary>Whether to display a solid color or a slate image when input is lost.</summary>
     [JsonPropertyName("inputLossImageType")]
     public string? InputLossImageType { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, to repeat the previous picture when the input is lost.</summary>
     [JsonPropertyName("repeatFrameMsec")]
     public double? RepeatFrameMsec { get; set; }
 }
 
-/// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+/// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfiguration
 {
-    /// <summary>Value to set the initial audio gain for the Live Event.</summary>
+    /// <summary>Value to set the initial audio gain for the live event.</summary>
     [JsonPropertyName("initialAudioGain")]
     public double? InitialAudioGain { get; set; }
 
-    /// <summary>Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input. When “none” is configured the encoder will transcode either black, a solid color, or a user specified slate images per the “Input Loss Behavior” configuration until the next input switch occurs (which is controlled through the Channel Schedule API).</summary>
+    /// <summary>Action to take when the current input completes. When switchAndLoopInputs is configured, the encoder restarts at the beginning of the first input. When none is configured, the encoder transcodes black, a solid color, or a user-specified slate image per the input loss behavior configuration until the next input switch occurs, which is controlled through the Channel Schedule API.</summary>
     [JsonPropertyName("inputEndAction")]
     public string? InputEndAction { get; set; }
 
-    /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
+    /// <summary>Settings for system actions when input is lost. See input_loss_behavior Block for details.</summary>
     [JsonPropertyName("inputLossBehavior")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehavior? InputLossBehavior { get; set; }
 
-    /// <summary>Indicates how MediaLive pipelines are synchronized. PIPELINE_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other. EPOCH_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.</summary>
+    /// <summary>How MediaLive pipelines are synchronized. PIPELINE_LOCKING attempts to synchronize the output of each pipeline to the other. EPOCH_LOCKING attempts to synchronize the output of each pipeline to the Unix epoch.</summary>
     [JsonPropertyName("outputLockingMode")]
     public string? OutputLockingMode { get; set; }
 
-    /// <summary>Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.</summary>
+    /// <summary>Whether the rate of frames emitted by the live encoder is paced by its system clock, which optionally may be locked to another source via NTP, or locked to the clock of the input source.</summary>
     [JsonPropertyName("outputTimingSource")]
     public string? OutputTimingSource { get; set; }
 
-    /// <summary>Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
+    /// <summary>Adjusts the video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second.</summary>
     [JsonPropertyName("supportLowFramerateInputs")]
     public string? SupportLowFramerateInputs { get; set; }
 }
 
-/// <summary>Html Motion Graphics Settings.</summary>
+/// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
-/// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+/// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
-    /// <summary>Html Motion Graphics Settings.</summary>
+    /// <summary>HTML motion graphics settings. Can be set as an empty block.</summary>
     [JsonPropertyName("htmlMotionGraphicsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings? HtmlMotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+/// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfiguration
 {
-    /// <summary>Motion Graphics Insertion.</summary>
+    /// <summary>Whether to activate motion graphics insertion.</summary>
     [JsonPropertyName("motionGraphicsInsertion")]
     public string? MotionGraphicsInsertion { get; set; }
 
-    /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
+    /// <summary>Motion graphics settings. See motion_graphics_settings Block for details.</summary>
     [JsonPropertyName("motionGraphicsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings? MotionGraphicsSettings { get; set; }
 }
 
-/// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+/// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsNielsenConfiguration
 {
-    /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
+    /// <summary>Distributor ID assigned to your organization by Nielsen.</summary>
     [JsonPropertyName("distributorId")]
     public string? DistributorId { get; set; }
 
@@ -9135,27 +9549,27 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsNielsenConfigu
     public string? NielsenPcmToId3Tagging { get; set; }
 }
 
-/// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+/// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
-    /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
+    /// <summary>Archive S3 settings. See archive_s3_settings Block for details.</summary>
     [JsonPropertyName("archiveS3Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings? ArchiveS3Settings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
@@ -9169,20 +9583,20 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
-    /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See archive_cdn_settings Block for details.</summary>
     [JsonPropertyName("archiveCdnSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings? ArchiveCdnSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Number of seconds to write to archive file before closing and starting a new one.</summary>
+    /// <summary>Number of seconds to write to an archive file before closing and starting a new one.</summary>
     [JsonPropertyName("rolloverInterval")]
     public double? RolloverInterval { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
@@ -9192,36 +9606,36 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture S3 settings. See frame_capture_s3_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureS3Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings? FrameCaptureS3Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See frame_capture_cdn_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureCdnSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
@@ -9230,19 +9644,20 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
+    /// <summary>Caption channel to install in the output.</summary>
     [JsonPropertyName("captionChannel")]
     public double? CaptionChannel { get; set; }
 
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Human readable information to indicate captions available for players (eg. English, or Spanish).</summary>
+    /// <summary>Human-readable information to indicate the captions available for players. For example, English or Spanish.</summary>
     [JsonPropertyName("languageDescription")]
     public string? LanguageDescription { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
@@ -9252,18 +9667,20 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -9275,22 +9692,25 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>Salt for authenticated Akamai.</summary>
     [JsonPropertyName("salt")]
     public string? Salt { get; set; }
 
+    /// <summary>Token parameter for authenticated Akamai.</summary>
     [JsonPropertyName("token")]
     public string? Token { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
@@ -9303,18 +9723,20 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>MediaStore storage class to use.</summary>
     [JsonPropertyName("mediaStoreStorageClass")]
     public string? MediaStoreStorageClass { get; set; }
 
@@ -9327,28 +9749,30 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
-    /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
+    /// <summary>Canned ACL to apply to each S3 request.</summary>
     [JsonPropertyName("cannedAcl")]
     public string? CannedAcl { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>HTTP transfer mode.</summary>
     [JsonPropertyName("httpTransferMode")]
     public string? HttpTransferMode { get; set; }
 
@@ -9365,27 +9789,28 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Akamai settings. See hls_akamai_settings Block for details.</summary>
     [JsonPropertyName("hlsAkamaiSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings? HlsAkamaiSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Basic put settings. See hls_basic_put_settings Block for details.</summary>
     [JsonPropertyName("hlsBasicPutSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings? HlsBasicPutSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Media store settings. See hls_media_store_settings Block for details.</summary>
     [JsonPropertyName("hlsMediaStoreSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings? HlsMediaStoreSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>S3 settings. See hls_s3_settings Block for details.</summary>
     [JsonPropertyName("hlsS3Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings? HlsS3Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>WebDAV settings. See hls_webdav_settings Block for details.</summary>
     [JsonPropertyName("hlsWebdavSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
+/// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
@@ -9398,7 +9823,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -9407,165 +9832,200 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
+    /// <summary>Location of the license server used for protecting content. See key_provider_server Block for details.</summary>
     [JsonPropertyName("keyProviderServer")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer? KeyProviderServer { get; set; }
 
+    /// <summary>Static key value as a 32-character hexadecimal string.</summary>
     [JsonPropertyName("staticKeyValue")]
     public string? StaticKeyValue { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Static key settings. See static_key_settings Block for details.</summary>
     [JsonPropertyName("staticKeySettings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings>? StaticKeySettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
+    /// <summary>Prepends a value to the URI of each media (segment) file in the manifest.</summary>
     [JsonPropertyName("baseUrlContent")]
     public string? BaseUrlContent { get; set; }
 
+    /// <summary>Alternate base URL for content, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlContent1")]
     public string? BaseUrlContent1 { get; set; }
 
+    /// <summary>Prepends a value to the URI of each variant manifest file in the master manifest.</summary>
     [JsonPropertyName("baseUrlManifest")]
     public string? BaseUrlManifest { get; set; }
 
+    /// <summary>Alternate base URL for manifests, used for redundant manifest configurations.</summary>
     [JsonPropertyName("baseUrlManifest1")]
     public string? BaseUrlManifest1 { get; set; }
 
+    /// <summary>Mapping of up to 4 caption channels to caption languages. See caption_language_mappings Block for details.</summary>
     [JsonPropertyName("captionLanguageMappings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings>? CaptionLanguageMappings { get; set; }
 
+    /// <summary>How audio and caption language setting tags are written in the manifest.</summary>
     [JsonPropertyName("captionLanguageSetting")]
     public string? CaptionLanguageSetting { get; set; }
 
+    /// <summary>When set to disabled, sets the #EXT-X-ALLOW-CACHE:no tag in the manifest.</summary>
     [JsonPropertyName("clientCache")]
     public string? ClientCache { get; set; }
 
+    /// <summary>Specification to use for the codec in the manifest.</summary>
     [JsonPropertyName("codecSpecification")]
     public string? CodecSpecification { get; set; }
 
+    /// <summary>128-bit, 16-byte hex value represented by a 32-character text string, used with the key for encrypting blocks.</summary>
     [JsonPropertyName("constantIv")]
     public string? ConstantIv { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination? Destination { get; set; }
 
+    /// <summary>Place for the media and manifest files.</summary>
     [JsonPropertyName("directoryStructure")]
     public string? DirectoryStructure { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>How the EXT-X-DISCONTINUITY tags are inserted.</summary>
     [JsonPropertyName("discontinuityTags")]
     public string? DiscontinuityTags { get; set; }
 
+    /// <summary>Encryption type.</summary>
     [JsonPropertyName("encryptionType")]
     public string? EncryptionType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Parameters that control the interactions with the CDN. See hls_cdn_settings Block for details.</summary>
     [JsonPropertyName("hlsCdnSettings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings>? HlsCdnSettings { get; set; }
 
+    /// <summary>State of HLS ID3 segment tagging.</summary>
     [JsonPropertyName("hlsId3SegmentTagging")]
     public string? HlsId3SegmentTagging { get; set; }
 
+    /// <summary>When set to standard, an I-Frame only playlist is written out for each video output in the output group.</summary>
     [JsonPropertyName("iframeOnlyPlaylists")]
     public string? IframeOnlyPlaylists { get; set; }
 
+    /// <summary>Behavior of the segment that is in progress at a channel restart or input switch.</summary>
     [JsonPropertyName("incompleteSegmentBehavior")]
     public string? IncompleteSegmentBehavior { get; set; }
 
+    /// <summary>Number of segments to keep in the manifest.</summary>
     [JsonPropertyName("indexNSegments")]
     public double? IndexNSegments { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
+    /// <summary>Whether the initialization vector is included in the key method on the segment.</summary>
     [JsonPropertyName("ivInManifest")]
     public string? IvInManifest { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Whether the initialization vector follows the segment number or is from the group.</summary>
     [JsonPropertyName("ivSource")]
     public string? IvSource { get; set; }
 
+    /// <summary>Number of segments to retain in the destination directory.</summary>
     [JsonPropertyName("keepSegments")]
     public double? KeepSegments { get; set; }
 
+    /// <summary>Value for the key URI format in the key method.</summary>
     [JsonPropertyName("keyFormat")]
     public string? KeyFormat { get; set; }
 
+    /// <summary>Versions of the key format in the key method.</summary>
     [JsonPropertyName("keyFormatVersions")]
     public string? KeyFormatVersions { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Key provider settings. See key_provider_settings Block for details.</summary>
     [JsonPropertyName("keyProviderSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings? KeyProviderSettings { get; set; }
 
+    /// <summary>Whether the manifest is compressed with gzip.</summary>
     [JsonPropertyName("manifestCompression")]
     public string? ManifestCompression { get; set; }
 
+    /// <summary>Format of the segment duration in the manifest.</summary>
     [JsonPropertyName("manifestDurationFormat")]
     public string? ManifestDurationFormat { get; set; }
 
+    /// <summary>Minimum length, in seconds, for each segment.</summary>
     [JsonPropertyName("minSegmentLength")]
     public double? MinSegmentLength { get; set; }
 
+    /// <summary>HLS mode.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Generation of the manifest and segments or only variant manifests.</summary>
     [JsonPropertyName("outputSelection")]
     public string? OutputSelection { get; set; }
 
+    /// <summary>Whether to include an EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTime")]
     public string? ProgramDateTime { get; set; }
 
+    /// <summary>Clock source for the EXT-X-PROGRAM-DATE-TIME tag.</summary>
     [JsonPropertyName("programDateTimeClock")]
     public string? ProgramDateTimeClock { get; set; }
 
+    /// <summary>Period, in seconds, between EXT-X-PROGRAM-DATE-TIME tags.</summary>
     [JsonPropertyName("programDateTimePeriod")]
     public double? ProgramDateTimePeriod { get; set; }
 
+    /// <summary>When set to enabled, writes a secondary manifest for each output group.</summary>
     [JsonPropertyName("redundantManifest")]
     public string? RedundantManifest { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentLength")]
     public double? SegmentLength { get; set; }
 
+    /// <summary>Number of segments to write to a subdirectory before starting a new one.</summary>
     [JsonPropertyName("segmentsPerSubdirectory")]
     public double? SegmentsPerSubdirectory { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Whether to include the resolution in the EXT-X-STREAM-INF tag.</summary>
     [JsonPropertyName("streamInfResolution")]
     public string? StreamInfResolution { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 
+    /// <summary>Value, in milliseconds, to offset the program date time from the input timestamp.</summary>
     [JsonPropertyName("timestampDeltaMilliseconds")]
     public double? TimestampDeltaMilliseconds { get; set; }
 
+    /// <summary>Whether segments are placed in subdirectories.</summary>
     [JsonPropertyName("tsFileMode")]
     public string? TsFileMode { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
@@ -9575,17 +10035,17 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+/// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
@@ -9595,47 +10055,52 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Identifier used to associate the segments between the output and the ingest server.</summary>
     [JsonPropertyName("acquisitionPointId")]
     public string? AcquisitionPointId { get; set; }
 
+    /// <summary>Whether to put a timecode in the single video track of an audio-only output.</summary>
     [JsonPropertyName("audioOnlyTimecodeControl")]
     public string? AudioOnlyTimecodeControl { get; set; }
 
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination? Destination { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Microsoft Smooth channel ID that is sent to the IIS server.</summary>
     [JsonPropertyName("eventId")]
     public string? EventId { get; set; }
 
+    /// <summary>How the event ID is generated.</summary>
     [JsonPropertyName("eventIdMode")]
     public string? EventIdMode { get; set; }
 
+    /// <summary>When set to sendEos, sends an end-of-stream to the IIS server when a stream stops.</summary>
     [JsonPropertyName("eventStopBehavior")]
     public string? EventStopBehavior { get; set; }
 
+    /// <summary>Size, in seconds, of the file cache for streaming outputs.</summary>
     [JsonPropertyName("filecacheDuration")]
     public double? FilecacheDuration { get; set; }
 
+    /// <summary>Length, in seconds, of mp4 fragments to generate.</summary>
     [JsonPropertyName("fragmentLength")]
     public double? FragmentLength { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -9647,58 +10112,64 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("restartDelay")]
     public double? RestartDelay { get; set; }
 
+    /// <summary>When set to useInputSegmentation, segmentation markers from the input are used.</summary>
     [JsonPropertyName("segmentationMode")]
     public string? SegmentationMode { get; set; }
 
+    /// <summary>Number of milliseconds to delay the output from the second pipeline.</summary>
     [JsonPropertyName("sendDelayMs")]
     public double? SendDelayMs { get; set; }
 
+    /// <summary>Type of the sparse track that carries timed metadata.</summary>
     [JsonPropertyName("sparseTrackType")]
     public string? SparseTrackType { get; set; }
 
+    /// <summary>When set to send, sends a stream manifest so the publishing point does not start until the first segment is sent.</summary>
     [JsonPropertyName("streamManifestBehavior")]
     public string? StreamManifestBehavior { get; set; }
 
+    /// <summary>Timestamp offset for the event.</summary>
     [JsonPropertyName("timestampOffset")]
     public string? TimestampOffset { get; set; }
 
+    /// <summary>Type of timestamp date offset to use.</summary>
     [JsonPropertyName("timestampOffsetMode")]
     public string? TimestampOffsetMode { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Multiplex group settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
-/// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+/// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
-    /// <summary>The ad marker type for this output group.</summary>
+    /// <summary>List of markers used to insert ad avail markers in the HLS output.</summary>
     [JsonPropertyName("adMarkers")]
     public IList<string>? AdMarkers { get; set; }
 
-    /// <summary>Authentication scheme to use when connecting with CDN.</summary>
+    /// <summary>Authentication scheme to use when connecting with the CDN.</summary>
     [JsonPropertyName("authenticationScheme")]
     public string? AuthenticationScheme { get; set; }
 
-    /// <summary>Controls behavior when content cache fills up.</summary>
+    /// <summary>Behavior when the content cache fills up.</summary>
     [JsonPropertyName("cacheFullBehavior")]
     public string? CacheFullBehavior { get; set; }
 
-    /// <summary>Cache length in seconds, is used to calculate buffer size.</summary>
+    /// <summary>Cache length, in seconds, used to calculate buffer size.</summary>
     [JsonPropertyName("cacheLength")]
     public double? CacheLength { get; set; }
 
-    /// <summary>Controls the types of data that passes to onCaptionInfo outputs.</summary>
+    /// <summary>Controls the types of data that pass to onCaptionInfo outputs.</summary>
     [JsonPropertyName("captionData")]
     public string? CaptionData { get; set; }
 
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
@@ -9707,134 +10178,146 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
-    /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
+    /// <summary>Parameter that controls output group behavior on an input loss.</summary>
     [JsonPropertyName("inputLossAction")]
     public string? InputLossAction { get; set; }
 
-    /// <summary>Indicates ID3 frame that has the timecode.</summary>
+    /// <summary>ID3 frame used for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Frame")]
     public string? TimedMetadataId3Frame { get; set; }
 
+    /// <summary>Period, in seconds, between ID3 frames for timed metadata.</summary>
     [JsonPropertyName("timedMetadataId3Period")]
     public double? TimedMetadataId3Period { get; set; }
 }
 
-/// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+/// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
-    /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
+    /// <summary>Archive group settings. See archive_group_settings Block for details.</summary>
     [JsonPropertyName("archiveGroupSettings")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings>? ArchiveGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture group settings. See frame_capture_group_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings? FrameCaptureGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>HLS group settings. See hls_group_settings Block for details.</summary>
     [JsonPropertyName("hlsGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings? HlsGroupSettings { get; set; }
 
-    /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
+    /// <summary>Media package group settings. See media_package_group_settings Block for details.</summary>
     [JsonPropertyName("mediaPackageGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings? MediaPackageGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Microsoft Smooth group settings. See ms_smooth_group_settings Block for details.</summary>
     [JsonPropertyName("msSmoothGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings? MsSmoothGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Multiplex group settings. Can be set as an empty block.</summary>
     [JsonPropertyName("multiplexGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings? MultiplexGroupSettings { get; set; }
 
-    /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
+    /// <summary>RTMP group settings. See rtmp_group_settings Block for details.</summary>
     [JsonPropertyName("rtmpGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings? RtmpGroupSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>UDP group settings. See udp_group_settings Block for details.</summary>
     [JsonPropertyName("udpGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings? UdpGroupSettings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -9842,103 +10325,123 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -9946,58 +10449,62 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Raw Settings. This can be set as an empty block.</summary>
+/// <summary>Raw settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 
-    /// <summary>Raw Settings. This can be set as an empty block.</summary>
+    /// <summary>Raw settings. Can be set as an empty block.</summary>
     [JsonPropertyName("rawSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings? RawSettings { get; set; }
 }
 
-/// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+/// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
@@ -10005,21 +10512,22 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("extension")]
     public string? Extension { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
+/// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
@@ -10032,93 +10540,108 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
-    /// <summary>Username for destination.</summary>
+    /// <summary>Username for the destination.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>Group to which the audio rendition belongs.</summary>
     [JsonPropertyName("audioGroupId")]
     public string? AudioGroupId { get; set; }
 
+    /// <summary>Image for an audio-only output. See audio_only_image Block for details.</summary>
     [JsonPropertyName("audioOnlyImage")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage? AudioOnlyImage { get; set; }
 
+    /// <summary>Four types of audio-only tracks.</summary>
     [JsonPropertyName("audioTrackType")]
     public string? AudioTrackType { get; set; }
 
+    /// <summary>Whether the stream is an audio-only stream.</summary>
     [JsonPropertyName("segmentType")]
     public string? SegmentType { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to passthrough, passes through SCTE-35.</summary>
     [JsonPropertyName("scte35Behavior")]
     public string? Scte35Behavior { get; set; }
 
@@ -10126,98 +10649,103 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
+    /// <summary>List of audio rendition sets, separated by commas.</summary>
     [JsonPropertyName("audioRenditionSets")]
     public string? AudioRenditionSets { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings for the M3U8 container. See m3u8_settings Block for details.</summary>
     [JsonPropertyName("m3u8Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings? M3u8Settings { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Audio-only HLS settings. See audio_only_hls_settings Block for details.</summary>
     [JsonPropertyName("audioOnlyHlsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings? AudioOnlyHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>fMP4 HLS settings. See fmp4_hls_settings Block for details.</summary>
     [JsonPropertyName("fmp4HlsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings? Fmp4HlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Frame capture HLS settings. Can be set as an empty block.</summary>
     [JsonPropertyName("frameCaptureHlsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings? FrameCaptureHlsSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Standard HLS settings. See standard_hls_settings Block for details.</summary>
     [JsonPropertyName("standardHlsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings? StandardHlsSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>Settings regarding the underlying stream. See hls_settings Block for details.</summary>
     [JsonPropertyName("hlsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings? HlsSettings { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("segmentModifier")]
     public string? SegmentModifier { get; set; }
 }
 
-/// <summary>Media package output settings. This can be set as an empty block.</summary>
+/// <summary>Media package output settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
+    /// <summary>Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1.</summary>
     [JsonPropertyName("h265PackagingType")]
     public string? H265PackagingType { get; set; }
 
-    /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
+    /// <summary>String concatenated to the end of the destination filename.</summary>
     [JsonPropertyName("nameModifier")]
     public string? NameModifier { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
@@ -10227,17 +10755,17 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+/// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination? Destination { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
@@ -10247,20 +10775,20 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+/// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
-    /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
+    /// <summary>Whether to allow self-signed or verified RTMP certificates.</summary>
     [JsonPropertyName("certificateMode")]
     public string? CertificateMode { get; set; }
 
-    /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
+    /// <summary>Number of seconds to wait before retrying a connection to the Flash Media Server if the connection is lost.</summary>
     [JsonPropertyName("connectionRetryInterval")]
     public double? ConnectionRetryInterval { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination? Destination { get; set; }
 
@@ -10269,79 +10797,90 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public double? NumRetries { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Numeric value placed in the Network Information Table.</summary>
     [JsonPropertyName("networkId")]
     public double? NetworkId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Network name text placed in the Network Information Table.</summary>
     [JsonPropertyName("networkName")]
     public string? NetworkName { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
+    /// <summary>Service Description Table output behavior.</summary>
     [JsonPropertyName("outputSdt")]
     public string? OutputSdt { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Service provider name placed in the service_descriptor in the Service Description Table.</summary>
     [JsonPropertyName("serviceProviderName")]
     public string? ServiceProviderName { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("repInterval")]
     public double? RepInterval { get; set; }
 }
 
-/// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+/// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
+    /// <summary>When set to drop, output audio streams are removed from the program if the selected input audio stream is removed from the input.</summary>
     [JsonPropertyName("absentInputAudioBehavior")]
     public string? AbsentInputAudioBehavior { get; set; }
 
+    /// <summary>When set to enabled, uses ARIB-compliant captioning.</summary>
     [JsonPropertyName("arib")]
     public string? Arib { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ARIB captions in the transport stream.</summary>
     [JsonPropertyName("aribCaptionsPid")]
     public string? AribCaptionsPid { get; set; }
 
+    /// <summary>How to pass along the ARIB captions.</summary>
     [JsonPropertyName("aribCaptionsPidControl")]
     public string? AribCaptionsPidControl { get; set; }
 
+    /// <summary>When set to dvb, uses DVB buffer model for Dolby Digital audio.</summary>
     [JsonPropertyName("audioBufferModel")]
     public string? AudioBufferModel { get; set; }
 
+    /// <summary>Number of audio frames to insert for each PES packet.</summary>
     [JsonPropertyName("audioFramesPerPes")]
     public double? AudioFramesPerPes { get; set; }
 
+    /// <summary>Packet identifier (PID) of the elementary audio streams in the transport stream.</summary>
     [JsonPropertyName("audioPids")]
     public string? AudioPids { get; set; }
 
+    /// <summary>When set to atsc, uses stream type 0x81 for AC3 and stream type 0x87 for EAC3.</summary>
     [JsonPropertyName("audioStreamType")]
     public string? AudioStreamType { get; set; }
 
@@ -10349,103 +10888,123 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Controls the timing accuracy for output network traffic.</summary>
     [JsonPropertyName("bufferModel")]
     public string? BufferModel { get; set; }
 
+    /// <summary>When set to enabled, generates a captions service descriptor in the PMT.</summary>
     [JsonPropertyName("ccDescriptor")]
     public string? CcDescriptor { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Network Information Table (NIT) settings. See dvb_nit_settings Block for details.</summary>
     [JsonPropertyName("dvbNitSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings? DvbNitSettings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Service Description Table (SDT) settings. See dvb_sdt_settings Block for details.</summary>
     [JsonPropertyName("dvbSdtSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings? DvbSdtSettings { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source DVB Subtitle data to this output.</summary>
     [JsonPropertyName("dvbSubPids")]
     public string? DvbSubPids { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>DVB Time and Date Table (TDT) settings. See dvb_tdt_settings Block for details.</summary>
     [JsonPropertyName("dvbTdtSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings? DvbTdtSettings { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source DVB Teletext data to this output.</summary>
     [JsonPropertyName("dvbTeletextPid")]
     public string? DvbTeletextPid { get; set; }
 
+    /// <summary>When set to passthrough, passes through EBIF messages from the input source to this output.</summary>
     [JsonPropertyName("ebif")]
     public string? Ebif { get; set; }
 
+    /// <summary>When set to videoAndFixedIntervals, adds Encoder Boundary Points for each elementary audio stream.</summary>
     [JsonPropertyName("ebpAudioInterval")]
     public string? EbpAudioInterval { get; set; }
 
+    /// <summary>Amount of time, in milliseconds, that the encoder looks ahead for Encoder Boundary Points.</summary>
     [JsonPropertyName("ebpLookaheadMs")]
     public double? EbpLookaheadMs { get; set; }
 
+    /// <summary>Controls placement of Encoder Boundary Points on the video PID and audio PIDs.</summary>
     [JsonPropertyName("ebpPlacement")]
     public string? EbpPlacement { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for ECM in the transport stream.</summary>
     [JsonPropertyName("ecmPid")]
     public string? EcmPid { get; set; }
 
+    /// <summary>When set to include, writes the stream to the PES header.</summary>
     [JsonPropertyName("esRateInPes")]
     public string? EsRateInPes { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Platform data to this output.</summary>
     [JsonPropertyName("etvPlatformPid")]
     public string? EtvPlatformPid { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for input source ETV Signal data to this output.</summary>
     [JsonPropertyName("etvSignalPid")]
     public string? EtvSignalPid { get; set; }
 
+    /// <summary>Length, in seconds, of each fragment, used only with EBP markers.</summary>
     [JsonPropertyName("fragmentTime")]
     public double? FragmentTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through KLV data from the SCTE-35 source.</summary>
     [JsonPropertyName("klv")]
     public string? Klv { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source KLV data to this output.</summary>
     [JsonPropertyName("klvDataPids")]
     public string? KlvDataPids { get; set; }
 
+    /// <summary>When set to passthrough, passes through Nielsen ID3.</summary>
     [JsonPropertyName("nielsenId3Behavior")]
     public string? NielsenId3Behavior { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Value, in bits per second, to insert null packets into the transport stream.</summary>
     [JsonPropertyName("nullPacketBitrate")]
     public double? NullPacketBitrate { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("patInterval")]
     public double? PatInterval { get; set; }
 
+    /// <summary>When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream.</summary>
     [JsonPropertyName("pcrControl")]
     public string? PcrControl { get; set; }
 
+    /// <summary>Maximum time, in milliseconds, between Program Clock References.</summary>
     [JsonPropertyName("pcrPeriod")]
     public double? PcrPeriod { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the Program Clock Reference in the transport stream.</summary>
     [JsonPropertyName("pcrPid")]
     public string? PcrPid { get; set; }
 
+    /// <summary>Number of milliseconds between instances of this table in the output transport stream.</summary>
     [JsonPropertyName("pmtInterval")]
     public double? PmtInterval { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) for the Program Map Table in the transport stream.</summary>
     [JsonPropertyName("pmtPid")]
     public string? PmtPid { get; set; }
 
+    /// <summary>Value of the program number field in the Program Map Table.</summary>
     [JsonPropertyName("programNum")]
     public double? ProgramNum { get; set; }
 
+    /// <summary>When set to vbr, does not insert null packets into the transport stream.</summary>
     [JsonPropertyName("rateMode")]
     public string? RateMode { get; set; }
 
+    /// <summary>Packet identifier (PID) for input source SCTE-27 data to this output.</summary>
     [JsonPropertyName("scte27Pids")]
     public string? Scte27Pids { get; set; }
 
+    /// <summary>When set to passthrough, passes any SCTE-35 signals from the input source to this output.</summary>
     [JsonPropertyName("scte35Control")]
     public string? Scte35Control { get; set; }
 
@@ -10453,42 +11012,46 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("scte35Pid")]
     public string? Scte35Pid { get; set; }
 
+    /// <summary>Type of segmentation markers to include.</summary>
     [JsonPropertyName("segmentationMarkers")]
     public string? SegmentationMarkers { get; set; }
 
+    /// <summary>Whether segmentation markers are included at the start of a stream.</summary>
     [JsonPropertyName("segmentationStyle")]
     public string? SegmentationStyle { get; set; }
 
+    /// <summary>Length, in seconds, of each segment.</summary>
     [JsonPropertyName("segmentationTime")]
     public double? SegmentationTime { get; set; }
 
+    /// <summary>When set to passthrough, passes through timed metadata.</summary>
     [JsonPropertyName("timedMetadataBehavior")]
     public string? TimedMetadataBehavior { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the timed metadata stream in the transport stream.</summary>
     [JsonPropertyName("timedMetadataPid")]
     public string? TimedMetadataPid { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>Value of the transport stream ID field in the Program Map Table.</summary>
     [JsonPropertyName("transportStreamId")]
     public double? TransportStreamId { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>Packet identifier (PID) of the elementary video stream in the transport stream.</summary>
     [JsonPropertyName("videoPid")]
     public string? VideoPid { get; set; }
 }
 
-/// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+/// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
-    /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
+    /// <summary>M2TS settings. See m2ts_settings Block for details.</summary>
     [JsonPropertyName("m2tsSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings? M2tsSettings { get; set; }
 }
 
-/// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+/// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
@@ -10498,12 +11061,12 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
-    /// <summary>The height of the FEC protection matrix.</summary>
+    /// <summary>Height of the FEC protection matrix.</summary>
     [JsonPropertyName("columnDepth")]
     public double? ColumnDepth { get; set; }
 
@@ -10511,67 +11074,67 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     [JsonPropertyName("includeFec")]
     public string? IncludeFec { get; set; }
 
-    /// <summary>The width of the FEC protection matrix.</summary>
+    /// <summary>Width of the FEC protection matrix.</summary>
     [JsonPropertyName("rowLength")]
     public double? RowLength { get; set; }
 }
 
-/// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+/// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
-    /// <summary>UDP output buffering in milliseconds.</summary>
+    /// <summary>UDP output buffering, in milliseconds.</summary>
     [JsonPropertyName("bufferMsec")]
     public double? BufferMsec { get; set; }
 
-    /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
+    /// <summary>UDP container settings. See udp_output_settings.container_settings Block for details.</summary>
     [JsonPropertyName("containerSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings? ContainerSettings { get; set; }
 
-    /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
+    /// <summary>Destination address and port number for RTP or UDP packets. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination? Destination { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for enabling and adjusting Forward Error Correction on UDP outputs. See fec_output_settings Block for details.</summary>
     [JsonPropertyName("fecOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings? FecOutputSettings { get; set; }
 }
 
-/// <summary>Settings for output. See Output Settings for more details.</summary>
+/// <summary>Settings for the output. See output_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
-    /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
+    /// <summary>Archive output settings. See archive_output_settings Block for details.</summary>
     [JsonPropertyName("archiveOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings? ArchiveOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Frame capture output settings. See frame_capture_output_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings? FrameCaptureOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>HLS output settings. See hls_output_settings Block for details.</summary>
     [JsonPropertyName("hlsOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings? HlsOutputSettings { get; set; }
 
-    /// <summary>Media package output settings. This can be set as an empty block.</summary>
+    /// <summary>Media package output settings. Can be set as an empty block.</summary>
     [JsonPropertyName("mediaPackageOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings? MediaPackageOutputSettings { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Microsoft Smooth output settings. See ms_smooth_output_settings Block for details.</summary>
     [JsonPropertyName("msSmoothOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings? MsSmoothOutputSettings { get; set; }
 
-    /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
+    /// <summary>Multiplex output settings. See multiplex_output_settings Block for details.</summary>
     [JsonPropertyName("multiplexOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings? MultiplexOutputSettings { get; set; }
 
-    /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
+    /// <summary>RTMP output settings. See rtmp_output_settings Block for details.</summary>
     [JsonPropertyName("rtmpOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings? RtmpOutputSettings { get; set; }
 
-    /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
+    /// <summary>UDP output settings. See udp_output_settings Block for details.</summary>
     [JsonPropertyName("udpOutputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
@@ -10580,23 +11143,23 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputs
 {
-    /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
+    /// <summary>Names of the audio descriptions used as audio sources for the output.</summary>
     [JsonPropertyName("audioDescriptionNames")]
     public IList<string>? AudioDescriptionNames { get; set; }
 
-    /// <summary>The names of the caption descriptions used as caption sources for the output.</summary>
+    /// <summary>Names of the caption descriptions used as caption sources for the output.</summary>
     [JsonPropertyName("captionDescriptionNames")]
     public IList<string>? CaptionDescriptionNames { get; set; }
 
-    /// <summary>The name used to identify an output.</summary>
+    /// <summary>Name used to identify an output.</summary>
     [JsonPropertyName("outputName")]
     public string? OutputName { get; set; }
 
-    /// <summary>Settings for output. See Output Settings for more details.</summary>
+    /// <summary>Settings for the output. See output_settings Block for details.</summary>
     [JsonPropertyName("outputSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettings? OutputSettings { get; set; }
 
-    /// <summary>The name of the video description used as video source for the output.</summary>
+    /// <summary>Name of the video description used as the video source for the output.</summary>
     [JsonPropertyName("videoDescriptionName")]
     public string? VideoDescriptionName { get; set; }
 }
@@ -10605,39 +11168,49 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
+    /// <summary>Settings associated with the output group. See output_group_settings Block for details.</summary>
     [JsonPropertyName("outputGroupSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettings? OutputGroupSettings { get; set; }
 
-    /// <summary>List of outputs. See Outputs for more details.</summary>
+    /// <summary>List of outputs. See outputs Block for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputs>? Outputs { get; set; }
 }
 
-/// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+/// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ChannelStatusAtProviderEncoderSettingsThumbnailConfiguration
+{
+    /// <summary>Enables the thumbnail feature, which generates thumbnails of the incoming video in each pipeline in the channel. Valid values are AUTO and DISABLED.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+/// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 {
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the timecode associated with the event outputs.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Threshold in frames beyond which output timecode is resynchronized to the input timecode.</summary>
+    /// <summary>Threshold, in frames, beyond which output timecode is resynchronized to the input timecode.</summary>
     [JsonPropertyName("syncThreshold")]
     public double? SyncThreshold { get; set; }
 }
 
-/// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+/// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
-    /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
+    /// <summary>Frequency at which to capture frames for inclusion in the output.</summary>
     [JsonPropertyName("captureInterval")]
     public double? CaptureInterval { get; set; }
 
@@ -10646,7 +11219,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     public string? CaptureIntervalUnits { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
@@ -10660,17 +11233,17 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>H264 settings. See H264 Settings for more details.</summary>
+/// <summary>H264 settings. See h264_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
@@ -10679,7 +11252,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
@@ -10687,14 +11260,15 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
+    /// <summary>Percentage of the buffer that should initially be filled.</summary>
     [JsonPropertyName("bufFillPct")]
     public double? BufFillPct { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
@@ -10702,22 +11276,23 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("entropyEncoding")]
     public string? EntropyEncoding { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
-    /// <summary>Controls whether coding is performed on a field basis or on a frame basis.</summary>
+    /// <summary>Whether coding is performed on a field basis or on a frame basis.</summary>
     [JsonPropertyName("forceFieldPictures")]
     public string? ForceFieldPictures { get; set; }
 
-    /// <summary>Indicates how the output video frame rate is specified.</summary>
+    /// <summary>How the output video frame rate is specified.</summary>
     [JsonPropertyName("framerateControl")]
     public string? FramerateControl { get; set; }
 
@@ -10741,15 +11316,15 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("gopNumBFrames")]
     public double? GopNumBFrames { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -10757,11 +11332,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
@@ -10769,19 +11344,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("numRefFrames")]
     public double? NumRefFrames { get; set; }
 
-    /// <summary>Indicates how the output pixel aspect ratio is specified.</summary>
+    /// <summary>How the output pixel aspect ratio is specified.</summary>
     [JsonPropertyName("parControl")]
     public string? ParControl { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
@@ -10789,15 +11364,15 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("qualityLevel")]
     public string? QualityLevel { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -10829,26 +11404,26 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("temporalAq")]
     public string? TemporalAq { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 }
 
-/// <summary>Sets the colorspace metadata to be passed through.</summary>
+/// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
-/// <summary>Set the colorspace to Dolby Vision81.</summary>
+/// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
-/// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+/// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
@@ -10862,47 +11437,47 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     public double? MaxFall { get; set; }
 }
 
-/// <summary>Set the colorspace to Rec. 601.</summary>
+/// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
-/// <summary>Set the colorspace to Rec. 709.</summary>
+/// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
-/// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+/// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
-    /// <summary>Sets the colorspace metadata to be passed through.</summary>
+    /// <summary>Sets the colorspace metadata to be passed through. Can be set as an empty block.</summary>
     [JsonPropertyName("colorSpacePassthroughSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings? ColorSpacePassthroughSettings { get; set; }
 
-    /// <summary>Set the colorspace to Dolby Vision81.</summary>
+    /// <summary>Sets the colorspace to Dolby Vision81. Can be set as an empty block.</summary>
     [JsonPropertyName("dolbyVision81Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings? DolbyVision81Settings { get; set; }
 
-    /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
+    /// <summary>Sets the colorspace to be HDR10. See hdr10_settings Block for details.</summary>
     [JsonPropertyName("hdr10Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings? Hdr10Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 601.</summary>
+    /// <summary>Sets the colorspace to Rec. 601. Can be set as an empty block.</summary>
     [JsonPropertyName("rec601Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings? Rec601Settings { get; set; }
 
-    /// <summary>Set the colorspace to Rec. 709.</summary>
+    /// <summary>Sets the colorspace to Rec. 709. Can be set as an empty block.</summary>
     [JsonPropertyName("rec709Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings? Rec709Settings { get; set; }
 }
 
-/// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+/// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
@@ -10916,35 +11491,35 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     public string? Strength { get; set; }
 }
 
-/// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+/// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
-    /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
+    /// <summary>Temporal filter settings. See temporal_filter_settings Block for details.</summary>
     [JsonPropertyName("temporalFilterSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings? TemporalFilterSettings { get; set; }
 }
 
-/// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+/// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
-    /// <summary>Set a prefix on the burned in timecode.</summary>
+    /// <summary>Prefix on the burned-in timecode.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Sets the size of the burned in timecode.</summary>
+    /// <summary>Size of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninFontSize")]
     public string? TimecodeBurninFontSize { get; set; }
 
-    /// <summary>Sets the position of the burned in timecode.</summary>
+    /// <summary>Position of the burned-in timecode.</summary>
     [JsonPropertyName("timecodeBurninPosition")]
     public string? TimecodeBurninPosition { get; set; }
 }
 
-/// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+/// <summary>H265 settings. See h265_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
@@ -10953,11 +11528,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("adaptiveQuantization")]
     public string? AdaptiveQuantization { get; set; }
 
-    /// <summary>Indicates that AFD values will be written into the output stream.</summary>
+    /// <summary>Whether AFD values are written into the output stream.</summary>
     [JsonPropertyName("afdSignaling")]
     public string? AfdSignaling { get; set; }
 
-    /// <summary>Whether or not EML should insert an Alternative Transfer Function SEI message.</summary>
+    /// <summary>Whether EML inserts an Alternative Transfer Function SEI message.</summary>
     [JsonPropertyName("alternativeTransferFunction")]
     public string? AlternativeTransferFunction { get; set; }
 
@@ -10965,26 +11540,27 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("bitrate")]
     public double? Bitrate { get; set; }
 
-    /// <summary>Size of buffer in bits.</summary>
+    /// <summary>Size of the buffer in bits.</summary>
     [JsonPropertyName("bufSize")]
     public double? BufSize { get; set; }
 
-    /// <summary>Includes color space metadata in the output.</summary>
+    /// <summary>Whether color space metadata is included in the output.</summary>
     [JsonPropertyName("colorMetadata")]
     public string? ColorMetadata { get; set; }
 
-    /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
+    /// <summary>Color metadata for the output. See color_space_settings Block for details.</summary>
     [JsonPropertyName("colorSpaceSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings? ColorSpaceSettings { get; set; }
 
-    /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
+    /// <summary>Filters to apply to an encode. See filter_settings Block for details.</summary>
     [JsonPropertyName("filterSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings? FilterSettings { get; set; }
 
-    /// <summary>Four bit AFD value to write on all frames of video in the output stream.</summary>
+    /// <summary>Four-bit AFD value to write on all frames of video in the output stream.</summary>
     [JsonPropertyName("fixedAfd")]
     public string? FixedAfd { get; set; }
 
+    /// <summary>Makes adjustments within each frame to reduce flicker on the I-frames.</summary>
     [JsonPropertyName("flickerAq")]
     public string? FlickerAq { get; set; }
 
@@ -11000,15 +11576,15 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("gopClosedCadence")]
     public double? GopClosedCadence { get; set; }
 
-    /// <summary>GOP size in units of either frames of seconds per gop_size_units.</summary>
+    /// <summary>GOP size in units of either frames or seconds per gop_size_units.</summary>
     [JsonPropertyName("gopSize")]
     public double? GopSize { get; set; }
 
-    /// <summary>Indicates if the gop_size is specified in frames or seconds.</summary>
+    /// <summary>Whether gop_size is specified in frames or seconds.</summary>
     [JsonPropertyName("gopSizeUnits")]
     public string? GopSizeUnits { get; set; }
 
-    /// <summary>H264 level.</summary>
+    /// <summary>H265 level.</summary>
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
@@ -11016,19 +11592,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("lookAheadRateControl")]
     public string? LookAheadRateControl { get; set; }
 
-    /// <summary>Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.</summary>
+    /// <summary>Maximum bitrate, used to accommodate expected spikes in the complexity of the video.</summary>
     [JsonPropertyName("maxBitrate")]
     public double? MaxBitrate { get; set; }
 
-    /// <summary>Min interval.</summary>
+    /// <summary>Minimum interval, in frames, between two I-frames.</summary>
     [JsonPropertyName("minIInterval")]
     public double? MinIInterval { get; set; }
 
-    /// <summary>Set the minimum QP.</summary>
+    /// <summary>Sets the minimum QP.</summary>
     [JsonPropertyName("minQp")]
     public double? MinQp { get; set; }
 
-    /// <summary>Enables or disables motion vector over picture boundaries.</summary>
+    /// <summary>Enables or disables motion vectors over picture boundaries.</summary>
     [JsonPropertyName("mvOverPictureBoundaries")]
     public string? MvOverPictureBoundaries { get; set; }
 
@@ -11036,27 +11612,27 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("mvTemporalPredictor")]
     public string? MvTemporalPredictor { get; set; }
 
-    /// <summary>Pixel Aspect Ratio denominator.</summary>
+    /// <summary>Pixel aspect ratio denominator.</summary>
     [JsonPropertyName("parDenominator")]
     public double? ParDenominator { get; set; }
 
-    /// <summary>Pixel Aspect Ratio numerator.</summary>
+    /// <summary>Pixel aspect ratio numerator.</summary>
     [JsonPropertyName("parNumerator")]
     public double? ParNumerator { get; set; }
 
-    /// <summary>AAC profile.</summary>
+    /// <summary>H265 profile.</summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
 
-    /// <summary>Controls the target quality for the video encode.</summary>
+    /// <summary>Target quality for the video encode.</summary>
     [JsonPropertyName("qvbrQualityLevel")]
     public double? QvbrQualityLevel { get; set; }
 
-    /// <summary>The rate control mode.</summary>
+    /// <summary>Rate control mode.</summary>
     [JsonPropertyName("rateControlMode")]
     public string? RateControlMode { get; set; }
 
-    /// <summary>Sets the scan type of the output.</summary>
+    /// <summary>Scan type of the output.</summary>
     [JsonPropertyName("scanType")]
     public string? ScanType { get; set; }
 
@@ -11068,11 +11644,11 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("slices")]
     public double? Slices { get; set; }
 
-    /// <summary>Set the H265 tier in the output.</summary>
+    /// <summary>H265 tier in the output.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 
-    /// <summary>Sets the height of tiles.</summary>
+    /// <summary>Height of tiles.</summary>
     [JsonPropertyName("tileHeight")]
     public double? TileHeight { get; set; }
 
@@ -11080,37 +11656,37 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("tilePadding")]
     public string? TilePadding { get; set; }
 
-    /// <summary>Sets the width of tiles.</summary>
+    /// <summary>Width of tiles.</summary>
     [JsonPropertyName("tileWidth")]
     public double? TileWidth { get; set; }
 
-    /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
+    /// <summary>Apply a burned-in timecode. See timecode_burnin_settings Block for details.</summary>
     [JsonPropertyName("timecodeBurninSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings? TimecodeBurninSettings { get; set; }
 
-    /// <summary>Determines how timecodes should be inserted into the video elementary stream.</summary>
+    /// <summary>How timecodes are inserted into the video elementary stream.</summary>
     [JsonPropertyName("timecodeInsertion")]
     public string? TimecodeInsertion { get; set; }
 
-    /// <summary>Sets the size of the treeblock.</summary>
+    /// <summary>Size of the treeblock.</summary>
     [JsonPropertyName("treeblockSize")]
     public string? TreeblockSize { get; set; }
 }
 
-/// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+/// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
-    /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
+    /// <summary>Frame capture settings. See frame_capture_settings Block for details.</summary>
     [JsonPropertyName("frameCaptureSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings? FrameCaptureSettings { get; set; }
 
-    /// <summary>H264 settings. See H264 Settings for more details.</summary>
+    /// <summary>H264 settings. See h264_settings Block for details.</summary>
     [JsonPropertyName("h264Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings? H264Settings { get; set; }
 
-    /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
+    /// <summary>H265 settings. See h265_settings Block for details.</summary>
     [JsonPropertyName("h265Settings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
@@ -11119,19 +11695,19 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptions
 {
-    /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
+    /// <summary>Audio codec settings. See audio_descriptions.codec_settings Block for details.</summary>
     [JsonPropertyName("codecSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettings? CodecSettings { get; set; }
 
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Indicate how to respond to the AFD values that might be in the input video.</summary>
+    /// <summary>How to respond to the AFD values that might be in the input video.</summary>
     [JsonPropertyName("respondToAfd")]
     public string? RespondToAfd { get; set; }
 
@@ -11139,109 +11715,113 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
     [JsonPropertyName("scalingBehavior")]
     public string? ScalingBehavior { get; set; }
 
-    /// <summary>Changes the strength of the anti-alias filter used for scaling.</summary>
+    /// <summary>Strength of the anti-alias filter used for scaling.</summary>
     [JsonPropertyName("sharpness")]
     public double? Sharpness { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+/// <summary>Encoder settings. See encoder_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettings
 {
-    /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
+    /// <summary>Audio descriptions for the channel. See audio_descriptions Block for details.</summary>
     [JsonPropertyName("audioDescriptions")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptions>? AudioDescriptions { get; set; }
 
-    /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
+    /// <summary>Settings for ad avail blanking. See avail_blanking Block for details.</summary>
     [JsonPropertyName("availBlanking")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlanking? AvailBlanking { get; set; }
 
-    /// <summary>Caption Descriptions. See Caption Descriptions for more details.</summary>
+    /// <summary>Caption descriptions for the channel. See caption_descriptions Block for details.</summary>
     [JsonPropertyName("captionDescriptions")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptions>? CaptionDescriptions { get; set; }
 
-    /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
+    /// <summary>Configuration settings that apply to the event as a whole. See global_configuration Block for details.</summary>
     [JsonPropertyName("globalConfiguration")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfiguration? GlobalConfiguration { get; set; }
 
-    /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
+    /// <summary>Settings for motion graphics. See motion_graphics_configuration Block for details.</summary>
     [JsonPropertyName("motionGraphicsConfiguration")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfiguration? MotionGraphicsConfiguration { get; set; }
 
-    /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
+    /// <summary>Nielsen configuration settings. See nielsen_configuration Block for details.</summary>
     [JsonPropertyName("nielsenConfiguration")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsNielsenConfiguration? NielsenConfiguration { get; set; }
 
-    /// <summary>Output groups for the channel. See Output Groups for more details.</summary>
+    /// <summary>Output groups for the channel. See output_groups Block for details.</summary>
     [JsonPropertyName("outputGroups")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups>? OutputGroups { get; set; }
 
-    /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
+    /// <summary>Thumbnail configuration settings. See thumbnail_configuration Block for details.</summary>
+    [JsonPropertyName("thumbnailConfiguration")]
+    public V1beta1ChannelStatusAtProviderEncoderSettingsThumbnailConfiguration? ThumbnailConfiguration { get; set; }
+
+    /// <summary>Settings used to acquire and adjust timecode information from inputs. See timecode_config Block for details.</summary>
     [JsonPropertyName("timecodeConfig")]
     public V1beta1ChannelStatusAtProviderEncoderSettingsTimecodeConfig? TimecodeConfig { get; set; }
 
-    /// <summary>Video Descriptions. See Video Descriptions for more details.</summary>
+    /// <summary>Video descriptions for the channel. See video_descriptions Block for details.</summary>
     [JsonPropertyName("videoDescriptions")]
     public IList<V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptions>? VideoDescriptions { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
-    /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
+    /// <summary>Name of the audio selector in the input that MediaLive monitors to detect silence. Select your most important rendition. Leave blank if you did not create an audio selector in this input.</summary>
     [JsonPropertyName("audioSelectorName")]
     public string? AudioSelectorName { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS.</summary>
     [JsonPropertyName("audioSilenceThresholdMsec")]
     public double? AudioSilenceThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
-    /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
+    /// <summary>Amount of time, in milliseconds, that no input is detected before an input failover occurs.</summary>
     [JsonPropertyName("inputLossThresholdMsec")]
     public double? InputLossThresholdMsec { get; set; }
 }
 
-/// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+/// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
-    /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
+    /// <summary>Threshold below which MediaLive considers a pixel to be black, expressed as a decimal fraction of white. For example, 0.1 means 10% white (90% black). For the input to be considered black, every pixel in a frame must be below this threshold. The range is 0.0 to 1.0, with any number of decimal places.</summary>
     [JsonPropertyName("blackDetectThreshold")]
     public double? BlackDetectThreshold { get; set; }
 
-    /// <summary>The amount of time (in milliseconds) that the active input must be black before automatic input failover occurs.</summary>
+    /// <summary>Amount of time, in milliseconds, that the active input must be black before automatic input failover occurs.</summary>
     [JsonPropertyName("videoBlackThresholdMsec")]
     public double? VideoBlackThresholdMsec { get; set; }
 }
 
-/// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+/// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
-    /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if the specified audio selector is silent for the specified period. See audio_silence_settings Block for details.</summary>
     [JsonPropertyName("audioSilenceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings? AudioSilenceSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is not detected in this input for the specified period. See input_loss_settings Block for details.</summary>
     [JsonPropertyName("inputLossSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings? InputLossSettings { get; set; }
 
-    /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
+    /// <summary>MediaLive fails over if content is considered black for the specified period. See video_black_settings Block for details.</summary>
     [JsonPropertyName("videoBlackSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
@@ -11250,21 +11830,21 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
-    /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
+    /// <summary>Failover condition type-specific settings. See failover_condition_settings Block for details.</summary>
     [JsonPropertyName("failoverConditionSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings? FailoverConditionSettings { get; set; }
 }
 
-/// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+/// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettings
 {
-    /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
+    /// <summary>Amount of time, in milliseconds, that a recovered input must have no failover conditions before it is considered healthy. This value is particularly important when input_preference is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive switches back to the primary input.</summary>
     [JsonPropertyName("errorClearTimeMsec")]
     public double? ErrorClearTimeMsec { get; set; }
 
-    /// <summary>A list of failover conditions. If any of these conditions occur, MediaLive will perform a failover to the other input. See Failover Condition Block for more details.</summary>
+    /// <summary>Failover conditions. If any of these conditions occur, MediaLive fails over to the other input. See failover_condition Block for details.</summary>
     [JsonPropertyName("failoverCondition")]
     public IList<V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition>? FailoverCondition { get; set; }
 
@@ -11272,55 +11852,55 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
     [JsonPropertyName("inputPreference")]
     public string? InputPreference { get; set; }
 
-    /// <summary>The input ID of the secondary input in the automatic input failover pair.</summary>
+    /// <summary>Input ID of the secondary input in the automatic input failover pair.</summary>
     [JsonPropertyName("secondaryInputId")]
     public string? SecondaryInputId { get; set; }
 }
 
-/// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+/// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
-    /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
+    /// <summary>GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+/// <summary>Language selection. See audio_language_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>When set to “strict”, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present then mute will be encoded until the language returns. If “loose”, then on a PMT update the demux will choose another audio stream in the program with the same stream type if it can’t find one with the same language.</summary>
+    /// <summary>How to handle a change in the language of the audio stream after it is selected. When set to strict, the transport stream demux strictly identifies audio streams by their language descriptor. If a PMT update occurs such that an audio stream matching the initially selected language is no longer present, then mute is encoded until the language returns. When set to loose, the demux chooses another audio stream in the program with the same stream type on a PMT update if it cannot find one with the same language.</summary>
     [JsonPropertyName("languageSelectionPolicy")]
     public string? LanguageSelectionPolicy { get; set; }
 }
 
-/// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+/// <summary>PID selection. See audio_pid_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+/// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
-    /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
+    /// <summary>Program ID of the Dolby E program to extract from the specified track. Applies only to Dolby E. One program is extracted per audio selector. To select multiple programs, create multiple selectors with the same track and different program numbers. All channels ignores the program IDs and includes all the channels in this selector; useful if metadata is known to be incorrect.</summary>
     [JsonPropertyName("programSelection")]
     public string? ProgramSelection { get; set; }
 }
@@ -11334,38 +11914,38 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     public double? Track { get; set; }
 }
 
-/// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+/// <summary>Track selection. See audio_track_selection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
-    /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
+    /// <summary>Decoding options for Dolby E streams. These should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See dolby_e_decode Block for details.</summary>
     [JsonPropertyName("dolbyEDecode")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode? DolbyEDecode { get; set; }
 
-    /// <summary>Selects one or more unique audio tracks from within a source. See Audio Tracks for more details.</summary>
+    /// <summary>One or more unique audio tracks from within a source. See tracks Block for details.</summary>
     [JsonPropertyName("tracks")]
     public IList<V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks>? Tracks { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
-    /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
+    /// <summary>HLS rendition selection. See audio_hls_rendition_selection Block for details.</summary>
     [JsonPropertyName("audioHlsRenditionSelection")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection? AudioHlsRenditionSelection { get; set; }
 
-    /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
+    /// <summary>Language selection. See audio_language_selection Block for details.</summary>
     [JsonPropertyName("audioLanguageSelection")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection? AudioLanguageSelection { get; set; }
 
-    /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
+    /// <summary>PID selection. See audio_pid_selection Block for details.</summary>
     [JsonPropertyName("audioPidSelection")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection? AudioPidSelection { get; set; }
 
-    /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
+    /// <summary>Track selection. See audio_track_selection Block for details.</summary>
     [JsonPropertyName("audioTrackSelection")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
@@ -11374,158 +11954,158 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelector
 {
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+/// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
-    /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
+    /// <summary>Captions channel, from 1 to 4, to extract from the ancillary captions. Complete this field if you plan to convert the ancillary captions to another format. Leave blank if you plan to choose Embedded as the captions destination in the output, because MediaLive ignores the field.</summary>
     [JsonPropertyName("sourceAncillaryChannelNumber")]
     public double? SourceAncillaryChannelNumber { get; set; }
 }
 
-/// <summary>ARIB Source Settings.</summary>
+/// <summary>ARIB source settings. Can be set as an empty block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
-/// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+/// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+/// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Set to “auto” to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions.</summary>
+    /// <summary>Set to auto to handle streams with intermittent or non-aligned SCTE-20 and Embedded captions.</summary>
     [JsonPropertyName("scte20Detection")]
     public string? Scte20Detection { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+/// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
-    /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
+    /// <summary>When set to upconvert, 608 data is both passed through via the &quot;608 compatibility bytes&quot; fields of the 708 wrapper and translated into 708. 708 data present in the source content is discarded.</summary>
     [JsonPropertyName("convert608To708")]
     public string? Convert608To708 { get; set; }
 
-    /// <summary>Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
+    /// <summary>608/708 channel number within the video track from which to extract captions. Unused for passthrough.</summary>
     [JsonPropertyName("source608ChannelNumber")]
     public double? Source608ChannelNumber { get; set; }
 }
 
-/// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+/// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
-    /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
+    /// <summary>Language to consider when translating the image-based source to text, for a referencing WebVTT caption description.</summary>
     [JsonPropertyName("ocrLanguage")]
     public string? OcrLanguage { get; set; }
 
-    /// <summary>Selects a specific PID from within a source.</summary>
+    /// <summary>PID from within a source.</summary>
     [JsonPropertyName("pid")]
     public double? Pid { get; set; }
 }
 
-/// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+/// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
-    /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
+    /// <summary>Height of the rectangle as a percentage of the underlying frame height. The top_offset and rectangle height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
     [JsonPropertyName("height")]
     public double? Height { get; set; }
 
-    /// <summary>Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. (Make sure to leave the default if you don’t have either of these formats in the output.) You can define a display rectangle for the captions that is smaller than the underlying video frame. You define the rectangle by specifying the position of the left edge, top edge, bottom edge, and right edge of the rectangle, all within the underlying video frame. The units for the measurements are percentages. If you specify a value for one of these fields, you must specify a value for all of them. For leftOffset, specify the position of the left edge of the rectangle, as a percentage of the underlying frame width, and relative to the left edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame width. The rectangle left edge starts at that position from the left edge of the frame. This field corresponds to tts:origin - X in the TTML standard.</summary>
+    /// <summary>Position of the left edge of the rectangle as a percentage of the underlying frame width, relative to the left edge of the frame. Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. You can define a display rectangle smaller than the underlying video frame; if you specify a value for one of the offset or dimension fields, you must specify a value for all of them. This field corresponds to tts:origin - X in the TTML standard.</summary>
     [JsonPropertyName("leftOffset")]
     public double? LeftOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For top_offset, specify the position of the top edge of the rectangle, as a percentage of the underlying frame height, and relative to the top edge of the frame. For example, &quot;10&quot; means the measurement is 10% of the underlying frame height. The rectangle top edge starts at that position from the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
+    /// <summary>Position of the top edge of the rectangle as a percentage of the underlying frame height, relative to the top edge of the frame. This field corresponds to tts:origin - Y in the TTML standard.</summary>
     [JsonPropertyName("topOffset")]
     public double? TopOffset { get; set; }
 
-    /// <summary>See the description in left_offset. For width, specify the entire width of the rectangle as a percentage of the underlying frame width. For example, &quot;80&quot; means the rectangle width is 80% of the underlying frame width. The left_offset and rectangle_width must add up to 100% or less. This field corresponds to tts:extent - X in the TTML standard.</summary>
+    /// <summary>Output video width, in pixels.</summary>
     [JsonPropertyName("width")]
     public double? Width { get; set; }
 }
 
-/// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+/// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
-    /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
+    /// <summary>Region where TTML style captions are displayed. See output_rectangle Block for details.</summary>
     [JsonPropertyName("outputRectangle")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle? OutputRectangle { get; set; }
 
-    /// <summary>Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no “0x” prefix.</summary>
+    /// <summary>Teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303), specified as a hexadecimal string with no 0x prefix. Unused for passthrough.</summary>
     [JsonPropertyName("pageNumber")]
     public string? PageNumber { get; set; }
 }
 
-/// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+/// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
-    /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
+    /// <summary>Ancillary source settings. See ancillary_source_settings Block for details.</summary>
     [JsonPropertyName("ancillarySourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings? AncillarySourceSettings { get; set; }
 
-    /// <summary>ARIB Source Settings.</summary>
+    /// <summary>ARIB source settings. Can be set as an empty block.</summary>
     [JsonPropertyName("aribSourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings? AribSourceSettings { get; set; }
 
-    /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
+    /// <summary>DVB Sub source settings. See dvb_sub_source_settings Block for details.</summary>
     [JsonPropertyName("dvbSubSourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings? DvbSubSourceSettings { get; set; }
 
-    /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
+    /// <summary>Embedded source settings. See embedded_source_settings Block for details.</summary>
     [JsonPropertyName("embeddedSourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings? EmbeddedSourceSettings { get; set; }
 
-    /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
+    /// <summary>SCTE-20 source settings. See scte20_source_settings Block for details.</summary>
     [JsonPropertyName("scte20SourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings? Scte20SourceSettings { get; set; }
 
-    /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
+    /// <summary>SCTE-27 source settings. See scte27_source_settings Block for details.</summary>
     [JsonPropertyName("scte27SourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings? Scte27SourceSettings { get; set; }
 
-    /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
+    /// <summary>Teletext source settings. See teletext_source_settings Block for details.</summary>
     [JsonPropertyName("teletextSourceSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
@@ -11534,25 +12114,25 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelector
 {
-    /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
+    /// <summary>Three-letter language code from within an audio source.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
+    /// <summary>Caption selector settings. See caption_selector.selector_settings Block for details.</summary>
     [JsonPropertyName("selectorSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings? SelectorSettings { get; set; }
 }
 
-/// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+/// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
-    /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
+    /// <summary>Bitrate, in bits per second, as in an HLS manifest.</summary>
     [JsonPropertyName("bandwidth")]
     public double? Bandwidth { get; set; }
 
@@ -11560,25 +12140,25 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     [JsonPropertyName("bufferSegments")]
     public double? BufferSegments { get; set; }
 
-    /// <summary>The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
+    /// <summary>Number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.</summary>
     [JsonPropertyName("retries")]
     public double? Retries { get; set; }
 
-    /// <summary>The number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
+    /// <summary>Number of seconds between retries when an attempt to read a manifest or segment fails.</summary>
     [JsonPropertyName("retryInterval")]
     public double? RetryInterval { get; set; }
 
-    /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
+    /// <summary>Source for the SCTE-35 messages that MediaLive ingests.</summary>
     [JsonPropertyName("scte35Source")]
     public string? Scte35Source { get; set; }
 }
 
-/// <summary>Input settings. See Network Input Settings for more details.</summary>
+/// <summary>Input settings. See network_input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
-    /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
+    /// <summary>HLS input settings when the URI is for an HLS manifest. See hls_input_settings Block for details.</summary>
     [JsonPropertyName("hlsInputSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings? HlsInputSettings { get; set; }
 
@@ -11587,39 +12167,42 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     public string? ServerValidation { get; set; }
 }
 
+/// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsVideoSelector
 {
+    /// <summary>Color space of the input.</summary>
     [JsonPropertyName("colorSpace")]
     public string? ColorSpace { get; set; }
 
+    /// <summary>How MediaLive applies the color space metadata from the input.</summary>
     [JsonPropertyName("colorSpaceUsage")]
     public string? ColorSpaceUsage { get; set; }
 }
 
-/// <summary>Settings of an input. See Input Settings for more details.</summary>
+/// <summary>Settings of an input. See input_settings Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 {
-    /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
+    /// <summary>Select the audio stream to decode for inputs that have multiple. See audio_selector Block for details.</summary>
     [JsonPropertyName("audioSelector")]
     public IList<V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelector>? AudioSelector { get; set; }
 
-    /// <summary>Used to select the caption input to use for inputs that have multiple available. See Caption Selectors for more details.</summary>
+    /// <summary>Select the caption input to use for inputs that have multiple available. See caption_selector Block for details.</summary>
     [JsonPropertyName("captionSelector")]
     public IList<V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelector>? CaptionSelector { get; set; }
 
-    /// <summary>Enable or disable the deblock filter when filtering.</summary>
+    /// <summary>Whether to enable the deblock filter when filtering.</summary>
     [JsonPropertyName("deblockFilter")]
     public string? DeblockFilter { get; set; }
 
-    /// <summary>Enable or disable the denoise filter when filtering.</summary>
+    /// <summary>Whether to enable the denoise filter when filtering.</summary>
     [JsonPropertyName("denoiseFilter")]
     public string? DenoiseFilter { get; set; }
 
-    /// <summary>Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
+    /// <summary>Magnitude of filtering from 1 (minimal) to 5 (strongest).</summary>
     [JsonPropertyName("filterStrength")]
     public double? FilterStrength { get; set; }
 
@@ -11627,7 +12210,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     [JsonPropertyName("inputFilter")]
     public string? InputFilter { get; set; }
 
-    /// <summary>Input settings. See Network Input Settings for more details.</summary>
+    /// <summary>Input settings. See network_input_settings Block for details.</summary>
     [JsonPropertyName("networkInputSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettings? NetworkInputSettings { get; set; }
 
@@ -11635,7 +12218,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     [JsonPropertyName("scte35Pid")]
     public double? Scte35Pid { get; set; }
 
-    /// <summary>Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
+    /// <summary>Whether to extract applicable ancillary data from a SMPTE-2038 source in the input.</summary>
     [JsonPropertyName("smpte2038DataPreference")]
     public string? Smpte2038DataPreference { get; set; }
 
@@ -11643,6 +12226,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
     [JsonPropertyName("sourceEndBehavior")]
     public string? SourceEndBehavior { get; set; }
 
+    /// <summary>Information about one video to extract from the input. See video_selector Block for details.</summary>
     [JsonPropertyName("videoSelector")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
@@ -11651,7 +12235,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputAttachments
 {
-    /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
+    /// <summary>Settings that define the conditions for declaring the input unhealthy and failing over to a different input. See automatic_input_failover_settings Block for details.</summary>
     [JsonPropertyName("automaticInputFailoverSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettings? AutomaticInputFailoverSettings { get; set; }
 
@@ -11659,66 +12243,69 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachments
     [JsonPropertyName("inputAttachmentName")]
     public string? InputAttachmentName { get; set; }
 
-    /// <summary>The ID of the input.</summary>
+    /// <summary>ID of the input.</summary>
     [JsonPropertyName("inputId")]
     public string? InputId { get; set; }
 
-    /// <summary>Settings of an input. See Input Settings for more details.</summary>
+    /// <summary>Settings of an input. See input_settings Block for details.</summary>
     [JsonPropertyName("inputSettings")]
     public V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings? InputSettings { get; set; }
 }
 
-/// <summary>Specification of network and file inputs for the channel.</summary>
+/// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderInputSpecification
 {
+    /// <summary>Codec to use for the input.</summary>
     [JsonPropertyName("codec")]
     public string? Codec { get; set; }
 
-    /// <summary>- Maximum CDI input resolution.</summary>
+    /// <summary>Maximum input resolution.</summary>
     [JsonPropertyName("inputResolution")]
     public string? InputResolution { get; set; }
 
-    /// <summary>Average bitrate in bits/second.</summary>
+    /// <summary>Maximum input bitrate for an input.</summary>
     [JsonPropertyName("maximumBitrate")]
     public string? MaximumBitrate { get; set; }
 }
 
-/// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+/// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderMaintenance
 {
-    /// <summary>The day of the week to use for maintenance.</summary>
+    /// <summary>Day of the week to use for maintenance.</summary>
     [JsonPropertyName("maintenanceDay")]
     public string? MaintenanceDay { get; set; }
 
-    /// <summary>The hour maintenance will start.</summary>
+    /// <summary>Hour maintenance will start.</summary>
     [JsonPropertyName("maintenanceStartTime")]
     public string? MaintenanceStartTime { get; set; }
 }
 
-/// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+/// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ChannelStatusAtProviderVpc
 {
+    /// <summary>Availability zones where the network interfaces are created.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
+    /// <summary>Network interface IDs created in the output VPC.</summary>
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
 
-    /// <summary>List of public address allocation ids to associate with ENIs that will be created in Output VPC. Must specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
+    /// <summary>List of public address allocation IDs to associate with ENIs created in the output VPC. Specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
     [JsonPropertyName("publicAddressAllocationIds")]
     public IList<string>? PublicAddressAllocationIds { get; set; }
 
-    /// <summary>A list of up to 5 EC2 VPC security group IDs to attach to the Output VPC network interfaces. If none are specified then the VPC default security group will be used.</summary>
+    /// <summary>List of up to 5 EC2 VPC security group IDs to attach to the output VPC network interfaces. The VPC default security group is used if none are specified.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of VPC subnet IDs from the same VPC. If STANDARD channel, subnet IDs must be mapped to two unique availability zones (AZ).</summary>
+    /// <summary>List of VPC subnet IDs from the same VPC. For a STANDARD channel, subnet IDs must map to two unique availability zones.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -11731,11 +12318,11 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
+    /// <summary>Specification of CDI inputs for this channel. See cdi_input_specification Block for details.</summary>
     [JsonPropertyName("cdiInputSpecification")]
     public V1beta1ChannelStatusAtProviderCdiInputSpecification? CdiInputSpecification { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>Class of the channel. Valid values: STANDARD, SINGLE_PIPELINE.</summary>
     [JsonPropertyName("channelClass")]
     public string? ChannelClass { get; set; }
 
@@ -11743,35 +12330,35 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("channelId")]
     public string? ChannelId { get; set; }
 
-    /// <summary>Destinations for channel. See Destinations for more details.</summary>
+    /// <summary>Destinations for the channel. See destinations Block for details.</summary>
     [JsonPropertyName("destinations")]
     public IList<V1beta1ChannelStatusAtProviderDestinations>? Destinations { get; set; }
 
-    /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
+    /// <summary>Encoder settings. See encoder_settings Block for details.</summary>
     [JsonPropertyName("encoderSettings")]
     public V1beta1ChannelStatusAtProviderEncoderSettings? EncoderSettings { get; set; }
 
-    /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
+    /// <summary>User-specified ID used in an output group or an output.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Input attachments for the channel. See Input Attachments for more details.</summary>
+    /// <summary>Input attachments for the channel. See input_attachments Block for details.</summary>
     [JsonPropertyName("inputAttachments")]
     public IList<V1beta1ChannelStatusAtProviderInputAttachments>? InputAttachments { get; set; }
 
-    /// <summary>Specification of network and file inputs for the channel.</summary>
+    /// <summary>Specification of network and file inputs for the channel. See input_specification Block for details.</summary>
     [JsonPropertyName("inputSpecification")]
     public V1beta1ChannelStatusAtProviderInputSpecification? InputSpecification { get; set; }
 
-    /// <summary>The log level to write to Cloudwatch logs.</summary>
+    /// <summary>Level of verbosity for the logs written to CloudWatch Logs.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
-    /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
+    /// <summary>Maintenance settings for this channel. See maintenance Block for details.</summary>
     [JsonPropertyName("maintenance")]
     public V1beta1ChannelStatusAtProviderMaintenance? Maintenance { get; set; }
 
-    /// <summary>Name of the Channel.</summary>
+    /// <summary>Name of the channel.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -11782,11 +12369,11 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Concise argument description.</summary>
+    /// <summary>ARN of the IAM role for the channel.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Whether to start/stop channel. Default: false</summary>
+    /// <summary>Whether to start/stop channel. Default: false.</summary>
     [JsonPropertyName("startChannel")]
     public bool? StartChannel { get; set; }
 
@@ -11794,10 +12381,11 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
+    /// <summary>Settings for the VPC outputs. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public V1beta1ChannelStatusAtProviderVpc? Vpc { get; set; }
 }

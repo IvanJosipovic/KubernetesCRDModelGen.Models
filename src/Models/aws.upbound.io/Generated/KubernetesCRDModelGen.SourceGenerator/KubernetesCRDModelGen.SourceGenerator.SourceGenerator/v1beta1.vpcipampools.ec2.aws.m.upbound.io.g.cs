@@ -502,7 +502,7 @@ public partial class V1beta1VPCIpamPoolSpecForProviderSourceResourceResourceIdSe
     public V1beta1VPCIpamPoolSpecForProviderSourceResourceResourceIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolSpecForProviderSourceResource
@@ -536,19 +536,19 @@ public partial class V1beta1VPCIpamPoolSpecForProviderSourceResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolSpecForProvider
 {
-    /// <summary>The IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
+    /// <summary>IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
     [JsonPropertyName("addressFamily")]
     public string? AddressFamily { get; set; }
 
-    /// <summary>A default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
+    /// <summary>Default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
     [JsonPropertyName("allocationDefaultNetmaskLength")]
     public double? AllocationDefaultNetmaskLength { get; set; }
 
-    /// <summary>The maximum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Maximum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMaxNetmaskLength")]
     public double? AllocationMaxNetmaskLength { get; set; }
 
-    /// <summary>The minimum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Minimum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMinNetmaskLength")]
     public double? AllocationMinNetmaskLength { get; set; }
 
@@ -556,10 +556,7 @@ public partial class V1beta1VPCIpamPoolSpecForProvider
     [JsonPropertyName("allocationResourceTags")]
     public IDictionary<string, string>? AllocationResourceTags { get; set; }
 
-    /// <summary>
-    /// If you include this argument, IPAM automatically imports any VPCs you have in your scope that fall
-    /// within the CIDR range in the pool.
-    /// </summary>
+    /// <summary>Whether to automatically import any VPCs you have in your scope that fall within the CIDR range in the pool.</summary>
     [JsonPropertyName("autoImport")]
     public bool? AutoImport { get; set; }
 
@@ -567,15 +564,15 @@ public partial class V1beta1VPCIpamPoolSpecForProvider
     [JsonPropertyName("awsService")]
     public string? AwsService { get; set; }
 
-    /// <summary>Enables you to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
+    /// <summary>Whether to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>A description for the IPAM pool.</summary>
+    /// <summary>Description for the IPAM pool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the scope in which you would like to create the IPAM pool.</summary>
+    /// <summary>ID of the scope in which you would like to create the IPAM pool.</summary>
     [JsonPropertyName("ipamScopeId")]
     public string? IpamScopeId { get; set; }
 
@@ -587,15 +584,15 @@ public partial class V1beta1VPCIpamPoolSpecForProvider
     [JsonPropertyName("ipamScopeIdSelector")]
     public V1beta1VPCIpamPoolSpecForProviderIpamScopeIdSelector? IpamScopeIdSelector { get; set; }
 
-    /// <summary>The locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
+    /// <summary>Locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
     [JsonPropertyName("locale")]
     public string? Locale { get; set; }
 
-    /// <summary>The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
+    /// <summary>IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
     [JsonPropertyName("publicIpSource")]
     public string? PublicIpSource { get; set; }
 
-    /// <summary>Defines whether or not IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
+    /// <summary>Whether IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
     [JsonPropertyName("publiclyAdvertisable")]
     public bool? PubliclyAdvertisable { get; set; }
 
@@ -606,7 +603,7 @@ public partial class V1beta1VPCIpamPoolSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
+    /// <summary>ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
     [JsonPropertyName("sourceIpamPoolId")]
     public string? SourceIpamPoolId { get; set; }
 
@@ -618,7 +615,7 @@ public partial class V1beta1VPCIpamPoolSpecForProvider
     [JsonPropertyName("sourceIpamPoolIdSelector")]
     public V1beta1VPCIpamPoolSpecForProviderSourceIpamPoolIdSelector? SourceIpamPoolIdSelector { get; set; }
 
-    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
     [JsonPropertyName("sourceResource")]
     public V1beta1VPCIpamPoolSpecForProviderSourceResource? SourceResource { get; set; }
 
@@ -1092,7 +1089,7 @@ public partial class V1beta1VPCIpamPoolSpecInitProviderSourceResourceResourceIdS
     public V1beta1VPCIpamPoolSpecInitProviderSourceResourceResourceIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolSpecInitProviderSourceResource
@@ -1138,19 +1135,19 @@ public partial class V1beta1VPCIpamPoolSpecInitProviderSourceResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolSpecInitProvider
 {
-    /// <summary>The IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
+    /// <summary>IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
     [JsonPropertyName("addressFamily")]
     public string? AddressFamily { get; set; }
 
-    /// <summary>A default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
+    /// <summary>Default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
     [JsonPropertyName("allocationDefaultNetmaskLength")]
     public double? AllocationDefaultNetmaskLength { get; set; }
 
-    /// <summary>The maximum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Maximum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMaxNetmaskLength")]
     public double? AllocationMaxNetmaskLength { get; set; }
 
-    /// <summary>The minimum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Minimum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMinNetmaskLength")]
     public double? AllocationMinNetmaskLength { get; set; }
 
@@ -1158,10 +1155,7 @@ public partial class V1beta1VPCIpamPoolSpecInitProvider
     [JsonPropertyName("allocationResourceTags")]
     public IDictionary<string, string>? AllocationResourceTags { get; set; }
 
-    /// <summary>
-    /// If you include this argument, IPAM automatically imports any VPCs you have in your scope that fall
-    /// within the CIDR range in the pool.
-    /// </summary>
+    /// <summary>Whether to automatically import any VPCs you have in your scope that fall within the CIDR range in the pool.</summary>
     [JsonPropertyName("autoImport")]
     public bool? AutoImport { get; set; }
 
@@ -1169,15 +1163,15 @@ public partial class V1beta1VPCIpamPoolSpecInitProvider
     [JsonPropertyName("awsService")]
     public string? AwsService { get; set; }
 
-    /// <summary>Enables you to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
+    /// <summary>Whether to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>A description for the IPAM pool.</summary>
+    /// <summary>Description for the IPAM pool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the scope in which you would like to create the IPAM pool.</summary>
+    /// <summary>ID of the scope in which you would like to create the IPAM pool.</summary>
     [JsonPropertyName("ipamScopeId")]
     public string? IpamScopeId { get; set; }
 
@@ -1189,19 +1183,19 @@ public partial class V1beta1VPCIpamPoolSpecInitProvider
     [JsonPropertyName("ipamScopeIdSelector")]
     public V1beta1VPCIpamPoolSpecInitProviderIpamScopeIdSelector? IpamScopeIdSelector { get; set; }
 
-    /// <summary>The locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
+    /// <summary>Locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
     [JsonPropertyName("locale")]
     public string? Locale { get; set; }
 
-    /// <summary>The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
+    /// <summary>IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
     [JsonPropertyName("publicIpSource")]
     public string? PublicIpSource { get; set; }
 
-    /// <summary>Defines whether or not IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
+    /// <summary>Whether IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
     [JsonPropertyName("publiclyAdvertisable")]
     public bool? PubliclyAdvertisable { get; set; }
 
-    /// <summary>The ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
+    /// <summary>ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
     [JsonPropertyName("sourceIpamPoolId")]
     public string? SourceIpamPoolId { get; set; }
 
@@ -1213,7 +1207,7 @@ public partial class V1beta1VPCIpamPoolSpecInitProvider
     [JsonPropertyName("sourceIpamPoolIdSelector")]
     public V1beta1VPCIpamPoolSpecInitProviderSourceIpamPoolIdSelector? SourceIpamPoolIdSelector { get; set; }
 
-    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
     [JsonPropertyName("sourceResource")]
     public V1beta1VPCIpamPoolSpecInitProviderSourceResource? SourceResource { get; set; }
 
@@ -1329,7 +1323,7 @@ public partial class V1beta1VPCIpamPoolSpec
     public V1beta1VPCIpamPoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+/// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolStatusAtProviderSourceResource
@@ -1355,19 +1349,19 @@ public partial class V1beta1VPCIpamPoolStatusAtProviderSourceResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolStatusAtProvider
 {
-    /// <summary>The IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
+    /// <summary>IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.</summary>
     [JsonPropertyName("addressFamily")]
     public string? AddressFamily { get; set; }
 
-    /// <summary>A default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
+    /// <summary>Default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).</summary>
     [JsonPropertyName("allocationDefaultNetmaskLength")]
     public double? AllocationDefaultNetmaskLength { get; set; }
 
-    /// <summary>The maximum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Maximum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMaxNetmaskLength")]
     public double? AllocationMaxNetmaskLength { get; set; }
 
-    /// <summary>The minimum netmask length that will be required for CIDR allocations in this pool.</summary>
+    /// <summary>Minimum netmask length that will be required for CIDR allocations in this pool.</summary>
     [JsonPropertyName("allocationMinNetmaskLength")]
     public double? AllocationMinNetmaskLength { get; set; }
 
@@ -1379,10 +1373,7 @@ public partial class V1beta1VPCIpamPoolStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>
-    /// If you include this argument, IPAM automatically imports any VPCs you have in your scope that fall
-    /// within the CIDR range in the pool.
-    /// </summary>
+    /// <summary>Whether to automatically import any VPCs you have in your scope that fall within the CIDR range in the pool.</summary>
     [JsonPropertyName("autoImport")]
     public bool? AutoImport { get; set; }
 
@@ -1390,37 +1381,39 @@ public partial class V1beta1VPCIpamPoolStatusAtProvider
     [JsonPropertyName("awsService")]
     public string? AwsService { get; set; }
 
-    /// <summary>Enables you to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
+    /// <summary>Whether to quickly delete an IPAM pool and all resources within that pool, including provisioned CIDRs, allocations, and other pools.</summary>
     [JsonPropertyName("cascade")]
     public bool? Cascade { get; set; }
 
-    /// <summary>A description for the IPAM pool.</summary>
+    /// <summary>Description for the IPAM pool.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ID of the IPAM</summary>
+    /// <summary>ID of the IPAM</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ID of the scope in which you would like to create the IPAM pool.</summary>
+    /// <summary>ID of the scope in which you would like to create the IPAM pool.</summary>
     [JsonPropertyName("ipamScopeId")]
     public string? IpamScopeId { get; set; }
 
+    /// <summary>Type of the scope the pool belongs to.</summary>
     [JsonPropertyName("ipamScopeType")]
     public string? IpamScopeType { get; set; }
 
-    /// <summary>The locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
+    /// <summary>Locale in which you would like to create the IPAM pool. Locale is the Region where you want to make an IPAM pool available for allocations. You can only create pools with locales that match the operating Regions of the IPAM. You can only create VPCs from a pool whose locale matches the VPC&apos;s Region. Possible values: Any AWS region, such as us-east-1.</summary>
     [JsonPropertyName("locale")]
     public string? Locale { get; set; }
 
+    /// <summary>Depth of pools in your IPAM pool.</summary>
     [JsonPropertyName("poolDepth")]
     public double? PoolDepth { get; set; }
 
-    /// <summary>The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
+    /// <summary>IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Valid values are byoip or amazon. Default is byoip.</summary>
     [JsonPropertyName("publicIpSource")]
     public string? PublicIpSource { get; set; }
 
-    /// <summary>Defines whether or not IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
+    /// <summary>Whether IPv6 pool space is publicly advertisable over the internet. This argument is required if address_family = &quot;ipv6&quot; and public_ip_source = &quot;byoip&quot;, default is false. This option is not available for IPv4 pool space or if public_ip_source = &quot;amazon&quot;. Setting this argument to true when it is not available may result in erroneous differences being reported.</summary>
     [JsonPropertyName("publiclyAdvertisable")]
     public bool? PubliclyAdvertisable { get; set; }
 
@@ -1431,15 +1424,15 @@ public partial class V1beta1VPCIpamPoolStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
+    /// <summary>ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.</summary>
     [JsonPropertyName("sourceIpamPoolId")]
     public string? SourceIpamPoolId { get; set; }
 
-    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the vpc resides in.</summary>
+    /// <summary>Resource to use to use to configure a resource planning IPAM Pool. If configured, the locale of the parent pool must match the region that the VPC resides in.</summary>
     [JsonPropertyName("sourceResource")]
     public V1beta1VPCIpamPoolStatusAtProviderSourceResource? SourceResource { get; set; }
 
-    /// <summary>The ID of the IPAM</summary>
+    /// <summary>State of the IPAM pool.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -1447,7 +1440,7 @@ public partial class V1beta1VPCIpamPoolStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

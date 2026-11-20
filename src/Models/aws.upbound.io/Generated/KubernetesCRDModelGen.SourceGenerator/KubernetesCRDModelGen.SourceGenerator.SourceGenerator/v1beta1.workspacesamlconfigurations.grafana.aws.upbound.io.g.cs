@@ -207,47 +207,47 @@ public partial class V1beta1WorkspaceSAMLConfigurationSpecForProviderWorkspaceId
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSAMLConfigurationSpecForProvider
 {
-    /// <summary>The admin role values.</summary>
+    /// <summary>Admin role values.</summary>
     [JsonPropertyName("adminRoleValues")]
     public IList<string>? AdminRoleValues { get; set; }
 
-    /// <summary>The allowed organizations.</summary>
+    /// <summary>Allowed organizations.</summary>
     [JsonPropertyName("allowedOrganizations")]
     public IList<string>? AllowedOrganizations { get; set; }
 
-    /// <summary>The editor role values.</summary>
+    /// <summary>Editor role values.</summary>
     [JsonPropertyName("editorRoleValues")]
     public IList<string>? EditorRoleValues { get; set; }
 
-    /// <summary>The email assertion.</summary>
+    /// <summary>Email assertion.</summary>
     [JsonPropertyName("emailAssertion")]
     public string? EmailAssertion { get; set; }
 
-    /// <summary>The groups assertion.</summary>
+    /// <summary>Groups assertion.</summary>
     [JsonPropertyName("groupsAssertion")]
     public string? GroupsAssertion { get; set; }
 
-    /// <summary>The IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataUrl")]
     public string? IdpMetadataUrl { get; set; }
 
-    /// <summary>The IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataXml")]
     public string? IdpMetadataXml { get; set; }
 
-    /// <summary>The login assertion.</summary>
+    /// <summary>Login assertion.</summary>
     [JsonPropertyName("loginAssertion")]
     public string? LoginAssertion { get; set; }
 
-    /// <summary>The login validity duration.</summary>
+    /// <summary>Login validity duration.</summary>
     [JsonPropertyName("loginValidityDuration")]
     public double? LoginValidityDuration { get; set; }
 
-    /// <summary>The name assertion.</summary>
+    /// <summary>Name assertion.</summary>
     [JsonPropertyName("nameAssertion")]
     public string? NameAssertion { get; set; }
 
-    /// <summary>The org assertion.</summary>
+    /// <summary>Org assertion.</summary>
     [JsonPropertyName("orgAssertion")]
     public string? OrgAssertion { get; set; }
 
@@ -258,11 +258,11 @@ public partial class V1beta1WorkspaceSAMLConfigurationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The role assertion.</summary>
+    /// <summary>Role assertion.</summary>
     [JsonPropertyName("roleAssertion")]
     public string? RoleAssertion { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -438,55 +438,55 @@ public partial class V1beta1WorkspaceSAMLConfigurationSpecInitProviderWorkspaceI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSAMLConfigurationSpecInitProvider
 {
-    /// <summary>The admin role values.</summary>
+    /// <summary>Admin role values.</summary>
     [JsonPropertyName("adminRoleValues")]
     public IList<string>? AdminRoleValues { get; set; }
 
-    /// <summary>The allowed organizations.</summary>
+    /// <summary>Allowed organizations.</summary>
     [JsonPropertyName("allowedOrganizations")]
     public IList<string>? AllowedOrganizations { get; set; }
 
-    /// <summary>The editor role values.</summary>
+    /// <summary>Editor role values.</summary>
     [JsonPropertyName("editorRoleValues")]
     public IList<string>? EditorRoleValues { get; set; }
 
-    /// <summary>The email assertion.</summary>
+    /// <summary>Email assertion.</summary>
     [JsonPropertyName("emailAssertion")]
     public string? EmailAssertion { get; set; }
 
-    /// <summary>The groups assertion.</summary>
+    /// <summary>Groups assertion.</summary>
     [JsonPropertyName("groupsAssertion")]
     public string? GroupsAssertion { get; set; }
 
-    /// <summary>The IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataUrl")]
     public string? IdpMetadataUrl { get; set; }
 
-    /// <summary>The IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataXml")]
     public string? IdpMetadataXml { get; set; }
 
-    /// <summary>The login assertion.</summary>
+    /// <summary>Login assertion.</summary>
     [JsonPropertyName("loginAssertion")]
     public string? LoginAssertion { get; set; }
 
-    /// <summary>The login validity duration.</summary>
+    /// <summary>Login validity duration.</summary>
     [JsonPropertyName("loginValidityDuration")]
     public double? LoginValidityDuration { get; set; }
 
-    /// <summary>The name assertion.</summary>
+    /// <summary>Name assertion.</summary>
     [JsonPropertyName("nameAssertion")]
     public string? NameAssertion { get; set; }
 
-    /// <summary>The org assertion.</summary>
+    /// <summary>Org assertion.</summary>
     [JsonPropertyName("orgAssertion")]
     public string? OrgAssertion { get; set; }
 
-    /// <summary>The role assertion.</summary>
+    /// <summary>Role assertion.</summary>
     [JsonPropertyName("roleAssertion")]
     public string? RoleAssertion { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -686,50 +686,50 @@ public partial class V1beta1WorkspaceSAMLConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSAMLConfigurationStatusAtProvider
 {
-    /// <summary>The admin role values.</summary>
+    /// <summary>Admin role values.</summary>
     [JsonPropertyName("adminRoleValues")]
     public IList<string>? AdminRoleValues { get; set; }
 
-    /// <summary>The allowed organizations.</summary>
+    /// <summary>Allowed organizations.</summary>
     [JsonPropertyName("allowedOrganizations")]
     public IList<string>? AllowedOrganizations { get; set; }
 
-    /// <summary>The editor role values.</summary>
+    /// <summary>Editor role values.</summary>
     [JsonPropertyName("editorRoleValues")]
     public IList<string>? EditorRoleValues { get; set; }
 
-    /// <summary>The email assertion.</summary>
+    /// <summary>Email assertion.</summary>
     [JsonPropertyName("emailAssertion")]
     public string? EmailAssertion { get; set; }
 
-    /// <summary>The groups assertion.</summary>
+    /// <summary>Groups assertion.</summary>
     [JsonPropertyName("groupsAssertion")]
     public string? GroupsAssertion { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata URL. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataUrl")]
     public string? IdpMetadataUrl { get; set; }
 
-    /// <summary>The IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
+    /// <summary>IDP Metadata XML. Note that either idp_metadata_url or idp_metadata_xml (but not both) must be specified.</summary>
     [JsonPropertyName("idpMetadataXml")]
     public string? IdpMetadataXml { get; set; }
 
-    /// <summary>The login assertion.</summary>
+    /// <summary>Login assertion.</summary>
     [JsonPropertyName("loginAssertion")]
     public string? LoginAssertion { get; set; }
 
-    /// <summary>The login validity duration.</summary>
+    /// <summary>Login validity duration.</summary>
     [JsonPropertyName("loginValidityDuration")]
     public double? LoginValidityDuration { get; set; }
 
-    /// <summary>The name assertion.</summary>
+    /// <summary>Name assertion.</summary>
     [JsonPropertyName("nameAssertion")]
     public string? NameAssertion { get; set; }
 
-    /// <summary>The org assertion.</summary>
+    /// <summary>Org assertion.</summary>
     [JsonPropertyName("orgAssertion")]
     public string? OrgAssertion { get; set; }
 
@@ -740,15 +740,15 @@ public partial class V1beta1WorkspaceSAMLConfigurationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The role assertion.</summary>
+    /// <summary>Role assertion.</summary>
     [JsonPropertyName("roleAssertion")]
     public string? RoleAssertion { get; set; }
 
-    /// <summary>The status of the SAML configuration.</summary>
+    /// <summary>Status of the SAML configuration.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>The workspace id.</summary>
+    /// <summary>Workspace ID.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

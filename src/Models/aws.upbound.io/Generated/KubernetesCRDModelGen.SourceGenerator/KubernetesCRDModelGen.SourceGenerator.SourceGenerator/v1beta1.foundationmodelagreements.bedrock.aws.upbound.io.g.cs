@@ -69,7 +69,7 @@ public partial class V1beta1FoundationModelAgreementSpecForProvider
     public string? OfferToken { get; set; }
 
     /// <summary>
-    /// Region where this action should be run. Defaults to the Region set in the provider configuration.
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
     /// </summary>
     [JsonPropertyName("region")]
@@ -300,7 +300,7 @@ public partial class V1beta1FoundationModelAgreementStatusAtProvider
     public string? OfferToken { get; set; }
 
     /// <summary>
-    /// Region where this action should be run. Defaults to the Region set in the provider configuration.
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
     /// </summary>
     [JsonPropertyName("region")]

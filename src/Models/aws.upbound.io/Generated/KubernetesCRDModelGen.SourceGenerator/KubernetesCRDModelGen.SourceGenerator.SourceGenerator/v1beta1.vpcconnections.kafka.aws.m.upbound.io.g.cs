@@ -661,11 +661,11 @@ public partial class V1beta1VPCConnectionSpecForProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCConnectionSpecForProvider
 {
-    /// <summary>The authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
+    /// <summary>Authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
     [JsonPropertyName("authentication")]
     public string? Authentication { get; set; }
 
-    /// <summary>The list of subnets in the client VPC to connect to.</summary>
+    /// <summary>List of subnets in the client VPC to connect to.</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
@@ -684,7 +684,7 @@ public partial class V1beta1VPCConnectionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The security groups to attach to the ENIs for the broker nodes.</summary>
+    /// <summary>Security groups to attach to the ENIs for the broker nodes.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -712,7 +712,7 @@ public partial class V1beta1VPCConnectionSpecForProvider
     [JsonPropertyName("targetClusterArnSelector")]
     public V1beta1VPCConnectionSpecForProviderTargetClusterArnSelector? TargetClusterArnSelector { get; set; }
 
-    /// <summary>The VPC ID of the remote client.</summary>
+    /// <summary>VPC ID of the remote client.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -1361,11 +1361,11 @@ public partial class V1beta1VPCConnectionSpecInitProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCConnectionSpecInitProvider
 {
-    /// <summary>The authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
+    /// <summary>Authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
     [JsonPropertyName("authentication")]
     public string? Authentication { get; set; }
 
-    /// <summary>The list of subnets in the client VPC to connect to.</summary>
+    /// <summary>List of subnets in the client VPC to connect to.</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
@@ -1377,7 +1377,7 @@ public partial class V1beta1VPCConnectionSpecInitProvider
     [JsonPropertyName("clientSubnetsSelector")]
     public V1beta1VPCConnectionSpecInitProviderClientSubnetsSelector? ClientSubnetsSelector { get; set; }
 
-    /// <summary>The security groups to attach to the ENIs for the broker nodes.</summary>
+    /// <summary>Security groups to attach to the ENIs for the broker nodes.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -1405,7 +1405,7 @@ public partial class V1beta1VPCConnectionSpecInitProvider
     [JsonPropertyName("targetClusterArnSelector")]
     public V1beta1VPCConnectionSpecInitProviderTargetClusterArnSelector? TargetClusterArnSelector { get; set; }
 
-    /// <summary>The VPC ID of the remote client.</summary>
+    /// <summary>VPC ID of the remote client.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -1533,11 +1533,11 @@ public partial class V1beta1VPCConnectionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
+    /// <summary>Authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.</summary>
     [JsonPropertyName("authentication")]
     public string? Authentication { get; set; }
 
-    /// <summary>The list of subnets in the client VPC to connect to.</summary>
+    /// <summary>List of subnets in the client VPC to connect to.</summary>
     [JsonPropertyName("clientSubnets")]
     public IList<string>? ClientSubnets { get; set; }
 
@@ -1551,7 +1551,7 @@ public partial class V1beta1VPCConnectionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The security groups to attach to the ENIs for the broker nodes.</summary>
+    /// <summary>Security groups to attach to the ENIs for the broker nodes.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -1559,7 +1559,7 @@ public partial class V1beta1VPCConnectionStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -1567,7 +1567,7 @@ public partial class V1beta1VPCConnectionStatusAtProvider
     [JsonPropertyName("targetClusterArn")]
     public string? TargetClusterArn { get; set; }
 
-    /// <summary>The VPC ID of the remote client.</summary>
+    /// <summary>VPC ID of the remote client.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

@@ -208,7 +208,7 @@ public partial class V1beta2FleetSpecForProviderBuildIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FleetSpecForProviderCertificateConfiguration
 {
-    /// <summary>Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
+    /// <summary>Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 }
@@ -482,7 +482,7 @@ public partial class V1beta2FleetSpecForProvider
     [JsonPropertyName("metricGroups")]
     public IList<string>? MetricGroups { get; set; }
 
-    /// <summary>The name of the fleet.</summary>
+    /// <summary>Name of the fleet.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -666,7 +666,7 @@ public partial class V1beta2FleetSpecInitProviderBuildIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FleetSpecInitProviderCertificateConfiguration
 {
-    /// <summary>Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
+    /// <summary>Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 }
@@ -952,7 +952,7 @@ public partial class V1beta2FleetSpecInitProvider
     [JsonPropertyName("metricGroups")]
     public IList<string>? MetricGroups { get; set; }
 
-    /// <summary>The name of the fleet.</summary>
+    /// <summary>Name of the fleet.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1165,7 +1165,7 @@ public partial class V1beta2FleetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FleetStatusAtProviderCertificateConfiguration
 {
-    /// <summary>Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
+    /// <summary>Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 }
@@ -1284,6 +1284,7 @@ public partial class V1beta2FleetStatusAtProvider
     [JsonPropertyName("instanceRoleArn")]
     public string? InstanceRoleArn { get; set; }
 
+    /// <summary>List of paths from which the fleet captures logs.</summary>
     [JsonPropertyName("logPaths")]
     public IList<string>? LogPaths { get; set; }
 
@@ -1291,7 +1292,7 @@ public partial class V1beta2FleetStatusAtProvider
     [JsonPropertyName("metricGroups")]
     public IList<string>? MetricGroups { get; set; }
 
-    /// <summary>The name of the fleet.</summary>
+    /// <summary>Name of the fleet.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1330,7 +1331,7 @@ public partial class V1beta2FleetStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

@@ -365,7 +365,7 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationSpecForProvider
     [JsonPropertyName("replaceDefaultAssociation")]
     public bool? ReplaceDefaultAssociation { get; set; }
 
-    /// <summary>The ID of the security group to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the security group to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
@@ -377,7 +377,7 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1VPCEndpointSecurityGroupAssociationSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the security group will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the security group will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
@@ -704,7 +704,7 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationSpecInitProvider
     [JsonPropertyName("replaceDefaultAssociation")]
     public bool? ReplaceDefaultAssociation { get; set; }
 
-    /// <summary>The ID of the security group to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the security group to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
@@ -716,7 +716,7 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1VPCEndpointSecurityGroupAssociationSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the security group will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the security group will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
@@ -916,7 +916,7 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointSecurityGroupAssociationStatusAtProvider
 {
-    /// <summary>The ID of the association.</summary>
+    /// <summary>ID of the association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -931,11 +931,11 @@ public partial class V1beta1VPCEndpointSecurityGroupAssociationStatusAtProvider
     [JsonPropertyName("replaceDefaultAssociation")]
     public bool? ReplaceDefaultAssociation { get; set; }
 
-    /// <summary>The ID of the security group to be associated with the VPC endpoint.</summary>
+    /// <summary>ID of the security group to be associated with the VPC endpoint.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
-    /// <summary>The ID of the VPC endpoint with which the security group will be associated.</summary>
+    /// <summary>ID of the VPC endpoint with which the security group will be associated.</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 }

@@ -741,7 +741,7 @@ public partial class V1beta1PolicySpecForProvider
     [JsonPropertyName("adjustmentType")]
     public string? AdjustmentType { get; set; }
 
-    /// <summary>Name of the autoscaling group.</summary>
+    /// <summary>Name of the Auto Scaling group.</summary>
     [JsonPropertyName("autoscalingGroupName")]
     public string? AutoscalingGroupName { get; set; }
 
@@ -2069,7 +2069,7 @@ public partial class V1beta1PolicyStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Name of the autoscaling group.</summary>
+    /// <summary>Name of the Auto Scaling group.</summary>
     [JsonPropertyName("autoscalingGroupName")]
     public string? AutoscalingGroupName { get; set; }
 

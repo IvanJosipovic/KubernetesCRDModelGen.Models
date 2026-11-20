@@ -196,17 +196,11 @@ public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProvider
 {
-    /// <summary>
-    /// List of instance ports to which the policy
-    /// should be applied. This can be specified if the protocol is SSL or TCP.
-    /// </summary>
+    /// <summary>List of instance ports to which the policy should be applied. This can be specified if the protocol is SSL or TCP.</summary>
     [JsonPropertyName("instancePorts")]
     public IList<string>? InstancePorts { get; set; }
 
-    /// <summary>
-    /// The load balancer to which the policy
-    /// should be attached.
-    /// </summary>
+    /// <summary>Load balancer to which the policy should be attached.</summary>
     [JsonPropertyName("loadBalancer")]
     public string? LoadBalancer { get; set; }
 
@@ -397,17 +391,11 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProvider
 {
-    /// <summary>
-    /// List of instance ports to which the policy
-    /// should be applied. This can be specified if the protocol is SSL or TCP.
-    /// </summary>
+    /// <summary>List of instance ports to which the policy should be applied. This can be specified if the protocol is SSL or TCP.</summary>
     [JsonPropertyName("instancePorts")]
     public IList<string>? InstancePorts { get; set; }
 
-    /// <summary>
-    /// The load balancer to which the policy
-    /// should be attached.
-    /// </summary>
+    /// <summary>Load balancer to which the policy should be attached.</summary>
     [JsonPropertyName("loadBalancer")]
     public string? LoadBalancer { get; set; }
 
@@ -531,21 +519,15 @@ public partial class V1beta1ProxyProtocolPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicyStatusAtProvider
 {
-    /// <summary>The ID of the policy.</summary>
+    /// <summary>ID of the policy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// List of instance ports to which the policy
-    /// should be applied. This can be specified if the protocol is SSL or TCP.
-    /// </summary>
+    /// <summary>List of instance ports to which the policy should be applied. This can be specified if the protocol is SSL or TCP.</summary>
     [JsonPropertyName("instancePorts")]
     public IList<string>? InstancePorts { get; set; }
 
-    /// <summary>
-    /// The load balancer to which the policy
-    /// should be attached.
-    /// </summary>
+    /// <summary>Load balancer to which the policy should be attached.</summary>
     [JsonPropertyName("loadBalancer")]
     public string? LoadBalancer { get; set; }
 

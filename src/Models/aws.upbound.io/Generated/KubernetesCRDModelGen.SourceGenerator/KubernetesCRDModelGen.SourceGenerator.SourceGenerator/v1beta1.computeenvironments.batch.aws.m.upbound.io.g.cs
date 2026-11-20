@@ -41,15 +41,15 @@ public partial class V1beta1ComputeEnvironmentList : IKubernetesObject<V1ListMet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResourcesEc2Configuration
 {
-    /// <summary>The AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
     [JsonPropertyName("imageIdOverride")]
     public string? ImageIdOverride { get; set; }
 
-    /// <summary>The Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
+    /// <summary>Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
     [JsonPropertyName("imageKubernetesVersion")]
     public string? ImageKubernetesVersion { get; set; }
 
-    /// <summary>The image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
+    /// <summary>Image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 }
@@ -209,7 +209,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResourcesIns
     public V1beta1ComputeEnvironmentSpecForProviderComputeResourcesInstanceRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+/// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResourcesLaunchTemplate
@@ -222,7 +222,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResourcesLau
     [JsonPropertyName("launchTemplateName")]
     public string? LaunchTemplateName { get; set; }
 
-    /// <summary>The version number of the launch template. Default: The default version of the launch template.</summary>
+    /// <summary>Version number of the launch template. Default: The default version of the launch template.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -697,7 +697,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResourcesSub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
 {
-    /// <summary>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
@@ -705,7 +705,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("bidPercentage")]
     public double? BidPercentage { get; set; }
 
-    /// <summary>The desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
@@ -713,7 +713,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentSpecForProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
-    /// <summary>The EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
@@ -721,7 +721,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
-    /// <summary>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceRole")]
     public string? InstanceRole { get; set; }
 
@@ -733,23 +733,23 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("instanceRoleSelector")]
     public V1beta1ComputeEnvironmentSpecForProviderComputeResourcesInstanceRoleSelector? InstanceRoleSelector { get; set; }
 
-    /// <summary>A list of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>List of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceType")]
     public IList<string>? InstanceType { get; set; }
 
-    /// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1ComputeEnvironmentSpecForProviderComputeResourcesLaunchTemplate? LaunchTemplate { get; set; }
 
-    /// <summary>The maximum number of EC2 vCPUs that an environment can reach.</summary>
+    /// <summary>Maximum number of EC2 vCPUs that an environment can reach.</summary>
     [JsonPropertyName("maxVcpus")]
     public double? MaxVcpus { get; set; }
 
-    /// <summary>The minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("minVcpus")]
     public double? MinVcpus { get; set; }
 
-    /// <summary>The Amazon EC2 placement group to associate with your compute resources.</summary>
+    /// <summary>Amazon EC2 placement group to associate with your compute resources.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
@@ -761,7 +761,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("placementGroupSelector")]
     public V1beta1ComputeEnvironmentSpecForProviderComputeResourcesPlacementGroupSelector? PlacementGroupSelector { get; set; }
 
-    /// <summary>A list of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
+    /// <summary>List of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -777,7 +777,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
-    /// <summary>A list of VPC subnets into which the compute resources are launched.</summary>
+    /// <summary>List of VPC subnets into which the compute resources are launched.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 
@@ -793,7 +793,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
+    /// <summary>Type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -807,7 +807,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderEksConfiguration
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
-    /// <summary>The namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
+    /// <summary>Namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
     [JsonPropertyName("kubernetesNamespace")]
     public string? KubernetesNamespace { get; set; }
 }
@@ -967,16 +967,16 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderServiceRoleSelector
     public V1beta1ComputeEnvironmentSpecForProviderServiceRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+/// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecForProviderUpdatePolicy
 {
-    /// <summary>Specifies the job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
+    /// <summary>Job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("jobExecutionTimeoutMinutes")]
     public double? JobExecutionTimeoutMinutes { get; set; }
 
-    /// <summary>Specifies whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
+    /// <summary>Whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("terminateJobsOnUpdate")]
     public bool? TerminateJobsOnUpdate { get; set; }
 }
@@ -1012,7 +1012,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProvider
     [JsonPropertyName("serviceRoleSelector")]
     public V1beta1ComputeEnvironmentSpecForProviderServiceRoleSelector? ServiceRoleSelector { get; set; }
 
-    /// <summary>The state of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
+    /// <summary>State of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -1020,11 +1020,11 @@ public partial class V1beta1ComputeEnvironmentSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
+    /// <summary>Type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+    /// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
     [JsonPropertyName("updatePolicy")]
     public V1beta1ComputeEnvironmentSpecForProviderUpdatePolicy? UpdatePolicy { get; set; }
 }
@@ -1033,15 +1033,15 @@ public partial class V1beta1ComputeEnvironmentSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesEc2Configuration
 {
-    /// <summary>The AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
     [JsonPropertyName("imageIdOverride")]
     public string? ImageIdOverride { get; set; }
 
-    /// <summary>The Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
+    /// <summary>Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
     [JsonPropertyName("imageKubernetesVersion")]
     public string? ImageKubernetesVersion { get; set; }
 
-    /// <summary>The image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
+    /// <summary>Image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 }
@@ -1201,7 +1201,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesIn
     public V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesInstanceRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+/// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesLaunchTemplate
@@ -1214,7 +1214,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesLa
     [JsonPropertyName("launchTemplateName")]
     public string? LaunchTemplateName { get; set; }
 
-    /// <summary>The version number of the launch template. Default: The default version of the launch template.</summary>
+    /// <summary>Version number of the launch template. Default: The default version of the launch template.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -1689,7 +1689,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesSu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
 {
-    /// <summary>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
@@ -1697,7 +1697,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("bidPercentage")]
     public double? BidPercentage { get; set; }
 
-    /// <summary>The desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
@@ -1705,7 +1705,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
-    /// <summary>The EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
@@ -1713,7 +1713,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
-    /// <summary>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceRole")]
     public string? InstanceRole { get; set; }
 
@@ -1725,23 +1725,23 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("instanceRoleSelector")]
     public V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesInstanceRoleSelector? InstanceRoleSelector { get; set; }
 
-    /// <summary>A list of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>List of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceType")]
     public IList<string>? InstanceType { get; set; }
 
-    /// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesLaunchTemplate? LaunchTemplate { get; set; }
 
-    /// <summary>The maximum number of EC2 vCPUs that an environment can reach.</summary>
+    /// <summary>Maximum number of EC2 vCPUs that an environment can reach.</summary>
     [JsonPropertyName("maxVcpus")]
     public double? MaxVcpus { get; set; }
 
-    /// <summary>The minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("minVcpus")]
     public double? MinVcpus { get; set; }
 
-    /// <summary>The Amazon EC2 placement group to associate with your compute resources.</summary>
+    /// <summary>Amazon EC2 placement group to associate with your compute resources.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
@@ -1753,7 +1753,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("placementGroupSelector")]
     public V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesPlacementGroupSelector? PlacementGroupSelector { get; set; }
 
-    /// <summary>A list of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
+    /// <summary>List of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -1769,7 +1769,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
-    /// <summary>A list of VPC subnets into which the compute resources are launched.</summary>
+    /// <summary>List of VPC subnets into which the compute resources are launched.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 
@@ -1785,7 +1785,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
+    /// <summary>Type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1799,7 +1799,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderEksConfiguration
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
-    /// <summary>The namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
+    /// <summary>Namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
     [JsonPropertyName("kubernetesNamespace")]
     public string? KubernetesNamespace { get; set; }
 }
@@ -1959,16 +1959,16 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderServiceRoleSelecto
     public V1beta1ComputeEnvironmentSpecInitProviderServiceRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+/// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecInitProviderUpdatePolicy
 {
-    /// <summary>Specifies the job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
+    /// <summary>Job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("jobExecutionTimeoutMinutes")]
     public double? JobExecutionTimeoutMinutes { get; set; }
 
-    /// <summary>Specifies whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
+    /// <summary>Whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("terminateJobsOnUpdate")]
     public bool? TerminateJobsOnUpdate { get; set; }
 }
@@ -2009,7 +2009,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProvider
     [JsonPropertyName("serviceRoleSelector")]
     public V1beta1ComputeEnvironmentSpecInitProviderServiceRoleSelector? ServiceRoleSelector { get; set; }
 
-    /// <summary>The state of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
+    /// <summary>State of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -2017,11 +2017,11 @@ public partial class V1beta1ComputeEnvironmentSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
+    /// <summary>Type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+    /// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
     [JsonPropertyName("updatePolicy")]
     public V1beta1ComputeEnvironmentSpecInitProviderUpdatePolicy? UpdatePolicy { get; set; }
 }
@@ -2137,20 +2137,20 @@ public partial class V1beta1ComputeEnvironmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesEc2Configuration
 {
-    /// <summary>The AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the image_id argument in the compute_resources block.</summary>
     [JsonPropertyName("imageIdOverride")]
     public string? ImageIdOverride { get; set; }
 
-    /// <summary>The Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
+    /// <summary>Kubernetes version for the compute environment. If you don&apos;t specify a value, the latest version that AWS Batch supports is used. See Supported Kubernetes versions for the list of Kubernetes versions supported by AWS Batch on Amazon EKS.</summary>
     [JsonPropertyName("imageKubernetesVersion")]
     public string? ImageKubernetesVersion { get; set; }
 
-    /// <summary>The image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
+    /// <summary>Image type to match with the instance type to select an AMI. If the image_id_override parameter isn&apos;t specified, then a recent Amazon ECS-optimized Amazon Linux 2 AMI (ECS_AL2) is used.</summary>
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 }
 
-/// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+/// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesLaunchTemplate
@@ -2163,7 +2163,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesLa
     [JsonPropertyName("launchTemplateName")]
     public string? LaunchTemplateName { get; set; }
 
-    /// <summary>The version number of the launch template. Default: The default version of the launch template.</summary>
+    /// <summary>Version number of the launch template. Default: The default version of the launch template.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -2173,7 +2173,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesLa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
 {
-    /// <summary>The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. For valid values, refer to the AWS documentation. Defaults to BEST_FIT. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
@@ -2181,7 +2181,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("bidPercentage")]
     public double? BidPercentage { get; set; }
 
-    /// <summary>The desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Desired number of EC2 vCPUS in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
@@ -2189,7 +2189,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
-    /// <summary>The EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>EC2 key pair that is used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
@@ -2197,31 +2197,31 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
-    /// <summary>The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Amazon ECS instance role applied to Amazon EC2 instances in a compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceRole")]
     public string? InstanceRole { get; set; }
 
-    /// <summary>A list of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>List of instance types that may be launched. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("instanceType")]
     public IList<string>? InstanceType { get; set; }
 
-    /// <summary>The launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Launch template to use for your compute resources. See details below. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesLaunchTemplate? LaunchTemplate { get; set; }
 
-    /// <summary>The maximum number of EC2 vCPUs that an environment can reach.</summary>
+    /// <summary>Maximum number of EC2 vCPUs that an environment can reach.</summary>
     [JsonPropertyName("maxVcpus")]
     public double? MaxVcpus { get; set; }
 
-    /// <summary>The minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Minimum number of EC2 vCPUs that an environment should maintain. For EC2 or SPOT compute environments, if the parameter is not explicitly defined, a 0 default value will be set. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("minVcpus")]
     public double? MinVcpus { get; set; }
 
-    /// <summary>The Amazon EC2 placement group to associate with your compute resources.</summary>
+    /// <summary>Amazon EC2 placement group to associate with your compute resources.</summary>
     [JsonPropertyName("placementGroup")]
     public string? PlacementGroup { get; set; }
 
-    /// <summary>A list of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
+    /// <summary>List of EC2 security group that are associated with instances launched in the compute environment. This parameter is required for Fargate compute environments.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -2229,7 +2229,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
-    /// <summary>A list of VPC subnets into which the compute resources are launched.</summary>
+    /// <summary>List of VPC subnets into which the compute resources are launched.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 
@@ -2237,7 +2237,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
+    /// <summary>Type of compute environment. Valid items are EC2, SPOT, FARGATE or FARGATE_SPOT.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2251,21 +2251,21 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderEksConfiguration
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
-    /// <summary>The namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
+    /// <summary>Namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespace.</summary>
     [JsonPropertyName("kubernetesNamespace")]
     public string? KubernetesNamespace { get; set; }
 }
 
-/// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+/// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProviderUpdatePolicy
 {
-    /// <summary>Specifies the job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
+    /// <summary>Job timeout (in minutes) when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("jobExecutionTimeoutMinutes")]
     public double? JobExecutionTimeoutMinutes { get; set; }
 
-    /// <summary>Specifies whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
+    /// <summary>Whether jobs are automatically terminated when the compute environment infrastructure is updated.</summary>
     [JsonPropertyName("terminateJobsOnUpdate")]
     public bool? TerminateJobsOnUpdate { get; set; }
 }
@@ -2304,15 +2304,15 @@ public partial class V1beta1ComputeEnvironmentStatusAtProvider
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 
-    /// <summary>The state of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
+    /// <summary>State of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are ENABLED or DISABLED. Defaults to ENABLED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
-    /// <summary>The current status of the compute environment (for example, CREATING or VALID).</summary>
+    /// <summary>Current status of the compute environment (for example, CREATING or VALID).</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>A short, human-readable string to provide additional details about the current status of the compute environment.</summary>
+    /// <summary>Short, human-readable string to provide additional details about the current status of the compute environment.</summary>
     [JsonPropertyName("statusReason")]
     public string? StatusReason { get; set; }
 
@@ -2320,15 +2320,15 @@ public partial class V1beta1ComputeEnvironmentStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
+    /// <summary>Type of the compute environment. Valid items are MANAGED or UNMANAGED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Specifies the infrastructure update policy for the compute environment. See details below.</summary>
+    /// <summary>Infrastructure update policy for the compute environment. See details below.</summary>
     [JsonPropertyName("updatePolicy")]
     public V1beta1ComputeEnvironmentStatusAtProviderUpdatePolicy? UpdatePolicy { get; set; }
 }

@@ -56,12 +56,12 @@ public enum V1beta2CatalogDatabaseSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The principal who is granted permissions.. See principal below.</summary>
+/// <summary>Principal who is granted permissions.. See principal Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecForProviderCreateTableDefaultPermissionPrincipal
 {
-    /// <summary>An identifier for the Lake Formation principal.</summary>
+    /// <summary>Identifier for the Lake Formation principal.</summary>
     [JsonPropertyName("dataLakePrincipalIdentifier")]
     public string? DataLakePrincipalIdentifier { get; set; }
 }
@@ -70,16 +70,16 @@ public partial class V1beta2CatalogDatabaseSpecForProviderCreateTableDefaultPerm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecForProviderCreateTableDefaultPermission
 {
-    /// <summary>The permissions that are granted to the principal.</summary>
+    /// <summary>Permissions that are granted to the principal.</summary>
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>The principal who is granted permissions.. See principal below.</summary>
+    /// <summary>Principal who is granted permissions.. See principal Block below.</summary>
     [JsonPropertyName("principal")]
     public V1beta2CatalogDatabaseSpecForProviderCreateTableDefaultPermissionPrincipal? Principal { get; set; }
 }
 
-/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecForProviderFederatedDatabase
@@ -93,7 +93,7 @@ public partial class V1beta2CatalogDatabaseSpecForProviderFederatedDatabase
     public string? Identifier { get; set; }
 }
 
-/// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+/// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecForProviderTargetDatabase
@@ -119,7 +119,7 @@ public partial class V1beta2CatalogDatabaseSpecForProvider
     [JsonPropertyName("catalogId")]
     public required string CatalogId { get; set; }
 
-    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission below.</summary>
+    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission Block below.</summary>
     [JsonPropertyName("createTableDefaultPermission")]
     public IList<V1beta2CatalogDatabaseSpecForProviderCreateTableDefaultPermission>? CreateTableDefaultPermission { get; set; }
 
@@ -127,7 +127,7 @@ public partial class V1beta2CatalogDatabaseSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
     [JsonPropertyName("federatedDatabase")]
     public V1beta2CatalogDatabaseSpecForProviderFederatedDatabase? FederatedDatabase { get; set; }
 
@@ -150,17 +150,17 @@ public partial class V1beta2CatalogDatabaseSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+    /// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
     [JsonPropertyName("targetDatabase")]
     public V1beta2CatalogDatabaseSpecForProviderTargetDatabase? TargetDatabase { get; set; }
 }
 
-/// <summary>The principal who is granted permissions.. See principal below.</summary>
+/// <summary>Principal who is granted permissions.. See principal Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecInitProviderCreateTableDefaultPermissionPrincipal
 {
-    /// <summary>An identifier for the Lake Formation principal.</summary>
+    /// <summary>Identifier for the Lake Formation principal.</summary>
     [JsonPropertyName("dataLakePrincipalIdentifier")]
     public string? DataLakePrincipalIdentifier { get; set; }
 }
@@ -169,16 +169,16 @@ public partial class V1beta2CatalogDatabaseSpecInitProviderCreateTableDefaultPer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecInitProviderCreateTableDefaultPermission
 {
-    /// <summary>The permissions that are granted to the principal.</summary>
+    /// <summary>Permissions that are granted to the principal.</summary>
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>The principal who is granted permissions.. See principal below.</summary>
+    /// <summary>Principal who is granted permissions.. See principal Block below.</summary>
     [JsonPropertyName("principal")]
     public V1beta2CatalogDatabaseSpecInitProviderCreateTableDefaultPermissionPrincipal? Principal { get; set; }
 }
 
-/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecInitProviderFederatedDatabase
@@ -192,7 +192,7 @@ public partial class V1beta2CatalogDatabaseSpecInitProviderFederatedDatabase
     public string? Identifier { get; set; }
 }
 
-/// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+/// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecInitProviderTargetDatabase
@@ -218,7 +218,7 @@ public partial class V1beta2CatalogDatabaseSpecInitProviderTargetDatabase
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseSpecInitProvider
 {
-    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission below.</summary>
+    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission Block below.</summary>
     [JsonPropertyName("createTableDefaultPermission")]
     public IList<V1beta2CatalogDatabaseSpecInitProviderCreateTableDefaultPermission>? CreateTableDefaultPermission { get; set; }
 
@@ -226,7 +226,7 @@ public partial class V1beta2CatalogDatabaseSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
     [JsonPropertyName("federatedDatabase")]
     public V1beta2CatalogDatabaseSpecInitProviderFederatedDatabase? FederatedDatabase { get; set; }
 
@@ -242,7 +242,7 @@ public partial class V1beta2CatalogDatabaseSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+    /// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
     [JsonPropertyName("targetDatabase")]
     public V1beta2CatalogDatabaseSpecInitProviderTargetDatabase? TargetDatabase { get; set; }
 }
@@ -430,12 +430,12 @@ public partial class V1beta2CatalogDatabaseSpec
     public V1beta2CatalogDatabaseSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The principal who is granted permissions.. See principal below.</summary>
+/// <summary>Principal who is granted permissions.. See principal Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseStatusAtProviderCreateTableDefaultPermissionPrincipal
 {
-    /// <summary>An identifier for the Lake Formation principal.</summary>
+    /// <summary>Identifier for the Lake Formation principal.</summary>
     [JsonPropertyName("dataLakePrincipalIdentifier")]
     public string? DataLakePrincipalIdentifier { get; set; }
 }
@@ -444,16 +444,16 @@ public partial class V1beta2CatalogDatabaseStatusAtProviderCreateTableDefaultPer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseStatusAtProviderCreateTableDefaultPermission
 {
-    /// <summary>The permissions that are granted to the principal.</summary>
+    /// <summary>Permissions that are granted to the principal.</summary>
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>The principal who is granted permissions.. See principal below.</summary>
+    /// <summary>Principal who is granted permissions.. See principal Block below.</summary>
     [JsonPropertyName("principal")]
     public V1beta2CatalogDatabaseStatusAtProviderCreateTableDefaultPermissionPrincipal? Principal { get; set; }
 }
 
-/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+/// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseStatusAtProviderFederatedDatabase
@@ -467,7 +467,7 @@ public partial class V1beta2CatalogDatabaseStatusAtProviderFederatedDatabase
     public string? Identifier { get; set; }
 }
 
-/// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+/// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogDatabaseStatusAtProviderTargetDatabase
@@ -497,7 +497,7 @@ public partial class V1beta2CatalogDatabaseStatusAtProvider
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission below.</summary>
+    /// <summary>Creates a set of default permissions on the table for principals. See create_table_default_permission Block below.</summary>
     [JsonPropertyName("createTableDefaultPermission")]
     public IList<V1beta2CatalogDatabaseStatusAtProviderCreateTableDefaultPermission>? CreateTableDefaultPermission { get; set; }
 
@@ -505,7 +505,7 @@ public partial class V1beta2CatalogDatabaseStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
+    /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database Block below.</summary>
     [JsonPropertyName("federatedDatabase")]
     public V1beta2CatalogDatabaseStatusAtProviderFederatedDatabase? FederatedDatabase { get; set; }
 
@@ -532,11 +532,11 @@ public partial class V1beta2CatalogDatabaseStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
+    /// <summary>Configuration block for a target database for resource linking. See target_database Block below.</summary>
     [JsonPropertyName("targetDatabase")]
     public V1beta2CatalogDatabaseStatusAtProviderTargetDatabase? TargetDatabase { get; set; }
 }

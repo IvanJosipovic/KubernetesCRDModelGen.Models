@@ -41,45 +41,45 @@ public partial class V1beta1FindingsFilterList : IKubernetesObject<V1ListMeta>, 
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecForProviderFindingCriteriaCriterion
 {
-    /// <summary>The value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("eq")]
     public IList<string>? Eq { get; set; }
 
-    /// <summary>The value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
+    /// <summary>Value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
     [JsonPropertyName("eqExactMatch")]
     public IList<string>? EqExactMatch { get; set; }
 
-    /// <summary>The name of the field to be evaluated.</summary>
+    /// <summary>Name of the field to be evaluated.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>The value for the property is greater than the specified value.</summary>
+    /// <summary>Value for the property is greater than the specified value.</summary>
     [JsonPropertyName("gt")]
     public string? Gt { get; set; }
 
-    /// <summary>The value for the property is greater than or equal to the specified value.</summary>
+    /// <summary>Value for the property is greater than or equal to the specified value.</summary>
     [JsonPropertyName("gte")]
     public string? Gte { get; set; }
 
-    /// <summary>The value for the property is less than the specified value.</summary>
+    /// <summary>Value for the property is less than the specified value.</summary>
     [JsonPropertyName("lt")]
     public string? Lt { get; set; }
 
-    /// <summary>The value for the property is less than or equal to the specified value.</summary>
+    /// <summary>Value for the property is less than or equal to the specified value.</summary>
     [JsonPropertyName("lte")]
     public string? Lte { get; set; }
 
-    /// <summary>The value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("neq")]
     public IList<string>? Neq { get; set; }
 }
 
-/// <summary>The criteria to use to filter findings.</summary>
+/// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecForProviderFindingCriteria
 {
-    /// <summary>A condition that specifies the property, operator, and one or more values to use to filter the results.  (documented below)</summary>
+    /// <summary>Condition that specifies the property, operator, and one or more values to use to filter the results. See criterion Block for details.</summary>
     [JsonPropertyName("criterion")]
     public IList<V1beta1FindingsFilterSpecForProviderFindingCriteriaCriterion>? Criterion { get; set; }
 }
@@ -88,23 +88,23 @@ public partial class V1beta1FindingsFilterSpecForProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecForProvider
 {
-    /// <summary>The action to perform on findings that meet the filter criteria (finding_criteria). Valid values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don&apos;t perform any action on the findings.</summary>
+    /// <summary>Action to perform on findings that meet the filter criteria (finding_criteria). Valid values are ARCHIVE, to suppress (automatically archive) the findings, and NOOP, to not perform any action on the findings.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>A custom description of the filter. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the filter. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The criteria to use to filter findings.</summary>
+    /// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FindingsFilterSpecForProviderFindingCriteria? FindingCriteria { get; set; }
 
-    /// <summary>A custom name for the filter. The name must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the filter. Must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
@@ -124,45 +124,45 @@ public partial class V1beta1FindingsFilterSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecInitProviderFindingCriteriaCriterion
 {
-    /// <summary>The value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("eq")]
     public IList<string>? Eq { get; set; }
 
-    /// <summary>The value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
+    /// <summary>Value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
     [JsonPropertyName("eqExactMatch")]
     public IList<string>? EqExactMatch { get; set; }
 
-    /// <summary>The name of the field to be evaluated.</summary>
+    /// <summary>Name of the field to be evaluated.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>The value for the property is greater than the specified value.</summary>
+    /// <summary>Value for the property is greater than the specified value.</summary>
     [JsonPropertyName("gt")]
     public string? Gt { get; set; }
 
-    /// <summary>The value for the property is greater than or equal to the specified value.</summary>
+    /// <summary>Value for the property is greater than or equal to the specified value.</summary>
     [JsonPropertyName("gte")]
     public string? Gte { get; set; }
 
-    /// <summary>The value for the property is less than the specified value.</summary>
+    /// <summary>Value for the property is less than the specified value.</summary>
     [JsonPropertyName("lt")]
     public string? Lt { get; set; }
 
-    /// <summary>The value for the property is less than or equal to the specified value.</summary>
+    /// <summary>Value for the property is less than or equal to the specified value.</summary>
     [JsonPropertyName("lte")]
     public string? Lte { get; set; }
 
-    /// <summary>The value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("neq")]
     public IList<string>? Neq { get; set; }
 }
 
-/// <summary>The criteria to use to filter findings.</summary>
+/// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecInitProviderFindingCriteria
 {
-    /// <summary>A condition that specifies the property, operator, and one or more values to use to filter the results.  (documented below)</summary>
+    /// <summary>Condition that specifies the property, operator, and one or more values to use to filter the results. See criterion Block for details.</summary>
     [JsonPropertyName("criterion")]
     public IList<V1beta1FindingsFilterSpecInitProviderFindingCriteriaCriterion>? Criterion { get; set; }
 }
@@ -183,23 +183,23 @@ public partial class V1beta1FindingsFilterSpecInitProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterSpecInitProvider
 {
-    /// <summary>The action to perform on findings that meet the filter criteria (finding_criteria). Valid values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don&apos;t perform any action on the findings.</summary>
+    /// <summary>Action to perform on findings that meet the filter criteria (finding_criteria). Valid values are ARCHIVE, to suppress (automatically archive) the findings, and NOOP, to not perform any action on the findings.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>A custom description of the filter. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the filter. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The criteria to use to filter findings.</summary>
+    /// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FindingsFilterSpecInitProviderFindingCriteria? FindingCriteria { get; set; }
 
-    /// <summary>A custom name for the filter. The name must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the filter. Must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
@@ -319,45 +319,45 @@ public partial class V1beta1FindingsFilterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterStatusAtProviderFindingCriteriaCriterion
 {
-    /// <summary>The value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("eq")]
     public IList<string>? Eq { get; set; }
 
-    /// <summary>The value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
+    /// <summary>Value for the property exclusively matches (equals an exact match for) all the specified values. If you specify multiple values, Amazon Macie uses AND logic to join the values.</summary>
     [JsonPropertyName("eqExactMatch")]
     public IList<string>? EqExactMatch { get; set; }
 
-    /// <summary>The name of the field to be evaluated.</summary>
+    /// <summary>Name of the field to be evaluated.</summary>
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>The value for the property is greater than the specified value.</summary>
+    /// <summary>Value for the property is greater than the specified value.</summary>
     [JsonPropertyName("gt")]
     public string? Gt { get; set; }
 
-    /// <summary>The value for the property is greater than or equal to the specified value.</summary>
+    /// <summary>Value for the property is greater than or equal to the specified value.</summary>
     [JsonPropertyName("gte")]
     public string? Gte { get; set; }
 
-    /// <summary>The value for the property is less than the specified value.</summary>
+    /// <summary>Value for the property is less than the specified value.</summary>
     [JsonPropertyName("lt")]
     public string? Lt { get; set; }
 
-    /// <summary>The value for the property is less than or equal to the specified value.</summary>
+    /// <summary>Value for the property is less than or equal to the specified value.</summary>
     [JsonPropertyName("lte")]
     public string? Lte { get; set; }
 
-    /// <summary>The value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
+    /// <summary>Value for the property doesn&apos;t match (doesn&apos;t equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.</summary>
     [JsonPropertyName("neq")]
     public IList<string>? Neq { get; set; }
 }
 
-/// <summary>The criteria to use to filter findings.</summary>
+/// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterStatusAtProviderFindingCriteria
 {
-    /// <summary>A condition that specifies the property, operator, and one or more values to use to filter the results.  (documented below)</summary>
+    /// <summary>Condition that specifies the property, operator, and one or more values to use to filter the results. See criterion Block for details.</summary>
     [JsonPropertyName("criterion")]
     public IList<V1beta1FindingsFilterStatusAtProviderFindingCriteriaCriterion>? Criterion { get; set; }
 }
@@ -366,7 +366,7 @@ public partial class V1beta1FindingsFilterStatusAtProviderFindingCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingsFilterStatusAtProvider
 {
-    /// <summary>The action to perform on findings that meet the filter criteria (finding_criteria). Valid values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don&apos;t perform any action on the findings.</summary>
+    /// <summary>Action to perform on findings that meet the filter criteria (finding_criteria). Valid values are ARCHIVE, to suppress (automatically archive) the findings, and NOOP, to not perform any action on the findings.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -374,23 +374,23 @@ public partial class V1beta1FindingsFilterStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A custom description of the filter. The description can contain as many as 512 characters.</summary>
+    /// <summary>Custom description of the filter. Can contain as many as 512 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The criteria to use to filter findings.</summary>
+    /// <summary>Criteria to use to filter findings. See finding_criteria Block for details.</summary>
     [JsonPropertyName("findingCriteria")]
     public V1beta1FindingsFilterStatusAtProviderFindingCriteria? FindingCriteria { get; set; }
 
-    /// <summary>The unique identifier (ID) of the macie Findings Filter.</summary>
+    /// <summary>Unique identifier (ID) of the Macie Findings Filter.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A custom name for the filter. The name must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
+    /// <summary>Custom name for the filter. Must contain at least 3 characters and can contain as many as 64 characters. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
+    /// <summary>Position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
@@ -405,7 +405,7 @@ public partial class V1beta1FindingsFilterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

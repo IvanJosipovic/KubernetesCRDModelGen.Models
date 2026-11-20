@@ -207,11 +207,11 @@ public partial class V1beta1ListenerSpecForProviderAcceleratorArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProviderPortRange
 {
-    /// <summary>The first port in the range of ports, inclusive.</summary>
+    /// <summary>First port in the range of ports, inclusive.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
-    /// <summary>The last port in the range of ports, inclusive.</summary>
+    /// <summary>Last port in the range of ports, inclusive.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -236,11 +236,11 @@ public partial class V1beta1ListenerSpecForProvider
     [JsonPropertyName("clientAffinity")]
     public string? ClientAffinity { get; set; }
 
-    /// <summary>The list of port ranges for the connections from clients to the accelerator. Fields documented below.</summary>
+    /// <summary>Port ranges for the connections from clients to the accelerator. See port_range below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1ListenerSpecForProviderPortRange>? PortRange { get; set; }
 
-    /// <summary>The protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
+    /// <summary>Protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
@@ -396,11 +396,11 @@ public partial class V1beta1ListenerSpecInitProviderAcceleratorArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProviderPortRange
 {
-    /// <summary>The first port in the range of ports, inclusive.</summary>
+    /// <summary>First port in the range of ports, inclusive.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
-    /// <summary>The last port in the range of ports, inclusive.</summary>
+    /// <summary>Last port in the range of ports, inclusive.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -437,11 +437,11 @@ public partial class V1beta1ListenerSpecInitProvider
     [JsonPropertyName("clientAffinity")]
     public string? ClientAffinity { get; set; }
 
-    /// <summary>The list of port ranges for the connections from clients to the accelerator. Fields documented below.</summary>
+    /// <summary>Port ranges for the connections from clients to the accelerator. See port_range below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1ListenerSpecInitProviderPortRange>? PortRange { get; set; }
 
-    /// <summary>The protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
+    /// <summary>Protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
@@ -633,11 +633,11 @@ public partial class V1beta1ListenerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProviderPortRange
 {
-    /// <summary>The first port in the range of ports, inclusive.</summary>
+    /// <summary>First port in the range of ports, inclusive.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
-    /// <summary>The last port in the range of ports, inclusive.</summary>
+    /// <summary>Last port in the range of ports, inclusive.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -662,11 +662,11 @@ public partial class V1beta1ListenerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The list of port ranges for the connections from clients to the accelerator. Fields documented below.</summary>
+    /// <summary>Port ranges for the connections from clients to the accelerator. See port_range below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1ListenerStatusAtProviderPortRange>? PortRange { get; set; }
 
-    /// <summary>The protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
+    /// <summary>Protocol for the connections from clients to the accelerator. Valid values are TCP, UDP.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }

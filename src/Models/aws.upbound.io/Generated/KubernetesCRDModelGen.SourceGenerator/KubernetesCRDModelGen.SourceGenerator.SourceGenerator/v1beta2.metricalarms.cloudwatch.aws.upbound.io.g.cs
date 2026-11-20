@@ -231,6 +231,26 @@ public partial class V1beta2MetricAlarmSpecForProviderEvaluationCriteria
     public V1beta2MetricAlarmSpecForProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
 }
 
+/// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmSpecForProviderEvaluationWindowWallClockWindow
+{
+    /// <summary>Time zone to align the window to. Accepts an IANA time zone name (for example America/New_York), a fixed UTC offset (for example +05:30), or an offset-prefixed identifier (for example UTC+05:30). The offset must be a multiple of 5 minutes. Defaults to UTC. Only IANA time zone names observe daylight saving time.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmSpecForProviderEvaluationWindow
+{
+    /// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+    [JsonPropertyName("wallClockWindow")]
+    public V1beta2MetricAlarmSpecForProviderEvaluationWindowWallClockWindow? WallClockWindow { get; set; }
+}
+
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -533,6 +553,10 @@ public partial class V1beta2MetricAlarmSpecForProvider
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
 
+    /// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+    [JsonPropertyName("evaluationWindow")]
+    public V1beta2MetricAlarmSpecForProviderEvaluationWindow? EvaluationWindow { get; set; }
+
     /// <summary>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.</summary>
     [JsonPropertyName("extendedStatistic")]
     public string? ExtendedStatistic { get; set; }
@@ -790,6 +814,26 @@ public partial class V1beta2MetricAlarmSpecInitProviderEvaluationCriteria
     /// <summary>The PromQL criteria for the alarm evaluation.</summary>
     [JsonPropertyName("promqlCriteria")]
     public V1beta2MetricAlarmSpecInitProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
+}
+
+/// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmSpecInitProviderEvaluationWindowWallClockWindow
+{
+    /// <summary>Time zone to align the window to. Accepts an IANA time zone name (for example America/New_York), a fixed UTC offset (for example +05:30), or an offset-prefixed identifier (for example UTC+05:30). The offset must be a multiple of 5 minutes. Defaults to UTC. Only IANA time zone names observe daylight saving time.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmSpecInitProviderEvaluationWindow
+{
+    /// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+    [JsonPropertyName("wallClockWindow")]
+    public V1beta2MetricAlarmSpecInitProviderEvaluationWindowWallClockWindow? WallClockWindow { get; set; }
 }
 
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
@@ -1106,6 +1150,10 @@ public partial class V1beta2MetricAlarmSpecInitProvider
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
 
+    /// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+    [JsonPropertyName("evaluationWindow")]
+    public V1beta2MetricAlarmSpecInitProviderEvaluationWindow? EvaluationWindow { get; set; }
+
     /// <summary>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.</summary>
     [JsonPropertyName("extendedStatistic")]
     public string? ExtendedStatistic { get; set; }
@@ -1394,6 +1442,26 @@ public partial class V1beta2MetricAlarmStatusAtProviderEvaluationCriteria
     public V1beta2MetricAlarmStatusAtProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
 }
 
+/// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmStatusAtProviderEvaluationWindowWallClockWindow
+{
+    /// <summary>Time zone to align the window to. Accepts an IANA time zone name (for example America/New_York), a fixed UTC offset (for example +05:30), or an offset-prefixed identifier (for example UTC+05:30). The offset must be a multiple of 5 minutes. Defaults to UTC. Only IANA time zone names observe daylight saving time.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2MetricAlarmStatusAtProviderEvaluationWindow
+{
+    /// <summary>Aligns the evaluated range to fixed clock boundaries that match the alarm&apos;s period (for example the top of the hour, midnight, or the start of the calendar week), instead of the default rolling sliding window. Only alarms with a period of 60, 300, 3600, 86400, or 604800 seconds support a wall clock window. See wall_clock_window below.</summary>
+    [JsonPropertyName("wallClockWindow")]
+    public V1beta2MetricAlarmStatusAtProviderEvaluationWindowWallClockWindow? WallClockWindow { get; set; }
+}
+
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1544,6 +1612,10 @@ public partial class V1beta2MetricAlarmStatusAtProvider
     /// <summary>The number of periods over which data is compared to the specified threshold. Required for traditional metric alarms.</summary>
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
+
+    /// <summary>Configures the alarm to use a wall clock evaluation window instead of the default sliding window. Not supported for alarms that use evaluation_criteria. See evaluation_window below.</summary>
+    [JsonPropertyName("evaluationWindow")]
+    public V1beta2MetricAlarmStatusAtProviderEvaluationWindow? EvaluationWindow { get; set; }
 
     /// <summary>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.</summary>
     [JsonPropertyName("extendedStatistic")]

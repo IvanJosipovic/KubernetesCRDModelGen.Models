@@ -207,7 +207,7 @@ public partial class V1beta1SubnetGroupSpecForProviderSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupSpecForProvider
 {
-    /// <summary>The description of the docDB subnet group.</summary>
+    /// <summary>The description of the DocDB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -398,7 +398,7 @@ public partial class V1beta1SubnetGroupSpecInitProviderSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupSpecInitProvider
 {
-    /// <summary>The description of the docDB subnet group.</summary>
+    /// <summary>The description of the DocDB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -606,15 +606,15 @@ public partial class V1beta1SubnetGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupStatusAtProvider
 {
-    /// <summary>The ARN of the docDB subnet group.</summary>
+    /// <summary>The ARN of the DocDB subnet group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The description of the docDB subnet group.</summary>
+    /// <summary>The description of the DocDB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The docDB subnet group name.</summary>
+    /// <summary>The DocDB subnet group name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -629,7 +629,7 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The network type of the docDB subnet group (IPV4 or DUAL).</summary>
+    /// <summary>The network type of the DocDB subnet group (IPV4 or DUAL).</summary>
     [JsonPropertyName("supportedNetworkTypes")]
     public IList<string>? SupportedNetworkTypes { get; set; }
 

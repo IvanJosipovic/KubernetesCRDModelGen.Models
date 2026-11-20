@@ -606,7 +606,7 @@ public partial class V1beta1SubnetGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupStatusAtProvider
 {
-    /// <summary>The ARN of the subnet group.</summary>
+    /// <summary>ARN of the subnet group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -614,7 +614,7 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the subnet group.</summary>
+    /// <summary>Name of the subnet group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -633,11 +633,11 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The VPC in which the subnet group exists.</summary>
+    /// <summary>VPC in which the subnet group exists.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

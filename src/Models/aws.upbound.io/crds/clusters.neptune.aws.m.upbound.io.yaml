@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: clusters.neptune.aws.m.upbound.io
 spec:
   group: neptune.aws.m.upbound.io
@@ -79,7 +79,7 @@ spec:
                     description: Value that indicates whether the DB cluster has deletion protection enabled.The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
                     type: boolean
                   enableCloudwatchLogsExports:
-                    description: List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.
+                    description: List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.
                     items:
                       type: string
                     type: array
@@ -436,6 +436,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  networkType:
+                    description: 'Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.'
+                    type: string
                   port:
                     description: Port on which the Neptune accepts connections. Default is 8182.
                     type: number
@@ -765,7 +768,7 @@ spec:
                     description: Value that indicates whether the DB cluster has deletion protection enabled.The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
                     type: boolean
                   enableCloudwatchLogsExports:
-                    description: List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.
+                    description: List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.
                     items:
                       type: string
                     type: array
@@ -1122,6 +1125,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  networkType:
+                    description: 'Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.'
+                    type: string
                   port:
                     description: Port on which the Neptune accepts connections. Default is 8182.
                     type: number
@@ -1506,7 +1512,7 @@ spec:
                     description: Value that indicates whether the DB cluster has deletion protection enabled.The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
                     type: boolean
                   enableCloudwatchLogsExports:
-                    description: List of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports audit and slowquery.
+                    description: List of the log types this DB cluster is configured to export to CloudWatch Logs. Currently only supports audit and slowquery.
                     items:
                       type: string
                     type: array
@@ -1552,6 +1558,9 @@ spec:
                     type: string
                   neptuneSubnetGroupName:
                     description: Neptune subnet group to associate with this Neptune instance.
+                    type: string
+                  networkType:
+                    description: 'Network type of the Neptune cluster. Valid values: IPV4, DUAL. Default: IPV4. Specifying DUAL enables dual-stack IPv4/IPv6 connectivity. The Neptune DB subnet group associated with the cluster must be backed by IPv6-capable subnets. See the Neptune dual-stack documentation for prerequisites.'
                     type: string
                   port:
                     description: Port on which the Neptune accepts connections. Default is 8182.

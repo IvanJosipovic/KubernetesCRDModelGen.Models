@@ -350,15 +350,12 @@ public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsRo
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The CloudWatch log stream options to monitor application errors.
-/// See CloudWatch Logging Options below for more details.
-/// </summary>
+/// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions
 {
-    /// <summary>The ARN of the CloudWatch Log Stream.</summary>
+    /// <summary>ARN of the CloudWatch Log Stream.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 
@@ -370,7 +367,7 @@ public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions
     [JsonPropertyName("logStreamArnSelector")]
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsLogStreamArnSelector? LogStreamArnSelector { get; set; }
 
-    /// <summary>The ARN of the IAM Role used to send application messages.</summary>
+    /// <summary>ARN of the IAM Role used to send application messages.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -383,19 +380,16 @@ public partial class V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptionsRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -694,15 +688,12 @@ public partial class V1beta2ApplicationSpecForProviderInputsKinesisStreamRoleArn
     public V1beta2ApplicationSpecForProviderInputsKinesisStreamRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -714,7 +705,7 @@ public partial class V1beta2ApplicationSpecForProviderInputsKinesisStream
     [JsonPropertyName("resourceArnSelector")]
     public V1beta2ApplicationSpecForProviderInputsKinesisStreamResourceArnSelector? ResourceArnSelector { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -727,42 +718,36 @@ public partial class V1beta2ApplicationSpecForProviderInputsKinesisStream
     public V1beta2ApplicationSpecForProviderInputsKinesisStreamRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The number of Parallel in-application streams to create.
-/// See Parallelism below for more details.
-/// </summary>
+/// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsParallelism
 {
-    /// <summary>The Count of streams.</summary>
+    /// <summary>Count of streams.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+/// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsProcessingConfigurationLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Processing Configuration to transform records as they are received from the stream.
-/// See Processing Configuration below for more details.
-/// </summary>
+/// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsProcessingConfiguration
 {
-    /// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+    /// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationSpecForProviderInputsProcessingConfigurationLambda? Lambda { get; set; }
 }
@@ -771,7 +756,7 @@ public partial class V1beta2ApplicationSpecForProviderInputsProcessingConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -779,32 +764,26 @@ public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordColumns
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParametersJson
@@ -814,65 +793,44 @@ public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMa
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecForProviderInputsSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See inputs.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationSpecForProviderInputsSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecForProviderInputsSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -881,56 +839,41 @@ public partial class V1beta2ApplicationSpecForProviderInputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputsStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("startingPosition")]
     public string? StartingPosition { get; set; }
 }
 
-/// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+/// <summary>Input configuration of the application. See inputs Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderInputs
 {
-    /// <summary>
-    /// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationSpecForProviderInputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationSpecForProviderInputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Name Prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name Prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 
-    /// <summary>
-    /// The number of Parallel in-application streams to create.
-    /// See Parallelism below for more details.
-    /// </summary>
+    /// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
     [JsonPropertyName("parallelism")]
     public V1beta2ApplicationSpecForProviderInputsParallelism? Parallelism { get; set; }
 
-    /// <summary>
-    /// The Processing Configuration to transform records as they are received from the stream.
-    /// See Processing Configuration below for more details.
-    /// </summary>
+    /// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta2ApplicationSpecForProviderInputsProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecForProviderInputsSchema? Schema { get; set; }
 
-    /// <summary>
-    /// The point at which the application starts processing records from the streaming source.
-    /// See Starting Position Configuration below for more details.
-    /// </summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See inputs.starting_position_configuration Block below for details.</summary>
     [JsonPropertyName("startingPositionConfiguration")]
     public IList<V1beta2ApplicationSpecForProviderInputsStartingPositionConfiguration>? StartingPositionConfiguration { get; set; }
 }
@@ -1229,15 +1172,12 @@ public partial class V1beta2ApplicationSpecForProviderOutputsKinesisFirehoseRole
     public V1beta2ApplicationSpecForProviderOutputsKinesisFirehoseRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderOutputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -1249,7 +1189,7 @@ public partial class V1beta2ApplicationSpecForProviderOutputsKinesisFirehose
     [JsonPropertyName("resourceArnSelector")]
     public V1beta2ApplicationSpecForProviderOutputsKinesisFirehoseResourceArnSelector? ResourceArnSelector { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1262,43 +1202,40 @@ public partial class V1beta2ApplicationSpecForProviderOutputsKinesisFirehose
     public V1beta2ApplicationSpecForProviderOutputsKinesisFirehoseRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderOutputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+/// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderOutputsLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+/// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderOutputsSchema
 {
-    /// <summary>The Format Type of the records on the output stream. Can be CSV or JSON.</summary>
+    /// <summary>Format Type of the records on the output stream. Can be CSV or JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
@@ -1307,47 +1244,41 @@ public partial class V1beta2ApplicationSpecForProviderOutputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderOutputs
 {
-    /// <summary>
-    /// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationSpecForProviderOutputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationSpecForProviderOutputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+    /// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationSpecForProviderOutputsLambda? Lambda { get; set; }
 
-    /// <summary>The Name of the in-application stream.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+    /// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecForProviderOutputsSchema? Schema { get; set; }
 }
 
-/// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+/// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesS3
 {
-    /// <summary>The S3 Bucket ARN.</summary>
+    /// <summary>S3 Bucket ARN.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The File Key name containing reference data.</summary>
+    /// <summary>File Key name containing reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>IAM Role ARN to read the data.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -1356,7 +1287,7 @@ public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -1364,32 +1295,26 @@ public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchema
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson
@@ -1399,86 +1324,62 @@ public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchema
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSourcesSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See reference_data_sources.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesSchemaRecordFormat? RecordFormat { get; set; }
 }
 
-/// <summary>
-/// An S3 Reference Data Source for the application.
-/// See Reference Data Sources below for more details.
-/// </summary>
+/// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderReferenceDataSources
 {
-    /// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+    /// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesS3? S3 { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecForProviderReferenceDataSourcesSchema? Schema { get; set; }
 
-    /// <summary>The in-application Table Name.</summary>
+    /// <summary>In-application Table Name.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
@@ -1487,10 +1388,7 @@ public partial class V1beta2ApplicationSpecForProviderReferenceDataSources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProvider
 {
-    /// <summary>
-    /// The CloudWatch log stream options to monitor application errors.
-    /// See CloudWatch Logging Options below for more details.
-    /// </summary>
+    /// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationSpecForProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -1502,18 +1400,15 @@ public partial class V1beta2ApplicationSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+    /// <summary>Input configuration of the application. See inputs Block below for details.</summary>
     [JsonPropertyName("inputs")]
     public V1beta2ApplicationSpecForProviderInputs? Inputs { get; set; }
 
-    /// <summary>Output destination configuration of the application. See Outputs below for more details.</summary>
+    /// <summary>Output destination configuration of the application. See outputs Block below for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta2ApplicationSpecForProviderOutputs>? Outputs { get; set; }
 
-    /// <summary>
-    /// An S3 Reference Data Source for the application.
-    /// See Reference Data Sources below for more details.
-    /// </summary>
+    /// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
     [JsonPropertyName("referenceDataSources")]
     public V1beta2ApplicationSpecForProviderReferenceDataSources? ReferenceDataSources { get; set; }
 
@@ -1524,10 +1419,7 @@ public partial class V1beta2ApplicationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured.
-    /// To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.
-    /// </summary>
+    /// <summary>Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured. To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.</summary>
     [JsonPropertyName("startApplication")]
     public bool? StartApplication { get; set; }
 
@@ -1830,15 +1722,12 @@ public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsR
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The CloudWatch log stream options to monitor application errors.
-/// See CloudWatch Logging Options below for more details.
-/// </summary>
+/// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions
 {
-    /// <summary>The ARN of the CloudWatch Log Stream.</summary>
+    /// <summary>ARN of the CloudWatch Log Stream.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 
@@ -1850,7 +1739,7 @@ public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions
     [JsonPropertyName("logStreamArnSelector")]
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsLogStreamArnSelector? LogStreamArnSelector { get; set; }
 
-    /// <summary>The ARN of the IAM Role used to send application messages.</summary>
+    /// <summary>ARN of the IAM Role used to send application messages.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1863,19 +1752,16 @@ public partial class V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptionsRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2174,15 +2060,12 @@ public partial class V1beta2ApplicationSpecInitProviderInputsKinesisStreamRoleAr
     public V1beta2ApplicationSpecInitProviderInputsKinesisStreamRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -2194,7 +2077,7 @@ public partial class V1beta2ApplicationSpecInitProviderInputsKinesisStream
     [JsonPropertyName("resourceArnSelector")]
     public V1beta2ApplicationSpecInitProviderInputsKinesisStreamResourceArnSelector? ResourceArnSelector { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2207,42 +2090,36 @@ public partial class V1beta2ApplicationSpecInitProviderInputsKinesisStream
     public V1beta2ApplicationSpecInitProviderInputsKinesisStreamRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The number of Parallel in-application streams to create.
-/// See Parallelism below for more details.
-/// </summary>
+/// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsParallelism
 {
-    /// <summary>The Count of streams.</summary>
+    /// <summary>Count of streams.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+/// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsProcessingConfigurationLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Processing Configuration to transform records as they are received from the stream.
-/// See Processing Configuration below for more details.
-/// </summary>
+/// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsProcessingConfiguration
 {
-    /// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+    /// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationSpecInitProviderInputsProcessingConfigurationLambda? Lambda { get; set; }
 }
@@ -2251,7 +2128,7 @@ public partial class V1beta2ApplicationSpecInitProviderInputsProcessingConfigura
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -2259,32 +2136,26 @@ public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordColumns
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParametersJson
@@ -2294,65 +2165,44 @@ public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatM
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See inputs.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationSpecInitProviderInputsSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecInitProviderInputsSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -2361,56 +2211,41 @@ public partial class V1beta2ApplicationSpecInitProviderInputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputsStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("startingPosition")]
     public string? StartingPosition { get; set; }
 }
 
-/// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+/// <summary>Input configuration of the application. See inputs Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderInputs
 {
-    /// <summary>
-    /// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationSpecInitProviderInputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationSpecInitProviderInputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Name Prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name Prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 
-    /// <summary>
-    /// The number of Parallel in-application streams to create.
-    /// See Parallelism below for more details.
-    /// </summary>
+    /// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
     [JsonPropertyName("parallelism")]
     public V1beta2ApplicationSpecInitProviderInputsParallelism? Parallelism { get; set; }
 
-    /// <summary>
-    /// The Processing Configuration to transform records as they are received from the stream.
-    /// See Processing Configuration below for more details.
-    /// </summary>
+    /// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta2ApplicationSpecInitProviderInputsProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecInitProviderInputsSchema? Schema { get; set; }
 
-    /// <summary>
-    /// The point at which the application starts processing records from the streaming source.
-    /// See Starting Position Configuration below for more details.
-    /// </summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See inputs.starting_position_configuration Block below for details.</summary>
     [JsonPropertyName("startingPositionConfiguration")]
     public IList<V1beta2ApplicationSpecInitProviderInputsStartingPositionConfiguration>? StartingPositionConfiguration { get; set; }
 }
@@ -2709,15 +2544,12 @@ public partial class V1beta2ApplicationSpecInitProviderOutputsKinesisFirehoseRol
     public V1beta2ApplicationSpecInitProviderOutputsKinesisFirehoseRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderOutputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -2729,7 +2561,7 @@ public partial class V1beta2ApplicationSpecInitProviderOutputsKinesisFirehose
     [JsonPropertyName("resourceArnSelector")]
     public V1beta2ApplicationSpecInitProviderOutputsKinesisFirehoseResourceArnSelector? ResourceArnSelector { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2742,43 +2574,40 @@ public partial class V1beta2ApplicationSpecInitProviderOutputsKinesisFirehose
     public V1beta2ApplicationSpecInitProviderOutputsKinesisFirehoseRoleArnSelector? RoleArnSelector { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderOutputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+/// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderOutputsLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+/// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderOutputsSchema
 {
-    /// <summary>The Format Type of the records on the output stream. Can be CSV or JSON.</summary>
+    /// <summary>Format Type of the records on the output stream. Can be CSV or JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
@@ -2787,47 +2616,41 @@ public partial class V1beta2ApplicationSpecInitProviderOutputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderOutputs
 {
-    /// <summary>
-    /// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationSpecInitProviderOutputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationSpecInitProviderOutputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+    /// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationSpecInitProviderOutputsLambda? Lambda { get; set; }
 
-    /// <summary>The Name of the in-application stream.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+    /// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecInitProviderOutputsSchema? Schema { get; set; }
 }
 
-/// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+/// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesS3
 {
-    /// <summary>The S3 Bucket ARN.</summary>
+    /// <summary>S3 Bucket ARN.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The File Key name containing reference data.</summary>
+    /// <summary>File Key name containing reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>IAM Role ARN to read the data.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2836,7 +2659,7 @@ public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -2844,32 +2667,26 @@ public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchem
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson
@@ -2879,86 +2696,62 @@ public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchem
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See reference_data_sources.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchemaRecordFormat? RecordFormat { get; set; }
 }
 
-/// <summary>
-/// An S3 Reference Data Source for the application.
-/// See Reference Data Sources below for more details.
-/// </summary>
+/// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderReferenceDataSources
 {
-    /// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+    /// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesS3? S3 { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSourcesSchema? Schema { get; set; }
 
-    /// <summary>The in-application Table Name.</summary>
+    /// <summary>In-application Table Name.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
@@ -2979,10 +2772,7 @@ public partial class V1beta2ApplicationSpecInitProviderReferenceDataSources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProvider
 {
-    /// <summary>
-    /// The CloudWatch log stream options to monitor application errors.
-    /// See CloudWatch Logging Options below for more details.
-    /// </summary>
+    /// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationSpecInitProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -2994,25 +2784,19 @@ public partial class V1beta2ApplicationSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+    /// <summary>Input configuration of the application. See inputs Block below for details.</summary>
     [JsonPropertyName("inputs")]
     public V1beta2ApplicationSpecInitProviderInputs? Inputs { get; set; }
 
-    /// <summary>Output destination configuration of the application. See Outputs below for more details.</summary>
+    /// <summary>Output destination configuration of the application. See outputs Block below for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta2ApplicationSpecInitProviderOutputs>? Outputs { get; set; }
 
-    /// <summary>
-    /// An S3 Reference Data Source for the application.
-    /// See Reference Data Sources below for more details.
-    /// </summary>
+    /// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
     [JsonPropertyName("referenceDataSources")]
     public V1beta2ApplicationSpecInitProviderReferenceDataSources? ReferenceDataSources { get; set; }
 
-    /// <summary>
-    /// Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured.
-    /// To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.
-    /// </summary>
+    /// <summary>Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured. To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.</summary>
     [JsonPropertyName("startApplication")]
     public bool? StartApplication { get; set; }
 
@@ -3204,97 +2988,82 @@ public partial class V1beta2ApplicationSpec
     public V1beta2ApplicationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// The CloudWatch log stream options to monitor application errors.
-/// See CloudWatch Logging Options below for more details.
-/// </summary>
+/// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderCloudwatchLoggingOptions
 {
-    /// <summary>The ARN of the Kinesis Analytics Application.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the CloudWatch Log Stream.</summary>
+    /// <summary>ARN of the CloudWatch Log Stream.</summary>
     [JsonPropertyName("logStreamArn")]
     public string? LogStreamArn { get; set; }
 
-    /// <summary>The ARN of the IAM Role used to send application messages.</summary>
+    /// <summary>ARN of the IAM Role used to send application messages.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The number of Parallel in-application streams to create.
-/// See Parallelism below for more details.
-/// </summary>
+/// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsParallelism
 {
-    /// <summary>The Count of streams.</summary>
+    /// <summary>Count of streams.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
 }
 
-/// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+/// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsProcessingConfigurationLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Processing Configuration to transform records as they are received from the stream.
-/// See Processing Configuration below for more details.
-/// </summary>
+/// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsProcessingConfiguration
 {
-    /// <summary>The Lambda function configuration. See Lambda below for more details.</summary>
+    /// <summary>Lambda function configuration. See inputs.processing_configuration.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationStatusAtProviderInputsProcessingConfigurationLambda? Lambda { get; set; }
 }
@@ -3303,7 +3072,7 @@ public partial class V1beta2ApplicationStatusAtProviderInputsProcessingConfigura
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -3311,32 +3080,26 @@ public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordColumns
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParametersJson
@@ -3346,69 +3109,48 @@ public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatM
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See inputs.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See inputs.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See inputs.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The Format Type of the records on the output stream. Can be CSV or JSON.</summary>
+    /// <summary>Type of Record Format of the input streaming source.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See inputs.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationStatusAtProviderInputsSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See inputs.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationStatusAtProviderInputsSchemaRecordFormat? RecordFormat { get; set; }
 }
@@ -3417,121 +3159,101 @@ public partial class V1beta2ApplicationStatusAtProviderInputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputsStartingPositionConfiguration
 {
-    /// <summary>The starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
+    /// <summary>Starting position on the stream. Valid values: LAST_STOPPED_POINT, NOW, TRIM_HORIZON.</summary>
     [JsonPropertyName("startingPosition")]
     public string? StartingPosition { get; set; }
 }
 
-/// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+/// <summary>Input configuration of the application. See inputs Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderInputs
 {
-    /// <summary>The ARN of the Kinesis Analytics Application.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// The Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the streaming source. Conflicts with kinesis_stream. See inputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationStatusAtProviderInputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the streaming source. Conflicts with kinesis_firehose. See inputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationStatusAtProviderInputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Name Prefix to use when creating an in-application stream.</summary>
+    /// <summary>Name Prefix to use when creating an in-application stream.</summary>
     [JsonPropertyName("namePrefix")]
     public string? NamePrefix { get; set; }
 
-    /// <summary>
-    /// The number of Parallel in-application streams to create.
-    /// See Parallelism below for more details.
-    /// </summary>
+    /// <summary>Number of Parallel in-application streams to create. See inputs.parallelism Block below for details.</summary>
     [JsonPropertyName("parallelism")]
     public V1beta2ApplicationStatusAtProviderInputsParallelism? Parallelism { get; set; }
 
-    /// <summary>
-    /// The Processing Configuration to transform records as they are received from the stream.
-    /// See Processing Configuration below for more details.
-    /// </summary>
+    /// <summary>Processing Configuration to transform records as they are received from the stream. See inputs.processing_configuration Block below for details.</summary>
     [JsonPropertyName("processingConfiguration")]
     public V1beta2ApplicationStatusAtProviderInputsProcessingConfiguration? ProcessingConfiguration { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See inputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationStatusAtProviderInputsSchema? Schema { get; set; }
 
-    /// <summary>
-    /// The point at which the application starts processing records from the streaming source.
-    /// See Starting Position Configuration below for more details.
-    /// </summary>
+    /// <summary>Point at which the application starts processing records from the streaming source. See inputs.starting_position_configuration Block below for details.</summary>
     [JsonPropertyName("startingPositionConfiguration")]
     public IList<V1beta2ApplicationStatusAtProviderInputsStartingPositionConfiguration>? StartingPositionConfiguration { get; set; }
 
+    /// <summary>Names of the in-application streams created for the input.</summary>
     [JsonPropertyName("streamNames")]
     public IList<string>? StreamNames { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-/// See Kinesis Firehose below for more details.
-/// </summary>
+/// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderOutputsKinesisFirehose
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Firehose delivery stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>
-/// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-/// See Kinesis Stream below for more details.
-/// </summary>
+/// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderOutputsKinesisStream
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Kinesis Stream.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the stream.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+/// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderOutputsLambda
 {
-    /// <summary>The ARN of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>ARN of the IAM Role used to access the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
 
-/// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+/// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderOutputsSchema
 {
-    /// <summary>The Format Type of the records on the output stream. Can be CSV or JSON.</summary>
+    /// <summary>Format Type of the records on the output stream. Can be CSV or JSON.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
@@ -3540,51 +3262,45 @@ public partial class V1beta2ApplicationStatusAtProviderOutputsSchema
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderOutputs
 {
-    /// <summary>The ARN of the Kinesis Analytics Application.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// The Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream.
-    /// See Kinesis Firehose below for more details.
-    /// </summary>
+    /// <summary>Kinesis Firehose configuration for the destination stream. Conflicts with kinesis_stream. See outputs.kinesis_firehose Block below for details.</summary>
     [JsonPropertyName("kinesisFirehose")]
     public V1beta2ApplicationStatusAtProviderOutputsKinesisFirehose? KinesisFirehose { get; set; }
 
-    /// <summary>
-    /// The Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose.
-    /// See Kinesis Stream below for more details.
-    /// </summary>
+    /// <summary>Kinesis Stream configuration for the destination stream. Conflicts with kinesis_firehose. See outputs.kinesis_stream Block below for details.</summary>
     [JsonPropertyName("kinesisStream")]
     public V1beta2ApplicationStatusAtProviderOutputsKinesisStream? KinesisStream { get; set; }
 
-    /// <summary>The Lambda function destination. See Lambda below for more details.</summary>
+    /// <summary>Lambda function destination. See outputs.lambda Block below for details.</summary>
     [JsonPropertyName("lambda")]
     public V1beta2ApplicationStatusAtProviderOutputsLambda? Lambda { get; set; }
 
-    /// <summary>The Name of the in-application stream.</summary>
+    /// <summary>Name of the in-application stream.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Schema format of the data written to the destination. See Destination Schema below for more details.</summary>
+    /// <summary>Schema format of the data written to the destination. See outputs.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationStatusAtProviderOutputsSchema? Schema { get; set; }
 }
 
-/// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+/// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesS3
 {
-    /// <summary>The S3 Bucket ARN.</summary>
+    /// <summary>S3 Bucket ARN.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>The File Key name containing reference data.</summary>
+    /// <summary>File Key name containing reference data.</summary>
     [JsonPropertyName("fileKey")]
     public string? FileKey { get; set; }
 
-    /// <summary>The IAM Role ARN to read the data.</summary>
+    /// <summary>IAM Role ARN to read the data.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -3593,7 +3309,7 @@ public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordColumns
 {
-    /// <summary>The Mapping reference to the data element.</summary>
+    /// <summary>Mapping reference to the data element.</summary>
     [JsonPropertyName("mapping")]
     public string? Mapping { get; set; }
 
@@ -3601,32 +3317,26 @@ public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchem
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The SQL Type of the column.</summary>
+    /// <summary>SQL Type of the column.</summary>
     [JsonPropertyName("sqlType")]
     public string? SqlType { get; set; }
 }
 
-/// <summary>
-/// Mapping information when the record format uses delimiters.
-/// See CSV Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv
 {
-    /// <summary>The Column Delimiter.</summary>
+    /// <summary>Column Delimiter.</summary>
     [JsonPropertyName("recordColumnDelimiter")]
     public string? RecordColumnDelimiter { get; set; }
 
-    /// <summary>The Row Delimiter.</summary>
+    /// <summary>Row Delimiter.</summary>
     [JsonPropertyName("recordRowDelimiter")]
     public string? RecordRowDelimiter { get; set; }
 }
 
-/// <summary>
-/// Mapping information when JSON is the record format on the streaming source.
-/// See JSON Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson
@@ -3636,94 +3346,70 @@ public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchem
     public string? RecordRowPath { get; set; }
 }
 
-/// <summary>
-/// The Mapping Information for the record format.
-/// See Mapping Parameters below for more details.
-/// </summary>
+/// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParameters
 {
-    /// <summary>
-    /// Mapping information when the record format uses delimiters.
-    /// See CSV Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when the record format uses delimiters. See reference_data_sources.schema.record_format.mapping_parameters.csv Block below for details.</summary>
     [JsonPropertyName("csv")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParametersCsv? Csv { get; set; }
 
-    /// <summary>
-    /// Mapping information when JSON is the record format on the streaming source.
-    /// See JSON Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping information when JSON is the record format on the streaming source. See reference_data_sources.schema.record_format.mapping_parameters.json Block below for details.</summary>
     [JsonPropertyName("json")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParametersJson? Json { get; set; }
 }
 
-/// <summary>
-/// The Record Format and mapping information to schematize a record.
-/// See Record Format below for more details.
-/// </summary>
+/// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormat
 {
-    /// <summary>
-    /// The Mapping Information for the record format.
-    /// See Mapping Parameters below for more details.
-    /// </summary>
+    /// <summary>Mapping Information for the record format. See reference_data_sources.schema.record_format.mapping_parameters Block below for details.</summary>
     [JsonPropertyName("mappingParameters")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormatMappingParameters? MappingParameters { get; set; }
 
-    /// <summary>The Format Type of the records on the output stream. Can be CSV or JSON.</summary>
+    /// <summary>Type of Record Format of the reference data source.</summary>
     [JsonPropertyName("recordFormatType")]
     public string? RecordFormatType { get; set; }
 }
 
-/// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+/// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchema
 {
-    /// <summary>
-    /// The Record Column mapping for the streaming source data element.
-    /// See Record Columns below for more details.
-    /// </summary>
+    /// <summary>Record Column mapping for the streaming source data element. See reference_data_sources.schema.record_columns Block below for details.</summary>
     [JsonPropertyName("recordColumns")]
     public IList<V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordColumns>? RecordColumns { get; set; }
 
-    /// <summary>The Encoding of the record in the streaming source.</summary>
+    /// <summary>Encoding of the record in the streaming source.</summary>
     [JsonPropertyName("recordEncoding")]
     public string? RecordEncoding { get; set; }
 
-    /// <summary>
-    /// The Record Format and mapping information to schematize a record.
-    /// See Record Format below for more details.
-    /// </summary>
+    /// <summary>Record Format and mapping information to schematize a record. See reference_data_sources.schema.record_format Block below for details.</summary>
     [JsonPropertyName("recordFormat")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchemaRecordFormat? RecordFormat { get; set; }
 }
 
-/// <summary>
-/// An S3 Reference Data Source for the application.
-/// See Reference Data Sources below for more details.
-/// </summary>
+/// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderReferenceDataSources
 {
-    /// <summary>The ARN of the Kinesis Analytics Application.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The S3 configuration for the reference data source. See S3 Reference below for more details.</summary>
+    /// <summary>S3 configuration for the reference data source. See reference_data_sources.s3 Block below for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesS3? S3 { get; set; }
 
-    /// <summary>The Schema format of the data in the streaming source. See Source Schema below for more details.</summary>
+    /// <summary>Schema format of the data in the streaming source. See reference_data_sources.schema Block below for details.</summary>
     [JsonPropertyName("schema")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSourcesSchema? Schema { get; set; }
 
-    /// <summary>The in-application Table Name.</summary>
+    /// <summary>In-application Table Name.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 }
@@ -3732,14 +3418,11 @@ public partial class V1beta2ApplicationStatusAtProviderReferenceDataSources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProvider
 {
-    /// <summary>The ARN of the Kinesis Analytics Appliation.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>
-    /// The CloudWatch log stream options to monitor application errors.
-    /// See CloudWatch Logging Options below for more details.
-    /// </summary>
+    /// <summary>CloudWatch log stream options to monitor application errors. See cloudwatch_logging_options Block below for details.</summary>
     [JsonPropertyName("cloudwatchLoggingOptions")]
     public V1beta2ApplicationStatusAtProviderCloudwatchLoggingOptions? CloudwatchLoggingOptions { get; set; }
 
@@ -3747,7 +3430,7 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
-    /// <summary>The Timestamp when the application version was created.</summary>
+    /// <summary>Timestamp when the application version was created.</summary>
     [JsonPropertyName("createTimestamp")]
     public string? CreateTimestamp { get; set; }
 
@@ -3755,26 +3438,23 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ARN of the Kinesis Analytics Application.</summary>
+    /// <summary>ARN of the Kinesis Analytics Application.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Input configuration of the application. See Inputs below for more details.</summary>
+    /// <summary>Input configuration of the application. See inputs Block below for details.</summary>
     [JsonPropertyName("inputs")]
     public V1beta2ApplicationStatusAtProviderInputs? Inputs { get; set; }
 
-    /// <summary>The Timestamp when the application was last updated.</summary>
+    /// <summary>Timestamp when the application was last updated.</summary>
     [JsonPropertyName("lastUpdateTimestamp")]
     public string? LastUpdateTimestamp { get; set; }
 
-    /// <summary>Output destination configuration of the application. See Outputs below for more details.</summary>
+    /// <summary>Output destination configuration of the application. See outputs Block below for details.</summary>
     [JsonPropertyName("outputs")]
     public IList<V1beta2ApplicationStatusAtProviderOutputs>? Outputs { get; set; }
 
-    /// <summary>
-    /// An S3 Reference Data Source for the application.
-    /// See Reference Data Sources below for more details.
-    /// </summary>
+    /// <summary>S3 Reference Data Source for the application. See reference_data_sources Block below for details.</summary>
     [JsonPropertyName("referenceDataSources")]
     public V1beta2ApplicationStatusAtProviderReferenceDataSources? ReferenceDataSources { get; set; }
 
@@ -3785,14 +3465,11 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured.
-    /// To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.
-    /// </summary>
+    /// <summary>Whether to start or stop the Kinesis Analytics Application. To start an application, an input with a defined starting_position must be configured. To modify an application&apos;s starting position, first stop the application by setting start_application = false, then update starting_position and set start_application = true.</summary>
     [JsonPropertyName("startApplication")]
     public bool? StartApplication { get; set; }
 
-    /// <summary>The Status of the application.</summary>
+    /// <summary>Status of the application.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -3800,11 +3477,11 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Version of the application.</summary>
+    /// <summary>Version of the application.</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
 }

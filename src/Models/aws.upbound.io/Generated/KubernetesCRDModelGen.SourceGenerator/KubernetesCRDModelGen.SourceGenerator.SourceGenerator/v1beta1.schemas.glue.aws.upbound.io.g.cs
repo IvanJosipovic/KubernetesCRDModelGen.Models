@@ -207,15 +207,15 @@ public partial class V1beta1SchemaSpecForProviderRegistryArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchemaSpecForProvider
 {
-    /// <summary>The compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
+    /// <summary>Compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
     [JsonPropertyName("compatibility")]
     public string? Compatibility { get; set; }
 
-    /// <summary>The data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
+    /// <summary>Data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
     [JsonPropertyName("dataFormat")]
     public string? DataFormat { get; set; }
 
-    /// <summary>A description of the schema.</summary>
+    /// <summary>Description of the schema.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -226,7 +226,7 @@ public partial class V1beta1SchemaSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the Glue Registry to create the schema in.</summary>
+    /// <summary>ARN of the Glue Registry to create the schema in.</summary>
     [JsonPropertyName("registryArn")]
     public string? RegistryArn { get; set; }
 
@@ -238,11 +238,11 @@ public partial class V1beta1SchemaSpecForProvider
     [JsonPropertyName("registryArnSelector")]
     public V1beta1SchemaSpecForProviderRegistryArnSelector? RegistryArnSelector { get; set; }
 
-    /// <summary>The schema definition using the data_format setting for schema_name.</summary>
+    /// <summary>Schema definition using the data_format setting for schema_name.</summary>
     [JsonPropertyName("schemaDefinition")]
     public string? SchemaDefinition { get; set; }
 
-    /// <summary>The Name of the schema.</summary>
+    /// <summary>Name of the schema.</summary>
     [JsonPropertyName("schemaName")]
     public string? SchemaName { get; set; }
 
@@ -414,19 +414,19 @@ public partial class V1beta1SchemaSpecInitProviderRegistryArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchemaSpecInitProvider
 {
-    /// <summary>The compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
+    /// <summary>Compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
     [JsonPropertyName("compatibility")]
     public string? Compatibility { get; set; }
 
-    /// <summary>The data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
+    /// <summary>Data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
     [JsonPropertyName("dataFormat")]
     public string? DataFormat { get; set; }
 
-    /// <summary>A description of the schema.</summary>
+    /// <summary>Description of the schema.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The ARN of the Glue Registry to create the schema in.</summary>
+    /// <summary>ARN of the Glue Registry to create the schema in.</summary>
     [JsonPropertyName("registryArn")]
     public string? RegistryArn { get; set; }
 
@@ -438,11 +438,11 @@ public partial class V1beta1SchemaSpecInitProvider
     [JsonPropertyName("registryArnSelector")]
     public V1beta1SchemaSpecInitProviderRegistryArnSelector? RegistryArnSelector { get; set; }
 
-    /// <summary>The schema definition using the data_format setting for schema_name.</summary>
+    /// <summary>Schema definition using the data_format setting for schema_name.</summary>
     [JsonPropertyName("schemaDefinition")]
     public string? SchemaDefinition { get; set; }
 
-    /// <summary>The Name of the schema.</summary>
+    /// <summary>Name of the schema.</summary>
     [JsonPropertyName("schemaName")]
     public string? SchemaName { get; set; }
 
@@ -642,15 +642,15 @@ public partial class V1beta1SchemaStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
+    /// <summary>Compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.</summary>
     [JsonPropertyName("compatibility")]
     public string? Compatibility { get; set; }
 
-    /// <summary>The data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
+    /// <summary>Data format of the schema definition. Valid values are AVRO, JSON and PROTOBUF.</summary>
     [JsonPropertyName("dataFormat")]
     public string? DataFormat { get; set; }
 
-    /// <summary>A description of the schema.</summary>
+    /// <summary>Description of the schema.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -658,11 +658,11 @@ public partial class V1beta1SchemaStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The latest version of the schema associated with the returned schema definition.</summary>
+    /// <summary>Latest version of the schema associated with the returned schema definition.</summary>
     [JsonPropertyName("latestSchemaVersion")]
     public double? LatestSchemaVersion { get; set; }
 
-    /// <summary>The next version of the schema associated with the returned schema definition.</summary>
+    /// <summary>Next version of the schema associated with the returned schema definition.</summary>
     [JsonPropertyName("nextSchemaVersion")]
     public double? NextSchemaVersion { get; set; }
 
@@ -673,23 +673,23 @@ public partial class V1beta1SchemaStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the Glue Registry to create the schema in.</summary>
+    /// <summary>ARN of the Glue Registry to create the schema in.</summary>
     [JsonPropertyName("registryArn")]
     public string? RegistryArn { get; set; }
 
-    /// <summary>The name of the Glue Registry.</summary>
+    /// <summary>Name of the Glue Registry.</summary>
     [JsonPropertyName("registryName")]
     public string? RegistryName { get; set; }
 
-    /// <summary>The version number of the checkpoint (the last time the compatibility mode was changed).</summary>
+    /// <summary>Version number of the checkpoint (the last time the compatibility mode was changed).</summary>
     [JsonPropertyName("schemaCheckpoint")]
     public double? SchemaCheckpoint { get; set; }
 
-    /// <summary>The schema definition using the data_format setting for schema_name.</summary>
+    /// <summary>Schema definition using the data_format setting for schema_name.</summary>
     [JsonPropertyName("schemaDefinition")]
     public string? SchemaDefinition { get; set; }
 
-    /// <summary>The Name of the schema.</summary>
+    /// <summary>Name of the schema.</summary>
     [JsonPropertyName("schemaName")]
     public string? SchemaName { get; set; }
 
@@ -697,7 +697,7 @@ public partial class V1beta1SchemaStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

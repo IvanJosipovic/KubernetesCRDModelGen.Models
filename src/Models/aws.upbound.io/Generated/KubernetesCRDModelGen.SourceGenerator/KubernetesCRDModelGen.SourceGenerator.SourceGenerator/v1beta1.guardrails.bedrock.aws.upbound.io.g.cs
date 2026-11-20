@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.upbound.io;
-/// <summary>Guardrail is the Schema for the Guardrails API.</summary>
+/// <summary>Guardrail is the Schema for the Guardrails API. Manages an Amazon Bedrock Guardrail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -64,7 +64,7 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersCo
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on input.</summary>
+    /// <summary>Whether to enable guardrail evaluation on input.</summary>
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
@@ -80,7 +80,7 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersCo
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on output.</summary>
+    /// <summary>Whether to enable guardrail evaluation on output.</summary>
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
@@ -92,34 +92,31 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersCo
     [JsonPropertyName("outputStrength")]
     public string? OutputStrength { get; set; }
 
-    /// <summary>Type of filter in content policy. Valid Values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
+    /// <summary>Type of filter in content policy. Valid values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
 
-/// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+/// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContentPolicyConfig
 {
-    /// <summary>
-    /// Set of content filter configs in content policy.
-    /// See Filters Config for more information.
-    /// </summary>
+    /// <summary>Set of content filter configs in content policy. See content_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 
-    /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailSpecForProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
@@ -128,26 +125,26 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfigFiltersConfig
 {
-    /// <summary>The threshold for this filter.</summary>
+    /// <summary>Threshold for this filter.</summary>
     [JsonPropertyName("threshold")]
     public double? Threshold { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Type of contextual grounding filter.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+/// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfig
 {
-    /// <summary>One or more blocks defining contextual grounding filter configs. See Contextual Grounding Filters Config for more information.</summary>
+    /// <summary>One or more blocks defining contextual grounding filter configs. See contextual_grounding_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 }
 
-/// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+/// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderCrossRegionConfig
@@ -328,7 +325,7 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Currently supported PII entities.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -341,11 +338,11 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>Description of the guardrail or its version.</summary>
+    /// <summary>Regex description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -353,11 +350,11 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -365,31 +362,31 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The regex pattern.</summary>
+    /// <summary>Regex pattern.</summary>
     [JsonPropertyName("pattern")]
     public string? Pattern { get; set; }
 }
 
-/// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+/// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfig
 {
-    /// <summary>List of entities. See PII Entities Config for more information.</summary>
+    /// <summary>List of entities. See pii_entities_config Block for more information.</summary>
     [JsonPropertyName("piiEntitiesConfig")]
     public IList<V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfigPiiEntitiesConfig>? PiiEntitiesConfig { get; set; }
 
-    /// <summary>List of regex. See Regexes Config for more information.</summary>
+    /// <summary>List of regex. See regexes_config Block for more information.</summary>
     [JsonPropertyName("regexesConfig")]
     public IList<V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfigRegexesConfig>? RegexesConfig { get; set; }
 }
 
-/// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
@@ -406,25 +403,25 @@ public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTopicsConfi
     [JsonPropertyName("examples")]
     public IList<string>? Examples { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+/// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfig
 {
-    /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailSpecForProviderTopicPolicyConfigTierConfig? TierConfig { get; set; }
 
-    /// <summary>List of topic configs in topic policy. See Topics Config for more information.</summary>
+    /// <summary>List of topic configs in topic policy. See topics_config Block for more information.</summary>
     [JsonPropertyName("topicsConfig")]
     public IList<V1beta1GuardrailSpecForProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
@@ -433,7 +430,7 @@ public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordListsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -441,7 +438,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordL
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -449,7 +446,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordL
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -458,7 +455,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -466,7 +463,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -474,21 +471,21 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The custom word text.</summary>
+    /// <summary>Custom word text.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+/// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfig
 {
-    /// <summary>A config for the list of managed words. See Managed Word Lists Config for more information.</summary>
+    /// <summary>Config for the list of managed words. See managed_word_lists_config Block for more information.</summary>
     [JsonPropertyName("managedWordListsConfig")]
     public IList<V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordListsConfig>? ManagedWordListsConfig { get; set; }
 
-    /// <summary>List of custom word configs. See Words Config for more information.</summary>
+    /// <summary>List of custom word configs. See words_config Block for more information.</summary>
     [JsonPropertyName("wordsConfig")]
     public IList<V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig>? WordsConfig { get; set; }
 }
@@ -505,15 +502,15 @@ public partial class V1beta1GuardrailSpecForProvider
     [JsonPropertyName("blockedOutputsMessaging")]
     public string? BlockedOutputsMessaging { get; set; }
 
-    /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+    /// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
     [JsonPropertyName("contentPolicyConfig")]
     public V1beta1GuardrailSpecForProviderContentPolicyConfig? ContentPolicyConfig { get; set; }
 
-    /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+    /// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
     [JsonPropertyName("contextualGroundingPolicyConfig")]
     public V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfig? ContextualGroundingPolicyConfig { get; set; }
 
-    /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+    /// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
     [JsonPropertyName("crossRegionConfig")]
     public V1beta1GuardrailSpecForProviderCrossRegionConfig? CrossRegionConfig { get; set; }
 
@@ -521,7 +518,7 @@ public partial class V1beta1GuardrailSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The KMS key with which the guardrail was encrypted at rest.</summary>
+    /// <summary>KMS key with which the guardrail was encrypted at rest.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -544,7 +541,7 @@ public partial class V1beta1GuardrailSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+    /// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
     [JsonPropertyName("sensitiveInformationPolicyConfig")]
     public V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfig? SensitiveInformationPolicyConfig { get; set; }
 
@@ -552,11 +549,11 @@ public partial class V1beta1GuardrailSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+    /// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
     [JsonPropertyName("topicPolicyConfig")]
     public V1beta1GuardrailSpecForProviderTopicPolicyConfig? TopicPolicyConfig { get; set; }
 
-    /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+    /// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
     [JsonPropertyName("wordPolicyConfig")]
     public V1beta1GuardrailSpecForProviderWordPolicyConfig? WordPolicyConfig { get; set; }
 }
@@ -569,7 +566,7 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersC
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on input.</summary>
+    /// <summary>Whether to enable guardrail evaluation on input.</summary>
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
@@ -585,7 +582,7 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersC
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on output.</summary>
+    /// <summary>Whether to enable guardrail evaluation on output.</summary>
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
@@ -597,34 +594,31 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersC
     [JsonPropertyName("outputStrength")]
     public string? OutputStrength { get; set; }
 
-    /// <summary>Type of filter in content policy. Valid Values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
+    /// <summary>Type of filter in content policy. Valid values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
 
-/// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+/// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfig
 {
-    /// <summary>
-    /// Set of content filter configs in content policy.
-    /// See Filters Config for more information.
-    /// </summary>
+    /// <summary>Set of content filter configs in content policy. See content_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 
-    /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailSpecInitProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
@@ -633,26 +627,26 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfigFiltersConfig
 {
-    /// <summary>The threshold for this filter.</summary>
+    /// <summary>Threshold for this filter.</summary>
     [JsonPropertyName("threshold")]
     public double? Threshold { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Type of contextual grounding filter.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+/// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfig
 {
-    /// <summary>One or more blocks defining contextual grounding filter configs. See Contextual Grounding Filters Config for more information.</summary>
+    /// <summary>One or more blocks defining contextual grounding filter configs. See contextual_grounding_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 }
 
-/// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+/// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderCrossRegionConfig
@@ -833,7 +827,7 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Currently supported PII entities.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -846,11 +840,11 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>Description of the guardrail or its version.</summary>
+    /// <summary>Regex description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -858,11 +852,11 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -870,31 +864,31 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The regex pattern.</summary>
+    /// <summary>Regex pattern.</summary>
     [JsonPropertyName("pattern")]
     public string? Pattern { get; set; }
 }
 
-/// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+/// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfig
 {
-    /// <summary>List of entities. See PII Entities Config for more information.</summary>
+    /// <summary>List of entities. See pii_entities_config Block for more information.</summary>
     [JsonPropertyName("piiEntitiesConfig")]
     public IList<V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfigPiiEntitiesConfig>? PiiEntitiesConfig { get; set; }
 
-    /// <summary>List of regex. See Regexes Config for more information.</summary>
+    /// <summary>List of regex. See regexes_config Block for more information.</summary>
     [JsonPropertyName("regexesConfig")]
     public IList<V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfigRegexesConfig>? RegexesConfig { get; set; }
 }
 
-/// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
@@ -911,25 +905,25 @@ public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTopicsConf
     [JsonPropertyName("examples")]
     public IList<string>? Examples { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+/// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfig
 {
-    /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailSpecInitProviderTopicPolicyConfigTierConfig? TierConfig { get; set; }
 
-    /// <summary>List of topic configs in topic policy. See Topics Config for more information.</summary>
+    /// <summary>List of topic configs in topic policy. See topics_config Block for more information.</summary>
     [JsonPropertyName("topicsConfig")]
     public IList<V1beta1GuardrailSpecInitProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
@@ -938,7 +932,7 @@ public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWordListsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -946,7 +940,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWord
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -954,7 +948,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWord
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -963,7 +957,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWord
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -971,7 +965,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -979,21 +973,21 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The custom word text.</summary>
+    /// <summary>Custom word text.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+/// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfig
 {
-    /// <summary>A config for the list of managed words. See Managed Word Lists Config for more information.</summary>
+    /// <summary>Config for the list of managed words. See managed_word_lists_config Block for more information.</summary>
     [JsonPropertyName("managedWordListsConfig")]
     public IList<V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWordListsConfig>? ManagedWordListsConfig { get; set; }
 
-    /// <summary>List of custom word configs. See Words Config for more information.</summary>
+    /// <summary>List of custom word configs. See words_config Block for more information.</summary>
     [JsonPropertyName("wordsConfig")]
     public IList<V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig>? WordsConfig { get; set; }
 }
@@ -1022,15 +1016,15 @@ public partial class V1beta1GuardrailSpecInitProvider
     [JsonPropertyName("blockedOutputsMessaging")]
     public string? BlockedOutputsMessaging { get; set; }
 
-    /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+    /// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
     [JsonPropertyName("contentPolicyConfig")]
     public V1beta1GuardrailSpecInitProviderContentPolicyConfig? ContentPolicyConfig { get; set; }
 
-    /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+    /// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
     [JsonPropertyName("contextualGroundingPolicyConfig")]
     public V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfig? ContextualGroundingPolicyConfig { get; set; }
 
-    /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+    /// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
     [JsonPropertyName("crossRegionConfig")]
     public V1beta1GuardrailSpecInitProviderCrossRegionConfig? CrossRegionConfig { get; set; }
 
@@ -1038,7 +1032,7 @@ public partial class V1beta1GuardrailSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The KMS key with which the guardrail was encrypted at rest.</summary>
+    /// <summary>KMS key with which the guardrail was encrypted at rest.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1054,7 +1048,7 @@ public partial class V1beta1GuardrailSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+    /// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
     [JsonPropertyName("sensitiveInformationPolicyConfig")]
     public V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfig? SensitiveInformationPolicyConfig { get; set; }
 
@@ -1062,11 +1056,11 @@ public partial class V1beta1GuardrailSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+    /// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
     [JsonPropertyName("topicPolicyConfig")]
     public V1beta1GuardrailSpecInitProviderTopicPolicyConfig? TopicPolicyConfig { get; set; }
 
-    /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+    /// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
     [JsonPropertyName("wordPolicyConfig")]
     public V1beta1GuardrailSpecInitProviderWordPolicyConfig? WordPolicyConfig { get; set; }
 }
@@ -1262,7 +1256,7 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersC
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on input.</summary>
+    /// <summary>Whether to enable guardrail evaluation on input.</summary>
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
@@ -1278,7 +1272,7 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersC
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
-    /// <summary>Toggles guardrail evaluation on output.</summary>
+    /// <summary>Whether to enable guardrail evaluation on output.</summary>
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
@@ -1290,34 +1284,31 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersC
     [JsonPropertyName("outputStrength")]
     public string? OutputStrength { get; set; }
 
-    /// <summary>Type of filter in content policy. Valid Values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
+    /// <summary>Type of filter in content policy. Valid values: SEXUAL, VIOLENCE, HATE, INSULTS, MISCONDUCT, PROMPT_ATTACK.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
 
-/// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+/// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfig
 {
-    /// <summary>
-    /// Set of content filter configs in content policy.
-    /// See Filters Config for more information.
-    /// </summary>
+    /// <summary>Set of content filter configs in content policy. See content_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 
-    /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the content policy tier. See content_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailStatusAtProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
@@ -1326,26 +1317,26 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfigFiltersConfig
 {
-    /// <summary>The threshold for this filter.</summary>
+    /// <summary>Threshold for this filter.</summary>
     [JsonPropertyName("threshold")]
     public double? Threshold { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Type of contextual grounding filter.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+/// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfig
 {
-    /// <summary>One or more blocks defining contextual grounding filter configs. See Contextual Grounding Filters Config for more information.</summary>
+    /// <summary>One or more blocks defining contextual grounding filter configs. See contextual_grounding_policy_config.filters_config Block for more information.</summary>
     [JsonPropertyName("filtersConfig")]
     public IList<V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfigFiltersConfig>? FiltersConfig { get; set; }
 }
 
-/// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+/// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderCrossRegionConfig
@@ -1379,7 +1370,7 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Currently supported PII entities.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1392,11 +1383,11 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>Description of the guardrail or its version.</summary>
+    /// <summary>Regex description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -1404,11 +1395,11 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -1416,31 +1407,31 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The regex pattern.</summary>
+    /// <summary>Regex pattern.</summary>
     [JsonPropertyName("pattern")]
     public string? Pattern { get; set; }
 }
 
-/// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+/// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfig
 {
-    /// <summary>List of entities. See PII Entities Config for more information.</summary>
+    /// <summary>List of entities. See pii_entities_config Block for more information.</summary>
     [JsonPropertyName("piiEntitiesConfig")]
     public IList<V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfigPiiEntitiesConfig>? PiiEntitiesConfig { get; set; }
 
-    /// <summary>List of regex. See Regexes Config for more information.</summary>
+    /// <summary>List of regex. See regexes_config Block for more information.</summary>
     [JsonPropertyName("regexesConfig")]
     public IList<V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfigRegexesConfig>? RegexesConfig { get; set; }
 }
 
-/// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+/// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTierConfig
 {
-    /// <summary>The name of the content policy tier. Valid values include STANDARD or CLASSIC.</summary>
+    /// <summary>Name of the topic policy tier. Valid values: CLASSIC, STANDARD. STANDARD requires cross_region_config.</summary>
     [JsonPropertyName("tierName")]
     public string? TierName { get; set; }
 }
@@ -1457,25 +1448,25 @@ public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTopicsConf
     [JsonPropertyName("examples")]
     public IList<string>? Examples { get; set; }
 
-    /// <summary>Name of the guardrail.</summary>
+    /// <summary>Name of topic in topic policy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+/// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfig
 {
-    /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
+    /// <summary>Configuration block for the topic policy tier. See topic_policy_config.tier_config Block for more information.</summary>
     [JsonPropertyName("tierConfig")]
     public V1beta1GuardrailStatusAtProviderTopicPolicyConfigTierConfig? TierConfig { get; set; }
 
-    /// <summary>List of topic configs in topic policy. See Topics Config for more information.</summary>
+    /// <summary>List of topic configs in topic policy. See topics_config Block for more information.</summary>
     [JsonPropertyName("topicsConfig")]
     public IList<V1beta1GuardrailStatusAtProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
@@ -1484,7 +1475,7 @@ public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWordListsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -1492,7 +1483,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWord
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -1500,7 +1491,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWord
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>Type of topic in a policy.</summary>
+    /// <summary>Options for managed words.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1509,7 +1500,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWord
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig
 {
-    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the input. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("inputAction")]
     public string? InputAction { get; set; }
 
@@ -1517,7 +1508,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("inputEnabled")]
     public bool? InputEnabled { get; set; }
 
-    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, ANONYMIZE, NONE.</summary>
+    /// <summary>Action to take when harmful content is detected in the output. Valid values: BLOCK, NONE.</summary>
     [JsonPropertyName("outputAction")]
     public string? OutputAction { get; set; }
 
@@ -1525,21 +1516,21 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig
     [JsonPropertyName("outputEnabled")]
     public bool? OutputEnabled { get; set; }
 
-    /// <summary>The custom word text.</summary>
+    /// <summary>Custom word text.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+/// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfig
 {
-    /// <summary>A config for the list of managed words. See Managed Word Lists Config for more information.</summary>
+    /// <summary>Config for the list of managed words. See managed_word_lists_config Block for more information.</summary>
     [JsonPropertyName("managedWordListsConfig")]
     public IList<V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWordListsConfig>? ManagedWordListsConfig { get; set; }
 
-    /// <summary>List of custom word configs. See Words Config for more information.</summary>
+    /// <summary>List of custom word configs. See words_config Block for more information.</summary>
     [JsonPropertyName("wordsConfig")]
     public IList<V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig>? WordsConfig { get; set; }
 }
@@ -1556,19 +1547,19 @@ public partial class V1beta1GuardrailStatusAtProvider
     [JsonPropertyName("blockedOutputsMessaging")]
     public string? BlockedOutputsMessaging { get; set; }
 
-    /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
+    /// <summary>Content policy config for a guardrail. See content_policy_config Block for more information.</summary>
     [JsonPropertyName("contentPolicyConfig")]
     public V1beta1GuardrailStatusAtProviderContentPolicyConfig? ContentPolicyConfig { get; set; }
 
-    /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
+    /// <summary>Contextual grounding policy config for a guardrail. See contextual_grounding_policy_config Block for more information.</summary>
     [JsonPropertyName("contextualGroundingPolicyConfig")]
     public V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfig? ContextualGroundingPolicyConfig { get; set; }
 
-    /// <summary>Unix epoch timestamp in seconds for when the Guardrail was created.</summary>
+    /// <summary>Date and time the Guardrail was created, in RFC3339 format.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
+    /// <summary>Configuration block to enable cross-region routing for bedrock guardrails. See cross_region_config Block for more information. See available Regions.</summary>
     [JsonPropertyName("crossRegionConfig")]
     public V1beta1GuardrailStatusAtProviderCrossRegionConfig? CrossRegionConfig { get; set; }
 
@@ -1587,7 +1578,7 @@ public partial class V1beta1GuardrailStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The KMS key with which the guardrail was encrypted at rest.</summary>
+    /// <summary>KMS key with which the guardrail was encrypted at rest.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1602,11 +1593,11 @@ public partial class V1beta1GuardrailStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
+    /// <summary>Sensitive information policy config for a guardrail. See sensitive_information_policy_config Block for more information.</summary>
     [JsonPropertyName("sensitiveInformationPolicyConfig")]
     public V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfig? SensitiveInformationPolicyConfig { get; set; }
 
-    /// <summary>Status of the Bedrock Guardrail. One of READY, FAILED.</summary>
+    /// <summary>Status of the Bedrock Guardrail.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -1614,14 +1605,15 @@ public partial class V1beta1GuardrailStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
+    /// <summary>Topic policy config for a guardrail. See topic_policy_config Block for more information.</summary>
     [JsonPropertyName("topicPolicyConfig")]
     public V1beta1GuardrailStatusAtProviderTopicPolicyConfig? TopicPolicyConfig { get; set; }
 
-    /// <summary>Date and time that the Guardrail list was last updated.</summary>
+    /// <summary>Date and time that the Guardrail was last updated, in RFC3339 format.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
@@ -1629,7 +1621,7 @@ public partial class V1beta1GuardrailStatusAtProvider
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
-    /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
+    /// <summary>Word policy config for a guardrail. See word_policy_config Block for more information.</summary>
     [JsonPropertyName("wordPolicyConfig")]
     public V1beta1GuardrailStatusAtProviderWordPolicyConfig? WordPolicyConfig { get; set; }
 }
@@ -1707,7 +1699,7 @@ public partial class V1beta1GuardrailStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Guardrail is the Schema for the Guardrails API.</summary>
+/// <summary>Guardrail is the Schema for the Guardrails API. Manages an Amazon Bedrock Guardrail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -468,7 +468,7 @@ public partial class V1beta1ELBSpecForProvider
     [JsonPropertyName("idleTimeout")]
     public double? IdleTimeout { get; set; }
 
-    /// <summary>A list of instance ids to place in the ELB pool.</summary>
+    /// <summary>A list of instance IDs to place in the ELB pool.</summary>
     [JsonPropertyName("instances")]
     public IList<string>? Instances { get; set; }
 
@@ -970,7 +970,7 @@ public partial class V1beta1ELBSpecInitProvider
     [JsonPropertyName("idleTimeout")]
     public double? IdleTimeout { get; set; }
 
-    /// <summary>A list of instance ids to place in the ELB pool.</summary>
+    /// <summary>A list of instance IDs to place in the ELB pool.</summary>
     [JsonPropertyName("instances")]
     public IList<string>? Instances { get; set; }
 
@@ -1262,7 +1262,7 @@ public partial class V1beta1ELBStatusAtProvider
     [JsonPropertyName("idleTimeout")]
     public double? IdleTimeout { get; set; }
 
-    /// <summary>A list of instance ids to place in the ELB pool.</summary>
+    /// <summary>A list of instance IDs to place in the ELB pool.</summary>
     [JsonPropertyName("instances")]
     public IList<string>? Instances { get; set; }
 

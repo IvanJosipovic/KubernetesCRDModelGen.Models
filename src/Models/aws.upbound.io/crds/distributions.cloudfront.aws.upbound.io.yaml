@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: distributions.cloudfront.aws.upbound.io
 spec:
   group: cloudfront.aws.upbound.io
@@ -2833,7 +2833,7 @@ spec:
                             type: array
                         type: object
                       functionAssociation:
-                        description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                        description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                         items:
                           properties:
                             eventType:
@@ -2845,7 +2845,7 @@ spec:
                           type: object
                         type: array
                       grpcConfig:
-                        description: A config block that sets the grpc config.
+                        description: A config block that sets the gRPC config.
                         properties:
                           enabled:
                             description: Whether the distribution is enabled to accept end user requests for content.
@@ -2986,7 +2986,7 @@ spec:
                               type: array
                           type: object
                         functionAssociation:
-                          description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                          description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                           items:
                             properties:
                               eventType:
@@ -3071,7 +3071,7 @@ spec:
                             type: object
                           type: array
                         grpcConfig:
-                          description: A config block that sets the grpc config.
+                          description: A config block that sets the gRPC config.
                           properties:
                             enabled:
                               description: Whether the distribution is enabled to accept end user requests for content.
@@ -3679,7 +3679,7 @@ spec:
                             type: array
                         type: object
                       functionAssociation:
-                        description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                        description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                         items:
                           properties:
                             eventType:
@@ -3691,7 +3691,7 @@ spec:
                           type: object
                         type: array
                       grpcConfig:
-                        description: A config block that sets the grpc config.
+                        description: A config block that sets the gRPC config.
                         properties:
                           enabled:
                             description: Whether the distribution is enabled to accept end user requests for content.
@@ -3832,7 +3832,7 @@ spec:
                               type: array
                           type: object
                         functionAssociation:
-                          description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                          description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                           items:
                             properties:
                               eventType:
@@ -3917,7 +3917,7 @@ spec:
                             type: object
                           type: array
                         grpcConfig:
-                          description: A config block that sets the grpc config.
+                          description: A config block that sets the gRPC config.
                           properties:
                             enabled:
                               description: Whether the distribution is enabled to accept end user requests for content.
@@ -4620,7 +4620,7 @@ spec:
                             type: array
                         type: object
                       functionAssociation:
-                        description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                        description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                         items:
                           properties:
                             eventType:
@@ -4632,7 +4632,7 @@ spec:
                           type: object
                         type: array
                       grpcConfig:
-                        description: A config block that sets the grpc config.
+                        description: A config block that sets the gRPC config.
                         properties:
                           enabled:
                             description: Whether the distribution is enabled to accept end user requests for content.
@@ -4794,7 +4794,7 @@ spec:
                               type: array
                           type: object
                         functionAssociation:
-                          description: A config block that triggers a cloudfront function with specific actions (maximum 2).
+                          description: A config block that triggers a CloudFront function with specific actions (maximum 2).
                           items:
                             properties:
                               eventType:
@@ -4806,7 +4806,7 @@ spec:
                             type: object
                           type: array
                         grpcConfig:
-                          description: A config block that sets the grpc config.
+                          description: A config block that sets the gRPC config.
                           properties:
                             enabled:
                               description: Whether the distribution is enabled to accept end user requests for content.

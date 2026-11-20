@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: scripts.gamelift.aws.upbound.io
 spec:
   group: gamelift.aws.upbound.io
@@ -1030,7 +1030,7 @@ spec:
                             type: object
                         type: object
                       objectVersion:
-                        description: A specific version of the file. If not set, the latest version of the file is retrieved.
+                        description: Specific version of the file. If not set, the latest version of the file is retrieved.
                         type: string
                       roleArn:
                         description: ARN of the access role that allows Amazon GameLift to access your S3 bucket.
@@ -1119,7 +1119,7 @@ spec:
                     description: Version that is associated with this script.
                     type: string
                   zipFile:
-                    description: A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
+                    description: Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
                     type: string
                 required:
                 - region
@@ -1296,7 +1296,7 @@ spec:
                             type: object
                         type: object
                       objectVersion:
-                        description: A specific version of the file. If not set, the latest version of the file is retrieved.
+                        description: Specific version of the file. If not set, the latest version of the file is retrieved.
                         type: string
                       roleArn:
                         description: ARN of the access role that allows Amazon GameLift to access your S3 bucket.
@@ -1385,7 +1385,7 @@ spec:
                     description: Version that is associated with this script.
                     type: string
                   zipFile:
-                    description: A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
+                    description: Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
                     type: string
                 type: object
               managementPolicies:
@@ -1506,7 +1506,7 @@ spec:
                         description: Name of the zip file containing your script files.
                         type: string
                       objectVersion:
-                        description: A specific version of the file. If not set, the latest version of the file is retrieved.
+                        description: Specific version of the file. If not set, the latest version of the file is retrieved.
                         type: string
                       roleArn:
                         description: ARN of the access role that allows Amazon GameLift to access your S3 bucket.
@@ -1521,14 +1521,14 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                   version:
                     description: Version that is associated with this script.
                     type: string
                   zipFile:
-                    description: A data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
+                    description: Data object containing your Realtime scripts and dependencies as a zip  file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB.
                     type: string
                 type: object
               conditions:

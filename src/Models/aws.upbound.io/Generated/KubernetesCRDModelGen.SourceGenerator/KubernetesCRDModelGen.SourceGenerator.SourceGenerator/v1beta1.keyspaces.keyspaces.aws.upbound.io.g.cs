@@ -56,7 +56,7 @@ public enum V1beta1KeyspaceSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The replication specification of the keyspace.</summary>
+/// <summary>Replication specification of the keyspace. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyspaceSpecForProviderReplicationSpecification
@@ -81,7 +81,7 @@ public partial class V1beta1KeyspaceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The replication specification of the keyspace.</summary>
+    /// <summary>Replication specification of the keyspace. See below.</summary>
     [JsonPropertyName("replicationSpecification")]
     public V1beta1KeyspaceSpecForProviderReplicationSpecification? ReplicationSpecification { get; set; }
 
@@ -90,7 +90,7 @@ public partial class V1beta1KeyspaceSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>The replication specification of the keyspace.</summary>
+/// <summary>Replication specification of the keyspace. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyspaceSpecInitProviderReplicationSpecification
@@ -120,7 +120,7 @@ public partial class V1beta1KeyspaceSpecInitProviderReplicationSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyspaceSpecInitProvider
 {
-    /// <summary>The replication specification of the keyspace.</summary>
+    /// <summary>Replication specification of the keyspace. See below.</summary>
     [JsonPropertyName("replicationSpecification")]
     public V1beta1KeyspaceSpecInitProviderReplicationSpecification? ReplicationSpecification { get; set; }
 
@@ -312,7 +312,7 @@ public partial class V1beta1KeyspaceSpec
     public V1beta1KeyspaceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The replication specification of the keyspace.</summary>
+/// <summary>Replication specification of the keyspace. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyspaceStatusAtProviderReplicationSpecification
@@ -330,11 +330,11 @@ public partial class V1beta1KeyspaceStatusAtProviderReplicationSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeyspaceStatusAtProvider
 {
-    /// <summary>The ARN of the keyspace.</summary>
+    /// <summary>ARN of the keyspace.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The name of the keyspace.</summary>
+    /// <summary>Name of the keyspace.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -345,7 +345,7 @@ public partial class V1beta1KeyspaceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The replication specification of the keyspace.</summary>
+    /// <summary>Replication specification of the keyspace. See below.</summary>
     [JsonPropertyName("replicationSpecification")]
     public V1beta1KeyspaceStatusAtProviderReplicationSpecification? ReplicationSpecification { get; set; }
 
@@ -353,7 +353,7 @@ public partial class V1beta1KeyspaceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

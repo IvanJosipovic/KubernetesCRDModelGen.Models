@@ -37,34 +37,22 @@ public partial class V1beta1VPCPeeringConnectionAccepterList : IKubernetesObject
     public required IList<V1beta1VPCPeeringConnectionAccepter> Items { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderAccepter
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderRequester
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -228,10 +216,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeerin
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
 {
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionAccepterSpecForProviderAccepter? Accepter { get; set; }
 
@@ -246,10 +231,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionAccepterSpecForProviderRequester? Requester { get; set; }
 
@@ -257,7 +239,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC Peering Connection ID to manage.</summary>
+    /// <summary>VPC Peering Connection ID to manage.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 
@@ -270,34 +252,22 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
     public V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelector? VpcPeeringConnectionIdSelector { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderAccepter
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderRequester
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -473,10 +443,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProvider
 {
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionAccepterSpecInitProviderAccepter? Accepter { get; set; }
 
@@ -484,10 +451,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProvider
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionAccepterSpecInitProviderRequester? Requester { get; set; }
 
@@ -495,7 +459,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC Peering Connection ID to manage.</summary>
+    /// <summary>VPC Peering Connection ID to manage.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 
@@ -615,34 +579,22 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpec
     public V1beta1VPCPeeringConnectionAccepterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderAccepter
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
 
-/// <summary>
-/// A configuration block that describes [VPC Peering Connection]
-/// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-/// </summary>
+/// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderRequester
 {
-    /// <summary>
-    /// Indicates whether a local VPC can resolve public DNS hostnames to
-    /// private IP addresses when queried from instances in a peer VPC.
-    /// </summary>
+    /// <summary>Whether to allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.</summary>
     [JsonPropertyName("allowRemoteVpcDnsResolution")]
     public bool? AllowRemoteVpcDnsResolution { get; set; }
 }
@@ -651,14 +603,11 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderRequeste
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
 {
-    /// <summary>The status of the VPC Peering Connection request.</summary>
+    /// <summary>Status of the VPC Peering Connection request.</summary>
     [JsonPropertyName("acceptStatus")]
     public string? AcceptStatus { get; set; }
 
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that accepts the peering connection (a maximum of one). See accepter Block below.</summary>
     [JsonPropertyName("accepter")]
     public V1beta1VPCPeeringConnectionAccepterStatusAtProviderAccepter? Accepter { get; set; }
 
@@ -666,19 +615,19 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
     [JsonPropertyName("autoAccept")]
     public bool? AutoAccept { get; set; }
 
-    /// <summary>The ID of the VPC Peering Connection.</summary>
+    /// <summary>ID of the VPC Peering Connection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The AWS account ID of the owner of the requester VPC.</summary>
+    /// <summary>AWS account ID of the owner of the requester VPC.</summary>
     [JsonPropertyName("peerOwnerId")]
     public string? PeerOwnerId { get; set; }
 
-    /// <summary>The region of the accepter VPC.</summary>
+    /// <summary>Region of the accepter VPC.</summary>
     [JsonPropertyName("peerRegion")]
     public string? PeerRegion { get; set; }
 
-    /// <summary>The ID of the requester VPC.</summary>
+    /// <summary>ID of the requester VPC.</summary>
     [JsonPropertyName("peerVpcId")]
     public string? PeerVpcId { get; set; }
 
@@ -689,10 +638,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// A configuration block that describes [VPC Peering Connection]
-    /// (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
-    /// </summary>
+    /// <summary>Configuration block for VPC Peering Connection options to set for the VPC that requests the peering connection (a maximum of one). See requester Block below.</summary>
     [JsonPropertyName("requester")]
     public V1beta1VPCPeeringConnectionAccepterStatusAtProviderRequester? Requester { get; set; }
 
@@ -700,15 +646,15 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The ID of the accepter VPC.</summary>
+    /// <summary>ID of the accepter VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
-    /// <summary>The VPC Peering Connection ID to manage.</summary>
+    /// <summary>VPC Peering Connection ID to manage.</summary>
     [JsonPropertyName("vpcPeeringConnectionId")]
     public string? VpcPeeringConnectionId { get; set; }
 }

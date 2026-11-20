@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: methods.apigateway.aws.upbound.io
 spec:
   group: apigateway.aws.upbound.io
@@ -84,7 +84,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   authorizerId:
-                    description: Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
+                    description: Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
                     type: string
                   authorizerIdRef:
                     description: Reference to a Authorizer in apigateway to populate authorizerId.
@@ -366,7 +366,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   authorizerId:
-                    description: Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
+                    description: Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
                     type: string
                   authorizerIdRef:
                     description: Reference to a Authorizer in apigateway to populate authorizerId.
@@ -724,7 +724,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   authorizerId:
-                    description: Authorizer id to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
+                    description: Authorizer ID to be used when the authorization is CUSTOM or COGNITO_USER_POOLS
                     type: string
                   httpMethod:
                     description: HTTP Method (GET, POST, PUT, DELETE, HEAD, OPTIONS, ANY)

@@ -56,25 +56,25 @@ public enum V1beta2TableSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+/// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderCapacitySpecification
 {
-    /// <summary>The throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
+    /// <summary>Throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
     [JsonPropertyName("readCapacityUnits")]
     public double? ReadCapacityUnits { get; set; }
 
-    /// <summary>The read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
+    /// <summary>Read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 
-    /// <summary>The throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
+    /// <summary>Throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
     [JsonPropertyName("writeCapacityUnits")]
     public double? WriteCapacityUnits { get; set; }
 }
 
-/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderClientSideTimestamps
@@ -84,17 +84,17 @@ public partial class V1beta2TableSpecForProviderClientSideTimestamps
     public string? Status { get; set; }
 }
 
-/// <summary>A description of the table.</summary>
+/// <summary>Description of the table. See comment below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderComment
 {
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 }
 
-/// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderEncryptionSpecification
@@ -103,7 +103,7 @@ public partial class V1beta2TableSpecForProviderEncryptionSpecification
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -255,12 +255,12 @@ public partial class V1beta2TableSpecForProviderKeyspaceNameSelector
     public V1beta2TableSpecForProviderKeyspaceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderPointInTimeRecovery
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED, DISABLED. The default value is DISABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -269,11 +269,11 @@ public partial class V1beta2TableSpecForProviderPointInTimeRecovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaDefinitionClusteringKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The order modifier. Valid values: ASC, DESC.</summary>
+    /// <summary>Order modifier. Valid values: ASC, DESC.</summary>
     [JsonPropertyName("orderBy")]
     public string? OrderBy { get; set; }
 }
@@ -282,11 +282,11 @@ public partial class V1beta2TableSpecForProviderSchemaDefinitionClusteringKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaDefinitionColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Data type of the column. See the Developer Guide for a list of available data types.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -295,7 +295,7 @@ public partial class V1beta2TableSpecForProviderSchemaDefinitionColumn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaDefinitionPartitionKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -304,39 +304,39 @@ public partial class V1beta2TableSpecForProviderSchemaDefinitionPartitionKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaDefinitionStaticColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Describes the schema of the table.</summary>
+/// <summary>Schema of the table. See schema_definition below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderSchemaDefinition
 {
-    /// <summary>The columns that are part of the clustering key of the table.</summary>
+    /// <summary>Columns that are part of the clustering key of the table. See clustering_key below.</summary>
     [JsonPropertyName("clusteringKey")]
     public IList<V1beta2TableSpecForProviderSchemaDefinitionClusteringKey>? ClusteringKey { get; set; }
 
-    /// <summary>The regular columns of the table.</summary>
+    /// <summary>Regular columns of the table. See column below.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta2TableSpecForProviderSchemaDefinitionColumn>? Column { get; set; }
 
-    /// <summary>The columns that are part of the partition key of the table .</summary>
+    /// <summary>Columns that are part of the partition key of the table. See partition_key below.</summary>
     [JsonPropertyName("partitionKey")]
     public IList<V1beta2TableSpecForProviderSchemaDefinitionPartitionKey>? PartitionKey { get; set; }
 
-    /// <summary>The columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition.</summary>
+    /// <summary>Columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition. See static_column below.</summary>
     [JsonPropertyName("staticColumn")]
     public IList<V1beta2TableSpecForProviderSchemaDefinitionStaticColumn>? StaticColumn { get; set; }
 }
 
-/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProviderTtl
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -345,27 +345,27 @@ public partial class V1beta2TableSpecForProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecForProvider
 {
-    /// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+    /// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
     [JsonPropertyName("capacitySpecification")]
     public V1beta2TableSpecForProviderCapacitySpecification? CapacitySpecification { get; set; }
 
-    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
     [JsonPropertyName("clientSideTimestamps")]
     public V1beta2TableSpecForProviderClientSideTimestamps? ClientSideTimestamps { get; set; }
 
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table. See comment below.</summary>
     [JsonPropertyName("comment")]
     public V1beta2TableSpecForProviderComment? Comment { get; set; }
 
-    /// <summary>The default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
     [JsonPropertyName("defaultTimeToLive")]
     public double? DefaultTimeToLive { get; set; }
 
-    /// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
     [JsonPropertyName("encryptionSpecification")]
     public V1beta2TableSpecForProviderEncryptionSpecification? EncryptionSpecification { get; set; }
 
-    /// <summary>The name of the keyspace that the table is going to be created in.</summary>
+    /// <summary>Name of the keyspace that the table is going to be created in.</summary>
     [JsonPropertyName("keyspaceName")]
     public string? KeyspaceName { get; set; }
 
@@ -377,7 +377,7 @@ public partial class V1beta2TableSpecForProvider
     [JsonPropertyName("keyspaceNameSelector")]
     public V1beta2TableSpecForProviderKeyspaceNameSelector? KeyspaceNameSelector { get; set; }
 
-    /// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
     [JsonPropertyName("pointInTimeRecovery")]
     public V1beta2TableSpecForProviderPointInTimeRecovery? PointInTimeRecovery { get; set; }
 
@@ -388,11 +388,11 @@ public partial class V1beta2TableSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Describes the schema of the table.</summary>
+    /// <summary>Schema of the table. See schema_definition below.</summary>
     [JsonPropertyName("schemaDefinition")]
     public V1beta2TableSpecForProviderSchemaDefinition? SchemaDefinition { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -400,30 +400,30 @@ public partial class V1beta2TableSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
     [JsonPropertyName("ttl")]
     public V1beta2TableSpecForProviderTtl? Ttl { get; set; }
 }
 
-/// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+/// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderCapacitySpecification
 {
-    /// <summary>The throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
+    /// <summary>Throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
     [JsonPropertyName("readCapacityUnits")]
     public double? ReadCapacityUnits { get; set; }
 
-    /// <summary>The read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
+    /// <summary>Read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 
-    /// <summary>The throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
+    /// <summary>Throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
     [JsonPropertyName("writeCapacityUnits")]
     public double? WriteCapacityUnits { get; set; }
 }
 
-/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderClientSideTimestamps
@@ -433,17 +433,17 @@ public partial class V1beta2TableSpecInitProviderClientSideTimestamps
     public string? Status { get; set; }
 }
 
-/// <summary>A description of the table.</summary>
+/// <summary>Description of the table. See comment below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderComment
 {
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 }
 
-/// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderEncryptionSpecification
@@ -452,7 +452,7 @@ public partial class V1beta2TableSpecInitProviderEncryptionSpecification
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -604,12 +604,12 @@ public partial class V1beta2TableSpecInitProviderKeyspaceNameSelector
     public V1beta2TableSpecInitProviderKeyspaceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderPointInTimeRecovery
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED, DISABLED. The default value is DISABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -618,11 +618,11 @@ public partial class V1beta2TableSpecInitProviderPointInTimeRecovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaDefinitionClusteringKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The order modifier. Valid values: ASC, DESC.</summary>
+    /// <summary>Order modifier. Valid values: ASC, DESC.</summary>
     [JsonPropertyName("orderBy")]
     public string? OrderBy { get; set; }
 }
@@ -631,11 +631,11 @@ public partial class V1beta2TableSpecInitProviderSchemaDefinitionClusteringKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaDefinitionColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Data type of the column. See the Developer Guide for a list of available data types.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -644,7 +644,7 @@ public partial class V1beta2TableSpecInitProviderSchemaDefinitionColumn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaDefinitionPartitionKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -653,39 +653,39 @@ public partial class V1beta2TableSpecInitProviderSchemaDefinitionPartitionKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaDefinitionStaticColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Describes the schema of the table.</summary>
+/// <summary>Schema of the table. See schema_definition below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderSchemaDefinition
 {
-    /// <summary>The columns that are part of the clustering key of the table.</summary>
+    /// <summary>Columns that are part of the clustering key of the table. See clustering_key below.</summary>
     [JsonPropertyName("clusteringKey")]
     public IList<V1beta2TableSpecInitProviderSchemaDefinitionClusteringKey>? ClusteringKey { get; set; }
 
-    /// <summary>The regular columns of the table.</summary>
+    /// <summary>Regular columns of the table. See column below.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta2TableSpecInitProviderSchemaDefinitionColumn>? Column { get; set; }
 
-    /// <summary>The columns that are part of the partition key of the table .</summary>
+    /// <summary>Columns that are part of the partition key of the table. See partition_key below.</summary>
     [JsonPropertyName("partitionKey")]
     public IList<V1beta2TableSpecInitProviderSchemaDefinitionPartitionKey>? PartitionKey { get; set; }
 
-    /// <summary>The columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition.</summary>
+    /// <summary>Columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition. See static_column below.</summary>
     [JsonPropertyName("staticColumn")]
     public IList<V1beta2TableSpecInitProviderSchemaDefinitionStaticColumn>? StaticColumn { get; set; }
 }
 
-/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProviderTtl
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -706,27 +706,27 @@ public partial class V1beta2TableSpecInitProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableSpecInitProvider
 {
-    /// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+    /// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
     [JsonPropertyName("capacitySpecification")]
     public V1beta2TableSpecInitProviderCapacitySpecification? CapacitySpecification { get; set; }
 
-    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
     [JsonPropertyName("clientSideTimestamps")]
     public V1beta2TableSpecInitProviderClientSideTimestamps? ClientSideTimestamps { get; set; }
 
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table. See comment below.</summary>
     [JsonPropertyName("comment")]
     public V1beta2TableSpecInitProviderComment? Comment { get; set; }
 
-    /// <summary>The default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
     [JsonPropertyName("defaultTimeToLive")]
     public double? DefaultTimeToLive { get; set; }
 
-    /// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
     [JsonPropertyName("encryptionSpecification")]
     public V1beta2TableSpecInitProviderEncryptionSpecification? EncryptionSpecification { get; set; }
 
-    /// <summary>The name of the keyspace that the table is going to be created in.</summary>
+    /// <summary>Name of the keyspace that the table is going to be created in.</summary>
     [JsonPropertyName("keyspaceName")]
     public string? KeyspaceName { get; set; }
 
@@ -738,15 +738,15 @@ public partial class V1beta2TableSpecInitProvider
     [JsonPropertyName("keyspaceNameSelector")]
     public V1beta2TableSpecInitProviderKeyspaceNameSelector? KeyspaceNameSelector { get; set; }
 
-    /// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
     [JsonPropertyName("pointInTimeRecovery")]
     public V1beta2TableSpecInitProviderPointInTimeRecovery? PointInTimeRecovery { get; set; }
 
-    /// <summary>Describes the schema of the table.</summary>
+    /// <summary>Schema of the table. See schema_definition below.</summary>
     [JsonPropertyName("schemaDefinition")]
     public V1beta2TableSpecInitProviderSchemaDefinition? SchemaDefinition { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -754,7 +754,7 @@ public partial class V1beta2TableSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
     [JsonPropertyName("ttl")]
     public V1beta2TableSpecInitProviderTtl? Ttl { get; set; }
 }
@@ -942,25 +942,25 @@ public partial class V1beta2TableSpec
     public V1beta2TableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+/// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderCapacitySpecification
 {
-    /// <summary>The throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
+    /// <summary>Throughput capacity specified for read operations defined in read capacity units (RCUs).</summary>
     [JsonPropertyName("readCapacityUnits")]
     public double? ReadCapacityUnits { get; set; }
 
-    /// <summary>The read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
+    /// <summary>Read/write throughput capacity mode for a table. Valid values: PAY_PER_REQUEST, PROVISIONED. The default value is PAY_PER_REQUEST.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 
-    /// <summary>The throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
+    /// <summary>Throughput capacity specified for write operations defined in write capacity units (WCUs).</summary>
     [JsonPropertyName("writeCapacityUnits")]
     public double? WriteCapacityUnits { get; set; }
 }
 
-/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+/// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderClientSideTimestamps
@@ -970,17 +970,17 @@ public partial class V1beta2TableStatusAtProviderClientSideTimestamps
     public string? Status { get; set; }
 }
 
-/// <summary>A description of the table.</summary>
+/// <summary>Description of the table. See comment below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderComment
 {
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 }
 
-/// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderEncryptionSpecification
@@ -989,17 +989,17 @@ public partial class V1beta2TableStatusAtProviderEncryptionSpecification
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderPointInTimeRecovery
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED, DISABLED. The default value is DISABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -1008,11 +1008,11 @@ public partial class V1beta2TableStatusAtProviderPointInTimeRecovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaDefinitionClusteringKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The order modifier. Valid values: ASC, DESC.</summary>
+    /// <summary>Order modifier. Valid values: ASC, DESC.</summary>
     [JsonPropertyName("orderBy")]
     public string? OrderBy { get; set; }
 }
@@ -1021,11 +1021,11 @@ public partial class V1beta2TableStatusAtProviderSchemaDefinitionClusteringKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaDefinitionColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The encryption option specified for the table. Valid values: AWS_OWNED_KMS_KEY, CUSTOMER_MANAGED_KMS_KEY. The default value is AWS_OWNED_KMS_KEY.</summary>
+    /// <summary>Data type of the column. See the Developer Guide for a list of available data types.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1034,7 +1034,7 @@ public partial class V1beta2TableStatusAtProviderSchemaDefinitionColumn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaDefinitionPartitionKey
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1043,39 +1043,39 @@ public partial class V1beta2TableStatusAtProviderSchemaDefinitionPartitionKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaDefinitionStaticColumn
 {
-    /// <summary>The name of the column.</summary>
+    /// <summary>Name of the clustering key column.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>Describes the schema of the table.</summary>
+/// <summary>Schema of the table. See schema_definition below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderSchemaDefinition
 {
-    /// <summary>The columns that are part of the clustering key of the table.</summary>
+    /// <summary>Columns that are part of the clustering key of the table. See clustering_key below.</summary>
     [JsonPropertyName("clusteringKey")]
     public IList<V1beta2TableStatusAtProviderSchemaDefinitionClusteringKey>? ClusteringKey { get; set; }
 
-    /// <summary>The regular columns of the table.</summary>
+    /// <summary>Regular columns of the table. See column below.</summary>
     [JsonPropertyName("column")]
     public IList<V1beta2TableStatusAtProviderSchemaDefinitionColumn>? Column { get; set; }
 
-    /// <summary>The columns that are part of the partition key of the table .</summary>
+    /// <summary>Columns that are part of the partition key of the table. See partition_key below.</summary>
     [JsonPropertyName("partitionKey")]
     public IList<V1beta2TableStatusAtProviderSchemaDefinitionPartitionKey>? PartitionKey { get; set; }
 
-    /// <summary>The columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition.</summary>
+    /// <summary>Columns that have been defined as STATIC. Static columns store values that are shared by all rows in the same partition. See static_column below.</summary>
     [JsonPropertyName("staticColumn")]
     public IList<V1beta2TableStatusAtProviderSchemaDefinitionStaticColumn>? StaticColumn { get; set; }
 }
 
-/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+/// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProviderTtl
 {
-    /// <summary>Shows how to enable client-side timestamps settings for the specified table. Valid values: ENABLED.</summary>
+    /// <summary>Valid values: ENABLED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -1084,38 +1084,38 @@ public partial class V1beta2TableStatusAtProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TableStatusAtProvider
 {
-    /// <summary>The ARN of the table.</summary>
+    /// <summary>ARN of the table.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies the read/write throughput capacity mode for the table.</summary>
+    /// <summary>Read/write throughput capacity mode for the table. See capacity_specification below.</summary>
     [JsonPropertyName("capacitySpecification")]
     public V1beta2TableStatusAtProviderCapacitySpecification? CapacitySpecification { get; set; }
 
-    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled.</summary>
+    /// <summary>Enables client-side timestamps for the table. By default, the setting is disabled. See client_side_timestamps below.</summary>
     [JsonPropertyName("clientSideTimestamps")]
     public V1beta2TableStatusAtProviderClientSideTimestamps? ClientSideTimestamps { get; set; }
 
-    /// <summary>A description of the table.</summary>
+    /// <summary>Description of the table. See comment below.</summary>
     [JsonPropertyName("comment")]
     public V1beta2TableStatusAtProviderComment? Comment { get; set; }
 
-    /// <summary>The default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Default Time to Live setting in seconds for the table. More information can be found in the Developer Guide.</summary>
     [JsonPropertyName("defaultTimeToLive")]
     public double? DefaultTimeToLive { get; set; }
 
-    /// <summary>Specifies how the encryption key for encryption at rest is managed for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Encryption key management for encryption at rest for the table. More information can be found in the Developer Guide. See encryption_specification below.</summary>
     [JsonPropertyName("encryptionSpecification")]
     public V1beta2TableStatusAtProviderEncryptionSpecification? EncryptionSpecification { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the keyspace that the table is going to be created in.</summary>
+    /// <summary>Name of the keyspace that the table is going to be created in.</summary>
     [JsonPropertyName("keyspaceName")]
     public string? KeyspaceName { get; set; }
 
-    /// <summary>Specifies if point-in-time recovery is enabled or disabled for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables or disables point-in-time recovery for the table. More information can be found in the Developer Guide. See point_in_time_recovery below.</summary>
     [JsonPropertyName("pointInTimeRecovery")]
     public V1beta2TableStatusAtProviderPointInTimeRecovery? PointInTimeRecovery { get; set; }
 
@@ -1126,11 +1126,11 @@ public partial class V1beta2TableStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Describes the schema of the table.</summary>
+    /// <summary>Schema of the table. See schema_definition below.</summary>
     [JsonPropertyName("schemaDefinition")]
     public V1beta2TableStatusAtProviderSchemaDefinition? SchemaDefinition { get; set; }
 
-    /// <summary>The name of the table.</summary>
+    /// <summary>Name of the table.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
 
@@ -1138,11 +1138,11 @@ public partial class V1beta2TableStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide.</summary>
+    /// <summary>Enables Time to Live custom settings for the table. More information can be found in the Developer Guide. See ttl below.</summary>
     [JsonPropertyName("ttl")]
     public V1beta2TableStatusAtProviderTtl? Ttl { get; set; }
 }

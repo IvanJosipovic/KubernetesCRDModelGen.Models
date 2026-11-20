@@ -209,7 +209,7 @@ public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfig
     [JsonPropertyName("credentialPrefix")]
     public string? CredentialPrefix { get; set; }
 
-    /// <summary>ARN of the OIDC provider for API key authentication.</summary>
+    /// <summary>ARN of the API key credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 
@@ -435,13 +435,13 @@ public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfig
     public string? DefaultReturnUrl { get; set; }
 
     /// <summary>
-    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
     /// The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
     /// </summary>
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>ARN of the Oauth credential provider for OAuth authentication.</summary>
+    /// <summary>ARN of the OAuth credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 
@@ -1537,7 +1537,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpA
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3
@@ -1546,12 +1546,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpA
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource
@@ -1560,7 +1560,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpA
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3? S3 { get; set; }
 }
@@ -1570,7 +1570,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource? Source { get; set; }
 }
@@ -1611,7 +1611,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpP
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchemaSourceS3
@@ -1620,12 +1620,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpP
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchemaSource
@@ -1634,7 +1634,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpP
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchemaSourceS3? S3 { get; set; }
 }
@@ -1644,7 +1644,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughSchemaSource? Source { get; set; }
 }
@@ -1697,7 +1697,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpP
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthroughStickinessConfiguration? StickinessConfiguration { get; set; }
 }
 
-/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttp
@@ -1711,7 +1711,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationHttp
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttpPassthrough? Passthrough { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceConnectorSource
@@ -1721,12 +1721,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInfer
     public string? ConnectorId { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceConnector
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceConnectorSource? Source { get; set; }
 }
@@ -1740,7 +1740,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInfer
     [JsonPropertyName("separator")]
     public string? Separator { get; set; }
 
-    /// <summary>Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
+    /// <summary>Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
     [JsonPropertyName("strip")]
     public bool? Strip { get; set; }
 }
@@ -1759,7 +1759,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInfer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceProviderOperationModel
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public string? Model { get; set; }
 }
@@ -1768,7 +1768,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInfer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceProviderOperation
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceProviderOperationModel>? Model { get; set; }
 
@@ -1804,7 +1804,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInfer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationInference
 {
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationInferenceConnector? Connector { get; set; }
 
@@ -2054,7 +2054,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpCo
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Whether this parameter is visible to the agent. If not specified, uses the service default.</summary>
+    /// <summary>Whether to make this parameter visible to the agent. If not specified, uses the service default.</summary>
     [JsonPropertyName("visible")]
     public bool? Visible { get; set; }
 }
@@ -2080,7 +2080,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpCo
     public string? ParameterValues { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpConnectorSource
@@ -2094,7 +2094,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpCo
     public string? Version { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpConnector
@@ -2107,7 +2107,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpCo
     [JsonPropertyName("enabled")]
     public IList<string>? Enabled { get; set; }
 
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpConnectorSource? Source { get; set; }
 }
@@ -2267,7 +2267,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
@@ -2284,7 +2284,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2309,16 +2309,16 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
@@ -2327,20 +2327,20 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
@@ -2357,7 +2357,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2382,16 +2382,16 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
@@ -2400,15 +2400,15 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2433,11 +2433,11 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2450,7 +2450,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems? Items { get; set; }
 
@@ -2458,20 +2458,20 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
@@ -2480,20 +2480,20 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
@@ -2510,7 +2510,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2535,16 +2535,16 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
@@ -2553,20 +2553,20 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
@@ -2583,7 +2583,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2608,16 +2608,16 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
@@ -2626,15 +2626,15 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2659,11 +2659,11 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2676,7 +2676,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems? Items { get; set; }
 
@@ -2684,20 +2684,20 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
@@ -2706,15 +2706,15 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2727,7 +2727,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema? InputSchema { get; set; }
 
@@ -2735,12 +2735,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
     [JsonPropertyName("outputSchema")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema? OutputSchema { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaS3
@@ -2749,7 +2749,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -2763,7 +2763,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     [JsonPropertyName("inlinePayload")]
     public IList<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload>? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaS3? S3 { get; set; }
 }
@@ -2800,7 +2800,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMc
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3
@@ -2809,12 +2809,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMc
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+/// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServerMcpToolSchema
@@ -2823,7 +2823,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMc
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServerMcpToolSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3? S3 { get; set; }
 }
@@ -2841,7 +2841,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMc
     [JsonPropertyName("listingMode")]
     public string? ListingMode { get; set; }
 
-    /// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+    /// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
     [JsonPropertyName("mcpToolSchema")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServerMcpToolSchema? McpToolSchema { get; set; }
 
@@ -2860,7 +2860,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchemaS3
@@ -2869,12 +2869,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchema
@@ -2883,7 +2883,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchemaS3? S3 { get; set; }
 }
@@ -2898,7 +2898,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModelS3
@@ -2907,12 +2907,12 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModel
@@ -2921,7 +2921,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModelInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModelS3? S3 { get; set; }
 }
@@ -2935,7 +2935,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp
     [JsonPropertyName("apiGateway")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpApiGateway? ApiGateway { get; set; }
 
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpConnector? Connector { get; set; }
 
@@ -2947,11 +2947,11 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp
     [JsonPropertyName("mcpServer")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServer? McpServer { get; set; }
 
-    /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
     [JsonPropertyName("openApiSchema")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchema? OpenApiSchema { get; set; }
 
-    /// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
     [JsonPropertyName("smithyModel")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModel? SmithyModel { get; set; }
 }
@@ -2961,7 +2961,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfiguration
 {
-    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
     [JsonPropertyName("http")]
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationHttp? Http { get; set; }
 
@@ -3194,7 +3194,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfi
     [JsonPropertyName("credentialPrefix")]
     public string? CredentialPrefix { get; set; }
 
-    /// <summary>ARN of the OIDC provider for API key authentication.</summary>
+    /// <summary>ARN of the API key credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 
@@ -3409,13 +3409,13 @@ public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfi
     public string? DefaultReturnUrl { get; set; }
 
     /// <summary>
-    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
     /// The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
     /// </summary>
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>ARN of the Oauth credential provider for OAuth authentication.</summary>
+    /// <summary>ARN of the OAuth credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 
@@ -4511,7 +4511,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3
@@ -4520,12 +4520,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource
@@ -4534,7 +4534,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3? S3 { get; set; }
 }
@@ -4544,7 +4544,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource? Source { get; set; }
 }
@@ -4585,7 +4585,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchemaSourceS3
@@ -4594,12 +4594,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchemaSource
@@ -4608,7 +4608,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchemaSourceS3? S3 { get; set; }
 }
@@ -4618,7 +4618,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughSchemaSource? Source { get; set; }
 }
@@ -4671,7 +4671,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthroughStickinessConfiguration? StickinessConfiguration { get; set; }
 }
 
-/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
@@ -4685,7 +4685,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttpPassthrough? Passthrough { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceConnectorSource
@@ -4695,12 +4695,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInfe
     public string? ConnectorId { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceConnector
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceConnectorSource? Source { get; set; }
 }
@@ -4714,7 +4714,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInfe
     [JsonPropertyName("separator")]
     public string? Separator { get; set; }
 
-    /// <summary>Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
+    /// <summary>Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
     [JsonPropertyName("strip")]
     public bool? Strip { get; set; }
 }
@@ -4733,7 +4733,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceProviderOperationModel
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public string? Model { get; set; }
 }
@@ -4742,7 +4742,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceProviderOperation
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceProviderOperationModel>? Model { get; set; }
 
@@ -4778,7 +4778,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationInference
 {
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationInferenceConnector? Connector { get; set; }
 
@@ -5028,7 +5028,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpC
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Whether this parameter is visible to the agent. If not specified, uses the service default.</summary>
+    /// <summary>Whether to make this parameter visible to the agent. If not specified, uses the service default.</summary>
     [JsonPropertyName("visible")]
     public bool? Visible { get; set; }
 }
@@ -5054,7 +5054,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpC
     public string? ParameterValues { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpConnectorSource
@@ -5068,7 +5068,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpC
     public string? Version { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpConnector
@@ -5081,7 +5081,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpC
     [JsonPropertyName("enabled")]
     public IList<string>? Enabled { get; set; }
 
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpConnectorSource? Source { get; set; }
 }
@@ -5241,7 +5241,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
@@ -5258,7 +5258,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5283,16 +5283,16 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
@@ -5301,20 +5301,20 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
@@ -5331,7 +5331,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5356,16 +5356,16 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
@@ -5374,15 +5374,15 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5407,11 +5407,11 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5424,7 +5424,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems? Items { get; set; }
 
@@ -5432,20 +5432,20 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
@@ -5454,20 +5454,20 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
@@ -5484,7 +5484,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5509,16 +5509,16 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
@@ -5527,20 +5527,20 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
@@ -5557,7 +5557,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5582,16 +5582,16 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
@@ -5600,15 +5600,15 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5633,11 +5633,11 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5650,7 +5650,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems? Items { get; set; }
 
@@ -5658,20 +5658,20 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
@@ -5680,15 +5680,15 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -5701,7 +5701,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema? InputSchema { get; set; }
 
@@ -5709,12 +5709,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
     [JsonPropertyName("outputSchema")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema? OutputSchema { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaS3
@@ -5723,7 +5723,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -5737,7 +5737,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     [JsonPropertyName("inlinePayload")]
     public IList<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload>? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaS3? S3 { get; set; }
 }
@@ -5774,7 +5774,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpM
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3
@@ -5783,12 +5783,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpM
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+/// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServerMcpToolSchema
@@ -5797,7 +5797,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpM
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServerMcpToolSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3? S3 { get; set; }
 }
@@ -5815,7 +5815,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpM
     [JsonPropertyName("listingMode")]
     public string? ListingMode { get; set; }
 
-    /// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+    /// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
     [JsonPropertyName("mcpToolSchema")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServerMcpToolSchema? McpToolSchema { get; set; }
 
@@ -5834,7 +5834,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchemaS3
@@ -5843,12 +5843,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchema
@@ -5857,7 +5857,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchemaS3? S3 { get; set; }
 }
@@ -5872,7 +5872,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModelS3
@@ -5881,12 +5881,12 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModel
@@ -5895,7 +5895,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModelInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModelS3? S3 { get; set; }
 }
@@ -5909,7 +5909,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcp
     [JsonPropertyName("apiGateway")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpApiGateway? ApiGateway { get; set; }
 
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpConnector? Connector { get; set; }
 
@@ -5921,11 +5921,11 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcp
     [JsonPropertyName("mcpServer")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServer? McpServer { get; set; }
 
-    /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
     [JsonPropertyName("openApiSchema")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchema? OpenApiSchema { get; set; }
 
-    /// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
     [JsonPropertyName("smithyModel")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModel? SmithyModel { get; set; }
 }
@@ -5935,7 +5935,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfiguration
 {
-    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
     [JsonPropertyName("http")]
     public V1beta1GatewayTargetSpecInitProviderTargetConfigurationHttp? Http { get; set; }
 
@@ -6125,7 +6125,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfi
     [JsonPropertyName("credentialPrefix")]
     public string? CredentialPrefix { get; set; }
 
-    /// <summary>ARN of the OIDC provider for API key authentication.</summary>
+    /// <summary>ARN of the API key credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 }
@@ -6188,13 +6188,13 @@ public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfi
     public string? DefaultReturnUrl { get; set; }
 
     /// <summary>
-    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access).
+    /// OAuth grant type. Valid values: CLIENT_CREDENTIALS (machine-to-machine authentication), AUTHORIZATION_CODE (user-delegated access), TOKEN_EXCHANGE (on-behalf-of token exchange).
     /// The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
     /// </summary>
     [JsonPropertyName("grantType")]
     public string? GrantType { get; set; }
 
-    /// <summary>ARN of the Oauth credential provider for OAuth authentication.</summary>
+    /// <summary>ARN of the OAuth credential provider.</summary>
     [JsonPropertyName("providerArn")]
     public string? ProviderArn { get; set; }
 
@@ -6320,7 +6320,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3
@@ -6329,12 +6329,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource
@@ -6343,7 +6343,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3? S3 { get; set; }
 }
@@ -6353,7 +6353,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpAgentcoreRuntimeSchemaSource? Source { get; set; }
 }
@@ -6386,7 +6386,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchemaSourceS3
@@ -6395,12 +6395,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchemaSource
@@ -6409,7 +6409,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchemaSourceInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchemaSourceS3? S3 { get; set; }
 }
@@ -6419,7 +6419,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchema
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughSchemaSource? Source { get; set; }
 }
@@ -6472,7 +6472,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthroughStickinessConfiguration? StickinessConfiguration { get; set; }
 }
 
-/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+/// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
@@ -6486,7 +6486,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttpPassthrough? Passthrough { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceConnectorSource
@@ -6496,12 +6496,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInfe
     public string? ConnectorId { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceConnector
 {
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceConnectorSource? Source { get; set; }
 }
@@ -6515,7 +6515,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInfe
     [JsonPropertyName("separator")]
     public string? Separator { get; set; }
 
-    /// <summary>Whether clients can omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
+    /// <summary>Whether to allow clients to omit the provider prefix from model IDs. If true, the gateway accepts model IDs without the prefix and restores the full prefixed form before forwarding to the provider. Defaults to false.</summary>
     [JsonPropertyName("strip")]
     public bool? Strip { get; set; }
 }
@@ -6534,7 +6534,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceProviderOperationModel
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public string? Model { get; set; }
 }
@@ -6543,7 +6543,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceProviderOperation
 {
-    /// <summary>List of models supported for this operation. See model Block below.</summary>
+    /// <summary>Model ID or glob pattern that identifies the model (for example, anthropic.claude-opus-* or openai.gpt-oss-*).</summary>
     [JsonPropertyName("model")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceProviderOperationModel>? Model { get; set; }
 
@@ -6579,7 +6579,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInfe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationInference
 {
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationInferenceConnector? Connector { get; set; }
 
@@ -6666,7 +6666,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpC
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>Whether this parameter is visible to the agent. If not specified, uses the service default.</summary>
+    /// <summary>Whether to make this parameter visible to the agent. If not specified, uses the service default.</summary>
     [JsonPropertyName("visible")]
     public bool? Visible { get; set; }
 }
@@ -6692,7 +6692,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpC
     public string? ParameterValues { get; set; }
 }
 
-/// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+/// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpConnectorSource
@@ -6706,7 +6706,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpC
     public string? Version { get; set; }
 }
 
-/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+/// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpConnector
@@ -6719,12 +6719,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpC
     [JsonPropertyName("enabled")]
     public IList<string>? Enabled { get; set; }
 
-    /// <summary>Configuration for API schema. See api_schema_configuration Block below.</summary>
+    /// <summary>Configuration for the API schema. Supports exactly one of inline_payload or s3. For HTTP targets, these blocks are documented under their full paths (for example, target_configuration.http.agentcore_runtime.schema.source.inline_payload Block and target_configuration.http.agentcore_runtime.schema.source.s3 Block).</summary>
     [JsonPropertyName("source")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpConnectorSource? Source { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
@@ -6741,7 +6741,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -6766,16 +6766,16 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
@@ -6784,20 +6784,20 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
@@ -6814,7 +6814,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -6839,16 +6839,16 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
@@ -6857,15 +6857,15 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -6890,11 +6890,11 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -6907,7 +6907,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems? Items { get; set; }
 
@@ -6915,20 +6915,20 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
@@ -6937,20 +6937,20 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
@@ -6967,7 +6967,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -6992,16 +6992,16 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
@@ -7010,20 +7010,20 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
@@ -7040,7 +7040,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -7065,16 +7065,16 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Items definition for array properties. See items Block above.</summary>
+/// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
@@ -7083,15 +7083,15 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -7116,11 +7116,11 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("propertiesJson")]
     public string? PropertiesJson { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -7133,7 +7133,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems? Items { get; set; }
 
@@ -7141,20 +7141,20 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty>? Property { get; set; }
 
-    /// <summary>Whether this property is required. Defaults to false.</summary>
+    /// <summary>Whether to mark this property as required. Defaults to false.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+/// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
@@ -7163,15 +7163,15 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Items definition for array properties. See items Block above.</summary>
+    /// <summary>Nested items definition for arrays of arrays. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.items.items Block below.</summary>
     [JsonPropertyName("items")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems? Items { get; set; }
 
-    /// <summary>Set of property definitions for object types. Can only be used when type is object. See property Block below.</summary>
+    /// <summary>Set of nested property definitions for object properties. See target_configuration.mcp.lambda.tool_schema.inline_payload.input_schema.property.property Block below.</summary>
     [JsonPropertyName("property")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty>? Property { get; set; }
 
-    /// <summary>Data type of the schema. Valid values: string, number, integer, boolean, array, object.</summary>
+    /// <summary>Data type of the property.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -7184,7 +7184,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Schema for the tool&apos;s input. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s input. See input_schema Block below.</summary>
     [JsonPropertyName("inputSchema")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema? InputSchema { get; set; }
 
@@ -7192,12 +7192,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Schema for the tool&apos;s output. See schema_definition Block below.</summary>
+    /// <summary>Schema for the tool&apos;s output. See output_schema Block below.</summary>
     [JsonPropertyName("outputSchema")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema? OutputSchema { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaS3
@@ -7206,7 +7206,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -7220,7 +7220,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     [JsonPropertyName("inlinePayload")]
     public IList<V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload>? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaS3? S3 { get; set; }
 }
@@ -7249,7 +7249,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpM
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3
@@ -7258,12 +7258,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpM
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+/// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServerMcpToolSchema
@@ -7272,7 +7272,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpM
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServerMcpToolSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServerMcpToolSchemaS3? S3 { get; set; }
 }
@@ -7290,7 +7290,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpM
     [JsonPropertyName("listingMode")]
     public string? ListingMode { get; set; }
 
-    /// <summary>Tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
+    /// <summary>Tool schema configuration for the MCP server target. When set, dynamic tool discovery and synchronization are disabled. See mcp_tool_schema Block below.</summary>
     [JsonPropertyName("mcpToolSchema")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServerMcpToolSchema? McpToolSchema { get; set; }
 
@@ -7309,7 +7309,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchemaS3
@@ -7318,12 +7318,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchema
@@ -7332,7 +7332,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchemaInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchemaS3? S3 { get; set; }
 }
@@ -7347,7 +7347,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
     public string? Payload { get; set; }
 }
 
-/// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+/// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModelS3
@@ -7356,12 +7356,12 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
     [JsonPropertyName("bucketOwnerAccountId")]
     public string? BucketOwnerAccountId { get; set; }
 
-    /// <summary>S3 URI where the tool schema is stored.</summary>
+    /// <summary>S3 URI where the schema is stored.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
 
-/// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+/// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModel
@@ -7370,7 +7370,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
     [JsonPropertyName("inlinePayload")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModelInlinePayload? InlinePayload { get; set; }
 
-    /// <summary>S3 location of the tool schema. See s3 Block below.</summary>
+    /// <summary>S3 location of the tool schema. See target_configuration.mcp.mcp_server.mcp_tool_schema.s3 Block below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModelS3? S3 { get; set; }
 }
@@ -7384,7 +7384,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp
     [JsonPropertyName("apiGateway")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpApiGateway? ApiGateway { get; set; }
 
-    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See connector Block below.</summary>
+    /// <summary>Connector integration target configuration. Connectors provide pre-built integrations with AWS services and third-party tools. See target_configuration.mcp.connector Block below.</summary>
     [JsonPropertyName("connector")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpConnector? Connector { get; set; }
 
@@ -7396,11 +7396,11 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp
     [JsonPropertyName("mcpServer")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServer? McpServer { get; set; }
 
-    /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>OpenAPI schema-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.open_api_schema.inline_payload Block) or s3 (see target_configuration.mcp.open_api_schema.s3 Block).</summary>
     [JsonPropertyName("openApiSchema")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchema? OpenApiSchema { get; set; }
 
-    /// <summary>Smithy model-based target configuration. See api_schema_configuration Block below.</summary>
+    /// <summary>Smithy model-based target configuration. Supports exactly one of inline_payload (see target_configuration.mcp.smithy_model.inline_payload Block) or s3 (see target_configuration.mcp.smithy_model.s3 Block).</summary>
     [JsonPropertyName("smithyModel")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModel? SmithyModel { get; set; }
 }
@@ -7410,7 +7410,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfiguration
 {
-    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent. See http Block below.</summary>
+    /// <summary>HTTP target configuration for routing requests directly to an AgentCore Runtime agent or to an external HTTPS endpoint. See http Block below.</summary>
     [JsonPropertyName("http")]
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationHttp? Http { get; set; }
 

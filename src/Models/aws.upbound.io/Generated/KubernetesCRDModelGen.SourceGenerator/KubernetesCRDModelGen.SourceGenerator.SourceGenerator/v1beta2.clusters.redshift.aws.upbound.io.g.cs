@@ -777,7 +777,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("iamRoleSelector")]
     public V1beta2ClusterSpecForProviderIamRoleSelector? IamRoleSelector { get; set; }
 
-    /// <summary>A list of IAM Role ARNs to associate with the cluster. A Maximum of 10 can be associated to the cluster at any time.</summary>
+    /// <summary>A list of IAM Role ARNs to associate with the cluster. A maximum of 50 (or 10 in ISO regions) can be associated with the cluster at any time.</summary>
     [JsonPropertyName("iamRoles")]
     public IList<string>? IamRoles { get; set; }
 
@@ -1634,7 +1634,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("iamRoleSelector")]
     public V1beta2ClusterSpecInitProviderIamRoleSelector? IamRoleSelector { get; set; }
 
-    /// <summary>A list of IAM Role ARNs to associate with the cluster. A Maximum of 10 can be associated to the cluster at any time.</summary>
+    /// <summary>A list of IAM Role ARNs to associate with the cluster. A maximum of 50 (or 10 in ISO regions) can be associated with the cluster at any time.</summary>
     [JsonPropertyName("iamRoles")]
     public IList<string>? IamRoles { get; set; }
 
@@ -2060,7 +2060,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("finalSnapshotIdentifier")]
     public string? FinalSnapshotIdentifier { get; set; }
 
-    /// <summary>A list of IAM Role ARNs to associate with the cluster. A Maximum of 10 can be associated to the cluster at any time.</summary>
+    /// <summary>A list of IAM Role ARNs to associate with the cluster. A maximum of 50 (or 10 in ISO regions) can be associated with the cluster at any time.</summary>
     [JsonPropertyName("iamRoles")]
     public IList<string>? IamRoles { get; set; }
 

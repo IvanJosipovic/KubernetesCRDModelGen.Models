@@ -382,7 +382,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProvider
     [JsonPropertyName("networkLoadBalancerArnsSelector")]
     public V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelector? NetworkLoadBalancerArnsSelector { get; set; }
 
-    /// <summary>The private DNS name for the service.</summary>
+    /// <summary>Private DNS name for the service.</summary>
     [JsonPropertyName("privateDnsName")]
     public string? PrivateDnsName { get; set; }
 
@@ -393,11 +393,11 @@ public partial class V1beta1VPCEndpointServiceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The supported IP address types. The possible values are ipv4 and ipv6.</summary>
+    /// <summary>Supported IP address types. The possible values are ipv4 and ipv6.</summary>
     [JsonPropertyName("supportedIpAddressTypes")]
     public IList<string>? SupportedIpAddressTypes { get; set; }
 
-    /// <summary>The set of regions from which service consumers can access the service.</summary>
+    /// <summary>Set of regions from which service consumers can access the service.</summary>
     [JsonPropertyName("supportedRegions")]
     public IList<string>? SupportedRegions { get; set; }
 
@@ -744,15 +744,15 @@ public partial class V1beta1VPCEndpointServiceSpecInitProvider
     [JsonPropertyName("networkLoadBalancerArnsSelector")]
     public V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelector? NetworkLoadBalancerArnsSelector { get; set; }
 
-    /// <summary>The private DNS name for the service.</summary>
+    /// <summary>Private DNS name for the service.</summary>
     [JsonPropertyName("privateDnsName")]
     public string? PrivateDnsName { get; set; }
 
-    /// <summary>The supported IP address types. The possible values are ipv4 and ipv6.</summary>
+    /// <summary>Supported IP address types. The possible values are ipv4 and ipv6.</summary>
     [JsonPropertyName("supportedIpAddressTypes")]
     public IList<string>? SupportedIpAddressTypes { get; set; }
 
-    /// <summary>The set of regions from which service consumers can access the service.</summary>
+    /// <summary>Set of regions from which service consumers can access the service.</summary>
     [JsonPropertyName("supportedRegions")]
     public IList<string>? SupportedRegions { get; set; }
 
@@ -952,7 +952,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProviderPrivateDnsNameConf
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The state of the VPC endpoint service.</summary>
+    /// <summary>Verification state of the VPC endpoint service. Consumers of the endpoint service can use the private name only when the state is verified.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -973,7 +973,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("acceptanceRequired")]
     public bool? AcceptanceRequired { get; set; }
 
-    /// <summary>The ARNs of one or more principals allowed to discover the endpoint service.</summary>
+    /// <summary>ARNs of one or more principals allowed to discover the endpoint service.</summary>
     [JsonPropertyName("allowedPrincipals")]
     public IList<string>? AllowedPrincipals { get; set; }
 
@@ -981,11 +981,11 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A set of Availability Zones in which the service is available.</summary>
+    /// <summary>Set of Availability Zones in which the service is available.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
-    /// <summary>A set of DNS names for the service.</summary>
+    /// <summary>Set of DNS names for the service.</summary>
     [JsonPropertyName("baseEndpointDnsNames")]
     public IList<string>? BaseEndpointDnsNames { get; set; }
 
@@ -993,7 +993,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("gatewayLoadBalancerArns")]
     public IList<string>? GatewayLoadBalancerArns { get; set; }
 
-    /// <summary>The ID of the VPC endpoint service.</summary>
+    /// <summary>ID of the VPC endpoint service.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1005,7 +1005,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("networkLoadBalancerArns")]
     public IList<string>? NetworkLoadBalancerArns { get; set; }
 
-    /// <summary>The private DNS name for the service.</summary>
+    /// <summary>Private DNS name for the service.</summary>
     [JsonPropertyName("privateDnsName")]
     public string? PrivateDnsName { get; set; }
 
@@ -1020,23 +1020,23 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The service name.</summary>
+    /// <summary>Service name.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>The service type, Gateway or Interface.</summary>
+    /// <summary>Service type, Gateway or Interface.</summary>
     [JsonPropertyName("serviceType")]
     public string? ServiceType { get; set; }
 
-    /// <summary>The state of the VPC endpoint service.</summary>
+    /// <summary>Verification state of the VPC endpoint service. Consumers of the endpoint service can use the private name only when the state is verified.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
-    /// <summary>The supported IP address types. The possible values are ipv4 and ipv6.</summary>
+    /// <summary>Supported IP address types. The possible values are ipv4 and ipv6.</summary>
     [JsonPropertyName("supportedIpAddressTypes")]
     public IList<string>? SupportedIpAddressTypes { get; set; }
 
-    /// <summary>The set of regions from which service consumers can access the service.</summary>
+    /// <summary>Set of regions from which service consumers can access the service.</summary>
     [JsonPropertyName("supportedRegions")]
     public IList<string>? SupportedRegions { get; set; }
 
@@ -1044,7 +1044,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

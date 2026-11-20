@@ -37,7 +37,7 @@ public partial class V1beta1EnvironmentList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1beta1Environment> Items { get; set; }
 }
 
-/// <summary>The airflow_configuration_options parameter specifies airflow override options. Check the Official documentation for all possible configuration options.</summary>
+/// <summary>Airflow override options. Check the Official documentation for all possible configuration options.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderAirflowConfigurationOptionsSecretRef
@@ -357,12 +357,12 @@ public partial class V1beta1EnvironmentSpecForProviderKmsKeySelector
     public V1beta1EnvironmentSpecForProviderKmsKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationDagProcessingLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -371,12 +371,12 @@ public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationDagPro
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationSchedulerLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -385,12 +385,12 @@ public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationSchedu
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+/// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationTaskLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -399,12 +399,12 @@ public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationTaskLo
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationWebserverLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -413,12 +413,12 @@ public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationWebser
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationWorkerLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -427,28 +427,28 @@ public partial class V1beta1EnvironmentSpecForProviderLoggingConfigurationWorker
     public string? LogLevel { get; set; }
 }
 
-/// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+/// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderLoggingConfiguration
 {
-    /// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("dagProcessingLogs")]
     public V1beta1EnvironmentSpecForProviderLoggingConfigurationDagProcessingLogs? DagProcessingLogs { get; set; }
 
-    /// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("schedulerLogs")]
     public V1beta1EnvironmentSpecForProviderLoggingConfigurationSchedulerLogs? SchedulerLogs { get; set; }
 
-    /// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+    /// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
     [JsonPropertyName("taskLogs")]
     public V1beta1EnvironmentSpecForProviderLoggingConfigurationTaskLogs? TaskLogs { get; set; }
 
-    /// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("webserverLogs")]
     public V1beta1EnvironmentSpecForProviderLoggingConfigurationWebserverLogs? WebserverLogs { get; set; }
 
-    /// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("workerLogs")]
     public V1beta1EnvironmentSpecForProviderLoggingConfigurationWorkerLogs? WorkerLogs { get; set; }
 }
@@ -763,7 +763,7 @@ public partial class V1beta1EnvironmentSpecForProviderNetworkConfigurationSubnet
     public V1beta1EnvironmentSpecForProviderNetworkConfigurationSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+/// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderNetworkConfiguration
@@ -780,7 +780,7 @@ public partial class V1beta1EnvironmentSpecForProviderNetworkConfiguration
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1EnvironmentSpecForProviderNetworkConfigurationSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
+    /// <summary>Private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -952,7 +952,7 @@ public partial class V1beta1EnvironmentSpecForProviderSourceBucketArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProvider
 {
-    /// <summary>The airflow_configuration_options parameter specifies airflow override options. Check the Official documentation for all possible configuration options.</summary>
+    /// <summary>Airflow override options. Check the Official documentation for all possible configuration options.</summary>
     [JsonPropertyName("airflowConfigurationOptionsSecretRef")]
     public V1beta1EnvironmentSpecForProviderAirflowConfigurationOptionsSecretRef? AirflowConfigurationOptionsSecretRef { get; set; }
 
@@ -960,11 +960,11 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("airflowVersion")]
     public string? AirflowVersion { get; set; }
 
-    /// <summary>The relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("dagS3Path")]
     public string? DagS3Path { get; set; }
 
-    /// <summary>Defines whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
+    /// <summary>Whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
     [JsonPropertyName("endpointManagement")]
     public string? EndpointManagement { get; set; }
 
@@ -996,35 +996,35 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("kmsKeySelector")]
     public V1beta1EnvironmentSpecForProviderKmsKeySelector? KmsKeySelector { get; set; }
 
-    /// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+    /// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1EnvironmentSpecForProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
-    /// <summary>The maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("maxWebservers")]
     public double? MaxWebservers { get; set; }
 
-    /// <summary>The maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
+    /// <summary>Maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
     [JsonPropertyName("maxWorkers")]
     public double? MaxWorkers { get; set; }
 
-    /// <summary>The minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("minWebservers")]
     public double? MinWebservers { get; set; }
 
-    /// <summary>The minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
+    /// <summary>Minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
     [JsonPropertyName("minWorkers")]
     public double? MinWorkers { get; set; }
 
-    /// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+    /// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1EnvironmentSpecForProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The plugins.zip file version you want to use.</summary>
+    /// <summary>Version of the plugins.zip file you want to use.</summary>
     [JsonPropertyName("pluginsS3ObjectVersion")]
     public string? PluginsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("pluginsS3Path")]
     public string? PluginsS3Path { get; set; }
 
@@ -1035,15 +1035,15 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The requirements.txt file version you want to use.</summary>
+    /// <summary>Version of the requirements.txt file you want to use.</summary>
     [JsonPropertyName("requirementsS3ObjectVersion")]
     public string? RequirementsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("requirementsS3Path")]
     public string? RequirementsS3Path { get; set; }
 
-    /// <summary>The number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
+    /// <summary>Number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
     [JsonPropertyName("schedulers")]
     public double? Schedulers { get; set; }
 
@@ -1059,11 +1059,11 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("sourceBucketArnSelector")]
     public V1beta1EnvironmentSpecForProviderSourceBucketArnSelector? SourceBucketArnSelector { get; set; }
 
-    /// <summary>The version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
+    /// <summary>Version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
     [JsonPropertyName("startupScriptS3ObjectVersion")]
     public string? StartupScriptS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
+    /// <summary>Relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
     [JsonPropertyName("startupScriptS3Path")]
     public string? StartupScriptS3Path { get; set; }
 
@@ -1071,11 +1071,11 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
+    /// <summary>Whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
-    /// <summary>Specifies the start date for the weekly maintenance window.</summary>
+    /// <summary>Start date for the weekly maintenance window.</summary>
     [JsonPropertyName("weeklyMaintenanceWindowStart")]
     public string? WeeklyMaintenanceWindowStart { get; set; }
 
@@ -1394,12 +1394,12 @@ public partial class V1beta1EnvironmentSpecInitProviderKmsKeySelector
     public V1beta1EnvironmentSpecInitProviderKmsKeySelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationDagProcessingLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1408,12 +1408,12 @@ public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationDagPr
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationSchedulerLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1422,12 +1422,12 @@ public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationSched
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+/// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationTaskLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1436,12 +1436,12 @@ public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationTaskL
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationWebserverLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1450,12 +1450,12 @@ public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationWebse
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationWorkerLogs
 {
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1464,28 +1464,28 @@ public partial class V1beta1EnvironmentSpecInitProviderLoggingConfigurationWorke
     public string? LogLevel { get; set; }
 }
 
-/// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+/// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderLoggingConfiguration
 {
-    /// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("dagProcessingLogs")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfigurationDagProcessingLogs? DagProcessingLogs { get; set; }
 
-    /// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("schedulerLogs")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfigurationSchedulerLogs? SchedulerLogs { get; set; }
 
-    /// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+    /// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
     [JsonPropertyName("taskLogs")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfigurationTaskLogs? TaskLogs { get; set; }
 
-    /// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("webserverLogs")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfigurationWebserverLogs? WebserverLogs { get; set; }
 
-    /// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("workerLogs")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfigurationWorkerLogs? WorkerLogs { get; set; }
 }
@@ -1800,7 +1800,7 @@ public partial class V1beta1EnvironmentSpecInitProviderNetworkConfigurationSubne
     public V1beta1EnvironmentSpecInitProviderNetworkConfigurationSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+/// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderNetworkConfiguration
@@ -1817,7 +1817,7 @@ public partial class V1beta1EnvironmentSpecInitProviderNetworkConfiguration
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1EnvironmentSpecInitProviderNetworkConfigurationSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
+    /// <summary>Private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2008,11 +2008,11 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("airflowVersion")]
     public string? AirflowVersion { get; set; }
 
-    /// <summary>The relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("dagS3Path")]
     public string? DagS3Path { get; set; }
 
-    /// <summary>Defines whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
+    /// <summary>Whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
     [JsonPropertyName("endpointManagement")]
     public string? EndpointManagement { get; set; }
 
@@ -2044,47 +2044,47 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("kmsKeySelector")]
     public V1beta1EnvironmentSpecInitProviderKmsKeySelector? KmsKeySelector { get; set; }
 
-    /// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+    /// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1EnvironmentSpecInitProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
-    /// <summary>The maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("maxWebservers")]
     public double? MaxWebservers { get; set; }
 
-    /// <summary>The maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
+    /// <summary>Maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
     [JsonPropertyName("maxWorkers")]
     public double? MaxWorkers { get; set; }
 
-    /// <summary>The minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("minWebservers")]
     public double? MinWebservers { get; set; }
 
-    /// <summary>The minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
+    /// <summary>Minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
     [JsonPropertyName("minWorkers")]
     public double? MinWorkers { get; set; }
 
-    /// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+    /// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1EnvironmentSpecInitProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The plugins.zip file version you want to use.</summary>
+    /// <summary>Version of the plugins.zip file you want to use.</summary>
     [JsonPropertyName("pluginsS3ObjectVersion")]
     public string? PluginsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("pluginsS3Path")]
     public string? PluginsS3Path { get; set; }
 
-    /// <summary>The requirements.txt file version you want to use.</summary>
+    /// <summary>Version of the requirements.txt file you want to use.</summary>
     [JsonPropertyName("requirementsS3ObjectVersion")]
     public string? RequirementsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("requirementsS3Path")]
     public string? RequirementsS3Path { get; set; }
 
-    /// <summary>The number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
+    /// <summary>Number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
     [JsonPropertyName("schedulers")]
     public double? Schedulers { get; set; }
 
@@ -2100,11 +2100,11 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("sourceBucketArnSelector")]
     public V1beta1EnvironmentSpecInitProviderSourceBucketArnSelector? SourceBucketArnSelector { get; set; }
 
-    /// <summary>The version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
+    /// <summary>Version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
     [JsonPropertyName("startupScriptS3ObjectVersion")]
     public string? StartupScriptS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
+    /// <summary>Relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
     [JsonPropertyName("startupScriptS3Path")]
     public string? StartupScriptS3Path { get; set; }
 
@@ -2112,11 +2112,11 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
+    /// <summary>Whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
-    /// <summary>Specifies the start date for the weekly maintenance window.</summary>
+    /// <summary>Start date for the weekly maintenance window.</summary>
     [JsonPropertyName("weeklyMaintenanceWindowStart")]
     public string? WeeklyMaintenanceWindowStart { get; set; }
 
@@ -2236,9 +2236,11 @@ public partial class V1beta1EnvironmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLastUpdatedError
 {
+    /// <summary>Error code of the last update error.</summary>
     [JsonPropertyName("errorCode")]
     public string? ErrorCode { get; set; }
 
+    /// <summary>Error message of the last update error.</summary>
     [JsonPropertyName("errorMessage")]
     public string? ErrorMessage { get; set; }
 }
@@ -2247,28 +2249,29 @@ public partial class V1beta1EnvironmentStatusAtProviderLastUpdatedError
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLastUpdated
 {
-    /// <summary>The Created At date of the MWAA Environment</summary>
+    /// <summary>Date and time the environment was last updated.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
+    /// <summary>Error that occurred during the last update, if any. See last_updated.error Block for details.</summary>
     [JsonPropertyName("error")]
     public IList<V1beta1EnvironmentStatusAtProviderLastUpdatedError>? Error { get; set; }
 
-    /// <summary>The status of the Amazon MWAA Environment</summary>
+    /// <summary>Status of the last update.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
 
-/// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationDagProcessingLogs
 {
-    /// <summary>Provides the ARN for the CloudWatch group where the logs will be published</summary>
+    /// <summary>(Read-Only) ARN of the CloudWatch Logs log group where the logs are published.</summary>
     [JsonPropertyName("cloudWatchLogGroupArn")]
     public string? CloudWatchLogGroupArn { get; set; }
 
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2277,16 +2280,16 @@ public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationDagPr
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationSchedulerLogs
 {
-    /// <summary>Provides the ARN for the CloudWatch group where the logs will be published</summary>
+    /// <summary>(Read-Only) ARN of the CloudWatch Logs log group where the logs are published.</summary>
     [JsonPropertyName("cloudWatchLogGroupArn")]
     public string? CloudWatchLogGroupArn { get; set; }
 
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2295,16 +2298,16 @@ public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationSched
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+/// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationTaskLogs
 {
-    /// <summary>Provides the ARN for the CloudWatch group where the logs will be published</summary>
+    /// <summary>(Read-Only) ARN of the CloudWatch Logs log group where the logs are published.</summary>
     [JsonPropertyName("cloudWatchLogGroupArn")]
     public string? CloudWatchLogGroupArn { get; set; }
 
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2313,16 +2316,16 @@ public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationTaskL
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationWebserverLogs
 {
-    /// <summary>Provides the ARN for the CloudWatch group where the logs will be published</summary>
+    /// <summary>(Read-Only) ARN of the CloudWatch Logs log group where the logs are published.</summary>
     [JsonPropertyName("cloudWatchLogGroupArn")]
     public string? CloudWatchLogGroupArn { get; set; }
 
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2331,16 +2334,16 @@ public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationWebse
     public string? LogLevel { get; set; }
 }
 
-/// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+/// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationWorkerLogs
 {
-    /// <summary>Provides the ARN for the CloudWatch group where the logs will be published</summary>
+    /// <summary>(Read-Only) ARN of the CloudWatch Logs log group where the logs are published.</summary>
     [JsonPropertyName("cloudWatchLogGroupArn")]
     public string? CloudWatchLogGroupArn { get; set; }
 
-    /// <summary>Enabling or disabling the collection of logs</summary>
+    /// <summary>Whether to enable the collection of logs.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2349,33 +2352,33 @@ public partial class V1beta1EnvironmentStatusAtProviderLoggingConfigurationWorke
     public string? LogLevel { get; set; }
 }
 
-/// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+/// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderLoggingConfiguration
 {
-    /// <summary>Log configuration options for processing DAGs. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for processing DAGs. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("dagProcessingLogs")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfigurationDagProcessingLogs? DagProcessingLogs { get; set; }
 
-    /// <summary>Log configuration options for the schedulers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the schedulers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("schedulerLogs")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfigurationSchedulerLogs? SchedulerLogs { get; set; }
 
-    /// <summary>Log configuration options for DAG tasks. See Module logging configuration for more information. Enabled by default with INFO log level.</summary>
+    /// <summary>Log configuration options for DAG tasks. See Module logging configuration blocks for details. Enabled by default with INFO log level.</summary>
     [JsonPropertyName("taskLogs")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfigurationTaskLogs? TaskLogs { get; set; }
 
-    /// <summary>Log configuration options for the webservers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the webservers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("webserverLogs")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfigurationWebserverLogs? WebserverLogs { get; set; }
 
-    /// <summary>Log configuration options for the workers. See Module logging configuration for more information. Disabled by default.</summary>
+    /// <summary>Log configuration options for the workers. See Module logging configuration blocks for details. Disabled by default.</summary>
     [JsonPropertyName("workerLogs")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfigurationWorkerLogs? WorkerLogs { get; set; }
 }
 
-/// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+/// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderNetworkConfiguration
@@ -2384,7 +2387,7 @@ public partial class V1beta1EnvironmentStatusAtProviderNetworkConfiguration
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
+    /// <summary>Private subnet IDs in which the environment should be created. MWAA requires two subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -2397,23 +2400,23 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("airflowVersion")]
     public string? AirflowVersion { get; set; }
 
-    /// <summary>The ARN of the MWAA Environment</summary>
+    /// <summary>ARN of the MWAA Environment.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The Created At date of the MWAA Environment</summary>
+    /// <summary>Created At date of the MWAA Environment.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>The relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the DAG folder on your Amazon S3 storage bucket. For example, dags. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("dagS3Path")]
     public string? DagS3Path { get; set; }
 
-    /// <summary>The VPC endpoint for the environment&apos;s Amazon RDS database</summary>
+    /// <summary>VPC endpoint for the environment&apos;s Amazon RDS database.</summary>
     [JsonPropertyName("databaseVpcEndpointService")]
     public string? DatabaseVpcEndpointService { get; set; }
 
-    /// <summary>Defines whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
+    /// <summary>Whether the VPC endpoints configured for the environment are created and managed by the customer or by AWS. If set to SERVICE, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to CUSTOMER, you must create, and manage, the VPC endpoints for your VPC. Defaults to SERVICE if not set.</summary>
     [JsonPropertyName("endpointManagement")]
     public string? EndpointManagement { get; set; }
 
@@ -2432,38 +2435,39 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Information about the last update of the environment. See last_updated Block for details.</summary>
     [JsonPropertyName("lastUpdated")]
     public IList<V1beta1EnvironmentStatusAtProviderLastUpdated>? LastUpdated { get; set; }
 
-    /// <summary>The Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
+    /// <summary>Apache Airflow logs you want to send to Amazon CloudWatch Logs. See logging_configuration Block for details.</summary>
     [JsonPropertyName("loggingConfiguration")]
     public V1beta1EnvironmentStatusAtProviderLoggingConfiguration? LoggingConfiguration { get; set; }
 
-    /// <summary>The maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Maximum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("maxWebservers")]
     public double? MaxWebservers { get; set; }
 
-    /// <summary>The maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
+    /// <summary>Maximum number of workers that can be automatically scaled up. Value need to be between 1 and 25. Will be 10 by default.</summary>
     [JsonPropertyName("maxWorkers")]
     public double? MaxWorkers { get; set; }
 
-    /// <summary>The minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
+    /// <summary>Minimum number of web servers that you want to run in your environment. Value need to be between 2 and 5 if environment_class is not mw1.micro, 1 otherwise.</summary>
     [JsonPropertyName("minWebservers")]
     public double? MinWebservers { get; set; }
 
-    /// <summary>The minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
+    /// <summary>Minimum number of workers that you want to run in your environment. Will be 1 by default.</summary>
     [JsonPropertyName("minWorkers")]
     public double? MinWorkers { get; set; }
 
-    /// <summary>Specifies the network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
+    /// <summary>Network configuration for your Apache Airflow Environment. This includes two private subnets as well as security groups for the Airflow environment. Each subnet requires internet connection, otherwise the deployment will fail. See network_configuration Block for details.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1EnvironmentStatusAtProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The plugins.zip file version you want to use.</summary>
+    /// <summary>Version of the plugins.zip file you want to use.</summary>
     [JsonPropertyName("pluginsS3ObjectVersion")]
     public string? PluginsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the plugins.zip file on your Amazon S3 storage bucket. For example, plugins.zip. If a relative path is provided in the request, then plugins_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("pluginsS3Path")]
     public string? PluginsS3Path { get; set; }
 
@@ -2474,19 +2478,19 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The requirements.txt file version you want to use.</summary>
+    /// <summary>Version of the requirements.txt file you want to use.</summary>
     [JsonPropertyName("requirementsS3ObjectVersion")]
     public string? RequirementsS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
+    /// <summary>Relative path to the requirements.txt file on your Amazon S3 storage bucket. For example, requirements.txt. If a relative path is provided in the request, then requirements_s3_object_version is required. For more information, see Importing DAGs on Amazon MWAA.</summary>
     [JsonPropertyName("requirementsS3Path")]
     public string? RequirementsS3Path { get; set; }
 
-    /// <summary>The number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
+    /// <summary>Number of schedulers that you want to run in your environment. v2.0.2 and above accepts 2 - 5, default 2. v1.10.12 accepts 1.</summary>
     [JsonPropertyName("schedulers")]
     public double? Schedulers { get; set; }
 
-    /// <summary>The Service Role ARN of the Amazon MWAA Environment</summary>
+    /// <summary>Service Role ARN of the Amazon MWAA Environment.</summary>
     [JsonPropertyName("serviceRoleArn")]
     public string? ServiceRoleArn { get; set; }
 
@@ -2494,15 +2498,15 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("sourceBucketArn")]
     public string? SourceBucketArn { get; set; }
 
-    /// <summary>The version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
+    /// <summary>Version of the startup shell script you want to use. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.</summary>
     [JsonPropertyName("startupScriptS3ObjectVersion")]
     public string? StartupScriptS3ObjectVersion { get; set; }
 
-    /// <summary>The relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
+    /// <summary>Relative path to the script hosted in your bucket. The script runs as your environment starts before starting the Apache Airflow process. Use this script to install dependencies, modify configuration options, and set environment variables. See Using a startup script. Supported for environment versions 2.x and later.</summary>
     [JsonPropertyName("startupScriptS3Path")]
     public string? StartupScriptS3Path { get; set; }
 
-    /// <summary>The status of the Amazon MWAA Environment</summary>
+    /// <summary>Status of the Amazon MWAA Environment.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -2510,23 +2514,23 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
+    /// <summary>Whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
-    /// <summary>The webserver URL of the MWAA Environment</summary>
+    /// <summary>Webserver URL of the MWAA Environment.</summary>
     [JsonPropertyName("webserverUrl")]
     public string? WebserverUrl { get; set; }
 
-    /// <summary>The VPC endpoint for the environment&apos;s web server</summary>
+    /// <summary>VPC endpoint for the environment&apos;s web server.</summary>
     [JsonPropertyName("webserverVpcEndpointService")]
     public string? WebserverVpcEndpointService { get; set; }
 
-    /// <summary>Specifies the start date for the weekly maintenance window.</summary>
+    /// <summary>Start date for the weekly maintenance window.</summary>
     [JsonPropertyName("weeklyMaintenanceWindowStart")]
     public string? WeeklyMaintenanceWindowStart { get; set; }
 

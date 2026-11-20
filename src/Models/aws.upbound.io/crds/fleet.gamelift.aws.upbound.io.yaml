@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: fleet.gamelift.aws.upbound.io
 spec:
   group: gamelift.aws.upbound.io
@@ -1019,7 +1019,7 @@ spec:
                     description: Prompts GameLift to generate a TLS/SSL certificate for the fleet. See certificate_configuration.
                     properties:
                       certificateType:
-                        description: Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
+                        description: Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
                         type: string
                     type: object
                   description:
@@ -1131,7 +1131,7 @@ spec:
                       type: string
                     type: array
                   name:
-                    description: The name of the fleet.
+                    description: Name of the fleet.
                     type: string
                   newGameSessionProtectionPolicy:
                     description: Game session protection policy to apply to all instances in this fleetE.g., FullProtection. Defaults to NoProtection.
@@ -1281,7 +1281,7 @@ spec:
                     description: Prompts GameLift to generate a TLS/SSL certificate for the fleet. See certificate_configuration.
                     properties:
                       certificateType:
-                        description: Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
+                        description: Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
                         type: string
                     type: object
                   description:
@@ -1393,7 +1393,7 @@ spec:
                       type: string
                     type: array
                   name:
-                    description: The name of the fleet.
+                    description: Name of the fleet.
                     type: string
                   newGameSessionProtectionPolicy:
                     description: Game session protection policy to apply to all instances in this fleetE.g., FullProtection. Defaults to NoProtection.
@@ -1552,7 +1552,7 @@ spec:
                     description: Prompts GameLift to generate a TLS/SSL certificate for the fleet. See certificate_configuration.
                     properties:
                       certificateType:
-                        description: Indicates whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
+                        description: Whether a TLS/SSL certificate is generated for a fleet. Valid values are DISABLED and GENERATED. Default value is DISABLED.
                         type: string
                     type: object
                   description:
@@ -1589,6 +1589,7 @@ spec:
                     description: ARN of an IAM role that instances in the fleet can assume.
                     type: string
                   logPaths:
+                    description: List of paths from which the fleet captures logs.
                     items:
                       type: string
                     type: array
@@ -1598,7 +1599,7 @@ spec:
                       type: string
                     type: array
                   name:
-                    description: The name of the fleet.
+                    description: Name of the fleet.
                     type: string
                   newGameSessionProtectionPolicy:
                     description: Game session protection policy to apply to all instances in this fleetE.g., FullProtection. Defaults to NoProtection.
@@ -1661,7 +1662,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

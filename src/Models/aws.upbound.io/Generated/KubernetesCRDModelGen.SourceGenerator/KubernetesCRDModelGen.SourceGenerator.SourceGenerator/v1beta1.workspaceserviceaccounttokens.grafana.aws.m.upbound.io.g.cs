@@ -351,7 +351,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspace
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProvider
 {
-    /// <summary>A name for the token to create. The name must be unique within the workspace.</summary>
+    /// <summary>Name for the token to create. The name must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -366,7 +366,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProvider
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the service account for which to create a token.</summary>
+    /// <summary>ID of the service account for which to create a token.</summary>
     [JsonPropertyName("serviceAccountId")]
     public string? ServiceAccountId { get; set; }
 
@@ -378,7 +378,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProvider
     [JsonPropertyName("serviceAccountIdSelector")]
     public V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelector? ServiceAccountIdSelector { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account token is associated.</summary>
+    /// <summary>Grafana workspace with which the service account token is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -717,7 +717,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspac
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProvider
 {
-    /// <summary>A name for the token to create. The name must be unique within the workspace.</summary>
+    /// <summary>Name for the token to create. The name must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -725,7 +725,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProvider
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the service account for which to create a token.</summary>
+    /// <summary>ID of the service account for which to create a token.</summary>
     [JsonPropertyName("serviceAccountId")]
     public string? ServiceAccountId { get; set; }
 
@@ -737,7 +737,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProvider
     [JsonPropertyName("serviceAccountIdSelector")]
     public V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelector? ServiceAccountIdSelector { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account token is associated.</summary>
+    /// <summary>Grafana workspace with which the service account token is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -861,18 +861,18 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenStatusAtProvider
 {
-    /// <summary>Specifies when the service account token was created.</summary>
+    /// <summary>When the service account token was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>Specifies when the service account token will expire.</summary>
+    /// <summary>When the service account token will expire.</summary>
     [JsonPropertyName("expiresAt")]
     public string? ExpiresAt { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A name for the token to create. The name must be unique within the workspace.</summary>
+    /// <summary>Name for the token to create. The name must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -887,7 +887,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenStatusAtProvider
     [JsonPropertyName("secondsToLive")]
     public double? SecondsToLive { get; set; }
 
-    /// <summary>The ID of the service account for which to create a token.</summary>
+    /// <summary>ID of the service account for which to create a token.</summary>
     [JsonPropertyName("serviceAccountId")]
     public string? ServiceAccountId { get; set; }
 
@@ -895,7 +895,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenStatusAtProvider
     [JsonPropertyName("serviceAccountTokenId")]
     public string? ServiceAccountTokenId { get; set; }
 
-    /// <summary>The Grafana workspace with which the service account token is associated.</summary>
+    /// <summary>Grafana workspace with which the service account token is associated.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }

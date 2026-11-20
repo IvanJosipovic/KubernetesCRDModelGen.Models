@@ -60,29 +60,29 @@ public enum V1beta2PlanSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderAdvancedBackupSetting
 {
-    /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
+    /// <summary>Backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
     [JsonPropertyName("backupOptions")]
     public IDictionary<string, string>? BackupOptions { get; set; }
 
-    /// <summary>The type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
+    /// <summary>Type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderRuleCopyActionLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -95,25 +95,25 @@ public partial class V1beta2PlanSpecForProviderRuleCopyAction
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanSpecForProviderRuleCopyActionLifecycle? Lifecycle { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderRuleLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -122,7 +122,7 @@ public partial class V1beta2PlanSpecForProviderRuleLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderRuleScanAction
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -282,7 +282,7 @@ public partial class V1beta2PlanSpecForProviderRuleTargetVaultNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderRule
 {
-    /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
+    /// <summary>Amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
     [JsonPropertyName("completionWindow")]
     public double? CompletionWindow { get; set; }
 
@@ -294,7 +294,7 @@ public partial class V1beta2PlanSpecForProviderRule
     [JsonPropertyName("enableContinuousBackup")]
     public bool? EnableContinuousBackup { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanSpecForProviderRuleLifecycle? Lifecycle { get; set; }
 
@@ -302,31 +302,31 @@ public partial class V1beta2PlanSpecForProviderRule
     [JsonPropertyName("recoveryPointTags")]
     public IDictionary<string, string>? RecoveryPointTags { get; set; }
 
-    /// <summary>An display name for a backup rule.</summary>
+    /// <summary>Display name for a backup rule.</summary>
     [JsonPropertyName("ruleName")]
     public string? RuleName { get; set; }
 
-    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental.</summary>
+    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental. Detailed below.</summary>
     [JsonPropertyName("scanAction")]
     public IList<V1beta2PlanSpecForProviderRuleScanAction>? ScanAction { get; set; }
 
-    /// <summary>A CRON expression specifying when AWS Backup initiates a backup job.</summary>
+    /// <summary>CRON expression specifying when AWS Backup initiates a backup job.</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>The timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
+    /// <summary>Timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
     [JsonPropertyName("scheduleExpressionTimezone")]
     public string? ScheduleExpressionTimezone { get; set; }
 
-    /// <summary>The amount of time in minutes before beginning a backup.</summary>
+    /// <summary>Amount of time in minutes before beginning a backup.</summary>
     [JsonPropertyName("startWindow")]
     public double? StartWindow { get; set; }
 
-    /// <summary>The ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
+    /// <summary>ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
     [JsonPropertyName("targetLogicallyAirGappedBackupVaultArn")]
     public string? TargetLogicallyAirGappedBackupVaultArn { get; set; }
 
-    /// <summary>The name of a logical container where backups are stored.</summary>
+    /// <summary>Name of a logical container where backups are stored.</summary>
     [JsonPropertyName("targetVaultName")]
     public string? TargetVaultName { get; set; }
 
@@ -343,7 +343,7 @@ public partial class V1beta2PlanSpecForProviderRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProviderScanSetting
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -360,11 +360,11 @@ public partial class V1beta2PlanSpecForProviderScanSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecForProvider
 {
-    /// <summary>An object that specifies backup options for each resource type.</summary>
+    /// <summary>Object that specifies backup options for each resource type. Detailed below.</summary>
     [JsonPropertyName("advancedBackupSetting")]
     public IList<V1beta2PlanSpecForProviderAdvancedBackupSetting>? AdvancedBackupSetting { get; set; }
 
-    /// <summary>The display name of a backup plan.</summary>
+    /// <summary>Display name of a backup plan.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -375,7 +375,7 @@ public partial class V1beta2PlanSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A rule object that specifies a scheduled task that is used to back up a selection of resources.</summary>
+    /// <summary>Rule that specifies a scheduled task used to back up a selection of resources. Detailed below.</summary>
     [JsonPropertyName("rule")]
     public IList<V1beta2PlanSpecForProviderRule>? Rule { get; set; }
 
@@ -392,29 +392,29 @@ public partial class V1beta2PlanSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderAdvancedBackupSetting
 {
-    /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
+    /// <summary>Backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
     [JsonPropertyName("backupOptions")]
     public IDictionary<string, string>? BackupOptions { get; set; }
 
-    /// <summary>The type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
+    /// <summary>Type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderRuleCopyActionLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -427,25 +427,25 @@ public partial class V1beta2PlanSpecInitProviderRuleCopyAction
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanSpecInitProviderRuleCopyActionLifecycle? Lifecycle { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderRuleLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -454,7 +454,7 @@ public partial class V1beta2PlanSpecInitProviderRuleLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderRuleScanAction
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -614,7 +614,7 @@ public partial class V1beta2PlanSpecInitProviderRuleTargetVaultNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderRule
 {
-    /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
+    /// <summary>Amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
     [JsonPropertyName("completionWindow")]
     public double? CompletionWindow { get; set; }
 
@@ -626,7 +626,7 @@ public partial class V1beta2PlanSpecInitProviderRule
     [JsonPropertyName("enableContinuousBackup")]
     public bool? EnableContinuousBackup { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanSpecInitProviderRuleLifecycle? Lifecycle { get; set; }
 
@@ -634,31 +634,31 @@ public partial class V1beta2PlanSpecInitProviderRule
     [JsonPropertyName("recoveryPointTags")]
     public IDictionary<string, string>? RecoveryPointTags { get; set; }
 
-    /// <summary>An display name for a backup rule.</summary>
+    /// <summary>Display name for a backup rule.</summary>
     [JsonPropertyName("ruleName")]
     public string? RuleName { get; set; }
 
-    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental.</summary>
+    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental. Detailed below.</summary>
     [JsonPropertyName("scanAction")]
     public IList<V1beta2PlanSpecInitProviderRuleScanAction>? ScanAction { get; set; }
 
-    /// <summary>A CRON expression specifying when AWS Backup initiates a backup job.</summary>
+    /// <summary>CRON expression specifying when AWS Backup initiates a backup job.</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>The timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
+    /// <summary>Timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
     [JsonPropertyName("scheduleExpressionTimezone")]
     public string? ScheduleExpressionTimezone { get; set; }
 
-    /// <summary>The amount of time in minutes before beginning a backup.</summary>
+    /// <summary>Amount of time in minutes before beginning a backup.</summary>
     [JsonPropertyName("startWindow")]
     public double? StartWindow { get; set; }
 
-    /// <summary>The ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
+    /// <summary>ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
     [JsonPropertyName("targetLogicallyAirGappedBackupVaultArn")]
     public string? TargetLogicallyAirGappedBackupVaultArn { get; set; }
 
-    /// <summary>The name of a logical container where backups are stored.</summary>
+    /// <summary>Name of a logical container where backups are stored.</summary>
     [JsonPropertyName("targetVaultName")]
     public string? TargetVaultName { get; set; }
 
@@ -675,7 +675,7 @@ public partial class V1beta2PlanSpecInitProviderRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProviderScanSetting
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -704,15 +704,15 @@ public partial class V1beta2PlanSpecInitProviderScanSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanSpecInitProvider
 {
-    /// <summary>An object that specifies backup options for each resource type.</summary>
+    /// <summary>Object that specifies backup options for each resource type. Detailed below.</summary>
     [JsonPropertyName("advancedBackupSetting")]
     public IList<V1beta2PlanSpecInitProviderAdvancedBackupSetting>? AdvancedBackupSetting { get; set; }
 
-    /// <summary>The display name of a backup plan.</summary>
+    /// <summary>Display name of a backup plan.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A rule object that specifies a scheduled task that is used to back up a selection of resources.</summary>
+    /// <summary>Rule that specifies a scheduled task used to back up a selection of resources. Detailed below.</summary>
     [JsonPropertyName("rule")]
     public IList<V1beta2PlanSpecInitProviderRule>? Rule { get; set; }
 
@@ -912,29 +912,29 @@ public partial class V1beta2PlanSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderAdvancedBackupSetting
 {
-    /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
+    /// <summary>Backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
     [JsonPropertyName("backupOptions")]
     public IDictionary<string, string>? BackupOptions { get; set; }
 
-    /// <summary>The type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
+    /// <summary>Type of AWS resource to be backed up. For VSS Windows backups, the only supported resource type is Amazon EC2. Valid values: EC2.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderRuleCopyActionLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -947,25 +947,25 @@ public partial class V1beta2PlanStatusAtProviderRuleCopyAction
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanStatusAtProviderRuleCopyActionLifecycle? Lifecycle { get; set; }
 }
 
-/// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+/// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderRuleLifecycle
 {
-    /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
+    /// <summary>Number of days after creation that a recovery point is moved to cold storage.</summary>
     [JsonPropertyName("coldStorageAfter")]
     public double? ColdStorageAfter { get; set; }
 
-    /// <summary>Specifies the number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
+    /// <summary>Number of days after creation that a recovery point is deleted. Must be 90 days greater than cold_storage_after.</summary>
     [JsonPropertyName("deleteAfter")]
     public double? DeleteAfter { get; set; }
 
-    /// <summary>This setting will instruct your backup plan to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
+    /// <summary>Whether to transition supported resources to archive (cold) storage tier in accordance with your lifecycle settings.</summary>
     [JsonPropertyName("optInToArchiveForSupportedResources")]
     public bool? OptInToArchiveForSupportedResources { get; set; }
 }
@@ -974,7 +974,7 @@ public partial class V1beta2PlanStatusAtProviderRuleLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderRuleScanAction
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -987,7 +987,7 @@ public partial class V1beta2PlanStatusAtProviderRuleScanAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderRule
 {
-    /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
+    /// <summary>Amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
     [JsonPropertyName("completionWindow")]
     public double? CompletionWindow { get; set; }
 
@@ -999,7 +999,7 @@ public partial class V1beta2PlanStatusAtProviderRule
     [JsonPropertyName("enableContinuousBackup")]
     public bool? EnableContinuousBackup { get; set; }
 
-    /// <summary>The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.</summary>
+    /// <summary>Lifecycle that defines when a protected resource is transitioned to cold storage and when it expires. Detailed below.</summary>
     [JsonPropertyName("lifecycle")]
     public V1beta2PlanStatusAtProviderRuleLifecycle? Lifecycle { get; set; }
 
@@ -1007,31 +1007,35 @@ public partial class V1beta2PlanStatusAtProviderRule
     [JsonPropertyName("recoveryPointTags")]
     public IDictionary<string, string>? RecoveryPointTags { get; set; }
 
-    /// <summary>An display name for a backup rule.</summary>
+    /// <summary>Uniquely identifies a rule that is used to schedule the backup of a selection of resources.</summary>
+    [JsonPropertyName("ruleId")]
+    public string? RuleId { get; set; }
+
+    /// <summary>Display name for a backup rule.</summary>
     [JsonPropertyName("ruleName")]
     public string? RuleName { get; set; }
 
-    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental.</summary>
+    /// <summary>Block for scanning configuration for the backup rule and includes the malware scanner, and scan mode of either full or incremental. Detailed below.</summary>
     [JsonPropertyName("scanAction")]
     public IList<V1beta2PlanStatusAtProviderRuleScanAction>? ScanAction { get; set; }
 
-    /// <summary>A CRON expression specifying when AWS Backup initiates a backup job.</summary>
+    /// <summary>CRON expression specifying when AWS Backup initiates a backup job.</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
-    /// <summary>The timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
+    /// <summary>Timezone in which the schedule expression is set. Default value: &quot;Etc/UTC&quot;.</summary>
     [JsonPropertyName("scheduleExpressionTimezone")]
     public string? ScheduleExpressionTimezone { get; set; }
 
-    /// <summary>The amount of time in minutes before beginning a backup.</summary>
+    /// <summary>Amount of time in minutes before beginning a backup.</summary>
     [JsonPropertyName("startWindow")]
     public double? StartWindow { get; set; }
 
-    /// <summary>The ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
+    /// <summary>ARN of a logically air-gapped vault. ARN must be in the same account and region. If provided, supported fully managed resources back up directly to logically air-gapped vault, while other supported resources create a temporary (billable) snapshot in backup vault, then copy it to logically air-gapped vault. Unsupported resources only back up to the specified backup vault.</summary>
     [JsonPropertyName("targetLogicallyAirGappedBackupVaultArn")]
     public string? TargetLogicallyAirGappedBackupVaultArn { get; set; }
 
-    /// <summary>The name of a logical container where backups are stored.</summary>
+    /// <summary>Name of a logical container where backups are stored.</summary>
     [JsonPropertyName("targetVaultName")]
     public string? TargetVaultName { get; set; }
 }
@@ -1040,7 +1044,7 @@ public partial class V1beta2PlanStatusAtProviderRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProviderScanSetting
 {
-    /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
+    /// <summary>Malware scanner to use for the scan setting. Currently only GUARDDUTY is supported.</summary>
     [JsonPropertyName("malwareScanner")]
     public string? MalwareScanner { get; set; }
 
@@ -1057,19 +1061,19 @@ public partial class V1beta2PlanStatusAtProviderScanSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PlanStatusAtProvider
 {
-    /// <summary>An object that specifies backup options for each resource type.</summary>
+    /// <summary>Object that specifies backup options for each resource type. Detailed below.</summary>
     [JsonPropertyName("advancedBackupSetting")]
     public IList<V1beta2PlanStatusAtProviderAdvancedBackupSetting>? AdvancedBackupSetting { get; set; }
 
-    /// <summary>The ARN of the backup plan.</summary>
+    /// <summary>ARN of the backup plan.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The id of the backup plan.</summary>
+    /// <summary>ID of the backup plan.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The display name of a backup plan.</summary>
+    /// <summary>Display name of a backup plan.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1080,7 +1084,7 @@ public partial class V1beta2PlanStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A rule object that specifies a scheduled task that is used to back up a selection of resources.</summary>
+    /// <summary>Rule that specifies a scheduled task used to back up a selection of resources. Detailed below.</summary>
     [JsonPropertyName("rule")]
     public IList<V1beta2PlanStatusAtProviderRule>? Rule { get; set; }
 
@@ -1092,7 +1096,7 @@ public partial class V1beta2PlanStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

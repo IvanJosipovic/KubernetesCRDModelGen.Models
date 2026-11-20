@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: vpcdhcpoptionsassociations.ec2.aws.upbound.io
 spec:
   group: ec2.aws.upbound.io
@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   dhcpOptionsId:
-                    description: The ID of the DHCP Options Set to associate to the VPC.
+                    description: ID of the DHCP Options Set to associate to the VPC.
                     type: string
                   dhcpOptionsIdRef:
                     description: Reference to a VPCDHCPOptions in ec2 to populate dhcpOptionsId.
@@ -153,7 +153,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   vpcId:
-                    description: The ID of the VPC to which we would like to associate a DHCP Options Set.
+                    description: ID of the VPC to which we would like to associate a DHCP Options Set.
                     type: string
                   vpcIdRef:
                     description: Reference to a VPC in ec2 to populate vpcId.
@@ -245,7 +245,7 @@ spec:
                   autoscaler.
                 properties:
                   dhcpOptionsId:
-                    description: The ID of the DHCP Options Set to associate to the VPC.
+                    description: ID of the DHCP Options Set to associate to the VPC.
                     type: string
                   dhcpOptionsIdRef:
                     description: Reference to a VPCDHCPOptions in ec2 to populate dhcpOptionsId.
@@ -321,7 +321,7 @@ spec:
                         type: object
                     type: object
                   vpcId:
-                    description: The ID of the VPC to which we would like to associate a DHCP Options Set.
+                    description: ID of the VPC to which we would like to associate a DHCP Options Set.
                     type: string
                   vpcIdRef:
                     description: Reference to a VPC in ec2 to populate vpcId.
@@ -489,10 +489,10 @@ spec:
               atProvider:
                 properties:
                   dhcpOptionsId:
-                    description: The ID of the DHCP Options Set to associate to the VPC.
+                    description: ID of the DHCP Options Set to associate to the VPC.
                     type: string
                   id:
-                    description: The ID of the DHCP Options Set Association.
+                    description: ID of the DHCP Options Set Association.
                     type: string
                   region:
                     description: |-
@@ -500,7 +500,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   vpcId:
-                    description: The ID of the VPC to which we would like to associate a DHCP Options Set.
+                    description: ID of the VPC to which we would like to associate a DHCP Options Set.
                     type: string
                 type: object
               conditions:

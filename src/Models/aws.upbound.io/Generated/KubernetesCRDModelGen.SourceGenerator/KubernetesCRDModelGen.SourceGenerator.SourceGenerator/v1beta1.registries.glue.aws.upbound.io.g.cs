@@ -60,7 +60,7 @@ public enum V1beta1RegistrySpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistrySpecForProvider
 {
-    /// <summary>A description of the registry.</summary>
+    /// <summary>Description of the registry.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -92,7 +92,7 @@ public partial class V1beta1RegistrySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistrySpecInitProvider
 {
-    /// <summary>A description of the registry.</summary>
+    /// <summary>Description of the registry.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -292,7 +292,7 @@ public partial class V1beta1RegistryStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A description of the registry.</summary>
+    /// <summary>Description of the registry.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -311,7 +311,7 @@ public partial class V1beta1RegistryStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

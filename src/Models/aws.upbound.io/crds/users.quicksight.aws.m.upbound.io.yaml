@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: users.quicksight.aws.m.upbound.io
 spec:
   group: quicksight.aws.m.upbound.io
@@ -70,7 +70,7 @@ spec:
                     description: 'Identity type that your Amazon QuickSight account uses to manage the identity of users. Valid values: IAM, QUICKSIGHT, IAM_IDENTITY_CENTER.'
                     type: string
                   namespace:
-                    description: The Amazon Quicksight namespace to create the user in. Defaults to default.
+                    description: Amazon QuickSight namespace to create the user in. Defaults to default.
                     type: string
                   region:
                     description: |-
@@ -115,7 +115,7 @@ spec:
                     description: 'Identity type that your Amazon QuickSight account uses to manage the identity of users. Valid values: IAM, QUICKSIGHT, IAM_IDENTITY_CENTER.'
                     type: string
                   namespace:
-                    description: The Amazon Quicksight namespace to create the user in. Defaults to default.
+                    description: Amazon QuickSight namespace to create the user in. Defaults to default.
                     type: string
                   sessionName:
                     description: Name of the IAM session to use when assuming roles that can embed QuickSight dashboards. Only valid for registering users using an assumed IAM role. Additionally, if registering multiple users using the same IAM role, each user needs to have a unique session name.
@@ -216,7 +216,7 @@ spec:
                     description: 'Identity type that your Amazon QuickSight account uses to manage the identity of users. Valid values: IAM, QUICKSIGHT, IAM_IDENTITY_CENTER.'
                     type: string
                   namespace:
-                    description: The Amazon Quicksight namespace to create the user in. Defaults to default.
+                    description: Amazon QuickSight namespace to create the user in. Defaults to default.
                     type: string
                   region:
                     description: |-

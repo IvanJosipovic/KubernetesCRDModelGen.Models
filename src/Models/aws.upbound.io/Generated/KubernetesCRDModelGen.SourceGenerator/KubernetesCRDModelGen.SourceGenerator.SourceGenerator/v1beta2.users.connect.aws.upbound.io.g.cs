@@ -618,7 +618,7 @@ public partial class V1beta2UserSpecForProvider
     [JsonPropertyName("routingProfileIdSelector")]
     public V1beta2UserSpecForProviderRoutingProfileIdSelector? RoutingProfileIdSelector { get; set; }
 
-    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile ids. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
+    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile IDs. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
     [JsonPropertyName("securityProfileIds")]
     public IList<string>? SecurityProfileIds { get; set; }
 
@@ -1202,7 +1202,7 @@ public partial class V1beta2UserSpecInitProvider
     [JsonPropertyName("routingProfileIdSelector")]
     public V1beta2UserSpecInitProviderRoutingProfileIdSelector? RoutingProfileIdSelector { get; set; }
 
-    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile ids. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
+    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile IDs. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
     [JsonPropertyName("securityProfileIds")]
     public IList<string>? SecurityProfileIds { get; set; }
 
@@ -1496,7 +1496,7 @@ public partial class V1beta2UserStatusAtProvider
     [JsonPropertyName("routingProfileId")]
     public string? RoutingProfileId { get; set; }
 
-    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile ids. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
+    /// <summary>A list of identifiers for the security profiles for the user. Specify a minimum of 1 and maximum of 10 security profile IDs. For more information, see Best Practices for Security Profiles in the Amazon Connect Administrator Guide.</summary>
     [JsonPropertyName("securityProfileIds")]
     public IList<string>? SecurityProfileIds { get; set; }
 

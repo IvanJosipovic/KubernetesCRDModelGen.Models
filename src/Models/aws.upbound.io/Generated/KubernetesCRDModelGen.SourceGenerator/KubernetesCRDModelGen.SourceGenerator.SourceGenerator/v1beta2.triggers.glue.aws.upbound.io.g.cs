@@ -350,7 +350,7 @@ public partial class V1beta2TriggerSpecForProviderActionsJobNameSelector
     public V1beta2TriggerSpecForProviderActionsJobNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+/// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecForProviderActionsNotificationProperty
@@ -368,7 +368,7 @@ public partial class V1beta2TriggerSpecForProviderActions
     [JsonPropertyName("arguments")]
     public IDictionary<string, string>? Arguments { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to be executed. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
@@ -380,7 +380,7 @@ public partial class V1beta2TriggerSpecForProviderActions
     [JsonPropertyName("crawlerNameSelector")]
     public V1beta2TriggerSpecForProviderActionsCrawlerNameSelector? CrawlerNameSelector { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of a job to be executed. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
@@ -392,15 +392,15 @@ public partial class V1beta2TriggerSpecForProviderActions
     [JsonPropertyName("jobNameSelector")]
     public V1beta2TriggerSpecForProviderActionsJobNameSelector? JobNameSelector { get; set; }
 
-    /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+    /// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
     [JsonPropertyName("notificationProperty")]
     public V1beta2TriggerSpecForProviderActionsNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The name of the Security Configuration structure to be used with this action.</summary>
+    /// <summary>Name of the Security Configuration structure to be used with this action.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The job run timeout in minutes. It overrides the timeout value of the job.</summary>
+    /// <summary>Job run timeout in minutes. It overrides the timeout value of the job.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 }
@@ -409,7 +409,7 @@ public partial class V1beta2TriggerSpecForProviderActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecForProviderEventBatchingCondition
 {
-    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge  event trigger fires.</summary>
+    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge event trigger fires.</summary>
     [JsonPropertyName("batchSize")]
     public double? BatchSize { get; set; }
 
@@ -716,11 +716,11 @@ public partial class V1beta2TriggerSpecForProviderPredicateConditionsJobNameSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecForProviderPredicateConditions
 {
-    /// <summary>The condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
+    /// <summary>Condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
     [JsonPropertyName("crawlState")]
     public string? CrawlState { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to watch. If this is specified, crawl_state must also be specified. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
@@ -732,7 +732,7 @@ public partial class V1beta2TriggerSpecForProviderPredicateConditions
     [JsonPropertyName("crawlerNameSelector")]
     public V1beta2TriggerSpecForProviderPredicateConditionsCrawlerNameSelector? CrawlerNameSelector { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of the job to watch. If this is specified, state must also be specified. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
@@ -744,21 +744,21 @@ public partial class V1beta2TriggerSpecForProviderPredicateConditions
     [JsonPropertyName("jobNameSelector")]
     public V1beta2TriggerSpecForProviderPredicateConditionsJobNameSelector? JobNameSelector { get; set; }
 
-    /// <summary>A logical operator. Defaults to EQUALS.</summary>
+    /// <summary>Logical operator. Defaults to EQUALS.</summary>
     [JsonPropertyName("logicalOperator")]
     public string? LogicalOperator { get; set; }
 
-    /// <summary>The condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
+    /// <summary>Condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+/// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecForProviderPredicate
 {
-    /// <summary>A list of the conditions that determine when the trigger will fire. See Conditions.</summary>
+    /// <summary>List of the conditions that determine when the trigger will fire. See conditions.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2TriggerSpecForProviderPredicateConditions>? Conditions { get; set; }
 
@@ -771,11 +771,11 @@ public partial class V1beta2TriggerSpecForProviderPredicate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecForProvider
 {
-    /// <summary>List of actions initiated by this trigger when it fires. See Actions Below.</summary>
+    /// <summary>List of actions initiated by this trigger when it fires. See actions below.</summary>
     [JsonPropertyName("actions")]
     public IList<V1beta2TriggerSpecForProviderActions>? Actions { get; set; }
 
-    /// <summary>A description of the new trigger.</summary>
+    /// <summary>Description of the new trigger.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -783,11 +783,11 @@ public partial class V1beta2TriggerSpecForProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See Event Batching Condition.</summary>
+    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See event_batching_condition.</summary>
     [JsonPropertyName("eventBatchingCondition")]
     public IList<V1beta2TriggerSpecForProviderEventBatchingCondition>? EventBatchingCondition { get; set; }
 
-    /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+    /// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
     [JsonPropertyName("predicate")]
     public V1beta2TriggerSpecForProviderPredicate? Predicate { get; set; }
 
@@ -798,7 +798,7 @@ public partial class V1beta2TriggerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
+    /// <summary>Cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
@@ -810,11 +810,11 @@ public partial class V1beta2TriggerSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
+    /// <summary>Type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
+    /// <summary>Workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
     [JsonPropertyName("workflowName")]
     public string? WorkflowName { get; set; }
 }
@@ -1113,7 +1113,7 @@ public partial class V1beta2TriggerSpecInitProviderActionsJobNameSelector
     public V1beta2TriggerSpecInitProviderActionsJobNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+/// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecInitProviderActionsNotificationProperty
@@ -1131,7 +1131,7 @@ public partial class V1beta2TriggerSpecInitProviderActions
     [JsonPropertyName("arguments")]
     public IDictionary<string, string>? Arguments { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to be executed. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
@@ -1143,7 +1143,7 @@ public partial class V1beta2TriggerSpecInitProviderActions
     [JsonPropertyName("crawlerNameSelector")]
     public V1beta2TriggerSpecInitProviderActionsCrawlerNameSelector? CrawlerNameSelector { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of a job to be executed. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
@@ -1155,15 +1155,15 @@ public partial class V1beta2TriggerSpecInitProviderActions
     [JsonPropertyName("jobNameSelector")]
     public V1beta2TriggerSpecInitProviderActionsJobNameSelector? JobNameSelector { get; set; }
 
-    /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+    /// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
     [JsonPropertyName("notificationProperty")]
     public V1beta2TriggerSpecInitProviderActionsNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The name of the Security Configuration structure to be used with this action.</summary>
+    /// <summary>Name of the Security Configuration structure to be used with this action.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The job run timeout in minutes. It overrides the timeout value of the job.</summary>
+    /// <summary>Job run timeout in minutes. It overrides the timeout value of the job.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 }
@@ -1172,7 +1172,7 @@ public partial class V1beta2TriggerSpecInitProviderActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecInitProviderEventBatchingCondition
 {
-    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge  event trigger fires.</summary>
+    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge event trigger fires.</summary>
     [JsonPropertyName("batchSize")]
     public double? BatchSize { get; set; }
 
@@ -1479,11 +1479,11 @@ public partial class V1beta2TriggerSpecInitProviderPredicateConditionsJobNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecInitProviderPredicateConditions
 {
-    /// <summary>The condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
+    /// <summary>Condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
     [JsonPropertyName("crawlState")]
     public string? CrawlState { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to watch. If this is specified, crawl_state must also be specified. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
@@ -1495,7 +1495,7 @@ public partial class V1beta2TriggerSpecInitProviderPredicateConditions
     [JsonPropertyName("crawlerNameSelector")]
     public V1beta2TriggerSpecInitProviderPredicateConditionsCrawlerNameSelector? CrawlerNameSelector { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of the job to watch. If this is specified, state must also be specified. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
@@ -1507,21 +1507,21 @@ public partial class V1beta2TriggerSpecInitProviderPredicateConditions
     [JsonPropertyName("jobNameSelector")]
     public V1beta2TriggerSpecInitProviderPredicateConditionsJobNameSelector? JobNameSelector { get; set; }
 
-    /// <summary>A logical operator. Defaults to EQUALS.</summary>
+    /// <summary>Logical operator. Defaults to EQUALS.</summary>
     [JsonPropertyName("logicalOperator")]
     public string? LogicalOperator { get; set; }
 
-    /// <summary>The condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
+    /// <summary>Condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+/// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecInitProviderPredicate
 {
-    /// <summary>A list of the conditions that determine when the trigger will fire. See Conditions.</summary>
+    /// <summary>List of the conditions that determine when the trigger will fire. See conditions.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2TriggerSpecInitProviderPredicateConditions>? Conditions { get; set; }
 
@@ -1546,11 +1546,11 @@ public partial class V1beta2TriggerSpecInitProviderPredicate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerSpecInitProvider
 {
-    /// <summary>List of actions initiated by this trigger when it fires. See Actions Below.</summary>
+    /// <summary>List of actions initiated by this trigger when it fires. See actions below.</summary>
     [JsonPropertyName("actions")]
     public IList<V1beta2TriggerSpecInitProviderActions>? Actions { get; set; }
 
-    /// <summary>A description of the new trigger.</summary>
+    /// <summary>Description of the new trigger.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1558,15 +1558,15 @@ public partial class V1beta2TriggerSpecInitProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See Event Batching Condition.</summary>
+    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See event_batching_condition.</summary>
     [JsonPropertyName("eventBatchingCondition")]
     public IList<V1beta2TriggerSpecInitProviderEventBatchingCondition>? EventBatchingCondition { get; set; }
 
-    /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+    /// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
     [JsonPropertyName("predicate")]
     public V1beta2TriggerSpecInitProviderPredicate? Predicate { get; set; }
 
-    /// <summary>A cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
+    /// <summary>Cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
@@ -1578,11 +1578,11 @@ public partial class V1beta2TriggerSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
+    /// <summary>Type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
+    /// <summary>Workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
     [JsonPropertyName("workflowName")]
     public string? WorkflowName { get; set; }
 }
@@ -1770,7 +1770,7 @@ public partial class V1beta2TriggerSpec
     public V1beta2TriggerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+/// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerStatusAtProviderActionsNotificationProperty
@@ -1788,23 +1788,23 @@ public partial class V1beta2TriggerStatusAtProviderActions
     [JsonPropertyName("arguments")]
     public IDictionary<string, string>? Arguments { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to be executed. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of a job to be executed. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
-    /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
+    /// <summary>Configuration properties of a job run notification. See notification_property details below.</summary>
     [JsonPropertyName("notificationProperty")]
     public V1beta2TriggerStatusAtProviderActionsNotificationProperty? NotificationProperty { get; set; }
 
-    /// <summary>The name of the Security Configuration structure to be used with this action.</summary>
+    /// <summary>Name of the Security Configuration structure to be used with this action.</summary>
     [JsonPropertyName("securityConfiguration")]
     public string? SecurityConfiguration { get; set; }
 
-    /// <summary>The job run timeout in minutes. It overrides the timeout value of the job.</summary>
+    /// <summary>Job run timeout in minutes. It overrides the timeout value of the job.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 }
@@ -1813,7 +1813,7 @@ public partial class V1beta2TriggerStatusAtProviderActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerStatusAtProviderEventBatchingCondition
 {
-    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge  event trigger fires.</summary>
+    /// <summary>Number of events that must be received from Amazon EventBridge before EventBridge event trigger fires.</summary>
     [JsonPropertyName("batchSize")]
     public double? BatchSize { get; set; }
 
@@ -1826,33 +1826,33 @@ public partial class V1beta2TriggerStatusAtProviderEventBatchingCondition
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerStatusAtProviderPredicateConditions
 {
-    /// <summary>The condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
+    /// <summary>Condition crawl state. Currently, the values supported are RUNNING, SUCCEEDED, CANCELLED, and FAILED. If this is specified, crawler_name must also be specified. Conflicts with state.</summary>
     [JsonPropertyName("crawlState")]
     public string? CrawlState { get; set; }
 
-    /// <summary>The name of the crawler to be executed. Conflicts with job_name.</summary>
+    /// <summary>Name of the crawler to watch. If this is specified, crawl_state must also be specified. Conflicts with job_name.</summary>
     [JsonPropertyName("crawlerName")]
     public string? CrawlerName { get; set; }
 
-    /// <summary>The name of a job to be executed. Conflicts with crawler_name.</summary>
+    /// <summary>Name of the job to watch. If this is specified, state must also be specified. Conflicts with crawler_name.</summary>
     [JsonPropertyName("jobName")]
     public string? JobName { get; set; }
 
-    /// <summary>A logical operator. Defaults to EQUALS.</summary>
+    /// <summary>Logical operator. Defaults to EQUALS.</summary>
     [JsonPropertyName("logicalOperator")]
     public string? LogicalOperator { get; set; }
 
-    /// <summary>The condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
+    /// <summary>Condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
 
-/// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+/// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerStatusAtProviderPredicate
 {
-    /// <summary>A list of the conditions that determine when the trigger will fire. See Conditions.</summary>
+    /// <summary>List of the conditions that determine when the trigger will fire. See conditions.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2TriggerStatusAtProviderPredicateConditions>? Conditions { get; set; }
 
@@ -1865,7 +1865,7 @@ public partial class V1beta2TriggerStatusAtProviderPredicate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TriggerStatusAtProvider
 {
-    /// <summary>List of actions initiated by this trigger when it fires. See Actions Below.</summary>
+    /// <summary>List of actions initiated by this trigger when it fires. See actions below.</summary>
     [JsonPropertyName("actions")]
     public IList<V1beta2TriggerStatusAtProviderActions>? Actions { get; set; }
 
@@ -1873,7 +1873,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A description of the new trigger.</summary>
+    /// <summary>Description of the new trigger.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1881,7 +1881,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See Event Batching Condition.</summary>
+    /// <summary>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires. See event_batching_condition.</summary>
     [JsonPropertyName("eventBatchingCondition")]
     public IList<V1beta2TriggerStatusAtProviderEventBatchingCondition>? EventBatchingCondition { get; set; }
 
@@ -1889,7 +1889,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
+    /// <summary>Predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See predicate below.</summary>
     [JsonPropertyName("predicate")]
     public V1beta2TriggerStatusAtProviderPredicate? Predicate { get; set; }
 
@@ -1900,7 +1900,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
+    /// <summary>Cron expression used to specify the schedule. Time-Based Schedules for Jobs and Crawlers</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 
@@ -1908,7 +1908,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("startOnCreation")]
     public bool? StartOnCreation { get; set; }
 
-    /// <summary>The condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
+    /// <summary>Condition job state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED. If this is specified, job_name must also be specified. Conflicts with crawler_state.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 
@@ -1916,15 +1916,15 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
+    /// <summary>Type of trigger. Valid values are CONDITIONAL, EVENT, ON_DEMAND, and SCHEDULED.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
+    /// <summary>Workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (ON_DEMAND or SCHEDULED type) and can contain multiple additional CONDITIONAL triggers.</summary>
     [JsonPropertyName("workflowName")]
     public string? WorkflowName { get; set; }
 }

@@ -361,10 +361,7 @@ public partial class V1beta1MainRouteTableAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// The ID of the Route Table to set as the new
-    /// main route table for the target VPC
-    /// </summary>
+    /// <summary>ID of the Route Table to set as the new main route table for the target VPC</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
@@ -376,7 +373,7 @@ public partial class V1beta1MainRouteTableAssociationSpecForProvider
     [JsonPropertyName("routeTableIdSelector")]
     public V1beta1MainRouteTableAssociationSpecForProviderRouteTableIdSelector? RouteTableIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC whose main route table should be set</summary>
+    /// <summary>ID of the VPC whose main route table should be set</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -699,10 +696,7 @@ public partial class V1beta1MainRouteTableAssociationSpecInitProviderVpcIdSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MainRouteTableAssociationSpecInitProvider
 {
-    /// <summary>
-    /// The ID of the Route Table to set as the new
-    /// main route table for the target VPC
-    /// </summary>
+    /// <summary>ID of the Route Table to set as the new main route table for the target VPC</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
@@ -714,7 +708,7 @@ public partial class V1beta1MainRouteTableAssociationSpecInitProvider
     [JsonPropertyName("routeTableIdSelector")]
     public V1beta1MainRouteTableAssociationSpecInitProviderRouteTableIdSelector? RouteTableIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC whose main route table should be set</summary>
+    /// <summary>ID of the VPC whose main route table should be set</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -914,11 +908,11 @@ public partial class V1beta1MainRouteTableAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MainRouteTableAssociationStatusAtProvider
 {
-    /// <summary>The ID of the Route Table Association</summary>
+    /// <summary>ID of the Route Table Association</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Used internally, see Notes below</summary>
+    /// <summary>Original route table ID, used internally; see Notes below</summary>
     [JsonPropertyName("originalRouteTableId")]
     public string? OriginalRouteTableId { get; set; }
 
@@ -929,14 +923,11 @@ public partial class V1beta1MainRouteTableAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// The ID of the Route Table to set as the new
-    /// main route table for the target VPC
-    /// </summary>
+    /// <summary>ID of the Route Table to set as the new main route table for the target VPC</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
 
-    /// <summary>The ID of the VPC whose main route table should be set</summary>
+    /// <summary>ID of the VPC whose main route table should be set</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

@@ -226,7 +226,7 @@ public partial class V1beta1VaultLockSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The name of the Glacier Vault.</summary>
+    /// <summary>Name of the Glacier Vault.</summary>
     [JsonPropertyName("vaultName")]
     public string? VaultName { get; set; }
 
@@ -414,7 +414,7 @@ public partial class V1beta1VaultLockSpecInitProvider
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The name of the Glacier Vault.</summary>
+    /// <summary>Name of the Glacier Vault.</summary>
     [JsonPropertyName("vaultName")]
     public string? VaultName { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1VaultLockStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The name of the Glacier Vault.</summary>
+    /// <summary>Name of the Glacier Vault.</summary>
     [JsonPropertyName("vaultName")]
     public string? VaultName { get; set; }
 }

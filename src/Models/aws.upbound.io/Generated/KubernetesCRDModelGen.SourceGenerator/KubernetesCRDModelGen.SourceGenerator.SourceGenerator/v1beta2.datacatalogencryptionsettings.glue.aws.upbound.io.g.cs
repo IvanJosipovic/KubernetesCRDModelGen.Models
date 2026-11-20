@@ -203,12 +203,12 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCata
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsConnectionPasswordEncryptionAwsKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption
 {
-    /// <summary>A KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
+    /// <summary>KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
     [JsonPropertyName("awsKmsKeyId")]
     public string? AwsKmsKeyId { get; set; }
 
@@ -519,16 +519,16 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCata
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsEncryptionAtRestSseAwsKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+/// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsEncryptionAtRest
 {
-    /// <summary>The encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
+    /// <summary>Encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
     [JsonPropertyName("catalogEncryptionMode")]
     public string? CatalogEncryptionMode { get; set; }
 
-    /// <summary>The ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
+    /// <summary>ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
     [JsonPropertyName("catalogEncryptionServiceRole")]
     public string? CatalogEncryptionServiceRole { get; set; }
 
@@ -540,7 +540,7 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCata
     [JsonPropertyName("catalogEncryptionServiceRoleSelector")]
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsEncryptionAtRestCatalogEncryptionServiceRoleSelector? CatalogEncryptionServiceRoleSelector { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key to use for encryption at rest.</summary>
+    /// <summary>ARN of the AWS KMS key to use for encryption at rest.</summary>
     [JsonPropertyName("sseAwsKmsKeyId")]
     public string? SseAwsKmsKeyId { get; set; }
 
@@ -553,16 +553,16 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCata
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsEncryptionAtRestSseAwsKmsKeyIdSelector? SseAwsKmsKeyIdSelector { get; set; }
 }
 
-/// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+/// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettings
 {
-    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
     [JsonPropertyName("connectionPasswordEncryption")]
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption? ConnectionPasswordEncryption { get; set; }
 
-    /// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+    /// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
     [JsonPropertyName("encryptionAtRest")]
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettingsEncryptionAtRest? EncryptionAtRest { get; set; }
 }
@@ -571,11 +571,11 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCata
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecForProvider
 {
-    /// <summary>The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+    /// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
     [JsonPropertyName("dataCatalogEncryptionSettings")]
     public V1beta2DataCatalogEncryptionSettingsSpecForProviderDataCatalogEncryptionSettings? DataCatalogEncryptionSettings { get; set; }
 
@@ -734,12 +734,12 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCat
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsConnectionPasswordEncryptionAwsKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption
 {
-    /// <summary>A KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
+    /// <summary>KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
     [JsonPropertyName("awsKmsKeyId")]
     public string? AwsKmsKeyId { get; set; }
 
@@ -1050,16 +1050,16 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCat
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsEncryptionAtRestSseAwsKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+/// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsEncryptionAtRest
 {
-    /// <summary>The encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
+    /// <summary>Encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
     [JsonPropertyName("catalogEncryptionMode")]
     public string? CatalogEncryptionMode { get; set; }
 
-    /// <summary>The ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
+    /// <summary>ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
     [JsonPropertyName("catalogEncryptionServiceRole")]
     public string? CatalogEncryptionServiceRole { get; set; }
 
@@ -1071,7 +1071,7 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCat
     [JsonPropertyName("catalogEncryptionServiceRoleSelector")]
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsEncryptionAtRestCatalogEncryptionServiceRoleSelector? CatalogEncryptionServiceRoleSelector { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key to use for encryption at rest.</summary>
+    /// <summary>ARN of the AWS KMS key to use for encryption at rest.</summary>
     [JsonPropertyName("sseAwsKmsKeyId")]
     public string? SseAwsKmsKeyId { get; set; }
 
@@ -1084,16 +1084,16 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCat
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsEncryptionAtRestSseAwsKmsKeyIdSelector? SseAwsKmsKeyIdSelector { get; set; }
 }
 
-/// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+/// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettings
 {
-    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
     [JsonPropertyName("connectionPasswordEncryption")]
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption? ConnectionPasswordEncryption { get; set; }
 
-    /// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+    /// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
     [JsonPropertyName("encryptionAtRest")]
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettingsEncryptionAtRest? EncryptionAtRest { get; set; }
 }
@@ -1114,11 +1114,11 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsSpecInitProvider
 {
-    /// <summary>The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+    /// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
     [JsonPropertyName("dataCatalogEncryptionSettings")]
     public V1beta2DataCatalogEncryptionSettingsSpecInitProviderDataCatalogEncryptionSettings? DataCatalogEncryptionSettings { get; set; }
 }
@@ -1306,12 +1306,12 @@ public partial class V1beta2DataCatalogEncryptionSettingsSpec
     public V1beta2DataCatalogEncryptionSettingsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+/// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption
 {
-    /// <summary>A KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
+    /// <summary>KMS key ARN that is used to encrypt the connection password. If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.</summary>
     [JsonPropertyName("awsKmsKeyId")]
     public string? AwsKmsKeyId { get; set; }
 
@@ -1320,34 +1320,34 @@ public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCat
     public bool? ReturnConnectionPasswordEncrypted { get; set; }
 }
 
-/// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+/// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettingsEncryptionAtRest
 {
-    /// <summary>The encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
+    /// <summary>Encryption-at-rest mode for encrypting Data Catalog data. Valid values: DISABLED, SSE-KMS, SSE-KMS-WITH-SERVICE-ROLE.</summary>
     [JsonPropertyName("catalogEncryptionMode")]
     public string? CatalogEncryptionMode { get; set; }
 
-    /// <summary>The ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
+    /// <summary>ARN of the AWS IAM role used for accessing encrypted Data Catalog data.</summary>
     [JsonPropertyName("catalogEncryptionServiceRole")]
     public string? CatalogEncryptionServiceRole { get; set; }
 
-    /// <summary>The ARN of the AWS KMS key to use for encryption at rest.</summary>
+    /// <summary>ARN of the AWS KMS key to use for encryption at rest.</summary>
     [JsonPropertyName("sseAwsKmsKeyId")]
     public string? SseAwsKmsKeyId { get; set; }
 }
 
-/// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+/// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettings
 {
-    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.</summary>
+    /// <summary>When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see connection_password_encryption Block.</summary>
     [JsonPropertyName("connectionPasswordEncryption")]
     public V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettingsConnectionPasswordEncryption? ConnectionPasswordEncryption { get; set; }
 
-    /// <summary>Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.</summary>
+    /// <summary>Encryption-at-rest configuration for the Data Catalog. see encryption_at_rest Block.</summary>
     [JsonPropertyName("encryptionAtRest")]
     public V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettingsEncryptionAtRest? EncryptionAtRest { get; set; }
 }
@@ -1356,15 +1356,15 @@ public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataCatalogEncryptionSettingsStatusAtProvider
 {
-    /// <summary>The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
+    /// <summary>ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public string? CatalogId { get; set; }
 
-    /// <summary>The security configuration to set. see Data Catalog Encryption Settings.</summary>
+    /// <summary>Security configuration to set. see data_catalog_encryption_settings Block.</summary>
     [JsonPropertyName("dataCatalogEncryptionSettings")]
     public V1beta2DataCatalogEncryptionSettingsStatusAtProviderDataCatalogEncryptionSettings? DataCatalogEncryptionSettings { get; set; }
 
-    /// <summary>The ID of the Data Catalog to set the security configuration for.</summary>
+    /// <summary>ID of the Data Catalog to set the security configuration for.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

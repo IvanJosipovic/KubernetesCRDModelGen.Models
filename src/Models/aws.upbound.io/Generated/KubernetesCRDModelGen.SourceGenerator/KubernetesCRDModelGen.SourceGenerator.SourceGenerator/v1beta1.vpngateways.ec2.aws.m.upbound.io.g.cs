@@ -196,11 +196,11 @@ public partial class V1beta1VPNGatewaySpecForProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNGatewaySpecForProvider
 {
-    /// <summary>The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
+    /// <summary>Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
     [JsonPropertyName("amazonSideAsn")]
     public string? AmazonSideAsn { get; set; }
 
-    /// <summary>The Availability Zone for the virtual private gateway.</summary>
+    /// <summary>Availability Zone for the virtual private gateway.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
@@ -215,7 +215,7 @@ public partial class V1beta1VPNGatewaySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC ID to create in.</summary>
+    /// <summary>VPC ID to create in.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -399,11 +399,11 @@ public partial class V1beta1VPNGatewaySpecInitProviderVpcIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNGatewaySpecInitProvider
 {
-    /// <summary>The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
+    /// <summary>Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
     [JsonPropertyName("amazonSideAsn")]
     public string? AmazonSideAsn { get; set; }
 
-    /// <summary>The Availability Zone for the virtual private gateway.</summary>
+    /// <summary>Availability Zone for the virtual private gateway.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
@@ -411,7 +411,7 @@ public partial class V1beta1VPNGatewaySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The VPC ID to create in.</summary>
+    /// <summary>VPC ID to create in.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -535,7 +535,7 @@ public partial class V1beta1VPNGatewaySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNGatewayStatusAtProvider
 {
-    /// <summary>The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
+    /// <summary>Autonomous System Number (ASN) for the Amazon side of the gateway. If you don&apos;t specify an ASN, the virtual private gateway is created with the default ASN.</summary>
     [JsonPropertyName("amazonSideAsn")]
     public string? AmazonSideAsn { get; set; }
 
@@ -543,11 +543,11 @@ public partial class V1beta1VPNGatewayStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The Availability Zone for the virtual private gateway.</summary>
+    /// <summary>Availability Zone for the virtual private gateway.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
-    /// <summary>The ID of the VPN Gateway.</summary>
+    /// <summary>ID of the VPN Gateway.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -562,11 +562,11 @@ public partial class V1beta1VPNGatewayStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The VPC ID to create in.</summary>
+    /// <summary>VPC ID to create in.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

@@ -887,7 +887,7 @@ public partial class V1beta1SecurityGroupRuleSpecForProvider
     [JsonPropertyName("self")]
     public bool? Self { get; set; }
 
-    /// <summary>Security group id to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
+    /// <summary>Security group ID to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
     [JsonPropertyName("sourceSecurityGroupId")]
     public string? SourceSecurityGroupId { get; set; }
 
@@ -1766,7 +1766,7 @@ public partial class V1beta1SecurityGroupRuleSpecInitProvider
     [JsonPropertyName("self")]
     public bool? Self { get; set; }
 
-    /// <summary>Security group id to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
+    /// <summary>Security group ID to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
     [JsonPropertyName("sourceSecurityGroupId")]
     public string? SourceSecurityGroupId { get; set; }
 
@@ -1948,7 +1948,7 @@ public partial class V1beta1SecurityGroupRuleStatusAtProvider
     [JsonPropertyName("self")]
     public bool? Self { get; set; }
 
-    /// <summary>Security group id to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
+    /// <summary>Security group ID to allow access to/from, depending on the type. Cannot be specified with cidr_blocks, ipv6_cidr_blocks, or self.</summary>
     [JsonPropertyName("sourceSecurityGroupId")]
     public string? SourceSecurityGroupId { get; set; }
 

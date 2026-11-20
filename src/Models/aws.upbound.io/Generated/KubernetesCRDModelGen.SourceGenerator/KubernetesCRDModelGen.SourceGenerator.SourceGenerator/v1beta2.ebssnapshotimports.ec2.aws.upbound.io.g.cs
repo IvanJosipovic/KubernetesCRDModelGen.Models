@@ -105,7 +105,7 @@ public partial class V1beta2EBSSnapshotImportSpecForProviderDiskContainer
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be a https URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
+    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be an HTTPS URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta2EBSSnapshotImportSpecInitProviderDiskContainer
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be a https URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
+    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be an HTTPS URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
@@ -823,7 +823,7 @@ public partial class V1beta2EBSSnapshotImportStatusAtProviderDiskContainer
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be a https URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
+    /// <summary>The URL to the Amazon S3-based disk image being imported. It can either be an HTTPS URL (https://..) or an Amazon S3 URL (s3://..). One of url or user_bucket must be set.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 

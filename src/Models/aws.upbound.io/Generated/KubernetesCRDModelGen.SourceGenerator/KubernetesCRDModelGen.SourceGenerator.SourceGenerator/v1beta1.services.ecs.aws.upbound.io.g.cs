@@ -283,6 +283,20 @@ public partial class V1beta1ServiceSpecForProviderDeploymentConfigurationCanaryC
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServiceSpecForProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServiceSpecForProviderDeploymentConfigurationLifecycleHook
 {
     /// <summary>Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).</summary>
@@ -300,6 +314,14 @@ public partial class V1beta1ServiceSpecForProviderDeploymentConfigurationLifecyc
     /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public IList<V1beta1ServiceSpecForProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration>? TimeoutConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
@@ -1799,6 +1821,20 @@ public partial class V1beta1ServiceSpecInitProviderDeploymentConfigurationCanary
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServiceSpecInitProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServiceSpecInitProviderDeploymentConfigurationLifecycleHook
 {
     /// <summary>Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).</summary>
@@ -1816,6 +1852,14 @@ public partial class V1beta1ServiceSpecInitProviderDeploymentConfigurationLifecy
     /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public IList<V1beta1ServiceSpecInitProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration>? TimeoutConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
@@ -3498,6 +3542,20 @@ public partial class V1beta1ServiceStatusAtProviderDeploymentConfigurationCanary
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServiceStatusAtProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration
+{
+    /// <summary>Action ECS takes when the pause hook times out. Valid values: ROLLBACK, CONTINUE. Default: ROLLBACK.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>Number of minutes to wait before executing the timeout action. Valid range: 1-20160 minutes. Default: 1440 (24 hours).</summary>
+    [JsonPropertyName("timeoutInMinutes")]
+    public string? TimeoutInMinutes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServiceStatusAtProviderDeploymentConfigurationLifecycleHook
 {
     /// <summary>Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).</summary>
@@ -3515,6 +3573,14 @@ public partial class V1beta1ServiceStatusAtProviderDeploymentConfigurationLifecy
     /// <summary>ARN of the IAM role that grants the service permission to invoke the Lambda function.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+
+    /// <summary>Type of hook target. Valid values: AWS_LAMBDA, PAUSE. Default: AWS_LAMBDA. PAUSE hooks cannot use the TEST_TRAFFIC_SHIFT or PRODUCTION_TRAFFIC_SHIFT lifecycle stages.</summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
+
+    /// <summary>Configuration block defining the timeout behavior for a PAUSE hook. Only valid when target_type is PAUSE. See below.</summary>
+    [JsonPropertyName("timeoutConfiguration")]
+    public IList<V1beta1ServiceStatusAtProviderDeploymentConfigurationLifecycleHookTimeoutConfiguration>? TimeoutConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]

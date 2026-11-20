@@ -37,12 +37,12 @@ public partial class V1beta1BudgetList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V1beta1Budget> Items { get; set; }
 }
 
-/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderAutoAdjustDataHistoricalOptions
 {
-    /// <summary>The number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
+    /// <summary>Number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
     [JsonPropertyName("budgetAdjustmentPeriod")]
     public double? BudgetAdjustmentPeriod { get; set; }
 }
@@ -52,11 +52,11 @@ public partial class V1beta1BudgetSpecForProviderAutoAdjustDataHistoricalOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderAutoAdjustData
 {
-    /// <summary>The string that defines whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST,HISTORICAL</summary>
+    /// <summary>Whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST, HISTORICAL.</summary>
     [JsonPropertyName("autoAdjustType")]
     public string? AutoAdjustType { get; set; }
 
-    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
     [JsonPropertyName("historicalOptions")]
     public V1beta1BudgetSpecForProviderAutoAdjustDataHistoricalOptions? HistoricalOptions { get; set; }
 }
@@ -65,97 +65,97 @@ public partial class V1beta1BudgetSpecForProviderAutoAdjustData
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderCostFilter
 {
-    /// <summary>The name of a budget. Unique within accounts.</summary>
+    /// <summary>Name of the cost filter. Valid values are AZ, BillingEntity, CostCategory, InstanceType, InvoicingEntity, LegalEntityName, LinkedAccount, Operation, PurchaseType, Region, Service, TagKeyValue, UsageType, and UsageTypeGroup.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values used for filtering.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+/// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderCostTypes
 {
-    /// <summary>A boolean value whether to include credits in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include credits in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeCredit")]
     public bool? IncludeCredit { get; set; }
 
-    /// <summary>Whether a budget includes discounts. Defaults to true</summary>
+    /// <summary>Whether a budget includes discounts. Defaults to true.</summary>
     [JsonPropertyName("includeDiscount")]
     public bool? IncludeDiscount { get; set; }
 
-    /// <summary>A boolean value whether to include other subscription costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include other subscription costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeOtherSubscription")]
     public bool? IncludeOtherSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include recurring costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include recurring costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRecurring")]
     public bool? IncludeRecurring { get; set; }
 
-    /// <summary>A boolean value whether to include refunds in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include refunds in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRefund")]
     public bool? IncludeRefund { get; set; }
 
-    /// <summary>A boolean value whether to include subscriptions in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include subscriptions in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSubscription")]
     public bool? IncludeSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include support costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include support costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSupport")]
     public bool? IncludeSupport { get; set; }
 
-    /// <summary>A boolean value whether to include tax in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include tax in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeTax")]
     public bool? IncludeTax { get; set; }
 
-    /// <summary>A boolean value whether to include upfront costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include upfront costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeUpfront")]
     public bool? IncludeUpfront { get; set; }
 
-    /// <summary>Whether a budget uses the amortized rate. Defaults to false</summary>
+    /// <summary>Whether a budget uses the amortized rate. Defaults to false.</summary>
     [JsonPropertyName("useAmortized")]
     public bool? UseAmortized { get; set; }
 
-    /// <summary>A boolean value whether to use blended costs in the cost budget. Defaults to false</summary>
+    /// <summary>Whether to use blended costs in the cost budget. Defaults to false.</summary>
     [JsonPropertyName("useBlended")]
     public bool? UseBlended { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -165,15 +165,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAndDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -182,11 +182,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndAndDimensions? Dimensions { get; set; }
 
@@ -195,74 +195,74 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndAnd
     public V1beta1BudgetSpecForProviderFilterExpressionAndAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -272,29 +272,29 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNotDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndNotDimensions? Dimensions { get; set; }
 
@@ -303,38 +303,38 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndNot
     public V1beta1BudgetSpecForProviderFilterExpressionAndNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -344,15 +344,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOrDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -361,11 +361,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndOrDimensions? Dimensions { get; set; }
 
@@ -379,15 +379,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -396,23 +396,23 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionAnd
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionAndAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecForProviderFilterExpressionAndNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionAndOr>? Or { get; set; }
 
@@ -421,74 +421,74 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionAnd
     public V1beta1BudgetSpecForProviderFilterExpressionAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -498,15 +498,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAndDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -515,11 +515,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotAndDimensions? Dimensions { get; set; }
 
@@ -528,74 +528,74 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotAnd
     public V1beta1BudgetSpecForProviderFilterExpressionNotAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -605,29 +605,29 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNotDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotNotDimensions? Dimensions { get; set; }
 
@@ -636,38 +636,38 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotNot
     public V1beta1BudgetSpecForProviderFilterExpressionNotNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -677,15 +677,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOrDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -694,11 +694,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotOrDimensions? Dimensions { get; set; }
 
@@ -712,41 +712,41 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNotOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionNot
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionNotAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecForProviderFilterExpressionNotNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionNotOr>? Or { get; set; }
 
@@ -755,38 +755,38 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionNot
     public V1beta1BudgetSpecForProviderFilterExpressionNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -796,15 +796,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAndDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -813,11 +813,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrAndDimensions? Dimensions { get; set; }
 
@@ -826,74 +826,74 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrAnd
     public V1beta1BudgetSpecForProviderFilterExpressionOrAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -903,29 +903,29 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNotDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrNotDimensions? Dimensions { get; set; }
 
@@ -934,38 +934,38 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrNot
     public V1beta1BudgetSpecForProviderFilterExpressionOrNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -975,15 +975,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOrDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -992,11 +992,11 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrOrDimensions? Dimensions { get; set; }
 
@@ -1010,15 +1010,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1027,23 +1027,23 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionOr
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionOrAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecForProviderFilterExpressionOrNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionOrOr>? Or { get; set; }
 
@@ -1057,15 +1057,15 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpressionTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1075,23 +1075,23 @@ public partial class V1beta1BudgetSpecForProviderFilterExpressionTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderFilterExpression
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecForProviderFilterExpressionCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecForProviderFilterExpressionDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecForProviderFilterExpressionNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecForProviderFilterExpressionOr>? Or { get; set; }
 
@@ -1108,7 +1108,7 @@ public partial class V1beta1BudgetSpecForProviderNotification
     [JsonPropertyName("comparisonOperator")]
     public string? ComparisonOperator { get; set; }
 
-    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED</summary>
+    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -1133,15 +1133,15 @@ public partial class V1beta1BudgetSpecForProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProviderPlannedLimit
 {
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("amount")]
     public string? Amount { get; set; }
 
-    /// <summary>The start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
+    /// <summary>Start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
     [JsonPropertyName("startTime")]
     public string? StartTime { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1150,7 +1150,7 @@ public partial class V1beta1BudgetSpecForProviderPlannedLimit
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecForProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
@@ -1166,11 +1166,11 @@ public partial class V1beta1BudgetSpecForProvider
     [JsonPropertyName("budgetType")]
     public string? BudgetType { get; set; }
 
-    /// <summary>A list of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
+    /// <summary>List of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
     [JsonPropertyName("costFilter")]
     public IList<V1beta1BudgetSpecForProviderCostFilter>? CostFilter { get; set; }
 
-    /// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+    /// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
     [JsonPropertyName("costTypes")]
     public V1beta1BudgetSpecForProviderCostTypes? CostTypes { get; set; }
 
@@ -1178,15 +1178,15 @@ public partial class V1beta1BudgetSpecForProvider
     [JsonPropertyName("filterExpression")]
     public V1beta1BudgetSpecForProviderFilterExpression? FilterExpression { get; set; }
 
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("limitAmount")]
     public string? LimitAmount { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
 
-    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    /// <summary>List containing definition for how the budget data is aggregated. Valid values are UnblendedCost, BlendedCost, AmortizedCost, NetUnblendedCost, NetAmortizedCost, UsageQuantity, NormalizedUsageAmount, and Hours. Conflicts with cost_types and requires filter_expression.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 
@@ -1202,25 +1202,25 @@ public partial class V1beta1BudgetSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The end of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>End of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodEnd")]
     public string? TimePeriodEnd { get; set; }
 
-    /// <summary>The start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>Start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodStart")]
     public string? TimePeriodStart { get; set; }
 
-    /// <summary>The length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
+    /// <summary>Length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
     [JsonPropertyName("timeUnit")]
     public string? TimeUnit { get; set; }
 }
 
-/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderAutoAdjustDataHistoricalOptions
 {
-    /// <summary>The number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
+    /// <summary>Number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
     [JsonPropertyName("budgetAdjustmentPeriod")]
     public double? BudgetAdjustmentPeriod { get; set; }
 }
@@ -1230,11 +1230,11 @@ public partial class V1beta1BudgetSpecInitProviderAutoAdjustDataHistoricalOption
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderAutoAdjustData
 {
-    /// <summary>The string that defines whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST,HISTORICAL</summary>
+    /// <summary>Whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST, HISTORICAL.</summary>
     [JsonPropertyName("autoAdjustType")]
     public string? AutoAdjustType { get; set; }
 
-    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
     [JsonPropertyName("historicalOptions")]
     public V1beta1BudgetSpecInitProviderAutoAdjustDataHistoricalOptions? HistoricalOptions { get; set; }
 }
@@ -1243,97 +1243,97 @@ public partial class V1beta1BudgetSpecInitProviderAutoAdjustData
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderCostFilter
 {
-    /// <summary>The name of a budget. Unique within accounts.</summary>
+    /// <summary>Name of the cost filter. Valid values are AZ, BillingEntity, CostCategory, InstanceType, InvoicingEntity, LegalEntityName, LinkedAccount, Operation, PurchaseType, Region, Service, TagKeyValue, UsageType, and UsageTypeGroup.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values used for filtering.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+/// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderCostTypes
 {
-    /// <summary>A boolean value whether to include credits in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include credits in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeCredit")]
     public bool? IncludeCredit { get; set; }
 
-    /// <summary>Whether a budget includes discounts. Defaults to true</summary>
+    /// <summary>Whether a budget includes discounts. Defaults to true.</summary>
     [JsonPropertyName("includeDiscount")]
     public bool? IncludeDiscount { get; set; }
 
-    /// <summary>A boolean value whether to include other subscription costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include other subscription costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeOtherSubscription")]
     public bool? IncludeOtherSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include recurring costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include recurring costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRecurring")]
     public bool? IncludeRecurring { get; set; }
 
-    /// <summary>A boolean value whether to include refunds in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include refunds in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRefund")]
     public bool? IncludeRefund { get; set; }
 
-    /// <summary>A boolean value whether to include subscriptions in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include subscriptions in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSubscription")]
     public bool? IncludeSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include support costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include support costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSupport")]
     public bool? IncludeSupport { get; set; }
 
-    /// <summary>A boolean value whether to include tax in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include tax in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeTax")]
     public bool? IncludeTax { get; set; }
 
-    /// <summary>A boolean value whether to include upfront costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include upfront costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeUpfront")]
     public bool? IncludeUpfront { get; set; }
 
-    /// <summary>Whether a budget uses the amortized rate. Defaults to false</summary>
+    /// <summary>Whether a budget uses the amortized rate. Defaults to false.</summary>
     [JsonPropertyName("useAmortized")]
     public bool? UseAmortized { get; set; }
 
-    /// <summary>A boolean value whether to use blended costs in the cost budget. Defaults to false</summary>
+    /// <summary>Whether to use blended costs in the cost budget. Defaults to false.</summary>
     [JsonPropertyName("useBlended")]
     public bool? UseBlended { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1343,15 +1343,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAndDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1360,11 +1360,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndAndDimensions? Dimensions { get; set; }
 
@@ -1373,74 +1373,74 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndAnd
     public V1beta1BudgetSpecInitProviderFilterExpressionAndAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1450,29 +1450,29 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNotDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndNotDimensions? Dimensions { get; set; }
 
@@ -1481,38 +1481,38 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndNot
     public V1beta1BudgetSpecInitProviderFilterExpressionAndNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1522,15 +1522,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOrDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1539,11 +1539,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndOrDimensions? Dimensions { get; set; }
 
@@ -1557,15 +1557,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1574,23 +1574,23 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionAnd
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionAndAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecInitProviderFilterExpressionAndNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionAndOr>? Or { get; set; }
 
@@ -1599,74 +1599,74 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionAnd
     public V1beta1BudgetSpecInitProviderFilterExpressionAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1676,15 +1676,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAndDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1693,11 +1693,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotAndDimensions? Dimensions { get; set; }
 
@@ -1706,74 +1706,74 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotAnd
     public V1beta1BudgetSpecInitProviderFilterExpressionNotAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1783,29 +1783,29 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNotDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotNotDimensions? Dimensions { get; set; }
 
@@ -1814,38 +1814,38 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotNot
     public V1beta1BudgetSpecInitProviderFilterExpressionNotNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1855,15 +1855,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOrDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1872,11 +1872,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotOrDimensions? Dimensions { get; set; }
 
@@ -1890,41 +1890,41 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionNot
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionNotAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNotNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionNotOr>? Or { get; set; }
 
@@ -1933,38 +1933,38 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionNot
     public V1beta1BudgetSpecInitProviderFilterExpressionNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1974,15 +1974,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAndDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1991,11 +1991,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrAndDimensions? Dimensions { get; set; }
 
@@ -2004,74 +2004,74 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrAnd
     public V1beta1BudgetSpecInitProviderFilterExpressionOrAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2081,29 +2081,29 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNotDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrNotDimensions? Dimensions { get; set; }
 
@@ -2112,38 +2112,38 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrNot
     public V1beta1BudgetSpecInitProviderFilterExpressionOrNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2153,15 +2153,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOrDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2170,11 +2170,11 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrOrDimensions? Dimensions { get; set; }
 
@@ -2188,15 +2188,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2205,23 +2205,23 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionOr
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionOrAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecInitProviderFilterExpressionOrNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionOrOr>? Or { get; set; }
 
@@ -2235,15 +2235,15 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpressionTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2253,23 +2253,23 @@ public partial class V1beta1BudgetSpecInitProviderFilterExpressionTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderFilterExpression
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetSpecInitProviderFilterExpressionCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetSpecInitProviderFilterExpressionDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetSpecInitProviderFilterExpressionNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetSpecInitProviderFilterExpressionOr>? Or { get; set; }
 
@@ -2286,7 +2286,7 @@ public partial class V1beta1BudgetSpecInitProviderNotification
     [JsonPropertyName("comparisonOperator")]
     public string? ComparisonOperator { get; set; }
 
-    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED</summary>
+    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -2311,15 +2311,15 @@ public partial class V1beta1BudgetSpecInitProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProviderPlannedLimit
 {
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("amount")]
     public string? Amount { get; set; }
 
-    /// <summary>The start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
+    /// <summary>Start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
     [JsonPropertyName("startTime")]
     public string? StartTime { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -2340,7 +2340,7 @@ public partial class V1beta1BudgetSpecInitProviderPlannedLimit
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetSpecInitProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
@@ -2356,11 +2356,11 @@ public partial class V1beta1BudgetSpecInitProvider
     [JsonPropertyName("budgetType")]
     public string? BudgetType { get; set; }
 
-    /// <summary>A list of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
+    /// <summary>List of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
     [JsonPropertyName("costFilter")]
     public IList<V1beta1BudgetSpecInitProviderCostFilter>? CostFilter { get; set; }
 
-    /// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+    /// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
     [JsonPropertyName("costTypes")]
     public V1beta1BudgetSpecInitProviderCostTypes? CostTypes { get; set; }
 
@@ -2368,15 +2368,15 @@ public partial class V1beta1BudgetSpecInitProvider
     [JsonPropertyName("filterExpression")]
     public V1beta1BudgetSpecInitProviderFilterExpression? FilterExpression { get; set; }
 
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("limitAmount")]
     public string? LimitAmount { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
 
-    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    /// <summary>List containing definition for how the budget data is aggregated. Valid values are UnblendedCost, BlendedCost, AmortizedCost, NetUnblendedCost, NetAmortizedCost, UsageQuantity, NormalizedUsageAmount, and Hours. Conflicts with cost_types and requires filter_expression.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 
@@ -2392,15 +2392,15 @@ public partial class V1beta1BudgetSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The end of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>End of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodEnd")]
     public string? TimePeriodEnd { get; set; }
 
-    /// <summary>The start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>Start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodStart")]
     public string? TimePeriodStart { get; set; }
 
-    /// <summary>The length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
+    /// <summary>Length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
     [JsonPropertyName("timeUnit")]
     public string? TimeUnit { get; set; }
 }
@@ -2512,16 +2512,16 @@ public partial class V1beta1BudgetSpec
     public V1beta1BudgetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+/// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderAutoAdjustDataHistoricalOptions
 {
-    /// <summary>The number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
+    /// <summary>Number of budget periods included in the moving-average calculation that determines your auto-adjusted budget amount.</summary>
     [JsonPropertyName("budgetAdjustmentPeriod")]
     public double? BudgetAdjustmentPeriod { get; set; }
 
-    /// <summary>The integer that describes how many budget periods in your BudgetAdjustmentPeriod are included in the calculation of your current budget limit. If the first budget period in your BudgetAdjustmentPeriod has no cost data, then that budget period isn’t included in the average that determines your budget limit. You can’t set your own LookBackAvailablePeriods. The value is automatically calculated from the budget_adjustment_period and your historical cost data.</summary>
+    /// <summary>Integer that describes how many budget periods in your BudgetAdjustmentPeriod are included in the calculation of your current budget limit. If the first budget period in your BudgetAdjustmentPeriod has no cost data, then that budget period isn’t included in the average that determines your budget limit. You can’t set your own LookBackAvailablePeriods. The value is automatically calculated from the budget_adjustment_period and your historical cost data.</summary>
     [JsonPropertyName("lookbackAvailablePeriods")]
     public double? LookbackAvailablePeriods { get; set; }
 }
@@ -2531,15 +2531,15 @@ public partial class V1beta1BudgetStatusAtProviderAutoAdjustDataHistoricalOption
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderAutoAdjustData
 {
-    /// <summary>The string that defines whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST,HISTORICAL</summary>
+    /// <summary>Whether your budget auto-adjusts based on historical or forecasted data. Valid values: FORECAST, HISTORICAL.</summary>
     [JsonPropertyName("autoAdjustType")]
     public string? AutoAdjustType { get; set; }
 
-    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL Configuration block that defines the historical data that your auto-adjusting budget is based on.</summary>
+    /// <summary>Configuration block of Historical Options. Required for auto_adjust_type of HISTORICAL. Defines the historical data that your auto-adjusting budget is based on.</summary>
     [JsonPropertyName("historicalOptions")]
     public V1beta1BudgetStatusAtProviderAutoAdjustDataHistoricalOptions? HistoricalOptions { get; set; }
 
-    /// <summary>The last time that your budget was auto-adjusted.</summary>
+    /// <summary>Last time that your budget was auto-adjusted.</summary>
     [JsonPropertyName("lastAutoAdjustTime")]
     public string? LastAutoAdjustTime { get; set; }
 }
@@ -2548,97 +2548,97 @@ public partial class V1beta1BudgetStatusAtProviderAutoAdjustData
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderCostFilter
 {
-    /// <summary>The name of a budget. Unique within accounts.</summary>
+    /// <summary>Name of the cost filter. Valid values are AZ, BillingEntity, CostCategory, InstanceType, InvoicingEntity, LegalEntityName, LinkedAccount, Operation, PurchaseType, Region, Service, TagKeyValue, UsageType, and UsageTypeGroup.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values used for filtering.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+/// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderCostTypes
 {
-    /// <summary>A boolean value whether to include credits in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include credits in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeCredit")]
     public bool? IncludeCredit { get; set; }
 
-    /// <summary>Whether a budget includes discounts. Defaults to true</summary>
+    /// <summary>Whether a budget includes discounts. Defaults to true.</summary>
     [JsonPropertyName("includeDiscount")]
     public bool? IncludeDiscount { get; set; }
 
-    /// <summary>A boolean value whether to include other subscription costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include other subscription costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeOtherSubscription")]
     public bool? IncludeOtherSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include recurring costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include recurring costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRecurring")]
     public bool? IncludeRecurring { get; set; }
 
-    /// <summary>A boolean value whether to include refunds in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include refunds in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeRefund")]
     public bool? IncludeRefund { get; set; }
 
-    /// <summary>A boolean value whether to include subscriptions in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include subscriptions in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSubscription")]
     public bool? IncludeSubscription { get; set; }
 
-    /// <summary>A boolean value whether to include support costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include support costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeSupport")]
     public bool? IncludeSupport { get; set; }
 
-    /// <summary>A boolean value whether to include tax in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include tax in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeTax")]
     public bool? IncludeTax { get; set; }
 
-    /// <summary>A boolean value whether to include upfront costs in the cost budget. Defaults to true</summary>
+    /// <summary>Whether to include upfront costs in the cost budget. Defaults to true.</summary>
     [JsonPropertyName("includeUpfront")]
     public bool? IncludeUpfront { get; set; }
 
-    /// <summary>Whether a budget uses the amortized rate. Defaults to false</summary>
+    /// <summary>Whether a budget uses the amortized rate. Defaults to false.</summary>
     [JsonPropertyName("useAmortized")]
     public bool? UseAmortized { get; set; }
 
-    /// <summary>A boolean value whether to use blended costs in the cost budget. Defaults to false</summary>
+    /// <summary>Whether to use blended costs in the cost budget. Defaults to false.</summary>
     [JsonPropertyName("useBlended")]
     public bool? UseBlended { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2648,15 +2648,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAndDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2665,11 +2665,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndAndDimensions? Dimensions { get; set; }
 
@@ -2678,74 +2678,74 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndAnd
     public V1beta1BudgetStatusAtProviderFilterExpressionAndAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2755,29 +2755,29 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNotDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndNotDimensions? Dimensions { get; set; }
 
@@ -2786,38 +2786,38 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndNot
     public V1beta1BudgetStatusAtProviderFilterExpressionAndNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2827,15 +2827,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOrDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2844,11 +2844,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndOrDimensions? Dimensions { get; set; }
 
@@ -2862,15 +2862,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2879,23 +2879,23 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionAnd
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionAndAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetStatusAtProviderFilterExpressionAndNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionAndOr>? Or { get; set; }
 
@@ -2904,74 +2904,74 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionAnd
     public V1beta1BudgetStatusAtProviderFilterExpressionAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2981,15 +2981,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAndDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2998,11 +2998,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotAndDimensions? Dimensions { get; set; }
 
@@ -3011,74 +3011,74 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotAnd
     public V1beta1BudgetStatusAtProviderFilterExpressionNotAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3088,29 +3088,29 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNotDimensio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotNotDimensions? Dimensions { get; set; }
 
@@ -3119,38 +3119,38 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotNot
     public V1beta1BudgetStatusAtProviderFilterExpressionNotNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3160,15 +3160,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOrDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3177,11 +3177,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotOrDimensions? Dimensions { get; set; }
 
@@ -3195,41 +3195,41 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionNot
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionNotAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNotNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionNotOr>? Or { get; set; }
 
@@ -3238,38 +3238,38 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionNot
     public V1beta1BudgetStatusAtProviderFilterExpressionNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAndCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAndDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3279,15 +3279,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAndDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAndTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3296,11 +3296,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAndTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAnd
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrAndCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrAndDimensions? Dimensions { get; set; }
 
@@ -3309,74 +3309,74 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrAnd
     public V1beta1BudgetStatusAtProviderFilterExpressionOrAndTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNotCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNotDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3386,29 +3386,29 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNotDimension
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNotTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+/// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNot
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrNotCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrNotDimensions? Dimensions { get; set; }
 
@@ -3417,38 +3417,38 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrNot
     public V1beta1BudgetStatusAtProviderFilterExpressionOrNotTags? Tags { get; set; }
 }
 
-/// <summary>A Cost Category Filter block.</summary>
+/// <summary>Cost Categories block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOrCostCategories
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>A Dimension Filter block.</summary>
+/// <summary>Dimensions block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOrDimensions
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3458,15 +3458,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOrDimensions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3475,11 +3475,11 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOr
 {
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrOrDimensions? Dimensions { get; set; }
 
@@ -3493,15 +3493,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3510,23 +3510,23 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOrTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionOr
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionOrAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetStatusAtProviderFilterExpressionOrNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionOrOr>? Or { get; set; }
 
@@ -3540,15 +3540,15 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionOr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpressionTags
 {
-    /// <summary>The dimension to filter on. Valid values include AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, REGION, SERVICE, USAGE_TYPE, USAGE_TYPE_GROUP, RECORD_TYPE, OPERATING_SYSTEM, TENANCY, SCOPE, PLATFORM, SUBSCRIPTION_ID, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, BILLING_ENTITY, RESERVATION_ID, RESOURCE_ID, RIGHTSIZING_TYPE, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, PAYMENT_OPTION, and AGREEMENT_END_DATE_TIME_AFTER, AGREEMENT_END_DATE_TIME_BEFORE.</summary>
+    /// <summary>Tag key to filter on.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The match options for the dimension filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
+    /// <summary>Match options for the tag filter. Valid values are EQUALS, STARTS_WITH, ENDS_WITH, CONTAINS, GREATER_THAN_OR_EQUAL, CASE_SENSITIVE, CASE_INSENSITIVE. Note: ABSENT is not supported due to AWS API contradictions (it requires values to be absent but also cannot have values set).</summary>
     [JsonPropertyName("matchOptions")]
     public IList<string>? MatchOptions { get; set; }
 
-    /// <summary>A list of values to match against the dimension. At least one value is required.</summary>
+    /// <summary>List of values to match against the dimension. At least one value is required.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3558,23 +3558,23 @@ public partial class V1beta1BudgetStatusAtProviderFilterExpressionTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderFilterExpression
 {
-    /// <summary>A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("and")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionAnd>? And { get; set; }
 
-    /// <summary>A Cost Category Filter block.</summary>
+    /// <summary>Cost Categories block.</summary>
     [JsonPropertyName("costCategories")]
     public V1beta1BudgetStatusAtProviderFilterExpressionCostCategories? CostCategories { get; set; }
 
-    /// <summary>A Dimension Filter block.</summary>
+    /// <summary>Dimensions block.</summary>
     [JsonPropertyName("dimensions")]
     public V1beta1BudgetStatusAtProviderFilterExpressionDimensions? Dimensions { get; set; }
 
-    /// <summary>A single filter expression to negate. Must contain exactly one root.</summary>
+    /// <summary>Single filter expression to negate. Must contain exactly one root.</summary>
     [JsonPropertyName("not")]
     public V1beta1BudgetStatusAtProviderFilterExpressionNot? Not { get; set; }
 
-    /// <summary>A list of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
+    /// <summary>List of filter expressions to combine with OR logic. Each or block is one operand and must itself contain exactly one root.</summary>
     [JsonPropertyName("or")]
     public IList<V1beta1BudgetStatusAtProviderFilterExpressionOr>? Or { get; set; }
 
@@ -3591,7 +3591,7 @@ public partial class V1beta1BudgetStatusAtProviderNotification
     [JsonPropertyName("comparisonOperator")]
     public string? ComparisonOperator { get; set; }
 
-    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED</summary>
+    /// <summary>What kind of budget value to notify on. Can be ACTUAL or FORECASTED.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -3616,15 +3616,15 @@ public partial class V1beta1BudgetStatusAtProviderNotification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProviderPlannedLimit
 {
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("amount")]
     public string? Amount { get; set; }
 
-    /// <summary>The start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
+    /// <summary>Start time of the budget limit. Format: 2017-01-01_12:00. See PlannedBudgetLimits documentation.</summary>
     [JsonPropertyName("startTime")]
     public string? StartTime { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -3633,11 +3633,11 @@ public partial class V1beta1BudgetStatusAtProviderPlannedLimit
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BudgetStatusAtProvider
 {
-    /// <summary>The ID of the target account for budget. Will use current user&apos;s account_id by default if omitted.</summary>
+    /// <summary>ID of the target account for budget. Uses the current user&apos;s account ID by default if omitted.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The ARN of the budget.</summary>
+    /// <summary>ARN of the budget.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3653,11 +3653,11 @@ public partial class V1beta1BudgetStatusAtProvider
     [JsonPropertyName("budgetType")]
     public string? BudgetType { get; set; }
 
-    /// <summary>A list of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
+    /// <summary>List of CostFilter name/values pair to apply to budget. Conflicts with filter_expression.</summary>
     [JsonPropertyName("costFilter")]
     public IList<V1beta1BudgetStatusAtProviderCostFilter>? CostFilter { get; set; }
 
-    /// <summary>Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions.</summary>
+    /// <summary>Object containing CostTypes that defines the types of cost included in a budget, such as tax and subscriptions.</summary>
     [JsonPropertyName("costTypes")]
     public V1beta1BudgetStatusAtProviderCostTypes? CostTypes { get; set; }
 
@@ -3665,19 +3665,19 @@ public partial class V1beta1BudgetStatusAtProvider
     [JsonPropertyName("filterExpression")]
     public V1beta1BudgetStatusAtProviderFilterExpression? FilterExpression { get; set; }
 
-    /// <summary>id of resource.</summary>
+    /// <summary>ID of resource.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The amount of cost or usage being measured for a budget.</summary>
+    /// <summary>Amount of cost or usage being measured for a budget.</summary>
     [JsonPropertyName("limitAmount")]
     public string? LimitAmount { get; set; }
 
-    /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
+    /// <summary>Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
 
-    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    /// <summary>List containing definition for how the budget data is aggregated. Valid values are UnblendedCost, BlendedCost, AmortizedCost, NetUnblendedCost, NetAmortizedCost, UsageQuantity, NormalizedUsageAmount, and Hours. Conflicts with cost_types and requires filter_expression.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 
@@ -3697,15 +3697,15 @@ public partial class V1beta1BudgetStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The end of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>End of the time period covered by the budget. There are no restrictions on the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodEnd")]
     public string? TimePeriodEnd { get; set; }
 
-    /// <summary>The start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
+    /// <summary>Start of the time period covered by the budget. If you don&apos;t specify a start date, AWS defaults to the start of your chosen time period. The start date must come before the end date. Format: 2017-01-01_12:00.</summary>
     [JsonPropertyName("timePeriodStart")]
     public string? TimePeriodStart { get; set; }
 
-    /// <summary>The length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
+    /// <summary>Length of time until a budget resets the actual and forecasted spend. Valid values: MONTHLY, QUARTERLY, ANNUALLY, and DAILY.</summary>
     [JsonPropertyName("timeUnit")]
     public string? TimeUnit { get; set; }
 }

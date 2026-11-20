@@ -41,7 +41,7 @@ public partial class V1beta1WorkflowList : IKubernetesObject<V1ListMeta>, IItems
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProvider
 {
-    /// <summary>A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
+    /// <summary>Map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
     [JsonPropertyName("defaultRunProperties")]
     public IDictionary<string, string>? DefaultRunProperties { get; set; }
 
@@ -81,7 +81,7 @@ public partial class V1beta1WorkflowSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProvider
 {
-    /// <summary>A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
+    /// <summary>Map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
     [JsonPropertyName("defaultRunProperties")]
     public IDictionary<string, string>? DefaultRunProperties { get; set; }
 
@@ -213,7 +213,7 @@ public partial class V1beta1WorkflowStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
+    /// <summary>Map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.</summary>
     [JsonPropertyName("defaultRunProperties")]
     public IDictionary<string, string>? DefaultRunProperties { get; set; }
 
@@ -240,7 +240,7 @@ public partial class V1beta1WorkflowStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

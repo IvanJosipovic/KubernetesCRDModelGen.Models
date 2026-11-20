@@ -341,7 +341,7 @@ public partial class V1beta2DomainSpecForProviderClusterConfig
     [JsonPropertyName("warmEnabled")]
     public bool? WarmEnabled { get; set; }
 
-    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. Valid values are ultrawarm1.medium.search, ultrawarm1.large.search and ultrawarm1.xlarge.search. warm_type can be only and must be set when warm_enabled is set to true.</summary>
+    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. warm_type can be only and must be set when warm_enabled is set to true.</summary>
     [JsonPropertyName("warmType")]
     public string? WarmType { get; set; }
 
@@ -780,7 +780,7 @@ public partial class V1beta2DomainSpecForProviderLogPublishingOptionsCloudwatchL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -1576,7 +1576,7 @@ public partial class V1beta2DomainSpecInitProviderClusterConfig
     [JsonPropertyName("warmEnabled")]
     public bool? WarmEnabled { get; set; }
 
-    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. Valid values are ultrawarm1.medium.search, ultrawarm1.large.search and ultrawarm1.xlarge.search. warm_type can be only and must be set when warm_enabled is set to true.</summary>
+    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. warm_type can be only and must be set when warm_enabled is set to true.</summary>
     [JsonPropertyName("warmType")]
     public string? WarmType { get; set; }
 
@@ -2015,7 +2015,7 @@ public partial class V1beta2DomainSpecInitProviderLogPublishingOptionsCloudwatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -2977,7 +2977,7 @@ public partial class V1beta2DomainStatusAtProviderClusterConfig
     [JsonPropertyName("warmEnabled")]
     public bool? WarmEnabled { get; set; }
 
-    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. Valid values are ultrawarm1.medium.search, ultrawarm1.large.search and ultrawarm1.xlarge.search. warm_type can be only and must be set when warm_enabled is set to true.</summary>
+    /// <summary>Instance type for the OpenSearch cluster&apos;s warm nodes. warm_type can be only and must be set when warm_enabled is set to true.</summary>
     [JsonPropertyName("warmType")]
     public string? WarmType { get; set; }
 
@@ -3114,7 +3114,7 @@ public partial class V1beta2DomainStatusAtProviderIdentityCenterOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderLogPublishingOptions
 {
-    /// <summary>ARN of the Cloudwatch log group to which log needs to be published.</summary>
+    /// <summary>ARN of the CloudWatch log group to which log needs to be published.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -3251,11 +3251,11 @@ public partial class V1beta2DomainStatusAtProvider
     [JsonPropertyName("cognitoOptions")]
     public V1beta2DomainStatusAtProviderCognitoOptions? CognitoOptions { get; set; }
 
-    /// <summary>Domain-specific endpoint for Dashboard without https scheme.</summary>
+    /// <summary>Domain-specific endpoint for Dashboard without HTTPS scheme.</summary>
     [JsonPropertyName("dashboardEndpoint")]
     public string? DashboardEndpoint { get; set; }
 
-    /// <summary>V2 domain endpoint for Dashboard that works with both IPv4 and IPv6 addresses, without https scheme.</summary>
+    /// <summary>V2 domain endpoint for Dashboard that works with both IPv4 and IPv6 addresses, without HTTPS scheme.</summary>
     [JsonPropertyName("dashboardEndpointV2")]
     public string? DashboardEndpointV2 { get; set; }
 

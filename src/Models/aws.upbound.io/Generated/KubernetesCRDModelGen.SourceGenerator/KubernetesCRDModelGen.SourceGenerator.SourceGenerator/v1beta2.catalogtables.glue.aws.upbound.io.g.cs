@@ -1960,7 +1960,7 @@ public partial class V1beta2CatalogTableStatusAtProviderPartitionIndex
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>Status of the partition index.</summary>
+    /// <summary>(Read-Only) Status of the partition index.</summary>
     [JsonPropertyName("indexStatus")]
     public string? IndexStatus { get; set; }
 

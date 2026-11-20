@@ -197,7 +197,7 @@ public partial class V1beta1CertificateSpecForProviderCertificateAuthorityArnSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateSpecForProviderOptions
 {
-    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.</summary>
+    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.</summary>
     [JsonPropertyName("certificateTransparencyLoggingPreference")]
     public string? CertificateTransparencyLoggingPreference { get; set; }
 
@@ -474,7 +474,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificateAuthorityArnSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateSpecInitProviderOptions
 {
-    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.</summary>
+    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.</summary>
     [JsonPropertyName("certificateTransparencyLoggingPreference")]
     public string? CertificateTransparencyLoggingPreference { get; set; }
 
@@ -729,7 +729,7 @@ public partial class V1beta1CertificateStatusAtProviderDomainValidationOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateStatusAtProviderOptions
 {
-    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details.</summary>
+    /// <summary>Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details. This argument applies to Amazon-issued and private CA certificates. It conflicts with private_key / private_key_wo, so it cannot be set on imported certificates. Imported certificates are not managed by ACM issuance, so ACM does not control their certificate transparency logging.</summary>
     [JsonPropertyName("certificateTransparencyLoggingPreference")]
     public string? CertificateTransparencyLoggingPreference { get; set; }
 

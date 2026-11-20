@@ -196,9 +196,11 @@ public partial class V1beta1EndpointSpecForProviderCidrOptionsCidrSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderCidrOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -358,11 +360,12 @@ public partial class V1beta1EndpointSpecForProviderCidrOptionsSubnetIdsSelector
     public V1beta1EndpointSpecForProviderCidrOptionsSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+/// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderCidrOptions
 {
+    /// <summary>CIDR block to send traffic to.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
@@ -374,12 +377,15 @@ public partial class V1beta1EndpointSpecForProviderCidrOptions
     [JsonPropertyName("cidrSelector")]
     public V1beta1EndpointSpecForProviderCidrOptionsCidrSelector? CidrSelector { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecForProviderCidrOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -706,9 +712,11 @@ public partial class V1beta1EndpointSpecForProviderLoadBalancerOptionsLoadBalanc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderLoadBalancerOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -868,11 +876,12 @@ public partial class V1beta1EndpointSpecForProviderLoadBalancerOptionsSubnetIdsS
     public V1beta1EndpointSpecForProviderLoadBalancerOptionsSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+/// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderLoadBalancerOptions
 {
+    /// <summary>ARN of the load balancer.</summary>
     [JsonPropertyName("loadBalancerArn")]
     public string? LoadBalancerArn { get; set; }
 
@@ -884,15 +893,19 @@ public partial class V1beta1EndpointSpecForProviderLoadBalancerOptions
     [JsonPropertyName("loadBalancerArnSelector")]
     public V1beta1EndpointSpecForProviderLoadBalancerOptionsLoadBalancerArnSelector? LoadBalancerArnSelector { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecForProviderLoadBalancerOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1064,19 +1077,21 @@ public partial class V1beta1EndpointSpecForProviderNetworkInterfaceOptionsNetwor
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderNetworkInterfaceOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
 
-/// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+/// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderNetworkInterfaceOptions
 {
-    /// <summary>The ID of the AWS Verified Access endpoint.</summary>
+    /// <summary>ID of the network interface.</summary>
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
@@ -1088,38 +1103,49 @@ public partial class V1beta1EndpointSpecForProviderNetworkInterfaceOptions
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1EndpointSpecForProviderNetworkInterfaceOptionsNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecForProviderNetworkInterfaceOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
+/// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderRdsOptions
 {
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>ARN of the RDS cluster.</summary>
     [JsonPropertyName("rdsDbClusterArn")]
     public string? RdsDbClusterArn { get; set; }
 
+    /// <summary>ARN of the RDS instance.</summary>
     [JsonPropertyName("rdsDbInstanceArn")]
     public string? RdsDbInstanceArn { get; set; }
 
+    /// <summary>ARN of the RDS proxy.</summary>
     [JsonPropertyName("rdsDbProxyArn")]
     public string? RdsDbProxyArn { get; set; }
 
+    /// <summary>RDS endpoint.</summary>
     [JsonPropertyName("rdsEndpoint")]
     public string? RdsEndpoint { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -1279,14 +1305,16 @@ public partial class V1beta1EndpointSpecForProviderSecurityGroupIdSelector
     public V1beta1EndpointSpecForProviderSecurityGroupIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The options in use for server side encryption.</summary>
+/// <summary>Options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProviderSseSpecification
 {
+    /// <summary>Whether to encrypt the policy using a customer managed key.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -1450,23 +1478,23 @@ public partial class V1beta1EndpointSpecForProviderVerifiedAccessGroupIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecForProvider
 {
-    /// <summary>The DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("applicationDomain")]
     public string? ApplicationDomain { get; set; }
 
-    /// <summary>The type of attachment. Currently, only vpc is supported.</summary>
+    /// <summary>Type of attachment. Currently, only vpc is supported.</summary>
     [JsonPropertyName("attachmentType")]
     public string? AttachmentType { get; set; }
 
-    /// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+    /// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
     [JsonPropertyName("cidrOptions")]
     public V1beta1EndpointSpecForProviderCidrOptions? CidrOptions { get; set; }
 
-    /// <summary>A description for the Verified Access endpoint.</summary>
+    /// <summary>Description for the Verified Access endpoint.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>- The ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("domainCertificateArn")]
     public string? DomainCertificateArn { get; set; }
 
@@ -1478,26 +1506,27 @@ public partial class V1beta1EndpointSpecForProvider
     [JsonPropertyName("domainCertificateArnSelector")]
     public V1beta1EndpointSpecForProviderDomainCertificateArnSelector? DomainCertificateArnSelector { get; set; }
 
-    /// <summary>- A custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
+    /// <summary>Custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
     [JsonPropertyName("endpointDomainPrefix")]
     public string? EndpointDomainPrefix { get; set; }
 
-    /// <summary>- The type of Verified Access endpoint to create. Currently load-balancer or network-interface are supported.</summary>
+    /// <summary>Type of Verified Access endpoint to create. Valid values are load-balancer, network-interface, cidr, and rds.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+    /// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
     [JsonPropertyName("loadBalancerOptions")]
     public V1beta1EndpointSpecForProviderLoadBalancerOptions? LoadBalancerOptions { get; set; }
 
-    /// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+    /// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
     [JsonPropertyName("networkInterfaceOptions")]
     public V1beta1EndpointSpecForProviderNetworkInterfaceOptions? NetworkInterfaceOptions { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
+    /// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
     [JsonPropertyName("rdsOptions")]
     public V1beta1EndpointSpecForProviderRdsOptions? RdsOptions { get; set; }
 
@@ -1516,11 +1545,11 @@ public partial class V1beta1EndpointSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1EndpointSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>List of the the security groups IDs to associate with the Verified Access endpoint.</summary>
+    /// <summary>List of the security groups IDs to associate with the Verified Access endpoint.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The options in use for server side encryption.</summary>
+    /// <summary>Options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1EndpointSpecForProviderSseSpecification? SseSpecification { get; set; }
 
@@ -1528,7 +1557,7 @@ public partial class V1beta1EndpointSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the Verified Access group to associate the endpoint with.</summary>
+    /// <summary>ID of the Verified Access group to associate the endpoint with.</summary>
     [JsonPropertyName("verifiedAccessGroupId")]
     public string? VerifiedAccessGroupId { get; set; }
 
@@ -1700,9 +1729,11 @@ public partial class V1beta1EndpointSpecInitProviderCidrOptionsCidrSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderCidrOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -1862,11 +1893,12 @@ public partial class V1beta1EndpointSpecInitProviderCidrOptionsSubnetIdsSelector
     public V1beta1EndpointSpecInitProviderCidrOptionsSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+/// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderCidrOptions
 {
+    /// <summary>CIDR block to send traffic to.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
@@ -1878,12 +1910,15 @@ public partial class V1beta1EndpointSpecInitProviderCidrOptions
     [JsonPropertyName("cidrSelector")]
     public V1beta1EndpointSpecInitProviderCidrOptionsCidrSelector? CidrSelector { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecInitProviderCidrOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2210,9 +2245,11 @@ public partial class V1beta1EndpointSpecInitProviderLoadBalancerOptionsLoadBalan
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderLoadBalancerOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -2372,11 +2409,12 @@ public partial class V1beta1EndpointSpecInitProviderLoadBalancerOptionsSubnetIds
     public V1beta1EndpointSpecInitProviderLoadBalancerOptionsSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+/// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderLoadBalancerOptions
 {
+    /// <summary>ARN of the load balancer.</summary>
     [JsonPropertyName("loadBalancerArn")]
     public string? LoadBalancerArn { get; set; }
 
@@ -2388,15 +2426,19 @@ public partial class V1beta1EndpointSpecInitProviderLoadBalancerOptions
     [JsonPropertyName("loadBalancerArnSelector")]
     public V1beta1EndpointSpecInitProviderLoadBalancerOptionsLoadBalancerArnSelector? LoadBalancerArnSelector { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecInitProviderLoadBalancerOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2568,19 +2610,21 @@ public partial class V1beta1EndpointSpecInitProviderNetworkInterfaceOptionsNetwo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderNetworkInterfaceOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
 
-/// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+/// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderNetworkInterfaceOptions
 {
-    /// <summary>The ID of the AWS Verified Access endpoint.</summary>
+    /// <summary>ID of the network interface.</summary>
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
@@ -2592,38 +2636,49 @@ public partial class V1beta1EndpointSpecInitProviderNetworkInterfaceOptions
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1EndpointSpecInitProviderNetworkInterfaceOptionsNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointSpecInitProviderNetworkInterfaceOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
+/// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderRdsOptions
 {
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>ARN of the RDS cluster.</summary>
     [JsonPropertyName("rdsDbClusterArn")]
     public string? RdsDbClusterArn { get; set; }
 
+    /// <summary>ARN of the RDS instance.</summary>
     [JsonPropertyName("rdsDbInstanceArn")]
     public string? RdsDbInstanceArn { get; set; }
 
+    /// <summary>ARN of the RDS proxy.</summary>
     [JsonPropertyName("rdsDbProxyArn")]
     public string? RdsDbProxyArn { get; set; }
 
+    /// <summary>RDS endpoint.</summary>
     [JsonPropertyName("rdsEndpoint")]
     public string? RdsEndpoint { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -2783,14 +2838,16 @@ public partial class V1beta1EndpointSpecInitProviderSecurityGroupIdSelector
     public V1beta1EndpointSpecInitProviderSecurityGroupIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The options in use for server side encryption.</summary>
+/// <summary>Options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProviderSseSpecification
 {
+    /// <summary>Whether to encrypt the policy using a customer managed key.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -2966,23 +3023,23 @@ public partial class V1beta1EndpointSpecInitProviderVerifiedAccessGroupIdSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointSpecInitProvider
 {
-    /// <summary>The DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("applicationDomain")]
     public string? ApplicationDomain { get; set; }
 
-    /// <summary>The type of attachment. Currently, only vpc is supported.</summary>
+    /// <summary>Type of attachment. Currently, only vpc is supported.</summary>
     [JsonPropertyName("attachmentType")]
     public string? AttachmentType { get; set; }
 
-    /// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+    /// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
     [JsonPropertyName("cidrOptions")]
     public V1beta1EndpointSpecInitProviderCidrOptions? CidrOptions { get; set; }
 
-    /// <summary>A description for the Verified Access endpoint.</summary>
+    /// <summary>Description for the Verified Access endpoint.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>- The ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("domainCertificateArn")]
     public string? DomainCertificateArn { get; set; }
 
@@ -2994,26 +3051,27 @@ public partial class V1beta1EndpointSpecInitProvider
     [JsonPropertyName("domainCertificateArnSelector")]
     public V1beta1EndpointSpecInitProviderDomainCertificateArnSelector? DomainCertificateArnSelector { get; set; }
 
-    /// <summary>- A custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
+    /// <summary>Custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
     [JsonPropertyName("endpointDomainPrefix")]
     public string? EndpointDomainPrefix { get; set; }
 
-    /// <summary>- The type of Verified Access endpoint to create. Currently load-balancer or network-interface are supported.</summary>
+    /// <summary>Type of Verified Access endpoint to create. Valid values are load-balancer, network-interface, cidr, and rds.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+    /// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
     [JsonPropertyName("loadBalancerOptions")]
     public V1beta1EndpointSpecInitProviderLoadBalancerOptions? LoadBalancerOptions { get; set; }
 
-    /// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+    /// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
     [JsonPropertyName("networkInterfaceOptions")]
     public V1beta1EndpointSpecInitProviderNetworkInterfaceOptions? NetworkInterfaceOptions { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
+    /// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
     [JsonPropertyName("rdsOptions")]
     public V1beta1EndpointSpecInitProviderRdsOptions? RdsOptions { get; set; }
 
@@ -3025,11 +3083,11 @@ public partial class V1beta1EndpointSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1EndpointSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>List of the the security groups IDs to associate with the Verified Access endpoint.</summary>
+    /// <summary>List of the security groups IDs to associate with the Verified Access endpoint.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The options in use for server side encryption.</summary>
+    /// <summary>Options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1EndpointSpecInitProviderSseSpecification? SseSpecification { get; set; }
 
@@ -3037,7 +3095,7 @@ public partial class V1beta1EndpointSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the Verified Access group to associate the endpoint with.</summary>
+    /// <summary>ID of the Verified Access group to associate the endpoint with.</summary>
     [JsonPropertyName("verifiedAccessGroupId")]
     public string? VerifiedAccessGroupId { get; set; }
 
@@ -3161,27 +3219,33 @@ public partial class V1beta1EndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderCidrOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
 
-/// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+/// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderCidrOptions
 {
+    /// <summary>CIDR block to send traffic to.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointStatusAtProviderCidrOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -3190,30 +3254,37 @@ public partial class V1beta1EndpointStatusAtProviderCidrOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderLoadBalancerOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
 
-/// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+/// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderLoadBalancerOptions
 {
+    /// <summary>ARN of the load balancer.</summary>
     [JsonPropertyName("loadBalancerArn")]
     public string? LoadBalancerArn { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointStatusAtProviderLoadBalancerOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -3222,66 +3293,81 @@ public partial class V1beta1EndpointStatusAtProviderLoadBalancerOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderNetworkInterfaceOptionsPortRange
 {
+    /// <summary>Start of the port range.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
+    /// <summary>End of the port range.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
 
-/// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+/// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderNetworkInterfaceOptions
 {
-    /// <summary>The ID of the AWS Verified Access endpoint.</summary>
+    /// <summary>ID of the network interface.</summary>
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Port ranges. See below.</summary>
     [JsonPropertyName("portRange")]
     public IList<V1beta1EndpointStatusAtProviderNetworkInterfaceOptionsPortRange>? PortRange { get; set; }
 
+    /// <summary>IP protocol.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
+/// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderRdsOptions
 {
+    /// <summary>IP port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
+    /// <summary>Protocol. Currently tcp is supported.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>ARN of the RDS cluster.</summary>
     [JsonPropertyName("rdsDbClusterArn")]
     public string? RdsDbClusterArn { get; set; }
 
+    /// <summary>ARN of the RDS instance.</summary>
     [JsonPropertyName("rdsDbInstanceArn")]
     public string? RdsDbInstanceArn { get; set; }
 
+    /// <summary>ARN of the RDS proxy.</summary>
     [JsonPropertyName("rdsDbProxyArn")]
     public string? RdsDbProxyArn { get; set; }
 
+    /// <summary>RDS endpoint.</summary>
     [JsonPropertyName("rdsEndpoint")]
     public string? RdsEndpoint { get; set; }
 
+    /// <summary>IDs of the subnets.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
 
-/// <summary>The options in use for server side encryption.</summary>
+/// <summary>Options in use for server side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProviderSseSpecification
 {
+    /// <summary>Whether to encrypt the policy using a customer managed key.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -3290,19 +3376,19 @@ public partial class V1beta1EndpointStatusAtProviderSseSpecification
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProvider
 {
-    /// <summary>The DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>DNS name for users to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("applicationDomain")]
     public string? ApplicationDomain { get; set; }
 
-    /// <summary>The type of attachment. Currently, only vpc is supported.</summary>
+    /// <summary>Type of attachment. Currently, only vpc is supported.</summary>
     [JsonPropertyName("attachmentType")]
     public string? AttachmentType { get; set; }
 
-    /// <summary>The CIDR block details. This parameter is required if the endpoint type is cidr.</summary>
+    /// <summary>CIDR block details. This parameter is required if the endpoint type is cidr. See below.</summary>
     [JsonPropertyName("cidrOptions")]
     public V1beta1EndpointStatusAtProviderCidrOptions? CidrOptions { get; set; }
 
-    /// <summary>A description for the Verified Access endpoint.</summary>
+    /// <summary>Description for the Verified Access endpoint.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -3310,38 +3396,39 @@ public partial class V1beta1EndpointStatusAtProvider
     [JsonPropertyName("deviceValidationDomain")]
     public string? DeviceValidationDomain { get; set; }
 
-    /// <summary>- The ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
+    /// <summary>ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint. The CN in the certificate must match the DNS name your end users will use to reach your application. This parameter is required if the endpoint type is load-balancer or network-interface.</summary>
     [JsonPropertyName("domainCertificateArn")]
     public string? DomainCertificateArn { get; set; }
 
-    /// <summary>A DNS name that is generated for the endpoint.</summary>
+    /// <summary>DNS name that is generated for the endpoint.</summary>
     [JsonPropertyName("endpointDomain")]
     public string? EndpointDomain { get; set; }
 
-    /// <summary>- A custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
+    /// <summary>Custom identifier that is prepended to the DNS name that is generated for the endpoint.</summary>
     [JsonPropertyName("endpointDomainPrefix")]
     public string? EndpointDomainPrefix { get; set; }
 
-    /// <summary>- The type of Verified Access endpoint to create. Currently load-balancer or network-interface are supported.</summary>
+    /// <summary>Type of Verified Access endpoint to create. Valid values are load-balancer, network-interface, cidr, and rds.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access endpoint.</summary>
+    /// <summary>ID of the AWS Verified Access endpoint.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The load balancer details. This parameter is required if the endpoint type is load-balancer.</summary>
+    /// <summary>Load balancer details. This parameter is required if the endpoint type is load-balancer. See below.</summary>
     [JsonPropertyName("loadBalancerOptions")]
     public V1beta1EndpointStatusAtProviderLoadBalancerOptions? LoadBalancerOptions { get; set; }
 
-    /// <summary>The network interface details. This parameter is required if the endpoint type is network-interface.</summary>
+    /// <summary>Network interface details. This parameter is required if the endpoint type is network-interface. See below.</summary>
     [JsonPropertyName("networkInterfaceOptions")]
     public V1beta1EndpointStatusAtProviderNetworkInterfaceOptions? NetworkInterfaceOptions { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
+    /// <summary>RDS details. This parameter is required if the endpoint type is rds. See below.</summary>
     [JsonPropertyName("rdsOptions")]
     public V1beta1EndpointStatusAtProviderRdsOptions? RdsOptions { get; set; }
 
@@ -3352,11 +3439,11 @@ public partial class V1beta1EndpointStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>List of the the security groups IDs to associate with the Verified Access endpoint.</summary>
+    /// <summary>List of the security groups IDs to associate with the Verified Access endpoint.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The options in use for server side encryption.</summary>
+    /// <summary>Options in use for server side encryption. See below.</summary>
     [JsonPropertyName("sseSpecification")]
     public V1beta1EndpointStatusAtProviderSseSpecification? SseSpecification { get; set; }
 
@@ -3367,11 +3454,11 @@ public partial class V1beta1EndpointStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The ID of the Verified Access group to associate the endpoint with.</summary>
+    /// <summary>ID of the Verified Access group to associate the endpoint with.</summary>
     [JsonPropertyName("verifiedAccessGroupId")]
     public string? VerifiedAccessGroupId { get; set; }
 
-    /// <summary>The ID of the AWS Verified Access endpoint.</summary>
+    /// <summary>ID of the Verified Access instance.</summary>
     [JsonPropertyName("verifiedAccessInstanceId")]
     public string? VerifiedAccessInstanceId { get; set; }
 }

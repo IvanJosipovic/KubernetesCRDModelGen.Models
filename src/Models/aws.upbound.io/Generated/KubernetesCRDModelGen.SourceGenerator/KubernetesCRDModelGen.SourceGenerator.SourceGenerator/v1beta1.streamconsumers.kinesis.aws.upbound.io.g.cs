@@ -230,6 +230,7 @@ public partial class V1beta1StreamConsumerSpecForProvider
     [JsonPropertyName("streamArnSelector")]
     public V1beta1StreamConsumerSpecForProviderStreamArnSelector? StreamArnSelector { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -413,6 +414,7 @@ public partial class V1beta1StreamConsumerSpecInitProvider
     [JsonPropertyName("streamArnSelector")]
     public V1beta1StreamConsumerSpecInitProviderStreamArnSelector? StreamArnSelector { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -631,9 +633,11 @@ public partial class V1beta1StreamConsumerStatusAtProvider
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

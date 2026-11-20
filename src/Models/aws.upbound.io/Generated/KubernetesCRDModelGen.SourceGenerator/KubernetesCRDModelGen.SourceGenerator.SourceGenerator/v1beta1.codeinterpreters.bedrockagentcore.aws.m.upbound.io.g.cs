@@ -210,7 +210,7 @@ public partial class V1beta1CodeInterpreterSpecForProviderCertificateLocationSec
     public V1beta1CodeInterpreterSpecForProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterSpecForProviderCertificateLocation
@@ -224,7 +224,7 @@ public partial class V1beta1CodeInterpreterSpecForProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterSpecForProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1CodeInterpreterSpecForProviderCertificateLocation? Location { get; set; }
 }
@@ -1441,7 +1441,7 @@ public partial class V1beta1CodeInterpreterSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the IAM role that the code interpreter assumes for execution. Required when using SANDBOX network mode.</summary>
+    /// <summary>ARN of the IAM role that the code interpreter assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -1649,7 +1649,7 @@ public partial class V1beta1CodeInterpreterSpecInitProviderCertificateLocationSe
     public V1beta1CodeInterpreterSpecInitProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterSpecInitProviderCertificateLocation
@@ -1663,7 +1663,7 @@ public partial class V1beta1CodeInterpreterSpecInitProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterSpecInitProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1CodeInterpreterSpecInitProviderCertificateLocation? Location { get; set; }
 }
@@ -2892,7 +2892,7 @@ public partial class V1beta1CodeInterpreterSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the IAM role that the code interpreter assumes for execution. Required when using SANDBOX network mode.</summary>
+    /// <summary>ARN of the IAM role that the code interpreter assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -3037,7 +3037,7 @@ public partial class V1beta1CodeInterpreterStatusAtProviderCertificateLocationSe
     public string? SecretArn { get; set; }
 }
 
-/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+/// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterStatusAtProviderCertificateLocation
@@ -3051,7 +3051,7 @@ public partial class V1beta1CodeInterpreterStatusAtProviderCertificateLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeInterpreterStatusAtProviderCertificate
 {
-    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    /// <summary>Location from which to retrieve the certificate. See certificate.location below.</summary>
     [JsonPropertyName("location")]
     public V1beta1CodeInterpreterStatusAtProviderCertificateLocation? Location { get; set; }
 }
@@ -3143,7 +3143,7 @@ public partial class V1beta1CodeInterpreterStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ARN of the IAM role that the code interpreter assumes for execution. Required when using SANDBOX network mode.</summary>
+    /// <summary>ARN of the IAM role that the code interpreter assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -3172,7 +3172,7 @@ public partial class V1beta1CodeInterpreterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

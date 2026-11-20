@@ -240,11 +240,11 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("customerKeySecretRef")]
     public V1beta1ObjectCopySpecForProviderCustomerKeySecretRef? CustomerKeySecretRef { get; set; }
 
-    /// <summary>Account id of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>Account id of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedSourceBucketOwner")]
     public string? ExpectedSourceBucketOwner { get; set; }
 
@@ -539,11 +539,11 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("customerKeySecretRef")]
     public V1beta1ObjectCopySpecInitProviderCustomerKeySecretRef? CustomerKeySecretRef { get; set; }
 
-    /// <summary>Account id of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>Account id of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedSourceBucketOwner")]
     public string? ExpectedSourceBucketOwner { get; set; }
 
@@ -954,11 +954,11 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
-    /// <summary>Account id of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>Account id of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
+    /// <summary>Account ID of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</summary>
     [JsonPropertyName("expectedSourceBucketOwner")]
     public string? ExpectedSourceBucketOwner { get; set; }
 

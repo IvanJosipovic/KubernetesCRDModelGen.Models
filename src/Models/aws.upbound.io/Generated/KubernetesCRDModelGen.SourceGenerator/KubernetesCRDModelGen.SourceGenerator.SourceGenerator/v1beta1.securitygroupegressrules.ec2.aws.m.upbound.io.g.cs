@@ -506,27 +506,27 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
 {
-    /// <summary>The destination IPv4 CIDR range.</summary>
+    /// <summary>Destination IPv4 CIDR range.</summary>
     [JsonPropertyName("cidrIpv4")]
     public string? CidrIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 CIDR range.</summary>
+    /// <summary>Destination IPv6 CIDR range.</summary>
     [JsonPropertyName("cidrIpv6")]
     public string? CidrIpv6 { get; set; }
 
-    /// <summary>The security group rule description.</summary>
+    /// <summary>Security group rule description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
+    /// <summary>Start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
-    /// <summary>The IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
+    /// <summary>IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
     [JsonPropertyName("ipProtocol")]
     public string? IpProtocol { get; set; }
 
-    /// <summary>The ID of the destination prefix list.</summary>
+    /// <summary>ID of the destination prefix list.</summary>
     [JsonPropertyName("prefixListId")]
     public string? PrefixListId { get; set; }
 
@@ -538,7 +538,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
     [JsonPropertyName("prefixListIdSelector")]
     public V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelector? PrefixListIdSelector { get; set; }
 
-    /// <summary>The destination security group that is referenced in the rule.</summary>
+    /// <summary>Destination security group that is referenced in the rule.</summary>
     [JsonPropertyName("referencedSecurityGroupId")]
     public string? ReferencedSecurityGroupId { get; set; }
 
@@ -557,7 +557,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the security group.</summary>
+    /// <summary>ID of the security group.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
@@ -573,7 +573,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
+    /// <summary>End of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -1059,27 +1059,27 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
 {
-    /// <summary>The destination IPv4 CIDR range.</summary>
+    /// <summary>Destination IPv4 CIDR range.</summary>
     [JsonPropertyName("cidrIpv4")]
     public string? CidrIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 CIDR range.</summary>
+    /// <summary>Destination IPv6 CIDR range.</summary>
     [JsonPropertyName("cidrIpv6")]
     public string? CidrIpv6 { get; set; }
 
-    /// <summary>The security group rule description.</summary>
+    /// <summary>Security group rule description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
+    /// <summary>Start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
-    /// <summary>The IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
+    /// <summary>IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
     [JsonPropertyName("ipProtocol")]
     public string? IpProtocol { get; set; }
 
-    /// <summary>The ID of the destination prefix list.</summary>
+    /// <summary>ID of the destination prefix list.</summary>
     [JsonPropertyName("prefixListId")]
     public string? PrefixListId { get; set; }
 
@@ -1091,7 +1091,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
     [JsonPropertyName("prefixListIdSelector")]
     public V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelector? PrefixListIdSelector { get; set; }
 
-    /// <summary>The destination security group that is referenced in the rule.</summary>
+    /// <summary>Destination security group that is referenced in the rule.</summary>
     [JsonPropertyName("referencedSecurityGroupId")]
     public string? ReferencedSecurityGroupId { get; set; }
 
@@ -1103,7 +1103,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
     [JsonPropertyName("referencedSecurityGroupIdSelector")]
     public V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelector? ReferencedSecurityGroupIdSelector { get; set; }
 
-    /// <summary>The ID of the security group.</summary>
+    /// <summary>ID of the security group.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
@@ -1119,7 +1119,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
+    /// <summary>End of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }
@@ -1239,19 +1239,19 @@ public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The destination IPv4 CIDR range.</summary>
+    /// <summary>Destination IPv4 CIDR range.</summary>
     [JsonPropertyName("cidrIpv4")]
     public string? CidrIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 CIDR range.</summary>
+    /// <summary>Destination IPv6 CIDR range.</summary>
     [JsonPropertyName("cidrIpv6")]
     public string? CidrIpv6 { get; set; }
 
-    /// <summary>The security group rule description.</summary>
+    /// <summary>Security group rule description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
+    /// <summary>Start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.</summary>
     [JsonPropertyName("fromPort")]
     public double? FromPort { get; set; }
 
@@ -1259,15 +1259,15 @@ public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
+    /// <summary>IP protocol name or number. Use -1 to specify all protocols. Note that if ip_protocol is set to -1, it translates to all protocols, all port ranges, and from_port and to_port values should not be defined.</summary>
     [JsonPropertyName("ipProtocol")]
     public string? IpProtocol { get; set; }
 
-    /// <summary>The ID of the destination prefix list.</summary>
+    /// <summary>ID of the destination prefix list.</summary>
     [JsonPropertyName("prefixListId")]
     public string? PrefixListId { get; set; }
 
-    /// <summary>The destination security group that is referenced in the rule.</summary>
+    /// <summary>Destination security group that is referenced in the rule.</summary>
     [JsonPropertyName("referencedSecurityGroupId")]
     public string? ReferencedSecurityGroupId { get; set; }
 
@@ -1278,11 +1278,11 @@ public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the security group.</summary>
+    /// <summary>ID of the security group.</summary>
     [JsonPropertyName("securityGroupId")]
     public string? SecurityGroupId { get; set; }
 
-    /// <summary>The ID of the security group rule.</summary>
+    /// <summary>ID of the security group rule.</summary>
     [JsonPropertyName("securityGroupRuleId")]
     public string? SecurityGroupRuleId { get; set; }
 
@@ -1290,11 +1290,11 @@ public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
+    /// <summary>End of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.</summary>
     [JsonPropertyName("toPort")]
     public double? ToPort { get; set; }
 }

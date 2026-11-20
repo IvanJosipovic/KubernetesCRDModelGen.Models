@@ -281,7 +281,7 @@ public partial class V1beta2DistributionConfigurationSpecForProviderDistribution
     [JsonPropertyName("s3ExportConfiguration")]
     public V1beta2DistributionConfigurationSpecForProviderDistributionS3ExportConfiguration? S3ExportConfiguration { get; set; }
 
-    /// <summary>Configuration block with SSM parameter configuration to use as AMI id output. Detailed below.</summary>
+    /// <summary>Configuration block with SSM parameter configuration to use as AMI ID output. Detailed below.</summary>
     [JsonPropertyName("ssmParameterConfiguration")]
     public IList<V1beta2DistributionConfigurationSpecForProviderDistributionSsmParameterConfiguration>? SsmParameterConfiguration { get; set; }
 }
@@ -535,7 +535,7 @@ public partial class V1beta2DistributionConfigurationSpecInitProviderDistributio
     [JsonPropertyName("s3ExportConfiguration")]
     public V1beta2DistributionConfigurationSpecInitProviderDistributionS3ExportConfiguration? S3ExportConfiguration { get; set; }
 
-    /// <summary>Configuration block with SSM parameter configuration to use as AMI id output. Detailed below.</summary>
+    /// <summary>Configuration block with SSM parameter configuration to use as AMI ID output. Detailed below.</summary>
     [JsonPropertyName("ssmParameterConfiguration")]
     public IList<V1beta2DistributionConfigurationSpecInitProviderDistributionSsmParameterConfiguration>? SsmParameterConfiguration { get; set; }
 }
@@ -981,7 +981,7 @@ public partial class V1beta2DistributionConfigurationStatusAtProviderDistributio
     [JsonPropertyName("s3ExportConfiguration")]
     public V1beta2DistributionConfigurationStatusAtProviderDistributionS3ExportConfiguration? S3ExportConfiguration { get; set; }
 
-    /// <summary>Configuration block with SSM parameter configuration to use as AMI id output. Detailed below.</summary>
+    /// <summary>Configuration block with SSM parameter configuration to use as AMI ID output. Detailed below.</summary>
     [JsonPropertyName("ssmParameterConfiguration")]
     public IList<V1beta2DistributionConfigurationStatusAtProviderDistributionSsmParameterConfiguration>? SsmParameterConfiguration { get; set; }
 }

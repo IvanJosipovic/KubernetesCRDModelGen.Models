@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: securityconfigurations.glue.aws.upbound.io
 spec:
   group: glue.aws.upbound.io
@@ -882,6 +882,7 @@ spec:
                     description: Configuration block containing encryption configuration. Detailed below.
                     properties:
                       cloudwatchEncryption:
+                        description: cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.
                         properties:
                           cloudwatchEncryptionMode:
                             description: 'Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.'
@@ -964,6 +965,7 @@ spec:
                             type: object
                         type: object
                       jobBookmarksEncryption:
+                        description: job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.
                         properties:
                           jobBookmarksEncryptionMode:
                             description: 'Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.'
@@ -1046,7 +1048,7 @@ spec:
                             type: object
                         type: object
                       s3Encryption:
-                        description: A s3_encryption  block as described below, which contains encryption configuration for S3 data.
+                        description: s3_encryption block as described below, which contains encryption configuration for S3 data.
                         properties:
                           kmsKeyArn:
                             description: ARN of the KMS key to be used to encrypt the data.
@@ -1154,6 +1156,7 @@ spec:
                     description: Configuration block containing encryption configuration. Detailed below.
                     properties:
                       cloudwatchEncryption:
+                        description: cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.
                         properties:
                           cloudwatchEncryptionMode:
                             description: 'Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.'
@@ -1236,6 +1239,7 @@ spec:
                             type: object
                         type: object
                       jobBookmarksEncryption:
+                        description: job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.
                         properties:
                           jobBookmarksEncryptionMode:
                             description: 'Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.'
@@ -1318,7 +1322,7 @@ spec:
                             type: object
                         type: object
                       s3Encryption:
-                        description: A s3_encryption  block as described below, which contains encryption configuration for S3 data.
+                        description: s3_encryption block as described below, which contains encryption configuration for S3 data.
                         properties:
                           kmsKeyArn:
                             description: ARN of the KMS key to be used to encrypt the data.
@@ -1500,6 +1504,7 @@ spec:
                     description: Configuration block containing encryption configuration. Detailed below.
                     properties:
                       cloudwatchEncryption:
+                        description: cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.
                         properties:
                           cloudwatchEncryptionMode:
                             description: 'Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.'
@@ -1509,6 +1514,7 @@ spec:
                             type: string
                         type: object
                       jobBookmarksEncryption:
+                        description: job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.
                         properties:
                           jobBookmarksEncryptionMode:
                             description: 'Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.'
@@ -1518,7 +1524,7 @@ spec:
                             type: string
                         type: object
                       s3Encryption:
-                        description: A s3_encryption  block as described below, which contains encryption configuration for S3 data.
+                        description: s3_encryption block as described below, which contains encryption configuration for S3 data.
                         properties:
                           kmsKeyArn:
                             description: ARN of the KMS key to be used to encrypt the data.

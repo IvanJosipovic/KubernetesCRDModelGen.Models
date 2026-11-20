@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: buckets.lightsail.aws.m.upbound.io
 spec:
   group: lightsail.aws.m.upbound.io
@@ -58,7 +58,7 @@ spec:
               forProvider:
                 properties:
                   bundleId:
-                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.
+                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.
                     type: string
                   forceDelete:
                     description: AWS by default will not delete a bucket which is not empty, to prevent losing bucket data and affecting other resources in Lightsail. If force_delete is set to true the bucket will be deleted even when not empty.
@@ -91,7 +91,7 @@ spec:
                   autoscaler.
                 properties:
                   bundleId:
-                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.
+                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.
                     type: string
                   forceDelete:
                     description: AWS by default will not delete a bucket which is not empty, to prevent losing bucket data and affecting other resources in Lightsail. If force_delete is set to true the bucket will be deleted even when not empty.
@@ -176,7 +176,7 @@ spec:
                     description: Availability Zone. Follows the format us-east-2a (case-sensitive).
                     type: string
                   bundleId:
-                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles cli command to get a list of bundle IDs that you can specify.
+                    description: Bundle ID to use for the bucket. A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket. Use the get-bucket-bundles CLI command to get a list of bundle IDs that you can specify.
                     type: string
                   createdAt:
                     description: Date and time when the bucket was created.

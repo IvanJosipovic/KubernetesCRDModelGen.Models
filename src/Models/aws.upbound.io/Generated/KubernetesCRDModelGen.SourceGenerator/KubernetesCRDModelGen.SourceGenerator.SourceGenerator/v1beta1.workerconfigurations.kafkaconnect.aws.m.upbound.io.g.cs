@@ -41,11 +41,11 @@ public partial class V1beta1WorkerConfigurationList : IKubernetesObject<V1ListMe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerConfigurationSpecForProvider
 {
-    /// <summary>A summary description of the worker configuration.</summary>
+    /// <summary>Summary description of the worker configuration.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The name of the worker configuration.</summary>
+    /// <summary>Name of the worker configuration.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -81,7 +81,7 @@ public partial class V1beta1WorkerConfigurationSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerConfigurationSpecInitProvider
 {
-    /// <summary>A summary description of the worker configuration.</summary>
+    /// <summary>Summary description of the worker configuration.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -209,7 +209,7 @@ public partial class V1beta1WorkerConfigurationStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A summary description of the worker configuration.</summary>
+    /// <summary>Summary description of the worker configuration.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -220,7 +220,7 @@ public partial class V1beta1WorkerConfigurationStatusAtProvider
     [JsonPropertyName("latestRevision")]
     public double? LatestRevision { get; set; }
 
-    /// <summary>The name of the worker configuration.</summary>
+    /// <summary>Name of the worker configuration.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -239,7 +239,7 @@ public partial class V1beta1WorkerConfigurationStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

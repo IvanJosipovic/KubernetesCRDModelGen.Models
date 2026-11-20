@@ -672,6 +672,7 @@ public partial class V1beta2ReplicationConfigurationStatusAtProvider
     [JsonPropertyName("destination")]
     public V1beta2ReplicationConfigurationStatusAtProviderDestination? Destination { get; set; }
 
+    /// <summary>(String) ID of the file system.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

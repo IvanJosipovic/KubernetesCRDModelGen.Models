@@ -211,7 +211,7 @@ public partial class V1beta1ResourceSpecForProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Flag to enable AWS LakeFormation hybrid access permission mode.</summary>
+    /// <summary>Flag to enable AWS Lake Formation hybrid access permission mode.</summary>
     [JsonPropertyName("hybridAccessEnabled")]
     public bool? HybridAccessEnabled { get; set; }
 
@@ -414,7 +414,7 @@ public partial class V1beta1ResourceSpecInitProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Flag to enable AWS LakeFormation hybrid access permission mode.</summary>
+    /// <summary>Flag to enable AWS Lake Formation hybrid access permission mode.</summary>
     [JsonPropertyName("hybridAccessEnabled")]
     public bool? HybridAccessEnabled { get; set; }
 
@@ -634,7 +634,7 @@ public partial class V1beta1ResourceStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Flag to enable AWS LakeFormation hybrid access permission mode.</summary>
+    /// <summary>Flag to enable AWS Lake Formation hybrid access permission mode.</summary>
     [JsonPropertyName("hybridAccessEnabled")]
     public bool? HybridAccessEnabled { get; set; }
 

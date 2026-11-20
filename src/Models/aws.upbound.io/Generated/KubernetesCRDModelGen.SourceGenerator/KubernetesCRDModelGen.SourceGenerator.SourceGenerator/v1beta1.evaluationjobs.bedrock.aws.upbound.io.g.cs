@@ -326,7 +326,7 @@ public partial class V1beta1EvaluationJobSpecForProviderEvaluationConfigAutomate
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -421,7 +421,7 @@ public partial class V1beta1EvaluationJobSpecForProviderEvaluationConfigHumanDat
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -1475,7 +1475,7 @@ public partial class V1beta1EvaluationJobSpecInitProviderEvaluationConfigAutomat
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -1570,7 +1570,7 @@ public partial class V1beta1EvaluationJobSpecInitProviderEvaluationConfigHumanDa
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -2665,7 +2665,7 @@ public partial class V1beta1EvaluationJobStatusAtProviderEvaluationConfigAutomat
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -2760,7 +2760,7 @@ public partial class V1beta1EvaluationJobStatusAtProviderEvaluationConfigHumanDa
     [JsonPropertyName("metricNames")]
     public IList<string>? MetricNames { get; set; }
 
-    /// <summary>Type of task to evaluate. Common values are Summarization, Classification, QuestionAndAnswer, Generation, and Custom. Use General for automated evaluation jobs that use a judge model (evaluator_model_config).</summary>
+    /// <summary>Type of task to evaluate. Valid values: Summarization, Classification, QuestionAndAnswer, Generation, Custom.</summary>
     [JsonPropertyName("taskType")]
     public string? TaskType { get; set; }
 }
@@ -3097,6 +3097,7 @@ public partial class V1beta1EvaluationJobStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

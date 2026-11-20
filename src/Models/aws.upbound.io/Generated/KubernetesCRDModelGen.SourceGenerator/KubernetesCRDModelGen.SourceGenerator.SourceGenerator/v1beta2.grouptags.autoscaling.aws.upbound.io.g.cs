@@ -225,7 +225,7 @@ public partial class V1beta2GroupTagSpecForProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GroupTagSpecForProvider
 {
-    /// <summary>Name of the Autoscaling Group to apply the tag to.</summary>
+    /// <summary>Name of the Auto Scaling group to apply the tag to.</summary>
     [JsonPropertyName("autoscalingGroupName")]
     public string? AutoscalingGroupName { get; set; }
 
@@ -430,7 +430,7 @@ public partial class V1beta2GroupTagSpecInitProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GroupTagSpecInitProvider
 {
-    /// <summary>Name of the Autoscaling Group to apply the tag to.</summary>
+    /// <summary>Name of the Auto Scaling group to apply the tag to.</summary>
     [JsonPropertyName("autoscalingGroupName")]
     public string? AutoscalingGroupName { get; set; }
 
@@ -652,7 +652,7 @@ public partial class V1beta2GroupTagStatusAtProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GroupTagStatusAtProvider
 {
-    /// <summary>Name of the Autoscaling Group to apply the tag to.</summary>
+    /// <summary>Name of the Auto Scaling group to apply the tag to.</summary>
     [JsonPropertyName("autoscalingGroupName")]
     public string? AutoscalingGroupName { get; set; }
 

@@ -288,7 +288,7 @@ public partial class V1beta1ACLSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ACLStatusAtProvider
 {
-    /// <summary>The ARN of the ACL.</summary>
+    /// <summary>ARN of the ACL.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -296,7 +296,7 @@ public partial class V1beta1ACLStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The minimum engine version supported by the ACL.</summary>
+    /// <summary>Minimum engine version supported by the ACL.</summary>
     [JsonPropertyName("minimumEngineVersion")]
     public string? MinimumEngineVersion { get; set; }
 
@@ -311,7 +311,7 @@ public partial class V1beta1ACLStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

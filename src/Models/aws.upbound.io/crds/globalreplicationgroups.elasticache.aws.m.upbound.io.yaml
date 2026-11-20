@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: globalreplicationgroups.elasticache.aws.m.upbound.io
 spec:
   group: elasticache.aws.m.upbound.io
@@ -103,7 +103,7 @@ spec:
                       Required when upgrading a major engine version, but will be ignored if left configured after the upgrade is complete. Specifying without a major version upgrade will fail. When a replication group joins a global datastore, AWS auto-generates a new parameter group (prefixed global-datastore-) derived from the primary's parameter group. Note that ElastiCache creates a copy of this parameter group for each member replication group.
                     type: string
                   primaryReplicationGroupId:
-                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.
+                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.
                     type: string
                   primaryReplicationGroupIdRef:
                     description: Reference to a ReplicationGroup in elasticache to populate primaryReplicationGroupId.
@@ -251,7 +251,7 @@ spec:
                       Required when upgrading a major engine version, but will be ignored if left configured after the upgrade is complete. Specifying without a major version upgrade will fail. When a replication group joins a global datastore, AWS auto-generates a new parameter group (prefixed global-datastore-) derived from the primary's parameter group. Note that ElastiCache creates a copy of this parameter group for each member replication group.
                     type: string
                   primaryReplicationGroupId:
-                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.
+                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.
                     type: string
                   primaryReplicationGroupIdRef:
                     description: Reference to a ReplicationGroup in elasticache to populate primaryReplicationGroupId.
@@ -480,7 +480,7 @@ spec:
                       Required when upgrading a major engine version, but will be ignored if left configured after the upgrade is complete. Specifying without a major version upgrade will fail. When a replication group joins a global datastore, AWS auto-generates a new parameter group (prefixed global-datastore-) derived from the primary's parameter group. Note that ElastiCache creates a copy of this parameter group for each member replication group.
                     type: string
                   primaryReplicationGroupId:
-                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. If primary_replication_group_id is changed, creates a new resource.
+                    description: The ID of the primary cluster that accepts writes and will replicate updates to the secondary cluster. Changing this value will trigger a failover to the specified replication group.
                     type: string
                   region:
                     description: |-

@@ -37,7 +37,17 @@ public partial class V1beta1ModelList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Model> Items { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -55,7 +65,11 @@ public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSour
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -105,7 +119,17 @@ public partial class V1beta1ModelSpecForProviderContainerImageConfig
     public V1beta1ModelSpecForProviderContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -123,7 +147,11 @@ public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSo
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -373,7 +401,17 @@ public partial class V1beta1ModelSpecForProviderInferenceExecutionConfig
     public string? Mode { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -391,7 +429,11 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelD
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -441,7 +483,17 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerImageConfig
     public V1beta1ModelSpecForProviderPrimaryContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -459,7 +511,11 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -607,7 +663,17 @@ public partial class V1beta1ModelSpecForProvider
     public V1beta1ModelSpecForProviderVpcConfig? VpcConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -625,7 +691,11 @@ public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSou
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -675,7 +745,17 @@ public partial class V1beta1ModelSpecInitProviderContainerImageConfig
     public V1beta1ModelSpecInitProviderContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -693,7 +773,11 @@ public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataS
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -943,7 +1027,17 @@ public partial class V1beta1ModelSpecInitProviderInferenceExecutionConfig
     public string? Mode { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -961,7 +1055,11 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModel
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -1011,7 +1109,17 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerImageConfig
     public V1beta1ModelSpecInitProviderPrimaryContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -1029,7 +1137,11 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSource
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -1289,7 +1401,17 @@ public partial class V1beta1ModelSpec
     public V1beta1ModelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -1307,7 +1429,11 @@ public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSou
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -1357,7 +1483,17 @@ public partial class V1beta1ModelStatusAtProviderContainerImageConfig
     public V1beta1ModelStatusAtProviderContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -1375,7 +1511,11 @@ public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataS
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -1470,7 +1610,17 @@ public partial class V1beta1ModelStatusAtProviderInferenceExecutionConfig
     public string? Mode { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
@@ -1488,7 +1638,11 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModel
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 
@@ -1538,7 +1692,17 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerImageConfig
     public V1beta1ModelStatusAtProviderPrimaryContainerImageConfigRepositoryAuthConfig? RepositoryAuthConfig { get; set; }
 }
 
-/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+/// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig
+{
+    /// <summary>Versioned ARN of the private hub content to deploy, such as the versioned_hub_content_arn of an aws_sagemaker_hub_content_reference. s3_uri must match the hub content&apos;s hosting artifact URI.</summary>
+    [JsonPropertyName("hubContentArn")]
+    public string? HubContentArn { get; set; }
+}
+
+/// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
@@ -1556,7 +1720,11 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSource
     [JsonPropertyName("compressionType")]
     public string? CompressionType { get; set; }
 
-    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the [model_access_config configuration block]. See Model Access Config.</summary>
+    /// <summary>Configuration for deploying a model from a SageMaker JumpStart private hub. See Hub Access Config.</summary>
+    [JsonPropertyName("hubAccessConfig")]
+    public V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig? HubAccessConfig { get; set; }
+
+    /// <summary>Specifies the access configuration file for the ML model. You can explicitly accept the model end-user license agreement (EULA) within the model_access_config configuration block. See Model Access Config.</summary>
     [JsonPropertyName("modelAccessConfig")]
     public V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig? ModelAccessConfig { get; set; }
 

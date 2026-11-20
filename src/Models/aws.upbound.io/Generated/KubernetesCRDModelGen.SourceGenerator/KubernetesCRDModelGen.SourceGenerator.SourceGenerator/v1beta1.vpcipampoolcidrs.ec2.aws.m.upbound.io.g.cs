@@ -37,16 +37,16 @@ public partial class V1beta1VPCIpamPoolCidrList : IKubernetesObject<V1ListMeta>,
     public required IList<V1beta1VPCIpamPoolCidr> Items { get; set; }
 }
 
-/// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+/// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrSpecForProviderCidrAuthorizationContext
 {
-    /// <summary>The plain-text authorization message for the prefix and account.</summary>
+    /// <summary>Plain-text authorization message for the prefix and account.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The signed authorization message for the prefix and account.</summary>
+    /// <summary>Signed authorization message for the prefix and account.</summary>
     [JsonPropertyName("signature")]
     public string? Signature { get; set; }
 }
@@ -210,15 +210,15 @@ public partial class V1beta1VPCIpamPoolCidrSpecForProviderIpamPoolIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrSpecForProvider
 {
-    /// <summary>The CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
+    /// <summary>CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+    /// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
     [JsonPropertyName("cidrAuthorizationContext")]
     public V1beta1VPCIpamPoolCidrSpecForProviderCidrAuthorizationContext? CidrAuthorizationContext { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
@@ -230,7 +230,7 @@ public partial class V1beta1VPCIpamPoolCidrSpecForProvider
     [JsonPropertyName("ipamPoolIdSelector")]
     public V1beta1VPCIpamPoolCidrSpecForProviderIpamPoolIdSelector? IpamPoolIdSelector { get; set; }
 
-    /// <summary>If provided, the cidr provisioned into the specified pool will be the next available cidr given this declared netmask length. Conflicts with cidr.</summary>
+    /// <summary>If provided, the CIDR provisioned into the specified pool will be the next available CIDR given this declared netmask length. Conflicts with cidr.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 
@@ -242,16 +242,16 @@ public partial class V1beta1VPCIpamPoolCidrSpecForProvider
     public required string Region { get; set; }
 }
 
-/// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+/// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrSpecInitProviderCidrAuthorizationContext
 {
-    /// <summary>The plain-text authorization message for the prefix and account.</summary>
+    /// <summary>Plain-text authorization message for the prefix and account.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The signed authorization message for the prefix and account.</summary>
+    /// <summary>Signed authorization message for the prefix and account.</summary>
     [JsonPropertyName("signature")]
     public string? Signature { get; set; }
 }
@@ -427,15 +427,15 @@ public partial class V1beta1VPCIpamPoolCidrSpecInitProviderIpamPoolIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrSpecInitProvider
 {
-    /// <summary>The CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
+    /// <summary>CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+    /// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
     [JsonPropertyName("cidrAuthorizationContext")]
     public V1beta1VPCIpamPoolCidrSpecInitProviderCidrAuthorizationContext? CidrAuthorizationContext { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
@@ -447,7 +447,7 @@ public partial class V1beta1VPCIpamPoolCidrSpecInitProvider
     [JsonPropertyName("ipamPoolIdSelector")]
     public V1beta1VPCIpamPoolCidrSpecInitProviderIpamPoolIdSelector? IpamPoolIdSelector { get; set; }
 
-    /// <summary>If provided, the cidr provisioned into the specified pool will be the next available cidr given this declared netmask length. Conflicts with cidr.</summary>
+    /// <summary>If provided, the CIDR provisioned into the specified pool will be the next available CIDR given this declared netmask length. Conflicts with cidr.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 }
@@ -559,16 +559,16 @@ public partial class V1beta1VPCIpamPoolCidrSpec
     public V1beta1VPCIpamPoolCidrSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+/// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrStatusAtProviderCidrAuthorizationContext
 {
-    /// <summary>The plain-text authorization message for the prefix and account.</summary>
+    /// <summary>Plain-text authorization message for the prefix and account.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The signed authorization message for the prefix and account.</summary>
+    /// <summary>Signed authorization message for the prefix and account.</summary>
     [JsonPropertyName("signature")]
     public string? Signature { get; set; }
 }
@@ -577,27 +577,27 @@ public partial class V1beta1VPCIpamPoolCidrStatusAtProviderCidrAuthorizationCont
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrStatusAtProvider
 {
-    /// <summary>The CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
+    /// <summary>CIDR you want to assign to the pool. Conflicts with netmask_length.</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
+    /// <summary>Signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP. This is not stored in the state file. See cidr_authorization_context for more information.</summary>
     [JsonPropertyName("cidrAuthorizationContext")]
     public V1beta1VPCIpamPoolCidrStatusAtProviderCidrAuthorizationContext? CidrAuthorizationContext { get; set; }
 
-    /// <summary>The ID of the IPAM Pool Cidr concatenated with the IPAM Pool ID.</summary>
+    /// <summary>ID of the IPAM Pool CIDR concatenated with the IPAM Pool ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique ID generated by AWS for the pool cidr.</summary>
+    /// <summary>Unique ID generated by AWS for the pool CIDR.</summary>
     [JsonPropertyName("ipamPoolCidrId")]
     public string? IpamPoolCidrId { get; set; }
 
-    /// <summary>The ID of the pool to which you want to assign a CIDR.</summary>
+    /// <summary>ID of the pool to which you want to assign a CIDR.</summary>
     [JsonPropertyName("ipamPoolId")]
     public string? IpamPoolId { get; set; }
 
-    /// <summary>If provided, the cidr provisioned into the specified pool will be the next available cidr given this declared netmask length. Conflicts with cidr.</summary>
+    /// <summary>If provided, the CIDR provisioned into the specified pool will be the next available CIDR given this declared netmask length. Conflicts with cidr.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
 

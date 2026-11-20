@@ -354,7 +354,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProvider
 {
-    /// <summary>The ID of the DHCP Options Set to associate to the VPC.</summary>
+    /// <summary>ID of the DHCP Options Set to associate to the VPC.</summary>
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 
@@ -373,7 +373,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
+    /// <summary>ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -696,7 +696,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProvider
 {
-    /// <summary>The ID of the DHCP Options Set to associate to the VPC.</summary>
+    /// <summary>ID of the DHCP Options Set to associate to the VPC.</summary>
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 
@@ -708,7 +708,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProvider
     [JsonPropertyName("dhcpOptionsIdSelector")]
     public V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelector? DhcpOptionsIdSelector { get; set; }
 
-    /// <summary>The ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
+    /// <summary>ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -908,11 +908,11 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationStatusAtProvider
 {
-    /// <summary>The ID of the DHCP Options Set to associate to the VPC.</summary>
+    /// <summary>ID of the DHCP Options Set to associate to the VPC.</summary>
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 
-    /// <summary>The ID of the DHCP Options Set Association.</summary>
+    /// <summary>ID of the DHCP Options Set Association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -923,7 +923,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
+    /// <summary>ID of the VPC to which we would like to associate a DHCP Options Set.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

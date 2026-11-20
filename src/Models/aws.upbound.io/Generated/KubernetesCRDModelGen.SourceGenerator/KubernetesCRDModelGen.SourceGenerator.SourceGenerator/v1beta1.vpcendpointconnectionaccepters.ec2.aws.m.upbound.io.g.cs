@@ -512,7 +512,7 @@ public partial class V1beta1VPCEndpointConnectionAccepterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionAccepterStatusAtProvider
 {
-    /// <summary>The ID of the VPC Endpoint Connection.</summary>
+    /// <summary>ID of the VPC Endpoint Connection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

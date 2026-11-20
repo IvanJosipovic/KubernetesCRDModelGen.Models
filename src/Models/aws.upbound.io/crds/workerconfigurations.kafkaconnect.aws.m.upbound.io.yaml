@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: workerconfigurations.kafkaconnect.aws.m.upbound.io
 spec:
   group: kafkaconnect.aws.m.upbound.io
@@ -58,10 +58,10 @@ spec:
               forProvider:
                 properties:
                   description:
-                    description: A summary description of the worker configuration.
+                    description: Summary description of the worker configuration.
                     type: string
                   name:
-                    description: The name of the worker configuration.
+                    description: Name of the worker configuration.
                     type: string
                   propertiesFileContent:
                     description: Contents of connect-distributed.properties file. The value can be either base64 encoded or in raw format.
@@ -95,7 +95,7 @@ spec:
                   autoscaler.
                 properties:
                   description:
-                    description: A summary description of the worker configuration.
+                    description: Summary description of the worker configuration.
                     type: string
                   propertiesFileContent:
                     description: Contents of connect-distributed.properties file. The value can be either base64 encoded or in raw format.
@@ -177,7 +177,7 @@ spec:
                     description: the ARN of the worker configuration.
                     type: string
                   description:
-                    description: A summary description of the worker configuration.
+                    description: Summary description of the worker configuration.
                     type: string
                   id:
                     type: string
@@ -185,7 +185,7 @@ spec:
                     description: an ID of the latest successfully created revision of the worker configuration.
                     type: number
                   name:
-                    description: The name of the worker configuration.
+                    description: Name of the worker configuration.
                     type: string
                   propertiesFileContent:
                     description: Contents of connect-distributed.properties file. The value can be either base64 encoded or in raw format.
@@ -204,7 +204,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

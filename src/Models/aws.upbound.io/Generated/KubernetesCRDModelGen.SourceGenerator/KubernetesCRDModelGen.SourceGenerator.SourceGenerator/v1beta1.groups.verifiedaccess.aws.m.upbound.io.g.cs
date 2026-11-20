@@ -192,12 +192,12 @@ public partial class V1beta1GroupSpecForProviderSseConfigurationKmsKeyArnSelecto
     public V1beta1GroupSpecForProviderSseConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+/// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecForProviderSseConfiguration
 {
-    /// <summary>Boolean flag to indicate that the CMK should be used.</summary>
+    /// <summary>Whether the CMK should be used.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
@@ -377,7 +377,7 @@ public partial class V1beta1GroupSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
@@ -388,7 +388,7 @@ public partial class V1beta1GroupSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+    /// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
     [JsonPropertyName("sseConfiguration")]
     public V1beta1GroupSpecForProviderSseConfiguration? SseConfiguration { get; set; }
 
@@ -396,7 +396,7 @@ public partial class V1beta1GroupSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The id of the verified access instance this group is associated with.</summary>
+    /// <summary>ID of the verified access instance this group is associated with.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -564,12 +564,12 @@ public partial class V1beta1GroupSpecInitProviderSseConfigurationKmsKeyArnSelect
     public V1beta1GroupSpecInitProviderSseConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+/// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecInitProviderSseConfiguration
 {
-    /// <summary>Boolean flag to indicate that the CMK should be used.</summary>
+    /// <summary>Whether the CMK should be used.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
@@ -761,11 +761,11 @@ public partial class V1beta1GroupSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
-    /// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+    /// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
     [JsonPropertyName("sseConfiguration")]
     public V1beta1GroupSpecInitProviderSseConfiguration? SseConfiguration { get; set; }
 
@@ -773,7 +773,7 @@ public partial class V1beta1GroupSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The id of the verified access instance this group is associated with.</summary>
+    /// <summary>ID of the verified access instance this group is associated with.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -893,12 +893,12 @@ public partial class V1beta1GroupSpec
     public V1beta1GroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+/// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProviderSseConfiguration
 {
-    /// <summary>Boolean flag to indicate that the CMK should be used.</summary>
+    /// <summary>Whether the CMK should be used.</summary>
     [JsonPropertyName("customerManagedKeyEnabled")]
     public bool? CustomerManagedKeyEnabled { get; set; }
 
@@ -934,7 +934,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>The policy document that is associated with this resource.</summary>
+    /// <summary>Policy document that is associated with this resource.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
@@ -945,7 +945,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Configuration block to use KMS keys for server-side encryption.</summary>
+    /// <summary>Configuration block to use KMS keys for server-side encryption. See below.</summary>
     [JsonPropertyName("sseConfiguration")]
     public V1beta1GroupStatusAtProviderSseConfiguration? SseConfiguration { get; set; }
 
@@ -956,7 +956,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>ARN of this verified acess group.</summary>
+    /// <summary>ARN of this verified access group.</summary>
     [JsonPropertyName("verifiedaccessGroupArn")]
     public string? VerifiedaccessGroupArn { get; set; }
 
@@ -964,7 +964,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("verifiedaccessGroupId")]
     public string? VerifiedaccessGroupId { get; set; }
 
-    /// <summary>The id of the verified access instance this group is associated with.</summary>
+    /// <summary>ID of the verified access instance this group is associated with.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 }

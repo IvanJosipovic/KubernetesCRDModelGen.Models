@@ -60,7 +60,7 @@ public enum V1beta1HarnessSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the managed memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
@@ -444,7 +444,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint
 {
-    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    /// <summary>ARN of the Amazon EFS access point to mount into the agent runtime.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
@@ -456,7 +456,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the EFS access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -624,7 +624,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -633,7 +633,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage
 {
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -642,15 +642,15 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -689,7 +689,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
+    /// <summary>VPC configuration. See environment.agentcore_runtime_environment.network_configuration.network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -698,25 +698,25 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironment
 {
-    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
+    /// <summary>Filesystem configurations. See environment.agentcore_runtime_environment.filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
+    /// <summary>Lifecycle configuration. See environment.agentcore_runtime_environment.lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration Block below.</summary>
+    /// <summary>Network configuration. See environment.agentcore_runtime_environment.network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+/// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See environment.agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
@@ -741,7 +741,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentArtifact
     public V1beta1HarnessSpecForProviderEnvironmentArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-/// <summary>Map of environment variables.</summary>
+/// <summary>Map of environment variables. Set to an empty map ({}) to remove all environment variables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentVariablesSecretRef
@@ -1196,7 +1196,7 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+/// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
@@ -1221,12 +1221,12 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     [JsonPropertyName("strategyIdSelector")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelector? StrategyIdSelector { get; set; }
 
-    /// <summary>Top-k sampling parameter.</summary>
+    /// <summary>Number of top results to retrieve.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfiguration
@@ -1235,7 +1235,7 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     [JsonPropertyName("actorId")]
     public string? ActorId { get; set; }
 
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the AgentCore memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1247,23 +1247,23 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     [JsonPropertyName("arnSelector")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>Number of recent messages to keep in the conversation window.</summary>
+    /// <summary>Number of messages to retrieve from memory.</summary>
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+    /// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+/// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryDisabled
 {
 }
 
-/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryManagedMemoryConfiguration
@@ -1276,7 +1276,7 @@ public partial class V1beta1HarnessSpecForProviderMemoryManagedMemoryConfigurati
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, USER_PREFERENCE, and EPISODIC. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
     [JsonPropertyName("strategies")]
     public IList<string>? Strategies { get; set; }
 }
@@ -1286,15 +1286,15 @@ public partial class V1beta1HarnessSpecForProviderMemoryManagedMemoryConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemory
 {
-    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
 
-    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    /// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
     [JsonPropertyName("disabled")]
     public V1beta1HarnessSpecForProviderMemoryDisabled? Disabled { get; set; }
 
-    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
     [JsonPropertyName("managedMemoryConfiguration")]
     public V1beta1HarnessSpecForProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
@@ -1312,7 +1312,7 @@ public partial class V1beta1HarnessSpecForProviderModelBedrockModelConfig
     [JsonPropertyName("apiFormat")]
     public string? ApiFormat { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -1497,7 +1497,7 @@ public partial class V1beta1HarnessSpecForProviderModelGeminiModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecForProviderModelGeminiModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -1690,7 +1690,7 @@ public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -1879,7 +1879,7 @@ public partial class V1beta1HarnessSpecForProviderModelOpenaiModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecForProviderModelOpenaiModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -2681,11 +2681,11 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutb
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuth
 {
-    /// <summary>Set to true to use AWS IAM authentication.</summary>
+    /// <summary>Whether to use AWS IAM authentication. Must be true if set.</summary>
     [JsonPropertyName("awsIam")]
     public bool? AwsIam { get; set; }
 
-    /// <summary>Set to true to disable authentication.</summary>
+    /// <summary>Whether to disable authentication. Must be true if set.</summary>
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
@@ -2794,7 +2794,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigRemoteMcp
     public V1beta1HarnessSpecForProviderToolConfigRemoteMcpUrlSecretRef? UrlSecretRef { get; set; }
 }
 
-/// <summary>Tool-specific configuration. See tool config below.</summary>
+/// <summary>Tool-specific configuration. See tool.config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfig
@@ -2824,7 +2824,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderTool
 {
-    /// <summary>Tool-specific configuration. See tool config below.</summary>
+    /// <summary>Tool-specific configuration. See tool.config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1HarnessSpecForProviderToolConfig? Config { get; set; }
 
@@ -2881,7 +2881,7 @@ public partial class V1beta1HarnessSpecForProviderTruncationConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderTruncation
 {
-    /// <summary>Strategy-specific configuration. See truncation config below.</summary>
+    /// <summary>Strategy-specific configuration. See truncation.config Block below.</summary>
     [JsonPropertyName("config")]
     public IList<V1beta1HarnessSpecForProviderTruncationConfig>? Config { get; set; }
 
@@ -2902,7 +2902,7 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessSpecForProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+    /// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessSpecForProviderEnvironment? Environment { get; set; }
 
@@ -2910,7 +2910,7 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("environmentArtifact")]
     public V1beta1HarnessSpecForProviderEnvironmentArtifact? EnvironmentArtifact { get; set; }
 
-    /// <summary>Map of environment variables.</summary>
+    /// <summary>Map of environment variables. Set to an empty map ({}) to remove all environment variables.</summary>
     [JsonPropertyName("environmentVariablesSecretRef")]
     public V1beta1HarnessSpecForProviderEnvironmentVariablesSecretRef? EnvironmentVariablesSecretRef { get; set; }
 
@@ -2926,7 +2926,7 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1HarnessSpecForProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>Name of the harness. Must be 1-40 characters, alphanumeric and underscores only.</summary>
+    /// <summary>Name of the harness. Must be 1-40 characters, start with a letter, and contain only alphanumeric characters and underscores.</summary>
     [JsonPropertyName("harnessName")]
     public string? HarnessName { get; set; }
 
@@ -2934,7 +2934,7 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("maxIterations")]
     public double? MaxIterations { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -2982,7 +2982,7 @@ public partial class V1beta1HarnessSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the managed memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
@@ -3366,7 +3366,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint
 {
-    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    /// <summary>ARN of the Amazon EFS access point to mount into the agent runtime.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
@@ -3378,7 +3378,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the EFS access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -3546,7 +3546,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -3555,7 +3555,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage
 {
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -3564,15 +3564,15 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -3611,7 +3611,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
+    /// <summary>VPC configuration. See environment.agentcore_runtime_environment.network_configuration.network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -3620,25 +3620,25 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironment
 {
-    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
+    /// <summary>Filesystem configurations. See environment.agentcore_runtime_environment.filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
+    /// <summary>Lifecycle configuration. See environment.agentcore_runtime_environment.lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration Block below.</summary>
+    /// <summary>Network configuration. See environment.agentcore_runtime_environment.network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+/// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See environment.agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
@@ -4104,7 +4104,7 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+/// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
@@ -4129,12 +4129,12 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("strategyIdSelector")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelector? StrategyIdSelector { get; set; }
 
-    /// <summary>Top-k sampling parameter.</summary>
+    /// <summary>Number of top results to retrieve.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfiguration
@@ -4143,7 +4143,7 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("actorId")]
     public string? ActorId { get; set; }
 
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the AgentCore memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -4155,23 +4155,23 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("arnSelector")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>Number of recent messages to keep in the conversation window.</summary>
+    /// <summary>Number of messages to retrieve from memory.</summary>
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+    /// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+/// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryDisabled
 {
 }
 
-/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfiguration
@@ -4184,7 +4184,7 @@ public partial class V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfigurat
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, USER_PREFERENCE, and EPISODIC. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
     [JsonPropertyName("strategies")]
     public IList<string>? Strategies { get; set; }
 }
@@ -4194,15 +4194,15 @@ public partial class V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemory
 {
-    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
 
-    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    /// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
     [JsonPropertyName("disabled")]
     public V1beta1HarnessSpecInitProviderMemoryDisabled? Disabled { get; set; }
 
-    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
     [JsonPropertyName("managedMemoryConfiguration")]
     public V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
@@ -4220,7 +4220,7 @@ public partial class V1beta1HarnessSpecInitProviderModelBedrockModelConfig
     [JsonPropertyName("apiFormat")]
     public string? ApiFormat { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -4405,7 +4405,7 @@ public partial class V1beta1HarnessSpecInitProviderModelGeminiModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecInitProviderModelGeminiModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -4598,7 +4598,7 @@ public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -4787,7 +4787,7 @@ public partial class V1beta1HarnessSpecInitProviderModelOpenaiModelConfig
     [JsonPropertyName("apiKeyArnSelector")]
     public V1beta1HarnessSpecInitProviderModelOpenaiModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -5589,11 +5589,11 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuth
 {
-    /// <summary>Set to true to use AWS IAM authentication.</summary>
+    /// <summary>Whether to use AWS IAM authentication. Must be true if set.</summary>
     [JsonPropertyName("awsIam")]
     public bool? AwsIam { get; set; }
 
-    /// <summary>Set to true to disable authentication.</summary>
+    /// <summary>Whether to disable authentication. Must be true if set.</summary>
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
@@ -5687,7 +5687,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigRemoteMcp
     public required V1beta1HarnessSpecInitProviderToolConfigRemoteMcpUrlSecretRef UrlSecretRef { get; set; }
 }
 
-/// <summary>Tool-specific configuration. See tool config below.</summary>
+/// <summary>Tool-specific configuration. See tool.config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfig
@@ -5717,7 +5717,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderTool
 {
-    /// <summary>Tool-specific configuration. See tool config below.</summary>
+    /// <summary>Tool-specific configuration. See tool.config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1HarnessSpecInitProviderToolConfig? Config { get; set; }
 
@@ -5774,7 +5774,7 @@ public partial class V1beta1HarnessSpecInitProviderTruncationConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderTruncation
 {
-    /// <summary>Strategy-specific configuration. See truncation config below.</summary>
+    /// <summary>Strategy-specific configuration. See truncation.config Block below.</summary>
     [JsonPropertyName("config")]
     public IList<V1beta1HarnessSpecInitProviderTruncationConfig>? Config { get; set; }
 
@@ -5807,7 +5807,7 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+    /// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessSpecInitProviderEnvironment? Environment { get; set; }
 
@@ -5830,7 +5830,7 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1HarnessSpecInitProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>Name of the harness. Must be 1-40 characters, alphanumeric and underscores only.</summary>
+    /// <summary>Name of the harness. Must be 1-40 characters, start with a letter, and contain only alphanumeric characters and underscores.</summary>
     [JsonPropertyName("harnessName")]
     public string? HarnessName { get; set; }
 
@@ -5838,7 +5838,7 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("maxIterations")]
     public double? MaxIterations { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -6062,7 +6062,7 @@ public partial class V1beta1HarnessSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the managed memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
@@ -6299,11 +6299,11 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint
 {
-    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    /// <summary>ARN of the Amazon EFS access point to mount into the agent runtime.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the EFS access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6316,7 +6316,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6325,7 +6325,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage
 {
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6334,15 +6334,15 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See environment.agentcore_runtime_environment.filesystem_configuration.session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -6364,7 +6364,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig
 {
-    /// <summary>Whether to require an S3 endpoint for the service in the VPC.</summary>
+    /// <summary>Whether an S3 endpoint is required for the service in the VPC.</summary>
     [JsonPropertyName("requireServiceS3Endpoint")]
     public bool? RequireServiceS3Endpoint { get; set; }
 
@@ -6385,7 +6385,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
+    /// <summary>VPC configuration. See environment.agentcore_runtime_environment.network_configuration.network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -6406,25 +6406,25 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("agentRuntimeName")]
     public string? AgentRuntimeName { get; set; }
 
-    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
+    /// <summary>Filesystem configurations. See environment.agentcore_runtime_environment.filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
+    /// <summary>Lifecycle configuration. See environment.agentcore_runtime_environment.lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration Block below.</summary>
+    /// <summary>Network configuration. See environment.agentcore_runtime_environment.network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+/// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See environment.agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
@@ -6433,11 +6433,11 @@ public partial class V1beta1HarnessStatusAtProviderEnvironment
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint
 {
-    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    /// <summary>ARN of the Amazon EFS access point mounted into the agent runtime.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the EFS access point inside the agent runtime.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6446,11 +6446,11 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint
 {
-    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    /// <summary>ARN of the Amazon S3 Files access point mounted into the agent runtime.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6459,7 +6459,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage
 {
-    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 }
@@ -6468,15 +6468,15 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
+    /// <summary>Amazon EFS access point mounted as shared file storage. See environment_actual.agentcore_runtime_environment.filesystem_configuration.efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
+    /// <summary>Amazon S3 Files access point mounted as shared file storage. See environment_actual.agentcore_runtime_environment.filesystem_configuration.s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
+    /// <summary>Session storage filesystem. See environment_actual.agentcore_runtime_environment.filesystem_configuration.session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -6498,7 +6498,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig
 {
-    /// <summary>Whether to require an S3 endpoint for the service in the VPC.</summary>
+    /// <summary>Whether an S3 endpoint is required for the service in the VPC.</summary>
     [JsonPropertyName("requireServiceS3Endpoint")]
     public bool? RequireServiceS3Endpoint { get; set; }
 
@@ -6515,11 +6515,11 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfiguration
 {
-    /// <summary>Network mode. Valid values: PUBLIC, VPC.</summary>
+    /// <summary>Network mode.</summary>
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
+    /// <summary>VPC configuration. See environment_actual.agentcore_runtime_environment.network_configuration.network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -6540,15 +6540,15 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
     [JsonPropertyName("agentRuntimeName")]
     public string? AgentRuntimeName { get; set; }
 
-    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
+    /// <summary>Filesystem configurations. See environment_actual.agentcore_runtime_environment.filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
+    /// <summary>Lifecycle configuration. See environment_actual.agentcore_runtime_environment.lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration Block below.</summary>
+    /// <summary>Network configuration. See environment_actual.agentcore_runtime_environment.network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
@@ -6557,7 +6557,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentActual
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See environment_actual.agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
@@ -6582,7 +6582,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentArtifact
     public V1beta1HarnessStatusAtProviderEnvironmentArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+/// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
@@ -6599,12 +6599,12 @@ public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("strategyId")]
     public string? StrategyId { get; set; }
 
-    /// <summary>Top-k sampling parameter.</summary>
+    /// <summary>Number of top results to retrieve.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfiguration
@@ -6613,32 +6613,32 @@ public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("actorId")]
     public string? ActorId { get; set; }
 
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the AgentCore memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Number of recent messages to keep in the conversation window.</summary>
+    /// <summary>Number of messages to retrieve from memory.</summary>
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+    /// <summary>Retrieval configuration parameters. See memory.agentcore_memory_configuration.retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+/// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryDisabled
 {
 }
 
-/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfiguration
 {
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the managed memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -6650,7 +6650,7 @@ public partial class V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfigurat
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, USER_PREFERENCE, and EPISODIC. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
     [JsonPropertyName("strategies")]
     public IList<string>? Strategies { get; set; }
 }
@@ -6660,15 +6660,15 @@ public partial class V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemory
 {
-    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See memory.agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
 
-    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    /// <summary>Explicitly disable memory for this harness. See memory.disabled Block below.</summary>
     [JsonPropertyName("disabled")]
     public V1beta1HarnessStatusAtProviderMemoryDisabled? Disabled { get; set; }
 
-    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See memory.managed_memory_configuration Block below.</summary>
     [JsonPropertyName("managedMemoryConfiguration")]
     public V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
@@ -6681,7 +6681,7 @@ public partial class V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryCo
     [JsonPropertyName("mapBlockKey")]
     public string? MapBlockKey { get; set; }
 
-    /// <summary>Relevance score threshold. Valid value is between 0 and 1.</summary>
+    /// <summary>Relevance score threshold.</summary>
     [JsonPropertyName("relevanceScore")]
     public double? RelevanceScore { get; set; }
 
@@ -6689,7 +6689,7 @@ public partial class V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryCo
     [JsonPropertyName("strategyId")]
     public string? StrategyId { get; set; }
 
-    /// <summary>Top-k sampling parameter.</summary>
+    /// <summary>Number of top results to retrieve.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
 }
@@ -6702,15 +6702,15 @@ public partial class V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryCo
     [JsonPropertyName("actorId")]
     public string? ActorId { get; set; }
 
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the AgentCore memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Number of recent messages to keep in the conversation window.</summary>
+    /// <summary>Number of messages to retrieve from memory.</summary>
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+    /// <summary>Retrieval configuration parameters. See memory_actual.agentcore_memory_configuration.retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public IList<V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfigurationRetrievalConfig>? RetrievalConfig { get; set; }
 }
@@ -6725,19 +6725,19 @@ public partial class V1beta1HarnessStatusAtProviderMemoryActualDisabled
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryActualManagedMemoryConfiguration
 {
-    /// <summary>ARN of the hosting environment.</summary>
+    /// <summary>ARN of the managed memory resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>ARN of a customer-managed KMS key used to encrypt the memory. Defaults to an AWS-owned key. Cannot be changed after creation.</summary>
+    /// <summary>ARN of the customer-managed KMS key used to encrypt the memory.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
-    /// <summary>Event retention in days. Defaults to 30.</summary>
+    /// <summary>Event retention in days.</summary>
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    /// <summary>Set of strategy types enabled.</summary>
     [JsonPropertyName("strategies")]
     public IList<string>? Strategies { get; set; }
 }
@@ -6746,15 +6746,15 @@ public partial class V1beta1HarnessStatusAtProviderMemoryActualManagedMemoryConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryActual
 {
-    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+    /// <summary>AgentCore memory configuration. See memory_actual.agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfiguration>? AgentcoreMemoryConfiguration { get; set; }
 
-    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    /// <summary>Present when memory is explicitly disabled. See memory_actual.disabled Block below.</summary>
     [JsonPropertyName("disabled")]
     public IList<V1beta1HarnessStatusAtProviderMemoryActualDisabled>? Disabled { get; set; }
 
-    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    /// <summary>Managed memory configuration. See memory_actual.managed_memory_configuration Block below.</summary>
     [JsonPropertyName("managedMemoryConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderMemoryActualManagedMemoryConfiguration>? ManagedMemoryConfiguration { get; set; }
 }
@@ -6772,7 +6772,7 @@ public partial class V1beta1HarnessStatusAtProviderModelBedrockModelConfig
     [JsonPropertyName("apiFormat")]
     public string? ApiFormat { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -6802,7 +6802,7 @@ public partial class V1beta1HarnessStatusAtProviderModelGeminiModelConfig
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -6840,7 +6840,7 @@ public partial class V1beta1HarnessStatusAtProviderModelLitellmModelConfig
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -6874,7 +6874,7 @@ public partial class V1beta1HarnessStatusAtProviderModelOpenaiModelConfig
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -7064,11 +7064,11 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOut
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOutboundAuth
 {
-    /// <summary>Set to true to use AWS IAM authentication.</summary>
+    /// <summary>Whether to use AWS IAM authentication. Must be true if set.</summary>
     [JsonPropertyName("awsIam")]
     public bool? AwsIam { get; set; }
 
-    /// <summary>Set to true to disable authentication.</summary>
+    /// <summary>Whether to disable authentication. Must be true if set.</summary>
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
@@ -7147,7 +7147,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigRemoteMcp
     public V1beta1HarnessStatusAtProviderToolConfigRemoteMcpUrlSecretRef? UrlSecretRef { get; set; }
 }
 
-/// <summary>Tool-specific configuration. See tool config below.</summary>
+/// <summary>Tool-specific configuration. See tool.config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfig
@@ -7177,7 +7177,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderTool
 {
-    /// <summary>Tool-specific configuration. See tool config below.</summary>
+    /// <summary>Tool-specific configuration. See tool.config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1HarnessStatusAtProviderToolConfig? Config { get; set; }
 
@@ -7234,7 +7234,7 @@ public partial class V1beta1HarnessStatusAtProviderTruncationConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderTruncation
 {
-    /// <summary>Strategy-specific configuration. See truncation config below.</summary>
+    /// <summary>Strategy-specific configuration. See truncation.config Block below.</summary>
     [JsonPropertyName("config")]
     public IList<V1beta1HarnessStatusAtProviderTruncationConfig>? Config { get; set; }
 
@@ -7251,7 +7251,7 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("allowedTools")]
     public IList<string>? AllowedTools { get; set; }
 
-    /// <summary>ARN of the AgentCore memory resource.</summary>
+    /// <summary>ARN of the Harness.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -7259,11 +7259,11 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
+    /// <summary>Compute environment configuration. See environment Block below. If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessStatusAtProviderEnvironment? Environment { get; set; }
 
-    /// <summary>Actual deployed environment configuration.</summary>
+    /// <summary>Actual deployed environment configuration. See environment_actual Block below.</summary>
     [JsonPropertyName("environmentActual")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentActual>? EnvironmentActual { get; set; }
 
@@ -7279,7 +7279,7 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("harnessId")]
     public string? HarnessId { get; set; }
 
-    /// <summary>Name of the harness. Must be 1-40 characters, alphanumeric and underscores only.</summary>
+    /// <summary>Name of the harness. Must be 1-40 characters, start with a letter, and contain only alphanumeric characters and underscores.</summary>
     [JsonPropertyName("harnessName")]
     public string? HarnessName { get; set; }
 
@@ -7290,7 +7290,7 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("maxIterations")]
     public double? MaxIterations { get; set; }
 
-    /// <summary>Maximum number of tokens in the model response.</summary>
+    /// <summary>Maximum total number of output tokens the agent can generate across all model calls within a single invocation.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
@@ -7298,7 +7298,7 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("memory")]
     public V1beta1HarnessStatusAtProviderMemory? Memory { get; set; }
 
-    /// <summary>Actual deployed memory configuration.</summary>
+    /// <summary>Actual deployed memory configuration. See memory_actual Block below.</summary>
     [JsonPropertyName("memoryActual")]
     public IList<V1beta1HarnessStatusAtProviderMemoryActual>? MemoryActual { get; set; }
 
@@ -7325,7 +7325,7 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

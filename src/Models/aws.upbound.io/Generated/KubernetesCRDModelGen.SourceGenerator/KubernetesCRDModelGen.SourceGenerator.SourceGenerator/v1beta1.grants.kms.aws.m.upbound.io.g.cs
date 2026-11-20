@@ -41,11 +41,11 @@ public partial class V1beta1GrantList : IKubernetesObject<V1ListMeta>, IItems<V1
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantSpecForProviderConstraints
 {
-    /// <summary>A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
+    /// <summary>List of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
     [JsonPropertyName("encryptionContextEquals")]
     public IDictionary<string, string>? EncryptionContextEquals { get; set; }
 
-    /// <summary>A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
+    /// <summary>List of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
     [JsonPropertyName("encryptionContextSubset")]
     public IDictionary<string, string>? EncryptionContextSubset { get; set; }
 }
@@ -364,15 +364,15 @@ public partial class V1beta1GrantSpecForProviderKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantSpecForProvider
 {
-    /// <summary>A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see Encryption Context.</summary>
+    /// <summary>Structure that you can use to allow certain operations in the grant only when the desired encryption context is present. See constraints Block for details. For more information about encryption context, see Encryption Context.</summary>
     [JsonPropertyName("constraints")]
     public IList<V1beta1GrantSpecForProviderConstraints>? Constraints { get; set; }
 
-    /// <summary>A list of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
+    /// <summary>List of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
     [JsonPropertyName("grantCreationTokens")]
     public IList<string>? GrantCreationTokens { get; set; }
 
-    /// <summary>The principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
+    /// <summary>Principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
     [JsonPropertyName("granteePrincipal")]
     public string? GranteePrincipal { get; set; }
 
@@ -396,11 +396,11 @@ public partial class V1beta1GrantSpecForProvider
     [JsonPropertyName("keyIdSelector")]
     public V1beta1GrantSpecForProviderKeyIdSelector? KeyIdSelector { get; set; }
 
-    /// <summary>A friendly name for identifying the grant.</summary>
+    /// <summary>Friendly name for identifying the grant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
+    /// <summary>List of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
     [JsonPropertyName("operations")]
     public IList<string>? Operations { get; set; }
 
@@ -411,14 +411,11 @@ public partial class V1beta1GrantSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// (Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
-    /// See RetireGrant for more information.
-    /// </summary>
+    /// <summary>If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants. See RetireGrant for more information.</summary>
     [JsonPropertyName("retireOnDelete")]
     public bool? RetireOnDelete { get; set; }
 
-    /// <summary>The principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
+    /// <summary>Principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
     [JsonPropertyName("retiringPrincipal")]
     public string? RetiringPrincipal { get; set; }
 }
@@ -427,11 +424,11 @@ public partial class V1beta1GrantSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantSpecInitProviderConstraints
 {
-    /// <summary>A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
+    /// <summary>List of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
     [JsonPropertyName("encryptionContextEquals")]
     public IDictionary<string, string>? EncryptionContextEquals { get; set; }
 
-    /// <summary>A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
+    /// <summary>List of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
     [JsonPropertyName("encryptionContextSubset")]
     public IDictionary<string, string>? EncryptionContextSubset { get; set; }
 }
@@ -762,15 +759,15 @@ public partial class V1beta1GrantSpecInitProviderKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantSpecInitProvider
 {
-    /// <summary>A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see Encryption Context.</summary>
+    /// <summary>Structure that you can use to allow certain operations in the grant only when the desired encryption context is present. See constraints Block for details. For more information about encryption context, see Encryption Context.</summary>
     [JsonPropertyName("constraints")]
     public IList<V1beta1GrantSpecInitProviderConstraints>? Constraints { get; set; }
 
-    /// <summary>A list of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
+    /// <summary>List of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
     [JsonPropertyName("grantCreationTokens")]
     public IList<string>? GrantCreationTokens { get; set; }
 
-    /// <summary>The principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
+    /// <summary>Principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
     [JsonPropertyName("granteePrincipal")]
     public string? GranteePrincipal { get; set; }
 
@@ -794,22 +791,19 @@ public partial class V1beta1GrantSpecInitProvider
     [JsonPropertyName("keyIdSelector")]
     public V1beta1GrantSpecInitProviderKeyIdSelector? KeyIdSelector { get; set; }
 
-    /// <summary>A friendly name for identifying the grant.</summary>
+    /// <summary>Friendly name for identifying the grant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
+    /// <summary>List of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
     [JsonPropertyName("operations")]
     public IList<string>? Operations { get; set; }
 
-    /// <summary>
-    /// (Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
-    /// See RetireGrant for more information.
-    /// </summary>
+    /// <summary>If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants. See RetireGrant for more information.</summary>
     [JsonPropertyName("retireOnDelete")]
     public bool? RetireOnDelete { get; set; }
 
-    /// <summary>The principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
+    /// <summary>Principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
     [JsonPropertyName("retiringPrincipal")]
     public string? RetiringPrincipal { get; set; }
 }
@@ -925,11 +919,11 @@ public partial class V1beta1GrantSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantStatusAtProviderConstraints
 {
-    /// <summary>A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
+    /// <summary>List of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with encryption_context_subset.</summary>
     [JsonPropertyName("encryptionContextEquals")]
     public IDictionary<string, string>? EncryptionContextEquals { get; set; }
 
-    /// <summary>A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
+    /// <summary>List of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with encryption_context_equals.</summary>
     [JsonPropertyName("encryptionContextSubset")]
     public IDictionary<string, string>? EncryptionContextSubset { get; set; }
 }
@@ -938,19 +932,19 @@ public partial class V1beta1GrantStatusAtProviderConstraints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrantStatusAtProvider
 {
-    /// <summary>A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see Encryption Context.</summary>
+    /// <summary>Structure that you can use to allow certain operations in the grant only when the desired encryption context is present. See constraints Block for details. For more information about encryption context, see Encryption Context.</summary>
     [JsonPropertyName("constraints")]
     public IList<V1beta1GrantStatusAtProviderConstraints>? Constraints { get; set; }
 
-    /// <summary>A list of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
+    /// <summary>List of grant tokens to be used when creating the grant. See Grant Tokens for more information about grant tokens.</summary>
     [JsonPropertyName("grantCreationTokens")]
     public IList<string>? GrantCreationTokens { get; set; }
 
-    /// <summary>The unique identifier for the grant.</summary>
+    /// <summary>Unique identifier for the grant.</summary>
     [JsonPropertyName("grantId")]
     public string? GrantId { get; set; }
 
-    /// <summary>The principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
+    /// <summary>Principal that is given permission to perform the operations that the grant permits in ARN format.</summary>
     [JsonPropertyName("granteePrincipal")]
     public string? GranteePrincipal { get; set; }
 
@@ -961,11 +955,11 @@ public partial class V1beta1GrantStatusAtProvider
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
-    /// <summary>A friendly name for identifying the grant.</summary>
+    /// <summary>Friendly name for identifying the grant.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
+    /// <summary>List of operations that the grant permits. The permitted values are: Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, Sign, Verify, GetPublicKey, CreateGrant, RetireGrant, DescribeKey, GenerateDataKeyPair, or GenerateDataKeyPairWithoutPlaintext.</summary>
     [JsonPropertyName("operations")]
     public IList<string>? Operations { get; set; }
 
@@ -976,14 +970,11 @@ public partial class V1beta1GrantStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// (Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
-    /// See RetireGrant for more information.
-    /// </summary>
+    /// <summary>If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants. See RetireGrant for more information.</summary>
     [JsonPropertyName("retireOnDelete")]
     public bool? RetireOnDelete { get; set; }
 
-    /// <summary>The principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
+    /// <summary>Principal that is given permission to retire the grant by using RetireGrant operation in ARN format.</summary>
     [JsonPropertyName("retiringPrincipal")]
     public string? RetiringPrincipal { get; set; }
 }

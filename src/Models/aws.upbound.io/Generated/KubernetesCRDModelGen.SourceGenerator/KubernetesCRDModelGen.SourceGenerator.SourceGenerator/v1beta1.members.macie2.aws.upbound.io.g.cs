@@ -60,23 +60,23 @@ public enum V1beta1MemberSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemberSpecForProvider
 {
-    /// <summary>The AWS account ID for the account.</summary>
+    /// <summary>AWS account ID for the account.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The email address for the account.</summary>
+    /// <summary>Email address for the account.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 
-    /// <summary>Specifies whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
+    /// <summary>Whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
     [JsonPropertyName("invitationDisableEmailNotification")]
     public bool? InvitationDisableEmailNotification { get; set; }
 
-    /// <summary>A custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
+    /// <summary>Custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
     [JsonPropertyName("invitationMessage")]
     public string? InvitationMessage { get; set; }
 
-    /// <summary>Send an invitation to a member</summary>
+    /// <summary>Whether to send an invitation to a member.</summary>
     [JsonPropertyName("invite")]
     public bool? Invite { get; set; }
 
@@ -87,7 +87,7 @@ public partial class V1beta1MemberSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -112,27 +112,27 @@ public partial class V1beta1MemberSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemberSpecInitProvider
 {
-    /// <summary>The AWS account ID for the account.</summary>
+    /// <summary>AWS account ID for the account.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The email address for the account.</summary>
+    /// <summary>Email address for the account.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 
-    /// <summary>Specifies whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
+    /// <summary>Whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
     [JsonPropertyName("invitationDisableEmailNotification")]
     public bool? InvitationDisableEmailNotification { get; set; }
 
-    /// <summary>A custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
+    /// <summary>Custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
     [JsonPropertyName("invitationMessage")]
     public string? InvitationMessage { get; set; }
 
-    /// <summary>Send an invitation to a member</summary>
+    /// <summary>Whether to send an invitation to a member.</summary>
     [JsonPropertyName("invite")]
     public bool? Invite { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -328,11 +328,11 @@ public partial class V1beta1MemberSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemberStatusAtProvider
 {
-    /// <summary>The AWS account ID for the account.</summary>
+    /// <summary>AWS account ID for the account.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The AWS account ID for the administrator account.</summary>
+    /// <summary>AWS account ID for the administrator account.</summary>
     [JsonPropertyName("administratorAccountId")]
     public string? AdministratorAccountId { get; set; }
 
@@ -340,31 +340,31 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The email address for the account.</summary>
+    /// <summary>Email address for the account.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 
-    /// <summary>The unique identifier (ID) of the macie Member.</summary>
+    /// <summary>Unique identifier (ID) of the Macie Member.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
+    /// <summary>Whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.</summary>
     [JsonPropertyName("invitationDisableEmailNotification")]
     public bool? InvitationDisableEmailNotification { get; set; }
 
-    /// <summary>A custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
+    /// <summary>Custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.</summary>
     [JsonPropertyName("invitationMessage")]
     public string? InvitationMessage { get; set; }
 
-    /// <summary>Send an invitation to a member</summary>
+    /// <summary>Whether to send an invitation to a member.</summary>
     [JsonPropertyName("invite")]
     public bool? Invite { get; set; }
 
-    /// <summary>The date and time, in UTC and extended RFC 3339 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if a Macie invitation hasn&apos;t been sent to the account.</summary>
+    /// <summary>Date and time, in UTC and extended RFC 3339 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if a Macie invitation hasn&apos;t been sent to the account.</summary>
     [JsonPropertyName("invitedAt")]
     public string? InvitedAt { get; set; }
 
-    /// <summary>The AWS account ID for the account.</summary>
+    /// <summary>AWS account ID for the master account.</summary>
     [JsonPropertyName("masterAccountId")]
     public string? MasterAccountId { get; set; }
 
@@ -375,11 +375,11 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The current status of the relationship between the account and the administrator account.</summary>
+    /// <summary>Current status of the relationship between the account and the administrator account.</summary>
     [JsonPropertyName("relationshipStatus")]
     public string? RelationshipStatus { get; set; }
 
-    /// <summary>Specifies the status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
+    /// <summary>Status for the account. To enable Amazon Macie and start all Macie activities for the account, set this value to ENABLED. Valid values are ENABLED or PAUSED.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -387,11 +387,11 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The date and time, in UTC and extended RFC 3339 format, of the most recent change to the status of the relationship between the account and the administrator account.</summary>
+    /// <summary>Date and time, in UTC and extended RFC 3339 format, of the most recent change to the status of the relationship between the account and the administrator account.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 }

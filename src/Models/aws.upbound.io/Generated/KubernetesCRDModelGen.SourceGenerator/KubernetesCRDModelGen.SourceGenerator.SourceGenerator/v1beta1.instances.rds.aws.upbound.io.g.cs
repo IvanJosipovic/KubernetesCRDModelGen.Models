@@ -1704,6 +1704,10 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -3565,6 +3569,10 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
 
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
+
     /// <summary>The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -4360,6 +4368,10 @@ public partial class V1beta1InstanceStatusAtProvider
     /// <summary>Specifies if the RDS instance is multi-AZ</summary>
     [JsonPropertyName("multiAz")]
     public bool? MultiAz { get; set; }
+
+    /// <summary>Whether to use the multi-tenant configuration of the Oracle CDB architecture. Only valid for RDS for Oracle CDB engines (oracle-ee-cdb and oracle-se2-cdb). Changing from false to true converts the instance in place and requires apply_immediately = true; RDS also applies any pending modifications at that time. Restored instances and read replicas are converted after creation. Conversion is irreversible, so changing from true to false forces a new resource. After conversion, RDS rejects changes to password, password_wo, and manage_master_user_password on the instance; manage master user credentials on the tenant database instead. Additional tenant databases are managed outside this resource. See the AWS documentation for details.</summary>
+    [JsonPropertyName("multiTenant")]
+    public bool? MultiTenant { get; set; }
 
     /// <summary>The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the AWS documentation for more details on what applies for those engines. If you are providing an Oracle db name, it needs to be in all upper case. Cannot be specified for a replica.</summary>
     [JsonPropertyName("name")]

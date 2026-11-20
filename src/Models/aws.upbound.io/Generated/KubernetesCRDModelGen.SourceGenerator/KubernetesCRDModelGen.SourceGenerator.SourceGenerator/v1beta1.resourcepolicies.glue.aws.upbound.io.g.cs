@@ -60,11 +60,11 @@ public enum V1beta1ResourcePolicySpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProvider
 {
-    /// <summary>Indicates that you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Whether you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("enableHybrid")]
     public string? EnableHybrid { get; set; }
 
-    /// <summary>The policy to be applied to the aws glue data catalog.</summary>
+    /// <summary>Policy to be applied to the aws glue data catalog.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -92,11 +92,11 @@ public partial class V1beta1ResourcePolicySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProvider
 {
-    /// <summary>Indicates that you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Whether you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("enableHybrid")]
     public string? EnableHybrid { get; set; }
 
-    /// <summary>The policy to be applied to the aws glue data catalog.</summary>
+    /// <summary>Policy to be applied to the aws glue data catalog.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -288,14 +288,14 @@ public partial class V1beta1ResourcePolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProvider
 {
-    /// <summary>Indicates that you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Whether you are using both methods to grant cross-account. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("enableHybrid")]
     public string? EnableHybrid { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The policy to be applied to the aws glue data catalog.</summary>
+    /// <summary>Policy to be applied to the aws glue data catalog.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

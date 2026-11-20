@@ -1585,11 +1585,11 @@ public partial class V1beta1InsightSpecForProviderFilters
     [JsonPropertyName("networkDestinationDomain")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkDestinationDomain>? NetworkDestinationDomain { get; set; }
 
-    /// <summary>The destination IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv4")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv4>? NetworkDestinationIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv6")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv6>? NetworkDestinationIpv6 { get; set; }
 
@@ -1609,11 +1609,11 @@ public partial class V1beta1InsightSpecForProviderFilters
     [JsonPropertyName("networkSourceDomain")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkSourceDomain>? NetworkSourceDomain { get; set; }
 
-    /// <summary>The source IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv4")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkSourceIpv4>? NetworkSourceIpv4 { get; set; }
 
-    /// <summary>The source IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv6")]
     public IList<V1beta1InsightSpecForProviderFiltersNetworkSourceIpv6>? NetworkSourceIpv6 { get; set; }
 
@@ -1697,11 +1697,11 @@ public partial class V1beta1InsightSpecForProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 
-    /// <summary>The IPv4 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv4 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv4Addresses")]
     public IList<V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIpv4Addresses>? ResourceAwsEc2InstanceIpv4Addresses { get; set; }
 
-    /// <summary>The IPv6 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv6 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv6Addresses")]
     public IList<V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIpv6Addresses>? ResourceAwsEc2InstanceIpv6Addresses { get; set; }
 
@@ -3414,11 +3414,11 @@ public partial class V1beta1InsightSpecInitProviderFilters
     [JsonPropertyName("networkDestinationDomain")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkDestinationDomain>? NetworkDestinationDomain { get; set; }
 
-    /// <summary>The destination IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv4")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv4>? NetworkDestinationIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv6")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv6>? NetworkDestinationIpv6 { get; set; }
 
@@ -3438,11 +3438,11 @@ public partial class V1beta1InsightSpecInitProviderFilters
     [JsonPropertyName("networkSourceDomain")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkSourceDomain>? NetworkSourceDomain { get; set; }
 
-    /// <summary>The source IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv4")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv4>? NetworkSourceIpv4 { get; set; }
 
-    /// <summary>The source IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv6")]
     public IList<V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv6>? NetworkSourceIpv6 { get; set; }
 
@@ -3526,11 +3526,11 @@ public partial class V1beta1InsightSpecInitProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 
-    /// <summary>The IPv4 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv4 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv4Addresses")]
     public IList<V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIpv4Addresses>? ResourceAwsEc2InstanceIpv4Addresses { get; set; }
 
-    /// <summary>The IPv6 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv6 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv6Addresses")]
     public IList<V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIpv6Addresses>? ResourceAwsEc2InstanceIpv6Addresses { get; set; }
 
@@ -5355,11 +5355,11 @@ public partial class V1beta1InsightStatusAtProviderFilters
     [JsonPropertyName("networkDestinationDomain")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkDestinationDomain>? NetworkDestinationDomain { get; set; }
 
-    /// <summary>The destination IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv4")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv4>? NetworkDestinationIpv4 { get; set; }
 
-    /// <summary>The destination IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The destination IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkDestinationIpv6")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv6>? NetworkDestinationIpv6 { get; set; }
 
@@ -5379,11 +5379,11 @@ public partial class V1beta1InsightStatusAtProviderFilters
     [JsonPropertyName("networkSourceDomain")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkSourceDomain>? NetworkSourceDomain { get; set; }
 
-    /// <summary>The source IPv4 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv4 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv4")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv4>? NetworkSourceIpv4 { get; set; }
 
-    /// <summary>The source IPv6 address of network-related information about a finding. See Ip Filter below for more details.</summary>
+    /// <summary>The source IPv6 address of network-related information about a finding. See IP Filter below for more details.</summary>
     [JsonPropertyName("networkSourceIpv6")]
     public IList<V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv6>? NetworkSourceIpv6 { get; set; }
 
@@ -5467,11 +5467,11 @@ public partial class V1beta1InsightStatusAtProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 
-    /// <summary>The IPv4 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv4 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv4Addresses")]
     public IList<V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIpv4Addresses>? ResourceAwsEc2InstanceIpv4Addresses { get; set; }
 
-    /// <summary>The IPv6 addresses associated with the instance. See Ip Filter below for more details.</summary>
+    /// <summary>The IPv6 addresses associated with the instance. See IP Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceIpv6Addresses")]
     public IList<V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIpv6Addresses>? ResourceAwsEc2InstanceIpv6Addresses { get; set; }
 

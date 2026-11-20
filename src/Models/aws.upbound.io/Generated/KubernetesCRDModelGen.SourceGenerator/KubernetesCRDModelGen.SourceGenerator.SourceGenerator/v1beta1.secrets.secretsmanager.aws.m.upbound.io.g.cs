@@ -217,7 +217,7 @@ public partial class V1beta1SecretSpecForProvider
     [JsonPropertyName("forceOverwriteReplicaSecret")]
     public bool? ForceOverwriteReplicaSecret { get; set; }
 
-    /// <summary>ARN or Id of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
+    /// <summary>ARN or ID of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -445,7 +445,7 @@ public partial class V1beta1SecretSpecInitProvider
     [JsonPropertyName("forceOverwriteReplicaSecret")]
     public bool? ForceOverwriteReplicaSecret { get; set; }
 
-    /// <summary>ARN or Id of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
+    /// <summary>ARN or ID of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -630,7 +630,7 @@ public partial class V1beta1SecretStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>ARN or Id of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
+    /// <summary>ARN or ID of the AWS KMS key to be used to encrypt the secret values in the versions stored in this secret. If you need to reference a CMK in a different account, you can use only the key ARN. If you don&apos;t specify this value, then Secrets Manager defaults to using the AWS account&apos;s default KMS key (the one named aws/secretsmanager). If the default KMS key with that name doesn&apos;t yet exist, then AWS Secrets Manager creates it for you automatically the first time.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

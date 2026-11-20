@@ -410,7 +410,7 @@ public partial class V1beta1AMICopySpecForProvider
     public required string Region { get; set; }
 
     /// <summary>
-    /// Id of the AMI to copy. This id must be valid in the region
+    /// ID of the AMI to copy. This ID must be valid in the region
     /// given by source_ami_region.
     /// </summary>
     [JsonPropertyName("sourceAmiId")]
@@ -814,7 +814,7 @@ public partial class V1beta1AMICopySpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// Id of the AMI to copy. This id must be valid in the region
+    /// ID of the AMI to copy. This ID must be valid in the region
     /// given by source_ami_region.
     /// </summary>
     [JsonPropertyName("sourceAmiId")]
@@ -1106,7 +1106,7 @@ public partial class V1beta1AMICopyStatusAtProvider
     public string? RootSnapshotId { get; set; }
 
     /// <summary>
-    /// Id of the AMI to copy. This id must be valid in the region
+    /// ID of the AMI to copy. This ID must be valid in the region
     /// given by source_ami_region.
     /// </summary>
     [JsonPropertyName("sourceAmiId")]

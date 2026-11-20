@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: httpnamespaces.servicediscovery.aws.m.upbound.io
 spec:
   group: servicediscovery.aws.m.upbound.io
@@ -61,7 +61,7 @@ spec:
                     description: The description that you specify for the namespace when you create it.
                     type: string
                   name:
-                    description: The name of the http namespace.
+                    description: The name of the HTTP namespace.
                     type: string
                   region:
                     description: |-
@@ -94,7 +94,7 @@ spec:
                     description: The description that you specify for the namespace when you create it.
                     type: string
                   name:
-                    description: The name of the http namespace.
+                    description: The name of the HTTP namespace.
                     type: string
                   tags:
                     additionalProperties:
@@ -182,7 +182,7 @@ spec:
                     description: The ID of a namespace.
                     type: string
                   name:
-                    description: The name of the http namespace.
+                    description: The name of the HTTP namespace.
                     type: string
                   region:
                     description: |-

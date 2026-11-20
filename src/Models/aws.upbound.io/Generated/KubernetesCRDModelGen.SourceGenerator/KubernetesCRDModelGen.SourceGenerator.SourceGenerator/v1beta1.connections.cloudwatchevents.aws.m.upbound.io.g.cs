@@ -201,7 +201,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
     public V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersQueryStringValueSecretRef? ValueSecretRef { get; set; }
 }
 
-/// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParameters
@@ -336,7 +336,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
     public V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersQueryStringValueSecretRef? ValueSecretRef { get; set; }
 }
 
-/// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParameters
@@ -371,7 +371,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauth
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("oauthHttpParameters")]
     public V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParameters? OauthHttpParameters { get; set; }
 }
@@ -393,7 +393,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParameters
     [JsonPropertyName("connectivityParameters")]
     public V1beta1ConnectionSpecForProviderAuthParametersConnectivityParameters? ConnectivityParameters { get; set; }
 
-    /// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("invocationHttpParameters")]
     public V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParameters? InvocationHttpParameters { get; set; }
 
@@ -781,7 +781,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
     public V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersQueryStringValueSecretRef? ValueSecretRef { get; set; }
 }
 
-/// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParameters
@@ -916,7 +916,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
     public V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersQueryStringValueSecretRef? ValueSecretRef { get; set; }
 }
 
-/// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParameters
@@ -951,7 +951,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauth
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("oauthHttpParameters")]
     public V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParameters? OauthHttpParameters { get; set; }
 }
@@ -973,7 +973,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParameters
     [JsonPropertyName("connectivityParameters")]
     public V1beta1ConnectionSpecInitProviderAuthParametersConnectivityParameters? ConnectivityParameters { get; set; }
 
-    /// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("invocationHttpParameters")]
     public V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParameters? InvocationHttpParameters { get; set; }
 
@@ -1392,7 +1392,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHt
     public string? Key { get; set; }
 }
 
-/// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParameters
@@ -1459,7 +1459,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHt
     public string? Key { get; set; }
 }
 
-/// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+/// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParameters
@@ -1494,7 +1494,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauth
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
-    /// <summary>OAuth Http Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>OAuth HTTP Parameters are additional credentials used to sign the request to the authorization endpoint to exchange the OAuth Client information for an access token. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("oauthHttpParameters")]
     public V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParameters? OauthHttpParameters { get; set; }
 }
@@ -1516,7 +1516,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParameters
     [JsonPropertyName("connectivityParameters")]
     public V1beta1ConnectionStatusAtProviderAuthParametersConnectivityParameters? ConnectivityParameters { get; set; }
 
-    /// <summary>Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
+    /// <summary>Invocation HTTP Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation HTTP Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.</summary>
     [JsonPropertyName("invocationHttpParameters")]
     public V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParameters? InvocationHttpParameters { get; set; }
 

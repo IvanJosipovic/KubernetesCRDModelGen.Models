@@ -340,7 +340,7 @@ public partial class V1beta1TargetSpecForProviderEcsTarget
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>A map of tags to assign to ecs resources.</summary>
+    /// <summary>A map of tags to assign to ECS resources.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -1072,7 +1072,7 @@ public partial class V1beta1TargetSpecForProvider
     [JsonPropertyName("sqsTarget")]
     public V1beta1TargetSpecForProviderSqsTarget? SqsTarget { get; set; }
 
-    /// <summary>The unique target assignment ID. If missing, will generate a random, unique id.</summary>
+    /// <summary>The unique target assignment ID. If missing, will generate a random, unique ID.</summary>
     [JsonPropertyName("targetId")]
     public string? TargetId { get; set; }
 }
@@ -1380,7 +1380,7 @@ public partial class V1beta1TargetSpecInitProviderEcsTarget
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>A map of tags to assign to ecs resources.</summary>
+    /// <summary>A map of tags to assign to ECS resources.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -2117,7 +2117,7 @@ public partial class V1beta1TargetSpecInitProvider
     [JsonPropertyName("sqsTarget")]
     public V1beta1TargetSpecInitProviderSqsTarget? SqsTarget { get; set; }
 
-    /// <summary>The unique target assignment ID. If missing, will generate a random, unique id.</summary>
+    /// <summary>The unique target assignment ID. If missing, will generate a random, unique ID.</summary>
     [JsonPropertyName("targetId")]
     public string? TargetId { get; set; }
 }
@@ -2377,7 +2377,7 @@ public partial class V1beta1TargetStatusAtProviderEcsTarget
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>A map of tags to assign to ecs resources.</summary>
+    /// <summary>A map of tags to assign to ECS resources.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -2615,7 +2615,7 @@ public partial class V1beta1TargetStatusAtProvider
     [JsonPropertyName("sqsTarget")]
     public V1beta1TargetStatusAtProviderSqsTarget? SqsTarget { get; set; }
 
-    /// <summary>The unique target assignment ID. If missing, will generate a random, unique id.</summary>
+    /// <summary>The unique target assignment ID. If missing, will generate a random, unique ID.</summary>
     [JsonPropertyName("targetId")]
     public string? TargetId { get; set; }
 }

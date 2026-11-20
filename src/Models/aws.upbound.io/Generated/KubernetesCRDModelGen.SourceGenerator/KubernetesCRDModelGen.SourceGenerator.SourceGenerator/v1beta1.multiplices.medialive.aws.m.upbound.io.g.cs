@@ -37,7 +37,7 @@ public partial class V1beta1MultiplexList : IKubernetesObject<V1ListMeta>, IItem
     public required IList<V1beta1Multiplex> Items { get; set; }
 }
 
-/// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+/// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiplexSpecForProviderMultiplexSettings
@@ -63,11 +63,11 @@ public partial class V1beta1MultiplexSpecForProviderMultiplexSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiplexSpecForProvider
 {
-    /// <summary>A list of availability zones. You must specify exactly two.</summary>
+    /// <summary>List of availability zones. You must specify exactly two.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
-    /// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+    /// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1MultiplexSpecForProviderMultiplexSettings? MultiplexSettings { get; set; }
 
@@ -91,7 +91,7 @@ public partial class V1beta1MultiplexSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+/// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiplexSpecInitProviderMultiplexSettings
@@ -129,11 +129,11 @@ public partial class V1beta1MultiplexSpecInitProviderMultiplexSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiplexSpecInitProvider
 {
-    /// <summary>A list of availability zones. You must specify exactly two.</summary>
+    /// <summary>List of availability zones. You must specify exactly two.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
-    /// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+    /// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1MultiplexSpecInitProviderMultiplexSettings? MultiplexSettings { get; set; }
 
@@ -257,7 +257,7 @@ public partial class V1beta1MultiplexSpec
     public V1beta1MultiplexSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+/// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MultiplexStatusAtProviderMultiplexSettings
@@ -287,7 +287,7 @@ public partial class V1beta1MultiplexStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A list of availability zones. You must specify exactly two.</summary>
+    /// <summary>List of availability zones. You must specify exactly two.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -295,7 +295,7 @@ public partial class V1beta1MultiplexStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Multiplex settings. See Multiplex Settings for more details.</summary>
+    /// <summary>Multiplex settings. See multiplex_settings Block for more details.</summary>
     [JsonPropertyName("multiplexSettings")]
     public V1beta1MultiplexStatusAtProviderMultiplexSettings? MultiplexSettings { get; set; }
 

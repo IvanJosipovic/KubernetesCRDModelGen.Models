@@ -432,7 +432,7 @@ public partial class V1beta2DirectoryConfigStatusAtProvider
     [JsonPropertyName("directoryName")]
     public string? DirectoryName { get; set; }
 
-    /// <summary>Unique identifier (ID) of the appstream directory config.</summary>
+    /// <summary>Unique identifier (ID) of the AppStream directory config.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

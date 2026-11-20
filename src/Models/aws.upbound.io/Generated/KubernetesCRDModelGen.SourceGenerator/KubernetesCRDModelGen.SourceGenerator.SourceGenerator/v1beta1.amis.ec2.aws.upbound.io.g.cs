@@ -1055,7 +1055,7 @@ public partial class V1beta1AMIStatusAtProvider
     [JsonPropertyName("kernelId")]
     public string? KernelId { get; set; }
 
-    /// <summary>(Computed) Date and time, in ISO 8601 date-time format , when the AMI was last used to launch an EC2 instance. When the AMI is used to launch an instance, there is a 24-hour delay before that usage is reported. For more information, see the following AWS document.</summary>
+    /// <summary>Date and time, in ISO 8601 date-time format , when the AMI was last used to launch an EC2 instance. When the AMI is used to launch an instance, there is a 24-hour delay before that usage is reported. For more information, see the following AWS document.</summary>
     [JsonPropertyName("lastLaunchedTime")]
     public string? LastLaunchedTime { get; set; }
 

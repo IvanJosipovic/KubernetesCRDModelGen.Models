@@ -400,7 +400,7 @@ public partial class V1beta1ScheduleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScheduleStatusAtProvider
 {
-    /// <summary>ARN assigned by AWS to the autoscaling schedule.</summary>
+    /// <summary>ARN assigned by AWS to the Auto Scaling schedule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -1048,7 +1048,7 @@ public partial class V1beta1ImageBuilderStatusAtProvider
     [JsonPropertyName("appstreamAgentVersion")]
     public string? AppstreamAgentVersion { get; set; }
 
-    /// <summary>ARN of the appstream image builder.</summary>
+    /// <summary>ARN of the AppStream image builder.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

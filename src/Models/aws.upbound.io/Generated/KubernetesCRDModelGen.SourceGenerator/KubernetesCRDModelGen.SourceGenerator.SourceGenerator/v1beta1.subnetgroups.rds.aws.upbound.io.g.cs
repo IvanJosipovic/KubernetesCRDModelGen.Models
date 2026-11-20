@@ -606,7 +606,7 @@ public partial class V1beta1SubnetGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupStatusAtProvider
 {
-    /// <summary>ARN of the db subnet group.</summary>
+    /// <summary>ARN of the DB subnet group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -629,7 +629,7 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>Network type of the db subnet group.</summary>
+    /// <summary>Network type of the DB subnet group.</summary>
     [JsonPropertyName("supportedNetworkTypes")]
     public IList<string>? SupportedNetworkTypes { get; set; }
 

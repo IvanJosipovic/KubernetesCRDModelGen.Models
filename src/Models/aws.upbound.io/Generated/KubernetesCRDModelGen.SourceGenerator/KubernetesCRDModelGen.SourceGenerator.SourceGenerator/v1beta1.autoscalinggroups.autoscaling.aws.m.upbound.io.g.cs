@@ -52,7 +52,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderAvailabilityZoneDistr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecificationCapacityReservationTarget
 {
-    /// <summary>List of On-Demand Capacity Reservation Ids. Conflicts with capacity_reservation_resource_group_arns.</summary>
+    /// <summary>List of On-Demand Capacity Reservation IDs. Conflicts with capacity_reservation_resource_group_arns.</summary>
     [JsonPropertyName("capacityReservationIds")]
     public IList<string>? CapacityReservationIds { get; set; }
 
@@ -88,18 +88,18 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook
     [JsonPropertyName("lifecycleTransition")]
     public string? LifecycleTransition { get; set; }
 
-    /// <summary>Name of the Auto Scaling Group. Conflicts with name_prefix.</summary>
+    /// <summary>Name of the Auto Scaling group. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     [JsonPropertyName("notificationMetadata")]
     public string? NotificationMetadata { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("notificationTargetArn")]
     public string? NotificationTargetArn { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -114,7 +114,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePoli
     public string? TerminateHookAbandon { get; set; }
 }
 
-/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicy
@@ -143,7 +143,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceMaintenancePo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPreferencesAlarmSpecification
 {
-    /// <summary>List of Cloudwatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
+    /// <summary>List of CloudWatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
     [JsonPropertyName("alarms")]
     public IList<string>? Alarms { get; set; }
 }
@@ -169,7 +169,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPrefer
     [JsonPropertyName("checkpointPercentages")]
     public IList<double>? CheckpointPercentages { get; set; }
 
-    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling Group&apos;s health check grace period.</summary>
+    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling group&apos;s health check grace period.</summary>
     [JsonPropertyName("instanceWarmup")]
     public string? InstanceWarmup { get; set; }
 
@@ -197,7 +197,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPrefer
 /// <summary>
 /// If this block is configured, start an
 /// Instance Refresh
-/// when this Auto Scaling Group is updated. Defined below.
+/// when this Auto Scaling group is updated. Defined below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -902,7 +902,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -1752,7 +1752,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderWarmPool
     public double? MaxGroupPreparedCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -1812,15 +1812,15 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     public IList<string>? EnabledMetrics { get; set; }
 
     /// <summary>
-    /// Allows deleting the Auto Scaling Group without waiting
-    /// for all instances in the pool to terminate. You can force an Auto Scaling Group to delete
+    /// Allows deleting the Auto Scaling group without waiting
+    /// for all instances in the pool to terminate. You can force an Auto Scaling group to delete
     /// even if it&apos;s in the process of scaling a resource. This bypasses that
     /// behavior and potentially leaves resources dangling.
     /// </summary>
     [JsonPropertyName("forceDelete")]
     public bool? ForceDelete { get; set; }
 
-    /// <summary>Allows deleting the Auto Scaling Group without waiting for all instances in the warm pool to terminate.</summary>
+    /// <summary>Allows deleting the Auto Scaling group without waiting for all instances in the warm pool to terminate.</summary>
     [JsonPropertyName("forceDeleteWarmPool")]
     public bool? ForceDeleteWarmPool { get; set; }
 
@@ -1839,16 +1839,16 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     /// <summary>
     /// One or more
     /// Lifecycle Hooks
-    /// to attach to the Auto Scaling Group before instances are launched. The
+    /// to attach to the Auto Scaling group before instances are launched. The
     /// syntax is exactly the same as the separate
     /// aws_autoscaling_lifecycle_hook
     /// resource, without the autoscaling_group_name attribute. Please note that this will only work when creating
-    /// a new Auto Scaling Group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
+    /// a new Auto Scaling group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
     /// </summary>
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
-    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceLifecyclePolicy")]
     public V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
 
@@ -1859,7 +1859,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     /// <summary>
     /// If this block is configured, start an
     /// Instance Refresh
-    /// when this Auto Scaling Group is updated. Defined below.
+    /// when this Auto Scaling group is updated. Defined below.
     /// </summary>
     [JsonPropertyName("instanceRefresh")]
     public V1beta1AutoscalingGroupSpecForProviderInstanceRefresh? InstanceRefresh { get; set; }
@@ -1884,7 +1884,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("maxInstanceLifetime")]
     public double? MaxInstanceLifetime { get; set; }
 
-    /// <summary>Maximum size of the Auto Scaling Group.</summary>
+    /// <summary>Maximum size of the Auto Scaling group.</summary>
     [JsonPropertyName("maxSize")]
     public double? MaxSize { get; set; }
 
@@ -1900,7 +1900,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     public double? MinElbCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -1952,8 +1952,8 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     public V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelector? ServiceLinkedRoleArnSelector { get; set; }
 
     /// <summary>
-    /// List of processes to suspend for the Auto Scaling Group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
-    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling Group from functioning properly.
+    /// List of processes to suspend for the Auto Scaling group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
+    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling group from functioning properly.
     /// </summary>
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
@@ -1962,7 +1962,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("tag")]
     public IList<V1beta1AutoscalingGroupSpecForProviderTag>? Tag { get; set; }
 
-    /// <summary>List of policies to decide how the instances in the Auto Scaling Group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
+    /// <summary>List of policies to decide how the instances in the Auto Scaling group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
     [JsonPropertyName("terminationPolicies")]
     public IList<string>? TerminationPolicies { get; set; }
 
@@ -2020,7 +2020,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderAvailabilityZoneDist
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecificationCapacityReservationTarget
 {
-    /// <summary>List of On-Demand Capacity Reservation Ids. Conflicts with capacity_reservation_resource_group_arns.</summary>
+    /// <summary>List of On-Demand Capacity Reservation IDs. Conflicts with capacity_reservation_resource_group_arns.</summary>
     [JsonPropertyName("capacityReservationIds")]
     public IList<string>? CapacityReservationIds { get; set; }
 
@@ -2056,18 +2056,18 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook
     [JsonPropertyName("lifecycleTransition")]
     public string? LifecycleTransition { get; set; }
 
-    /// <summary>Name of the Auto Scaling Group. Conflicts with name_prefix.</summary>
+    /// <summary>Name of the Auto Scaling group. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     [JsonPropertyName("notificationMetadata")]
     public string? NotificationMetadata { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("notificationTargetArn")]
     public string? NotificationTargetArn { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2082,7 +2082,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePol
     public string? TerminateHookAbandon { get; set; }
 }
 
-/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy
@@ -2111,7 +2111,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceMaintenanceP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPreferencesAlarmSpecification
 {
-    /// <summary>List of Cloudwatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
+    /// <summary>List of CloudWatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
     [JsonPropertyName("alarms")]
     public IList<string>? Alarms { get; set; }
 }
@@ -2137,7 +2137,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPrefe
     [JsonPropertyName("checkpointPercentages")]
     public IList<double>? CheckpointPercentages { get; set; }
 
-    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling Group&apos;s health check grace period.</summary>
+    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling group&apos;s health check grace period.</summary>
     [JsonPropertyName("instanceWarmup")]
     public string? InstanceWarmup { get; set; }
 
@@ -2165,7 +2165,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPrefe
 /// <summary>
 /// If this block is configured, start an
 /// Instance Refresh
-/// when this Auto Scaling Group is updated. Defined below.
+/// when this Auto Scaling group is updated. Defined below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2870,7 +2870,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -2886,7 +2886,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -3720,7 +3720,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPool
     public double? MaxGroupPreparedCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -3792,15 +3792,15 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     public IList<string>? EnabledMetrics { get; set; }
 
     /// <summary>
-    /// Allows deleting the Auto Scaling Group without waiting
-    /// for all instances in the pool to terminate. You can force an Auto Scaling Group to delete
+    /// Allows deleting the Auto Scaling group without waiting
+    /// for all instances in the pool to terminate. You can force an Auto Scaling group to delete
     /// even if it&apos;s in the process of scaling a resource. This bypasses that
     /// behavior and potentially leaves resources dangling.
     /// </summary>
     [JsonPropertyName("forceDelete")]
     public bool? ForceDelete { get; set; }
 
-    /// <summary>Allows deleting the Auto Scaling Group without waiting for all instances in the warm pool to terminate.</summary>
+    /// <summary>Allows deleting the Auto Scaling group without waiting for all instances in the warm pool to terminate.</summary>
     [JsonPropertyName("forceDeleteWarmPool")]
     public bool? ForceDeleteWarmPool { get; set; }
 
@@ -3819,16 +3819,16 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     /// <summary>
     /// One or more
     /// Lifecycle Hooks
-    /// to attach to the Auto Scaling Group before instances are launched. The
+    /// to attach to the Auto Scaling group before instances are launched. The
     /// syntax is exactly the same as the separate
     /// aws_autoscaling_lifecycle_hook
     /// resource, without the autoscaling_group_name attribute. Please note that this will only work when creating
-    /// a new Auto Scaling Group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
+    /// a new Auto Scaling group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
     /// </summary>
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
-    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceLifecyclePolicy")]
     public V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
 
@@ -3839,7 +3839,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     /// <summary>
     /// If this block is configured, start an
     /// Instance Refresh
-    /// when this Auto Scaling Group is updated. Defined below.
+    /// when this Auto Scaling group is updated. Defined below.
     /// </summary>
     [JsonPropertyName("instanceRefresh")]
     public V1beta1AutoscalingGroupSpecInitProviderInstanceRefresh? InstanceRefresh { get; set; }
@@ -3864,7 +3864,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("maxInstanceLifetime")]
     public double? MaxInstanceLifetime { get; set; }
 
-    /// <summary>Maximum size of the Auto Scaling Group.</summary>
+    /// <summary>Maximum size of the Auto Scaling group.</summary>
     [JsonPropertyName("maxSize")]
     public double? MaxSize { get; set; }
 
@@ -3880,7 +3880,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     public double? MinElbCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -3925,8 +3925,8 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     public V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelector? ServiceLinkedRoleArnSelector { get; set; }
 
     /// <summary>
-    /// List of processes to suspend for the Auto Scaling Group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
-    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling Group from functioning properly.
+    /// List of processes to suspend for the Auto Scaling group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
+    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling group from functioning properly.
     /// </summary>
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
@@ -3935,7 +3935,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("tag")]
     public IList<V1beta1AutoscalingGroupSpecInitProviderTag>? Tag { get; set; }
 
-    /// <summary>List of policies to decide how the instances in the Auto Scaling Group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
+    /// <summary>List of policies to decide how the instances in the Auto Scaling group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
     [JsonPropertyName("terminationPolicies")]
     public IList<string>? TerminationPolicies { get; set; }
 
@@ -4100,7 +4100,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderAvailabilityZoneDist
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecificationCapacityReservationTarget
 {
-    /// <summary>List of On-Demand Capacity Reservation Ids. Conflicts with capacity_reservation_resource_group_arns.</summary>
+    /// <summary>List of On-Demand Capacity Reservation IDs. Conflicts with capacity_reservation_resource_group_arns.</summary>
     [JsonPropertyName("capacityReservationIds")]
     public IList<string>? CapacityReservationIds { get; set; }
 
@@ -4136,18 +4136,18 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook
     [JsonPropertyName("lifecycleTransition")]
     public string? LifecycleTransition { get; set; }
 
-    /// <summary>Name of the Auto Scaling Group. Conflicts with name_prefix.</summary>
+    /// <summary>Name of the Auto Scaling group. Conflicts with name_prefix.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     [JsonPropertyName("notificationMetadata")]
     public string? NotificationMetadata { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("notificationTargetArn")]
     public string? NotificationTargetArn { get; set; }
 
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -4162,7 +4162,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePol
     public string? TerminateHookAbandon { get; set; }
 }
 
-/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy
@@ -4191,7 +4191,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceMaintenanceP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPreferencesAlarmSpecification
 {
-    /// <summary>List of Cloudwatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
+    /// <summary>List of CloudWatch alarms. If any of these alarms goes into ALARM state, Instance Refresh is failed.</summary>
     [JsonPropertyName("alarms")]
     public IList<string>? Alarms { get; set; }
 }
@@ -4217,7 +4217,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPrefe
     [JsonPropertyName("checkpointPercentages")]
     public IList<double>? CheckpointPercentages { get; set; }
 
-    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling Group&apos;s health check grace period.</summary>
+    /// <summary>Number of seconds until a newly launched instance is configured and ready to use. Default behavior is to use the Auto Scaling group&apos;s health check grace period.</summary>
     [JsonPropertyName("instanceWarmup")]
     public string? InstanceWarmup { get; set; }
 
@@ -4245,7 +4245,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPrefe
 /// <summary>
 /// If this block is configured, start an
 /// Instance Refresh
-/// when this Auto Scaling Group is updated. Defined below.
+/// when this Auto Scaling group is updated. Defined below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4469,7 +4469,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>List of accelerator names. Default is any acclerator.</summary>
+    /// <summary>List of accelerator names. Default is any accelerator.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
@@ -4485,7 +4485,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicate whether bare metal instace types should be included, excluded, or required. Default is excluded.</summary>
+    /// <summary>Indicate whether bare metal instance types should be included, excluded, or required. Default is excluded.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
@@ -4691,7 +4691,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPool
     public double? MaxGroupPreparedCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -4706,7 +4706,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPool
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProvider
 {
-    /// <summary>ARN for this Auto Scaling Group</summary>
+    /// <summary>ARN for this Auto Scaling group</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -4755,15 +4755,15 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     public IList<string>? EnabledMetrics { get; set; }
 
     /// <summary>
-    /// Allows deleting the Auto Scaling Group without waiting
-    /// for all instances in the pool to terminate. You can force an Auto Scaling Group to delete
+    /// Allows deleting the Auto Scaling group without waiting
+    /// for all instances in the pool to terminate. You can force an Auto Scaling group to delete
     /// even if it&apos;s in the process of scaling a resource. This bypasses that
     /// behavior and potentially leaves resources dangling.
     /// </summary>
     [JsonPropertyName("forceDelete")]
     public bool? ForceDelete { get; set; }
 
-    /// <summary>Allows deleting the Auto Scaling Group without waiting for all instances in the warm pool to terminate.</summary>
+    /// <summary>Allows deleting the Auto Scaling group without waiting for all instances in the warm pool to terminate.</summary>
     [JsonPropertyName("forceDeleteWarmPool")]
     public bool? ForceDeleteWarmPool { get; set; }
 
@@ -4775,7 +4775,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("healthCheckType")]
     public string? HealthCheckType { get; set; }
 
-    /// <summary>Auto Scaling Group id.</summary>
+    /// <summary>Auto Scaling group ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -4786,16 +4786,16 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     /// <summary>
     /// One or more
     /// Lifecycle Hooks
-    /// to attach to the Auto Scaling Group before instances are launched. The
+    /// to attach to the Auto Scaling group before instances are launched. The
     /// syntax is exactly the same as the separate
     /// aws_autoscaling_lifecycle_hook
     /// resource, without the autoscaling_group_name attribute. Please note that this will only work when creating
-    /// a new Auto Scaling Group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
+    /// a new Auto Scaling group. For all other use-cases, please use aws_autoscaling_lifecycle_hook resource.
     /// </summary>
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
-    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceLifecyclePolicy")]
     public V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
 
@@ -4806,7 +4806,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     /// <summary>
     /// If this block is configured, start an
     /// Instance Refresh
-    /// when this Auto Scaling Group is updated. Defined below.
+    /// when this Auto Scaling group is updated. Defined below.
     /// </summary>
     [JsonPropertyName("instanceRefresh")]
     public V1beta1AutoscalingGroupStatusAtProviderInstanceRefresh? InstanceRefresh { get; set; }
@@ -4820,7 +4820,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     public V1beta1AutoscalingGroupStatusAtProviderLaunchTemplate? LaunchTemplate { get; set; }
 
     /// <summary>
-    /// List of elastic load balancer names to add to the autoscaling
+    /// List of elastic load balancer names to add to the Auto Scaling
     /// group names. Only valid for classic load balancers. For ALBs, use target_group_arns instead. To remove all load balancer attachments an empty list should be specified.
     /// </summary>
     [JsonPropertyName("loadBalancers")]
@@ -4830,7 +4830,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("maxInstanceLifetime")]
     public double? MaxInstanceLifetime { get; set; }
 
-    /// <summary>Maximum size of the Auto Scaling Group.</summary>
+    /// <summary>Maximum size of the Auto Scaling group.</summary>
     [JsonPropertyName("maxSize")]
     public double? MaxSize { get; set; }
 
@@ -4846,7 +4846,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     public double? MinElbCapacity { get; set; }
 
     /// <summary>
-    /// Minimum size of the Auto Scaling Group.
+    /// Minimum size of the Auto Scaling group.
     /// (See also Waiting for Capacity below.)
     /// </summary>
     [JsonPropertyName("minSize")]
@@ -4886,8 +4886,8 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     public string? ServiceLinkedRoleArn { get; set; }
 
     /// <summary>
-    /// List of processes to suspend for the Auto Scaling Group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
-    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling Group from functioning properly.
+    /// List of processes to suspend for the Auto Scaling group. The allowed values are Launch, Terminate, HealthCheck, ReplaceUnhealthy, AZRebalance, AlarmNotification, ScheduledActions, AddToLoadBalancer, InstanceRefresh.
+    /// Note that if you suspend either the Launch or Terminate process types, it can prevent your Auto Scaling group from functioning properly.
     /// </summary>
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
@@ -4900,7 +4900,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("targetGroupArns")]
     public IList<string>? TargetGroupArns { get; set; }
 
-    /// <summary>List of policies to decide how the instances in the Auto Scaling Group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
+    /// <summary>List of policies to decide how the instances in the Auto Scaling group should be terminated. The allowed values are OldestInstance, NewestInstance, OldestLaunchConfiguration, ClosestToNextInstanceHour, OldestLaunchTemplate, AllocationStrategy, Default. Additionally, the ARN of a Lambda function can be specified for custom termination policies.</summary>
     [JsonPropertyName("terminationPolicies")]
     public IList<string>? TerminationPolicies { get; set; }
 

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: modelinvocationloggingconfigurations.bedrock.aws.m.upbound.io
 spec:
   group: bedrock.aws.m.upbound.io
@@ -58,7 +58,7 @@ spec:
               forProvider:
                 properties:
                   loggingConfig:
-                    description: The logging configuration values to set. See logging_config Block for details.
+                    description: Logging configuration values to set. See logging_config Block for details.
                     properties:
                       cloudwatchConfig:
                         description: CloudWatch logging configuration. See cloudwatch_config Block for details.
@@ -235,7 +235,7 @@ spec:
                                 type: object
                             type: object
                           roleArn:
-                            description: The role ARN.
+                            description: Role ARN.
                             type: string
                           roleArnRef:
                             description: Reference to a Role in iam to populate roleArn.
@@ -318,10 +318,10 @@ spec:
                             type: object
                         type: object
                       embeddingDataDeliveryEnabled:
-                        description: Set to include embeddings data in the log delivery. Defaults to true.
+                        description: Whether to include embeddings data in the log delivery. Defaults to true.
                         type: boolean
                       imageDataDeliveryEnabled:
-                        description: Set to include image data in the log delivery. Defaults to true.
+                        description: Whether to include image data in the log delivery. Defaults to true.
                         type: boolean
                       s3Config:
                         description: S3 configuration for storing log data. See s3_config Block for details.
@@ -413,10 +413,10 @@ spec:
                             type: string
                         type: object
                       textDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include text data in the log delivery. Defaults to true.
                         type: boolean
                       videoDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include video data in the log delivery. Defaults to true.
                         type: boolean
                     type: object
                   region:
@@ -441,7 +441,7 @@ spec:
                   autoscaler.
                 properties:
                   loggingConfig:
-                    description: The logging configuration values to set. See logging_config Block for details.
+                    description: Logging configuration values to set. See logging_config Block for details.
                     properties:
                       cloudwatchConfig:
                         description: CloudWatch logging configuration. See cloudwatch_config Block for details.
@@ -618,7 +618,7 @@ spec:
                                 type: object
                             type: object
                           roleArn:
-                            description: The role ARN.
+                            description: Role ARN.
                             type: string
                           roleArnRef:
                             description: Reference to a Role in iam to populate roleArn.
@@ -701,10 +701,10 @@ spec:
                             type: object
                         type: object
                       embeddingDataDeliveryEnabled:
-                        description: Set to include embeddings data in the log delivery. Defaults to true.
+                        description: Whether to include embeddings data in the log delivery. Defaults to true.
                         type: boolean
                       imageDataDeliveryEnabled:
-                        description: Set to include image data in the log delivery. Defaults to true.
+                        description: Whether to include image data in the log delivery. Defaults to true.
                         type: boolean
                       s3Config:
                         description: S3 configuration for storing log data. See s3_config Block for details.
@@ -796,10 +796,10 @@ spec:
                             type: string
                         type: object
                       textDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include text data in the log delivery. Defaults to true.
                         type: boolean
                       videoDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include video data in the log delivery. Defaults to true.
                         type: boolean
                     type: object
                 type: object
@@ -867,10 +867,10 @@ spec:
               atProvider:
                 properties:
                   id:
-                    description: AWS Region in which logging is configured.
+                    description: (Deprecated) AWS Region in which logging is configured.
                     type: string
                   loggingConfig:
-                    description: The logging configuration values to set. See logging_config Block for details.
+                    description: Logging configuration values to set. See logging_config Block for details.
                     properties:
                       cloudwatchConfig:
                         description: CloudWatch logging configuration. See cloudwatch_config Block for details.
@@ -889,14 +889,14 @@ spec:
                             description: Log group name.
                             type: string
                           roleArn:
-                            description: The role ARN.
+                            description: Role ARN.
                             type: string
                         type: object
                       embeddingDataDeliveryEnabled:
-                        description: Set to include embeddings data in the log delivery. Defaults to true.
+                        description: Whether to include embeddings data in the log delivery. Defaults to true.
                         type: boolean
                       imageDataDeliveryEnabled:
-                        description: Set to include image data in the log delivery. Defaults to true.
+                        description: Whether to include image data in the log delivery. Defaults to true.
                         type: boolean
                       s3Config:
                         description: S3 configuration for storing log data. See s3_config Block for details.
@@ -909,10 +909,10 @@ spec:
                             type: string
                         type: object
                       textDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include text data in the log delivery. Defaults to true.
                         type: boolean
                       videoDataDeliveryEnabled:
-                        description: Set to include text data in the log delivery. Defaults to true.
+                        description: Whether to include video data in the log delivery. Defaults to true.
                         type: boolean
                     type: object
                   region:

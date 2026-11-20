@@ -203,16 +203,16 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLog
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsCloudwatchLogs
 {
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch Logs Log Group.</summary>
+    /// <summary>Name of the CloudWatch Logs Log Group.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -372,12 +372,12 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLog
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsKinesisDataFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsKinesisDataFirehose
 {
-    /// <summary>The name of the delivery stream.</summary>
+    /// <summary>Name of the delivery stream.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
@@ -389,7 +389,7 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLog
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsKinesisDataFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -541,12 +541,12 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLog
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsS3
 {
-    /// <summary>The name of S3 bucket.</summary>
+    /// <summary>Name of S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -558,41 +558,41 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLog
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsS3BucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the Amazon S3 bucket.</summary>
+    /// <summary>ID of the AWS account that owns the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketOwner")]
     public string? BucketOwner { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+/// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogs
 {
-    /// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Include trust data sent by trust providers into the logs.</summary>
+    /// <summary>Whether to include trust data sent by trust providers in the logs.</summary>
     [JsonPropertyName("includeTrustContext")]
     public bool? IncludeTrustContext { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
     [JsonPropertyName("kinesisDataFirehose")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsKinesisDataFirehose? KinesisDataFirehose { get; set; }
 
-    /// <summary>The logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
+    /// <summary>Logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
     [JsonPropertyName("logVersion")]
     public string? LogVersion { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogsS3? S3 { get; set; }
 }
@@ -748,7 +748,7 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProviderVerifieda
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecForProvider
 {
-    /// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
     [JsonPropertyName("accessLogs")]
     public V1beta1InstanceLoggingConfigurationSpecForProviderAccessLogs? AccessLogs { get; set; }
 
@@ -759,7 +759,7 @@ public partial class V1beta1InstanceLoggingConfigurationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the Verified Access instance.</summary>
+    /// <summary>ID of the Verified Access instance.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -919,16 +919,16 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLo
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsCloudwatchLogs
 {
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch Logs Log Group.</summary>
+    /// <summary>Name of the CloudWatch Logs Log Group.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 
@@ -1088,12 +1088,12 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLo
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsKinesisDataFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsKinesisDataFirehose
 {
-    /// <summary>The name of the delivery stream.</summary>
+    /// <summary>Name of the delivery stream.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
@@ -1105,7 +1105,7 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLo
     [JsonPropertyName("deliveryStreamSelector")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsKinesisDataFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1257,12 +1257,12 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLo
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsS3
 {
-    /// <summary>The name of S3 bucket.</summary>
+    /// <summary>Name of S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1274,41 +1274,41 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLo
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsS3BucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the Amazon S3 bucket.</summary>
+    /// <summary>ID of the AWS account that owns the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketOwner")]
     public string? BucketOwner { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+/// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogs
 {
-    /// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Include trust data sent by trust providers into the logs.</summary>
+    /// <summary>Whether to include trust data sent by trust providers in the logs.</summary>
     [JsonPropertyName("includeTrustContext")]
     public bool? IncludeTrustContext { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
     [JsonPropertyName("kinesisDataFirehose")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsKinesisDataFirehose? KinesisDataFirehose { get; set; }
 
-    /// <summary>The logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
+    /// <summary>Logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
     [JsonPropertyName("logVersion")]
     public string? LogVersion { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogsS3? S3 { get; set; }
 }
@@ -1476,11 +1476,11 @@ public partial class V1beta1InstanceLoggingConfigurationSpecInitProviderVerified
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationSpecInitProvider
 {
-    /// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
     [JsonPropertyName("accessLogs")]
     public V1beta1InstanceLoggingConfigurationSpecInitProviderAccessLogs? AccessLogs { get; set; }
 
-    /// <summary>The ID of the Verified Access instance.</summary>
+    /// <summary>ID of the Verified Access instance.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 
@@ -1676,78 +1676,78 @@ public partial class V1beta1InstanceLoggingConfigurationSpec
     public V1beta1InstanceLoggingConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsCloudwatchLogs
 {
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the CloudWatch Logs Log Group.</summary>
+    /// <summary>Name of the CloudWatch Logs Log Group.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsKinesisDataFirehose
 {
-    /// <summary>The name of the delivery stream.</summary>
+    /// <summary>Name of the delivery stream.</summary>
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+/// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsS3
 {
-    /// <summary>The name of S3 bucket.</summary>
+    /// <summary>Name of S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the Amazon S3 bucket.</summary>
+    /// <summary>ID of the AWS account that owns the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketOwner")]
     public string? BucketOwner { get; set; }
 
-    /// <summary>Indicates whether logging is enabled.</summary>
+    /// <summary>Whether logging is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+/// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogs
 {
-    /// <summary>A block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to CloudWatch Logs. Detailed below.</summary>
     [JsonPropertyName("cloudwatchLogs")]
     public V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsCloudwatchLogs? CloudwatchLogs { get; set; }
 
-    /// <summary>Include trust data sent by trust providers into the logs.</summary>
+    /// <summary>Whether to include trust data sent by trust providers in the logs.</summary>
     [JsonPropertyName("includeTrustContext")]
     public bool? IncludeTrustContext { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to Kinesis. Detailed below.</summary>
     [JsonPropertyName("kinesisDataFirehose")]
     public V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsKinesisDataFirehose? KinesisDataFirehose { get; set; }
 
-    /// <summary>The logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
+    /// <summary>Logging version to use. Refer to VerifiedAccessLogOptions for the allowed values.</summary>
     [JsonPropertyName("logVersion")]
     public string? LogVersion { get; set; }
 
-    /// <summary>A block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
+    /// <summary>Block that specifies configures sending Verified Access logs to S3. Detailed below.</summary>
     [JsonPropertyName("s3")]
     public V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogsS3? S3 { get; set; }
 }
@@ -1756,7 +1756,7 @@ public partial class V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceLoggingConfigurationStatusAtProvider
 {
-    /// <summary>A block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
+    /// <summary>Block that specifies the configuration options for Verified Access instances. Detailed below.</summary>
     [JsonPropertyName("accessLogs")]
     public V1beta1InstanceLoggingConfigurationStatusAtProviderAccessLogs? AccessLogs { get; set; }
 
@@ -1770,7 +1770,7 @@ public partial class V1beta1InstanceLoggingConfigurationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the Verified Access instance.</summary>
+    /// <summary>ID of the Verified Access instance.</summary>
     [JsonPropertyName("verifiedaccessInstanceId")]
     public string? VerifiedaccessInstanceId { get; set; }
 }

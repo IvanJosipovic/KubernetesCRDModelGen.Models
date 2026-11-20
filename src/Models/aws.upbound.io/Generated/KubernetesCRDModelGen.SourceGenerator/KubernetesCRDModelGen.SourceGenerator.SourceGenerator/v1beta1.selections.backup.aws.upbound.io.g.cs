@@ -725,7 +725,7 @@ public partial class V1beta1SelectionSpecForProviderSelectionTag
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>An operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
+    /// <summary>Operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -742,7 +742,7 @@ public partial class V1beta1SelectionSpecForProvider
     [JsonPropertyName("condition")]
     public IList<V1beta1SelectionSpecForProviderCondition>? Condition { get; set; }
 
-    /// <summary>The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
+    /// <summary>ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
@@ -754,7 +754,7 @@ public partial class V1beta1SelectionSpecForProvider
     [JsonPropertyName("iamRoleArnSelector")]
     public V1beta1SelectionSpecForProviderIamRoleArnSelector? IamRoleArnSelector { get; set; }
 
-    /// <summary>The display name of a resource selection document.</summary>
+    /// <summary>Display name of a resource selection document.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -770,7 +770,7 @@ public partial class V1beta1SelectionSpecForProvider
     [JsonPropertyName("notResourcesSelector")]
     public V1beta1SelectionSpecForProviderNotResourcesSelector? NotResourcesSelector { get; set; }
 
-    /// <summary>The backup plan ID to be associated with the selection of resources.</summary>
+    /// <summary>Backup plan ID to be associated with the selection of resources.</summary>
     [JsonPropertyName("planId")]
     public string? PlanId { get; set; }
 
@@ -1475,7 +1475,7 @@ public partial class V1beta1SelectionSpecInitProviderSelectionTag
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>An operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
+    /// <summary>Operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -1504,7 +1504,7 @@ public partial class V1beta1SelectionSpecInitProvider
     [JsonPropertyName("condition")]
     public IList<V1beta1SelectionSpecInitProviderCondition>? Condition { get; set; }
 
-    /// <summary>The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
+    /// <summary>ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
@@ -1516,7 +1516,7 @@ public partial class V1beta1SelectionSpecInitProvider
     [JsonPropertyName("iamRoleArnSelector")]
     public V1beta1SelectionSpecInitProviderIamRoleArnSelector? IamRoleArnSelector { get; set; }
 
-    /// <summary>The display name of a resource selection document.</summary>
+    /// <summary>Display name of a resource selection document.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1532,7 +1532,7 @@ public partial class V1beta1SelectionSpecInitProvider
     [JsonPropertyName("notResourcesSelector")]
     public V1beta1SelectionSpecInitProviderNotResourcesSelector? NotResourcesSelector { get; set; }
 
-    /// <summary>The backup plan ID to be associated with the selection of resources.</summary>
+    /// <summary>Backup plan ID to be associated with the selection of resources.</summary>
     [JsonPropertyName("planId")]
     public string? PlanId { get; set; }
 
@@ -1825,7 +1825,7 @@ public partial class V1beta1SelectionStatusAtProviderSelectionTag
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>An operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
+    /// <summary>Operation, such as STRINGEQUALS, that is applied to the key-value pair used to filter resources in a selection.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -1842,7 +1842,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("condition")]
     public IList<V1beta1SelectionStatusAtProviderCondition>? Condition { get; set; }
 
-    /// <summary>The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
+    /// <summary>ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the AWS Backup Developer Guide for additional information about using AWS managed policies or creating custom policies attached to the IAM role.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
@@ -1850,7 +1850,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The display name of a resource selection document.</summary>
+    /// <summary>Display name of a resource selection document.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1858,7 +1858,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("notResources")]
     public IList<string>? NotResources { get; set; }
 
-    /// <summary>The backup plan ID to be associated with the selection of resources.</summary>
+    /// <summary>Backup plan ID to be associated with the selection of resources.</summary>
     [JsonPropertyName("planId")]
     public string? PlanId { get; set; }
 

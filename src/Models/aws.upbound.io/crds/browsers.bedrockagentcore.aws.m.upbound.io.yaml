@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: browsers.bedrockagentcore.aws.m.upbound.io
 spec:
   group: bedrockagentcore.aws.m.upbound.io
@@ -61,7 +61,7 @@ spec:
                     description: Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.
                     properties:
                       enabled:
-                        description: Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
+                        description: Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
                         type: boolean
                     type: object
                   certificate:
@@ -69,7 +69,7 @@ spec:
                     items:
                       properties:
                         location:
-                          description: Location from which to retrieve the certificate. See certificates.location below.
+                          description: Location from which to retrieve the certificate. See certificate.location below.
                           properties:
                             secretsManager:
                               description: AWS Secrets Manager location of the certificate. See secrets_manager below.
@@ -307,7 +307,7 @@ spec:
                         description: S3 location where browser session recordings are stored. See s3_location below.
                         properties:
                           bucket:
-                            description: Name of the S3 bucket where recordings are stored.
+                            description: Name of the S3 bucket.
                             type: string
                           bucketRef:
                             description: Reference to a Bucket in s3 to populate bucket.
@@ -389,7 +389,7 @@ spec:
                                 type: object
                             type: object
                           prefix:
-                            description: S3 key prefix for recording files.
+                            description: Prefix for objects in the S3 bucket.
                             type: string
                         type: object
                     type: object
@@ -424,7 +424,7 @@ spec:
                     description: Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.
                     properties:
                       enabled:
-                        description: Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
+                        description: Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
                         type: boolean
                     type: object
                   certificate:
@@ -432,7 +432,7 @@ spec:
                     items:
                       properties:
                         location:
-                          description: Location from which to retrieve the certificate. See certificates.location below.
+                          description: Location from which to retrieve the certificate. See certificate.location below.
                           properties:
                             secretsManager:
                               description: AWS Secrets Manager location of the certificate. See secrets_manager below.
@@ -670,7 +670,7 @@ spec:
                         description: S3 location where browser session recordings are stored. See s3_location below.
                         properties:
                           bucket:
-                            description: Name of the S3 bucket where recordings are stored.
+                            description: Name of the S3 bucket.
                             type: string
                           bucketRef:
                             description: Reference to a Bucket in s3 to populate bucket.
@@ -752,7 +752,7 @@ spec:
                                 type: object
                             type: object
                           prefix:
-                            description: S3 key prefix for recording files.
+                            description: Prefix for objects in the S3 bucket.
                             type: string
                         type: object
                     type: object
@@ -839,7 +839,7 @@ spec:
                     description: Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.
                     properties:
                       enabled:
-                        description: Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
+                        description: Whether to enable browser signing. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.
                         type: boolean
                     type: object
                   certificate:
@@ -847,7 +847,7 @@ spec:
                     items:
                       properties:
                         location:
-                          description: Location from which to retrieve the certificate. See certificates.location below.
+                          description: Location from which to retrieve the certificate. See certificate.location below.
                           properties:
                             secretsManager:
                               description: AWS Secrets Manager location of the certificate. See secrets_manager below.
@@ -929,10 +929,10 @@ spec:
                         description: S3 location where browser session recordings are stored. See s3_location below.
                         properties:
                           bucket:
-                            description: Name of the S3 bucket where recordings are stored.
+                            description: Name of the S3 bucket.
                             type: string
                           prefix:
-                            description: S3 key prefix for recording files.
+                            description: Prefix for objects in the S3 bucket.
                             type: string
                         type: object
                     type: object
@@ -950,7 +950,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

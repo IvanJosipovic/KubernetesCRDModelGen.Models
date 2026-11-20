@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.upbound.io;
-/// <summary>InferenceProfile is the Schema for the InferenceProfiles API.</summary>
+/// <summary>InferenceProfile is the Schema for the InferenceProfiles API. Manages an AWS Bedrock Inference Profile.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -60,7 +60,7 @@ public enum V1beta1InferenceProfileSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecForProviderModelSource
 {
-    /// <summary>The ARN of the model.</summary>
+    /// <summary>ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -69,15 +69,15 @@ public partial class V1beta1InferenceProfileSpecForProviderModelSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecForProvider
 {
-    /// <summary>The description of the inference profile.</summary>
+    /// <summary>Description of the inference profile.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The source of the model this inference profile will track metrics and cost for. See model_source.</summary>
+    /// <summary>Source of the model this inference profile will track metrics and cost for. See model_source.</summary>
     [JsonPropertyName("modelSource")]
     public IList<V1beta1InferenceProfileSpecForProviderModelSource>? ModelSource { get; set; }
 
-    /// <summary>The name of the inference profile.</summary>
+    /// <summary>Name of the inference profile.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -97,7 +97,7 @@ public partial class V1beta1InferenceProfileSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecInitProviderModelSource
 {
-    /// <summary>The ARN of the model.</summary>
+    /// <summary>ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -118,15 +118,15 @@ public partial class V1beta1InferenceProfileSpecInitProviderModelSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecInitProvider
 {
-    /// <summary>The description of the inference profile.</summary>
+    /// <summary>Description of the inference profile.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The source of the model this inference profile will track metrics and cost for. See model_source.</summary>
+    /// <summary>Source of the model this inference profile will track metrics and cost for. See model_source.</summary>
     [JsonPropertyName("modelSource")]
     public IList<V1beta1InferenceProfileSpecInitProviderModelSource>? ModelSource { get; set; }
 
-    /// <summary>The name of the inference profile.</summary>
+    /// <summary>Name of the inference profile.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -322,7 +322,7 @@ public partial class V1beta1InferenceProfileSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProviderModelSource
 {
-    /// <summary>The ARN of the model.</summary>
+    /// <summary>ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -331,7 +331,7 @@ public partial class V1beta1InferenceProfileStatusAtProviderModelSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProviderModels
 {
-    /// <summary>The ARN of the model.</summary>
+    /// <summary>ARN of the model.</summary>
     [JsonPropertyName("modelArn")]
     public string? ModelArn { get; set; }
 }
@@ -340,31 +340,31 @@ public partial class V1beta1InferenceProfileStatusAtProviderModels
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProvider
 {
-    /// <summary>The ARN of the inference profile.</summary>
+    /// <summary>ARN of the inference profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The time at which the inference profile was created.</summary>
+    /// <summary>Time at which the inference profile was created.</summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
 
-    /// <summary>The description of the inference profile.</summary>
+    /// <summary>Description of the inference profile.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique identifier of the inference profile.</summary>
+    /// <summary>Unique identifier of the inference profile.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The source of the model this inference profile will track metrics and cost for. See model_source.</summary>
+    /// <summary>Source of the model this inference profile will track metrics and cost for. See model_source.</summary>
     [JsonPropertyName("modelSource")]
     public IList<V1beta1InferenceProfileStatusAtProviderModelSource>? ModelSource { get; set; }
 
-    /// <summary>A list of information about each model in the inference profile. See models.</summary>
+    /// <summary>List of information about each model in the inference profile. See models.</summary>
     [JsonPropertyName("models")]
     public IList<V1beta1InferenceProfileStatusAtProviderModels>? Models { get; set; }
 
-    /// <summary>The name of the inference profile.</summary>
+    /// <summary>Name of the inference profile.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -375,7 +375,7 @@ public partial class V1beta1InferenceProfileStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The status of the inference profile. ACTIVE means that the inference profile is available to use.</summary>
+    /// <summary>Status of the inference profile. ACTIVE means that the inference profile is available to use.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -383,14 +383,15 @@ public partial class V1beta1InferenceProfileStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of the inference profile. SYSTEM_DEFINED means that the inference profile is defined by Amazon Bedrock. APPLICATION means that the inference profile is defined by the user.</summary>
+    /// <summary>Type of the inference profile. SYSTEM_DEFINED means that the inference profile is defined by Amazon Bedrock. APPLICATION means that the inference profile is defined by the user.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The time at which the inference profile was last updated.</summary>
+    /// <summary>Time at which the inference profile was last updated.</summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 }
@@ -468,7 +469,7 @@ public partial class V1beta1InferenceProfileStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InferenceProfile is the Schema for the InferenceProfiles API.</summary>
+/// <summary>InferenceProfile is the Schema for the InferenceProfiles API. Manages an AWS Bedrock Inference Profile.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.22.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: ledgers.qldb.aws.upbound.io
 spec:
   group: qldb.aws.upbound.io
@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   deletionProtection:
-                    description: The deletion protection for the QLDB Ledger instance. By default it is true.
+                    description: Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.
                     type: boolean
                   kmsKey:
                     description: Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are "AWS_OWNED_KMS_KEY" to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.
@@ -151,7 +151,7 @@ spec:
                         type: object
                     type: object
                   permissionsMode:
-                    description: The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
+                    description: Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
                     type: string
                   region:
                     description: |-
@@ -181,7 +181,7 @@ spec:
                   autoscaler.
                 properties:
                   deletionProtection:
-                    description: The deletion protection for the QLDB Ledger instance. By default it is true.
+                    description: Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.
                     type: boolean
                   kmsKey:
                     description: Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are "AWS_OWNED_KMS_KEY" to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.
@@ -260,7 +260,7 @@ spec:
                         type: object
                     type: object
                   permissionsMode:
-                    description: The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
+                    description: Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
                     type: string
                   tags:
                     additionalProperties:
@@ -364,19 +364,19 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The ARN of the QLDB Ledger
+                    description: ARN of the QLDB Ledger
                     type: string
                   deletionProtection:
-                    description: The deletion protection for the QLDB Ledger instance. By default it is true.
+                    description: Whether to enable deletion protection for the QLDB Ledger instance. By default it is true.
                     type: boolean
                   id:
-                    description: The Name of the QLDB Ledger
+                    description: Name of the QLDB Ledger
                     type: string
                   kmsKey:
                     description: Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are "AWS_OWNED_KMS_KEY" to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.
                     type: string
                   permissionsMode:
-                    description: The permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
+                    description: Permissions mode for the QLDB ledger instance. Specify either ALLOW_ALL or STANDARD.
                     type: string
                   region:
                     description: |-
@@ -392,7 +392,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object

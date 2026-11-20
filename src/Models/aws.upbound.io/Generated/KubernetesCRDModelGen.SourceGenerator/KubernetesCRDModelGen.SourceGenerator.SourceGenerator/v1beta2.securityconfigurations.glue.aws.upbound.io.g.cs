@@ -203,6 +203,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryption
@@ -371,6 +372,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryption
@@ -539,7 +541,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+/// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption
@@ -566,13 +568,15 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfiguration
 {
+    /// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
     [JsonPropertyName("cloudwatchEncryption")]
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryption? CloudwatchEncryption { get; set; }
 
+    /// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
     [JsonPropertyName("jobBookmarksEncryption")]
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryption? JobBookmarksEncryption { get; set; }
 
-    /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+    /// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
     [JsonPropertyName("s3Encryption")]
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption? S3Encryption { get; set; }
 }
@@ -740,6 +744,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryption
@@ -908,6 +913,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryption
@@ -1076,7 +1082,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+/// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3Encryption
@@ -1103,13 +1109,15 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfiguration
 {
+    /// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
     [JsonPropertyName("cloudwatchEncryption")]
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryption? CloudwatchEncryption { get; set; }
 
+    /// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
     [JsonPropertyName("jobBookmarksEncryption")]
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryption? JobBookmarksEncryption { get; set; }
 
-    /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+    /// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
     [JsonPropertyName("s3Encryption")]
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3Encryption? S3Encryption { get; set; }
 }
@@ -1318,6 +1326,7 @@ public partial class V1beta2SecurityConfigurationSpec
     public V1beta2SecurityConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationCloudwatchEncryption
@@ -1331,6 +1340,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     public string? KmsKeyArn { get; set; }
 }
 
+/// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationJobBookmarksEncryption
@@ -1344,7 +1354,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     public string? KmsKeyArn { get; set; }
 }
 
-/// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+/// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption
@@ -1363,13 +1373,15 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfiguration
 {
+    /// <summary>cloudwatch_encryption block as described below, which contains encryption configuration for CloudWatch.</summary>
     [JsonPropertyName("cloudwatchEncryption")]
     public V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationCloudwatchEncryption? CloudwatchEncryption { get; set; }
 
+    /// <summary>job_bookmarks_encryption block as described below, which contains encryption configuration for job bookmarks.</summary>
     [JsonPropertyName("jobBookmarksEncryption")]
     public V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationJobBookmarksEncryption? JobBookmarksEncryption { get; set; }
 
-    /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
+    /// <summary>s3_encryption block as described below, which contains encryption configuration for S3 data.</summary>
     [JsonPropertyName("s3Encryption")]
     public V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption? S3Encryption { get; set; }
 }

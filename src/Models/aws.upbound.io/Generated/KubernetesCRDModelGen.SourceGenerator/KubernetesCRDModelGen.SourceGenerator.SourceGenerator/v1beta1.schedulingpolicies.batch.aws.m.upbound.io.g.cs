@@ -41,23 +41,25 @@ public partial class V1beta1SchedulingPolicyList : IKubernetesObject<V1ListMeta>
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecForProviderFairSharePolicyShareDistribution
 {
-    /// <summary>A fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
+    /// <summary>Fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("shareIdentifier")]
     public string? ShareIdentifier { get; set; }
 
-    /// <summary>The weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
+    /// <summary>Weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("weightFactor")]
     public double? WeightFactor { get; set; }
 }
 
+/// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecForProviderFairSharePolicy
 {
-    /// <summary>A value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
+    /// <summary>Value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("computeReservation")]
     public double? ComputeReservation { get; set; }
 
+    /// <summary>Time period to use to calculate a fair share percentage for each fair share identifier in use, in seconds. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("shareDecaySeconds")]
     public double? ShareDecaySeconds { get; set; }
 
@@ -70,6 +72,7 @@ public partial class V1beta1SchedulingPolicySpecForProviderFairSharePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecForProvider
 {
+    /// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
     [JsonPropertyName("fairSharePolicy")]
     public V1beta1SchedulingPolicySpecForProviderFairSharePolicy? FairSharePolicy { get; set; }
 
@@ -89,23 +92,25 @@ public partial class V1beta1SchedulingPolicySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecInitProviderFairSharePolicyShareDistribution
 {
-    /// <summary>A fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
+    /// <summary>Fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("shareIdentifier")]
     public string? ShareIdentifier { get; set; }
 
-    /// <summary>The weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
+    /// <summary>Weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("weightFactor")]
     public double? WeightFactor { get; set; }
 }
 
+/// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecInitProviderFairSharePolicy
 {
-    /// <summary>A value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
+    /// <summary>Value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("computeReservation")]
     public double? ComputeReservation { get; set; }
 
+    /// <summary>Time period to use to calculate a fair share percentage for each fair share identifier in use, in seconds. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("shareDecaySeconds")]
     public double? ShareDecaySeconds { get; set; }
 
@@ -130,6 +135,7 @@ public partial class V1beta1SchedulingPolicySpecInitProviderFairSharePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicySpecInitProvider
 {
+    /// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
     [JsonPropertyName("fairSharePolicy")]
     public V1beta1SchedulingPolicySpecInitProviderFairSharePolicy? FairSharePolicy { get; set; }
 
@@ -249,23 +255,25 @@ public partial class V1beta1SchedulingPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicyStatusAtProviderFairSharePolicyShareDistribution
 {
-    /// <summary>A fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
+    /// <summary>Fair share identifier or fair share identifier prefix. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("shareIdentifier")]
     public string? ShareIdentifier { get; set; }
 
-    /// <summary>The weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
+    /// <summary>Weight factor for the fair share identifier. For more information, see ShareAttributes.</summary>
     [JsonPropertyName("weightFactor")]
     public double? WeightFactor { get; set; }
 }
 
+/// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchedulingPolicyStatusAtProviderFairSharePolicy
 {
-    /// <summary>A value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
+    /// <summary>Value used to reserve some of the available maximum vCPU for fair share identifiers that have not yet been used. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("computeReservation")]
     public double? ComputeReservation { get; set; }
 
+    /// <summary>Time period to use to calculate a fair share percentage for each fair share identifier in use, in seconds. For more information, see FairsharePolicy.</summary>
     [JsonPropertyName("shareDecaySeconds")]
     public double? ShareDecaySeconds { get; set; }
 
@@ -282,6 +290,7 @@ public partial class V1beta1SchedulingPolicyStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
+    /// <summary>Fair share scheduling policy details. The fair_share_policy block is documented below.</summary>
     [JsonPropertyName("fairSharePolicy")]
     public V1beta1SchedulingPolicyStatusAtProviderFairSharePolicy? FairSharePolicy { get; set; }
 
@@ -299,7 +308,7 @@ public partial class V1beta1SchedulingPolicyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }
