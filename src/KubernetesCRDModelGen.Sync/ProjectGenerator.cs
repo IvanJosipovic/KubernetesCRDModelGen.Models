@@ -122,7 +122,7 @@ class ProjectGenerator
                 </ItemGroup>
 
                 <ItemGroup>
-                    <PackageReference Include="KubernetesClient" Version="21.0.8"/>
+                    <PackageReference Include="KubernetesClient" Version="21.0.41"/>
                     <PackageReference Include="KubernetesCRDModelGen.SourceGenerator" Version="1.8.7">
                         <PrivateAssets>all</PrivateAssets>
                     </PackageReference>
